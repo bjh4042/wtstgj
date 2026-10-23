@@ -1,0 +1,46 @@
+{
+  "W03_MAJOR": false,
+  "runtime_behavior_changed": false,
+  "entries": [
+    {
+      "lockedCharacterId": "UNIQUE_WONI",
+      "canonicalRuntimeId": "NPC_UNIQUE_WONI",
+      "displayName": "원이",
+      "assetId": "human.woni.field",
+      "filename": "UNIQUE_WONI_field_atlas_v1.png",
+      "runtimePath": "assets/final/humans/w03/UNIQUE_WONI_field_atlas_v1.png",
+      "visibleHeightPx": 38,
+      "scaleClass": "STANDARD",
+      "sha256": "6cec50acbfbb39464cc7ed700e4e7b92f875231707cc16814873eca727332ea6",
+      "previous_reference": "historical W03_FIELD_ATLASES loader catalog (retained for compatibility)",
+      "current_registry": "dist/compatibility/npc-assets.mjs:UNIQUE_CHARACTER_REGISTRY",
+      "target_owner": "W04",
+      "status": "W04_OWNERSHIP_PENDING_FORMAL_INTAKE",
+      "gameplayPlacement": "UNASSIGNED",
+      "runtime_id_preserved": true,
+      "asset_changed": false,
+      "dialogue_changed": false,
+      "battle_role_changed": false
+    },
+    {
+      "lockedCharacterId": "UNIQUE_MINAMI",
+      "canonicalRuntimeId": "NPC_UNIQUE_MINAMI",
+      "displayName": "미나미",
+      "assetId": "human.minami.field",
+      "filename": "UNIQUE_MINAMI_field_atlas_v1.png",
+      "runtimePath": "assets/final/humans/w03/UNIQUE_MINAMI_field_atlas_v1.png",
+      "visibleHeightPx": 38,
+      "scaleClass": "STANDARD",
+      "sha256": "12154d2b6a91ad21fc22fcfc70efb41ee11adfb58672323015f8ce20182e89d6",
+      "previous_reference": "historical W03_FIELD_ATLASES loader catalog (retained for compatibility)",
+      "current_registry": "dist/compatibility/npc-assets.mjs:UNIQUE_CHARACTER_REGISTRY",
+      "target_owner": "W04",
+      "status": "W04_OWNERSHIP_PENDING_FORMAL_INTAKE",
+      "gameplayPlacement": "UNASSIGNED",
+      "runtime_id_preserved": true,
+      "asset_changed": false,
+      "dialogue_changed": false,
+      "battle_role_changed": false
+    }
+  ]
+}
