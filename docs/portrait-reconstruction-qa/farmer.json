@@ -1,0 +1,506 @@
+{
+  "atlas": {
+    "src": "./assets/farmer.png",
+    "width": 483,
+    "height": 784,
+    "sha256": "9b3c1d3364190c22eaa3112845a69b435ffc8c04eede25bb62747469a6f73c78",
+    "columns": 3,
+    "rows": 4,
+    "cellWidth": 161,
+    "cellHeight": 196
+  },
+  "frames": {
+    "FARMER_F_BASE.FRONT.IDLE": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        2,
+        2,
+        157,
+        192
+      ],
+      "source": [
+        2,
+        2,
+        157,
+        192
+      ],
+      "width": 157,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        157,
+        192
+      ],
+      "anchor": [
+        78.5,
+        192
+      ],
+      "atlasAnchor": [
+        80.5,
+        194
+      ],
+      "slot": [
+        0,
+        0,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "698202a463dde5a44d6ccea38b5e520b606861ec27b73128467718b6ce101b57",
+      "sourceSha256": "c3dd214e308fccc9c79038deb2401d483291c5ab993d93d153d4413612dadc72",
+      "rgbaSha256": "3f55475eb7e0b7b48ad194026ae4a08be43482abd0f97cfab78c03c45b2eef95"
+    },
+    "FARMER_F_BASE.FRONT.A": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        166,
+        2,
+        150,
+        192
+      ],
+      "source": [
+        166,
+        2,
+        150,
+        192
+      ],
+      "width": 150,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        150,
+        192
+      ],
+      "anchor": [
+        75.0,
+        192
+      ],
+      "atlasAnchor": [
+        241.0,
+        194
+      ],
+      "slot": [
+        161,
+        0,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "17b5e8130918ff5bef5a67a511b389fb5024df85b3b9a07302d598fa272c5b1c",
+      "sourceSha256": "29ee3994ef66313db98ff203b44659ee8afa67cb77413a1ca70d75285cfc3883",
+      "rgbaSha256": "5963a495ead4d8b9babd727ec8a315a7a594208be82758b28f411150fd0a02d2"
+    },
+    "FARMER_F_BASE.FRONT.B": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        327,
+        2,
+        151,
+        192
+      ],
+      "source": [
+        327,
+        2,
+        151,
+        192
+      ],
+      "width": 151,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        151,
+        192
+      ],
+      "anchor": [
+        75.5,
+        192
+      ],
+      "atlasAnchor": [
+        402.5,
+        194
+      ],
+      "slot": [
+        322,
+        0,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "c8a764f8c195d9df8b5d4f7b107a10e0532c7d931e4175d98f3724cb675f5e49",
+      "sourceSha256": "eb28788fc1f680138be9a5b10b98d09f2b04913f92ea5f3f88b0bb1c408e5c57",
+      "rgbaSha256": "0b90378512dc7bccccf7f522d1fa571346b403366f17ac450a4d148c0d2aa11b"
+    },
+    "FARMER_F_BASE.RIGHT.IDLE": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        5,
+        198,
+        150,
+        192
+      ],
+      "source": [
+        5,
+        198,
+        150,
+        192
+      ],
+      "width": 150,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        150,
+        192
+      ],
+      "anchor": [
+        75.0,
+        192
+      ],
+      "atlasAnchor": [
+        80.0,
+        390
+      ],
+      "slot": [
+        0,
+        196,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "4d7f94c2c8518af106ff20a6fc6a9c4a2804e0bc72819442299b1c47594e1a8e",
+      "sourceSha256": "26d1388ecf513b032bcd2ca7e0eb0270f8dc87c4f31dca0b74749e0a8dbbd004",
+      "rgbaSha256": "f30bda628b498e0209b9f5c3fcec8b24fc0a3b619135429ba2040545d7f0049f"
+    },
+    "FARMER_F_BASE.RIGHT.A": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        166,
+        198,
+        151,
+        192
+      ],
+      "source": [
+        166,
+        198,
+        151,
+        192
+      ],
+      "width": 151,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        151,
+        192
+      ],
+      "anchor": [
+        75.5,
+        192
+      ],
+      "atlasAnchor": [
+        241.5,
+        390
+      ],
+      "slot": [
+        161,
+        196,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "d3e00bfe263097b51ef38d1459bccb8f31bb751bc60e56f5f87ba77b4d1209c8",
+      "sourceSha256": "274a5d71f584811709d822a47e7ca7facce855b50c13008a5a5e15d8ef9ae933",
+      "rgbaSha256": "3e7435261e9a76e8ce2285f0fd378a647f9ba364a2f9b8845a1bc7e2cee681c4"
+    },
+    "FARMER_F_BASE.RIGHT.B": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        326,
+        198,
+        152,
+        192
+      ],
+      "source": [
+        326,
+        198,
+        152,
+        192
+      ],
+      "width": 152,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        152,
+        192
+      ],
+      "anchor": [
+        76.0,
+        192
+      ],
+      "atlasAnchor": [
+        402.0,
+        390
+      ],
+      "slot": [
+        322,
+        196,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "d7291a5a13711ae5e78b964ecbeb737eda69889d66e740d7746de128ac05dc07",
+      "sourceSha256": "fb38f5ecfed050c494e55f6a5a6814d6dcb7d34f566aac39f3b09f88a6812d45",
+      "rgbaSha256": "bac17baf1af0297103aa273976d36a3a2edf28627afb0ac3d38be98ea120bca2"
+    },
+    "FARMER_F_BASE.LEFT.IDLE": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        5,
+        394,
+        150,
+        192
+      ],
+      "source": [
+        5,
+        394,
+        150,
+        192
+      ],
+      "width": 150,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        150,
+        192
+      ],
+      "anchor": [
+        75.0,
+        192
+      ],
+      "atlasAnchor": [
+        80.0,
+        586
+      ],
+      "slot": [
+        0,
+        392,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "418f57fc415a238e4c35fedfe6f2531387ccb715630432783d44bffda1abfc18",
+      "sourceSha256": "516fa16d277e29e95fe7b9b5d76835ba819abd651de5e1446c1da9712e18554a",
+      "rgbaSha256": "9c0b12b2dce8845f9a54c12030356994807f76babb7654e548d4e082acc668f4"
+    },
+    "FARMER_F_BASE.LEFT.A": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        165,
+        394,
+        153,
+        192
+      ],
+      "source": [
+        165,
+        394,
+        153,
+        192
+      ],
+      "width": 153,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        153,
+        192
+      ],
+      "anchor": [
+        76.5,
+        192
+      ],
+      "atlasAnchor": [
+        241.5,
+        586
+      ],
+      "slot": [
+        161,
+        392,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "3cb374dc470e6884e85ca2bf0a42af1067650a39c0e17892d07f77e475bd31ac",
+      "sourceSha256": "fe73fdf563c407369d8d1fa990c92292d1d73c3a76f45657f4c548bf53a094cd",
+      "rgbaSha256": "46108305e70c24ad61d35f8d46412db9a4f50c0eff265049c074a126200fe332"
+    },
+    "FARMER_F_BASE.LEFT.B": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        327,
+        394,
+        150,
+        192
+      ],
+      "source": [
+        327,
+        394,
+        150,
+        192
+      ],
+      "width": 150,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        150,
+        192
+      ],
+      "anchor": [
+        75.0,
+        192
+      ],
+      "atlasAnchor": [
+        402.0,
+        586
+      ],
+      "slot": [
+        322,
+        392,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "d2825838789211fdda48ee2ab7dc10c6a3a3524999ddb669b3dafe9e44a5f168",
+      "sourceSha256": "b34586dececf7c53400657cecfc097af418f08785ce02de8771c16e4825d09ef",
+      "rgbaSha256": "f9ba1b3dc005b098445e4be05e572035e19f18646c761794644250900bcf1cf5"
+    },
+    "FARMER_F_BASE.BACK.IDLE": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        7,
+        590,
+        147,
+        192
+      ],
+      "source": [
+        7,
+        590,
+        147,
+        192
+      ],
+      "width": 147,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        147,
+        192
+      ],
+      "anchor": [
+        73.5,
+        192
+      ],
+      "atlasAnchor": [
+        80.5,
+        782
+      ],
+      "slot": [
+        0,
+        588,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "96f357b76a351ca86804c9ddda60a56d28259785599d1448266c9656e9fc40ea",
+      "sourceSha256": "61605ff881d6228ca11f16e445421d558c6e5fd8e44dbea774ef5399b356b841",
+      "rgbaSha256": "736b3f3f6ef27d6da847fbca01db321b2b873fbf11f56f39570ce42123f61001"
+    },
+    "FARMER_F_BASE.BACK.A": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        169,
+        590,
+        144,
+        192
+      ],
+      "source": [
+        169,
+        590,
+        144,
+        192
+      ],
+      "width": 144,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        144,
+        192
+      ],
+      "anchor": [
+        72.0,
+        192
+      ],
+      "atlasAnchor": [
+        241.0,
+        782
+      ],
+      "slot": [
+        161,
+        588,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "7c6811d33681cb3c4932a5678aa32124a0c94a7ff9578021e9134173384c65dd",
+      "sourceSha256": "d7957423260791fc093d64d749c2e00ae77f34de97e0e944d9a3fbc37954e45d",
+      "rgbaSha256": "68f17b4e867c8bea9101e70df3a97252c90e6e5b921051243153d64f281de426"
+    },
+    "FARMER_F_BASE.BACK.B": {
+      "atlas": "npc/FARMER_F_BASE",
+      "rect": [
+        331,
+        590,
+        143,
+        192
+      ],
+      "source": [
+        331,
+        590,
+        143,
+        192
+      ],
+      "width": 143,
+      "height": 192,
+      "bounds": [
+        0,
+        0,
+        143,
+        192
+      ],
+      "anchor": [
+        71.5,
+        192
+      ],
+      "atlasAnchor": [
+        402.5,
+        782
+      ],
+      "slot": [
+        322,
+        588,
+        161,
+        196
+      ],
+      "status": "approved-derivative",
+      "derivativeSha256": "8b4018bdfca6153c95646558381037872fbf24def0a9e81d7f26edb7811e15cd",
+      "sourceSha256": "fe0b66a7add97e687089029c18f1e659e2ddbbe7084a06fa0471ad5dad7fa50c",
+      "rgbaSha256": "a8ab9d178d01f2c37c7b171ee4b65bfc22ef873c5436f7fe01ce6c5f1b5d5256"
+    }
+  }
+}

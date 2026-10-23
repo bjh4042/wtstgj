@@ -1,0 +1,22 @@
+[
+  {
+    "module": "production/shared-battle-sequences.mjs",
+    "baseline": "published-main-8c4f847",
+    "sha256": "015869d6aa073ce1540c6bdde583132b1ccb46d3eb09da3b90639bd78797d012",
+    "bytes": 8520,
+    "copy": "byte-for-byte unmodified production source"
+  },
+  {
+    "module": "production/approved-shared-sequences.mjs",
+    "baseline": "published-main-8c4f847",
+    "sha256": "d320d24c33482d898732d5ca27c578c3c1859055d8f7c2d24cd482774cda15d0",
+    "bytes": 5663,
+    "copy": "byte-for-byte unmodified production source"
+  },
+  {
+    "module": "production/approved-trainer-portraits-data.mjs",
+    "sha256": "4dfc3af18dd6943a614bfe4c2bbd9b673ea0dfcaa13a5bf57063058b97e5c5a9",
+    "bytes": 42986,
+    "copy": "exact reconstructed 69-art registry; baseline mapping maps unchanged"
+  }
+]
