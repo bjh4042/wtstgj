@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>생태몬스터:거제도 · 지세포 항구 격리 검수</title>
+  <script type="module" crossorigin src="/wtstgj/assets/index-CVTeX6eV.js"></script>
+  <link rel="stylesheet" crossorigin href="/wtstgj/assets/index-D__tEopb.css">
+</head>
+<body>
+<main id="harbor-qa">
+  <header>
+    <p class="eyebrow">ISOLATED RUNTIME QA · 미완성 개발 자료</p>
+    <h1>지세포 항구 · 실제 게임 연결 검수</h1>
+    <p>일반 게임이나 기존 저장을 바꾸지 않는 별도 화면입니다. Lv.100 파티는 진행 검수용이며, 밸런스 승인이나 최종 아트가 아닙니다.</p>
+  </header>
+  <section id="qa-controls" class="qa-controls" aria-label="검수용 메모리 제어">
+    <label>외형 <select data-qa="appearance"><option value="boy">남자 주인공</option><option value="girl">여자 주인공</option></select></label>
+    <label>QA 시작 상태 <select data-qa="phase"><option value="entry">항구 입구 · 미완료</option><option value="working-coast">작업 해안 · 필수 트레이너 완료</option></select></label>
+    <label>인물 표시 높이 <select data-qa="height"><option value="64">64 px</option><option value="80" selected>80 px</option></select></label>
+    <button data-qa="reset" disabled>선택한 QA 시작 상태로 초기화</button>
+    <button data-qa="remember" disabled>현재 상태 메모리에 복사</button>
+    <button data-qa="restore" disabled>메모리 상태 다시 불러오기</button>
+    <p>브라우저 저장소를 읽거나 쓰지 않습니다. 새로고침하거나 탭을 닫으면 메모리 상태가 사라집니다. 뒤로가기로 화면이 복원되면 같은 메모리 상태가 유지될 수 있습니다.</p>
+    <details><summary>복구 검수용 별도 메모리 예시</summary>
+      <p>기존 사용자 저장을 읽는 기능이 아닙니다. 미리 만든 남자 주인공 QA 예시로 위치 복구만 확인합니다.</p>
+      <label>예시 <select data-qa="recovery-case"></select></label>
+      <button data-qa="recover" disabled>별도 복구 예시 적용</button>
+      <pre data-qa="receipt" aria-label="위치 복구 검수 결과">아직 적용하지 않았습니다.</pre>
+    </details>
+  </section>
+  <output data-qa="status" role="status" aria-live="polite">검증된 게임 자료와 항구 그림을 읽는 중입니다…</output>
+  <div class="layout">
+    <section class="play" aria-label="실제 월드 검수">
+      <p data-qa="location">불러오는 중…</p>
+      <canvas data-qa="field" width="960" height="540" tabindex="0" aria-label="960×540 지세포 항구 실제 필드"></canvas>
+      <p class="scope">그림 검수 범위: 작업 해안 960×540 일부. 나머지 구역은 기능 확인용 임시 화면입니다.</p>
+      <div class="touch" aria-label="게임 조작">
+        <div class="dpad"><button data-dir="up" aria-label="위로 이동">↑</button><button data-dir="left" aria-label="왼쪽으로 이동">←</button><button data-dir="down" aria-label="아래로 이동">↓</button><button data-dir="right" aria-label="오른쪽으로 이동">→</button></div>
+        <button data-qa="action" disabled>A 조사 · 대화 계속</button><button data-qa="cancel" disabled>B 닫기 · 대화 계속</button><button data-qa="menu" disabled>파티 / 보관함</button>
+      </div>
+      <p>방향키/WASD 이동 · Z 또는 화면 A 조사 · X 또는 화면 B 닫기 · M 파티. 방향키는 대화를 진행하지 않습니다.</p>
+      <section data-qa="dialogue" class="dialogue" hidden aria-label="필드 대화"><p data-qa="dialogue-text"></p><button data-qa="continue">A/B · 대화 계속</button></section>
+      <section aria-label="실제로 가까운 조사 지점"><h2>가까운 조사 지점</h2><div data-qa="nearby" class="buttons"></div><div data-qa="choices" class="choices"></div></section>
+      <section data-qa="party" class="party" hidden aria-label="실제 파티와 보관함"></section>
+    </section>
+    <aside>
+      <h2>진행 검수 상태</h2><pre data-qa="state"></pre>
+      <details><summary>지도 지점과 실제 진행 조건</summary><div data-qa="guide"></div></details>
+      <p>검수 환경: 고정 DAY / CLEAR. 실제 CanonicalWorld와 Battle v3 규칙을 사용합니다. 자동 전투·자동 대화 진행은 없습니다.</p>
+      <p>재구성 코드의 브라우저 조작·화면 검수는 아직 완료하지 않았습니다.</p>
+    </aside>
+  </div>
+  <section data-qa="battle-panel" class="battle-panel" role="dialog" aria-modal="true" aria-label="실제 Battle v3 대결" tabindex="-1" hidden>
+    <div class="battle-card"><h2>실제 Battle v3 대결</h2><canvas data-qa="battle" width="432" height="240" aria-label="생태몬 대결 화면"></canvas><pre data-qa="battle-info"></pre><div data-qa="battle-actions" class="buttons"></div><p>화면의 기술·교체·아이템을 선택하세요. 이 화면의 방향키는 필드를 움직이거나 대화를 진행하지 않습니다.</p></div>
+  </section>
+</main>
+</body>
+</html>
