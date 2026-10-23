@@ -1,0 +1,63 @@
+/* Canonical mobile shell. Import after the existing skins; no input rebinding. */
+#canonical-world.mobile-controls-active {
+ --mobile-vv-top:0px;--mobile-vv-left:0px;--mobile-vv-width:100vw;--mobile-vv-height:100dvh;
+ --mobile-dock-height:178px;
+ padding-bottom:calc(var(--mobile-dock-height) + 16px);
+ scroll-padding-bottom:calc(var(--mobile-dock-height) + 16px);
+}
+#canonical-world.mobile-controls-active .world-layout {grid-template-columns:minmax(0,1fr)}
+#canonical-world.mobile-controls-active .world-play {min-width:0}
+#canonical-world.mobile-controls-active canvas[data-w=field] {
+ width:var(--mobile-field-width,100%);height:var(--mobile-field-height,auto);
+ max-width:100%;max-height:none;min-width:0;min-height:0;
+ aspect-ratio:16/9;object-fit:contain;margin-inline:auto;box-sizing:content-box;
+ border:0;outline:1px solid #588A9B;box-shadow:none;
+}
+#canonical-world.mobile-controls-active .world-touch {
+ position:fixed;z-index:30;left:var(--mobile-vv-left);
+ top:calc(var(--mobile-vv-top) + var(--mobile-vv-height));transform:translateY(-100%);
+ width:var(--mobile-vv-width);margin:0;
+ padding:8px max(10px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));
+ display:grid;grid-template-columns:repeat(3,48px) minmax(0,1fr) repeat(2,minmax(52px,72px));
+ grid-template-rows:repeat(3,48px);gap:4px;align-items:stretch;
+ border-top:1px solid #75A8BB;background:linear-gradient(135deg,#F8FCFD,#DDEEF0);
+ box-shadow:0 -4px 18px #123D5724;touch-action:auto;
+}
+#canonical-world.mobile-controls-active .world-touch button {
+ width:100%;height:100%;min-width:44px;min-height:44px;max-width:none;
+ margin:0;padding:4px;border-radius:12px;font-size:16px;line-height:1.25;
+ touch-action:manipulation;user-select:none;-webkit-user-select:none;
+}
+#canonical-world.mobile-controls-active .world-touch button:active {padding:4px}
+#canonical-world.mobile-controls-active .world-touch [data-dir] {font-size:24px;touch-action:none}
+#canonical-world.mobile-controls-active .world-touch [data-dir=up] {grid-area:1/2}
+#canonical-world.mobile-controls-active .world-touch [data-dir=left] {grid-area:2/1}
+#canonical-world.mobile-controls-active .world-touch [data-dir=right] {grid-area:2/3}
+#canonical-world.mobile-controls-active .world-touch [data-dir=down] {grid-area:3/2}
+#canonical-world.mobile-controls-active .world-touch [data-w=action] {grid-area:1/6/3/7;border-radius:24px}
+#canonical-world.mobile-controls-active .world-touch [data-w=cancel] {grid-area:2/5/4/6;border-radius:24px}
+#canonical-world.mobile-controls-active .world-touch [data-w=menu] {grid-area:3/6}
+#canonical-world.mobile-controls-active [data-w=choices] {max-height:35dvh;overflow:auto;overscroll-behavior:contain}
+#canonical-world.mobile-controls-active [data-w=dialogue],
+#canonical-world.mobile-controls-active.ordinary-world .world-layout>aside {
+ position:fixed;z-index:29;left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));
+ top:auto;bottom:calc(100dvh - var(--mobile-vv-top) - var(--mobile-vv-height) + var(--mobile-dock-height) + 8px);
+ max-height:calc(var(--mobile-vv-height) - var(--mobile-dock-height) - max(16px,env(safe-area-inset-top)) - 8px);
+ overflow:auto;overscroll-behavior:contain;margin:0;padding:12px;
+}
+#canonical-world.mobile-controls-active [data-w=dialogue-text] {max-height:none;font-size:18px}
+#canonical-world.mobile-controls-active .world-modal {
+ top:calc(var(--mobile-vv-top) + max(8px,env(safe-area-inset-top)));
+ bottom:auto;margin-block:0;
+ max-height:calc(var(--mobile-vv-height) - var(--mobile-dock-height) - max(8px,env(safe-area-inset-top)) - 8px);
+ overflow:auto;overscroll-behavior:contain;
+}
+@media(max-width:350px),(max-height:450px) {
+ #canonical-world.mobile-controls-active .world-touch {
+  grid-template-columns:repeat(3,44px) minmax(0,1fr) repeat(2,minmax(44px,60px));grid-template-rows:repeat(3,44px);gap:3px;
+ }
+}
+
+/* Battle owns its commands and focus; field controls must not compete. */
+#canonical-world.mobile-controls-active:has([data-w=battle-panel]:not([hidden])) .world-touch {display:none}
+#canonical-world.mobile-controls-active:has([data-w=battle-panel]:not([hidden])) {--mobile-dock-height:0px!important}

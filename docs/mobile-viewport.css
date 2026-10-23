@@ -1,0 +1,46 @@
+/* Last-loaded additive repair: artwork fits; touch targets/text never scale down. */
+@media (max-width:820px),(any-pointer:coarse){
+ dialog#modal.opening-screen[open]{position:fixed;inset:auto;left:calc(var(--mobile-view-left,0px) + env(safe-area-inset-left) + 6px);top:calc(var(--mobile-view-top,0px) + env(safe-area-inset-top) + 6px);transform:none;margin:0;width:calc(var(--mobile-view-width,100vw) - env(safe-area-inset-left) - env(safe-area-inset-right) - 12px);max-width:100%;height:calc(var(--mobile-view-height,100dvh) - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 12px);max-height:none;aspect-ratio:auto;display:flex!important;flex-direction:column;overflow:visible;border:3px solid #26384d;box-sizing:border-box;background:#102b46}
+ dialog#modal.opening-screen #modal-content{flex:1 1 auto;min-width:0;min-height:0;width:100%;height:auto;overflow:auto;overscroll-behavior:contain}
+ dialog#modal.opening-screen .modal-inner{height:100%;min-height:0;width:100%;padding:0;overflow:visible}
+ dialog#modal.opening-screen .opening-frame{width:100%;height:100%;min-height:0;overflow:auto;box-sizing:border-box}
+ dialog#modal.opening-screen>.dialog-controls{display:grid!important;position:relative;inset:auto;flex:0 0 108px;height:108px;width:100%;padding:6px 8px;margin:0;box-sizing:border-box;grid-template-columns:44px 44px 44px minmax(0,1fr) minmax(64px,88px) minmax(64px,88px);grid-template-rows:44px 44px;gap:4px;background:#173b51;border-top:2px solid #8bafb4;z-index:20}
+ dialog#modal.opening-screen>.dialog-controls button{display:block!important;position:static;min-width:44px;min-height:44px;height:44px;margin:0;padding:4px;font:700 16px/1.2 system-ui,sans-serif;color:#fff;background:#2a536b;border:2px solid #aac7d0;border-radius:10px;touch-action:manipulation}
+ #modal.opening-screen [data-modal-dir=up]{grid-column:2;grid-row:1}#modal.opening-screen [data-modal-dir=left]{grid-column:1;grid-row:2}#modal.opening-screen [data-modal-dir=down]{grid-column:2;grid-row:2}#modal.opening-screen [data-modal-dir=right]{grid-column:3;grid-row:2}
+ #modal.opening-screen #dialog-b{grid-column:5;grid-row:1/3;align-self:center}#modal.opening-screen #dialog-a{grid-column:6;grid-row:1/3;align-self:center;background:#8c4743}
+ dialog#modal.opening-screen .opening-help{top:6px;right:6px;bottom:auto;left:auto;min-height:44px;height:44px;max-height:44px;padding:6px 10px;font-size:14px;z-index:10}
+ dialog#modal.opening-name .opening-name-board{position:relative;inset:auto;min-height:0;height:auto;padding:58px 10px 12px;display:flex;flex-direction:column;gap:10px;overflow:visible}
+ dialog#modal.opening-name .opening-name-card,dialog#modal.opening-name .opening-name-tools,dialog#modal.opening-name .opening-keyboard{position:relative;inset:auto;width:100%;height:auto;min-height:0;padding:10px;box-sizing:border-box}
+ dialog#modal.opening-name .opening-name-card{display:flex;flex-wrap:wrap;gap:8px}
+ dialog#modal.opening-name .standing-portrait{width:64px;height:80px;flex:0 0 64px}
+ dialog#modal.opening-name .opening-name-card label{font-size:16px;flex:1;min-width:0;gap:6px}
+ dialog#modal.opening-name input{width:100%;max-width:100%;min-width:0;min-height:44px;font:700 18px/1.4 system-ui,sans-serif}
+ dialog#modal.opening-name #name-error{position:static;flex-basis:100%;font-size:16px;margin:0}
+ dialog#modal.opening-name .opening-name-tools{display:flex;flex-wrap:wrap;gap:8px}
+ dialog#modal.opening-name .opening-name-tools>span{font-size:16px}
+ dialog#modal.opening-name .name-suggestions{flex-basis:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+ dialog#modal.opening-name .opening-keyboard{display:grid;grid-template-rows:auto auto;gap:10px}
+ dialog#modal.opening-name .name-key-grid{grid-template-columns:repeat(5,minmax(44px,1fr));grid-template-rows:none;gap:4px}
+ dialog#modal.opening-name .name-key-actions{grid-template-columns:repeat(2,minmax(44px,1fr));gap:6px}
+ dialog#modal.opening-name .name-key-grid button,dialog#modal.opening-name .name-key-actions button,dialog#modal.opening-name .name-suggestions button{min-height:44px;height:auto;min-width:44px;font-size:16px;padding:5px}
+ dialog#modal.opening-screen .opening-textbox{font-size:16px;line-height:1.5;overflow:auto;word-break:keep-all;overflow-wrap:break-word}
+ dialog#modal.opening-screen.opening-world .opening-frame{display:flex;flex-direction:column;overflow:auto}
+ dialog#modal.opening-screen.opening-world canvas{width:100%;height:auto;max-height:calc(var(--mobile-view-height,100dvh) - 126px);object-fit:contain;aspect-ratio:3/2;flex:1 1 auto;min-height:0}
+ dialog#modal.opening-screen.opening-world .opening-map-controls{flex:0 0 108px;min-height:108px}
+ dialog#modal.opening-screen.opening-world>.dialog-controls{display:none!important}
+ .touch-controls{display:flex!important;min-height:104px}.touch-controls .dpad{grid-template-columns:repeat(3,44px);grid-template-rows:repeat(2,44px)}.touch-controls .dpad button{min-width:44px;min-height:44px}
+}
+@media(max-width:350px){dialog#modal.opening-screen>.dialog-controls{grid-template-columns:44px 44px 44px minmax(0,1fr) 64px 64px;padding-inline:4px;gap:2px}dialog#modal.opening-screen>.dialog-controls button{font-size:14px}}
+@media(max-width:820px),(any-pointer:coarse){
+ dialog#modal.opening-screen:not(.opening-name):not(.opening-world) #modal-content{display:grid;place-items:center}
+ dialog#modal.opening-screen:not(.opening-name):not(.opening-world) .modal-inner{width:100%;height:auto;display:grid;place-items:center}
+ dialog#modal.opening-screen:not(.opening-name):not(.opening-world) .opening-frame{width:min(100%,calc((var(--mobile-view-height,100dvh) - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 126px)*1.5));height:auto;aspect-ratio:3/2;overflow:visible}
+ dialog#modal.opening-screen:not(.opening-name):not(.opening-world) .opening-textbox{min-height:44px;max-height:55%;overflow:auto}
+}
+@media(max-width:820px),(any-pointer:coarse){
+ dialog#modal.opening-screen.opening-world .opening-map-controls{position:relative;inset:auto;display:grid;height:108px;padding:6px;grid-template-columns:44px 44px 44px minmax(0,1fr) 52px 52px;grid-template-rows:44px 44px;gap:4px;background:#173b51}
+ dialog#modal.opening-world .opening-map-controls button{position:static;min-width:44px;min-height:44px;width:44px;height:44px;font-size:18px;padding:4px;pointer-events:auto}
+ dialog#modal.opening-world [data-opening-dir=up]{grid-area:1/2}dialog#modal.opening-world [data-opening-dir=left]{grid-area:2/1}dialog#modal.opening-world [data-opening-dir=down]{grid-area:2/2}dialog#modal.opening-world [data-opening-dir=right]{grid-area:2/3}
+ dialog#modal.opening-world .opening-map-controls [data-opening-a]{grid-area:1/6/3/7;align-self:center;width:52px;height:52px}
+ dialog#modal.opening-world .opening-map-controls [data-opening-b]{grid-area:1/5/3/6;align-self:center;width:52px;height:52px;border-radius:50%;background:#2a536b}
+}
