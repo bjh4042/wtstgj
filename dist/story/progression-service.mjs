@@ -153,7 +153,7 @@ export class StoryProgressionService {
    const result=battle.snapshot().outcome;Object.assign(draft,mergeStoryAftermath(draft,battle.aftermath(),this.#catalog));
    if(result==='lost')recoverAfterLoss(draft,this.#catalog,this.#economyHost,battleId);
    if(result==='won'){
-    if(isPost20260927(this.#catalog.encounterContract))stagedTrainerPrize20260927(draft,t,party,battleId,this.#contract,this.#catalog.economyPolicy);
+    if(isPost20260927(this.#catalog.encounterContract)&&!this.#catalog.encounterContract.retainedTrainerRewardIds?.includes(trainerId))stagedTrainerPrize20260927(draft,t,party,battleId,this.#contract,this.#catalog.economyPolicy);
     else candidatePrize(draft,t,party,battleId,result,this.#catalog.economyPolicy??undefined);
     add(draft.progress.defeatedTrainers,trainerId);if(t.kind==='elite')add(draft.progress.leagueWins,trainerId);
     this.#leagueCheckpoint(draft);return true;

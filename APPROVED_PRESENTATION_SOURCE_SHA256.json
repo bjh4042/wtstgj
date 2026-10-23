@@ -1,0 +1,619 @@
+{
+  "scope": "Selected new presentation media; no private provider logs or absolute source paths",
+  "files": [
+    {
+      "path": "dist/assets/approved-surf/action_player_male_front_surf_rider-2x.webp",
+      "sha256": "fa36b4dee82d5ac6ac6bde92db7e9d45b851ad6599ee990395803145bd45d692",
+      "sourceSha256": "dd0a76772a1414c34802c1792ac0d8edfb581b962814e2d00ebfc545eb65a77a",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_front_surf_rider-3x.webp",
+      "sha256": "c83f4631e86cf190ed717a6822c295db090c4ac25d6436a41c2698cec0d3ff09",
+      "sourceSha256": "dd0a76772a1414c34802c1792ac0d8edfb581b962814e2d00ebfc545eb65a77a",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_right_surf_rider-2x.webp",
+      "sha256": "c671b4b680aedd7475181dee2de5eb88350743580fe30e241eb7b812f0067773",
+      "sourceSha256": "d02efe4a1f14e0adabc869abe0cd15abbeb0ce43b3dbb1211bf4f39b93caa565",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_right_surf_rider-3x.webp",
+      "sha256": "94ad9fc93ce136972ad03d0d5f9884b3cda2ca830e074a981f58a5d463845a29",
+      "sourceSha256": "d02efe4a1f14e0adabc869abe0cd15abbeb0ce43b3dbb1211bf4f39b93caa565",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_left_surf_rider-2x.webp",
+      "sha256": "5ea320fdb146096ccf5c5b00135155b765732b98b0cb750157fc4edf07fbafd9",
+      "sourceSha256": "48b62ee5185517113b4dcf504d48ac5179d285a903b5928d67727f1e6406ea05",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_left_surf_rider-3x.webp",
+      "sha256": "62251eb86baa12416fe2dc74794a575b9ec0fb20b9a1595f3d8f5599aa95835d",
+      "sourceSha256": "48b62ee5185517113b4dcf504d48ac5179d285a903b5928d67727f1e6406ea05",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_back_surf_rider-2x.webp",
+      "sha256": "0f772dc72c64578245b07a273458ba0f1dd642aa115265ee82577201bda7600e",
+      "sourceSha256": "8c4ba63b92d4287f07c658d5e51e8f6a978c693de177193dafbf081a19a68866",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_back_surf_rider-3x.webp",
+      "sha256": "ea140da0ca6158fe2ce12ac6968cf7030594db33734fcb866a041bd21fa04cdf",
+      "sourceSha256": "8c4ba63b92d4287f07c658d5e51e8f6a978c693de177193dafbf081a19a68866",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_front_surf_rider-2x.webp",
+      "sha256": "467e0dc161bedb03a71e9324da8e4fc0ecc12d17901a40fb2e86f00003f09856",
+      "sourceSha256": "01227fa0884530738cbb695c33a286aa4e1002462eee16c185ab5766cc9205de",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_front_surf_rider-3x.webp",
+      "sha256": "5a0af6bf7d408c07a687f2aedc67d8cbfb573bd1d229fd511a973efa85f0c77f",
+      "sourceSha256": "01227fa0884530738cbb695c33a286aa4e1002462eee16c185ab5766cc9205de",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_right_surf_rider-2x.webp",
+      "sha256": "b0d4a2667c6de4eb22e9ab71d25b30d5fff6cd57230ac688c35b354fedd977e7",
+      "sourceSha256": "66ec3565d4a9d65685ef894fe521d633158b2160ec5ee22f035e9e9cb7b1b5a6",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_right_surf_rider-3x.webp",
+      "sha256": "a6e4570265aef5b760e8b47561c799000774262f14b9e112235362e09a19cdfb",
+      "sourceSha256": "66ec3565d4a9d65685ef894fe521d633158b2160ec5ee22f035e9e9cb7b1b5a6",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_left_surf_rider-2x.webp",
+      "sha256": "ac750e9ef3acaf79defb1a0c538355ab50abafce9aa456a3fa773ef123f648f8",
+      "sourceSha256": "cef85fd87171bc49ab57b47d9beea908fc396bf6955102d6595bbbe0c3e4a6b6",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_left_surf_rider-3x.webp",
+      "sha256": "b572fd5a88256ce3828bf0e373740fddeb61b41febfb9f3e772f90483e464d74",
+      "sourceSha256": "cef85fd87171bc49ab57b47d9beea908fc396bf6955102d6595bbbe0c3e4a6b6",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_back_surf_rider-2x.webp",
+      "sha256": "c8c8d3663064922d32ec09bffd2ccc3563a7c421d97af05fb5c5b7fd3bbbc6e5",
+      "sourceSha256": "76c5ced989e8b46758a1c0559ab1461f5346b7caa954ca2f28d2ee184612cf30",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_back_surf_rider-3x.webp",
+      "sha256": "acd8e9a62686d105d3ab97c5b592d874f836189a750db03a5e6354c214d9cd99",
+      "sourceSha256": "76c5ced989e8b46758a1c0559ab1461f5346b7caa954ca2f28d2ee184612cf30",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/board-2x.webp",
+      "sha256": "8fa6e07e98a62e2ed76af01576aae35deb828c4a2a1f19d8462de67482e4bfc2",
+      "sourceSha256": "b131c581e7b6e4afd2a6911dcbc597966a453fd9b5af2bf4b2ade0b91375d53c",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-surf/board-3x.webp",
+      "sha256": "c152bf3d6b1a2b8fd2a2a24d7f7380503d0fcb39736846e97f884720cf5b31f2",
+      "sourceSha256": "b131c581e7b6e4afd2a6911dcbc597966a453fd9b5af2bf4b2ade0b91375d53c",
+      "transform": "source anchored aspect-preserving high-quality downsample; lossless WebP",
+      "selection": "ROOT_SELECTED_FINAL_ART"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/BOMI.webp",
+      "sha256": "659695f67c3af8ded959fe490120dcb5314c07dfc619c2f3e26269f7e89bd4ec",
+      "sourceSha256": "5a8a8cb025ea9aa7e2f0cf6067b23ebd0a15b1b72075285d3661069fa58b58c0",
+      "sourceId": "BOMI",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DOCTOR_CHAE.webp",
+      "sha256": "e8fbf9f76e1fd98fe05e390d14c7440a99b0929be34696548bc9fac65ea2f9d3",
+      "sourceSha256": "26ff80ca0d0e91fc9b930ff7f3962e71911b25c12e0beb2bf27989eabd52b082",
+      "sourceId": "DOCTOR_CHAE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DOCTOR_YOON.webp",
+      "sha256": "04ad00f0341bcd90218b5ab69a036a2a5112aaab720e09039f974c379340af90",
+      "sourceSha256": "2eddb672d227fbed77015b6b92cffe60135b6655ff6a11263b5277979a3d2154",
+      "sourceId": "DOCTOR_YOON",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/EUNMI.webp",
+      "sha256": "c2b9ed5d4d797a1cc9db44969603c3b145c47dfdf61fe4a7b3c117dfad9cc60d",
+      "sourceSha256": "02ed64b8c7d45d9c7a1ae781b30bc7b4250d9ab8d79aeaa62ef586b2b38ccb53",
+      "sourceId": "EUNMI",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/HARIN.webp",
+      "sha256": "4739fde8b542505b1a336bc7c9b00f79eb74a78875c395ecc673d032782fe373",
+      "sourceSha256": "c0a525ed6e53aa4ceea58caf8088c689885e7e1ce134776b71a144751eeb7771",
+      "sourceId": "HARIN",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/HWIGYEONG.webp",
+      "sha256": "fbf1395ccb6ffb84560a6d1a83012ed13b77bfc3710581513aec4299a75d8011",
+      "sourceSha256": "1f498b9f809b6b1c2d5537784b10a7b02efc9af03ba9653d25afeb199aec1a3d",
+      "sourceId": "HWIGYEONG",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JEONGUI.webp",
+      "sha256": "02a74314d7c42547deebe76c7c021b149fca44327665529943549b327579701a",
+      "sourceSha256": "5224c9bcac574233edf63674c557874a8146176be33c10ed3391de458986380b",
+      "sourceId": "JEONGUI",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JINSEONG.webp",
+      "sha256": "439278a7767acf7f86db1dbff0c75d571f79309a308f58e75cf76096dbc52601",
+      "sourceSha256": "3791698ddb7baea9f72fa0f79ed9b3d2fe5a3608ce87da92fbabc70864e303dd",
+      "sourceId": "JINSEONG",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JUHYEOK.webp",
+      "sha256": "76ed9cfb32f02b8cacd858bea0efdacf67e34a4d784e2b16d198efcd47a3c5ca",
+      "sourceSha256": "4b93ca45399792234845b93eeece0261521826448e9c44777598fcffb32a5129",
+      "sourceId": "JUHYEOK",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JUNHO.webp",
+      "sha256": "44c215f62cf9d78e4fe5090aec722474313da9188fe6daeb996f44a952c794f0",
+      "sourceSha256": "7a92bec41c27d42a10ba5d02d929e9d8d28402d3167442786c08161bc40721a2",
+      "sourceId": "JUNHO",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JUNSEOK.webp",
+      "sha256": "8d56bd702e221be762c1b623152fa9903d26b09c804f4437e0f7c37e8a1ffe7c",
+      "sourceSha256": "9bd6d4ee4ac6c3ebd3e721d916915f9a39e8eec47256415ede2f9c2d7f454b42",
+      "sourceId": "JUNSEOK",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/KANGMIN.webp",
+      "sha256": "432b82983ffe6bfb0f5c09ceb2f14b7bd135dde1889f77651ccba3b1e7eb405b",
+      "sourceSha256": "23c456717b298971ad38bb49f96afdd8a2052b87539a17c5ba2168ad339ae92a",
+      "sourceId": "KANGMIN",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/MYEONGJU.webp",
+      "sha256": "e5762c978cbf4a1158b315da3c90f8bd8aa2bb0e03aee3821404c598af63efce",
+      "sourceSha256": "267ef5dc48a1749708f3066aa38beb4ee076bd523eb88ba4cdb03817ac189d66",
+      "sourceId": "MYEONGJU",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/PLAYER_FEMALE.webp",
+      "sha256": "81dc259509ead3d6e83374ba3bda70019d2e8e63d8156b109b31fcdd9d3f06cb",
+      "sourceSha256": "6778b316d9492d4e80f2de468eadc70a5b3284b5307b12eff43b1ebbdd390f05",
+      "sourceId": "PLAYER_FEMALE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/PLAYER_MALE.webp",
+      "sha256": "6a9affbb6ecc6b16482fe2caee6ebad104d444a8f6bcb9b25677948243560eaf",
+      "sourceSha256": "c0a9c4bc14a2ed6ebada337ba6c35b7a3321cbb0ba621083370beacf3d9475f3",
+      "sourceId": "PLAYER_MALE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SIYOON.webp",
+      "sha256": "c5d405f8f47542a6f864d12e58562aa1462e67319562d97c19df0d43d996fd6b",
+      "sourceSha256": "00f5a827ad5dec03ea698e91fef207052a4587d9d778e1be88ee23217d442e6a",
+      "sourceId": "SIYOON",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/USANG.webp",
+      "sha256": "85b6447c74dc5c0b916bf0d3dcbb52f1b562cf0a173c1f37d0efaceeaab52d63",
+      "sourceSha256": "8423d5037ba5d6442952e560853c63a57578c62df631afcbee7fef335df535ae",
+      "sourceId": "USANG",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/YEJI.webp",
+      "sha256": "b17d5c3ecef672d7bcedc3002f556e38a903cda10a7a34eef0395a91442c35ff",
+      "sourceSha256": "caa506b2683a909f5be489092084038401381bce5b5857e2f988881861caab60",
+      "sourceId": "YEJI",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/YOUNGJIN.webp",
+      "sha256": "0b05aa1655add9cde2656b003b4f562285bac3ace200ce58f35a414d5279885a",
+      "sourceSha256": "77ec3c46f313e0dc61843ff3a4a9662d704676526ce05b8272eaa56da8df1ca3",
+      "sourceId": "YOUNGJIN",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/YUNWOO.webp",
+      "sha256": "45877792d14c46dbfeb9f69de82df4c29321dd0c9692a8e8e3def81bbca798da",
+      "sourceSha256": "36d86c2afaf1c46485b1cdeb25877d0cdfed4cd991eaac48b1ac32036d38e35f",
+      "sourceId": "YUNWOO",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_F_BASE.webp",
+      "sha256": "3853bc61354bfbc634aab39236330c7c93d376f34ede15197ea3afb7aa72d970",
+      "sourceSha256": "b8e96c0f060fe3ed10c7cf3566de353ce8d5c913d204880432c47918d3ba1cce",
+      "sourceId": "ANGLER_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_F_VAR01.webp",
+      "sha256": "27ecd05ef7afab0302b5947371fc046e7b975848bd7fb465cab678bc68b6976a",
+      "sourceSha256": "31b5c7f83d439b58cb33ffc0e165f06e3dc3f5103581d0ee69fa203110852d28",
+      "sourceId": "ANGLER_F_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_M_BASE.webp",
+      "sha256": "c7fe44e31fc0c1ea118d9541584c6ee9f2a58c863b953fb849ee3b5ccc457bae",
+      "sourceSha256": "76fea57423e1c6e5c8e504a6144969d9bddc77bde194d988cbf95122f2f29273",
+      "sourceId": "ANGLER_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_M_VAR01.webp",
+      "sha256": "5cd4e31f91f8e62d2d861f4859a5c55db92bb74925a5e3d573c66e667f72a1dd",
+      "sourceSha256": "4944db0c6cdbf12bf1987a161811b56451553958da8ada19ed5b991b5c985998",
+      "sourceId": "ANGLER_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DIVER_F_BASE.webp",
+      "sha256": "a16d7c51c1df1770eb2e1ff2f5c1c3b385522b9106a2d95b97fd388752923bc0",
+      "sourceSha256": "680afebbae941e545253335e52759fdfde109266a503f6e92266c288045e7385",
+      "sourceId": "DIVER_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DIVER_F_VAR01.webp",
+      "sha256": "d39959e2f904755279a60031876d58356d1d244e3727f0ce43dd76db92f94f0b",
+      "sourceSha256": "b85c647591fb5aa5cfe1f6e435cec5e339b6d1fa8b1ea789b49c2196f1291ea0",
+      "sourceId": "DIVER_F_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DIVER_M_BASE.webp",
+      "sha256": "19209ce6bef4e40f671612a8044d6b70af6be5721d34f39750495f77706e0943",
+      "sourceSha256": "36f8b3b52af76e01b9e6814fd91e29e3805309879ac9a970c067849c676ef842",
+      "sourceId": "DIVER_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ECO_EDUCATION_STAFF_M_BASE.webp",
+      "sha256": "90efe66b73a76644553d89625a2db5551a52aba2e35dcd0ae424b699acd1c334",
+      "sourceSha256": "20c919b05b25e2e2ec8b1a85793af3b2fe7ef980747e2d79b54aa8f17f071999",
+      "sourceId": "ECO_EDUCATION_STAFF_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ECO_STUDENT_F_BASE.webp",
+      "sha256": "7494bb05cde5e39226de91f404f9f03cca77ce9ac1c703e77754b82d2c59cd13",
+      "sourceSha256": "81aea3b090fd3114824c81f37f7cce4c32215e55aaee4180ca28a5e81e11920b",
+      "sourceId": "ECO_STUDENT_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ECO_STUDENT_M_BASE.webp",
+      "sha256": "172f3bca77b92397ac28ce7a2b5badf7887920477f28e4877a82b17a14668f3e",
+      "sourceSha256": "b2fedf5b555c8bf51c094fe29a59c4a112ddb14576371abc2b484c026b0ea1d3",
+      "sourceId": "ECO_STUDENT_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FARMER_F_BASE.webp",
+      "sha256": "5cb3c605b595a70c54ea93c7c3c669a2418c477e2ff7341dca522c489e5a72c3",
+      "sourceSha256": "6cb9d6b2f7663285dcedaf546d75f5a24d69f5667eda2692046fe9bc0d2fbe1f",
+      "sourceId": "FARMER_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FARMER_M_BASE.webp",
+      "sha256": "662e939bee770ac3f31f705bc839fe3f1d6a7df5708dda38ecaf2b7e910c43ab",
+      "sourceSha256": "3657636c4bda8177ee5bb5e8db547f098e94a84ac2545887f7540ec3f15115a0",
+      "sourceId": "FARMER_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FARMER_M_VAR01.webp",
+      "sha256": "ea9f17a3f3fcbc1bb05bd30679a68331a3040c01c2575f3bab099f5c565d10e6",
+      "sourceSha256": "612b455fec05f71e77d42d093049e87a1b863459be900426b7ecdf9fa05ee270",
+      "sourceId": "FARMER_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FIELD_RESEARCH_ASSISTANT_F_BASE.webp",
+      "sha256": "59d2da28a7b6d9e52046d06dbc48bc86155e552b54ca077b3026e055dc54e96a",
+      "sourceSha256": "42cc8b8d3a934f1d8ad242dc9772ba2d6bd7dbe69b10c0de2a77142fc330c7c3",
+      "sourceId": "FIELD_RESEARCH_ASSISTANT_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FIELD_RESEARCH_ASSISTANT_M_BASE.webp",
+      "sha256": "253cb19143998ebe6eaebc01071694be98756f4b1128084c86efd9b7450bbc02",
+      "sourceSha256": "bb9fdaf750b8b14c1c7ab8249917ee0d1348c3d5448031de55f0c05d9115427d",
+      "sourceId": "FIELD_RESEARCH_ASSISTANT_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FISHER_F_BASE.webp",
+      "sha256": "77d1c000578393e0173542a3cac55d0930675293512316abfd2d42f84cba9840",
+      "sourceSha256": "eef8d74a3b2e076edfcf2315abeb756c4bcb0ab2d42901c5c73648552918d595",
+      "sourceId": "FISHER_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FISHER_M_BASE.webp",
+      "sha256": "1ca48c4412fd54dfe405d87111ebe7cdb67fc12b1ba7c56284afa5f830d806df",
+      "sourceSha256": "99fba841dce07640463dbbf48370a2df6ec2ac6b06b665282ee60d3ca57df412",
+      "sourceId": "FISHER_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FISHER_M_VAR01.webp",
+      "sha256": "792a4c38ba7bdc608f852254673e98ad311113f88d34abe6ca27b8f8f053be5a",
+      "sourceSha256": "0a66cd8100b1fa46c47f54864426594b178bd17a06fbd0f5e842892b304e3632",
+      "sourceId": "FISHER_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_F_BASE.webp",
+      "sha256": "8e4a385678c94de9d184b06af6e6e6826dd269954c8b1cff450b71a1dfe1d97f",
+      "sourceSha256": "4d6da839e09f76ab31206beb4c01bf7cde58eb18c450e9c950edee54f08fb618",
+      "sourceId": "LOCAL_RESIDENT_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_F_VAR01.webp",
+      "sha256": "4f653798fe9994cc49775f28e79db8da6bf302d0a014bb447f45d91ddf45dd3c",
+      "sourceSha256": "c4deb24f25606e06ae835f8f543d025e6d5a819eb23142732946ca47ca11c1cc",
+      "sourceId": "LOCAL_RESIDENT_F_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_F_VAR02.webp",
+      "sha256": "f35f840f786f4de7e4f452b92c1d15711201bbead52356d8a395235aa5d568c4",
+      "sourceSha256": "abbdcd229e5c8f3ec93ff0bfef947331c0c3ae5bb3d0b346c4b7666b90c517c0",
+      "sourceId": "LOCAL_RESIDENT_F_VAR02",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_M_BASE.webp",
+      "sha256": "30a391b78f1d8bfa96e4b88757d4687f8b879bbc2a447da78f12472b1d446a89",
+      "sourceSha256": "0e2429e2832cbd588362a6c7929baa0eba427d765a0577692d3e230bcfe89996",
+      "sourceId": "LOCAL_RESIDENT_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_M_VAR01.webp",
+      "sha256": "e67874bed86258afa83ff75e9bdc51f090fe606bfd3e5f0989a5d772be36ec60",
+      "sourceSha256": "0ad65b27057b7c4d425737b4d4bdba1df6735f6446c88e2af2aefd9aed7c7921",
+      "sourceId": "LOCAL_RESIDENT_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_M_VAR02.webp",
+      "sha256": "86563fd9f6b1dab0e322d44892ba12ca47bb4bbda35dc9cfbdf38b05060875c9",
+      "sourceSha256": "b86182d8b8eb175e7a1d050a2170bede34f1e6aa803beeabfec9ac0b12b6ea1f",
+      "sourceId": "LOCAL_RESIDENT_M_VAR02",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_WALKER_F_VAR01.webp",
+      "sha256": "212db10d2f62c372d7edf8fbf04f2cdd26a5bafb3ef5cc46a261a2c70ac7cde0",
+      "sourceSha256": "c67ca599b6c530f08f60c3e3f4149ea2ec5f28ebdee2c95dcb20f53eaa8d5d3c",
+      "sourceId": "LOCAL_WALKER_F_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_WALKER_M_VAR01.webp",
+      "sha256": "330b5688ef0249d49984f1abf9dd019a22601284322cae0acd83fbe55d4dc93d",
+      "sourceSha256": "85704e706ab83478a7040c05acabdc7c6ee8e79c9bb833e66e587546bb2c0092",
+      "sourceId": "LOCAL_WALKER_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_HOBBYIST_F_VAR01.webp",
+      "sha256": "7887061a260fa7bfb4838485439b59f55933bbee94c88542a7836424b2f5ece9",
+      "sourceSha256": "791305c8c0eb9e96248259c24a78b8b729d7dd4640b7555900657bab9116dcb8",
+      "sourceId": "NATURE_HOBBYIST_F_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_HOBBYIST_M_VAR01.webp",
+      "sha256": "343d2b55966c768e8c60eaef6004c92b7bd2305031bc050e08e25373145e98ac",
+      "sourceSha256": "c347c61b9547bde0e4625fd5c38a0e2d013ae4131e1b8339fbce83e74b763e7b",
+      "sourceId": "NATURE_HOBBYIST_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_PHOTOGRAPHER_F_VAR01.webp",
+      "sha256": "4bbd34f0a9ee4227a795e213b7e720e8c9b9a40c2065d2a861c1e5c175224818",
+      "sourceSha256": "71fc744d3bfd808bd5cecef1dd7de53d6d01f3c2328c40b3d7570876ab4c0efd",
+      "sourceId": "NATURE_PHOTOGRAPHER_F_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_PHOTOGRAPHER_M_VAR01.webp",
+      "sha256": "a90d2e09816901d90fab235e163156ab51e1d30b9cec567c51f6d806983084a2",
+      "sourceSha256": "94d0e762d29c8a3780d348ee9d146432dbaf5904e14126740dc5d66cd39f0636",
+      "sourceId": "NATURE_PHOTOGRAPHER_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_F_BASE.webp",
+      "sha256": "799dc94edead213a40bc4dd0bdf6e1ba2ba6477bcc6a18e2abb059f79e61be52",
+      "sourceSha256": "c0beec1e45c315bd49135ecae47579492e04c4afd0243558f32712106ca836f9",
+      "sourceId": "OUTDOOR_EXPLORER_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_F_VAR01.webp",
+      "sha256": "5702806848c308640a7cee74c104fd5c9e4bfe1688cf29977b25b9dfbf976f5c",
+      "sourceSha256": "0cf458cedfd7b7a8fe43f11fb4d984c5bc518c2b80d414284d05876f03f9176c",
+      "sourceId": "OUTDOOR_EXPLORER_F_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_M_BASE.webp",
+      "sha256": "4371c04df2f6982f9a417e34040ab536a3f4d60572e25ba4af96fcb07354409a",
+      "sourceSha256": "94c31f72f10598f289c5493b3374873096ba4c9a8dcad80c58f552d79d51b0ea",
+      "sourceId": "OUTDOOR_EXPLORER_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_M_VAR01.webp",
+      "sha256": "0ec58550c950649da70b3e214798d1d3c9008544c863588e93c8aa5e83a31004",
+      "sourceSha256": "6d65db80a1ed1cd43487049ccf21cbdebf1435bc4ff7f7952db27187fa026fbb",
+      "sourceId": "OUTDOOR_EXPLORER_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SAFETY_RESCUE_F_BASE.webp",
+      "sha256": "88b6fa641ea7f3fb8329a5480a2a4b68a4fafbf723a2cde42ea6122d91887c7d",
+      "sourceSha256": "d0fc3393d9abf10442b1cd05a47f29d93b686cfab51e9bde3cce7937787abfd0",
+      "sourceId": "SAFETY_RESCUE_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SAFETY_RESCUE_M_BASE.webp",
+      "sha256": "7b15abfdd626749c487149ceab9cf620aa141de69522a29de6a913dad5e7efa6",
+      "sourceSha256": "8bf8c49a623eb8421e17767cacf831a2bc2af06b174b2cd81bcda618bdfed6a3",
+      "sourceId": "SAFETY_RESCUE_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SAFETY_RESCUE_M_VAR01.webp",
+      "sha256": "e51248977af2f0844d068ccde6cbbc87f33d9891f44d8538b613a6c78cbea689",
+      "sourceSha256": "ebcfe6d1c87a8984741d6e9015f0e51e9d40f34c651a61b0fb0bb5f09378bc46",
+      "sourceId": "SAFETY_RESCUE_M_VAR01",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SPORTS_UNIFORM_BLACK_F_BASE.webp",
+      "sha256": "ddeb453a9d11ebb868eaf8a4cf1d3c6b29c1029448bbad7553927f1f05fbc8fa",
+      "sourceSha256": "8d4372933d1ef25956141c2146b3fef419d8b63cce167115daf5d52ad8c2e2ff",
+      "sourceId": "SPORTS_UNIFORM_BLACK_F_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SPORTS_UNIFORM_BLACK_M_BASE.webp",
+      "sha256": "794ab95dd730bba674192bf0280a70d8b3efb657dd0700813eca83fd3ddb227a",
+      "sourceSha256": "a5f35af66955bed6bd9fddc8cda961b40d349dc72518f5f759846c88cd2e8fc5",
+      "sourceId": "SPORTS_UNIFORM_BLACK_M_BASE",
+      "transform": "approved FRONT alpha bounds, uniform contain max384x512 WebP",
+      "selection": "W03/W04 selected registry snapshot0017"
+    },
+    {
+      "path": "dist/assets/approved-intro/canonicalHarin.png",
+      "sha256": "c0a525ed6e53aa4ceea58caf8088c689885e7e1ce134776b71a144751eeb7771",
+      "sourceSha256": "c0a525ed6e53aa4ceea58caf8088c689885e7e1ce134776b71a144751eeb7771",
+      "sourceId": "RIVAL_HARIN_candidate_v3",
+      "transform": "byte-identical selected original",
+      "selection": "W03"
+    },
+    {
+      "path": "dist/assets/approved-intro/canonicalHarin_dialogue.png",
+      "sha256": "c1ad2a8c1948871f8bdbf27b390ad0396a3869f08156eba67b10fd13650207f9",
+      "sourceSha256": "c1ad2a8c1948871f8bdbf27b390ad0396a3869f08156eba67b10fd13650207f9",
+      "sourceId": "PORTRAIT_HARIN",
+      "transform": "byte-identical selected original",
+      "selection": "DIALOGUE_PORTRAITS20"
+    }
+  ]
+}

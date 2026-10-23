@@ -33,6 +33,7 @@ export function adoptPlacementPosition(input,h){
   if(matches(d.trainerPlacementCollisions))recoverLocalPosition(s,h,d.trainerPlacementVersion,'NEW_TRAINER_ROUTE_COLLISION');
   w.trainerPlacementApproval=d.trainerPlacementVersion;
  }
+ if(matches(d.privateSceneCollisions))recoverLocalPosition(s,h,d.privateSceneVersion,'PRIVATE_SCENERY_LOCAL_COLLISION');
  return s;
 }
 export function validateWorldLocation(s,h){validateWorldState(s);if(!s.world)return;const p=positionCell(s.position),m=h?.world?.maps[s.position.scene];if(!m||!worldStageAccess(s,h.story,m.stageId)||!h.canOccupy(s,m.id,p.x,p.y))throw Error('World save has invalid or locked landing');if(s.world.visitedMaps.some(id=>!h.world.maps[id])||s.world.visitedHubs.some(id=>!h.hubs[id])||s.world.puzzles.some(id=>!Object.values(h.world.maps).some(m=>m.puzzle?.id===id)))throw Error('Unknown world geometry')}

@@ -5,6 +5,7 @@ import {LEGACY_CONTENT,CANONICAL_CONTENT} from './content-namespaces.mjs';
 import {evaluateCanonicalMigration} from './migration-eligibility.mjs';
 import {validateSave} from '../model.mjs';
 import {migrateSave,requireCurrentRuntime,COMPATIBILITY_FORMAT} from './save-migration.mjs';
+import {gameplayReleaseFor} from './gameplay-release.mjs';
 import {sha256,stableJSON} from './codec.mjs';
 export const SAVE_SLOTS=Object.freeze(['SLOT_1','SLOT_2','SLOT_3']);
 export const SLOT_PREFIX='geoje.monsters.slots.v1.';
@@ -13,7 +14,7 @@ const slotKey=(slot,snapshot)=>{if(!SAVE_SLOTS.includes(slot))throw Error('Unkno
 const isCanonicalSave=value=>[CANONICAL_TEST_SAVE,CANONICAL_BATTLE_SAVE,CANONICAL_STORY_SAVE].includes(value?.format);
 const validateCanonical=(value,catalog)=>value?.format===CANONICAL_STORY_SAVE?validateCanonicalStorySave(value,catalog):value?.format===CANONICAL_BATTLE_SAVE?validateCanonicalBattleSave(value,catalog):validateCanonicalTestSave(value,catalog);
 export function encodeSlot(data){return JSON.stringify({data,checksumAlgorithm:'SHA-256',checksum:sha256(stableJSON(data))})}
-export function decodeSlot(raw,slot,{canonicalCatalog=null,allowCandidate=false}={}){
+export function decodeSlot(raw,slot,{canonicalCatalog=null,canonicalCatalogFor=null,allowCandidate=false}={}){
  const envelope=JSON.parse(raw);
  if(envelope.checksumAlgorithm!=='SHA-256'||sha256(stableJSON(envelope.data))!==envelope.checksum)throw Error('Save checksum mismatch');
  const data=envelope.data;
@@ -21,8 +22,10 @@ export function decodeSlot(raw,slot,{canonicalCatalog=null,allowCandidate=false}
  if(data?.format!==COMPATIBILITY_FORMAT||data.compatibilityVersion!==1||data.profile?.slotId!==slot)throw Error('Save slot/format mismatch');
  if(isCanonicalSave(data.runtime)){
   if(data.contentNamespace!==CANONICAL_CONTENT.contentNamespace||data.contentVersion!==CANONICAL_CONTENT.contentVersion)throw Error('Canonical slot namespace/version mismatch');
-  if(!canonicalCatalog){const error=Error('Canonical slot requires a canonical session catalog');error.code='CATALOG_NOT_AVAILABLE';throw error}
-  validateCanonical(data.runtime,canonicalCatalog);
+  gameplayReleaseFor(data.runtime);
+  const catalog=canonicalCatalogFor?canonicalCatalogFor(data.runtime):canonicalCatalog;
+  if(!catalog){const error=Error('Canonical slot requires a canonical session catalog');error.code='CATALOG_NOT_AVAILABLE';throw error}
+  validateCanonical(data.runtime,catalog);
  }else if(data.runtime){
   if(data.contentNamespace&&data.contentNamespace!==LEGACY_CONTENT.contentNamespace)throw Error('Legacy slot namespace mismatch');
   if(data.contentVersion&&data.contentVersion!==LEGACY_CONTENT.contentVersion)throw Error('Legacy slot content version mismatch');
@@ -32,13 +35,14 @@ export function decodeSlot(raw,slot,{canonicalCatalog=null,allowCandidate=false}
  }
  return structuredClone(data);
 }
-export function createSaveSlotStore(storage,{canonicalCatalog=null,legacyCatalog=null,allowCandidate=false}={}){
- const decode=(raw,slot)=>decodeSlot(raw,slot,{canonicalCatalog,allowCandidate});
+export function createSaveSlotStore(storage,{canonicalCatalog=null,canonicalCatalogFor=null,legacyCatalog=null,allowCandidate=false,readOnlyLoads=false}={}){
+ const catalogFor=runtime=>{gameplayReleaseFor(runtime);return canonicalCatalogFor?canonicalCatalogFor(runtime):canonicalCatalog};
+ const decode=(raw,slot)=>decodeSlot(raw,slot,{canonicalCatalog,canonicalCatalogFor,allowCandidate});
  function prepare(input,profile,slot){
   const value=typeof input==='string'?JSON.parse(input):input;
   if(value?.candidatePolicyId&&!allowCandidate)throw Error('Candidate save is prohibited in normal slots');
   if(isCanonicalSave(value)){
-   const runtime=validateCanonical(value,canonicalCatalog);
+   const runtime=validateCanonical(value,catalogFor(value));
    if(value.format===CANONICAL_STORY_SAVE)return {format:COMPATIBILITY_FORMAT,compatibilityVersion:1,contentNamespace:CANONICAL_CONTENT.contentNamespace,contentVersion:CANONICAL_CONTENT.contentVersion,profile:{...profile,slotId:slot,playerName:runtime.player.name},runtime,sourceSnapshot:structuredClone(value),migration:{sourceFormat:CANONICAL_STORY_SAVE,sourceNamespace:'canonical',warnings:[],canActivate:false,canActivateCanonicalBattle:true,canActivateCanonicalStory:true,canonicalGameplayReady:false}};
    if(value.format===CANONICAL_BATTLE_SAVE)return {format:COMPATIBILITY_FORMAT,compatibilityVersion:1,contentNamespace:CANONICAL_CONTENT.contentNamespace,contentVersion:CANONICAL_CONTENT.contentVersion,profile:{...profile,slotId:slot,playerName:runtime.player.name},runtime,sourceSnapshot:structuredClone(value),migration:{sourceFormat:CANONICAL_BATTLE_SAVE,sourceNamespace:'canonical',warnings:[],canActivate:false,canActivateCanonicalBattle:true,canonicalGameplayReady:false}};
    return {format:COMPATIBILITY_FORMAT,compatibilityVersion:1,contentNamespace:CANONICAL_CONTENT.contentNamespace,contentVersion:CANONICAL_CONTENT.contentVersion,profile:{...profile,slotId:slot,playerName:runtime.player.name},runtime,sourceSnapshot:structuredClone(value),migration:{sourceFormat:CANONICAL_TEST_SAVE,sourceNamespace:'canonical',warnings:[],canActivate:false,canActivateCanonicalTest:true,canonicalGameplayReady:false}};
@@ -97,13 +101,13 @@ export function createSaveSlotStore(storage,{canonicalCatalog=null,legacyCatalog
  }
  function load(slot,{backup=false,legacyFallback=true}={}){
   slotKey(slot,'primary');
-  if(!backup&&peek(slot)===null&&legacyFallback){const initial=bootstrapLegacy(slot);if(initial)return initial}
+  if(!backup&&peek(slot)===null&&legacyFallback){if(readOnlyLoads){for(const key of slot==='SLOT_1'?LEGACY_SAVE_KEYS:[]){const raw=storage.getItem(key);if(raw!==null){const value=migrateSave(raw,{slotId:slot,playerName:storage.getItem('geoje.monsters.name')??'여행자'});if(value.runtime)return value}}}else{const initial=bootstrapLegacy(slot);if(initial)return initial}}
   const keys=backup?['lastKnownGood']:['primary','lastKnownGood'];let error=null;
   for(const snapshot of keys){const raw=storage.getItem(slotKey(slot,snapshot));if(raw===null)continue;
-   try{const value=decode(raw,slot);revisions.set(slot,peek(slot));if(snapshot==='lastKnownGood')value.recovery={source:'lastKnownGood'};return value}catch(e){if(e.code==='CATALOG_NOT_AVAILABLE')throw e;archive(raw);error=e}
+   try{const value=decode(raw,slot);revisions.set(slot,peek(slot));if(snapshot==='lastKnownGood')value.recovery={source:'lastKnownGood'};return value}catch(e){if(['CATALOG_NOT_AVAILABLE','UNKNOWN_GAMEPLAY_RELEASE','GAMEPLAY_RELEASE_UNAVAILABLE'].includes(e.code))throw e;if(!readOnlyLoads)archive(raw);error=e}
   }
   if(error)throw error;
-  if(backup&&slot==='SLOT_1'&&legacyFallback){const raw=storage.getItem('geoje.monsters.save.v2.backup');if(raw!==null){const key=archive(raw),prepared=migrateSave(raw,{slotId:slot,playerName:storage.getItem('geoje.monsters.name')??'여행자'});prepared.sourceArchiveKey=key;return prepared}}
+  if(backup&&slot==='SLOT_1'&&legacyFallback){const raw=storage.getItem('geoje.monsters.save.v2.backup');if(raw!==null){const key=readOnlyLoads?null:archive(raw),prepared=migrateSave(raw,{slotId:slot,playerName:storage.getItem('geoje.monsters.name')??'여행자'});prepared.sourceArchiveKey=key;return prepared}}
   return null;
  }
  function save(slot,runtime,profile={}){
@@ -111,15 +115,16 @@ export function createSaveSlotStore(storage,{canonicalCatalog=null,legacyCatalog
   const isCanonical=isCanonicalSave(runtime);
   if(!isCanonical&&runtime?.contentNamespace&&![LEGACY_CONTENT.contentNamespace,'work-v2'].includes(runtime.contentNamespace))throw Error('Unknown runtime namespace');
   if(!isCanonical&&runtime?.contentVersion&&runtime.contentVersion!==LEGACY_CONTENT.contentVersion)throw Error('Unknown runtime content version');
-  const clean=isCanonical?validateCanonical(runtime,canonicalCatalog):validateSave(runtime); // Validate before writes.
+  const clean=isCanonical?validateCanonical(runtime,catalogFor(runtime)):validateSave(runtime); // Validate before writes.
   const previousRaw=peek(slot);let previous=null;
   if(isCanonical&&slot==='SLOT_1'&&previousRaw===null&&LEGACY_SAVE_KEYS.some(k=>storage.getItem(k)!==null))throw Error('SLOT_1 contains an unmigrated legacy save; choose an empty slot');
   if(previousRaw!==null){
    let header;try{header=JSON.parse(previousRaw).data}catch{}
    if(header?.contentNamespace&&header.contentNamespace!==(isCanonical?CANONICAL_CONTENT:LEGACY_CONTENT).contentNamespace)throw Error('Slot catalog mismatch; use explicit import or an empty slot');
-   try{previous=decode(previousRaw,slot)}catch(error){if(error.code==='CATALOG_NOT_AVAILABLE')throw error;archive(previousRaw)}
+   try{previous=decode(previousRaw,slot)}catch(error){if(['CATALOG_NOT_AVAILABLE','UNKNOWN_GAMEPLAY_RELEASE','GAMEPLAY_RELEASE_UNAVAILABLE'].includes(error.code))throw error;archive(previousRaw)}
   }
   if(previous&&previous.contentNamespace!==(isCanonical?CANONICAL_CONTENT:LEGACY_CONTENT).contentNamespace)throw Error('Slot catalog mismatch; use an explicit import or an empty slot');
+  if(previous&&isCanonical&&gameplayReleaseFor(previous.runtime)!==gameplayReleaseFor(clean))throw Error('Gameplay release mismatch; use explicit replacement');
   const prepared=prepare(isCanonical?clean:runtime,profile,slot);
   if(!previous&&slot==='SLOT_1')for(const key of LEGACY_SAVE_KEYS){const original=storage.getItem(key);if(original!==null){const sourceKey=archive(original);prepared.sourceArchiveKey??=sourceKey}}
   prepared.sourceArchiveKey=previous?.sourceArchiveKey??prepared.sourceArchiveKey??archive(JSON.stringify(runtime));
@@ -136,5 +141,5 @@ export function createSaveSlotStore(storage,{canonicalCatalog=null,legacyCatalog
   return commit(slot,prepared,{expectedRaw:revisions.has(slot)?revisions.get(slot):previousRaw});
  }
  function has(slot){return peek(slot)!==null||(slot==='SLOT_1'&&LEGACY_SAVE_KEYS.some(k=>storage.getItem(k)!==null))}
- return Object.freeze({save,load,importSave,bootstrapLegacy,has,archive,peek,loadSession:(slot,options)=>{const saved=load(slot,options);if(!saved)return null;return createGameSession(saved.runtime,saved.contentNamespace===CANONICAL_CONTENT.contentNamespace?canonicalCatalog:legacyCatalog)},keys:slot=>({primary:slotKey(slot,'primary'),lastKnownGood:slotKey(slot,'lastKnownGood'),temp:slotKey(slot,'temp')})});
+ return Object.freeze({save,load,importSave,bootstrapLegacy,has,archive,peek,loadSession:(slot,options)=>{const saved=load(slot,options);if(!saved)return null;return createGameSession(saved.runtime,saved.contentNamespace===CANONICAL_CONTENT.contentNamespace?catalogFor(saved.runtime):legacyCatalog)},keys:slot=>({primary:slotKey(slot,'primary'),lastKnownGood:slotKey(slot,'lastKnownGood'),temp:slotKey(slot,'temp')})});
 }

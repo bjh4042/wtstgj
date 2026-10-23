@@ -38,7 +38,7 @@ export const INTRO_ART = Object.freeze({
       1066,
       1448
     ],
-    "sourceId": "남자 플레이어 전신(2)",
+    "sourceId": "\ub0a8\uc790 \ud50c\ub808\uc774\uc5b4 \uc804\uc2e0(2)",
     "sourceFamily": "W03"
   },
   "boy_dialogue": {
@@ -66,7 +66,7 @@ export const INTRO_ART = Object.freeze({
       1012,
       1504
     ],
-    "sourceId": "여자 플레이어 전신",
+    "sourceId": "\uc5ec\uc790 \ud50c\ub808\uc774\uc5b4 \uc804\uc2e0",
     "sourceFamily": "W03"
   },
   "girl_dialogue": {
@@ -362,5 +362,33 @@ export const INTRO_ART = Object.freeze({
     ],
     "sourceId": "W02__E1_BED__body__v001",
     "sourceFamily": "W02_INTERIOR_PILOT"
+  },
+  "canonicalHarin": {
+    "src": "./assets/approved-intro/canonicalHarin.png",
+    "sha256": "c0a525ed6e53aa4ceea58caf8088c689885e7e1ce134776b71a144751eeb7771",
+    "width": 1024,
+    "height": 1536,
+    "bounds": [
+      49,
+      16,
+      910,
+      1524
+    ],
+    "sourceId": "RIVAL_HARIN_candidate_v3",
+    "sourceFamily": "W03"
+  },
+  "canonicalHarin_dialogue": {
+    "src": "./assets/approved-intro/canonicalHarin_dialogue.png",
+    "sha256": "c1ad2a8c1948871f8bdbf27b390ad0396a3869f08156eba67b10fd13650207f9",
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      44,
+      49,
+      466,
+      512
+    ],
+    "sourceId": "PORTRAIT_HARIN",
+    "sourceFamily": "DIALOGUE_PORTRAITS20"
   }
 });

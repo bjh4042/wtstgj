@@ -1765,6 +1765,401 @@
       "path": "dist/pwa/icon.svg",
       "bytes": 3895,
       "sha256": "6aedc1c8b097b7762ddf5f963ee20de1771a0ae78c3d63ef4052a3e3ec067477"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_front_surf_rider-2x.webp",
+      "bytes": 23974,
+      "sha256": "fa36b4dee82d5ac6ac6bde92db7e9d45b851ad6599ee990395803145bd45d692"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_front_surf_rider-3x.webp",
+      "bytes": 44648,
+      "sha256": "c83f4631e86cf190ed717a6822c295db090c4ac25d6436a41c2698cec0d3ff09"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_right_surf_rider-2x.webp",
+      "bytes": 20100,
+      "sha256": "c671b4b680aedd7475181dee2de5eb88350743580fe30e241eb7b812f0067773"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_right_surf_rider-3x.webp",
+      "bytes": 37166,
+      "sha256": "94ad9fc93ce136972ad03d0d5f9884b3cda2ca830e074a981f58a5d463845a29"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_left_surf_rider-2x.webp",
+      "bytes": 19994,
+      "sha256": "5ea320fdb146096ccf5c5b00135155b765732b98b0cb750157fc4edf07fbafd9"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_left_surf_rider-3x.webp",
+      "bytes": 37632,
+      "sha256": "62251eb86baa12416fe2dc74794a575b9ec0fb20b9a1595f3d8f5599aa95835d"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_back_surf_rider-2x.webp",
+      "bytes": 18886,
+      "sha256": "0f772dc72c64578245b07a273458ba0f1dd642aa115265ee82577201bda7600e"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_male_back_surf_rider-3x.webp",
+      "bytes": 34836,
+      "sha256": "ea140da0ca6158fe2ce12ac6968cf7030594db33734fcb866a041bd21fa04cdf"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_front_surf_rider-2x.webp",
+      "bytes": 25352,
+      "sha256": "467e0dc161bedb03a71e9324da8e4fc0ecc12d17901a40fb2e86f00003f09856"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_front_surf_rider-3x.webp",
+      "bytes": 47588,
+      "sha256": "5a0af6bf7d408c07a687f2aedc67d8cbfb573bd1d229fd511a973efa85f0c77f"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_right_surf_rider-2x.webp",
+      "bytes": 22344,
+      "sha256": "b0d4a2667c6de4eb22e9ab71d25b30d5fff6cd57230ac688c35b354fedd977e7"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_right_surf_rider-3x.webp",
+      "bytes": 42332,
+      "sha256": "a6e4570265aef5b760e8b47561c799000774262f14b9e112235362e09a19cdfb"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_left_surf_rider-2x.webp",
+      "bytes": 23806,
+      "sha256": "ac750e9ef3acaf79defb1a0c538355ab50abafce9aa456a3fa773ef123f648f8"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_left_surf_rider-3x.webp",
+      "bytes": 44318,
+      "sha256": "b572fd5a88256ce3828bf0e373740fddeb61b41febfb9f3e772f90483e464d74"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_back_surf_rider-2x.webp",
+      "bytes": 21040,
+      "sha256": "c8c8d3663064922d32ec09bffd2ccc3563a7c421d97af05fb5c5b7fd3bbbc6e5"
+    },
+    {
+      "path": "dist/assets/approved-surf/action_player_female_back_surf_rider-3x.webp",
+      "bytes": 39290,
+      "sha256": "acd8e9a62686d105d3ab97c5b592d874f836189a750db03a5e6354c214d9cd99"
+    },
+    {
+      "path": "dist/assets/approved-surf/board-2x.webp",
+      "bytes": 19060,
+      "sha256": "8fa6e07e98a62e2ed76af01576aae35deb828c4a2a1f19d8462de67482e4bfc2"
+    },
+    {
+      "path": "dist/assets/approved-surf/board-3x.webp",
+      "bytes": 36076,
+      "sha256": "c152bf3d6b1a2b8fd2a2a24d7f7380503d0fcb39736846e97f884720cf5b31f2"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/BOMI.webp",
+      "bytes": 31432,
+      "sha256": "659695f67c3af8ded959fe490120dcb5314c07dfc619c2f3e26269f7e89bd4ec"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DOCTOR_CHAE.webp",
+      "bytes": 37860,
+      "sha256": "e8fbf9f76e1fd98fe05e390d14c7440a99b0929be34696548bc9fac65ea2f9d3"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DOCTOR_YOON.webp",
+      "bytes": 43762,
+      "sha256": "04ad00f0341bcd90218b5ab69a036a2a5112aaab720e09039f974c379340af90"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/EUNMI.webp",
+      "bytes": 49446,
+      "sha256": "c2b9ed5d4d797a1cc9db44969603c3b145c47dfdf61fe4a7b3c117dfad9cc60d"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/HARIN.webp",
+      "bytes": 38430,
+      "sha256": "4739fde8b542505b1a336bc7c9b00f79eb74a78875c395ecc673d032782fe373"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/HWIGYEONG.webp",
+      "bytes": 33156,
+      "sha256": "fbf1395ccb6ffb84560a6d1a83012ed13b77bfc3710581513aec4299a75d8011"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JEONGUI.webp",
+      "bytes": 41118,
+      "sha256": "02a74314d7c42547deebe76c7c021b149fca44327665529943549b327579701a"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JINSEONG.webp",
+      "bytes": 32062,
+      "sha256": "439278a7767acf7f86db1dbff0c75d571f79309a308f58e75cf76096dbc52601"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JUHYEOK.webp",
+      "bytes": 30422,
+      "sha256": "76ed9cfb32f02b8cacd858bea0efdacf67e34a4d784e2b16d198efcd47a3c5ca"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JUNHO.webp",
+      "bytes": 39826,
+      "sha256": "44c215f62cf9d78e4fe5090aec722474313da9188fe6daeb996f44a952c794f0"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/JUNSEOK.webp",
+      "bytes": 33826,
+      "sha256": "8d56bd702e221be762c1b623152fa9903d26b09c804f4437e0f7c37e8a1ffe7c"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/KANGMIN.webp",
+      "bytes": 38006,
+      "sha256": "432b82983ffe6bfb0f5c09ceb2f14b7bd135dde1889f77651ccba3b1e7eb405b"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/MYEONGJU.webp",
+      "bytes": 44140,
+      "sha256": "e5762c978cbf4a1158b315da3c90f8bd8aa2bb0e03aee3821404c598af63efce"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/PLAYER_FEMALE.webp",
+      "bytes": 44466,
+      "sha256": "81dc259509ead3d6e83374ba3bda70019d2e8e63d8156b109b31fcdd9d3f06cb"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/PLAYER_MALE.webp",
+      "bytes": 43336,
+      "sha256": "6a9affbb6ecc6b16482fe2caee6ebad104d444a8f6bcb9b25677948243560eaf"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SIYOON.webp",
+      "bytes": 45700,
+      "sha256": "c5d405f8f47542a6f864d12e58562aa1462e67319562d97c19df0d43d996fd6b"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/USANG.webp",
+      "bytes": 39194,
+      "sha256": "85b6447c74dc5c0b916bf0d3dcbb52f1b562cf0a173c1f37d0efaceeaab52d63"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/YEJI.webp",
+      "bytes": 36380,
+      "sha256": "b17d5c3ecef672d7bcedc3002f556e38a903cda10a7a34eef0395a91442c35ff"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/YOUNGJIN.webp",
+      "bytes": 38254,
+      "sha256": "0b05aa1655add9cde2656b003b4f562285bac3ace200ce58f35a414d5279885a"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/YUNWOO.webp",
+      "bytes": 41718,
+      "sha256": "45877792d14c46dbfeb9f69de82df4c29321dd0c9692a8e8e3def81bbca798da"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_F_BASE.webp",
+      "bytes": 30806,
+      "sha256": "3853bc61354bfbc634aab39236330c7c93d376f34ede15197ea3afb7aa72d970"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_F_VAR01.webp",
+      "bytes": 33750,
+      "sha256": "27ecd05ef7afab0302b5947371fc046e7b975848bd7fb465cab678bc68b6976a"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_M_BASE.webp",
+      "bytes": 32180,
+      "sha256": "c7fe44e31fc0c1ea118d9541584c6ee9f2a58c863b953fb849ee3b5ccc457bae"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ANGLER_M_VAR01.webp",
+      "bytes": 34294,
+      "sha256": "5cd4e31f91f8e62d2d861f4859a5c55db92bb74925a5e3d573c66e667f72a1dd"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DIVER_F_BASE.webp",
+      "bytes": 31606,
+      "sha256": "a16d7c51c1df1770eb2e1ff2f5c1c3b385522b9106a2d95b97fd388752923bc0"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DIVER_F_VAR01.webp",
+      "bytes": 30534,
+      "sha256": "d39959e2f904755279a60031876d58356d1d244e3727f0ce43dd76db92f94f0b"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/DIVER_M_BASE.webp",
+      "bytes": 29020,
+      "sha256": "19209ce6bef4e40f671612a8044d6b70af6be5721d34f39750495f77706e0943"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ECO_EDUCATION_STAFF_M_BASE.webp",
+      "bytes": 28720,
+      "sha256": "90efe66b73a76644553d89625a2db5551a52aba2e35dcd0ae424b699acd1c334"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ECO_STUDENT_F_BASE.webp",
+      "bytes": 28804,
+      "sha256": "7494bb05cde5e39226de91f404f9f03cca77ce9ac1c703e77754b82d2c59cd13"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/ECO_STUDENT_M_BASE.webp",
+      "bytes": 36344,
+      "sha256": "172f3bca77b92397ac28ce7a2b5badf7887920477f28e4877a82b17a14668f3e"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FARMER_F_BASE.webp",
+      "bytes": 32882,
+      "sha256": "5cb3c605b595a70c54ea93c7c3c669a2418c477e2ff7341dca522c489e5a72c3"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FARMER_M_BASE.webp",
+      "bytes": 28478,
+      "sha256": "662e939bee770ac3f31f705bc839fe3f1d6a7df5708dda38ecaf2b7e910c43ab"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FARMER_M_VAR01.webp",
+      "bytes": 30270,
+      "sha256": "ea9f17a3f3fcbc1bb05bd30679a68331a3040c01c2575f3bab099f5c565d10e6"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FIELD_RESEARCH_ASSISTANT_F_BASE.webp",
+      "bytes": 26154,
+      "sha256": "59d2da28a7b6d9e52046d06dbc48bc86155e552b54ca077b3026e055dc54e96a"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FIELD_RESEARCH_ASSISTANT_M_BASE.webp",
+      "bytes": 31036,
+      "sha256": "253cb19143998ebe6eaebc01071694be98756f4b1128084c86efd9b7450bbc02"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FISHER_F_BASE.webp",
+      "bytes": 35684,
+      "sha256": "77d1c000578393e0173542a3cac55d0930675293512316abfd2d42f84cba9840"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FISHER_M_BASE.webp",
+      "bytes": 32784,
+      "sha256": "1ca48c4412fd54dfe405d87111ebe7cdb67fc12b1ba7c56284afa5f830d806df"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/FISHER_M_VAR01.webp",
+      "bytes": 33494,
+      "sha256": "792a4c38ba7bdc608f852254673e98ad311113f88d34abe6ca27b8f8f053be5a"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_F_BASE.webp",
+      "bytes": 27000,
+      "sha256": "8e4a385678c94de9d184b06af6e6e6826dd269954c8b1cff450b71a1dfe1d97f"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_F_VAR01.webp",
+      "bytes": 28962,
+      "sha256": "4f653798fe9994cc49775f28e79db8da6bf302d0a014bb447f45d91ddf45dd3c"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_F_VAR02.webp",
+      "bytes": 23478,
+      "sha256": "f35f840f786f4de7e4f452b92c1d15711201bbead52356d8a395235aa5d568c4"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_M_BASE.webp",
+      "bytes": 27232,
+      "sha256": "30a391b78f1d8bfa96e4b88757d4687f8b879bbc2a447da78f12472b1d446a89"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_M_VAR01.webp",
+      "bytes": 29274,
+      "sha256": "e67874bed86258afa83ff75e9bdc51f090fe606bfd3e5f0989a5d772be36ec60"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_RESIDENT_M_VAR02.webp",
+      "bytes": 25580,
+      "sha256": "86563fd9f6b1dab0e322d44892ba12ca47bb4bbda35dc9cfbdf38b05060875c9"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_WALKER_F_VAR01.webp",
+      "bytes": 30822,
+      "sha256": "212db10d2f62c372d7edf8fbf04f2cdd26a5bafb3ef5cc46a261a2c70ac7cde0"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/LOCAL_WALKER_M_VAR01.webp",
+      "bytes": 29718,
+      "sha256": "330b5688ef0249d49984f1abf9dd019a22601284322cae0acd83fbe55d4dc93d"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_HOBBYIST_F_VAR01.webp",
+      "bytes": 34294,
+      "sha256": "7887061a260fa7bfb4838485439b59f55933bbee94c88542a7836424b2f5ece9"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_HOBBYIST_M_VAR01.webp",
+      "bytes": 35778,
+      "sha256": "343d2b55966c768e8c60eaef6004c92b7bd2305031bc050e08e25373145e98ac"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_PHOTOGRAPHER_F_VAR01.webp",
+      "bytes": 30468,
+      "sha256": "4bbd34f0a9ee4227a795e213b7e720e8c9b9a40c2065d2a861c1e5c175224818"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/NATURE_PHOTOGRAPHER_M_VAR01.webp",
+      "bytes": 38136,
+      "sha256": "a90d2e09816901d90fab235e163156ab51e1d30b9cec567c51f6d806983084a2"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_F_BASE.webp",
+      "bytes": 33492,
+      "sha256": "799dc94edead213a40bc4dd0bdf6e1ba2ba6477bcc6a18e2abb059f79e61be52"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_F_VAR01.webp",
+      "bytes": 32306,
+      "sha256": "5702806848c308640a7cee74c104fd5c9e4bfe1688cf29977b25b9dfbf976f5c"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_M_BASE.webp",
+      "bytes": 29314,
+      "sha256": "4371c04df2f6982f9a417e34040ab536a3f4d60572e25ba4af96fcb07354409a"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/OUTDOOR_EXPLORER_M_VAR01.webp",
+      "bytes": 31946,
+      "sha256": "0ec58550c950649da70b3e214798d1d3c9008544c863588e93c8aa5e83a31004"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SAFETY_RESCUE_F_BASE.webp",
+      "bytes": 30946,
+      "sha256": "88b6fa641ea7f3fb8329a5480a2a4b68a4fafbf723a2cde42ea6122d91887c7d"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SAFETY_RESCUE_M_BASE.webp",
+      "bytes": 32772,
+      "sha256": "7b15abfdd626749c487149ceab9cf620aa141de69522a29de6a913dad5e7efa6"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SAFETY_RESCUE_M_VAR01.webp",
+      "bytes": 32784,
+      "sha256": "e51248977af2f0844d068ccde6cbbc87f33d9891f44d8538b613a6c78cbea689"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SPORTS_UNIFORM_BLACK_F_BASE.webp",
+      "bytes": 34610,
+      "sha256": "ddeb453a9d11ebb868eaf8a4cf1d3c6b29c1029448bbad7553927f1f05fbc8fa"
+    },
+    {
+      "path": "dist/assets/approved-battle-trainers/SPORTS_UNIFORM_BLACK_M_BASE.webp",
+      "bytes": 32324,
+      "sha256": "794ab95dd730bba674192bf0280a70d8b3efb657dd0700813eca83fd3ddb227a"
+    },
+    {
+      "path": "dist/assets/approved-intro/canonicalHarin.png",
+      "bytes": 1579688,
+      "sha256": "c0a525ed6e53aa4ceea58caf8088c689885e7e1ce134776b71a144751eeb7771"
+    },
+    {
+      "path": "dist/assets/approved-intro/canonicalHarin_dialogue.png",
+      "bytes": 257449,
+      "sha256": "c1ad2a8c1948871f8bdbf27b390ad0396a3869f08156eba67b10fd13650207f9"
     }
   ]
 }

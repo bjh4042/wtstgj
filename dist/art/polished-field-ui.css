@@ -29,7 +29,7 @@ body.canonical-world-body{background:radial-gradient(ellipse at 90% 0,#D6EBE5 0,
 #approved-field-ui .approved-field-description{border-left:3px solid #D7BC70;padding:4px 0 4px 12px;color:#375B68}
 /* Battle chrome remains an independent read-only view of existing battle stats. */
 #canonical-world .world-modal{height:fit-content;max-height:calc(100dvh - max(12px,env(safe-area-inset-top)) - max(12px,env(safe-area-inset-bottom)));margin-block:auto;padding:16px;background:linear-gradient(145deg,#FDFEFE,#E8F4F6);border:2px solid #75A8BB;border-bottom:5px solid #315E79;border-radius:24px;box-shadow:inset 0 0 0 4px #FFF,0 16px 60px #123D5755}
-.eco-battle-heading{display:flex;align-items:center;gap:10px;margin:0 4px 12px;font:700 18px/1.4 'Noto Sans CJK KR','Apple SD Gothic Neo',sans-serif;color:#123D57;letter-spacing:-.025em}
+.eco-battle-heading{display:flex;align-items:center;gap:10px;margin:0 4px 12px;font:700 18px/1.4 system-ui,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR',sans-serif;color:#123D57;letter-spacing:-.025em}
 .eco-battle-heading::before{content:'';width:30px;height:30px;flex:none;background:var(--eco-leaf) center/contain no-repeat}
 .eco-battle-heading::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,#78A9B5,transparent)}
 .eco-battle-hud{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 4px 12px}

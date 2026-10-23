@@ -1,3 +1,4 @@
+import {openingIdentity} from './ordinary/opening-identity.mjs';
 import {approvedStandingPortrait,approvedMenuArt} from './art/approved-intro.mjs';
 import {installApprovedFieldUI} from './art/approved-field-ui.mjs';
 import './art/approved-field-ui.css';
@@ -265,7 +266,7 @@ modal.addEventListener('focusin',event=>{if(event.target.matches('#modal-content
 $('#battle').addEventListener('focusin',event=>{if(event.target.matches('.battle-actions button,.battle-back'))focusedControl=event.target});
 
 let activeSlot=launchRequest?.slot??'SLOT_1',ordinaryNew=false,newTicket=null,ordinaryAPI=null;
-async function ordinarySlotsAPI(){if(!ordinaryAPI){const [{loadCanonicalRuntimeAdapter},{createOrdinarySlots}]=await Promise.all([import('./compatibility/canonical-runtime-adapter.mjs'),import('./ordinary/slots.mjs')]);ordinaryAPI=createOrdinarySlots(localStorage,await loadCanonicalRuntimeAdapter({development:true}))}return ordinaryAPI}
+async function ordinarySlotsAPI(){if(!ordinaryAPI){const [{loadOrdinaryGameplayReleases},{createOrdinarySlots}]=await Promise.all([import('./ordinary/runtime-releases.mjs'),import('./ordinary/slots.mjs')]);ordinaryAPI=createOrdinarySlots(localStorage,await loadOrdinaryGameplayReleases())}return ordinaryAPI}
 const menuTask=fn=>async()=>{try{await fn()}catch(e){toast(e.message)}};
 function launchOrdinary(slot,namespace){requestLaunch(sessionStorage,slot,namespace);location.reload()}
 async function ordinarySlotMenu(action='continue'){
@@ -366,11 +367,12 @@ function researcherIntro(page=0){
   '먼저 네 이름과 모습을 알려 줘.',
   '그다음 연구소에서 첫 파트너를 만나자!'
  ];
- const visual=`<div class="opening-portrait-stage">${standingPortrait('researcher')}</div>`;
- openingDialogue({visual,text:pages[page],onNext:()=>page<pages.length-1?researcherIntro(page+1):setupAvatar(),onBack:page?()=>researcherIntro(page-1):welcome});
+ if(ordinaryNew){pages[1]='나는 생태몬을 연구하는 윤 박사란다.';pages[2]='요즘 야생 생태몬들이 평소와 다르게 움직이고 있어.';pages[3]='함께 그 이유를 살펴보겠니?';pages[4]='거제 곳곳의 생태를 기록하며 알아보자.'}
+ const identity=openingIdentity(ordinaryNew),visual=`<div class="opening-portrait-stage">${standingPortrait(identity.researcherRole)}</div>`;
+ openingDialogue({title:identity.researcher,visual,text:pages[page],onNext:()=>page<pages.length-1?researcherIntro(page+1):setupAvatar(),onBack:page?()=>researcherIntro(page-1):welcome});
 }
 function setupAvatar(){
- showOpeningScreen('모습 선택',`<div class="opening-avatar-stage"><div class="avatar-portrait-well">${standingPortrait(gender)}</div><div class="opening-avatar-menu" role="radiogroup" aria-label="모습 선택">${['boy','girl'].map((value,index)=>`<button class="avatar-choice ${gender===value?'selected':''}" data-gender="${value}" role="radio" aria-checked="${gender===value}">${index?'여자아이':'남자아이'}</button>`).join('')}</div></div><div class="opening-textbox"><strong>윤 연구원</strong><p id="avatar-question">이 모습으로 괜찮니?</p><button id="avatar-next">결정</button></div>`,'avatar');
+ showOpeningScreen('모습 선택',`<div class="opening-avatar-stage"><div class="avatar-portrait-well">${standingPortrait(gender)}</div><div class="opening-avatar-menu" role="radiogroup" aria-label="모습 선택">${['boy','girl'].map((value,index)=>`<button class="avatar-choice ${gender===value?'selected':''}" data-gender="${value}" role="radio" aria-checked="${gender===value}">${index?'여자아이':'남자아이'}</button>`).join('')}</div></div><div class="opening-textbox"><strong>${openingIdentity(ordinaryNew).researcher}</strong><p id="avatar-question">이 모습으로 괜찮니?</p><button id="avatar-next">결정</button></div>`,'avatar');
  const choose=button=>{gender=button.dataset.gender;$$('[data-gender]').forEach(card=>{const selected=card===button;card.classList.toggle('selected',selected);card.setAttribute('aria-checked',String(selected))});const portrait=$('.avatar-portrait-well .standing-portrait');portrait.className=`standing-portrait standing-${gender}`;portrait.setAttribute('aria-label',gender==='girl'?'여자아이 탐험가':'남자아이 탐험가');beep()};
  $$('[data-gender]').forEach(button=>button.onclick=()=>choose(button));$('#avatar-next').onclick=setupName;focusedControl=$(`[data-gender="${gender}"]`);focusedControl?.focus({preventScroll:true});openingAdvance=()=>{const card=document.activeElement?.closest?.('[data-gender]');if(card&&!card.classList.contains('selected'))choose(card);else $('#avatar-next').click()};openingBack=()=>researcherIntro(6);
 }
@@ -384,8 +386,8 @@ function setupName(){
  renderKeys();$('.opening-name-board').onclick=event=>{const suggestion=event.target.closest('[data-name-suggestion]'),key=event.target.closest('[data-name-key]')?.dataset.nameKey;if(suggestion){setValue(suggestion.dataset.nameSuggestion);return}if(!key)return;if(key==='backspace')setValue([...input.value].slice(0,-1).join(''));else if(key==='space')setValue(input.value+' ');else setValue(input.value+key)};
  $('#name-key-toggle').onclick=()=>{keyMode=keyMode==='letters'?'numbers':'letters';renderKeys();beep()};$('#name-submit').onclick=submit;$('#name-back').onclick=setupAvatar;input.oninput=()=>{if([...input.value].length>8)input.value=[...input.value].slice(0,8).join('');error.textContent=''};input.onkeydown=event=>{if(event.isComposing){event.stopPropagation();return}if(event.key==='Enter'){event.preventDefault();event.stopPropagation();submit()}};focusedControl=$('#name-submit');openingAdvance=()=>{const active=document.activeElement;if(active?.matches('.opening-name-board button'))active.click();else submit()};openingBack=setupAvatar;
 }
-function introduceRival(){openingDialogue({title:'윤 연구원',visual:`<div class="opening-portrait-stage">${standingPortrait('rival')}</div>`,text:'그리고 이 아이는 나루. 너와 함께 거제의 비밀을 조사할 친구란다.',onNext:startHomeScene,onBack:setupName,screen:'rival'})}
-function startHomeScene(){openingWorld=createIntroWorld('room',gender);renderOpeningWorld(`${playerName}, 윤 연구원이 연구소에서 기다리고 있어.`)}
+function introduceRival(){const identity=openingIdentity(ordinaryNew);openingDialogue({title:identity.researcher,visual:`<div class="opening-portrait-stage">${standingPortrait(identity.rivalRole)}</div>`,text:identity.rivalIntroduction,onNext:startHomeScene,onBack:setupName,screen:'rival'})}
+function startHomeScene(){openingWorld=createIntroWorld('room',gender);renderOpeningWorld(`${playerName}, ${ordinaryNew?'윤 박사가':'윤 연구원이'} 연구소에서 기다리고 있어.`)}
 function renderOpeningWorld(message=''){
  openingMoving=false;openingQueuedDirection=null;openingHeldDirection=null;
  const scene=openingWorld?.scene??'room';showOpeningScreen(INTRO_SCENE_LABELS[scene],`<canvas id="opening-world" width="960" height="640" aria-label="${esc(INTRO_SCENE_LABELS[scene])} 이동 장면"></canvas><span class="opening-place">${esc(INTRO_SCENE_LABELS[scene])}</span>${message?`<div class="opening-world-message"><p>${esc(message)}</p><i>▼</i></div>`:''}<div class="opening-map-controls" aria-label="인트로 이동 조작"><button data-opening-dir="up">▲</button><button data-opening-dir="left">◀</button><button data-opening-dir="down">▼</button><button data-opening-dir="right">▶</button><button data-opening-a>A</button></div>`,'world');
@@ -395,7 +397,7 @@ function renderOpeningWorld(message=''){
 }
 function openingMoveDirection(direction){
  if(!openingWorld||$('.opening-world-message'))return;if(openingMoving){openingQueuedDirection=direction;return}const previous=openingWorld,moved=moveIntroWorld(openingWorld,direction);openingWorld=moved.world;
- const messages={'stairs-up':'계단을 올라 내 방에 도착했다.','home-enter':'우리 집에 돌아왔다.','lab-exit':'연구소 문 앞에 나왔다.',stairs:'계단을 내려와 1층에 도착했다.',outside:'엄마가 손을 흔들었다. “연구소에 다녀오렴!”','town-warning':'혼자 마을 밖으로 나가면 위험해. 먼저 윤 연구원을 만나자.','lab-enter':'거제 생태 연구소에 들어왔다. 나루가 먼저 와 있다.'};if(messages[moved.event])renderOpeningWorld(messages[moved.event]);
+ const messages={'stairs-up':'계단을 올라 내 방에 도착했다.','home-enter':'우리 집에 돌아왔다.','lab-exit':'연구소 문 앞에 나왔다.',stairs:'계단을 내려와 1층에 도착했다.',outside:'엄마가 손을 흔들었다. “연구소에 다녀오렴!”','town-warning':'혼자 마을 밖으로 나가면 위험해. 먼저 윤 연구원을 만나자.','lab-enter':'거제 생태 연구소에 들어왔다. 나루가 먼저 와 있다.'};if(ordinaryNew){messages['town-warning']='혼자 마을 밖으로 나가면 위험해. 먼저 윤 박사를 만나자.';messages['lab-enter']='거제 생태 연구소에 들어왔다. 하린이 먼저 와 있다.'}if(messages[moved.event])renderOpeningWorld(messages[moved.event]);
  else if(previous.scene===openingWorld.scene&&(previous.x!==openingWorld.x||previous.y!==openingWorld.y)){
   const canvasNode=$('#opening-world');
   const started=performance.now(),duration=145;openingMoving=true;
@@ -405,7 +407,7 @@ function openingMoveDirection(direction){
 function openingInspect(){
  if(!openingWorld)return;const found=inspectIntroWorld(openingWorld);
  if(found==='starters'){setupStarter();return}
- const messages={computer:'모험을 떠날 준비가 끝났다.',family:'“윤 연구원에게 예의 바르게 인사하렴.”', 'lab-sign':'간판: 거제 생태 연구소',nothing:'여기에는 특별한 것이 없다.'};renderOpeningWorld(messages[found]);
+ const messages={computer:'모험을 떠날 준비가 끝났다.',family:'“윤 연구원에게 예의 바르게 인사하렴.”', 'lab-sign':'간판: 거제 생태 연구소',nothing:'여기에는 특별한 것이 없다.'};if(ordinaryNew)messages.family='“윤 박사에게 예의 바르게 인사하렴.”';renderOpeningWorld(messages[found]);
 }
 function canonicalStarterSelection(confirm=false){
  const catalog=ordinaryAPI.catalog,ids=catalog.starterIds,sp=catalog.getSpeciesById(chosen),art=id=>`<span class="species-art" style="display:inline-block;width:142px">${assetMarkup(catalog.resolveAssetId(id,'ui.icon'),catalog.getDisplayName(id))}</span>`;

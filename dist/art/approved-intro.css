@@ -43,3 +43,8 @@
  .opening-avatar-menu{right:5%;width:35%;top:22%}
  .opening-avatar-menu .avatar-choice{font-size:14px;min-height:44px}
 }
+
+.opening-frame{font-family:system-ui,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans CJK KR',sans-serif}
+
+.opening-frame .standing-canonicalHarin{background-image:url('../assets/approved-intro/canonicalHarin.png')}
+.opening-frame .standing-canonicalYoon{background-image:url('../assets/approved-intro/researcher.png')}

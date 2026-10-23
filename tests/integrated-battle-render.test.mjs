@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createBattlePresentation} from '../dist/battle-v3/presentation.mjs';
+import {integratedBattleLayout} from '../dist/art/integrated-battle-layout.mjs';
+const snap={events:[],enemyActive:0,active:0,opponents:[{namespace:'canonical',speciesId:'SPECIES_001'}],party:[{speciesId:'SPECIES_004'}],background:{assetId:'battle.biome.COAST',biomeId:'COAST'}};
+for(const[w,h]of[[304,440],[812,250],[1320,720]])test(`central battle renderer obeys responsive actor anchors without state writes ${w}x${h}`,()=>{const calls=[],c=new Proxy({canvas:{setAttribute(){}},clearRect:(...a)=>calls.push(a)},{get:(o,k)=>o[k]??(()=>{}),set:(o,k,v)=>(o[k]=v,true)}),p=createBattlePresentation({audio:{emit(){}}}),layout=integratedBattleLayout(w,h),before=JSON.stringify(snap),r=p.draw(c,snap,0,layout);assert.deepEqual(calls[0],[0,0,w,h]);for(const[art,a]of[[r.front,layout.enemy],[r.back,layout.player]]){assert.ok(Math.abs(art.x+art.width/2-a.x)<1e-9);assert.ok(Math.abs(art.y+art.height-a.y)<1e-9);assert.ok(art.width<=a.size&&art.height<=a.size)}assert.equal(JSON.stringify(snap),before);p.stop()});

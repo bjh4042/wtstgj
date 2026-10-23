@@ -1,30 +1,35 @@
 import {drawApprovedBattleBackground} from '../art/approved-battle-backgrounds.mjs';
-import {loadAsset,peekAsset} from '../asset-runtime.mjs';
 import {drawBattleSpecies} from '../presentation/battle-render.mjs';
 import {drawBattleVfx} from '../presentation/vfx-render.mjs';
 import {presentationAudio} from '../presentation/audio-hooks.mjs';
-/** Renderer consumes immutable snapshots/events, never modifies stats or waits for PNG/audio loading. */
-export function createBattlePresentation({audio=presentationAudio}={}){
- let cursor=0,queue=[],active=null;
+import {createSharedBattleSequences,drawSharedBattleCue} from './shared-battle-sequences.mjs';
+const cueLabel=cue=>cue?.kind==='trainer'?'대결을 준비합니다.':cue?.kind==='faint'?'생태몬이 지쳤어요.':cue?.kind==='sequence'?({appear:'생태몬이 등장합니다.',recall:'생태몬이 돌아갑니다.',attempt:'포획을 시도합니다…',success:'포획에 성공했어요!',failure:'포획하지 못했어요.',evolve:'생태몬이 새로운 모습으로 변합니다.'}[cue.mode]??''):'';
+/** Immutable events drive visuals only. Outcomes, RNG and saves never wait on this queue. */
+export function createBattlePresentation({audio=presentationAudio,reducedMotion=globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches??false}={}){
+ let queue=[],active=null;
+ const shared=createSharedBattleSequences({reducedMotion});
  return {
-  consume(snapshot){for(const event of snapshot.events.slice(cursor)){
-   if(event.type==='start')for(const id of event.audioIds)audio.emit(id,{channel:'battle',kind:snapshot.kind});
-   if(event.type==='move')for(const effect of event.vfx.effects)queue.push({effect,side:event.side});
-   if(event.type==='end')queue.push({end:true});
-  }cursor=snapshot.events.length},
-  draw(c,snapshot,now){
-   c.clearRect(0,0,432,240);c.fillStyle='#425966';c.fillRect(0,0,432,240);drawApprovedBattleBackground(c,snapshot.background,432,240);
-   // Soft contact shadows sit under actors; no platforms, geometry or mechanics change.
-   c.save();c.fillStyle='rgba(15,44,48,.18)';for(const [x,y,rx,ry] of [[320,145,35,7],[115,228,39,8]]){c.beginPath();c.ellipse(x,y,rx,ry,0,0,Math.PI*2);c.fill()}c.restore();
-   const enemy=snapshot.opponents[snapshot.enemyActive],player=snapshot.party[snapshot.active];
-   const front=drawBattleSpecies(c,{namespace:enemy.namespace,speciesId:enemy.speciesId},'front',320,145,{size:110});
-   const back=drawBattleSpecies(c,{namespace:'canonical',speciesId:player.speciesId},'back',115,228,{size:125});
-   if(c.canvas?.setAttribute)c.canvas.setAttribute('aria-label',[front?.accessibleLabel,back?.accessibleLabel].filter(Boolean).join(' · ')||'생태몬 대결');
-   if(!active&&queue.length){const next=queue.shift();if(next.end)audio.emit(null,{channel:'battle-end'});else{active={...next,start:now};audio.emit(active.effect.moveSfxId,{channel:'move',side:active.side})}}
-   if(active){const from=active.side==='player'?{x:115,y:180}:{x:320,y:95},to=active.side==='player'?{x:320,y:95}:{x:115,y:180};const done=drawBattleVfx(c,active.effect.family,now-active.start,{...active.effect,from,to});if(done.done)active=null}
-   return {front,back,background:snapshot.background.assetId,busy:!!active||queue.length>0};
+  consume(snapshot,options={}){const cursor=shared.cursor;for(const event of snapshot.events.slice(cursor))if(!options.restoring&&event.type==='start')for(const id of event.audioIds??[])audio.emit(id,{channel:'battle',kind:snapshot.kind});queue.push(...shared.consume(snapshot,options))},
+  draw(c,snapshot,now,layout=null){
+   const W=layout?.width??432,H=layout?.height??240,enemyAnchor=layout?.enemy??{x:320,y:145,size:110},playerAnchor=layout?.player??{x:115,y:228,size:125},geometry={...layout,width:W,height:H,enemy:enemyAnchor,player:playerAnchor};
+   if(!active&&queue.length){active={...queue.shift(),start:now};if(active.kind==='move')audio.emit(active.effect.moveSfxId,{channel:'move',side:active.side});if(active.kind==='end')audio.emit(null,{channel:'battle-end'})}
+   const elapsed=active?now-active.start:0,frame=active?shared.frame(active,elapsed):null;
+   c.clearRect(0,0,W,H);c.fillStyle='#425966';c.fillRect(0,0,W,H);drawApprovedBattleBackground(c,snapshot.background,W,H,{fit:layout?.backgroundFit??'contain'});
+   const enemy=frame?.actors.opponent??snapshot.opponents[snapshot.enemyActive],player=frame?.actors.player??snapshot.party[snapshot.active],opacity=frame?.opacity??{player:1,opponent:1};
+   // Shadows share actor visibility, including recall/faint; no invisible actor footprint.
+   for(const [a,alpha] of [[enemyAnchor,opacity.opponent],[playerAnchor,opacity.player]])if(alpha>0){c.save();c.globalAlpha=alpha;c.fillStyle='rgba(15,44,48,.18)';c.beginPath();c.ellipse(a.x,a.y,a.size*.3,a.size*.06,0,0,Math.PI*2);c.fill();c.restore()}
+   c.save();c.globalAlpha=opacity.opponent;const front=drawBattleSpecies(c,{namespace:enemy.namespace,speciesId:enemy.speciesId},'front',enemyAnchor.x,enemyAnchor.y,{size:enemyAnchor.size});c.restore();
+   c.save();c.globalAlpha=opacity.player;const back=drawBattleSpecies(c,{namespace:'canonical',speciesId:player.speciesId},'back',playerAnchor.x,playerAnchor.y,{size:playerAnchor.size});c.restore();
+   const label=cueLabel(active);
+   if(c.canvas?.setAttribute)c.canvas.setAttribute('aria-label',[label,front?.accessibleLabel,back?.accessibleLabel].filter(Boolean).join(' · ')||'생태몬 대결');
+   if(active){let done;
+    if(active.kind==='move'){const playerTarget={x:playerAnchor.x,y:playerAnchor.y-playerAnchor.size*.4},enemyTarget={x:enemyAnchor.x,y:enemyAnchor.y-enemyAnchor.size*.4},from=active.side==='player'?playerTarget:enemyTarget,to=active.side==='player'?enemyTarget:playerTarget;done=reducedMotion||drawBattleVfx(c,active.effect.family,elapsed,{...active.effect,from,to}).done}
+    else done=drawSharedBattleCue(c,active,elapsed,geometry).done;
+    if(done){shared.finish(active);active=null}
+   }
+   return {front,back,label,background:snapshot.background.assetId,busy:!!active||queue.length>0};
   },
   get busy(){return !!active||queue.length>0},
-  stop(){queue=[];active=null;audio.emit(null,{channel:'battle-end'})}
+  stop(){queue=[];active=null;shared.stop();audio.emit(null,{channel:'battle-end'})}
  };
 }

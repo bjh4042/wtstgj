@@ -1,7 +1,7 @@
 import {INTRO_ART} from './approved-intro-bindings.mjs';
 import {browserImageLoader} from '../asset-runtime.mjs';
 import {drawApprovedPlayer,loadApprovedPlayers} from './approved-player-field.mjs';
-const labels={researcher:'윤 연구원',boy:'남자아이 탐험가',girl:'여자아이 탐험가'};
+const labels={canonicalHarin:'하린',canonicalYoon:'윤 박사',researcher:'윤 연구원',boy:'남자아이 탐험가',girl:'여자아이 탐험가'};
 export function approvedStandingPortrait(role){
  if(!labels[role])return '<span class="standing-portrait standing-unresolved" aria-hidden="true"></span>';
  return `<span class="standing-portrait standing-${role}" role="img" aria-label="${labels[role]}"></span>`;

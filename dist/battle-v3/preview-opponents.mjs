@@ -30,9 +30,9 @@ export function startYejiLeagueBattle(session,{adapter,story,rng,map}={}){
  try{return startSessionBattle(session,{kind:'trainer',opponents,previewPermit:permit,map,rng},{adapter})}
  finally{permits.delete(permit)}
 }
-/** The independent POST final uses the six approved EDNA opponents, outside the retired league. */
+/** The independent POST final uses the six approved EDNA opponents, separate from the historical enhanced league. */
 export function startYejiFinalBattle(session,{adapter,story,rng,map={id:'NOJASAN_ECO_OBSERVATORY',biomeId:'MOUNTAIN'}}={}){
- const c=adapter?.battleRuntime?.previewOpponent,p=story?.progress;
+ const c=adapter?.battleRuntime?.yejiFinalOpponent??adapter?.battleRuntime?.previewOpponent,p=story?.progress;
  if(!adapter?.validation?.ready||adapter.encounterRuntime?.handoffVersion!=='20260927'||c?.party?.id!=='YEJI_FINAL'||!c.ready||c.approvalStatus!=='APPROVED'||c.aiTier!=='AI_4'||c.itemUses!==2)throw Error('Approved YEJI_FINAL opponent contract required');
  if(!p?.flags?.POST_COMPASS_COMPLETE||!p?.flags?.SANCTUARY_148_RESOLVED||!p?.flags?.SANCTUARY_149_RESOLVED||!p?.flags?.SANCTUARY_150_RESOLVED||!['sea_emblem','forest_emblem','wind_emblem','onseom_compass'].every(id=>(p.items?.[id]??0)>0)||p.flags.YEJI_FINAL_DONE)throw Error('YEJI_FINAL story gate locked');
  if(stableJSON(storyBattleInput(story,session.catalog))!==stableJSON(session.runtime))throw Error('YEJI_FINAL battle session mismatch');

@@ -1,3 +1,5 @@
+import {approvedPartyMoveExceptions} from './approved-party-move-exceptions.mjs';
+import {approvedTrainerAIContract} from './approved-trainer-ai.mjs';
 import {createCanonicalCreature} from '../canonical-session.mjs';
 import {validateCanonicalBattleSave} from './save.mjs';
 import {createBattleRules,battleStats,calculateDamage,stageMultiplier,typeMultiplier,captureProbability,earnedExperience} from './rules.mjs';
@@ -26,7 +28,7 @@ export function startSessionBattle(session,options,{adapter,legacyStart}={}){
 export class CanonicalBattle {
  #catalog; #rules; #rng; #runtime; #enemy; #active=0; #enemyActive=0; #phase='turn'; #outcome=null; #turn=0; #kind;
  #stages=new Map(); #participants=new Set(); #awarded=new Set(); #events=[]; #vfx; #background; #captureFailures=0; #map;
- #tutorial=false; #preview=null;
+ #tutorial=false; #preview=null; #presentation=null;
  #latestAI=false; #aiTier='AI_1'; #aiItemId=null; #aiItemUses=0; #aiItemsSpent=0; #aiHeals=new Map(); #aiLastHeal=false; #aiSleptSpecies=new Set();
  constructor({session,adapter,opponents,kind='wild',map={id:'outdoor'},rng=Math.random,partyId=null,encounterPermit=null,tutorialPermit=null,previewPermit=null}){
   if(session?.contentNamespace!=='canonical-v1'||session.catalog?.namespace!=='canonical')throw Error('Battle v3 only accepts canonical sessions');
@@ -40,20 +42,22 @@ export class CanonicalBattle {
   if(partyId&&(!contracted||kind!=='trainer'||contracted.members.length!==opponents.length||contracted.members.some((m,i)=>m.namespace!==opponents[i].namespace||m.speciesId!==opponents[i].speciesId||m.level!==opponents[i].level||JSON.stringify(m.moveIds)!==JSON.stringify(opponents[i].moveIds))))throw Error('Trainer party contract mismatch');
   this.#preview=consumePreviewOpponents(previewPermit,{session,adapter,opponents,kind,partyId});
   if(this.#preview)this.#catalog=this.#preview.catalog;
-  this.#latestAI=adapter.battleRuntime?.version==='v3.2_2026-09-27'&&kind==='trainer';
-  if(this.#latestAI){
-   const trainer=Object.values(adapter.storyRuntime?.trainers??{}).find(t=>t.partyId===partyId);
-   this.#aiTier=this.#preview?adapter.battleRuntime.previewOpponent.aiTier:trainer?.ai??'AI_1';
+  const presentationTrainer=partyId?Object.values(adapter.storyRuntime?.trainers??{}).find(t=>t.partyId===partyId||Object.values(t.variantPartyIds??{}).includes(partyId)):null;
+  this.#presentation={trainerId:presentationTrainer?.id??(this.#preview?.metadata.id==='YEJI_FINAL'?'YEJI_FINAL':null),npcId:presentationTrainer?.npcId??(this.#preview?'NPC_POST_YEJI':null),playerCharacterId:this.#runtime.player.appearance==='girl'?'PLAYER_FEMALE':'PLAYER_MALE'};
+  const aiContract=approvedTrainerAIContract(adapter,{kind,partyId,previewId:this.#preview?.metadata.id});
+  this.#latestAI=!!aiContract;
+  if(aiContract){
+   this.#aiTier=aiContract.aiTier;
    if(!['AI_1','AI_2','AI_3','AI_4'].includes(this.#aiTier))throw Error('Unknown battle AI tier');
-   this.#aiItemUses=this.#preview?adapter.battleRuntime.previewOpponent.itemUses:trainer?.itemUses??0;
-   this.#aiItemId=this.#preview?'hyper_potion':trainer?.itemId??null;
+   this.#aiItemUses=aiContract.itemUses;
+   this.#aiItemId=aiContract.itemId;
   }
   this.#kind=kind;this.#enemy=opponents.map(p=>{
    if(this.#preview)return this.#preview.createOpponent(p);
    if(p.namespace!=='canonical')throw Error('Explicit canonical opponent identity required');
    if(kind==='wild'&&!authorized&&!this.#catalog.canRandomEncounter(p.speciesId))throw Error('Species prohibited from wild encounters');
    const mon=createCanonicalCreature(this.#catalog,p.speciesId,p.level);
-   if(p.moveIds){const s=this.#catalog.getSpeciesById(p.speciesId),allowed=[...s.moves.filter(m=>m.level<=p.level).map(m=>m.id),...s.tmIds.map(id=>this.#rules.tms[id]?.moveId),...(contracted?.moveLevelExceptions??[]).filter(e=>e.level===p.level).map(e=>e.move_id)];
+   if(p.moveIds){const s=this.#catalog.getSpeciesById(p.speciesId),allowed=[...s.moves.filter(m=>m.level<=p.level).map(m=>m.id),...s.tmIds.map(id=>this.#rules.tms[id]?.moveId),...(contracted?.moveLevelExceptions??[]).filter(e=>e.level===p.level).map(e=>e.move_id),...approvedPartyMoveExceptions(adapter,partyId,p)];
     if(!p.moveIds.length||p.moveIds.length>4||new Set(p.moveIds).size!==p.moveIds.length||p.moveIds.some(id=>!allowed.includes(id)))throw Error('Illegal fixture moves');
     mon.moves=p.moveIds.map(id=>({id,pp:this.#rules.moves[id].pp}));
    }
@@ -70,7 +74,7 @@ export class CanonicalBattle {
  #stage(mon){if(!this.#stages.has(mon.instanceId))this.#stages.set(mon.instanceId,{});return this.#stages.get(mon.instanceId)}
  #markSeen(){if(!this.#preview&&!this.#runtime.dex.seen.includes(this.#opponent.speciesId))this.#runtime.dex.seen.push(this.#opponent.speciesId)}
  #speed(mon){return battleStats(this.#catalog,mon).spe*stageMultiplier(this.#stage(mon).spe)*(mon.status==='paralysis'?.5:1)}
- snapshot(){return clone({engine:'canonical-battle-v3',contentNamespace:'canonical-v1',...(this.#preview?{preview:this.#preview.metadata}:{}),kind:this.#kind,phase:this.#phase,outcome:this.#outcome,turn:this.#turn,active:this.#active,enemyActive:this.#enemyActive,party:this.#runtime.party,opponents:this.#enemy,background:this.#background,map:this.#map,events:this.#events,inventory:this.#runtime.inventory,bagItems:this.#runtime.bagItems??{},display:{front:battleDisplayFor(this.#catalog.reference(this.#opponent.speciesId),'front'),back:battleDisplayFor(this.#catalog.reference(this.#player.speciesId),'back')},stages:Object.fromEntries(this.#stages)})}
+ snapshot(){return clone({engine:'canonical-battle-v3',presentation:this.#presentation,contentNamespace:'canonical-v1',...(this.#preview?{preview:this.#preview.metadata}:{}),kind:this.#kind,phase:this.#phase,outcome:this.#outcome,turn:this.#turn,active:this.#active,enemyActive:this.#enemyActive,party:this.#runtime.party,opponents:this.#enemy,background:this.#background,map:this.#map,events:this.#events,inventory:this.#runtime.inventory,bagItems:this.#runtime.bagItems??{},display:{front:battleDisplayFor(this.#catalog.reference(this.#opponent.speciesId),'front'),back:battleDisplayFor(this.#catalog.reference(this.#player.speciesId),'back')},stages:Object.fromEntries(this.#stages)})}
  /** The only save export point: committed aftermath, no partially executed turn. */
  aftermath(){if(this.#preview&&!this.#preview.metadata.persistable)throw Error('Preview rehearsal cannot export save aftermath');if(this.#phase!=='ended')throw Error('Finish the battle before saving aftermath');return validateCanonicalBattleSave(this.#runtime,this.#preview?.playerCatalog??this.#catalog)}
  #validate(action){

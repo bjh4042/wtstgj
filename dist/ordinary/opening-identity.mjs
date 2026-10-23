@@ -1,0 +1,2 @@
+/** Display-only ordinary-new identity; legacy narrative remains explicitly separate. */
+export function openingIdentity(ordinaryNew){return ordinaryNew?{researcher:'윤 박사',researcherRole:'canonicalYoon',rival:'하린',rivalRole:'canonicalHarin',rivalIntroduction:'하린은 너와 거제에서 함께 자란 소꿉친구이자 라이벌이야.'}:{researcher:'윤 연구원',researcherRole:'researcher',rival:'나루',rivalRole:'rival',rivalIntroduction:'그리고 이 아이는 나루. 너와 함께 거제의 비밀을 조사할 친구란다.'};}

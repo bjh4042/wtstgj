@@ -8,8 +8,8 @@ Node.js 22.12+ (or a compatible newer release):
 
 ```sh
 npm ci
-npm test
 npm run build
+npm test
 npm run dev
 ```
 
@@ -17,7 +17,10 @@ The production base is `/wtstgj/`. Publish the generated `build/` directory, not
 
 ## Current scope
 
-- Existing ordinary 55-map story/runtime and save namespace retained. The separate staged 56-map dataset is not activated.
+- Fresh ordinary games use the approved latest56 map/story/ending release. Existing unversioned saves remain on historical55. Unknown release identifiers fail closed; there is no automatic migration or reset.
+- The latest release retains historical player learnsets, moves, items, capture rules, economy and existing trainer parties. Only explicitly approved new trainer/story bindings are added.
+- Trainer introductions, send-out/recall, faint, confirmed capture results, manual evolution visuals and surfing presentation are connected to existing game outcomes. No new automatic evolution trigger is added.
+- Optional preparation and free-healing guidance adds no compulsory tutorial gate.
 - Selected original smooth player/NPC art, semantic terrain, opening art, 11 battle backgrounds and original monster battle art replace excluded historical images.
 - Saved progress is not reset or migrated. Legacy saved-game routing remains, but its visual replacement is incomplete and may show missing/fallback presentation.
 - Install support uses the browser's optional installation prompt. iOS receives manual installation guidance. Browser address-bar controls and desktop shortcuts cannot be forced.
@@ -36,3 +39,7 @@ Only explicitly selected project artwork and the bundled OFL-licensed font are d
 ## Lossless runtime sheets
 
 Human frames are packed per identity and monster front/back images per species, without resizing or changing RGBA pixels. Runtime sheets load lazily. The public atlas tests verify every original frame pixel hash, source rectangle, transparent deferred view and padding. This packaging reduces upload/network file counts, not image quality.
+
+## Latest development delta
+
+See QA_LATEST56_DEVELOPMENT.md for current verification and remaining release blockers. The original QA.md describes the earlier frozen snapshot, not this latest delta. Local browser saves are not cloud synchronization. Private regional scene prototypes are excluded from this source projection and production dependency graph.
