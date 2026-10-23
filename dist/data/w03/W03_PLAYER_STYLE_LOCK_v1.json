@@ -1,0 +1,56 @@
+{
+  "project": "거제몬스터",
+  "workstream": "W03_MAJOR_CHARACTER",
+  "approval_source": "GEOJE_MONSTER_W03_PLAYER_MF_APPROVAL_PACKAGE_v1.zip",
+  "approval_date": "2026-10-08",
+  "USER_APPROVED": true,
+  "PLAYER_STYLE_LOCK": "APPROVED",
+  "source_contract": {
+    "cellWidth": 96,
+    "cellHeight": 120,
+    "width": 288,
+    "height": 480,
+    "columns": 3,
+    "rows": [
+      "FRONT",
+      "RIGHT",
+      "LEFT",
+      "BACK"
+    ],
+    "frames": [
+      "Idle",
+      "WalkA",
+      "WalkB"
+    ],
+    "anchor": [
+      48,
+      103
+    ],
+    "bottomBoundaryY": 104,
+    "renderScale": 1
+  },
+  "assets": [
+    {
+      "lockedCharacterId": "PLAYER_MALE",
+      "canonicalRuntimeId": "PLAYER_BOY",
+      "displayName": "남자 플레이어",
+      "assetId": "human.w03-player-boy.field",
+      "filename": "W03_PLAYER_MALE_FIELD_ATLAS_v3.png",
+      "runtimePath": "assets/final/humans/w03/players/W03_PLAYER_MALE_FIELD_ATLAS_v3.png",
+      "visibleHeightPx": 38,
+      "scaleClass": "STANDARD",
+      "sha256": "489b3fe4d11777082af62d2e02fa6925dc97fe6e0f5d08f7bc935de4a02db02d"
+    },
+    {
+      "lockedCharacterId": "PLAYER_FEMALE",
+      "canonicalRuntimeId": "PLAYER_GIRL",
+      "displayName": "여자 플레이어",
+      "assetId": "human.w03-player-girl.field",
+      "filename": "W03_PLAYER_FEMALE_FIELD_ATLAS_v3.png",
+      "runtimePath": "assets/final/humans/w03/players/W03_PLAYER_FEMALE_FIELD_ATLAS_v3.png",
+      "visibleHeightPx": 38,
+      "scaleClass": "STANDARD",
+      "sha256": "4ac68e857b46ca341fb12aeed415e8ef79daba9db0f72d45f2b5f4643913c904"
+    }
+  ]
+}

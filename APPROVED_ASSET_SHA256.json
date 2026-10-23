@@ -1,0 +1,1770 @@
+{
+  "scope": "Selected original artwork/OFL and exact lossless atlases. PWA included.",
+  "files": [
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_197.png",
+      "bytes": 63914,
+      "sha256": "b82b9f50c433fbdf66a2e67d4edb7b299eddd0d17ea3aa84210bd55d8bf477e7"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_SHALLOW.png",
+      "bytes": 47194,
+      "sha256": "4e477604e07f1dbe090a68d18d6e0c2e994c9135c2067a37170146fd7119ff94"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_117.png",
+      "bytes": 58465,
+      "sha256": "320b70656b6f3626817edadeb8c1708bdacdd3d5becc61d6de5564e248a9e027"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_71.png",
+      "bytes": 63922,
+      "sha256": "d5adeea36d4c712a068efbdccaddaedee2574ff29e68b71d3155afbf555b218b"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_MONGDOL_DRY.png",
+      "bytes": 107411,
+      "sha256": "ea6c228e93241d961466e31b03ca880f703d7fbd2a2ee2ece5e133026ff32378"
+    },
+    {
+      "path": "dist/assets/approved-terrain/O_TALL_GRASS_A.png",
+      "bytes": 34472,
+      "sha256": "854e7da621b3659138f29671032e2ba58c9a1aafae0b8abae3799ba2812033cf"
+    },
+    {
+      "path": "dist/assets/approved-terrain/FX_FOAM_BASE.png",
+      "bytes": 9417,
+      "sha256": "a021067ceac5d2b0e19fb315af984c3d6ef0c47175d0aa3e1f380f4404fcbb56"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_116.png",
+      "bytes": 65247,
+      "sha256": "883c5dfe1824b66732894296d432348a5ae474f848b501ea4fcbde7c04a876ad"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_17.png",
+      "bytes": 73497,
+      "sha256": "53b922cc30f7bab97001a107ab74456e7b0bf39d00a1f0447bb04c3603e6e0cd"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_119.png",
+      "bytes": 57570,
+      "sha256": "e5599cd8c955397e2077e51228d12b8bdb5adb3d4f090ff1425813455cdda3c5"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_92.png",
+      "bytes": 65485,
+      "sha256": "67bc77eb9e89a9982104fa9874469eb3871f9e53f18e2058022deb9dab7a1eb8"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_7.png",
+      "bytes": 72221,
+      "sha256": "fc369786603763c0a37960966f1fdbcc75f2d0b331fe7f66157237bc9c1d8a22"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_95.png",
+      "bytes": 57767,
+      "sha256": "6807c5bf2f07de1ff06202ac6038ba67e57c18a159717dcab967ebcb31675fa3"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_GRASS_SHORT.png",
+      "bytes": 48129,
+      "sha256": "399ac67cb94dcc818c1e6d9de03339fcb9c35aa036627df356199fb94cd47e7a"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_20.png",
+      "bytes": 73006,
+      "sha256": "ef95220cd07ff016b7d4483807e47ff1b8a4388892c61288f25e17eccb3ed8e7"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_255.png",
+      "bytes": 55661,
+      "sha256": "1ae196c7af0170cd4ebd6e6da1ad763e15bb1e0b061f464a9f9b1b1844f4d7b4"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_SEA.png",
+      "bytes": 48286,
+      "sha256": "bafff1f385b4c0559ba6171812e264331c704a551713774ba67eb389d41e7e8d"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_93.png",
+      "bytes": 58670,
+      "sha256": "7a3031076b317d711a124165062b52707ef5426fedb888c00187f06a98f87b86"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_68.png",
+      "bytes": 72371,
+      "sha256": "048e77fa0a4eee5ad339c0060348f6051351bfabe02b18328dea576b6b5fd382"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_113.png",
+      "bytes": 66146,
+      "sha256": "14729bc21bb827d4035e438fc21ac2ef60793a72d41b367cda35ccf60071bf39"
+    },
+    {
+      "path": "dist/assets/approved-terrain/O_SIGN_WOOD.png",
+      "bytes": 44120,
+      "sha256": "0ad89d54a8a00c81c655cc4d66d0593477d77cc628e8afe79fea143143f5880e"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_23.png",
+      "bytes": 66521,
+      "sha256": "79a41f56aaa94a2a722bf1034f1ea389531caf3f32b8255c5f551c101e31e6c6"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_SEA_1.png",
+      "bytes": 48324,
+      "sha256": "422f0764b32fe418ab234e6fa1311b588070b3e24722fb9004bc40695b5794cb"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_69.png",
+      "bytes": 64593,
+      "sha256": "936c4a2b1652f12f6fe26044680af152910472f8a001064e7dbe8d0b5a70dd0b"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_SHALLOW_2.png",
+      "bytes": 47231,
+      "sha256": "d381fee98d131175940797f523bc16097fc870b18d3cb862aecb86af47d289f6"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_241.png",
+      "bytes": 65450,
+      "sha256": "dc666e7bb0dd294f334515eb59df31771aceaf8b659fa2d3860964bd58181dfd"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_81.png",
+      "bytes": 67004,
+      "sha256": "1d75f355d9961091bb9fa12d777f27f01252a8cd4445a9390c71e1d07f77a5cc"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_213.png",
+      "bytes": 58450,
+      "sha256": "0412b8c6327d16a93b1281d38c051b84a573571abd33a1fc4b48ed568049739e"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_21.png",
+      "bytes": 67219,
+      "sha256": "d3b64c9d113d56bdb9b52bdfce311f2cc412df0abbb487cc6b23bae3fc4e4c2b"
+    },
+    {
+      "path": "dist/assets/approved-terrain/O_WILDFLOWER.png",
+      "bytes": 43258,
+      "sha256": "a006efd50b8b33bc7bc5610d4c77846510b89fd7c9a635ed7279104e66d8b2b8"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_209.png",
+      "bytes": 66317,
+      "sha256": "452f8a07a0cba587afa67564e304199941fc5bd217ccf9bdb0e434d0edf57d3a"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_124.png",
+      "bytes": 64323,
+      "sha256": "505d54c9a3aa3e3feb9047a88088962147cf190796817f9104bf45f0a591bfce"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_84.png",
+      "bytes": 66265,
+      "sha256": "d4966db9ad68d3868fae82ad3654e743212aa2b0703b67313af5506ab7c96b61"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_80.png",
+      "bytes": 72833,
+      "sha256": "2292894f0908a814fa516835c5d432ae5a4c35b162ff5d3570f7c46ef865cfb6"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_31.png",
+      "bytes": 65871,
+      "sha256": "8d7793f316ed81fe16ac15950577b2f6bfacf7dab2b366feba21a0a0c4ce5638"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_245.png",
+      "bytes": 57558,
+      "sha256": "d5cedc7eca87e27a05dfee8f7a0ff7050458ce2e769ef587ef5a44c37fd7312b"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_28.png",
+      "bytes": 72341,
+      "sha256": "58fd7d3049205cf6a8508e508218fb6cbfa30c9f1fbfaf73561a4b0fe5464e7b"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_4.png",
+      "bytes": 78877,
+      "sha256": "9f7f69a64dbd41726f6bf639407426e4022e9bd1007bc9e231f8ecf6610ed4ad"
+    },
+    {
+      "path": "dist/assets/approved-terrain/X_GRASS_FRINGE.png",
+      "bytes": 87549,
+      "sha256": "400bfb17608298142c342c5adb21a6f18b79e6fae3210bc2d356dea65284fc7a"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_127.png",
+      "bytes": 56708,
+      "sha256": "f812731952272e58a713e5bafe229fd8e4d2008ee0e773f345086378fd5a402a"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_64.png",
+      "bytes": 78395,
+      "sha256": "f0c98f7d3043e414c0d5cf3aab79d2b8aaeff4859ac29834cc7be458820affaa"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_112.png",
+      "bytes": 71982,
+      "sha256": "c45b8dadd34c925f0880b6289aa64578943f0b5e02747549121d6e59f5011c59"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_16.png",
+      "bytes": 78804,
+      "sha256": "5619c7dca4b2a727e02b9b46cc107338cf31c05538271012394a1b5b672aa5a6"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_29.png",
+      "bytes": 66565,
+      "sha256": "fdb07a5c5479c7b39e4bf2d5928a2b5b4f4233c502c9a62c6c7f9abe2d68bb0b"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_SEA_2.png",
+      "bytes": 48299,
+      "sha256": "581ed9a6716b04850f367ddd998cd66fae3d497a6b72426e382615f6a4acc23b"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_215.png",
+      "bytes": 57541,
+      "sha256": "69333ffe62eb4e47d4d22f6d56f359a1c52f211068e105986f8dbdcd56a76f0e"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_5.png",
+      "bytes": 72970,
+      "sha256": "1368d21bac819677634f30d58359e6459d61a518e3ade9396dc7a7fea8392d73"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_125.png",
+      "bytes": 57601,
+      "sha256": "a096feb18572d91c6575346b41f32da7a67ef5cf708a2ebf682fb34aaa6017ed"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_253.png",
+      "bytes": 56693,
+      "sha256": "2993ff57f242d8cd9938d5eb710b0b9abc358a55897275cc986079ee5d6ca816"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_SHALLOW_1.png",
+      "bytes": 47221,
+      "sha256": "652b8e3b1e759d72fe153aa7e9bbec9900b1711b5778d1fd5b7332645631141e"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_221.png",
+      "bytes": 57758,
+      "sha256": "a4b71ce90718b0e7579e2ec02758dacff35bea2ef5dadbb494a51360ca172353"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_223.png",
+      "bytes": 56806,
+      "sha256": "742cdd2c294a8b8fad7bea7ebe9f6d1399d5b254fae6704cdbe2d0691819c15e"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_PATH_EARTH.png",
+      "bytes": 82286,
+      "sha256": "b349e224264ce621b0274d111f9f85721873a91ecf320bbd5f662d91531369d8"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_0.png",
+      "bytes": 83835,
+      "sha256": "314643f990f64c2e4d17443547562b3eb1eab7c1164a435cf2f26d37a9f834ed"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_87.png",
+      "bytes": 58455,
+      "sha256": "f9bc7fd7b73025ff357b45c4b9363cd20bb822998cf3cfb9fc6e365832cc4c64"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_85.png",
+      "bytes": 59339,
+      "sha256": "baa91379a77dbeaa76d0b8cd4e48dd42406682a8bcde4ba3cac059d11f222648"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_193.png",
+      "bytes": 71706,
+      "sha256": "275640cd6e4b1df388d2ecff7534292f176010129ba5e219a0680afac3adaf63"
+    },
+    {
+      "path": "dist/assets/approved-terrain/G_DECK_WOOD.png",
+      "bytes": 85973,
+      "sha256": "802332e7dbfd958ac223557a595e7e7d634b111cc3ff63a758cedd6bbf288857"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_1.png",
+      "bytes": 78754,
+      "sha256": "8f03e0228fa0fcf0e985537bc9dd39bc532ccbeeaaf5b7d5fb5c30a8863d3998"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_65.png",
+      "bytes": 72443,
+      "sha256": "2b1ae1bc91fea1fe6d10fa30166216e6a480a3361827db4b4ec4d4ef9c37c295"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_247.png",
+      "bytes": 56568,
+      "sha256": "e6007d53ba554507c7eaa27bea6bbcbbe5524399ee3032a286b046e8e5eeeb6c"
+    },
+    {
+      "path": "dist/assets/approved-terrain/TR_GRASS_PATH_199.png",
+      "bytes": 63309,
+      "sha256": "6406302971e7c7d3eec0a3307b1bdf160228b10ea9d38cf75f145189a5b208af"
+    },
+    {
+      "path": "dist/assets/golden-living-v1/font.json",
+      "bytes": 84953,
+      "sha256": "722fe76cdffd99339db92324b693f9c655af642729613930b0830f8d1b6cb362"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/center_foreground.png",
+      "bytes": 421925,
+      "sha256": "afc6cb59e4d74680d7f0ed808ba6f1f207567f69fd1fd374088ba28b3f106f6e"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/pine_foreground.png",
+      "bytes": 235338,
+      "sha256": "3216157e918d783d6ddac77036acb06277b29489880319ce5936ca62bc64d9ab"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/table.png",
+      "bytes": 97343,
+      "sha256": "442c7be1839d006e75ea7ad52fd3437d4f5632b46dec28330f5c23f6b09db5de"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/door_closed.png",
+      "bytes": 138789,
+      "sha256": "39e26cf3666bd7be0456ee69425f90e233a60cb4e4e0df8a6953577cbe2f5d0b"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/door_open.png",
+      "bytes": 140032,
+      "sha256": "b2184a491d269d8260fcbb84d10fd6e5f07f8bbc5993d8aca5496632bca25629"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/pine_base.png",
+      "bytes": 31067,
+      "sha256": "f8209d385116d8760e5b6fb65979776bcfc35f7a42359bfefb50b04b9c761ae6"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/center_base.png",
+      "bytes": 405424,
+      "sha256": "00e4c6446f0ff335419a3c78ea3117074e4267c05f66246dbff48c9331d249db"
+    },
+    {
+      "path": "dist/assets/approved-field-proof/bindings.json",
+      "bytes": 2229,
+      "sha256": "26ce4542cf9ddacdf93d7af7e3715a2f8ef1c758f4b9ba33ca4d054ea2044d6f"
+    },
+    {
+      "path": "dist/assets/approved-title/desktop.png",
+      "bytes": 2130822,
+      "sha256": "ea62ba4489c95d7487a55b3125d1bb13ef471153d9c03f5afbac9a3624cb736a"
+    },
+    {
+      "path": "dist/assets/approved-title/mobile.png",
+      "bytes": 370322,
+      "sha256": "d50c8adf53140ca47f400f37c5609f09bb2314c7fb6c91cb78e680997911c5e1"
+    },
+    {
+      "path": "dist/assets/approved-title/bindings.json",
+      "bytes": 751,
+      "sha256": "05aa0649ef7c4c51560812cffff00deb69f0c7a2e7d0b14ede96b591b3953657"
+    },
+    {
+      "path": "dist/assets/approved-title/logo.svg",
+      "bytes": 3750,
+      "sha256": "8ea687ba102762d041291be5e6a072ff363b91d9b1c2f2fb29b226d631fe86a6"
+    },
+    {
+      "path": "dist/assets/approved-intro/bed.png",
+      "bytes": 250253,
+      "sha256": "5a2947f60d6db3b4e87988a2626df87c9d9fcf10d4ad5514b8f4b4450086f210"
+    },
+    {
+      "path": "dist/assets/approved-intro/boy.png",
+      "bytes": 999786,
+      "sha256": "c0a9c4bc14a2ed6ebada337ba6c35b7a3321cbb0ba621083370beacf3d9475f3"
+    },
+    {
+      "path": "dist/assets/approved-intro/terminal.png",
+      "bytes": 78732,
+      "sha256": "8a42863a99d2262b26cd14fc61865603c9151f083bce46d63aec2e29471aa42d"
+    },
+    {
+      "path": "dist/assets/approved-intro/shelf.png",
+      "bytes": 226145,
+      "sha256": "228f8269549ea97e46341bb316e8af3ed1e43fd99aef4632cd8cc8241dc0a4d2"
+    },
+    {
+      "path": "dist/assets/approved-intro/boy_dialogue.png",
+      "bytes": 285405,
+      "sha256": "0a4de00fd9fcdbab4cd47f1be0d052a45b79a5cc6b2084c75cd3c6f6ce5d6816"
+    },
+    {
+      "path": "dist/assets/approved-intro/girl_dialogue.png",
+      "bytes": 282252,
+      "sha256": "cd76698707f8740ab4470326fa1c89c767e2de1224c2646a22b729e731fd64eb"
+    },
+    {
+      "path": "dist/assets/approved-intro/treeTop.png",
+      "bytes": 235338,
+      "sha256": "3216157e918d783d6ddac77036acb06277b29489880319ce5936ca62bc64d9ab"
+    },
+    {
+      "path": "dist/assets/approved-intro/wood.png",
+      "bytes": 85973,
+      "sha256": "802332e7dbfd958ac223557a595e7e7d634b111cc3ff63a758cedd6bbf288857"
+    },
+    {
+      "path": "dist/assets/approved-intro/girl.png",
+      "bytes": 1234531,
+      "sha256": "6778b316d9492d4e80f2de468eadc70a5b3284b5307b12eff43b1ebbdd390f05"
+    },
+    {
+      "path": "dist/assets/approved-intro/bench.png",
+      "bytes": 167940,
+      "sha256": "d1914da387860d5c291585a127ce6101ee2f9f751a8c950efde5d84ea160e9c6"
+    },
+    {
+      "path": "dist/assets/approved-intro/researcher_dialogue.png",
+      "bytes": 315618,
+      "sha256": "0c171c06265f9736489f1ad959040212828e117689dcb959c10a861c5a31b72b"
+    },
+    {
+      "path": "dist/assets/approved-intro/door.png",
+      "bytes": 140032,
+      "sha256": "b2184a491d269d8260fcbb84d10fd6e5f07f8bbc5993d8aca5496632bca25629"
+    },
+    {
+      "path": "dist/assets/approved-intro/chair.png",
+      "bytes": 61141,
+      "sha256": "4fbfa9d920974af7b9b704e6d7c8ed8e800e1b4967aaf693c4c21ac6d79b6931"
+    },
+    {
+      "path": "dist/assets/approved-intro/roof.png",
+      "bytes": 237812,
+      "sha256": "f5fe5b0f012e354015c68cb8b40dbaf1438638bc46e7b9951e3c3b73aafb230f"
+    },
+    {
+      "path": "dist/assets/approved-intro/floor.png",
+      "bytes": 55331,
+      "sha256": "fe9d1a9a00107a2e79eb98534c2eb5ff35f4045858893c3855249e23f1e1eeca"
+    },
+    {
+      "path": "dist/assets/approved-intro/path.png",
+      "bytes": 82286,
+      "sha256": "b349e224264ce621b0274d111f9f85721873a91ecf320bbd5f662d91531369d8"
+    },
+    {
+      "path": "dist/assets/approved-intro/grass.png",
+      "bytes": 48129,
+      "sha256": "399ac67cb94dcc818c1e6d9de03339fcb9c35aa036627df356199fb94cd47e7a"
+    },
+    {
+      "path": "dist/assets/approved-intro/tree.png",
+      "bytes": 31067,
+      "sha256": "f8209d385116d8760e5b6fb65979776bcfc35f7a42359bfefb50b04b9c761ae6"
+    },
+    {
+      "path": "dist/assets/approved-intro/desk.png",
+      "bytes": 97343,
+      "sha256": "442c7be1839d006e75ea7ad52fd3437d4f5632b46dec28330f5c23f6b09db5de"
+    },
+    {
+      "path": "dist/assets/approved-intro/plant.png",
+      "bytes": 78929,
+      "sha256": "5c378ef8303681ca54135073ebec5588f800ee47e32205087aadb7e652fad92d"
+    },
+    {
+      "path": "dist/assets/approved-intro/stairs.png",
+      "bytes": 168683,
+      "sha256": "0853f400a82915612a5538face146310a4cbb7222074e0a0ecd0a82cf1e8ed0a"
+    },
+    {
+      "path": "dist/assets/approved-intro/researcher.png",
+      "bytes": 1905228,
+      "sha256": "2eddb672d227fbed77015b6b92cffe60135b6655ff6a11263b5277979a3d2154"
+    },
+    {
+      "path": "dist/assets/approved-intro/window.png",
+      "bytes": 54733,
+      "sha256": "cff6d2cd89eccee97674d16416a760dce33fece5d19f82fb71763d58e871f8ec"
+    },
+    {
+      "path": "dist/assets/approved-intro/center.png",
+      "bytes": 405424,
+      "sha256": "00e4c6446f0ff335419a3c78ea3117074e4267c05f66246dbff48c9331d249db"
+    },
+    {
+      "path": "dist/assets/approved-intro/centerTop.png",
+      "bytes": 421925,
+      "sha256": "afc6cb59e4d74680d7f0ed808ba6f1f207567f69fd1fd374088ba28b3f106f6e"
+    },
+    {
+      "path": "dist/assets/approved-intro/wall.png",
+      "bytes": 283321,
+      "sha256": "53769d42381e57a742e0723b8cd663ed6051ed40603ba669505166838fc23121"
+    },
+    {
+      "path": "dist/assets/golden-living-v2/map.json",
+      "bytes": 6378,
+      "sha256": "20bd4a820ee8d6b39af914e0e988b74a430a25b16a0c523cfff8c7c6874a9459"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_BENCH.png",
+      "bytes": 22176,
+      "sha256": "7238fd1c6b0139424fd79b87759c046e94b107867c0a253c47c2bbea1727a26b"
+    },
+    {
+      "path": "dist/assets/approved-prologue/G_FOREST_MOSS.png",
+      "bytes": 93445,
+      "sha256": "7c9c976194d722ebf98788dec4643e1d1bf84f4f662e8c72482545269ca88747"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_SHRUB_ROUND.png",
+      "bytes": 10921,
+      "sha256": "e9d9046df6f0c2dd8addd139ebaf6da70cf6e7569b93744533f5632e0b869a4c"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_EVERGREEN_BROAD_base.png",
+      "bytes": 23403,
+      "sha256": "e616bd5c34520a14e858f37fbd258cc30dcb5eee15d238f9916027066286c0c4"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_CAMELLIA_BLOOM_base.png",
+      "bytes": 11506,
+      "sha256": "57a32aa5b4dd7b4ffd6b93a1102b8e6211a3e3aab634a7c81fa83e39f50e7773"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_SIGN_WOOD.png",
+      "bytes": 13748,
+      "sha256": "0fc6082740f78bab105105965423ee3a6f474e5cf140446c4a75dcbbac1c94c0"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_WOODLAND_SHRUB.png",
+      "bytes": 15571,
+      "sha256": "2fb326bc6f5d483d878d214dc364a103a59c2566b01212d78c9749c63e58305d"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_PLANTER.png",
+      "bytes": 26904,
+      "sha256": "c379162d566d33e5f313e32be70cf9c0e1da88170e366cf2545240daf6494136"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_EVERGREEN_BROAD_foreground.png",
+      "bytes": 145063,
+      "sha256": "60ceefedb6f7ac4f17e8ef29cf0c1f71aa6985df0a8613d4bfb4b30b0372d783"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_FENCE_WOOD.png",
+      "bytes": 14210,
+      "sha256": "b53d22c4e24ca7d9d8bc6d5474787302b7b1d5f12a19713513b6acae0d59c298"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_LAMP_STREET.png",
+      "bytes": 17106,
+      "sha256": "a1df1d008fa410d133dab24b2b12c1689773bb0f57573562625d9a1a8c04ef98"
+    },
+    {
+      "path": "dist/assets/approved-prologue/G_PAVER_LIGHT.png",
+      "bytes": 99003,
+      "sha256": "8e78bd9b291d064dc13355209e70da47bd3cb94e1e498b5f163acea1db3d3876"
+    },
+    {
+      "path": "dist/assets/approved-prologue/O_CAMELLIA_BLOOM_foreground.png",
+      "bytes": 75445,
+      "sha256": "db8501162a75133d3cbb05b7d5e65d769494add990b4833e281089996e9c14a7"
+    },
+    {
+      "path": "dist/assets/approved-atlases/manifest.json",
+      "bytes": 554098,
+      "sha256": "4a0470fdbfbcf017328192e8afb6f2909a06a4a9e583513f43aedf4dcab6694a"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/URBAN.png",
+      "bytes": 1843636,
+      "sha256": "a4db1498aa6681052ab931c8fcd461ea85dc483fdfc1ac6ddb1a384f10469e0d"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/RURAL.png",
+      "bytes": 1818923,
+      "sha256": "a5b19d34de62074569ce81a90b9b31f1422a68c7bcc48dd14fcfa89b1f92ccec"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/CLIFF.png",
+      "bytes": 1894080,
+      "sha256": "ce62b06d494d28ea90affaae03f65b79b7f8b04012f6ebdad4f149f5eb43f8ec"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/ROCKY_SHORE.png",
+      "bytes": 1725894,
+      "sha256": "51230d9cb9fc6c38248d5498445825e24968401afe40776b71c125d554bf42b5"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/COAST.png",
+      "bytes": 1787045,
+      "sha256": "ffa2329ec3ca58ff94c8e7074844229c3c21ca6d1b879551a91670231b722a08"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/LEAGUE.png",
+      "bytes": 1723373,
+      "sha256": "86403e24684f71bb80263ebc00d9dac7147ec6f570f7e6a0c68ab4152bff75a6"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/GRASSLAND.png",
+      "bytes": 1719763,
+      "sha256": "c57074120a9b1ba00666e235f4a9b9205267efb72fdc0b16b2a7ba4eddea61cc"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/INDOOR.png",
+      "bytes": 1433829,
+      "sha256": "2a8d7737bb6a8ecd1f89d2c6ea0d7ce280756e2a9aad97a2165f1c0c28d4408f"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/CAVE.png",
+      "bytes": 1428254,
+      "sha256": "471cea1415cb6e5559fc28c471779d474ebbc2ca327d2a032350f309bc3d87d2"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/GYM.png",
+      "bytes": 1497230,
+      "sha256": "0fbdc2f555cce368ccd00501012b94b756cc48d6105cbe687f595fbc374e3b58"
+    },
+    {
+      "path": "dist/assets/approved-battle-backgrounds/FOREST.png",
+      "bytes": 1671455,
+      "sha256": "200ac2ea3673e0b8ec382bc8dbafdcf16ce542acd62b378d4214c4bb40f3298e"
+    },
+    {
+      "path": "dist/assets/rc3/fonts/UPSTREAM_README.md",
+      "bytes": 5927,
+      "sha256": "f1f132adbe89a49bd4a01cc16e518e3d9c3d8fc06cce341bbc56fb8298bc6b60"
+    },
+    {
+      "path": "dist/assets/rc3/fonts/galmuri11_bold.ttf",
+      "bytes": 2613512,
+      "sha256": "2ac92976daa39b3c691be1ae1ec1911369e12f12ee4bd623ab60768ea2a3fb46"
+    },
+    {
+      "path": "dist/assets/rc3/fonts/OFL.md",
+      "bytes": 4266,
+      "sha256": "c50198a0fd849cab9acf7d883e697dd39ed50c145c5cb3906d51ea95e683e3bf"
+    },
+    {
+      "path": "dist/assets/rc3/fonts/galmuri11_bold.woff2",
+      "bytes": 166476,
+      "sha256": "d3988ed2e183b739d0fa50a236d7a5337988ae0deb7cd1ce160deb3f06e10208"
+    },
+    {
+      "path": "dist/assets/rc3/fonts/galmuri11_bold.bdf",
+      "bytes": 1765950,
+      "sha256": "229d55f6b0680ba3ee5dfed1a55067a8bbf630b9903b45bc062a29a16c14d3db"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/HWIGYEONG.png",
+      "bytes": 511435,
+      "sha256": "291fea74dc3a5f20262ed9dd4947291d8d15ec65bec418dffb74b1f4448f7d64"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FARMER_M_BASE.png",
+      "bytes": 485597,
+      "sha256": "77e3bbc5aacfccdd62b049b3f65395306bff94d97721e28c137c4caf75941d66"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/DOCTOR_YOON.png",
+      "bytes": 492635,
+      "sha256": "6573f7239c953b9b7f9f2b3c4b3f005c3a9ba2c32787ec1a8458528e8a92c8ca"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_RESIDENT_F_VAR01.png",
+      "bytes": 506412,
+      "sha256": "09f907ae8a0f4cc9d97983e6571a56eae4cca7d3d214b4b655cdde333a302183"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/JUHYEOK.png",
+      "bytes": 474529,
+      "sha256": "6677d305f98fbb7bcd89023d3698d497f0731189ba8cfd76de220019456b6100"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/NATURE_HOBBYIST_F_VAR01.png",
+      "bytes": 501373,
+      "sha256": "9b2175ebf2ded41f8c33b0ae5c464757b58e99739e17b57dd7e352f6835ba1d5"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_WALKER_M_VAR01.png",
+      "bytes": 469337,
+      "sha256": "9bd215811d1627122627ba211ea39bdfea9f68e046d583a347f68ac727e0eee5"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/SAFETY_RESCUE_M_BASE.png",
+      "bytes": 432020,
+      "sha256": "6e5fb876eab064870c9ab9dd01b87acb6f951eca87aa23a885cc937b772de6d6"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/JINSEONG.png",
+      "bytes": 499296,
+      "sha256": "f3ee3b86c7e5805bdece2700c6c8752df334960a53f20c371c5060346f514bc3"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FARMER_M_VAR01.png",
+      "bytes": 433804,
+      "sha256": "ba34c4810f19e0e86c7e01208e22a255dd20bf625d0a1ff9ff73cacc5cd856bc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_WALKER_F_VAR01.png",
+      "bytes": 489247,
+      "sha256": "c6c5bea21be82d8a7355d5662ab08245869d1fe40af297986003c3b244510c92"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_RESIDENT_M_VAR01.png",
+      "bytes": 440057,
+      "sha256": "5934ed86ba5eb8b0f63f20cd051c71f59b9ee432d1262147c7aaf81dad1f0aa6"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/JUNSEOK.png",
+      "bytes": 496129,
+      "sha256": "684cb34dc2d9ab9cacb07dc17a0c9903ab38f588593ba25d04ab6fd564346ec1"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/ANGLER_M_VAR01.png",
+      "bytes": 408114,
+      "sha256": "6044577536f2b7a743007abbd3138ed4495a0e8cfaa87aea232efffc13b3b057"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/YOUNGJIN.png",
+      "bytes": 482751,
+      "sha256": "8da86d51e591fd63c91c8d671c55586ec0e4c347f7c56c89913fc2ab210c1678"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FISHER_F_BASE.png",
+      "bytes": 453110,
+      "sha256": "8a6f3ee07762b6ff1addfca83d31277021d03513656896e01f863de4d1e89ff1"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_RESIDENT_F_BASE.png",
+      "bytes": 487102,
+      "sha256": "c28b066fa89f9fbf8e0bc10640f8a56e8c5a9019f6397fd2214ed76ebb408b18"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/DIVER_M_BASE.png",
+      "bytes": 489418,
+      "sha256": "6cc36f5416208b1e47764d6672dbed407d66f082c3a22ae72a71911d6f61d7f5"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/OUTDOOR_EXPLORER_M_BASE.png",
+      "bytes": 478025,
+      "sha256": "fed865d1e70088ccb266c1519638f2b4f273fb91bd0ca52ce33c75f648ea6df8"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/NATURE_PHOTOGRAPHER_F_VAR01.png",
+      "bytes": 494917,
+      "sha256": "36cb3a605496d5bf246ab61e74840134441a8495fa16b79dea6c977d36aa4fcc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/SAFETY_RESCUE_M_VAR01.png",
+      "bytes": 418404,
+      "sha256": "bfdf1dbacda746df1ae803ae936791faed9c7acdf52521f7d6f9ba193859ee2e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/ECO_EDUCATION_STAFF_M_BASE.png",
+      "bytes": 435752,
+      "sha256": "f28e518dc9bfe7bfad6db23ecbfba06120ae1ece15849861ee2b838416871425"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/ECO_STUDENT_F_BASE.png",
+      "bytes": 501651,
+      "sha256": "a4410e1cc77fc4ea184c42df783a3a8f056ad8ca108784344fb8dda4247f4d76"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_M_BASE.png",
+      "bytes": 446342,
+      "sha256": "ce5553dc41f79070cad8e7255fac57d0c6773522f10f2fca752bf1776b066d4a"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/SIYOON.png",
+      "bytes": 620824,
+      "sha256": "ed0578498d0b21c266ba524fdf67508067242c2a2c8de36610cc30ae4623980c"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/DIVER_F_VAR01.png",
+      "bytes": 474838,
+      "sha256": "cb32189798bf67fad6dacd26bd043d3dcd506273cd1df4ab51426ff8334b49f9"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_RESIDENT_M_VAR02.png",
+      "bytes": 438504,
+      "sha256": "23b951177e99e54d80cb61fb4bd91b834e68a02c002537a5718a3652799ba6b0"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/DIVER_F_BASE.png",
+      "bytes": 489516,
+      "sha256": "e56f016a63b994823b12de90a0997a8d6f60cf422dcea1ac29e98ac94879c475"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_F_BASE.png",
+      "bytes": 430686,
+      "sha256": "e95a649525a32d9ed966ba88b594037b6f048266d2bd8b7ac201c0270a29abb1"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/HARIN.png",
+      "bytes": 475253,
+      "sha256": "eb8e1e17debaa1ffbdbde69bd86360c86cd971ff053a99e5954bdedf2f0adb02"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/OUTDOOR_EXPLORER_M_VAR01.png",
+      "bytes": 480731,
+      "sha256": "f318133fa698de861097dc5036bb577e496a02459cf67ca013c88de5c7614b0d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/JUNHO.png",
+      "bytes": 527310,
+      "sha256": "b6462cdd9158633cac1713e64ffd146cc3f7da93ffa056eb2a78d11804a5389b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/JEONGUI.png",
+      "bytes": 531302,
+      "sha256": "7c9e5f56c2aeae0fd2acc6c706879405750545d2f3bd50636e015914cea748cc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/ANGLER_F_BASE.png",
+      "bytes": 451787,
+      "sha256": "fbc3ad840c2664a7580372ea19f53c14d519bbba0df9a2b9ab7fcd48ede7da55"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FARMER_F_BASE.png",
+      "bytes": 492864,
+      "sha256": "d879f1ecdf24b2a7b5ed1faee74d4346ef1ae860c8a2ce7fd5f56bf03d18f470"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/USANG.png",
+      "bytes": 555053,
+      "sha256": "17a95545661a9401ffee1a8f9c25da5d28348ad62a7517c52dee9755b110297b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/ECO_STUDENT_M_BASE.png",
+      "bytes": 434556,
+      "sha256": "a2de61830cde4b9a65a00cd871b7bc64c8810204693c8599f68058882560d100"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/YUNWOO.png",
+      "bytes": 509516,
+      "sha256": "5fe7be13f29894190ba95104cf58cb958e56474b7a5ca0a645276bc49370f379"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/YEJI.png",
+      "bytes": 498165,
+      "sha256": "c0a373f7463b043147d6442b6af266a8f512a71c8a0954fb66cc97886988b9dd"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/MYEONGJU.png",
+      "bytes": 559071,
+      "sha256": "f179824fc40d4ae788a02e63b63e6fb789d8afcd959e4d5155e9c202ab1b57ef"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/OUTDOOR_EXPLORER_F_VAR01.png",
+      "bytes": 477774,
+      "sha256": "6e5f7ee5cd567f916fba3670723fe6b01c4a875c634b30c9991b0b075e2aff6b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/SAFETY_RESCUE_F_BASE.png",
+      "bytes": 422913,
+      "sha256": "2ca043d652fcb51a92dd72391426fb2adc0f9ad50edea763522f3f29bd08dfc7"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/DOCTOR_CHAE.png",
+      "bytes": 519398,
+      "sha256": "fff5faf915e53709c8f54352c16cd9d021aaf632b74e3b62db27a98b4c4e2b44"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/NATURE_PHOTOGRAPHER_M_VAR01.png",
+      "bytes": 492162,
+      "sha256": "4749e383c920bfd6bc1a5dabd3f56a9d22f2868b76ddae344bd962239b484655"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/OUTDOOR_EXPLORER_F_BASE.png",
+      "bytes": 473468,
+      "sha256": "d9e01b1855708563e1d4c168ed55f5006cf1abd3dbd7af30eec8b771d803fb0a"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_RESIDENT_M_BASE.png",
+      "bytes": 438339,
+      "sha256": "5b578426bffc12f433c4053189ce4983d283d780c7e3b7e176aa83aee995956e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/BOMI.png",
+      "bytes": 490282,
+      "sha256": "9d53a0db31e19094ccbf3eba9ce69cba106bba1cc87d88eb8e168e62d41c42b6"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/KANGMIN.png",
+      "bytes": 504968,
+      "sha256": "2cc2aeae2929e8bf7923192b7bbd2031709b82c0fda8ad4a7a306a7ad2c05f23"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FISHER_M_VAR01.png",
+      "bytes": 433889,
+      "sha256": "6a888763a37c27afc4f824adb1a30846d911565eb56594c50d8eb7c1db403018"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/ANGLER_F_VAR01.png",
+      "bytes": 447338,
+      "sha256": "c2805dbbe5bd89045a072c93d4db7829046ba6bbf5604ab35e6ec3c3ddd84d5c"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/ANGLER_M_BASE.png",
+      "bytes": 409791,
+      "sha256": "2c58bb3b2a7461d301111c6e46455d7257494d15662d0a9c92a425909f53a2e8"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/FISHER_M_BASE.png",
+      "bytes": 497623,
+      "sha256": "f3d6f16c0925524b9bbb4002b9aa238845a94a3fa252a499b1bd5d13f464d9cd"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/NATURE_HOBBYIST_M_VAR01.png",
+      "bytes": 475531,
+      "sha256": "15b31a30a6b0ccb728e7711fde2208b40bdf9b9c0742ef9f48e458244d0a3f07"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/LOCAL_RESIDENT_F_VAR02.png",
+      "bytes": 465067,
+      "sha256": "2cc0ac01a2e82ec6cdc7a687cf31e02bb94565525893ac33bb46f542a81116b4"
+    },
+    {
+      "path": "dist/assets/approved-atlases/npc/EUNMI.png",
+      "bytes": 706668,
+      "sha256": "1f41cabaaffcf20fc2c6fdf87d2c5e6c203d7bbf5320799efb130af2074e7703"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_047.png",
+      "bytes": 502856,
+      "sha256": "041e62a1ebe3baf35cd9e352f4445759d33dcbcf60930f07dfdfa135612ab39e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_030.png",
+      "bytes": 554636,
+      "sha256": "f485ef21310803b17f753736d47ce2322cfd9df8b2200a676676c503290ced69"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_103.png",
+      "bytes": 615139,
+      "sha256": "b97f429d50f56e9f611eb4d4296fd405cc489c744d91d4d42a3eece465cfd2f5"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_040.png",
+      "bytes": 414121,
+      "sha256": "5ff0c12e80f4cd49b424711a055fdf5bef8cc0888faff58a76c0c6a9582bce5f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_018.png",
+      "bytes": 341476,
+      "sha256": "57ae40200a6817add062ab184ed855bdd0364f53bd754e06e048afbeb110de1f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_151.png",
+      "bytes": 458801,
+      "sha256": "8472c4a9fa651e401131f4ae694b64545a6bafa1793447608257c3559fa73258"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_002.png",
+      "bytes": 492711,
+      "sha256": "da77dbd49790766410fb5d8bfd08bbfbc50f000b35c5d7ec785f845a82e2e3de"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_077.png",
+      "bytes": 456090,
+      "sha256": "f0a486bfe46f8ca8c871971376645786a146169030ef1e91e1c4f872e4269cb7"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_081.png",
+      "bytes": 455977,
+      "sha256": "eb1c25102da0e048078a08ee7518fe06ac171e2821e95971388c017a242cf695"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_092.png",
+      "bytes": 543749,
+      "sha256": "aba38bdf48f6bd505fbbed642990c83dc1aaf5b8c263060fd3ff7eb7c6382916"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_116.png",
+      "bytes": 411144,
+      "sha256": "37e6d35c109c951dc9a70da67a6b3510ecba2570ceaf13e438807222a11b87a5"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_063.png",
+      "bytes": 597634,
+      "sha256": "1cd8a6afc4d22aeafd893dc1c047a2eb597dd416396ea3e4ad9acdc34ed6d226"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_042.png",
+      "bytes": 502951,
+      "sha256": "c402a14dad5102010a80abbb2c14dd4667585379087b06f0e14327526e226095"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_128.png",
+      "bytes": 671802,
+      "sha256": "cf3143ab201a8f88a73699939fff9788d4c6176f728e0f6f6b1ceddc9f48c84e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_066.png",
+      "bytes": 475997,
+      "sha256": "51513645cf05248d511c9bfb1f247dd216c164a48f876016a3242a68ccfc217b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/EDNA_03.png",
+      "bytes": 555113,
+      "sha256": "c7c7427dd065a88613f0d4d06f29416f887a449942bc5a5316144ee77a2beda2"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_049.png",
+      "bytes": 569632,
+      "sha256": "90829ad8b344bc21ccfc5da206111739954cc7f3823246c7c03908cffa1fa180"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_133.png",
+      "bytes": 420847,
+      "sha256": "8bf36d03161afb3bbe404851258a39207ca8c2575c89afde5d1ad75d354a2634"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_031.png",
+      "bytes": 473325,
+      "sha256": "f34561f752501f91838ddc9613a3eb015e7a90eb28d79b49ba83420e8db37f1f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_032.png",
+      "bytes": 442515,
+      "sha256": "ed59e398cb298b12bb77465a970f0cc2041375367ce3bd8ceb6492aa80e14e6b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_055.png",
+      "bytes": 420123,
+      "sha256": "fa6a2abcf24d9a02e22ada4485df0b32f162169cc978d2d4abc9bc0b9e71982d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_072.png",
+      "bytes": 432033,
+      "sha256": "691b8667e3801456e5bb1c894c931a657ce891009f47a955879cfcde35474a93"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_089.png",
+      "bytes": 457147,
+      "sha256": "75793d0a9ae3dc1e045178c1359c8e865bb286abcccf3778a0155a281a4620fe"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_090.png",
+      "bytes": 590774,
+      "sha256": "f54858c4d2164155d6d635c9e89a4aca3b41e47955c6dc7be6b52a3682f6fc26"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_033.png",
+      "bytes": 510411,
+      "sha256": "cecbcf08823ad88fec6880ecc9bd873c4607b0b6eb82ad65ee7a277e129e4f13"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_140.png",
+      "bytes": 508105,
+      "sha256": "dd7e3b43e785707c85dcaa5955a590eb500af8c8477fb800cfa4ba94aef39f66"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_107.png",
+      "bytes": 482666,
+      "sha256": "4700ab599af7fb35042f20dad4b94629a4c64c4f23f703c44211e65dfc868320"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_106.png",
+      "bytes": 568476,
+      "sha256": "d39d8e60a700459afe14437d14122f8160467766138a8df60fd623c7dc1eb558"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_137.png",
+      "bytes": 269853,
+      "sha256": "d36a02ba1d1e9d39f6e028418146c7d2ad28ddc6526ab8e9748619521a34a028"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_065.png",
+      "bytes": 262405,
+      "sha256": "27a3ca6b4d3e33059dc841d302a39a6f36cfee2ab010441a730b023f4cf18b85"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_141.png",
+      "bytes": 300677,
+      "sha256": "07f36fc27f87c976c219599dd520e5008317fa78aee0a77ea9849d53cc22ba51"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_008.png",
+      "bytes": 446512,
+      "sha256": "d12cf02c8d0cae4d3713f5d519971aa9228523c7241a0140c1b644dc02c0453e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_123.png",
+      "bytes": 433423,
+      "sha256": "3ae8241081375eac3bbb6c6cc030b03d484977b7d1777029dae8354b506c7f0b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_113.png",
+      "bytes": 327067,
+      "sha256": "3b6b35d47c81b542316d7c9793ffa23a82957292e8740c85815c4446558ae850"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_067.png",
+      "bytes": 356795,
+      "sha256": "264a8877203cdc36dc3e8b69e3b092a75facd3cf5fb870f3224f55eabc3ee960"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_035.png",
+      "bytes": 310363,
+      "sha256": "89652c12fcd9c142cfaf77e5bd52efe0e64d619573b26f5006c93e321cdb8676"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_083.png",
+      "bytes": 846989,
+      "sha256": "7c28611bbd65272e528df8e6ef3806e857e0a962a944027fe47ddd1d2b0c4a62"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_098.png",
+      "bytes": 441886,
+      "sha256": "c77a4282b0ab62d76359093e94d4bf67a5124e775007acbcc95a1b7d3e8f7527"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_041.png",
+      "bytes": 404318,
+      "sha256": "22fb78e7d2d000f7d443c794249b08f104f3b0d25300204b86f846544661e084"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_134.png",
+      "bytes": 546514,
+      "sha256": "c6f5c299e8ca22cbda68cefead59b03a5a2b35313d92dbdde991711a82e245c1"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_003.png",
+      "bytes": 451359,
+      "sha256": "dfcdad9b7248e721e981998f65936ace26f5340976a1889adba4f946d181e56c"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_101.png",
+      "bytes": 372758,
+      "sha256": "31c638ad538bb877b24ec88e78d4d9c8bcae02280a5982c60d79613c91ab3afe"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_020.png",
+      "bytes": 396276,
+      "sha256": "40a50ff5d4ac4c980ddc936dd93a5ec99a8e53cfcb151ae46fda46201b9fed7f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_127.png",
+      "bytes": 277796,
+      "sha256": "1f00b3e0a1794c9de53cd233c4ef8052b80259eedc20e6f4ccb6d17c3fe0023b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_005.png",
+      "bytes": 440767,
+      "sha256": "8f3340e691c10e3fde8b08f5df3d214a883ff1c2dc6e368af21e44171edb5d32"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_114.png",
+      "bytes": 577232,
+      "sha256": "ac67feaa99a2284416a41049fdcf221a2ea264cd5e8ad74d31354b891aed6428"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_046.png",
+      "bytes": 300742,
+      "sha256": "b505bb893cf544d3391e2d5c129d03ed1a7d15ed54e1fe0427f58c0391caa93b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/EDNA_02.png",
+      "bytes": 548054,
+      "sha256": "34fffdccf10d33a962729a2f3d68b411ba62e8c294993336ca5f264bf830fd54"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_068.png",
+      "bytes": 343616,
+      "sha256": "b1f578fcefa1526bdf61deb1cdc45f5f5a04f36377df7ea913083d0e5f83f416"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_010.png",
+      "bytes": 461757,
+      "sha256": "142c0732f8df08fc067d69be86b434039489e276cec20eff63cf8ee0795f703b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_097.png",
+      "bytes": 357699,
+      "sha256": "765f89461d396853ebfeec103721f0496c1684b5f6c3c2930714dc839e3b976d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_104.png",
+      "bytes": 519927,
+      "sha256": "764d740b10da43fe2cd774223462b9a7c7f7ffef69c4fec8ed4bc75cb6298e2f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_051.png",
+      "bytes": 281233,
+      "sha256": "86a541fbb63384241033d9ae1436bfcf1ece3457ab6e0dcae7eec0c0eae2f1c2"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_064.png",
+      "bytes": 343859,
+      "sha256": "6a26d06729dbc564fa9e46e8aa72ed6f56ec12a2608155573e981fe1842e5a2b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_071.png",
+      "bytes": 571257,
+      "sha256": "e9d94e2ef43b1c5ddbd9b06307bdab1787148d415a152515eab134b9972f8490"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_130.png",
+      "bytes": 412909,
+      "sha256": "3573231c8747fe25a9b388566bdec2406905442b42bdeaa9c8c9b23ec0d7eaac"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_084.png",
+      "bytes": 406422,
+      "sha256": "555b2ddffad1fe250bbbcc7d39724d429a3651e48e813b45ba59771d3384c8db"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_105.png",
+      "bytes": 491411,
+      "sha256": "e8415fc97f348d871b667c64b8e83f586dd4b169a6fd3a3ecd6d5e905923bccc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_135.png",
+      "bytes": 435906,
+      "sha256": "61b815da209f98f08f706ad3e57b570fb78acd8f4da79b7df62ec8e1f79eeb5b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/EDNA_04.png",
+      "bytes": 438347,
+      "sha256": "c9103e1c6e8f9a4700db57e9bf5c0d7f8fc54622fc04cc6e6f10bbb83be39975"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_085.png",
+      "bytes": 538658,
+      "sha256": "6b47fb503722e729740738e27dec88b2b58adba6ccd659033825fb7c093437b0"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_015.png",
+      "bytes": 539944,
+      "sha256": "290287b2bd317f43fd0c7a16ef57ceed2dc33de6f7a3a4a0827c8cf4e81db91f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_119.png",
+      "bytes": 458488,
+      "sha256": "4457b6d2b63535b95900a61076443f1eb7d5df04bfa9d677920c417646c1b770"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_013.png",
+      "bytes": 423557,
+      "sha256": "2b4fdbe56a268a544ef257419f58e91296973e246b26ec04e1d8255d43e816ff"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_039.png",
+      "bytes": 444109,
+      "sha256": "1ef28700d1b2784e6cfbfe69ba15a9a1a6ecefb5856b2abf8f150f25ed71e9e4"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_034.png",
+      "bytes": 772748,
+      "sha256": "1867b6f3f199076fb56388cb154dbcd3a9638de1971947e4e8d27060c2825b07"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_007.png",
+      "bytes": 369636,
+      "sha256": "6c9dbb2398ffa304ebf6f87427290e4ccfba21dfec18f57d13090c762e37efd0"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_120.png",
+      "bytes": 551382,
+      "sha256": "8ccdec13a27a20bd6e7d012c9f19fba6ff979fb3720fe52e94c9186e29c96c23"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_148.png",
+      "bytes": 522927,
+      "sha256": "3d99b1096c1cb6a4ad901d25f8c8fa014ca407eed0fe1929e3be256e5568ac62"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_095.png",
+      "bytes": 416533,
+      "sha256": "681116dde375bb8160b079e3d69e77ac01860ce70af023982150e4f31c24c34c"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_057.png",
+      "bytes": 474762,
+      "sha256": "ae4cb73008ae56a5a2d643a4a3c631695fe31e14cf68cc4c1756988faf41711d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_054.png",
+      "bytes": 346331,
+      "sha256": "e21a844634cb3e01f15ad86ea345cea7d3f379f0b617bbe146ebffd73ee653bc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_070.png",
+      "bytes": 376896,
+      "sha256": "08142f212cad105cba039a1822b8d753a0011c092fd7f33f32d8f83d71c0b310"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_139.png",
+      "bytes": 347405,
+      "sha256": "11aa2bca4f3b7806965d4d684f6be4556ccd98bc893a398538ad2510422ba7ae"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_121.png",
+      "bytes": 422631,
+      "sha256": "7c36411dca78d6e3d6e80019bdb0228db1e4cc85914c4c8100536b3ce42244a6"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_147.png",
+      "bytes": 369392,
+      "sha256": "b5535ffe080a8344abe792fe3c893d6d8f9d35e0e50ee16e405a41c86e6897de"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_076.png",
+      "bytes": 288458,
+      "sha256": "899f8b77e20f8da59681d947fcadf39057b9d47889167c4b75d6d9280caa5b27"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_048.png",
+      "bytes": 384984,
+      "sha256": "a7ec6d57dcfc8e6b09b7c656821ffe48da5b0aab5ff513efdf522ef99abc7038"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_149.png",
+      "bytes": 621094,
+      "sha256": "0fc5e1bc33c0d2b7bf78be4571ff3b2775b058e89087e63cdab96ecb1fd6c99c"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_012.png",
+      "bytes": 354241,
+      "sha256": "28c3bf6881df815ab5f95e1d2cd1f6222723319b00894db12e492c8af608c604"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/EDNA_06.png",
+      "bytes": 436262,
+      "sha256": "ed6cb9efbcee44553d5030959098d180d42f467a5966a3ca4e4fc0c77a7f456b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_074.png",
+      "bytes": 502289,
+      "sha256": "f412d859fe6f52cbae1774fafbcbaff3f2a2ae31c134f42c125460d1d643adc5"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_079.png",
+      "bytes": 358151,
+      "sha256": "68c5feceb2b553f5904369476be9c2b3e5503ede4fc8c0c3b6ae363cc047c6cf"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_021.png",
+      "bytes": 343874,
+      "sha256": "6df5d63241211711586f3be13425ec69e47420dbeb6a162d96af7daef167151f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_025.png",
+      "bytes": 442144,
+      "sha256": "69675e58f27b452c37403369899f99747923faa946ae55434c98c67df066aed3"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_011.png",
+      "bytes": 295072,
+      "sha256": "a029a34127ec89e95bcdc37983c3b8ee4aece5508f0321ebf89c41d84ba6327d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_126.png",
+      "bytes": 578574,
+      "sha256": "62ea4e53a41fcafca697bb2733877b4136b20d34e01680150254143304f79dc9"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_144.png",
+      "bytes": 531311,
+      "sha256": "4316794f8ebfb2e49be9e832cbb490fe7a4ab0a86d5c7fde14a44e1c91514542"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_112.png",
+      "bytes": 599230,
+      "sha256": "673568025427864400c691f8a998d1e8e256b793832502c51a528708523dbe19"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_143.png",
+      "bytes": 419171,
+      "sha256": "293863b3d3975faf49bf46d4f8974f79a4ec3dfc262d3258b3a3642c7e55c1a3"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_122.png",
+      "bytes": 505430,
+      "sha256": "d3e46d2edca3b5c58b1d28f4433d2fadb638503e08822259ae2ceb3cc728b4b6"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_060.png",
+      "bytes": 354071,
+      "sha256": "450bd0cc29875245a4f8e42a9076e48b2be785c9b95ae450cba74b5859ddc0d7"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_118.png",
+      "bytes": 551577,
+      "sha256": "2a64293cbe280800c580aab7fadcb3a15ea3665c1c9f654888b7f78ab6cba2ce"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_014.png",
+      "bytes": 553037,
+      "sha256": "ef4a5026723a4b628195be843296de6064ebcbf8c22c32f3676367b3ffff862d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_109.png",
+      "bytes": 479503,
+      "sha256": "e8c148faca66d69b8172a0ce259a0f5fca00b3dc1a9bda17cc278868b007de0c"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_044.png",
+      "bytes": 595995,
+      "sha256": "a63695d76fb38f48bc87f42049f0ef6e74c540a219916282ea56dc277d9614a0"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_062.png",
+      "bytes": 375345,
+      "sha256": "a97ba4be3badc3bb30ea805853061b5efa001939735bd0285b454d8e34836893"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/EDNA_01.png",
+      "bytes": 439688,
+      "sha256": "bf6873587d13c71aebf862622d1d469b6f3edb06b0b6f8b6dfdec24a862a093b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_059.png",
+      "bytes": 378252,
+      "sha256": "ae2fb4c18d5765e875d4df381ba0acda7a945acc2f90975228670eec5cc607c0"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_080.png",
+      "bytes": 486440,
+      "sha256": "7ae807b2bf51ef7d80d9ce7c675d96d85c4e848b54c468a6f8efe2e17bf61ebe"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_142.png",
+      "bytes": 429401,
+      "sha256": "dd33bd6f53a3fb06898ca02cebcdd6b6d775a9102d35362ddf63986e4fb9f757"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_138.png",
+      "bytes": 526587,
+      "sha256": "6d4eba6fbc421e4132575b04d0f04c76ca8886a5583ea6ea3f40b0b9f2db68dc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_006.png",
+      "bytes": 514101,
+      "sha256": "bde9625fc657e45eaa50f42946c03712e4e208be8aa9fec284136b29c3b18c2a"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_024.png",
+      "bytes": 468604,
+      "sha256": "df550d9fbedbdbc9e0dd1c7ed3882fa34a33b462104e2d72a0c124953865b71d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_017.png",
+      "bytes": 520510,
+      "sha256": "4e9458988fb486820eabe53e602fccb392101b9869ed9f264c06ee76f4c72c1a"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_131.png",
+      "bytes": 671969,
+      "sha256": "b6b48ade45da5794fc972cf17a1ac70fc2c87422b8421a7006105ab031d5335a"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_091.png",
+      "bytes": 376587,
+      "sha256": "9cee273e99fe0a584ca47ba1d1fd455316c17feedeb9c888988334c71500db6f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_117.png",
+      "bytes": 577932,
+      "sha256": "ae527ee888eebf88e69360649274df90202adee613888862b178b07bcbc50e1f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_022.png",
+      "bytes": 702172,
+      "sha256": "41a0db9951875e8ada3897b2a0532e99c234d9d68fd269d25b87e370cee8eb26"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_115.png",
+      "bytes": 487256,
+      "sha256": "3578924e04e88cdd5537a7c666a8a36d8583c8f82f57c5c98d2722fec404debd"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_036.png",
+      "bytes": 368540,
+      "sha256": "58b5aa861df38be53d9640ad9c125d81433bfb6afa33aa5422e3a21b619778ec"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_099.png",
+      "bytes": 606857,
+      "sha256": "3039fc0402bd8eb2204c9a1d0ce7e36ebf211c1d8d28217b699f9d3ad8a0bc3e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_102.png",
+      "bytes": 592947,
+      "sha256": "a76567da093909a6aa0b1b8747b4ccebbb40396caeb9d60f574f97392341b45b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_028.png",
+      "bytes": 552484,
+      "sha256": "c0862dd06b2d5f10403a7565da6d28ce88e0f7280440c934e839ae2e1ed46a6e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_026.png",
+      "bytes": 549299,
+      "sha256": "4449098bbc888b49415303fd71b0f5178dce6ec0beb7f3b2648a22c7dc809aec"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_096.png",
+      "bytes": 327529,
+      "sha256": "f12d93d7327b01a833f585982bb3808e7aa014a722a4a59ebe4a1c98c2262b7a"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_125.png",
+      "bytes": 382187,
+      "sha256": "10b152ba51c8babf38aac59899f4f32ae82cf021d1aee94f9f56eb8721c2b0d8"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_146.png",
+      "bytes": 516541,
+      "sha256": "b33d7ef2d57ab0cf31adfd0f2b9e6c96337eb81d11623b958f963375bbc050b9"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_078.png",
+      "bytes": 467586,
+      "sha256": "311ce0f3173f48f51df01e041399dcfe2c087ef19418039ddf36cd593577deb0"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_124.png",
+      "bytes": 519975,
+      "sha256": "d0ece39227564cb77c8684a4286e2061e70231f33b7d2f8901faa7162b39daba"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_043.png",
+      "bytes": 332221,
+      "sha256": "bf9653c90916b6586cf12981a6940c3e4e0fe2a4a9b64537349261bc8bbc0535"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_136.png",
+      "bytes": 295642,
+      "sha256": "75381590ec05617b97485948e83812be3c4cb846b596f0ce1dd941d581a4ee86"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_110.png",
+      "bytes": 584294,
+      "sha256": "1a1cc2c7a756821329b22b90bdab7ddf9965bf37f648c2406c8a504e510f4b31"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_037.png",
+      "bytes": 527316,
+      "sha256": "9bdfac43ae539fe6ef3b6f5a67357d1a07ddb95a2eff4c68408fb0dcfa6c2fdf"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_019.png",
+      "bytes": 413521,
+      "sha256": "6b15bd17a15daffa18219b6591195d5b6472faa6bb6ee85d0551d1d833cb8790"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_132.png",
+      "bytes": 257264,
+      "sha256": "b3dd0dc016be914084fede6ced10781d20c3c4925b3d43a05c653f4cdbce39e1"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_069.png",
+      "bytes": 528762,
+      "sha256": "9f0c0889cd3c1ddb4d2a9f8964908aa4c6b3897541a4be8b94c4227c353d6da6"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_045.png",
+      "bytes": 414198,
+      "sha256": "1eebfc95f26582b10d8bb21b4be417a9f2d6fc147642224adca72899f6e30c69"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_082.png",
+      "bytes": 498477,
+      "sha256": "b2c6642106fde0f757b239a649213ba182157d794c8a8ab54545d9e286c9255e"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_038.png",
+      "bytes": 427147,
+      "sha256": "ca65ab4aa9d452a2e6570c717d066d888256051c8de77240652cd5c2baf3b5c8"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_145.png",
+      "bytes": 278127,
+      "sha256": "45ddc7418e78f5723d8d86bfc215546ae3d545eb3099d8bf0c44fbd06daeec16"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_073.png",
+      "bytes": 522995,
+      "sha256": "a61dbe207c6a6c0c46ff1e90fb081997595a1855d174c581e512255f5535b298"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_061.png",
+      "bytes": 634826,
+      "sha256": "72c26a474a83a4a9e35a362da9179085a2114ea4d401d747c2da20eb1a136ee9"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_087.png",
+      "bytes": 568664,
+      "sha256": "7305e56893e8c36e85e94522ce3d6b60656c4bda8e47fca284c480f8835f7758"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_058.png",
+      "bytes": 316086,
+      "sha256": "4109390de67c21b9323177b3bba8fdb540eef381d6b8f53f19d05271d87d67ad"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_086.png",
+      "bytes": 520554,
+      "sha256": "0ed816ce1e798aaffa3412f16d706e19fcaac0fd3d0bdbbee42f9fe31e30fe17"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_029.png",
+      "bytes": 404921,
+      "sha256": "2e8b1de3023d1df9e4bac9cbcbfe65b1ff3640eef90f094392f59e0039bcc0e7"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_150.png",
+      "bytes": 586407,
+      "sha256": "b9890c6fa5d89b22d009048df52dc7394f4981ebc92e3ecb96681b06a5a01005"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_093.png",
+      "bytes": 701246,
+      "sha256": "cb1e505f51ae6cfdb97fa5422617946aab4ad9de4f3e325aa67a032065387879"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_016.png",
+      "bytes": 377772,
+      "sha256": "7d544de00a6deb70b69adeaccf16af0bc1f312991952d17678e3b318bd2c1468"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_094.png",
+      "bytes": 461281,
+      "sha256": "d0c3ddc2d881aef76f21a22540ea5727d5e53280b584c21d7f5fe5504eeecafc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/EDNA_05.png",
+      "bytes": 424370,
+      "sha256": "74a5cd429384db13827407bec1337996295e3e74da1a34be879e48559af9a26f"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_056.png",
+      "bytes": 388689,
+      "sha256": "8155bfcec548f78a7a0d3a1178ce22170ba784acfb253b0f5880a30c2c177142"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_009.png",
+      "bytes": 473892,
+      "sha256": "8b3f8a06fbfa600c4829f83685c2d4005dde42d2d6f2fb39fb46731f78d3d69d"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_052.png",
+      "bytes": 484301,
+      "sha256": "c25ade910c0f2a445d5f460828baa3d9564bbeaa1d0d38e1fb22c53e827db559"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_004.png",
+      "bytes": 263730,
+      "sha256": "57050c9634e90b59df84a7829de2f911872c13e0b5d45582efedbbd79fa8fd0b"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_129.png",
+      "bytes": 366615,
+      "sha256": "6006bf71ee29b3cec000599a71422d8bd089b7b0fd8092b53a2281dd3611e420"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_108.png",
+      "bytes": 423795,
+      "sha256": "4b1283b3a6d2dc012a20445f5c180d415af92460053746b8d69c44bac19ffeda"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_023.png",
+      "bytes": 573371,
+      "sha256": "bd948a15591eeba6a6c66ee9349fcb97515a0219e08c1cdd1b97d2446f867818"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_088.png",
+      "bytes": 569977,
+      "sha256": "0c9846e04cb09431a2a9adab78754478e9bd99040b3ad0c33a81c25fdff6b873"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_053.png",
+      "bytes": 337414,
+      "sha256": "bd41c42f00ca60be440f54c4cef0ffd779049402bbedb6bd5b515631a0a1add1"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_027.png",
+      "bytes": 536746,
+      "sha256": "82806c74e323e268a9ce1d47c482011113ffca7c386c2db253d762ecfc5e24e2"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_075.png",
+      "bytes": 515016,
+      "sha256": "4978b8e69d54ab41f7286cb979ea1adcfbb823195dd21d7cd4307567ec148f31"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_111.png",
+      "bytes": 524877,
+      "sha256": "96848dbf43dac25451016f0005ee26c003e72999f339d6ea31e03becab3d21ea"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_100.png",
+      "bytes": 471175,
+      "sha256": "e16d2327e761681f1e0c150b5492c3061bf9820e066d325048a0d4a0a76786dc"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_050.png",
+      "bytes": 358941,
+      "sha256": "b8ec1e2b7f339b8d182afe6ca5d82b5019e874587f7b1ff0222a04453f3d69f5"
+    },
+    {
+      "path": "dist/assets/approved-atlases/species/SPECIES_001.png",
+      "bytes": 607230,
+      "sha256": "80cc493df0bef1a2f127c1cc1cb463e461b1032b999bd7f6e2a9cfbc65cb8ccd"
+    },
+    {
+      "path": "dist/assets/approved-atlases/player/PLAYER_FEMALE.png",
+      "bytes": 497916,
+      "sha256": "f61e7c3c087568e05f9f85336f322b287709a45669704c481e00f3f29f5d05f7"
+    },
+    {
+      "path": "dist/assets/approved-atlases/player/PLAYER_MALE.png",
+      "bytes": 439272,
+      "sha256": "e8402fba91d3d90ac4da0382baeb033148465e310f9782aff48c1a58caa35af7"
+    },
+    {
+      "path": "dist/pwa/icon-512.png",
+      "bytes": 11172,
+      "sha256": "ed070336e10c955346ec76e61dd312654473269a6f23cd342f10ce2f5eb37d9a"
+    },
+    {
+      "path": "dist/pwa/install.mjs",
+      "bytes": 2571,
+      "sha256": "72909393df72d3916a57a80c55ae30442f66280c9912d0c5dfb5e44caf83b620"
+    },
+    {
+      "path": "dist/pwa/manifest.webmanifest",
+      "bytes": 444,
+      "sha256": "2af1939bdf1604ee4b399ccb5b8148723b86f9375cd1dc08953528b3717d0789"
+    },
+    {
+      "path": "dist/pwa/responsive.css",
+      "bytes": 4812,
+      "sha256": "0744f489422ff58076f2716b3a71f1e812bb18f79218461e4395883b561fc522"
+    },
+    {
+      "path": "dist/pwa/offline.html",
+      "bytes": 653,
+      "sha256": "cf1bc124409c0336d0f2990406bbc8f8970c9a3c8fd6c9c1d707f1ccc5592de7"
+    },
+    {
+      "path": "dist/pwa/icon-192.png",
+      "bytes": 4231,
+      "sha256": "6e0e633e4ab3f69381c2a2011de8cdc0617a9619d74a8de137bc14c848bd2543"
+    },
+    {
+      "path": "dist/pwa/icon.svg",
+      "bytes": 3895,
+      "sha256": "6aedc1c8b097b7762ddf5f963ee20de1771a0ae78c3d63ef4052a3e3ec067477"
+    }
+  ]
+}

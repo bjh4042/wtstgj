@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "project": "거제몬스터",
+    "file": "geoje_save_migration_v2_to_v3_REQUIREMENTS.json",
+    "status": "REQUIREMENTS_FOR_WORK_TO_IMPLEMENT",
+    "date": "2026-09-27"
+  },
+  "source": "geoje_save_schema_v2",
+  "target": "geoje_save_schema_v3",
+  "principles": [
+    "never destroy source save",
+    "migrate into temporary object",
+    "validate v3 invariants before commit",
+    "on failure keep original save + previous slot unchanged"
+  ],
+  "required_transforms": [
+    {
+      "field": "inventory.tm",
+      "from": "quantity or owned marker",
+      "to": "TM01..TM50 boolean ownership",
+      "rule": "qty>0 or owned marker => true; qty=0/absent => false; known one-time acquisition history may restore true"
+    },
+    {
+      "field": "inventory.items.full_potion",
+      "to": "inventory.items.full_restore",
+      "rule": "rename/merge quantity without duplication"
+    },
+    {
+      "field": "progress enhanced league flags/events",
+      "to": "removed/archive warning",
+      "rule": "do not carry obsolete enhanced-league gates into authoritative v3 flags"
+    },
+    {
+      "field": "world.defeatedTrainerIds",
+      "rule": "preserve existing trainer IDs; new 49 field trainer IDs default undefeated"
+    },
+    {
+      "field": "world discovery",
+      "rule": "seed visited/discovered IDs from safe legacy visitedMapIds/currentMapId where mapping is unambiguous; otherwise default empty/known current location"
+    },
+    {
+      "field": "research quests",
+      "rule": "initialize completedResearchQuestIds/claimedResearchRewardIds empty unless explicit old equivalent exists"
+    },
+    {
+      "field": "POST unlock reconciliation",
+      "rule": "if old save has valid MAIN_STORY_CLEAR/FINAL_CHAMPION-equivalent state, migrate to latest post unlock semantics conservatively; never fabricate Yeji final victory"
+    },
+    {
+      "field": "No151 state",
+      "rule": "do not unlock pre-Yeji just because old caught-148~150/compass gate was met"
+    },
+    {
+      "field": "roaming legend runtime state",
+      "rule": "do not preserve HP/major status across roam flee; normalize to full/clear when entering roaming state"
+    }
+  ],
+  "defaults_v3": {
+    "fieldResearch.completedResearchQuestIds": [],
+    "fieldResearch.claimedResearchRewardIds": [],
+    "world.discoveredLocationIds": []
+  },
+  "verification": [
+    "TM ownership boolean-only",
+    "no obsolete enhanced league flags in authoritative set",
+    "GeojeBall lifetime ledger <=12",
+    "defeatedTrainerIds unique",
+    "story gates valid",
+    "no pre-Yeji No151 access"
+  ]
+}

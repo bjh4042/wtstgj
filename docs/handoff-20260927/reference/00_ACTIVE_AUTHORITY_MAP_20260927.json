@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "date": "2026-09-27",
+    "status": "ACTIVE_AUTHORITY_MAP"
+  },
+  "highest": [
+    "00_LATEST_CANONICAL_OVERRIDE_20260927.json",
+    "01_latest_authority/geoje_prework_freeze_spec_v1.json"
+  ],
+  "authoritative_unchanged_inputs": {
+    "species identity": "02_pre_sync_canonical_inputs/geoje_species_151_v3_final.json (dex/name/motif/75 chains only)",
+    "acquisition": "02_pre_sync_canonical_inputs/geoje_acquisition_master_v2.csv + encounter, except latest POST overrides",
+    "fishing": "02_pre_sync_canonical_inputs/geoje_fishing_master_v1_1.csv",
+    "field tools": "01_latest_authority/geoje_field_tools_master_v1.json unless latest override conflicts"
+  },
+  "source_candidates": {
+    "battle": "03_cleanup_candidates/geoje_battle_collection_master_v3_1_final_cleanup_candidate.json; latest override MUST patch stale items/capture/Yeji party/post rematch",
+    "trainer": "03_cleanup_candidates/geoje_trainer_npc_master_v2_1_final_cleanup_candidate.json; preserve cleaned 35 then add 49 field trainers"
+  },
+  "must_cascade_sync": [
+    "character",
+    "stage",
+    "story flags",
+    "encounter",
+    "save",
+    "online rules/hash"
+  ],
+  "reference_only_folder": "90_reference_archive_DO_NOT_USE_AS_ACTIVE",
+  "note": "Cross-validation v2 and old QA prove old baseline only; they do not certify 2026-09-27 final synchronized output."
+}

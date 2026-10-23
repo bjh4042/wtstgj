@@ -1,0 +1,3 @@
+import {BIOME_BACKGROUNDS,mapPresentation} from './map-presentation.mjs';
+import {assetDescriptor} from '../asset-manifest.mjs';
+export function resolveBattleBackground(map){const context=mapPresentation(map),override=context.battleBackgroundId,valid=override&&assetDescriptor(override).kind==='background';return Object.freeze({mapId:context.id??null,biomeId:context.biomeId,assetId:valid?override:BIOME_BACKGROUNDS[context.biomeId],source:valid?'override':'biome',warning:override&&!valid?'UNKNOWN_BACKGROUND_OVERRIDE':null,battleBgmId:context.battleBgmId??null,battleTransitionSfxId:context.battleTransitionSfxId??null})}

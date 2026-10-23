@@ -1,0 +1,76 @@
+{
+  "changes": [
+    {
+      "file": "art-sprites.test.mjs",
+      "change": "Retire exact historical asset presence test: trainer sheets use 12 independent alpha crops and one 66px sole baseline"
+    },
+    {
+      "file": "art-sprites.test.mjs",
+      "change": "Retire exact historical asset presence test: only unevolved starter allies receive approved alpha back art"
+    },
+    {
+      "file": "art-sprites.test.mjs",
+      "change": "Retire exact historical asset presence test: all 151 canonical species have separate in-bounds RGBA front and back crops"
+    },
+    {
+      "file": "w03-final-players.test.mjs",
+      "change": "Retire exact historical asset presence test: player approval bytes and PNG dimensions are exact"
+    },
+    {
+      "file": "w03-final-players.test.mjs",
+      "change": "Retire exact historical asset presence test: 18 major NPC bytes stay locked"
+    },
+    {
+      "file": "field-world.test.mjs",
+      "change": "Retire exact historical asset presence test: generated RGBA prop atlas is bundled beside the renderer"
+    },
+    {
+      "file": "w03-final-players.test.mjs",
+      "change": "Keep Woni/Minami identity and placement; retire only excluded old image SHA assertion"
+    },
+    {
+      "file": "w03-runtime.test.mjs",
+      "change": "Retire old raster-byte assertion only; keep catalog and canonical binding logic"
+    },
+    {
+      "file": "character-npc-pilot.test.mjs",
+      "change": "Keep all cadence/anchor/movement/collision tests; retire two historical pixel-inspection sections"
+    },
+    {
+      "file": "hgss-reference-adoption.test.mjs",
+      "change": "Update central renderer to approved original loading contract; preserve environment/battle metadata checks"
+    },
+    {
+      "file": "yeji-preview-battle.test.mjs",
+      "change": "Use approved EDNA presentation while preserving preview namespace and economy lock assertions"
+    },
+    {
+      "file": "approved-field-terrain.test.mjs",
+      "change": "Verify all 62 exact approved terrain bytes using public-safe SHA fixture"
+    },
+    {
+      "file": "online-v12-hash-sync.test.mjs",
+      "change": "Unchanged test; restore required source helper, no test retirement"
+    },
+    {
+      "file": "integrated-world-static-proof.test.mjs",
+      "change": "Retire 3 private static-recording assertions, not gameplay tests"
+    }
+  ],
+  "fully_retired_tests": 9,
+  "partially_retired_pixel_sections": 4,
+  "functional_tests_removed": 0,
+  "note": "Original tests retained in private source archive; replacement approved integrity suites included.",
+  "atlas_packaging_updates": {
+    "old_image_tests_retained": true,
+    "pixel_verification": "996 original RGBA frame hashes verified from214 public atlases; all padding/deferred slots tested",
+    "adapted_tests": [
+      "approved-player-field",
+      "approved-npc-field",
+      "approved-species",
+      "canonical-species-runtime"
+    ],
+    "canonical_semantics": "604 logical IDs retained; front/back/icon share151 species sheets, followers remain separate,2 deferred backs remain explicit",
+    "functional_tests_removed": 0
+  }
+}

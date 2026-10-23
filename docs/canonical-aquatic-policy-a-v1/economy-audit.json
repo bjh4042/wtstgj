@@ -1,0 +1,671 @@
+{
+  "scope": "READ_ONLY_ECONOMY_READINESS_AUDIT_V1",
+  "economyRulesActivated": false,
+  "sourceFingerprints": {
+    "geoje_battle_collection_master_v3.json": "0bf068f2ec0e4752e60439f2a7cac5924aff66fcf65e2d23d96e93b96b2f70a8",
+    "geoje_trainer_npc_master_v2.json": "97f74202a8ed746fb98b4f51fd8d141875b9367168a3c8e3723745657e70465e",
+    "geoje_stage_master_v2_3.json": "56ba5f61799412045ca2a589296cfcfdf5bee6e393d282b2e31a99f593b0ca67",
+    "geoje_story_flags_master_v2.json": "094296f78b96c64150a2f19fc79ac0c77061a8e2a7041422809cfeb8a1aff449",
+    "geoje_save_schema_v2.json": "8cfe3c0291674b8fff971dd4d77412eee9e0317c40166e62bd6f6f89ee1ba70f"
+  },
+  "rows": [
+    {
+      "id": "starting_money",
+      "status": "UNRESOLVED",
+      "value": null,
+      "sourceDefault": 0,
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_save_schema_v2.json",
+          "jsonPointer": "/default_snapshot/player/money"
+        },
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_save_schema_v2.json",
+          "jsonPointer": "/snapshot_schema/player/money"
+        }
+      ],
+      "runtime": "Canonical bootstrap has no initialized player.money, money or coins field. Source default 0 is a serialization default, not an approved starting allowance.",
+      "recommendation": "Confirm starting allowance after budgeting mandatory captures; do not import legacy 300 coins."
+    },
+    {
+      "id": "initial_kit_grant",
+      "status": "CONFIRMED_AND_CONNECTED",
+      "value": [
+        {
+          "id": "eco_dex",
+          "name": "생태도감",
+          "quantity": 1
+        },
+        {
+          "id": "ecology_ball",
+          "name": "생태볼",
+          "quantity": 5
+        },
+        {
+          "id": "potion",
+          "name": "회복약",
+          "quantity": 3
+        }
+      ],
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_stage_master_v2_3.json",
+          "jsonPointer": "/stages/0/key_rewards"
+        },
+        {
+          "file": "dist/compatibility/story-adapter.mjs",
+          "symbol": "TX_PROLOGUE_STARTER_KIT"
+        },
+        {
+          "file": "dist/story/progression-service.mjs",
+          "symbol": "#claim / #item"
+        }
+      ],
+      "runtime": "P03_TUTORIAL grants ecology_ball 5, potion 3, eco_dex 1 once. New Story session starts empty before this event."
+    },
+    {
+      "id": "healing_item_use",
+      "status": "CONFIRMED_NOT_CONNECTED",
+      "value": [
+        {
+          "id": "potion",
+          "name": "회복약",
+          "pocket": "items",
+          "effect": {
+            "hp_restore": 25
+          },
+          "unlock": "PROLOGUE"
+        },
+        {
+          "id": "super_potion",
+          "name": "좋은회복약",
+          "pocket": "items",
+          "effect": {
+            "hp_restore": 60
+          },
+          "unlock": "BADGE2"
+        },
+        {
+          "id": "hyper_potion",
+          "name": "고급회복약",
+          "pocket": "items",
+          "effect": {
+            "hp_restore": 120
+          },
+          "unlock": "BADGE4"
+        },
+        {
+          "id": "full_potion",
+          "name": "완전회복약",
+          "pocket": "items",
+          "effect": {
+            "hp_restore": "full"
+          },
+          "unlock": "BADGE8"
+        },
+        {
+          "id": "antidote",
+          "name": "해독제",
+          "pocket": "items",
+          "effect": {
+            "cure": [
+              "poison",
+              "bad_poison"
+            ]
+          },
+          "unlock": "PROLOGUE"
+        },
+        {
+          "id": "paralyze_heal",
+          "name": "마비치료제",
+          "pocket": "items",
+          "effect": {
+            "cure": [
+              "paralysis"
+            ]
+          },
+          "unlock": "BADGE2"
+        },
+        {
+          "id": "burn_heal",
+          "name": "화상치료제",
+          "pocket": "items",
+          "effect": {
+            "cure": [
+              "burn"
+            ]
+          },
+          "unlock": "BADGE2"
+        },
+        {
+          "id": "awakening",
+          "name": "잠깨는약",
+          "pocket": "items",
+          "effect": {
+            "cure": [
+              "sleep"
+            ]
+          },
+          "unlock": "BADGE2"
+        },
+        {
+          "id": "ice_heal",
+          "name": "해빙제",
+          "pocket": "items",
+          "effect": {
+            "cure": [
+              "freeze"
+            ]
+          },
+          "unlock": "BADGE2"
+        },
+        {
+          "id": "full_heal",
+          "name": "만능치료제",
+          "pocket": "items",
+          "effect": {
+            "cure": [
+              "all_status"
+            ]
+          },
+          "unlock": "BADGE6"
+        },
+        {
+          "id": "revive",
+          "name": "기력조각",
+          "pocket": "items",
+          "effect": {
+            "revive_hp_percent": 50
+          },
+          "unlock": "BADGE6"
+        },
+        {
+          "id": "max_revive",
+          "name": "기력덩이",
+          "pocket": "items",
+          "effect": {
+            "revive_hp_percent": 100
+          },
+          "unlock": "BADGE8"
+        },
+        {
+          "id": "ether",
+          "name": "기술회복제",
+          "pocket": "items",
+          "effect": {
+            "pp_restore": 10
+          },
+          "unlock": "BADGE4"
+        },
+        {
+          "id": "max_ether",
+          "name": "만능기술회복제",
+          "pocket": "items",
+          "effect": {
+            "pp_restore_all": "partial"
+          },
+          "unlock": "BADGE8"
+        },
+        {
+          "id": "peace_lantern",
+          "name": "평화의 등불",
+          "pocket": "key_items",
+          "unlock": "S9",
+          "effect": {
+            "field_functions": [
+              "LIGHT",
+              "REFLECT",
+              "RESCUE"
+            ],
+            "combat_effect": false,
+            "capture_rate_effect": false
+          }
+        },
+        {
+          "id": "plant_scan_module",
+          "name": "식생탐지 모듈",
+          "pocket": "key_items",
+          "unlock": "S5",
+          "effect": "식물·뿌리·잎 흔적 관찰 포인트 강조; 전투 효과 없음"
+        },
+        {
+          "id": "field_ability_surf",
+          "name": "파도타기 사용 허가",
+          "pocket": "key_items",
+          "unlock": "S7",
+          "effect": {
+            "field_ability": "surf",
+            "combat_move_required": false,
+            "consumable": false
+          }
+        },
+        {
+          "id": "okpo_seabreeze_ribbon",
+          "name": "바다향 리본",
+          "pocket": "key_items",
+          "unlock": "S3_optional_guest_event",
+          "effect": {
+            "souvenir": true,
+            "combat_effect": false,
+            "capture_rate_effect": false,
+            "story_gate": false
+          },
+          "consumable": false,
+          "source_event": "S3_OKPO_RESCENE_CAMEO"
+        }
+      ],
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/items/catalog"
+        },
+        {
+          "file": "dist/battle-v3/engine.mjs",
+          "symbol": "#validate"
+        }
+      ],
+      "runtime": "Potion grant is stored in progress.items; battle actions are move/switch/capture/flee. No canonical potion-use API or UI. Source potion heals 25, not legacy 30.",
+      "recommendation": "Connect existing effects and unlocks; price/stock still needs confirmation."
+    },
+    {
+      "id": "trainer_prize_money",
+      "status": "UNRESOLVED",
+      "value": null,
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json",
+          "jsonPointer": "/route_trainers"
+        },
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json",
+          "jsonPointer": "/gym_subtrainers"
+        },
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/gyms"
+        },
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_story_flags_master_v2.json",
+          "jsonPointer": "/reward_transactions"
+        },
+        {
+          "file": "dist/compatibility/story-adapter.mjs",
+          "symbol": "trainers / rewards"
+        }
+      ],
+      "runtime": "No numeric cash prize for route/gym/league in inspected canonical sources. Runtime has no cash award path. Gym TM/rod/badge rewards are separate and remain connected.",
+      "recommendation": "Approve per-trainer or class/level-based amounts, keeping first-win/repeat rules distinct."
+    },
+    {
+      "id": "repeatable_income",
+      "status": "UNRESOLVED",
+      "value": null,
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json",
+          "jsonPointer": "/route_trainers"
+        },
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json",
+          "jsonPointer": "/gym_subtrainers"
+        },
+        {
+          "file": "dist/compatibility/story-adapter.mjs",
+          "symbol": "repeatable / championRematch"
+        },
+        {
+          "file": "dist/story/progression-service.mjs",
+          "symbol": "trainerAvailable"
+        }
+      ],
+      "runtime": "No connected canonical renewable cash income. Champion stays non-repeatable; no rematch or invented reward enabled.",
+      "recommendation": "Consider a separately approved repeatable research task that pays ordinary currency, without altering protected trainer rematches."
+    },
+    {
+      "id": "ball_prices_and_unlocks",
+      "status": "CONFIRMED_NOT_CONNECTED",
+      "value": [
+        {
+          "id": "ecology_ball",
+          "name": "생태볼",
+          "pocket": "capture_balls",
+          "capture_multiplier": 1,
+          "unlock": "PROLOGUE",
+          "price": 200,
+          "shop": true
+        },
+        {
+          "id": "affinity_ball",
+          "name": "친화볼",
+          "pocket": "capture_balls",
+          "capture_multiplier": 1.5,
+          "unlock": "BADGE2",
+          "price": 600,
+          "shop": true
+        },
+        {
+          "id": "resonance_ball",
+          "name": "공명볼",
+          "pocket": "capture_balls",
+          "capture_multiplier": 2,
+          "unlock": "BADGE5",
+          "price": 1200,
+          "shop": true
+        },
+        {
+          "id": "geoje_ball",
+          "name": "거제볼",
+          "pocket": "capture_balls",
+          "capture_multiplier": "GUARANTEED",
+          "unlock": "SPECIAL_REWARDS",
+          "price": null,
+          "shop": false,
+          "lifetime_grant_cap": 12
+        }
+      ],
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/items/catalog"
+        },
+        {
+          "file": "dist/app.js",
+          "symbol": "shop (LEGACY ONLY)"
+        }
+      ],
+      "runtime": "Ecology 200/PROLOGUE; affinity 600/BADGE2; resonance 1200/BADGE5. Values reach rules metadata; no canonical buy/sell transaction or shop UI."
+    },
+    {
+      "id": "shop_locations_stock",
+      "status": "UNRESOLVED",
+      "value": null,
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_stage_master_v2_3.json",
+          "jsonPointer": "/stages"
+        },
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/items/catalog"
+        }
+      ],
+      "runtime": "Stage mentions badge-based shop goods but no complete stable shop ID/location/stock/replenishment contract.",
+      "recommendation": "Bind stable shop IDs to accessible recovery hubs; retain source price/unlock values; confirm stock and refill rules."
+    },
+    {
+      "id": "selling_items",
+      "status": "UNRESOLVED",
+      "value": null,
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/items/catalog"
+        },
+        {
+          "file": "dist/story/progression-service.mjs",
+          "symbol": "public commands"
+        }
+      ],
+      "runtime": "No canonical resale eligibility, sell ratio or sell API.",
+      "recommendation": "Keep selling disabled until an explicit sellable-item list and values are approved; exclude key and capped reward items."
+    },
+    {
+      "id": "tutorial_capture_safety",
+      "status": "CONFIRMED_NOT_CONNECTED",
+      "value": {
+        "minimum_success_probability": 0.7,
+        "third_failure_prevention": "third ecology_ball guaranteed",
+        "refill_if_empty": 3
+      },
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/capture_contract/tutorial_safety"
+        },
+        {
+          "file": "dist/battle-v3/rules.mjs",
+          "symbol": "captureProbability"
+        },
+        {
+          "file": "dist/battle-v3/engine.mjs",
+          "symbol": "act capture"
+        }
+      ],
+      "runtime": "Source specifies minimum .7, third ecology ball guaranteed, empty refill 3 for tutorial only. Engine has no tutorial branch/refill. Not activated in STEP 7B.",
+      "recommendation": "Connect approved tutorial safety in its exact tutorial scope later; do not treat it as universal refill approval."
+    },
+    {
+      "id": "zero_money_zero_balls_recovery",
+      "status": "UNRESOLVED",
+      "value": null,
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/capture_contract/tutorial_safety"
+        },
+        {
+          "file": "dist/story/progression-service.mjs",
+          "symbol": "public commands"
+        }
+      ],
+      "runtime": "No general canonical emergency normal-ball resupply/income path. Tutorial-only source rule does not cover the full game.",
+      "recommendation": "Confirm a repeatable no-cost recovery task or capped ordinary-ball aid so compulsory capture cannot deadlock. Never use Geoje balls."
+    },
+    {
+      "id": "defeat_economy",
+      "status": "UNRESOLVED",
+      "value": null,
+      "evidence": [
+        {
+          "file": "dist/battle-v3/engine.mjs",
+          "symbol": "#settle / #finish / aftermath"
+        },
+        {
+          "file": "dist/story/save.mjs",
+          "symbol": "mergeStoryAftermath"
+        },
+        {
+          "file": "dist/compatibility/story-adapter.mjs",
+          "symbol": "leagueLossPolicy"
+        }
+      ],
+      "runtime": "Thrown balls remain consumed; party damage persists. No money debit/drop/reset transaction. League resumes its saved checkpoint. Absence of debit is not an approved zero-loss economy policy.",
+      "recommendation": "Confirm any loss policy; for children, avoid destroying access to required capture resources."
+    },
+    {
+      "id": "free_heal_implementation",
+      "status": "CONFIRMED_AND_CONNECTED",
+      "value": {
+        "hp": "full",
+        "pp": "full",
+        "status": "cleared",
+        "cost": 0
+      },
+      "evidence": [
+        {
+          "file": "dist/story/progression-service.mjs",
+          "symbol": "recoverParty"
+        },
+        {
+          "file": "dist/story/dev.mjs",
+          "symbol": "heal button"
+        }
+      ],
+      "runtime": "Existing service and DEV button recover the party freely when transaction is idle. This is existing behavior, not proof of authored public recovery locations."
+    },
+    {
+      "id": "recovery_hub_locations_access",
+      "status": "UNRESOLVED",
+      "value": null,
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_stage_master_v2_3.json",
+          "jsonPointer": "/stages"
+        },
+        {
+          "file": "dist/story/dev.mjs",
+          "symbol": "heal button"
+        },
+        {
+          "file": "dist/app.js",
+          "symbol": "healAtCenter (LEGACY ONLY)"
+        }
+      ],
+      "runtime": "Canonical per-map hub IDs, opening/revisit access and blackout landing are not connected. Legacy centers remain separate.",
+      "recommendation": "Define freely revisitable safe hubs and loss-return destinations by stable map IDs."
+    },
+    {
+      "id": "geoje_ball_cap_and_once_only",
+      "status": "CONFIRMED_AND_CONNECTED",
+      "value": {
+        "lifetimeTotal": 12,
+        "grants": [
+          {
+            "grant_id": "GEOJE_BALL_DOCTOR_CHAE_2",
+            "trigger_event": "S8_GYM_STORY",
+            "source": "닥터 채",
+            "quantity": 2,
+            "item_id": "geoje_ball",
+            "one_time": true,
+            "ledger": "geojeBallGrantHistory"
+          },
+          {
+            "grant_id": "GEOJE_BALL_S9_2",
+            "trigger_event": "S9_RELEASE_RESCUED",
+            "source": "S9",
+            "quantity": 2,
+            "item_id": "geoje_ball",
+            "one_time": true,
+            "ledger": "geojeBallGrantHistory"
+          },
+          {
+            "grant_id": "GEOJE_BALL_CHAMPION_2",
+            "trigger_event": "FINAL_CHAMPION",
+            "source": "챔피언 윤 박사",
+            "quantity": 2,
+            "item_id": "geoje_ball",
+            "one_time": true,
+            "ledger": "geojeBallGrantHistory"
+          },
+          {
+            "grant_id": "GEOJE_BALL_148_1",
+            "trigger_event": "LEGEND_148_CAPTURE",
+            "source": "No.148 관련 보상",
+            "quantity": 1,
+            "item_id": "geoje_ball",
+            "one_time": true,
+            "ledger": "geojeBallGrantHistory"
+          },
+          {
+            "grant_id": "GEOJE_BALL_149_1",
+            "trigger_event": "LEGEND_149_CAPTURE",
+            "source": "No.149 관련 보상",
+            "quantity": 1,
+            "item_id": "geoje_ball",
+            "one_time": true,
+            "ledger": "geojeBallGrantHistory"
+          },
+          {
+            "grant_id": "GEOJE_BALL_150_1",
+            "trigger_event": "LEGEND_150_CAPTURE",
+            "source": "No.150 관련 보상",
+            "quantity": 1,
+            "item_id": "geoje_ball",
+            "one_time": true,
+            "ledger": "geojeBallGrantHistory"
+          },
+          {
+            "grant_id": "GEOJE_BALL_COMPASS_3",
+            "trigger_event": "POST_COMPASS",
+            "source": "온섬의 나침반",
+            "quantity": 3,
+            "item_id": "geoje_ball",
+            "one_time": true,
+            "ledger": "geojeBallGrantHistory"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_story_flags_master_v2.json",
+          "jsonPointer": "/geoje_ball_grants"
+        },
+        {
+          "file": "dist/story/progression-service.mjs",
+          "symbol": "#finishEvent"
+        },
+        {
+          "file": "dist/battle-v3/save.mjs",
+          "symbol": "Geoje ball lifetime cap"
+        }
+      ],
+      "runtime": "Eight one-time grants total 12 with grant history and save cap. Acquisition integration reaches all 12; not a renewable supply."
+    },
+    {
+      "id": "geoje_ball_shop_prohibition",
+      "status": "CONFIRMED_NOT_CONNECTED",
+      "value": {
+        "shop": false,
+        "price": null
+      },
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/items/catalog/17"
+        },
+        {
+          "decision": "Latest user: no shop sale, nonrepeatable total 12"
+        }
+      ],
+      "runtime": "Source prohibits sale; no canonical shop exists yet. Future shop needs explicit enforcement test."
+    },
+    {
+      "id": "geoje_ball_probability",
+      "status": "CONFLICT",
+      "value": {
+        "sourceMultiplier": "GUARANTEED",
+        "sourceProbability": 1,
+        "runtimeProbability": 1,
+        "latestDecision": "Advantage against legends, NOT guaranteed",
+        "approvedReplacementMultiplier": null
+      },
+      "evidence": [
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/items/catalog"
+        },
+        {
+          "file": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+          "jsonPointer": "/capture_contract/geoje_ball_probability"
+        },
+        {
+          "file": "dist/battle-v3/rules.mjs",
+          "symbol": "captureProbability: geoje_ball returns 1"
+        },
+        {
+          "file": "dist/battle-v3/engine.mjs",
+          "symbol": "capture event probability and roll"
+        },
+        {
+          "decision": "STEP 7B latest explicit Geoje ball policy"
+        }
+      ],
+      "runtime": "Actual full-HP No.148 battle captures even with RNG .999999. This is live behavior conflict, not only stale text. No new multiplier/formula activated.",
+      "recommendation": "Obtain an approved numeric multiplier/legend modifier and cap policy before changing the formula."
+    }
+  ],
+  "legacyBoundary": {
+    "source": "dist/model.mjs freshState; dist/app.js shop/finishBattle/healAtCenter",
+    "startingCoins": 300,
+    "shopBallPrice": 30,
+    "shopPotionPrice": 40,
+    "standardWinCoins": {
+      "wild": 35,
+      "trainer": 90,
+      "other": 60
+    },
+    "leaderBonusCoins": 300,
+    "leaderBonusBalls": 5,
+    "note": "Legacy values are not canonical design authority and were not copied or modified."
+  }
+}

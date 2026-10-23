@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "project": "거제몬스터",
+    "version": "firebase_rules_static_audit_v1_1_2026-09-17",
+    "basis": "Firebase official RTDB Security Rules API + local JSON/static semantic checks",
+    "firebase_engine_emulator_executed": false,
+    "reason_not_executed": "Current runtime has Node 22 and Java 21 but no firebase-tools/@firebase/rules-unit-testing; outbound npm registry access timed out."
+  },
+  "status": "STATIC_AUDIT_PASS__EMULATOR_REQUIRED",
+  "fixed_findings": [
+    {
+      "id": "RULES_NUMCHILDREN_UNDOCUMENTED",
+      "severity": "BLOCKER_BEFORE_EMULATOR",
+      "resolution": "removed numChildren() and replaced with explicit existence/contiguity validation for party members and moveIds"
+    },
+    {
+      "id": "HOST_PROFILE_CREATE_ROOT_OLD_DATA",
+      "severity": "BLOCKER_BEFORE_EMULATOR",
+      "resolution": "room creation validates proposed host profile through room-level newData; child profile rule has safe initial-create fallback"
+    },
+    {
+      "id": "POST_JOIN_THIRD_PARTY_READ",
+      "severity": "HARDENING",
+      "resolution": "after guestUid exists, exact-room read is participant-only"
+    },
+    {
+      "id": "WAITING_GUEST_ROOM_DELETE",
+      "severity": "HARDENING",
+      "resolution": "WAITING whole-room deletion is host-only"
+    }
+  ],
+  "static_checks": {
+    "json_parse": true,
+    "root_default_deny": true,
+    "rooms_list_read_denied": true,
+    "exact_room_read_participant_only_after_guest": true,
+    "host_creation_uses_newData_profile_validation": true,
+    "numChildren_removed": true,
+    "wait_room_guest_delete_not_granted_at_parent": true,
+    "commit_append_only": true,
+    "reveal_requires_both_commits": true,
+    "ack_requires_both_reveals": true,
+    "battle_hash_literal_present": true,
+    "unsupported_documented_api_scan": true
+  },
+  "unsupported_method_scan": [],
+  "semantic_shadow_tests": [
+    {
+      "id": "S01_UNAUTH_READ",
+      "actual": "DENY",
+      "expected": "DENY",
+      "pass": true
+    },
+    {
+      "id": "S02_AUTH_READ_PRECLAIM",
+      "actual": "ALLOW",
+      "expected": "ALLOW",
+      "pass": true
+    },
+    {
+      "id": "S03_THIRD_READ_POSTCLAIM",
+      "actual": "DENY",
+      "expected": "DENY",
+      "pass": true
+    },
+    {
+      "id": "S04_HOST_READ_POSTCLAIM",
+      "actual": "ALLOW",
+      "expected": "ALLOW",
+      "pass": true
+    },
+    {
+      "id": "S05_GUEST_READ_POSTCLAIM",
+      "actual": "ALLOW",
+      "expected": "ALLOW",
+      "pass": true
+    },
+    {
+      "id": "S06_GUEST_DELETE_WAITING",
+      "actual": "DENY",
+      "expected": "DENY",
+      "pass": true
+    },
+    {
+      "id": "S07_HOST_DELETE_WAITING",
+      "actual": "ALLOW",
+      "expected": "ALLOW",
+      "pass": true
+    },
+    {
+      "id": "S08_HOST_DELETE_FINISHED",
+      "actual": "ALLOW",
+      "expected": "ALLOW",
+      "pass": true
+    },
+    {
+      "id": "S09_GUEST_DELETE_FINISHED",
+      "actual": "ALLOW",
+      "expected": "ALLOW",
+      "pass": true
+    },
+    {
+      "id": "S10_THIRD_DELETE_FINISHED",
+      "actual": "DENY",
+      "expected": "DENY",
+      "pass": true
+    }
+  ],
+  "semantic_shadow_pass": true,
+  "emulator_matrix_count": 26,
+  "remaining_gate": "Run official Firebase Emulator Suite; static shadow tests are not a substitute for Security Rules engine execution."
+}

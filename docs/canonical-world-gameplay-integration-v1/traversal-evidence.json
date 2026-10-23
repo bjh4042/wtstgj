@@ -1,0 +1,1236 @@
+{
+  "assistance": {
+    "level100Party": true,
+    "deterministicRng": 0.99,
+    "normalPlay": false,
+    "noLegendInjected": true
+  },
+  "normalPlay": false,
+  "stepsByStage": {
+    "PROLOGUE": {
+      "walkedTiles": 74,
+      "secondsEstimate": 16.28,
+      "trainers": 1,
+      "badges": 0,
+      "visitedMaps": [
+        "world:hub:PROLOGUE"
+      ],
+      "geojeBalls": 0
+    },
+    "S1": {
+      "walkedTiles": 818,
+      "secondsEstimate": 179.96,
+      "trainers": 9,
+      "badges": 1,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1"
+      ],
+      "geojeBalls": 0
+    },
+    "S2": {
+      "walkedTiles": 1517,
+      "secondsEstimate": 333.74,
+      "trainers": 16,
+      "badges": 2,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2"
+      ],
+      "geojeBalls": 0
+    },
+    "S3": {
+      "walkedTiles": 2271,
+      "secondsEstimate": 499.62,
+      "trainers": 24,
+      "badges": 3,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3"
+      ],
+      "geojeBalls": 0
+    },
+    "S4": {
+      "walkedTiles": 2894,
+      "secondsEstimate": 636.68,
+      "trainers": 30,
+      "badges": 4,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4"
+      ],
+      "geojeBalls": 0
+    },
+    "S5": {
+      "walkedTiles": 3790,
+      "secondsEstimate": 833.8,
+      "trainers": 39,
+      "badges": 5,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4",
+        "world:hub:S5",
+        "world:area:S5_DUNDEOK_FARMLAND",
+        "world:area:S5_GEOJE_JUNGLE_DOME",
+        "world:gym:5"
+      ],
+      "geojeBalls": 0
+    },
+    "S6": {
+      "walkedTiles": 4601,
+      "secondsEstimate": 1012.22,
+      "trainers": 47,
+      "badges": 6,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4",
+        "world:hub:S5",
+        "world:area:S5_DUNDEOK_FARMLAND",
+        "world:area:S5_GEOJE_JUNGLE_DOME",
+        "world:gym:5",
+        "world:hub:S6",
+        "world:area:S6_HAKDONG_MONGDOL",
+        "world:area:S6_HAKDONG_FOREST",
+        "world:gym:6"
+      ],
+      "geojeBalls": 0
+    },
+    "S7": {
+      "walkedTiles": 5559,
+      "secondsEstimate": 1222.98,
+      "trainers": 57,
+      "badges": 7,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4",
+        "world:hub:S5",
+        "world:area:S5_DUNDEOK_FARMLAND",
+        "world:area:S5_GEOJE_JUNGLE_DOME",
+        "world:gym:5",
+        "world:hub:S6",
+        "world:area:S6_HAKDONG_MONGDOL",
+        "world:area:S6_HAKDONG_FOREST",
+        "world:gym:6",
+        "world:hub:S7",
+        "world:area:S7_NAMBU_CLIFF",
+        "world:area:S7_HAEGEUMGANG_ROCKY_COAST",
+        "world:area:S7_NAMBU_COOL_VALLEY",
+        "world:gym:7"
+      ],
+      "geojeBalls": 0
+    },
+    "S8": {
+      "walkedTiles": 6506,
+      "secondsEstimate": 1431.32,
+      "trainers": 67,
+      "badges": 8,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4",
+        "world:hub:S5",
+        "world:area:S5_DUNDEOK_FARMLAND",
+        "world:area:S5_GEOJE_JUNGLE_DOME",
+        "world:gym:5",
+        "world:hub:S6",
+        "world:area:S6_HAKDONG_MONGDOL",
+        "world:area:S6_HAKDONG_FOREST",
+        "world:gym:6",
+        "world:hub:S7",
+        "world:area:S7_NAMBU_CLIFF",
+        "world:area:S7_HAEGEUMGANG_ROCKY_COAST",
+        "world:area:S7_NAMBU_COOL_VALLEY",
+        "world:gym:7",
+        "world:hub:S8",
+        "world:area:S8_JISEPO_HARBOR",
+        "world:area:S8_GUJORA_OFFSHORE",
+        "world:gym:8"
+      ],
+      "geojeBalls": 0
+    },
+    "S9": {
+      "walkedTiles": 7185,
+      "secondsEstimate": 1580.7,
+      "trainers": 72,
+      "badges": 8,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4",
+        "world:hub:S5",
+        "world:area:S5_DUNDEOK_FARMLAND",
+        "world:area:S5_GEOJE_JUNGLE_DOME",
+        "world:gym:5",
+        "world:hub:S6",
+        "world:area:S6_HAKDONG_MONGDOL",
+        "world:area:S6_HAKDONG_FOREST",
+        "world:gym:6",
+        "world:hub:S7",
+        "world:area:S7_NAMBU_CLIFF",
+        "world:area:S7_HAEGEUMGANG_ROCKY_COAST",
+        "world:area:S7_NAMBU_COOL_VALLEY",
+        "world:gym:7",
+        "world:hub:S8",
+        "world:area:S8_JISEPO_HARBOR",
+        "world:area:S8_GUJORA_OFFSHORE",
+        "world:gym:8",
+        "world:hub:S9",
+        "world:area:S9_JANGSEUNGPO_RETURN_ROUTE",
+        "world:area:S9_HUNGNAM_MEMORIAL_PARK",
+        "world:ship:S9"
+      ],
+      "geojeBalls": 0
+    },
+    "FINAL": {
+      "walkedTiles": 8447,
+      "secondsEstimate": 1858.34,
+      "trainers": 77,
+      "badges": 8,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4",
+        "world:hub:S5",
+        "world:area:S5_DUNDEOK_FARMLAND",
+        "world:area:S5_GEOJE_JUNGLE_DOME",
+        "world:gym:5",
+        "world:hub:S6",
+        "world:area:S6_HAKDONG_MONGDOL",
+        "world:area:S6_HAKDONG_FOREST",
+        "world:gym:6",
+        "world:hub:S7",
+        "world:area:S7_NAMBU_CLIFF",
+        "world:area:S7_HAEGEUMGANG_ROCKY_COAST",
+        "world:area:S7_NAMBU_COOL_VALLEY",
+        "world:gym:7",
+        "world:hub:S8",
+        "world:area:S8_JISEPO_HARBOR",
+        "world:area:S8_GUJORA_OFFSHORE",
+        "world:gym:8",
+        "world:hub:S9",
+        "world:area:S9_JANGSEUNGPO_RETURN_ROUTE",
+        "world:area:S9_HUNGNAM_MEMORIAL_PARK",
+        "world:ship:S9",
+        "world:hub:FINAL",
+        "world:league:1",
+        "world:league:2",
+        "world:league:3",
+        "world:league:4",
+        "world:league:5"
+      ],
+      "geojeBalls": 0
+    },
+    "POST": {
+      "walkedTiles": 8447,
+      "secondsEstimate": 1858.34,
+      "trainers": 77,
+      "badges": 8,
+      "visitedMaps": [
+        "world:hub:PROLOGUE",
+        "world:hub:S1",
+        "world:area:S1_YEONCHO_STREAM",
+        "world:area:S1_HACHEONG_WETLAND",
+        "world:area:S1_HACHEONG_BRACKISH",
+        "world:gym:1",
+        "world:hub:S2",
+        "world:area:S2_JANGMOK_COAST",
+        "world:area:S2_JANGMOK_BIRD_HILL",
+        "world:gym:2",
+        "world:hub:S3",
+        "world:area:S3_AJU_GRASSLAND",
+        "world:area:S3_OKPO_FOREST_EDGE",
+        "world:gym:3",
+        "world:hub:S4",
+        "world:area:S4_GOHYEON_GREENBELT",
+        "world:area:S4_POW_CAMP_PARK_EDGE",
+        "world:gym:4",
+        "world:hub:S5",
+        "world:area:S5_DUNDEOK_FARMLAND",
+        "world:area:S5_GEOJE_JUNGLE_DOME",
+        "world:gym:5",
+        "world:hub:S6",
+        "world:area:S6_HAKDONG_MONGDOL",
+        "world:area:S6_HAKDONG_FOREST",
+        "world:gym:6",
+        "world:hub:S7",
+        "world:area:S7_NAMBU_CLIFF",
+        "world:area:S7_HAEGEUMGANG_ROCKY_COAST",
+        "world:area:S7_NAMBU_COOL_VALLEY",
+        "world:gym:7",
+        "world:hub:S8",
+        "world:area:S8_JISEPO_HARBOR",
+        "world:area:S8_GUJORA_OFFSHORE",
+        "world:gym:8",
+        "world:hub:S9",
+        "world:area:S9_JANGSEUNGPO_RETURN_ROUTE",
+        "world:area:S9_HUNGNAM_MEMORIAL_PARK",
+        "world:ship:S9",
+        "world:hub:FINAL",
+        "world:league:1",
+        "world:league:2",
+        "world:league:3",
+        "world:league:4",
+        "world:league:5",
+        "world:hub:POST"
+      ],
+      "geojeBalls": 0
+    }
+  },
+  "trace": [
+    "event:P00_HOME_START",
+    "event:P01_ECO_CENTER",
+    "event:P02_FIRST_PARTNER",
+    "trainer:RIVAL_00",
+    "event:P03_TUTORIAL",
+    "event:P04_SUSPICIOUS_TRACE",
+    "trainer:ROUTE_S1_01",
+    "trainer:ROUTE_S1_02",
+    "trainer:ROUTE_S1_03",
+    "trainer:ROUTE_S1_04",
+    "trainer:GYM_01_SUB_01",
+    "trainer:GYM_01_SUB_02",
+    "event:S1_WATER_DECLINE",
+    "event:S1_TRAP_INVESTIGATION",
+    "trainer:RIVAL_01",
+    "trainer:NPC_GYM_01_KANGMIN",
+    "trainer:ROUTE_S2_01",
+    "trainer:ROUTE_S2_02",
+    "trainer:ROUTE_S2_03",
+    "trainer:ROUTE_S2_04",
+    "trainer:GYM_02_SUB_01",
+    "trainer:GYM_02_SUB_02",
+    "event:S2_BIRD_DISTURBANCE",
+    "event:S2_LURE_DISCOVERY",
+    "event:S2_WIND_EVENT_150",
+    "trainer:NPC_GYM_02_YOUNGJIN",
+    "trainer:ROUTE_S3_01",
+    "trainer:ROUTE_S3_02",
+    "trainer:ROUTE_S3_03",
+    "trainer:ROUTE_S3_04",
+    "trainer:GYM_03_SUB_01",
+    "trainer:GYM_03_SUB_02",
+    "event:S3_ROUTE_TRAINERS",
+    "event:S3_BLACKNET_NAME_REVEAL",
+    "trainer:RIVAL_02",
+    "trainer:NPC_GYM_03_JEONGUI",
+    "trainer:ROUTE_S4_01",
+    "trainer:ROUTE_S4_02",
+    "trainer:ROUTE_S4_03",
+    "trainer:GYM_04_SUB_01",
+    "trainer:GYM_04_SUB_02",
+    "event:S4_HISTORY_INVESTIGATION",
+    "event:S4_VILLAIN_NETWORK",
+    "trainer:NPC_GYM_04_JINSEONG",
+    "trainer:ROUTE_S5_01",
+    "trainer:ROUTE_S5_02",
+    "trainer:ROUTE_S5_03",
+    "trainer:ROUTE_S5_04",
+    "trainer:GYM_05_SUB_01",
+    "trainer:GYM_05_SUB_02",
+    "trainer:GYM_05_SUB_03",
+    "event:S5_CROP_CONFLICT",
+    "event:S5_FOOD_WEB_REVEAL",
+    "event:S5_JUNGLE_DOME_EXPEDITION",
+    "trainer:RIVAL_03",
+    "trainer:NPC_GYM_05_MYEONGJU",
+    "trainer:ROUTE_S6_01",
+    "trainer:ROUTE_S6_02",
+    "trainer:ROUTE_S6_03",
+    "trainer:ROUTE_S6_04",
+    "trainer:GYM_06_SUB_01",
+    "trainer:GYM_06_SUB_02",
+    "trainer:GYM_06_SUB_03",
+    "event:S6_BEACH_DISTURBANCE",
+    "event:S6_PROTECTED_RESCUE",
+    "event:S6_VEHICLE_CHASE",
+    "trainer:NPC_GYM_06_JUHYEOK",
+    "trainer:ROUTE_S7_01",
+    "trainer:ROUTE_S7_02",
+    "trainer:ROUTE_S7_03",
+    "trainer:ROUTE_S7_04",
+    "trainer:ROUTE_S7_05",
+    "trainer:GYM_07_SUB_01",
+    "trainer:GYM_07_SUB_02",
+    "trainer:GYM_07_SUB_03",
+    "event:S7_NEST_THREAT",
+    "trainer:RIVAL_04",
+    "trainer:NPC_GYM_07_USANG",
+    "event:S7_SEA_ACCESS",
+    "trainer:ROUTE_S8_01",
+    "trainer:ROUTE_S8_02",
+    "trainer:ROUTE_S8_03",
+    "trainer:ROUTE_S8_04",
+    "trainer:ROUTE_S8_05",
+    "trainer:GYM_08_SUB_01",
+    "trainer:GYM_08_SUB_02",
+    "trainer:GYM_08_SUB_03",
+    "event:S8_MARINE_EXPANSION",
+    "event:S8_CAPTURE_SHIP",
+    "trainer:NPC_GYM_08_DOCTOR_CHAE",
+    "trainer:RIVAL_05",
+    "trainer:ROUTE_S9_01",
+    "trainer:ROUTE_S9_02",
+    "event:S9_RETURN_HOME",
+    "event:S9_HUNGNAM_MEMORIAL_PUZZLE",
+    "event:S9_LANTERN_TRACE",
+    "event:S9_SHIP_ZONE1_COMPLETE_EVENT",
+    "trainer:BLACKNET_BOMI_FINAL",
+    "event:S9_SHIP_ZONE2_RESCUE_EVENT",
+    "trainer:BLACKNET_JUNSEOK_FINAL",
+    "trainer:BLACKNET_HWIGYEONG_FINAL",
+    "event:S9_FINAL_VILLAIN_RAID",
+    "event:RIVAL_S9_ALLY",
+    "event:S9_RELEASE_RESCUED",
+    "trainer:NPC_ELITE_01_YUNWOO",
+    "trainer:NPC_ELITE_02_SIYOON",
+    "trainer:NPC_ELITE_03_EUNMI",
+    "trainer:NPC_ELITE_04_JUNHO",
+    "event:FINAL_LEAGUE",
+    "trainer:NPC_CHAMPION_DOCTOR_YOON",
+    "event:FINAL_ENDING_RECORD"
+  ],
+  "battles": [
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_004"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_038"
+      ],
+      "background": "battle.biome.RURAL"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_041",
+        "SPECIES_038"
+      ],
+      "background": "battle.biome.RURAL"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_018",
+        "SPECIES_046"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_015",
+        "SPECIES_062"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_041"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_046",
+        "SPECIES_064"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_004",
+        "SPECIES_010"
+      ],
+      "background": "battle.biome.RURAL"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_041",
+        "SPECIES_046"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_018",
+        "SPECIES_070"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_010",
+        "SPECIES_032"
+      ],
+      "background": "battle.biome.GRASSLAND"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_064",
+        "SPECIES_068"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_023",
+        "SPECIES_015"
+      ],
+      "background": "battle.biome.GRASSLAND"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_030",
+        "SPECIES_039"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_030",
+        "SPECIES_031"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_030",
+        "SPECIES_039",
+        "SPECIES_031"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_013",
+        "SPECIES_021"
+      ],
+      "background": "battle.biome.GRASSLAND"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_027",
+        "SPECIES_012"
+      ],
+      "background": "battle.biome.GRASSLAND"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_024",
+        "SPECIES_033"
+      ],
+      "background": "battle.biome.FOREST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_016",
+        "SPECIES_011"
+      ],
+      "background": "battle.biome.FOREST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_021",
+        "SPECIES_033"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_021",
+        "SPECIES_042",
+        "SPECIES_033"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_005",
+        "SPECIES_019",
+        "SPECIES_039"
+      ],
+      "background": "battle.biome.FOREST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_021",
+        "SPECIES_032",
+        "SPECIES_033",
+        "SPECIES_042"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_078",
+        "SPECIES_024"
+      ],
+      "background": "battle.biome.URBAN"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_016",
+        "SPECIES_011",
+        "SPECIES_081"
+      ],
+      "background": "battle.biome.URBAN"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_082",
+        "SPECIES_024"
+      ],
+      "background": "battle.biome.URBAN"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_011",
+        "SPECIES_024"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_016",
+        "SPECIES_065",
+        "SPECIES_079"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_011",
+        "SPECIES_016",
+        "SPECIES_024",
+        "SPECIES_065"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_089",
+        "SPECIES_092"
+      ],
+      "background": "battle.biome.RURAL"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_013",
+        "SPECIES_039",
+        "SPECIES_096"
+      ],
+      "background": "battle.biome.INDOOR"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_016",
+        "SPECIES_089",
+        "SPECIES_092"
+      ],
+      "background": "battle.biome.INDOOR"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_045",
+        "SPECIES_042",
+        "SPECIES_096"
+      ],
+      "background": "battle.biome.INDOOR"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_013",
+        "SPECIES_027",
+        "SPECIES_039"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_014",
+        "SPECIES_030",
+        "SPECIES_039"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_030",
+        "SPECIES_014",
+        "SPECIES_028"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_006",
+        "SPECIES_016",
+        "SPECIES_039",
+        "SPECIES_101"
+      ],
+      "background": "battle.biome.RURAL"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_013",
+        "SPECIES_027",
+        "SPECIES_014",
+        "SPECIES_028",
+        "SPECIES_040"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_111",
+        "SPECIES_063",
+        "SPECIES_019"
+      ],
+      "background": "battle.biome.ROCKY_SHORE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_100",
+        "SPECIES_102",
+        "SPECIES_117"
+      ],
+      "background": "battle.biome.ROCKY_SHORE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_089",
+        "SPECIES_092",
+        "SPECIES_016"
+      ],
+      "background": "battle.biome.FOREST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_047",
+        "SPECIES_116",
+        "SPECIES_067"
+      ],
+      "background": "battle.biome.ROCKY_SHORE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_034",
+        "SPECIES_045",
+        "SPECIES_063"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_111",
+        "SPECIES_116",
+        "SPECIES_103"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_034",
+        "SPECIES_045",
+        "SPECIES_063",
+        "SPECIES_112"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_034",
+        "SPECIES_045",
+        "SPECIES_063",
+        "SPECIES_111",
+        "SPECIES_112"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_089",
+        "SPECIES_124",
+        "SPECIES_016"
+      ],
+      "background": "battle.biome.CLIFF"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_125",
+        "SPECIES_034",
+        "SPECIES_014"
+      ],
+      "background": "battle.biome.CLIFF"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_047",
+        "SPECIES_103",
+        "SPECIES_069"
+      ],
+      "background": "battle.biome.ROCKY_SHORE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_019",
+        "SPECIES_067",
+        "SPECIES_063"
+      ],
+      "background": "battle.biome.ROCKY_SHORE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_092",
+        "SPECIES_096",
+        "SPECIES_023",
+        "SPECIES_123"
+      ],
+      "background": "battle.biome.FOREST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_011",
+        "SPECIES_014",
+        "SPECIES_019"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_013",
+        "SPECIES_067",
+        "SPECIES_014",
+        "SPECIES_011"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_018",
+        "SPECIES_019",
+        "SPECIES_067",
+        "SPECIES_014"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_006",
+        "SPECIES_017",
+        "SPECIES_103",
+        "SPECIES_108",
+        "SPECIES_126"
+      ],
+      "background": "battle.biome.CLIFF"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_018",
+        "SPECIES_013",
+        "SPECIES_011",
+        "SPECIES_014",
+        "SPECIES_019",
+        "SPECIES_067"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_065",
+        "SPECIES_069",
+        "SPECIES_136"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_103",
+        "SPECIES_063",
+        "SPECIES_140"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_065",
+        "SPECIES_136",
+        "SPECIES_140"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_112",
+        "SPECIES_116",
+        "SPECIES_103"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_101",
+        "SPECIES_118",
+        "SPECIES_140"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_096",
+        "SPECIES_097",
+        "SPECIES_139"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_096",
+        "SPECIES_097",
+        "SPECIES_139",
+        "SPECIES_140"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_139",
+        "SPECIES_097",
+        "SPECIES_140"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_096",
+        "SPECIES_139",
+        "SPECIES_097",
+        "SPECIES_096",
+        "SPECIES_097",
+        "SPECIES_140"
+      ],
+      "background": "battle.biome.GYM"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_006",
+        "SPECIES_017",
+        "SPECIES_103",
+        "SPECIES_108",
+        "SPECIES_126",
+        "SPECIES_142"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_017",
+        "SPECIES_080",
+        "SPECIES_090"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_101",
+        "SPECIES_103",
+        "SPECIES_136",
+        "SPECIES_140"
+      ],
+      "background": "battle.biome.COAST"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_080",
+        "SPECIES_063",
+        "SPECIES_097",
+        "SPECIES_136"
+      ],
+      "background": "battle.biome.INDOOR"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_011",
+        "SPECIES_025",
+        "SPECIES_034",
+        "SPECIES_040"
+      ],
+      "background": "battle.biome.INDOOR"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_017",
+        "SPECIES_090",
+        "SPECIES_118",
+        "SPECIES_140",
+        "SPECIES_144"
+      ],
+      "background": "battle.biome.INDOOR"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_048",
+        "SPECIES_067",
+        "SPECIES_101",
+        "SPECIES_069",
+        "SPECIES_071",
+        "SPECIES_138"
+      ],
+      "background": "battle.biome.LEAGUE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_031",
+        "SPECIES_076",
+        "SPECIES_028",
+        "SPECIES_093",
+        "SPECIES_133",
+        "SPECIES_112"
+      ],
+      "background": "battle.biome.LEAGUE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_132",
+        "SPECIES_073",
+        "SPECIES_134",
+        "SPECIES_045",
+        "SPECIES_128",
+        "SPECIES_145"
+      ],
+      "background": "battle.biome.LEAGUE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_057",
+        "SPECIES_087",
+        "SPECIES_120",
+        "SPECIES_106",
+        "SPECIES_122",
+        "SPECIES_147"
+      ],
+      "background": "battle.biome.LEAGUE"
+    },
+    {
+      "kind": "trainer",
+      "opponents": [
+        "SPECIES_022",
+        "SPECIES_085",
+        "SPECIES_106",
+        "SPECIES_118",
+        "SPECIES_126",
+        "SPECIES_142"
+      ],
+      "background": "battle.biome.LEAGUE"
+    }
+  ]
+}

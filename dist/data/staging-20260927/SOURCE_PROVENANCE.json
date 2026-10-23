@@ -1,0 +1,11 @@
+{
+  "status": "STAGING_NOT_RUNTIME_ACTIVE",
+  "battle": {
+    "file": "geoje_battle_collection_master_v3_2.json",
+    "sha256": "251f8e40675f1d1504f1848511273bd66caab75fdc977a85286740ebbc848dea",
+    "source": "03_cleanup_candidates/geoje_battle_collection_master_v3_1_final_cleanup_candidate.json",
+    "sourceSha256": "d601fac39d2c26f74f4e75226d32ff6d026b3fde8a3401b0fdea4a050d3eeeac",
+    "override": "00_LATEST_CANONICAL_OVERRIDE_20260927.json",
+    "overrideSha256": "0ec5f19dbb27d6776a4c30b32b202a66ddd1a8cd89e451f964ddab89851dce4f"
+  }
+}

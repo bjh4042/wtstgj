@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "project": "거제몬스터",
+    "file_name": "geoje_cross_validation_report_v2.json",
+    "version": "v2_2026-09-17",
+    "created": "2026-09-17",
+    "scope": "Final static cross-file consistency audit",
+    "source_manifest_revision": "v1.5_2026-09-17",
+    "result_manifest_revision": "v1.6_2026-09-17",
+    "runtime_qa_patch": "firebase_rules_v1_1_2026-09-17"
+  },
+  "verdict": {
+    "static_data_integration": "PASS",
+    "production_release": "HOLD_RUNTIME_QA",
+    "error_count": 0,
+    "warning_count": 0,
+    "external_gate_count": 5,
+    "meaning": "Canonical data remains statically consistent. Firebase Rules received a pre-emulator security patch; official Emulator execution and integrated runtime/device/release QA remain mandatory.",
+    "documented_nonblocking_exceptions": 1
+  },
+  "pre_cross_cleanup": {
+    "species_first_obtainable_stage_synced": 0,
+    "species_base_primary_acquisition_synced": 0,
+    "battle_base_primary_acquisition_synced": 15,
+    "metadata_status_fields_refreshed": [
+      "battle",
+      "trainer",
+      "stage",
+      "encounter"
+    ],
+    "online_hash_regenerated": true,
+    "species_identity_non_authoritative_stage_fields_detected": 55,
+    "species_identity_non_authoritative_primary_acquisition_fields_detected": 15,
+    "species_file_modified": false,
+    "species_authority_resolution": "Species v3 is identity-only. Acquisition v2 + Encounter v2.3 override acquisition/stage metadata."
+  },
+  "sections": {
+    "species": {
+      "status": "PASS",
+      "species_count": 151,
+      "chain_count": 75,
+      "chain_breakdown": {
+        "three_stage": 19,
+        "two_stage": 38,
+        "single": 18
+      },
+      "names_unique": true,
+      "stage_acquisition_metadata_synced": false,
+      "stage_acquisition_metadata_status": "NON_AUTHORITATIVE_IN_SPECIES_FILE",
+      "authoritative_acquisition_source": "geoje_acquisition_master_v2.csv"
+    },
+    "battle": {
+      "status": "PASS",
+      "species_count": 151,
+      "move_count": 117,
+      "tm_count": 50,
+      "signature_move_count": 12,
+      "elite_party_sizes": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "champion_party_size": 6,
+      "geoje_ball_total": 12
+    },
+    "character_trainer": {
+      "status": "PASS",
+      "major_character_count": 18,
+      "trainer_total": 55,
+      "required": 23,
+      "optional": 32
+    },
+    "world": {
+      "status": "PASS",
+      "stage_count": 12,
+      "encounter_area_count": 29,
+      "encounter_special_event_count": 58,
+      "fishing_rows": 70,
+      "fishing_areas": 7,
+      "acquisition_chains": 75,
+      "jungle_dome": "3 trainers / 1 required / wild 0 / capture 0 / Blacknet 0",
+      "hungnam_core": "trainer 0 / wild 0"
+    },
+    "story": {
+      "status": "PASS",
+      "main_events": 52,
+      "external_events": 64,
+      "persistent_flags": 49,
+      "derived_gates": 31,
+      "geoje_ball_total": 12
+    },
+    "save": {
+      "status": "PASS",
+      "user_slots": 3,
+      "per_slot_recovery": [
+        "primary",
+        "lastKnownGood"
+      ],
+      "pc": "10 x 30 = 300",
+      "party_max": 6,
+      "gem": ".gem / GEOJE_MONSTER_SAVE / SHA-256",
+      "migration_early_progression": "explicit reconciliation required",
+      "online_live_state_in_save": false
+    },
+    "online": {
+      "status": "STATIC_AUDIT_PASS_V1_1__EMULATOR_REQUIRED",
+      "room_code": "8 chars / 32-symbol alphabet / 40-bit space",
+      "party": "1-6 actual species/level/moves",
+      "commit_reveal": true,
+      "state_hash_ack": true,
+      "reconnect_seconds": 30,
+      "soft_room_target": 40,
+      "single_player_effect": false,
+      "firebase_emulator_test": "TEST_PACKAGE_READY__NOT_EXECUTED_CURRENT_ENV",
+      "security_matrix_cases": 26
+    },
+    "manifest": {
+      "status": "PASS"
+    }
+  },
+  "canonical_file_fingerprints": {
+    "geoje_character_npc_master_v2.json": {
+      "sha256": "13162821a55583e46befb73bc36b08c726ee69cc6c2bd7bba39f92d2a67dcdcf",
+      "size_bytes": 9665
+    },
+    "geoje_trainer_npc_master_v2.json": {
+      "sha256": "97f74202a8ed746fb98b4f51fd8d141875b9367168a3c8e3723745657e70465e",
+      "size_bytes": 144226
+    },
+    "geoje_fishing_master_v1_1.csv": {
+      "sha256": "8d222764dddfcd8ddd620154965115d8ae16dbdd8fae24ed4a8cbfb342eb1904",
+      "size_bytes": 10147
+    },
+    "geoje_acquisition_master_v2.csv": {
+      "sha256": "6402849dff09adc8052a5a7f2ab04fea8fe61be175034b4cd0a4e9552a2b9f15",
+      "size_bytes": 13629
+    },
+    "geoje_story_flags_master_v2.json": {
+      "sha256": "094296f78b96c64150a2f19fc79ac0c77061a8e2a7041422809cfeb8a1aff449",
+      "size_bytes": 53335
+    },
+    "geoje_save_schema_v2.json": {
+      "sha256": "8cfe3c0291674b8fff971dd4d77412eee9e0317c40166e62bd6f6f89ee1ba70f",
+      "size_bytes": 23274
+    },
+    "geoje_save_migration_alias_v1_to_v2.json": {
+      "sha256": "b994b878e36d47f2c2728d8a3e5020c3c907e72a1638c76eb2737924be42fa67",
+      "size_bytes": 11845
+    },
+    "geoje_species_151_v3_final.json": {
+      "sha256": "77715d80a2acf27bd4a8361cecc6762bb1da03e3328e5d12505912b15836e0c8",
+      "size_bytes": 145989
+    },
+    "geoje_battle_collection_master_v3.json": {
+      "sha256": "0bf068f2ec0e4752e60439f2a7cac5924aff66fcf65e2d23d96e93b96b2f70a8",
+      "size_bytes": 611995
+    },
+    "geoje_stage_master_v2_3.json": {
+      "sha256": "56ba5f61799412045ca2a589296cfcfdf5bee6e393d282b2e31a99f593b0ca67",
+      "size_bytes": 53626
+    },
+    "geoje_encounter_master_v2_3.json": {
+      "sha256": "eb1fc73300e52e6005f7c107fb39ff56466aa4ab1e731881513b71b7b4b7768c",
+      "size_bytes": 270912
+    },
+    "geoje_online_battle_master_v1.json": {
+      "sha256": "55bb1b54497c6310bd775bea256cec369016082d51bbe1c07fee1088d44447e3",
+      "size_bytes": 13275
+    },
+    "geoje_online_battle_firebase_rules_contract_v1.json": {
+      "sha256": "9fe733f97191c5fa678eda72f58aa02068934c19d01987e05027a57bdc795cf0",
+      "size_bytes": 19137
+    },
+    "database.rules.json": {
+      "sha256": "a1dd61bb8c5cee11e14620bb371999c8a720ebeb09ee2bc9bfa2522d2658ec00",
+      "size_bytes": 15084
+    }
+  },
+  "critical_invariants": {
+    "main_species": "151 contiguous / 75 chains / 19+38+18",
+    "moves": "117 = ordinary55 + TM50 + signature12",
+    "trainers": "55 = route35 + gym20 / required23 + optional32",
+    "gyms": "8 latest leader/type/TM/trait mapping",
+    "jungle_dome": "3 trainers, exactly 1 required, wild/capture/Blacknet 0",
+    "history_core": "combat/wild/capture 0",
+    "rival": "RIVAL_00..05; RIVAL_04 present; RIVAL_05 sixth 미소괭 Lv50",
+    "league": "Elite Four 4×6 / 윤 박사 champion 6",
+    "geoje_ball": "lifetime grants exactly 12 / ledger-backed",
+    "exp_share": "absent",
+    "post_151": "caught 148/149/150 + history + boss + POST_COMPASS_COMPLETE + onseom_compass",
+    "save": "3 slots × primary/lastKnownGood / PC300 / .gem",
+    "online": "1v1 party1-6 / commit-reveal / shared deterministic seed / state hash ACK / 30s reconnect / no single-save effect"
+  },
+  "external_gates": [
+    {
+      "id": "FIREBASE_EMULATOR_SECURITY",
+      "status": "HOLD",
+      "required": "Install firebase-tools + @firebase/rules-unit-testing and run 26-case emulator test harness. Current runtime npm registry access timed out."
+    },
+    {
+      "id": "INTEGRATED_GAMEPLAY_PLAYTEST",
+      "status": "HOLD",
+      "required": "Run end-to-end new-game→POST progression, Battle v3 balance, capture/fishing, save/reload, migration fixture, two-browser deterministic online battle."
+    },
+    {
+      "id": "DEVICE_QA",
+      "status": "HOLD",
+      "required": "PC Chrome / iPad Safari / iPhone Safari / Galaxy Tab Chrome."
+    },
+    {
+      "id": "REAL_WORLD_CONTENT_AND_RIGHTS",
+      "status": "HOLD",
+      "required": "Pre-release fact-check of historical/ecological educational content; guest cameo remains OFF until rights/actual statements are verified."
+    },
+    {
+      "id": "COPYRIGHT_ASSET_AUDIT",
+      "status": "HOLD",
+      "required": "Confirm no copied Pokémon GBA ROM sprites/music or other reference-only copyrighted game assets ship in the release build."
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "engine_handoff_rule": {
+    "canonical_only": [
+      "geoje_character_npc_master_v2.json",
+      "geoje_trainer_npc_master_v2.json",
+      "geoje_fishing_master_v1_1.csv",
+      "geoje_acquisition_master_v2.csv",
+      "geoje_story_flags_master_v2.json",
+      "geoje_save_schema_v2.json",
+      "geoje_save_migration_alias_v1_to_v2.json",
+      "geoje_species_151_v3_final.json",
+      "geoje_battle_collection_master_v3.json",
+      "geoje_stage_master_v2_3.json",
+      "geoje_encounter_master_v2_3.json",
+      "geoje_online_battle_master_v1.json",
+      "geoje_online_battle_firebase_rules_contract_v1.json",
+      "database.rules.json"
+    ],
+    "legacy_rule": "Any older Battle/Stage/Encounter/Trainer/Flags/Save/Detailed Flow or auxiliary master is REFERENCE_ONLY unless explicitly added to Final Source Manifest canonical_sources.",
+    "do_not_merge_by_latest_filename_guess": "Use manifest canonical_sources + SHA-256 fingerprints; do not pick similarly named (1)/(2) files.",
+    "species_field_authority": {
+      "use_from_species_v3": [
+        "dex_no",
+        "name",
+        "motif",
+        "75 evolution chains"
+      ],
+      "do_not_use_from_species_v3": [
+        "first_obtainable_stage",
+        "primary_acquisition"
+      ],
+      "use_instead": [
+        "geoje_acquisition_master_v2.csv",
+        "geoje_encounter_master_v2_3.json"
+      ]
+    }
+  },
+  "runtime_qa_handoff": "WORK_HANDOFF_INTEGRATED_PLAYTEST_v1.md"
+}

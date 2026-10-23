@@ -1,0 +1,1062 @@
+{
+  "report_id": "GEOJE_STEP7_SURF_ACQUISITION_SOURCE_AUDIT_V1",
+  "created_at": "2026-09-22",
+  "scope": "Read-only comparison of mounted handoff ZIP source data. Work implementation and live browser were not inspected or executed.",
+  "work_report_reference": {
+    "branch": "canonical-encounter-fishing-acquisition-v1",
+    "commit": "e5e52e3",
+    "tests_reported": "813/813 PASS; not rerun here"
+  },
+  "source_archive": "geoje_implementation_handoff_v1.zip",
+  "source_fingerprints": {
+    "geoje_encounter_master_v2_3.json": "eb1fc73300e52e6005f7c107fb39ff56466aa4ab1e731881513b71b7b4b7768c",
+    "geoje_acquisition_master_v2.csv": "6402849dff09adc8052a5a7f2ab04fea8fe61be175034b4cd0a4e9552a2b9f15"
+  },
+  "counts": {
+    "source_encounter_table_count": 54,
+    "surf_table_count": 8,
+    "surf_slot_count": 44,
+    "conflicting_slot_count": 42,
+    "distinct_conflicting_species_count": 7,
+    "slots_passing_random_flag_check_only": 2
+  },
+  "conflicting_species": [
+    {
+      "species_no": 64,
+      "name": "은치리",
+      "primary_acquisition": "fishing_basic",
+      "affected_slots": 4
+    },
+    {
+      "species_no": 68,
+      "name": "대구미",
+      "primary_acquisition": "fishing_basic",
+      "affected_slots": 1
+    },
+    {
+      "species_no": 100,
+      "name": "등푸리",
+      "primary_acquisition": "fishing_good",
+      "affected_slots": 8
+    },
+    {
+      "species_no": 102,
+      "name": "볼꼬미",
+      "primary_acquisition": "fishing_good",
+      "affected_slots": 8
+    },
+    {
+      "species_no": 117,
+      "name": "문꾸리",
+      "primary_acquisition": "fishing_good",
+      "affected_slots": 8
+    },
+    {
+      "species_no": 135,
+      "name": "꼴쭈기",
+      "primary_acquisition": "fishing_super",
+      "affected_slots": 7
+    },
+    {
+      "species_no": 139,
+      "name": "복방울",
+      "primary_acquisition": "fishing_super",
+      "affected_slots": 6
+    }
+  ],
+  "tables": [
+    {
+      "area_id": "S1_HACHEONG_BRACKISH",
+      "display_name": "하청 기수 해안",
+      "area_stage_id": "S1",
+      "method": "surf_brackish",
+      "unlock": "field_ability_surf",
+      "source_note": "S7 파도타기 해금 후 재방문용",
+      "original_slot_count": 5,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 4,
+      "slots": [
+        {
+          "species_no": 46,
+          "name": "갯망이",
+          "weight": 30,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/6/encounter_tables/1/slots/0",
+          "acquisition_chain_id": 17,
+          "acquisition_csv_record_line": 18,
+          "primary_acquisition": "wild_encounter",
+          "first_stage": "S1",
+          "random_spawn_allowed": true,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "",
+          "interaction_mode": "standard_battle_capture",
+          "result": "RANDOM_FLAG_CHECK_ONLY_PASS",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 64,
+          "name": "은치리",
+          "weight": 25,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/6/encounter_tables/1/slots/1",
+          "acquisition_chain_id": 26,
+          "acquisition_csv_record_line": 27,
+          "primary_acquisition": "fishing_basic",
+          "first_stage": "S1",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "basic_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 15,
+          "level": [
+            37,
+            41
+          ],
+          "encounter_json_pointer": "/areas/6/encounter_tables/1/slots/2",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 15,
+          "level": [
+            37,
+            41
+          ],
+          "encounter_json_pointer": "/areas/6/encounter_tables/1/slots/3",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 15,
+          "level": [
+            38,
+            42
+          ],
+          "encounter_json_pointer": "/areas/6/encounter_tables/1/slots/4",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    },
+    {
+      "area_id": "S2_JANGMOK_COAST",
+      "display_name": "장목 해안길",
+      "area_stage_id": "S2",
+      "method": "surf_nearshore",
+      "unlock": "field_ability_surf",
+      "source_note": "S7 이후 장목 재방문 해상 조우",
+      "original_slot_count": 5,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 4,
+      "slots": [
+        {
+          "species_no": 70,
+          "name": "잠수깃",
+          "weight": 25,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/7/encounter_tables/1/slots/0",
+          "acquisition_chain_id": 29,
+          "acquisition_csv_record_line": 30,
+          "primary_acquisition": "wild_encounter",
+          "first_stage": "S2",
+          "random_spawn_allowed": true,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "",
+          "interaction_mode": "standard_battle_capture",
+          "result": "RANDOM_FLAG_CHECK_ONLY_PASS",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 25,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/7/encounter_tables/1/slots/1",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 20,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/7/encounter_tables/1/slots/2",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 15,
+          "level": [
+            37,
+            41
+          ],
+          "encounter_json_pointer": "/areas/7/encounter_tables/1/slots/3",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 135,
+          "name": "꼴쭈기",
+          "weight": 15,
+          "level": [
+            38,
+            42
+          ],
+          "encounter_json_pointer": "/areas/7/encounter_tables/1/slots/4",
+          "acquisition_chain_id": 64,
+          "acquisition_csv_record_line": 65,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    },
+    {
+      "area_id": "S6_HAKDONG_MONGDOL",
+      "display_name": "학동몽돌해변",
+      "area_stage_id": "S6",
+      "method": "surf_nearshore",
+      "unlock": "field_ability_surf",
+      "source_note": "S7 파도타기 이후 학동 재방문용",
+      "original_slot_count": 5,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 5,
+      "slots": [
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 25,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/13/encounter_tables/1/slots/0",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 25,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/13/encounter_tables/1/slots/1",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 20,
+          "level": [
+            36,
+            40
+          ],
+          "encounter_json_pointer": "/areas/13/encounter_tables/1/slots/2",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 135,
+          "name": "꼴쭈기",
+          "weight": 15,
+          "level": [
+            37,
+            41
+          ],
+          "encounter_json_pointer": "/areas/13/encounter_tables/1/slots/3",
+          "acquisition_chain_id": 64,
+          "acquisition_csv_record_line": 65,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 139,
+          "name": "복방울",
+          "weight": 15,
+          "level": [
+            37,
+            41
+          ],
+          "encounter_json_pointer": "/areas/13/encounter_tables/1/slots/4",
+          "acquisition_chain_id": 66,
+          "acquisition_csv_record_line": 67,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    },
+    {
+      "area_id": "S7_HAEGEUMGANG_ROCKY_COAST",
+      "display_name": "해금강 바위해안",
+      "area_stage_id": "S7",
+      "method": "surf_nearshore",
+      "unlock": "field_ability_surf",
+      "source_note": null,
+      "original_slot_count": 5,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 5,
+      "slots": [
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 25,
+          "level": [
+            37,
+            41
+          ],
+          "encounter_json_pointer": "/areas/17/encounter_tables/1/slots/0",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 25,
+          "level": [
+            37,
+            41
+          ],
+          "encounter_json_pointer": "/areas/17/encounter_tables/1/slots/1",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 20,
+          "level": [
+            38,
+            42
+          ],
+          "encounter_json_pointer": "/areas/17/encounter_tables/1/slots/2",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 135,
+          "name": "꼴쭈기",
+          "weight": 15,
+          "level": [
+            38,
+            42
+          ],
+          "encounter_json_pointer": "/areas/17/encounter_tables/1/slots/3",
+          "acquisition_chain_id": 64,
+          "acquisition_csv_record_line": 65,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 139,
+          "name": "복방울",
+          "weight": 15,
+          "level": [
+            38,
+            42
+          ],
+          "encounter_json_pointer": "/areas/17/encounter_tables/1/slots/4",
+          "acquisition_chain_id": 66,
+          "acquisition_csv_record_line": 67,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    },
+    {
+      "area_id": "S8_JISEPO_HARBOR",
+      "display_name": "지세포항",
+      "area_stage_id": "S8",
+      "method": "surf_nearshore",
+      "unlock": "field_ability_surf",
+      "source_note": null,
+      "original_slot_count": 5,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 5,
+      "slots": [
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 25,
+          "level": [
+            41,
+            45
+          ],
+          "encounter_json_pointer": "/areas/18/encounter_tables/1/slots/0",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 20,
+          "level": [
+            41,
+            45
+          ],
+          "encounter_json_pointer": "/areas/18/encounter_tables/1/slots/1",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 20,
+          "level": [
+            42,
+            46
+          ],
+          "encounter_json_pointer": "/areas/18/encounter_tables/1/slots/2",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 135,
+          "name": "꼴쭈기",
+          "weight": 15,
+          "level": [
+            42,
+            46
+          ],
+          "encounter_json_pointer": "/areas/18/encounter_tables/1/slots/3",
+          "acquisition_chain_id": 64,
+          "acquisition_csv_record_line": 65,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 139,
+          "name": "복방울",
+          "weight": 20,
+          "level": [
+            42,
+            46
+          ],
+          "encounter_json_pointer": "/areas/18/encounter_tables/1/slots/4",
+          "acquisition_chain_id": 66,
+          "acquisition_csv_record_line": 67,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    },
+    {
+      "area_id": "S8_GUJORA_OFFSHORE",
+      "display_name": "구조라 외해",
+      "area_stage_id": "S8",
+      "method": "surf_offshore",
+      "unlock": "field_ability_surf",
+      "source_note": null,
+      "original_slot_count": 6,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 6,
+      "slots": [
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 25,
+          "level": [
+            43,
+            47
+          ],
+          "encounter_json_pointer": "/areas/19/encounter_tables/0/slots/0",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 20,
+          "level": [
+            43,
+            47
+          ],
+          "encounter_json_pointer": "/areas/19/encounter_tables/0/slots/1",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 15,
+          "level": [
+            44,
+            48
+          ],
+          "encounter_json_pointer": "/areas/19/encounter_tables/0/slots/2",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 135,
+          "name": "꼴쭈기",
+          "weight": 15,
+          "level": [
+            44,
+            48
+          ],
+          "encounter_json_pointer": "/areas/19/encounter_tables/0/slots/3",
+          "acquisition_chain_id": 64,
+          "acquisition_csv_record_line": 65,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 139,
+          "name": "복방울",
+          "weight": 15,
+          "level": [
+            43,
+            47
+          ],
+          "encounter_json_pointer": "/areas/19/encounter_tables/0/slots/4",
+          "acquisition_chain_id": 66,
+          "acquisition_csv_record_line": 67,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 64,
+          "name": "은치리",
+          "weight": 10,
+          "level": [
+            43,
+            47
+          ],
+          "encounter_json_pointer": "/areas/19/encounter_tables/0/slots/5",
+          "acquisition_chain_id": 26,
+          "acquisition_csv_record_line": 27,
+          "primary_acquisition": "fishing_basic",
+          "first_stage": "S1",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "basic_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    },
+    {
+      "area_id": "S9_JANGSEUNGPO_RETURN_ROUTE",
+      "display_name": "장승포 귀환길",
+      "area_stage_id": "S9",
+      "method": "return_surf",
+      "unlock": "field_ability_surf",
+      "source_note": null,
+      "original_slot_count": 6,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 6,
+      "slots": [
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 25,
+          "level": [
+            46,
+            50
+          ],
+          "encounter_json_pointer": "/areas/21/encounter_tables/1/slots/0",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 20,
+          "level": [
+            46,
+            50
+          ],
+          "encounter_json_pointer": "/areas/21/encounter_tables/1/slots/1",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 20,
+          "level": [
+            46,
+            50
+          ],
+          "encounter_json_pointer": "/areas/21/encounter_tables/1/slots/2",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 135,
+          "name": "꼴쭈기",
+          "weight": 15,
+          "level": [
+            47,
+            51
+          ],
+          "encounter_json_pointer": "/areas/21/encounter_tables/1/slots/3",
+          "acquisition_chain_id": 64,
+          "acquisition_csv_record_line": 65,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 139,
+          "name": "복방울",
+          "weight": 15,
+          "level": [
+            47,
+            51
+          ],
+          "encounter_json_pointer": "/areas/21/encounter_tables/1/slots/4",
+          "acquisition_chain_id": 66,
+          "acquisition_csv_record_line": 67,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 64,
+          "name": "은치리",
+          "weight": 5,
+          "level": [
+            46,
+            50
+          ],
+          "encounter_json_pointer": "/areas/21/encounter_tables/1/slots/5",
+          "acquisition_chain_id": 26,
+          "acquisition_csv_record_line": 27,
+          "primary_acquisition": "fishing_basic",
+          "first_stage": "S1",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "basic_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    },
+    {
+      "area_id": "POST_ISLAND_EXPEDITION",
+      "display_name": "도서 탐험지",
+      "area_stage_id": "POST",
+      "method": "post_surf",
+      "unlock": "field_ability_surf",
+      "source_note": null,
+      "original_slot_count": 7,
+      "original_weight_sum": 100,
+      "conflict_slot_count": 7,
+      "slots": [
+        {
+          "species_no": 100,
+          "name": "등푸리",
+          "weight": 20,
+          "level": [
+            52,
+            58
+          ],
+          "encounter_json_pointer": "/areas/22/encounter_tables/1/slots/0",
+          "acquisition_chain_id": 45,
+          "acquisition_csv_record_line": 46,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 102,
+          "name": "볼꼬미",
+          "weight": 20,
+          "level": [
+            52,
+            58
+          ],
+          "encounter_json_pointer": "/areas/22/encounter_tables/1/slots/1",
+          "acquisition_chain_id": 46,
+          "acquisition_csv_record_line": 47,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S5",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 117,
+          "name": "문꾸리",
+          "weight": 15,
+          "level": [
+            52,
+            58
+          ],
+          "encounter_json_pointer": "/areas/22/encounter_tables/1/slots/2",
+          "acquisition_chain_id": 53,
+          "acquisition_csv_record_line": 54,
+          "primary_acquisition": "fishing_good",
+          "first_stage": "S6",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "good_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 135,
+          "name": "꼴쭈기",
+          "weight": 15,
+          "level": [
+            53,
+            59
+          ],
+          "encounter_json_pointer": "/areas/22/encounter_tables/1/slots/3",
+          "acquisition_chain_id": 64,
+          "acquisition_csv_record_line": 65,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 139,
+          "name": "복방울",
+          "weight": 15,
+          "level": [
+            53,
+            59
+          ],
+          "encounter_json_pointer": "/areas/22/encounter_tables/1/slots/4",
+          "acquisition_chain_id": 66,
+          "acquisition_csv_record_line": 67,
+          "primary_acquisition": "fishing_super",
+          "first_stage": "S8",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "super_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 64,
+          "name": "은치리",
+          "weight": 10,
+          "level": [
+            52,
+            58
+          ],
+          "encounter_json_pointer": "/areas/22/encounter_tables/1/slots/5",
+          "acquisition_chain_id": 26,
+          "acquisition_csv_record_line": 27,
+          "primary_acquisition": "fishing_basic",
+          "first_stage": "S1",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "basic_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        },
+        {
+          "species_no": 68,
+          "name": "대구미",
+          "weight": 5,
+          "level": [
+            53,
+            59
+          ],
+          "encounter_json_pointer": "/areas/22/encounter_tables/1/slots/6",
+          "acquisition_chain_id": 28,
+          "acquisition_csv_record_line": 29,
+          "primary_acquisition": "fishing_basic",
+          "first_stage": "S2",
+          "random_spawn_allowed": false,
+          "standard_ball_capture_allowed": true,
+          "field_requirements": "basic_rod",
+          "interaction_mode": "standard_battle_capture",
+          "result": "SURF_RANDOM_FLAG_CONFLICT",
+          "note": "Other semantic/gate rules are not certified by this narrow check."
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    "42 is the number of repeated source slots that conflict, not 42 distinct species.",
+    "Fishing-only acquisition with random_spawn_allowed=false must not be rejected for the authorised fishing method; this audit targets surf methods only.",
+    "primary_acquisition alone is not assumed to forbid every other method; the explicit random_spawn_allowed flag is the basis of the narrow conflict check.",
+    "S7 Surf access must not permit an S8/super_rod acquisition to be obtained prematurely.",
+    "The 2 remaining slots pass only the random flag check. Their full rule compliance is not certified and they are not automatically rescaled to weight=100.",
+    "No source changes, weight renormalisation, species replacement, or gameplay rule change have been applied.",
+    "A corrected source proposal and user approval are needed for design-level changes. Keeping tables quarantined is not equivalent to completing activation."
+  ]
+}

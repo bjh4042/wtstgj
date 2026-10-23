@@ -1,0 +1,60 @@
+/* Original CSS geometry. Approved common UI palette, no legacy image dependencies. */
+#approved-field-ui,#approved-field-area{font:16px/1.6 'Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:#173E34;box-sizing:border-box;overflow-wrap:break-word;word-break:keep-all}
+#approved-field-ui[hidden],#approved-field-ui [hidden],#approved-field-area[hidden]{display:none!important}
+#approved-field-ui{position:fixed;z-index:35;inset:0;display:flex;align-items:flex-end;justify-content:center;padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));pointer-events:none;height:100dvh;max-height:var(--visible-height,100dvh)}
+#approved-field-ui *{box-sizing:border-box;min-width:0}
+#approved-field-ui .approved-field-panel{pointer-events:auto;width:min(100%,560px);max-height:100%;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;border:1px solid #697F70;border-radius:20px;padding:16px;background:#FAF5E9;box-shadow:0 8px 32px #173E3433}
+#approved-field-ui h2{font-weight:700;font-size:20px;line-height:1.4;margin:0 0 12px}
+#approved-field-ui #golden-menu-hitboxes{position:static;inset:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;pointer-events:auto}
+#approved-field-ui button,#approved-field-ui #golden-menu-hitboxes button{position:relative;inset:auto;width:100%;height:auto;min-height:48px!important;min-width:44px!important;border:1px solid #697F70;border-radius:12px;padding:10px 14px;background:#FFFDF6;color:#173E34;font:700 16px/1.5 'Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;overflow-wrap:anywhere;white-space:normal;text-align:left;cursor:pointer;touch-action:manipulation;box-shadow:none}
+#approved-field-ui #golden-menu-hitboxes button[aria-current=true]{border:3px solid #17695E;padding:8px 12px;background:#E0EDE5}
+#approved-field-ui #golden-menu-hitboxes button[aria-current=true]::before{content:'';display:inline-block;width:5px;height:1em;border-radius:3px;background:#17695E;margin-inline-end:8px;vertical-align:-2px}
+#approved-field-ui :focus-visible{outline:3px dashed #684A8F;outline-offset:2px}
+#approved-field-ui .approved-field-description{margin:12px 0;font-size:16px}
+#approved-field-ui .approved-field-dialogue{position:static;width:auto;height:auto;margin:0;padding:4px;white-space:pre-wrap;overflow-wrap:anywhere;max-height:40dvh;overflow:auto;overscroll-behavior:contain;font-size:18px;line-height:1.7;clip:auto}
+#approved-field-ui .approved-field-footer{display:flex;gap:10px;justify-content:flex-end;margin-top:12px;padding:3px}
+#approved-field-ui .approved-field-footer button{width:auto;flex:0 1 auto}
+#approved-field-ui .approved-field-footer button:first-child:not([hidden]){background:#17695E;color:#FFFDF6}
+#approved-field-area{position:fixed;z-index:10;top:max(12px,env(safe-area-inset-top));left:max(12px,env(safe-area-inset-left));max-width:calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right));max-height:25dvh;overflow:auto;border:1px solid #697F70;border-radius:12px;background:#FAF5E9;padding:10px 16px;pointer-events:none}
+@media(max-height:420px){#approved-field-ui{align-items:center}#approved-field-ui .approved-field-panel{padding:12px}#approved-field-ui #golden-menu-hitboxes{grid-template-columns:repeat(3,minmax(0,1fr))}#approved-field-ui .approved-field-dialogue{max-height:35dvh}}
+@media(max-width:340px){#approved-field-ui #golden-menu-hitboxes{gap:8px}#approved-field-ui .approved-field-panel{padding:12px}}
+@media(forced-colors:active){#approved-field-ui button[aria-current=true]{border-color:Highlight!important}#approved-field-ui :focus-visible{outline-color:Highlight}}
+
+/* Ordinary connected-world route: same approved palette, CSS-only presentation.
+   Keep all authored dialogue, battle actions, menu inventory and save callbacks. */
+body.canonical-world-body{height:auto;min-height:100dvh;overflow-y:auto;overflow-x:clip;background:#EDE8DA;color:#173E34;font:16px/1.6 'Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+#canonical-world,#canonical-world *{box-sizing:border-box}
+#canonical-world{width:100%;min-width:0;overflow-wrap:anywhere}
+#canonical-world h1{font-size:24px;line-height:1.4}
+#canonical-world h2{font-size:20px;line-height:1.4}
+#canonical-world pre,#canonical-world small,#canonical-world summary,#canonical-world select{font-size:16px;line-height:1.6;overflow-wrap:anywhere}
+#canonical-world pre{white-space:pre-wrap;word-break:normal}
+#canonical-world .world-layout{min-width:0}
+#canonical-world.ordinary-world .world-layout:has(>aside[hidden]){grid-template-columns:minmax(0,1fr)}
+#canonical-world .world-play,#canonical-world .world-layout aside{min-width:0;border:1px solid #697F70;border-radius:16px;background:#FAF5E9;padding:12px}
+#canonical-world button,#canonical-world select{min-height:48px;min-width:44px;max-width:calc(100% - 8px);border:1px solid #697F70;border-radius:12px;background:#FFFDF6;color:#173E34;font:700 16px/1.5 'Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;white-space:normal;overflow-wrap:anywhere;padding:10px 12px;touch-action:manipulation}
+#canonical-world select{font-weight:400;white-space:normal;text-overflow:ellipsis}
+#canonical-world button:disabled{opacity:1;background:#E4E6DE;color:#5D665E;cursor:not-allowed}
+#canonical-world button:focus-visible,#canonical-world select:focus-visible,#canonical-world summary:focus-visible,#canonical-world canvas:focus-visible{outline:3px dashed #684A8F;outline-offset:2px}
+#canonical-world summary{min-height:44px;padding:8px 4px}
+#canonical-world output{background:#E0EDE5;color:#173E34;border-left:4px solid #17695E;border-radius:8px}
+#canonical-world [data-w=location]{font-size:18px;font-weight:700;margin-bottom:8px}
+#canonical-world .world-touch{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;touch-action:auto;margin-top:8px}
+#canonical-world .world-touch button{flex:0 1 auto;margin:2px;min-width:48px}
+#canonical-world .world-touch [data-dir]{touch-action:none}
+#canonical-world [data-w=choices],#canonical-world [data-w=party],#canonical-world [data-w=guide]{min-width:0;overflow-wrap:anywhere}
+#canonical-world [data-w=choices] label{display:block}
+#canonical-world [data-w=dialogue]{background:#FAF5E9;color:#173E34;border:1px solid #697F70;border-radius:16px;margin-top:12px;padding:12px}
+#canonical-world [data-w=dialogue-text]{font-size:18px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}
+#canonical-world [data-w=continue]{background:#17695E;color:#FFFDF6}
+#canonical-world .world-modal{inset:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));max-width:1000px;max-height:calc(100dvh - max(12px,env(safe-area-inset-top)) - max(12px,env(safe-area-inset-bottom)));margin-inline:auto;min-width:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;background:#FAF5E9;color:#173E34;border:2px solid #697F70;border-radius:18px;padding:16px;box-shadow:0 8px 40px #173E3466}
+#canonical-world .world-modal canvas{width:min(100%,864px);max-height:45dvh;object-fit:contain;aspect-ratio:9/5}
+#canonical-world [data-w=battle-actions]{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;padding:4px}
+#canonical-world [data-w=battle-actions] button{flex:1 1 140px;margin:0}
+#canonical-world [data-w=battle-actions] select{flex:1 1 100%;margin:0;max-width:100%}
+@media(max-width:760px){#canonical-world .world-layout{grid-template-columns:minmax(0,1fr)}#canonical-world .world-play,#canonical-world .world-layout aside{padding:8px}}
+@media(max-height:420px) and (orientation:landscape){#canonical-world .world-modal{padding:10px}#canonical-world .world-modal canvas{max-height:38dvh}#canonical-world [data-w=battle-actions] button{flex-basis:120px}}
+@media(forced-colors:active){#canonical-world button,#canonical-world .world-modal{border-color:CanvasText}#canonical-world :focus-visible{outline-color:Highlight}}
+
+/* Selected 2D art retains smooth edges after canvas compositing. */
+.ordinary-world canvas[data-w=battle],.ordinary-world canvas[data-w=field]{image-rendering:auto!important}

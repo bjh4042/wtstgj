@@ -1,0 +1,1061 @@
+{
+  "meta": {
+    "project": "거제몬스터",
+    "file_name": "geoje_chat_decisions_locked_v1.json",
+    "version": "v1_2026-09-23",
+    "status": "ACTIVE_ACCUMULATING_LOCKS",
+    "purpose": "현재 채팅에서 사용자 승인된 LOCK을 누적 보존하고 이후 Work 입력용 JSON으로 사용",
+    "authority_order": [
+      "latest explicit user decision",
+      "current canonical master data",
+      "this chat lock file",
+      "legacy/reference only"
+    ]
+  },
+  "branding": {
+    "status": "LOCKED",
+    "korean_title": "거제몬스터",
+    "english_subtitle": "GEOJE MONSTER",
+    "tagline": "섬에서 시작되는 생태 모험",
+    "subcopy": "작은 파트너와 함께, 거제의 숲과 바다로.",
+    "brand_symbol": [
+      "거제도 실루엣",
+      "파도",
+      "잎"
+    ],
+    "title_menu": [
+      "처음부터",
+      "이어하기",
+      "설정"
+    ],
+    "public_version_format": "v1.0.0",
+    "display_policy": {
+      "canonical": "거제몬스터",
+      "deprecated_visible_names": [
+        "거제몬스터즈",
+        "거제 생태게임"
+      ],
+      "legacy_internal_names": "호환성을 위해 일괄 rename 금지"
+    }
+  },
+  "pwa_install": {
+    "status": "LOCKED_REQUIREMENT",
+    "goal": "Chrome/Edge/Naver Whale 등 Chromium 계열 브라우저에서 브라우저 자체 설치 UI를 통해 설치 가능한 PWA",
+    "expected_experience": "주소창/툴바 설치 UI → 설치 → 바탕화면/앱 런처에서 실행",
+    "implementation_later": [
+      "web app manifest",
+      "app icons",
+      "standalone display",
+      "HTTPS",
+      "service worker/offline shell",
+      "update handling"
+    ]
+  },
+  "gyms_badges": {
+    "status": "LOCKED",
+    "badges": [
+      {
+        "gym_no": 1,
+        "leader": "강민",
+        "type": "water",
+        "badge_id": "BADGE_01",
+        "badge_name": "물방울배지",
+        "puzzle": "수문과 물길"
+      },
+      {
+        "gym_no": 2,
+        "leader": "영진",
+        "type": "electric",
+        "badge_id": "BADGE_02",
+        "badge_name": "바람배지",
+        "puzzle": "풍향+등대 전기"
+      },
+      {
+        "gym_no": 3,
+        "leader": "정의",
+        "type": "grass",
+        "badge_id": "BADGE_03",
+        "badge_name": "새싹배지",
+        "puzzle": "생태 흔적 길찾기"
+      },
+      {
+        "gym_no": 4,
+        "leader": "진성",
+        "type": "normal",
+        "badge_id": "BADGE_04",
+        "badge_name": "공존배지",
+        "puzzle": "관찰·기억 단서"
+      },
+      {
+        "gym_no": 5,
+        "leader": "명주",
+        "type": "bug",
+        "badge_id": "BADGE_05",
+        "badge_name": "들녘배지",
+        "puzzle": "논두렁·물길 연결"
+      },
+      {
+        "gym_no": 6,
+        "leader": "주혁",
+        "type": "rock",
+        "badge_id": "BADGE_06",
+        "badge_name": "몽돌배지",
+        "puzzle": "파도 상태와 몽돌길"
+      },
+      {
+        "gym_no": 7,
+        "leader": "우상",
+        "type": "flying",
+        "badge_id": "BADGE_07",
+        "badge_name": "해금배지",
+        "puzzle": "절벽 전망로·바람 표식"
+      },
+      {
+        "gym_no": 8,
+        "leader": "닥터 채",
+        "type": "poison",
+        "badge_id": "BADGE_08",
+        "badge_name": "푸른바다배지",
+        "puzzle": "야생동물 진료·검사·격리 동선"
+      }
+    ],
+    "common_rules": {
+      "direct_line_to_leader": "FORBIDDEN",
+      "before_leader_required": [
+        "하급 체육관 NPC 대전",
+        "미로/퍼즐/경로선택"
+      ],
+      "required_trainers": "기존 required_for_progress를 존중하고 우회 불가",
+      "optional_trainers": "우회 가능 허용",
+      "difficulty_curve": "1~4관 간단, 5~8관 탐색/퍼즐/대전 밀도 증가",
+      "forbidden_new_mechanics": [
+        "즉사",
+        "필드 HP 피해",
+        "실시간 반응속도 필수"
+      ],
+      "badge_sign": "공통 체육관 간판 프레임 + 해당 배지 실루엣",
+      "badge_gain": "공통 2~3초 획득 연출 + 배지별 소규모 모티프 효과",
+      "leader_intro": "공통 진입 연출 + 배지 심볼/대표색 변주",
+      "exact_tiles": "WORLD POLISH 후 확정"
+    }
+  },
+  "characters": {
+    "NPC_GYM_07_USANG": {
+      "status": "LOCKED",
+      "name": "우상",
+      "gender": "male",
+      "age_band": "30대 후반",
+      "role": "7번 체육관 관장",
+      "occupation": "자연환경 조사원",
+      "personality": [
+        "침착",
+        "관찰력이 좋음",
+        "현장 판단과 안전 중시",
+        "주변 관찰을 유도"
+      ],
+      "appearance": {
+        "hair": "짧고 단정한 검은 계열, 바람에 약간 흐트러짐",
+        "glasses": true,
+        "headwear": "none"
+      },
+      "outfit": [
+        "밝은 회청색 경량 바람막이",
+        "짙은 남청 기능성 셔츠",
+        "베이지/회색 야외 조사 바지",
+        "트레킹화"
+      ],
+      "props": [
+        "휴대용 풍속계",
+        "작은 필드 노트"
+      ]
+    },
+    "NPC_GYM_08_DOCTOR_CHAE": {
+      "status": "LOCKED",
+      "name": "닥터 채",
+      "gender": "male",
+      "age_band": "40대 후반",
+      "body_type": "통통한 체형",
+      "hair": "스포츠형 짧은 머리",
+      "role": "8번 체육관 관장",
+      "occupation": "수의사",
+      "personality": [
+        "푸근하고 유쾌함",
+        "진료/생명 문제에는 매우 엄격함",
+        "친근하지만 생명을 가볍게 다루는 행동에는 단호함"
+      ],
+      "outfit": [
+        "짙은 청록색 스크럽",
+        "짧은 회백색 수의 진료 재킷",
+        "편한 검은 바지",
+        "운동화"
+      ],
+      "props": [
+        "청진기",
+        "소형 야생동물 진료가방"
+      ]
+    },
+    "NPC_BLACKNET_LEADER_HWIGYEONG": {
+      "status": "LOCKED",
+      "name": "휘경",
+      "gender": "female",
+      "age_band": "40대 중반",
+      "height": "150cm대 중반",
+      "role": "흑망단 단장",
+      "personality": [
+        "차갑고 계산적",
+        "감정 표현이 적음",
+        "냉정한 전략가형"
+      ],
+      "appearance": {
+        "hair": "단발머리",
+        "glasses": "둥근 안경",
+        "headwear": "none"
+      },
+      "signature": "어깨 위 다람쥐"
+    },
+    "NPC_BLACKNET_OFFICER_BOMI": {
+      "status": "LOCKED",
+      "name": "보미",
+      "gender": "female",
+      "age_band": "40대 초반",
+      "height": "150cm대 중반",
+      "role": "흑망단 간부",
+      "personality": [
+        "활동적",
+        "현장 장악력이 강함",
+        "행동형"
+      ],
+      "appearance": {
+        "hair": "휘경과 비슷한 길이의 단발머리",
+        "headwear": "none"
+      },
+      "signature": "곰 관련 악세사리 필수"
+    },
+    "NPC_BLACKNET_OFFICER_JUNSEOK": {
+      "status": "LOCKED",
+      "name": "준석",
+      "gender": "male",
+      "age_band": "40대 후반",
+      "role": "흑망단 간부",
+      "specialization": [
+        "운반",
+        "선박",
+        "포획 장비",
+        "전자기기",
+        "컴퓨터",
+        "코딩",
+        "AI"
+      ],
+      "personality": [
+        "말수가 적음",
+        "신중함",
+        "실무형"
+      ],
+      "appearance": {
+        "hair": "펌 머리",
+        "headwear": "none"
+      },
+      "design_direction": "기술·장비·시스템 담당 간부"
+    },
+    "elite_four_family": {
+      "status": "LOCKED",
+      "shared": [
+        "윤우·시윤·은미·준호는 가족",
+        "넷 모두 피부가 하얀 편",
+        "같은 집안의 정제된 분위기"
+      ],
+      "NPC_ELITE_01_YUNWOO": {
+        "name": "윤우",
+        "gender": "male",
+        "age_band": "20대 초반",
+        "image": "젊은 엘리트",
+        "outfit": "현대적으로 정리된 한복 두루마리 모티프"
+      },
+      "NPC_ELITE_02_SIYOON": {
+        "name": "시윤",
+        "gender": "male",
+        "age_band": "20대 초반",
+        "image": "젊은 엘리트",
+        "outfit": "한복 두루마리 모티프의 정갈하고 묵직한 실루엣"
+      },
+      "NPC_ELITE_03_EUNMI": {
+        "name": "은미",
+        "gender": "female",
+        "age_band": "40대 중후반",
+        "appearance": "긴 머리",
+        "image": "고풍스럽고 고급스러운 분위기",
+        "outfit": "한복 두루마리 모티프를 고급스럽게 현대화"
+      },
+      "NPC_ELITE_04_JUNHO": {
+        "name": "준호",
+        "gender": "male",
+        "age_band": "40대 중후반",
+        "appearance": "투블럭 포마드",
+        "image": "온화하면서도 냉철함",
+        "outfit": "한복 두루마리 모티프를 선명하게 살린 정제된 의상"
+      }
+    },
+    "NPC_CHAMPION_DOCTOR_YOON": {
+      "status": "LOCKED",
+      "name": "윤 박사",
+      "gender": "male",
+      "age": 65,
+      "role": "거제 생태센터 핵심 연구자·생태학자이자 본편 챔피언",
+      "personality": [
+        "온화하고 인내심 많은 멘토형",
+        "직접 관찰·기록하게 유도",
+        "전투에서는 봐주지 않음"
+      ],
+      "appearance": [
+        "희끗한 짧은 머리",
+        "건강한 60대 중반",
+        "차분한 인상",
+        "과도한 노쇠 묘사 금지"
+      ],
+      "outfit": [
+        "크림/밝은 베이지 셔츠",
+        "짙은 청록 현장형 사파리 재킷",
+        "짙은 회갈색 바지",
+        "야외화"
+      ],
+      "props": [
+        "낡은 필드노트",
+        "작은 접이식 확대경"
+      ]
+    },
+    "NPC_POST_YEJI": {
+      "status": "LOCKED",
+      "name": "예지",
+      "gender": "female",
+      "age_band": "20대 초반",
+      "role": "환경DNA(eDNA) 생물다양성 조사원 / POST 고난도 핵심 인물",
+      "origin_impression": "거제 외부에서 온 도시적·이동형 연구자, 향후 확장팩 연결 포석",
+      "personality": [
+        "호기심 많음",
+        "논리적",
+        "예상 밖 결과를 즐김",
+        "친근하지만 연구에는 집요함"
+      ],
+      "appearance": {
+        "face": "둥글고 어려 보이는 인상",
+        "eyes": "크고 또렷한 녹색 계열",
+        "skin": "밝은 피부",
+        "hair": "앞머리 있는 짧은 보브컷, 짙은 흑녹/청흑 계열"
+      },
+      "outfit": [
+        "파란 계열 후드형 기능성 아우터",
+        "밝은 이너",
+        "짙은 네이비/차콜 하의",
+        "가벼운 활동화"
+      ],
+      "props": [
+        "태블릿",
+        "샘플 바이알",
+        "휴대형 eDNA 조사 장비"
+      ],
+      "train_accessories": [
+        "기차 모양 헤어핀",
+        "미니 열차 키링",
+        "승차권/교통패스 느낌 카드홀더"
+      ]
+    }
+  },
+  "world_visual_language": {
+    "status": "LOCKED",
+    "walkable_routes": {
+      "rule": "실제 이동로는 주변과 명도/형태 차이가 분명해야 하며 화면만 보고 길임을 알 수 있어야 함",
+      "main_route_width_visual": "필수 진행로는 기본적으로 플레이어 약 2명 폭의 시각적 여유",
+      "narrow_paths": "숨김/선택 탐험에서 제한적으로 사용"
+    },
+    "encounter_grass": {
+      "tall_grass": "일반 잔디보다 높고 진하며 캐릭터 하체를 가리는 foreground 사용",
+      "decorative_grass": "낮고 단순하며 캐릭터 발을 가리지 않고 조우 없음",
+      "rule": "색만으로 구분 금지. 형태 자체가 달라야 함"
+    },
+    "water": {
+      "visual_levels": [
+        "얕은 물",
+        "일반 바다/하천",
+        "파도타기 가능한 수면"
+      ],
+      "surf_entry": "별도 과한 마커보다 해안 접점/진입 지형으로 자연스럽게 표현"
+    },
+    "ledge_cliff": {
+      "jumpable_ledge": "한 방향 낮아짐이 명확해야 하며 위→아래 점프 가능/아래→위 불가",
+      "rule": "일반 절벽과 시각적으로 구분"
+    },
+    "doors": {
+      "rule": "문처럼 보이면 실제로 들어갈 수 있어야 함",
+      "entry_space": "문 앞 최소 1타일 접근 공간",
+      "blocking": "화분/NPC/간판으로 실제 입구를 막지 않음",
+      "decorative_building": "출입 불가 건물은 출입 가능한 문처럼 그리지 않음"
+    },
+    "stairs": {
+      "rule": "이동 가능한 계단은 상하 방향이 시각적으로 읽혀야 함",
+      "warp_destination": "계단 자체가 아니라 안전한 walkable tile"
+    },
+    "interactables": {
+      "normal": [
+        "표지판",
+        "책상 위 기록",
+        "조사 장비",
+        "관찰 포인트"
+      ],
+      "important": "스토리 핵심/희귀 흔적/거제볼 단서는 아주 작은 반짝임 또는 미세 움직임 허용",
+      "rule": "모든 조사물 상시 발광 금지"
+    },
+    "hidden_paths": {
+      "rule": "벽에 A 난타 방식 금지",
+      "clues": [
+        "끊어진 울타리",
+        "다른 방향으로 난 풀",
+        "바위 사이 틈",
+        "살짝 드러난 길",
+        "NPC 한 줄 힌트",
+        "방향 표식"
+      ]
+    },
+    "sign_family": [
+      "지역 표지판",
+      "시설 표지판",
+      "생태/관찰 표지판"
+    ],
+    "interaction": "NPC/오브젝트를 바라보고 A가 기본. PC/모바일 동일 게임 문법 유지",
+    "global_rules": [
+      "32×32 타일 계약 유지",
+      "collision과 graphic 레이어 분리",
+      "출입 가능/불가를 색만으로 구분하지 않음",
+      "상시 미니맵/퀘스트 화살표 없음",
+      "필수 경로는 명확하게, 선택 탐험은 일부 숨김 허용",
+      "실내/실외 캐릭터 스케일 동일",
+      "지역별 픽셀 밀도 통일"
+    ]
+  },
+  "facility_design_family": {
+    "status": "LOCKED",
+    "eco_center": {
+      "symbol": "잎 + 물결을 합친 원형 마크",
+      "colors": [
+        "흰색/크림색",
+        "청록색 계열"
+      ],
+      "identity": "청록 + 잎/물결 마크로 즉시 인식",
+      "regional_variation": "건물 형태는 지역에 맞게 변주 가능"
+    },
+    "shop": {
+      "symbol": "작은 가방 + 잎",
+      "colors": [
+        "황토/노랑 포인트"
+      ],
+      "identity": "생태센터보다 작고 입구 옆 상품 상자/진열대 허용"
+    },
+    "gym": {
+      "symbol": "해당 체육관 배지 실루엣",
+      "identity": "공통 간판 프레임 + 배지 아이콘",
+      "interior": "관장 공간 뒤에 해당 배지 대형 벽 문양"
+    },
+    "research_observation": {
+      "symbol": "돋보기 + 잎 또는 작은 파형",
+      "colors": [
+        "청회색",
+        "흰색",
+        "녹색 소량"
+      ],
+      "identity": "생태센터보다 기술적/현장 장비 느낌"
+    },
+    "league": {
+      "colors": [
+        "석재",
+        "짙은 남청",
+        "은색"
+      ],
+      "identity": "8개 배지 문양과 거제 자연·연구의 최고 단계 분위기",
+      "symbol_direction": "거제도 실루엣 중심 + 8개 배지 문양 둘레 배치 가능"
+    },
+    "variation_policy": "심볼/기본색/입구 문법은 고정하고 건물 형태는 지역별 변주 허용"
+  },
+  "art_production_contract": {
+    "status": "LOCKED",
+    "species": {
+      "design_master": {
+        "canvas": "1024x1024",
+        "format": "PNG RGBA",
+        "background": "transparent",
+        "style": "clean official-monster illustration master; not necessarily runtime pixel art",
+        "full_body": true,
+        "shadow": false,
+        "embedded_text": false,
+        "reuse_policy": "기존 승인 디자인이 있으면 master로 재사용하고 불필요한 재생성 금지"
+      },
+      "battle_front_back": {
+        "canvas": "256x256",
+        "format": "PNG RGBA",
+        "background": "transparent",
+        "front_direction": "플레이어 쪽(화면 좌하단)을 바라보는 자연스러운 3/4 정면",
+        "back_direction": "상대 쪽(화면 우상단)을 바라보는 자연스러운 3/4 후면",
+        "shadow_baked_in": false,
+        "anchor": "bottom-center via runtime metadata",
+        "size_classes": {
+          "S": "visible height ~90-120px",
+          "M": "visible height ~120-160px",
+          "L": "visible height ~160-195px"
+        },
+        "evolution_scale_rule": "진화 단계가 올라가면 시각 체급도 커지는 것이 기본이나 형태상 예외 허용",
+        "identity_check": [
+          "뿔 개수",
+          "날개 구조",
+          "다리 개수",
+          "꼬리 형태",
+          "무늬 위치",
+          "눈색",
+          "대표색",
+          "귀/지느러미/장식",
+          "좌우 비대칭 특징"
+        ]
+      },
+      "ui_icon": {
+        "source_master": "64x64",
+        "normal_display": "32x32",
+        "background": "transparent",
+        "crop": "머리/얼굴 또는 가장 특징적인 실루엣 중심",
+        "production": "별도 151회 생성보다 master/front에서 Work 파생 우선, 필요 종만 수동 보정"
+      },
+      "follower": {
+        "runtime_contract": "기존 12-frame/manifest/controller 보존",
+        "art_production": "DEFERRED",
+        "release_blocker": false
+      },
+      "batch_gate": {
+        "species_count": 5,
+        "shape_coverage": [
+          "작은 포유류",
+          "조류",
+          "어류/수생",
+          "곤충",
+          "식물/특수형"
+        ],
+        "pipeline": "master -> front -> back -> icon 파생 -> 실제 게임 import gate",
+        "must_pass_before_mass_production": [
+          "sprite 크기",
+          "색",
+          "outline",
+          "전투 비율",
+          "icon 가독성",
+          "anchor"
+        ]
+      }
+    },
+    "humans": {
+      "full_body_master": {
+        "canvas": "1024x1536",
+        "format": "PNG RGBA",
+        "background": "transparent",
+        "style": "non-pixel clean JRPG official character illustration",
+        "full_body": true,
+        "shadow": false,
+        "embedded_text": false,
+        "crop_fail": "머리/신발/의상/필수소품 잘림 금지"
+      },
+      "field_atlas": {
+        "reuse_existing_engine_contract": true,
+        "cell": "96x120",
+        "grid": "3 columns x 4 rows",
+        "atlas": "288x480",
+        "rows": [
+          "FRONT",
+          "RIGHT",
+          "LEFT",
+          "BACK"
+        ],
+        "columns": [
+          "Idle",
+          "WalkA",
+          "WalkB"
+        ],
+        "direction_rule": "완전 정면/완전 우측/완전 좌측/완전 후면; 45도/3-4뷰 금지",
+        "visible_height_target": "평균 36-42px, 캐릭터별 키/체형은 절제해 반영",
+        "anchor": "모든 프레임 동일 bottom-center foot anchor",
+        "walk_rule": "머리/몸 중심이 크게 흔들리지 않고 발/팔 동작 중심"
+      },
+      "battle_character": {
+        "required_poses": [
+          "battle_idle",
+          "ecoball_throw"
+        ],
+        "canvas": "512x768",
+        "format": "transparent PNG",
+        "style": "pixel battle character derived from full-body master",
+        "personality_pose_variation": true
+      },
+      "batch_gate": {
+        "test_characters": [
+          "남자 플레이어",
+          "휘경",
+          "닥터 채"
+        ],
+        "reasons": [
+          "기준 플레이어",
+          "작은 키+안경+어깨 다람쥐",
+          "통통한 중년 남성 체형"
+        ],
+        "mass_production_after_pass": true
+      }
+    },
+    "cost_efficiency": {
+      "initial_species_required_per_species": [
+        "battle.front",
+        "battle.back"
+      ],
+      "auto_or_derived": [
+        "ui.icon"
+      ],
+      "only_when_needed": [
+        "design_master"
+      ],
+      "deferred": [
+        "fieldFollower.atlas actual art"
+      ],
+      "goal": "151종 대량 생산 전 대표 batch로 규격 오류를 제거하고 재작업/생성 비용 최소화"
+    }
+  },
+  "ui_ux_tutorial": {
+    "status": "LOCKED",
+    "field_menu_order": [
+      "도감",
+      "생태친구",
+      "가방",
+      "탐험가",
+      "저장",
+      "설정"
+    ],
+    "hud_policy": {
+      "persistent_hud": "minimal",
+      "no_always_on_minimap": true,
+      "no_always_on_quest_tracker": true,
+      "area_name_popup": "지역 최초 진입 시 1~2초"
+    },
+    "explorer_card": {
+      "show": [
+        "플레이어 이름",
+        "주인공 캐릭터",
+        "현재 지역/스테이지",
+        "배지 8칸",
+        "현재 돈",
+        "플레이 시간",
+        "활성화 생태몬 수 xx/151"
+      ],
+      "after_champion": "작은 챔피언 기록 표시",
+      "hide_from_main_card": [
+        "야생전 횟수",
+        "낚시 횟수 등 세부 통계"
+      ]
+    },
+    "save_ui": {
+      "active_slot_only": true,
+      "slot_summary": [
+        "슬롯 번호",
+        "플레이어 이름",
+        "현재 스테이지/지역",
+        "배지 수",
+        "플레이 시간",
+        "마지막 저장 시각"
+      ],
+      "lead_species_icon": "가능하면 표시",
+      "actions": [
+        "저장",
+        "저장 파일 내보내기",
+        "저장 파일 가져오기"
+      ],
+      "import_depth": "실수 방지를 위해 한 단계 안쪽 메뉴"
+    },
+    "autosave_feedback": {
+      "blocking_dialog": false,
+      "indicator": "우상단 작은 '저장 중…' → 체크 → 약 1초 후 사라짐",
+      "failure": "저장하지 못했습니다. 다시 시도해 주세요."
+    },
+    "message_rules": {
+      "normal": "약 1.5~2초 비차단 표시",
+      "important_confirmation": "대화창/선택창",
+      "error": "이유 + 해결 방법을 짧게 표시, 내부 코드 오류 문구 일반 사용자 노출 금지"
+    },
+    "status_display": {
+      "color_only_forbidden": true,
+      "text_labels": [
+        "독",
+        "맹독",
+        "마비",
+        "화상",
+        "잠",
+        "얼음"
+      ]
+    },
+    "settings": {
+      "volume": "0~100% 전체 음량",
+      "text_speed": [
+        "느림",
+        "보통",
+        "빠름",
+        "즉시"
+      ],
+      "default_text_speed": "보통",
+      "text_scale": [
+        "보통",
+        "크게"
+      ],
+      "battle_animations": [
+        "켬",
+        "끔"
+      ],
+      "screen_shake": [
+        "켬",
+        "끔"
+      ],
+      "flash_reduction": [
+        "켬",
+        "끔"
+      ],
+      "reduced_motion": [
+        "켬",
+        "끔"
+      ],
+      "help_replay": "튜토리얼 힌트만 다시 보기; 스토리/보상 초기화 금지",
+      "vibration": "DEFERRED",
+      "separate_bgm_sfx_volume": "DEFERRED_UNTIL_AUDIO"
+    },
+    "orientation": {
+      "pc": "16:9 중심, 가상 조작기 숨김",
+      "tablet": "가로 우선 권장, 세로도 지원",
+      "smartphone": "세로/가로 모두 지원, 강제 회전 없음"
+    },
+    "tutorial": {
+      "overall_prologue_target": "기존 약 25분 구조 유지",
+      "first_10_min_goal": [
+        "이동",
+        "조사",
+        "NPC 대화",
+        "첫 생태친구 선택",
+        "첫 전투"
+      ],
+      "followup_goal": [
+        "첫 야생전",
+        "첫 포획",
+        "첫 회복 안내",
+        "수동 저장 안내"
+      ],
+      "hint_style": "행동 직전 1회성 작은 힌트",
+      "forbidden": [
+        "화면 전체 튜토리얼 카드",
+        "긴 설명서",
+        "한번에 다수 버튼 설명",
+        "반복 설명"
+      ],
+      "completion": "실제 행동 시 tutorialState 완료",
+      "replay": "설정에서 힌트만 다시 보기",
+      "starter_info": "이름/타입/아주 짧은 특징만 먼저 표시",
+      "nickname": "선택사항, 건너뛰기 가능",
+      "type_chart_lecture": "첫 전투에서 상세 강의 금지",
+      "first_heal": "센터 무료 회복 안내 1회, 강제 귀환 금지",
+      "manual_save": "P03 종료 후 메뉴 저장 안내 1회, 강제 저장 금지"
+    }
+  },
+  "save_local_policy": {
+    "status": "LOCKED_CLARIFICATION",
+    "single_player_cloud_sync": false,
+    "normal_save_location": "해당 기기의 해당 브라우저/설치된 PWA의 사이트 로컬 저장소",
+    "normal_save_visible_file": false,
+    "export_file": {
+      "extension": ".gem",
+      "header": "GEOJE_MONSTER_SAVE",
+      "user_action_required": true,
+      "destination": "PC의 다운로드 폴더 또는 스마트폰의 Files/다운로드 등 사용자가 선택/브라우저가 제공하는 로컬 파일 위치"
+    },
+    "important_notes": [
+      "일반 저장/자동저장은 별도 .gem 파일을 매번 만들지 않음",
+      "브라우저 사이트 데이터 삭제/앱 데이터 초기화/브라우저 프로필 삭제 시 로컬 저장이 사라질 수 있음",
+      "다른 브라우저/다른 기기로 자동 공유되지 않음",
+      "기기 이동/백업은 .gem 내보내기→가져오기를 사용",
+      "PWA 설치 후에도 같은 origin의 로컬 저장을 사용하도록 구현하는 방향"
+    ]
+  },
+  "post_legend_progression_latest": {
+    "status": "LOCKED",
+    "story_progression_not_capture_rng": true,
+    "legend_resolution": {
+      "148": {
+        "name": "해랑령",
+        "fixed_story_site": "푸른해류 성소",
+        "emblem": "바다의 문양",
+        "resolved_when": [
+          "포획 성공",
+          "전투 승리(기절시켜 제압)"
+        ],
+        "not_resolved_when": [
+          "플레이어 패배",
+          "플레이어 도주"
+        ]
+      },
+      "149": {
+        "name": "숲결령",
+        "fixed_story_site": "깊은숲 성소",
+        "emblem": "숲의 문양",
+        "resolved_when": [
+          "포획 성공",
+          "전투 승리(기절시켜 제압)"
+        ],
+        "not_resolved_when": [
+          "플레이어 패배",
+          "플레이어 도주"
+        ]
+      },
+      "150": {
+        "name": "섬바람룡",
+        "fixed_story_site": "해풍의 제단",
+        "emblem": "바람의 문양",
+        "resolved_when": [
+          "포획 성공",
+          "전투 승리(기절시켜 제압)"
+        ],
+        "not_resolved_when": [
+          "플레이어 패배",
+          "플레이어 도주"
+        ]
+      }
+    },
+    "compass": {
+      "name": "온섬의 나침반",
+      "requires": [
+        "바다의 문양",
+        "숲의 문양",
+        "바람의 문양"
+      ],
+      "does_not_require": [
+        "dex.caught(148)",
+        "dex.caught(149)",
+        "dex.caught(150)"
+      ],
+      "role": "No.151 온섬령 스토리 루트 개방용 핵심 아이템"
+    },
+    "no151_story_gate": {
+      "capture_148_150_required": false,
+      "requires_compass": true,
+      "note": "포획 여부와 스토리 진행을 분리한다."
+    }
+  },
+  "post_final_endgame_free_roam": {
+    "status": "LOCKED",
+    "after_final_ending": {
+      "free_roam": true,
+      "world_access": "엔딩 후에도 기존 거제 월드를 계속 자유롭게 탐험 가능",
+      "ending_must_not_delete_or_close_save": true
+    },
+    "uncaught_legend_roaming": {
+      "species": [
+        148,
+        149,
+        150,
+        151
+      ],
+      "eligible_condition": "최종 엔딩 이후 해당 종을 아직 포획하지 않았을 때",
+      "caught_species_roam_again": false,
+      "spawn_style": "필드에서 눈으로 발견할 수 있는 고정형 overworld spawn",
+      "randomization": "각 미포획 종마다 검증된 후보 spawn node 중 1곳을 무작위 선택",
+      "one_active_spawn_per_species": true,
+      "candidate_node_rules": [
+        "거제의 랜드마크·상징 장소·역사유적지 주변 등 의미 있는 장소",
+        "플레이어가 실제로 걸어서 접근 가능한 walkable tile/길",
+        "벽·물·장식물·NPC·warp·출입문과 겹치지 않음",
+        "스토리 진행을 막는 필수 통로를 점유하지 않음",
+        "전투 금지 역사 핵심구역에는 배치하지 않고, 필요한 경우 외곽 자연구역/접근로만 사용",
+        "미해금/일회성 폐쇄 공간에 배치하지 않음"
+      ],
+      "on_uncaptured_encounter_end": {
+        "outcomes": [
+          "포획 실패 후 전투 종료",
+          "생태몬이 도망",
+          "플레이어가 전투 승리했지만 포획하지 못함",
+          "플레이어 패배"
+        ],
+        "behavior": "기존 위치에서 사라진 뒤 다음 유효 후보 node로 다시 무작위 배치",
+        "permanent_disappearance": false
+      },
+      "on_capture": "해당 종의 roaming spawn 영구 종료",
+      "multi_species": "여러 종이 미포획이면 각 종이 독립적으로 1곳씩 존재 가능",
+      "implementation_note": "임의 랜덤 타일 생성이 아니라 미리 QA한 spawn-node pool에서만 선택"
+    },
+    "historical_site_safety": {
+      "rule": "포로수용소·흥남철수 등 비전투 역사 핵심공간의 기존 정책을 깨지 않는다.",
+      "allowed_example": "공원 외곽 자연구역, 접근로, 인접 산책길",
+      "forbidden_example": "추모/전시 핵심공간 한가운데서 전설 전투 발생"
+    },
+    "final_post_ending_trigger": "예지 최종전 승리"
+  },
+  "post_final_structure": {
+    "status": "LOCKED",
+    "enhanced_league": {
+      "status": "REMOVED",
+      "rule": "POST 강화 생태리그는 사용하지 않는다.",
+      "elite_four_rematch": false,
+      "doctor_yoon_rematch": false,
+      "note": "윤우·시윤·은미·준호와 윤 박사는 본편 계룡산 생태리그에서 최초 1회만 전투한다."
+    },"after_doctor_yoon": {
+      "event": "FINAL_CHAMPION",
+      "meaning": "본편 리그 클리어",
+      "first_champion_snapshot": "즉시 1회 기록 후 불변",
+      "full_final_ending": false,
+      "post_unlock": true,
+      "online_friend_battle_unlock": true,
+      "post_sanctuaries_unlock": true,
+      "post_starter_research_unlock": true,
+      "note": "윤 박사 승리 직후부터 POST 자유탐험과 친구대전이 가능하다."
+    },
+    "yeji_finale": {
+      "status": "LOCKED",
+      "role": "거제몬스터의 최종 스토리 전투 및 최종 엔딩 트리거",
+      "prerequisite_direction": "POST에서 No.148·149·150 성소 사건을 각각 해결한 뒤 예지 스토리로 연결",
+      "capture_required_for_story": false,
+      "battle_identity": "예지의 eDNA 연구와 플레이어의 현장 경험이 만나는 최종 특별전",
+      "on_victory": [
+        "최종 엔딩 기록",
+        "최종 크레딧",
+        "예지의 거제 밖 eDNA 신호/확장팩 복선",
+        "자동저장",
+        "타이틀 또는 엔딩 메뉴에서 '이어하기' 가능"
+      ]
+    },
+    "after_final_ending_continue": {
+      "continue_enabled": true,
+      "mode": "자유 탐험",
+      "world_state": "최종 엔딩 직후 상태를 그대로 보존",
+      "activities": [
+        "미포획 생태몬 포획",
+        "No.148~151 로밍 추적",
+        "도감 151/151 완성",
+        "하린 재대결",
+        "온라인 친구대전",
+        "낚시/조사/숨은 요소 탐색",
+        "인증서/기록 확인"
+      ],
+      "no_new_game_plus_required": true
+    },
+    "online_friend_battle": {
+      "status": "LOCKED",
+      "unlock_trigger": "FINAL_CHAMPION 승리 직후",
+      "requires_yeji_victory": false,
+      "requires_final_ending": false,
+      "requires_148_151_capture": false,
+      "single_player_save_effect": false,
+      "reason": "윤 박사까지 클리어한 플레이어가 POST 진행 중에도 친구들과 바로 대전할 수 있게 한다."
+    },
+    "flag_migration_required_later": {
+      "remove_or_deprecate": [
+        "POST_ENHANCED_LEAGUE_UNLOCKED",
+        "POST_ENHANCED_LEAGUE_YEJI_DONE",
+        "CAN_START_ENHANCED_LEAGUE"
+      ],
+      "change": [
+        "ONLINE_FRIEND_BATTLE_UNLOCKED setter: FINAL_ENDING_RECORD 계열 → FINAL_CHAMPION",
+        "POST 진입/성소/미선택 스타터 연구 unlock timing을 윤 박사 클리어 직후 기준으로 정렬",
+        "예지 승리용 독립 final-ending event/flag 추가"
+      ],
+      "preserve": [
+        "본편 FINAL_LEAGUE",
+        "윤우→시윤→은미→준호→윤 박사 순서",
+        "firstChampionClearSnapshot",
+        "온라인 싱글 세이브 비영향 원칙"
+      ]
+    }
+  },
+  "yeji_final_battle_location": {
+    "status": "LOCKED",
+    "location_name": "노자산 정상 생태관측지",
+    "location_role": "거제몬스터 최종 스토리 전투 및 최종 엔딩 장소",
+    "why_this_location": [
+      "계룡산은 본편 생태리그의 FINAL 대표 장소로 보존하고 중복 사용을 피함",
+      "숲·바다·섬·바람을 한 장면에 담아 거제 생태 전체를 상징하기 좋음",
+      "외부에서 온 eDNA 조사원 예지와 거제 현장 경험을 쌓은 플레이어의 마지막 대결 의미와 잘 맞음",
+      "엔딩에서 거제 바깥 세계로 시선을 확장하는 연출에 적합"
+    ],
+    "unlock_trigger": {
+      "requires_all_resolved": [
+        148,
+        149,
+        150
+      ],
+      "resolution_rule": "각 성소에서 포획 성공 또는 전투 승리",
+      "requires_emblems": [
+        "바다의 문양",
+        "숲의 문양",
+        "바람의 문양"
+      ],
+      "requires_compass": "온섬의 나침반",
+      "capture_148_150_required": false
+    },
+    "call_scenario": {
+      "trigger": "세 번째 문양 획득 및 온섬의 나침반 완성 직후",
+      "method": "기존 생태도감의 조사 연락/통신",
+      "yeji_message_direction": [
+        "세 장소의 기록이 모두 들어왔다고 알림",
+        "데이터로 본 거제와 플레이어가 직접 걸으며 본 거제가 다르다는 점에 관심",
+        "직접 확인하고 싶다며 노자산 정상에서 기다리겠다고 요청"
+      ],
+      "quest_record": "탐험가 기록에 '노자산 정상에서 예지를 만나자.' 추가",
+      "persistent_arrow": false
+    },
+    "approach": {
+      "map_type": "POST 최종전 전용 소규모 야외 정상 맵",
+      "duration_target": "약 1~2분",
+      "trainer_battles": false,
+      "wild_battles": false,
+      "puzzles": false,
+      "pickup_items": false,
+      "visual_motifs": [
+        "숲 능선",
+        "바다",
+        "섬",
+        "강한 바람",
+        "흐르는 구름"
+      ],
+      "purpose": "마지막 대결 직전의 정적인 상승/회고 연출"
+    },
+    "summit_scene": {
+      "yeji_equipment": [
+        "eDNA 휴대 장비",
+        "샘플 케이스",
+        "태블릿",
+        "여행가방"
+      ],
+      "train_motifs": [
+        "기차 키링",
+        "승차권/교통패스 카드홀더"
+      ],
+      "battle_prompt": {
+        "accept": "좋아",
+        "decline_temporarily": "조금만 기다려",
+        "forced_battle": false
+      },
+      "battle_identity": "eDNA 조사원 예지가 승부를 걸어왔다!"
+    },
+    "ending_after_victory": {
+      "yeji_reaction": "패배를 데이터와 현장 경험의 차이를 배우는 계기로 받아들임",
+      "expansion_hook": "거제 밖에서 온 정체불명 eDNA 신호를 태블릿으로 확인",
+      "line_direction": "다음 조사는 조금 멀리 가야겠다는 암시, 구체 지역명 공개 금지",
+      "final_visual": "예지가 떠난 뒤 플레이어가 정상에 남고 숲→해안→거제도→여러 섬→먼 수평선으로 카메라가 확장",
+      "title_card": [
+        "거제몬스터",
+        "섬에서 시작되는 생태 모험",
+        "우리의 탐험은 계속된다."
+      ],
+      "then": [
+        "최종 크레딧",
+        "자동저장",
+        "타이틀",
+        "이어하기 가능"
+      ]
+    },
+    "post_ending_continue": {
+      "continue_start": "계룡산이 아닌 노자산 전투 종료 후 안전한 월드 복귀 지점으로 복귀",
+      "free_roam": true,
+      "preserve_completed_state": true
+    }
+  }
+}
