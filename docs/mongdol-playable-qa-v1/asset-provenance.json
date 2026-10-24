@@ -1,0 +1,100 @@
+{
+  "status": "UNFINISHED_STANDALONE_PLAYABLE_QA_CANDIDATE",
+  "sceneSize": [
+    1536,
+    864
+  ],
+  "assets": [
+    {
+      "path": "assets/background.png",
+      "sha256": "5bdfe3e7928299520f71675341988f08ffebe303aae0439bf63f3e284c190d0d",
+      "origin": "User-approved AI edit derived directly from a user-supplied scene reference, with the reference character removed. This is not an independently invented scene. The private reference file itself is not distributed.",
+      "selectedBytesUnchanged": true,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/player-atlas.png",
+      "sha256": "36238353e9a4f943296a289a2c45639ef283e9056a72a6d37a39dc237b860390",
+      "origin": "User-approved generated player art, registered and packed as a twelve-frame transparent atlas. Exact selected atlas bytes are preserved.",
+      "selectedBytesUnchanged": true,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/night-local-glow.png",
+      "sha256": "680369f6d0149173e0b0b51c6e551d1dfc9d65f8e227a4d43b0daa55ad190429",
+      "origin": "Renderer-derived soft local light layer. Separate from the background art.",
+      "selectedBytesUnchanged": true,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/night-window-emission.png",
+      "sha256": "cf000dbf8c75c50fd11a27a4c07be98d27d969695a5b50c11a063cfd525f3d6c",
+      "origin": "Renderer-derived soft local light layer. Separate from the background art.",
+      "selectedBytesUnchanged": true,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/lower_fence_center_post.png",
+      "sha256": "785f57011545e65b5ba4fafe2cd93163875cd07e63efa6af3d22b95e4da2c0c9",
+      "origin": "A registered alpha extraction from the approved reference-derived background. RGB is unchanged wherever alpha is nonzero; RGB is zeroed only at alpha=0 for lossless visible transmission optimization. Same dimensions and coordinates, not a reusable free-standing prop.",
+      "selectedBytesUnchanged": false,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/lower_fence_left_visible_rope.png",
+      "sha256": "6f88aa1cbc4ad39144354b51f873d7bc852d8d2cedbda33453b3e3a1410e97ab",
+      "origin": "A registered alpha extraction from the approved reference-derived background. RGB is unchanged wherever alpha is nonzero; RGB is zeroed only at alpha=0 for lossless visible transmission optimization. Same dimensions and coordinates, not a reusable free-standing prop.",
+      "selectedBytesUnchanged": false,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/lower_fence_right_visible_rope.png",
+      "sha256": "57184654e0b0947a387c3db1026b525d90134011c5f1ba02b42369f66fa0eed7",
+      "origin": "A registered alpha extraction from the approved reference-derived background. RGB is unchanged wherever alpha is nonzero; RGB is zeroed only at alpha=0 for lossless visible transmission optimization. Same dimensions and coordinates, not a reusable free-standing prop.",
+      "selectedBytesUnchanged": false,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/stair_right_front_post.png",
+      "sha256": "f2cbefc6526496824f929bf74370f64d18185ddcb2eec35a4397932dbd199d84",
+      "origin": "A registered alpha extraction from the approved reference-derived background. RGB is unchanged wherever alpha is nonzero; RGB is zeroed only at alpha=0 for lossless visible transmission optimization. Same dimensions and coordinates, not a reusable free-standing prop.",
+      "selectedBytesUnchanged": false,
+      "visiblePixelsAndAlphaUnchanged": true
+    },
+    {
+      "path": "assets/stair_right_lower_hand_rail.png",
+      "sha256": "77f2f6ce79584ad462f3f39be8b3f9183158d19175e3040f7d4bce043ed05325",
+      "origin": "A registered alpha extraction from the approved reference-derived background. RGB is unchanged wherever alpha is nonzero; RGB is zeroed only at alpha=0 for lossless visible transmission optimization. Same dimensions and coordinates, not a reusable free-standing prop.",
+      "selectedBytesUnchanged": false,
+      "visiblePixelsAndAlphaUnchanged": true
+    }
+  ],
+  "rendering": {
+    "day": "Fixed noon convention; painted source illumination is not dynamically relit.",
+    "night": "Independently tuned blue ambient and subtle warm local emission; KST 18:00 to 06:00 in automatic mode.",
+    "sourceArtPreserved": true,
+    "visiblePixelsAndAlphaUnchanged": true,
+    "transparentOnlyRGBNormalizedForFiveMasks": true,
+    "player": "80 px nominal gameplay height; 110 px comparison only. Atlas pivot [128,216], nominal frame height 192. Actual painted support-foot bob remains.",
+    "foreground": "Only five registered fence/stair fragments. No full-scene occlusion or moving water is claimed."
+  },
+  "scope": {
+    "existingGameIntegration": false,
+    "saveDataAccess": false,
+    "serviceWorkerRegistration": false,
+    "completeGame": false
+  },
+  "validation": {
+    "staticUnitAndControllerSimulation": "Passed for this bounded candidate.",
+    "browserTouchMobile": "Not yet verified.",
+    "physicalIOSBrightness": "Not yet verified.",
+    "contact": "65 explicit contact samples with swept segment boundary checks; not a complete analytic foot ellipse or skeletal foot lock."
+  },
+  "exclusions": [
+    "Private reference originals",
+    "ROM files and extracted data",
+    "Private research photos",
+    "Internal conversation and audit records"
+  ],
+  "rights": "No general redistribution license or third-party franchise affiliation is asserted."
+}
