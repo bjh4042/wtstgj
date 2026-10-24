@@ -1,3 +1,7 @@
+import {createRegionEntryPopup} from './ui/region-entry-popup.mjs';
+import './ui/region-entry-popup.css';
+import {dexRecord,dexDetailMarkup} from './ui/species-dex.mjs';
+import './ui/species-dex.css';
 import {openingIdentity} from './ordinary/opening-identity.mjs';
 import {approvedStandingPortrait,approvedMenuArt} from './art/approved-intro.mjs';
 import {installApprovedFieldUI} from './art/approved-field-ui.mjs';
@@ -110,6 +114,7 @@ let prefs={sound:false,sfx:.5,music:.2,fast:false};
 let openingAdvance=null;
 let openingBack=null;
 let openingWorld=null;
+let openingRegionPopup=null;
 let openingTyping=null;
 let bootTimer=null;
 let openingMoving=false;
@@ -250,7 +255,7 @@ function showModal(title,body,locked=false){
 function closeModal(){if(modalLocked)return;document.activeElement?.blur();modal.close();document.body.classList.remove('modal-open');modal.className='';focusedControl=null;clearDirections(directionInput);setTimeout(()=>canvas.focus({preventScroll:true}),0);beep()}
 function help(){showHelp()}
 function showHelp(mode='controls',onClose=null){
- const panel=$('#help-modal');if(panel.open)return;
+ const panel=$('#help-modal');if(panel.open)return;openingRegionPopup?.dismiss();
  releaseOpeningInput();helpFocus=document.activeElement;helpReturn=onClose;clearDirections(directionInput);moveTarget=null;openingQueuedDirection=null;
  const goal=goldenField?'생태센터 문으로 들어가거나, NPC 가까이에서 Z / A로 이야기를 나눠 보세요.':openingWorld?{room:'아래쪽 계단으로 내려가세요. 길이 막히면 가구를 돌아가세요.',home:'아래쪽 현관으로 나가세요.',town:'가운데 길을 따라 위쪽 연구소 문으로 들어가세요.',lab:'가운데 캡슐 테이블 바로 아래에 서서 Z / Enter로 조사하세요.'}[openingWorld.scene]:state?'지도에서 다음 지역을 확인하고, 지역 장치와 체육관에 도전하세요.':'이름을 정한 뒤 내 방 → 집 → 마을 → 연구소로 이동합니다.';
  const title=mode==='battle'?'첫 대결을 시작하기 전에':mode==='start'?'모험을 시작하기 전에':'조작 도움말';
@@ -301,8 +306,9 @@ function archiveV1(raw){
   if(!raw)return;
   try{if(!localStorage.getItem(V1_ARCHIVE))localStorage.setItem(V1_ARCHIVE,raw)}catch{}
 }
-function clearOpeningInput(){releaseOpeningInput();openingHeldDirection=null;openingAdvance=null;openingBack=null;openingWorld=null;openingMoving=false;openingQueuedDirection=null;openingHeldDirection=null;clearInterval(openingTyping);openingTyping=null;clearTimeout(bootTimer);document.body.classList.remove('title-open')}
+function clearOpeningInput(){openingRegionPopup?.dispose();openingRegionPopup=null;releaseOpeningInput();openingHeldDirection=null;openingAdvance=null;openingBack=null;openingWorld=null;openingMoving=false;openingQueuedDirection=null;openingHeldDirection=null;clearInterval(openingTyping);openingTyping=null;clearTimeout(bootTimer);document.body.classList.remove('title-open')}
 function showOpeningScreen(title,body,screen='dialogue'){
+ if(screen!=='world')openingRegionPopup?.dismiss();
  releaseOpeningInput();
  clearInterval(openingTyping);openingTyping=null;showModal(title,`<div class="opening-frame opening-${screen}">${body}</div>`,true);modal.className=`opening-screen opening-${screen}`;document.body.classList.add('title-open');backAction=null;
  $('.opening-frame').insertAdjacentHTML('beforeend','<button class="opening-help" type="button">도움말 · H</button><span class="opening-key-hint">Z / Enter 결정 · X 돌아가기</span>');
@@ -391,6 +397,7 @@ function startHomeScene(){openingWorld=createIntroWorld('room',gender);renderOpe
 function renderOpeningWorld(message=''){
  openingMoving=false;openingQueuedDirection=null;openingHeldDirection=null;
  const scene=openingWorld?.scene??'room';showOpeningScreen(INTRO_SCENE_LABELS[scene],`<canvas id="opening-world" width="960" height="640" aria-label="${esc(INTRO_SCENE_LABELS[scene])} 이동 장면"></canvas><span class="opening-place">${esc(INTRO_SCENE_LABELS[scene])}</span>${message?`<div class="opening-world-message"><p>${esc(message)}</p><i>▼</i></div>`:''}<div class="opening-map-controls" aria-label="인트로 이동 조작"><button data-opening-dir="up">▲</button><button data-opening-dir="left">◀</button><button data-opening-dir="down">▼</button><button data-opening-dir="right">▶</button><button data-opening-a>A</button></div>`,'world');
+ if(ordinaryNew){openingRegionPopup??=createRegionEntryPopup({document,window});openingRegionPopup.update({key:'opening:'+scene,label:INTRO_SCENE_LABELS[scene],target:$('.opening-place'),fieldVisible:!$('#help-modal').open})}
  drawIntroWorld($('#opening-world'),openingWorld);$$('[data-opening-dir]').forEach(button=>{const stop=event=>{openingHeldDirection=releaseDirection(openingDirectionInput,'pointer:'+event.pointerId);openingQueuedDirection=null};button.onpointerdown=event=>{event.preventDefault();event.stopPropagation();if($('.opening-world-message')){openingAdvance?.();return}button.setPointerCapture?.(event.pointerId);openingHeldDirection=pressDirection(openingDirectionInput,'pointer:'+event.pointerId,button.dataset.openingDir);openingMoveDirection(openingHeldDirection)};for(const type of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(type,stop);button.onpointermove=event=>{const r=button.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)stop(event)};button.onclick=event=>{event.stopPropagation();if(event.detail===0)openingMoveDirection(button.dataset.openingDir)}});$('[data-opening-a]').onclick=event=>{releaseOpeningInput();event.stopPropagation();openingAdvance?.()};
  $('#opening-world').onclick=event=>{if(message){openingAdvance?.();return}const r=event.currentTarget.getBoundingClientRect(),x=(event.clientX-r.left)/r.width,y=(event.clientY-r.top)/r.height,dx=x-(openingWorld.x+.5)/15,dy=y-(openingWorld.y+.5)/10;if(Math.abs(dx)<.1&&Math.abs(dy)<.15)openingInspect();else openingMoveDirection(Math.abs(dx)>Math.abs(dy)?dx<0?'left':'right':dy<0?'up':'down')};
  if(message)openingAdvance=()=>renderOpeningWorld();else openingAdvance=openingInspect;openingBack=null;$('.opening-key-hint').textContent=message?'Z / Enter 또는 A로 대사 닫기':'방향키 / WASD 이동 · Z / Enter 조사';
@@ -405,7 +412,7 @@ function openingMoveDirection(direction){
  }else drawIntroWorld($('#opening-world'),{...openingWorld,walkFrame:0});
 }
 function openingInspect(){
- if(!openingWorld)return;const found=inspectIntroWorld(openingWorld);
+ if(!openingWorld)return;openingRegionPopup?.dismiss();const found=inspectIntroWorld(openingWorld);
  if(found==='starters'){setupStarter();return}
  const messages={computer:'모험을 떠날 준비가 끝났다.',family:'“윤 연구원에게 예의 바르게 인사하렴.”', 'lab-sign':'간판: 거제 생태 연구소',nothing:'여기에는 특별한 것이 없다.'};if(ordinaryNew)messages.family='“윤 박사에게 예의 바르게 인사하렴.”';renderOpeningWorld(messages[found]);
 }
@@ -812,7 +819,7 @@ function dex(query=''){
   const filtered=SPECIES.filter(species=>`${species.id} ${species.name} ${species.real}`.toLowerCase().includes(query.toLowerCase()));
   showModal('생태몬 도감',`<div class="dex-tools"><label class="field">151종 검색<input id="dex-search" type="search" value="${esc(query)}" placeholder="이름, 번호, 모티프"></label><p>만남 ${state.seen.filter(id=>Number.isInteger(id)).length}/151 · 포획 ${state.caught.filter(id=>Number.isInteger(id)).length}/151</p></div><div class="list-grid">${filtered.map(species=>{const seen=state.seen.includes(species.id),caught=state.caught.includes(species.id);return `<button class="dex-card ${seen?'':'unseen'}" data-dex="${dataId(species.id)}">${monsterSprite(species,88)}<small>${dexLabel(species)} ${caught?'· 포획':''}</small><strong>${seen?esc(species.name):'???'}</strong><small>${seen?esc(species.real):'아직 만나지 못했어요'}</small></button>`}).join('')}</div>`);
   $('#dex-search').onchange=event=>dex(event.target.value);$('#dex-search').onkeydown=event=>{if(event.key==='Enter'){event.preventDefault();dex(event.target.value)}};
-  $$('[data-dex]').forEach(button=>button.onclick=()=>{const id=parseSpeciesId(button.dataset.dex);if(!state.seen.includes(id)){toast('아직 만나지 못한 생태몬이에요.');return}const own=[...state.party,...state.box].find(mon=>mon.id===id);showMonster(own??createMonster(id,5));backAction=()=>dex(query)});
+  $$('[data-dex]').forEach(button=>button.onclick=()=>{const id=parseSpeciesId(button.dataset.dex);if(!state.seen.includes(id)){toast('아직 만나지 못한 생태몬이에요.');return}const catalog={namespace:'work-v2',getSpeciesById:id=>BY_ID[id],getBaseStats:id=>BY_ID[id].stats};const record=dexRecord(catalog,{seen:state.seen,caught:state.caught},id);showModal(record.name,`<div class="eco-legacy-dex">${monsterSprite(BY_ID[id],150)}${dexDetailMarkup(record,{art:false})}</div>`);backAction=()=>dex(query)});
 }
 function partyPanel(mode='party'){
   const list=mode==='box'?state.box:state.party;

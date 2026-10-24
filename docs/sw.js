@@ -1,4 +1,4 @@
-const CACHE='wtstgj-shell-75272ae66c20adcf';
+const CACHE='wtstgj-shell-6b0cb250f7266e6c';
 const BASE=new URL('./',self.location.href);
 const urls=['pwa/offline.html','pwa/icon-192.png','pwa/icon-512.png','pwa/manifest.webmanifest'].map(p=>new URL(p,BASE).href);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(urls))));

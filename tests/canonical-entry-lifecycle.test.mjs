@@ -1,3 +1,5 @@
+import {createRegionEntryPopup} from '../dist/ui/region-entry-popup.mjs';
+import {installOrdinaryMenu} from '../dist/ui/ordinary-menu.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
@@ -34,7 +36,7 @@ async function fixture({entry=source,runtime=null,paintFailure=false,ordinary=fa
  const {document,window}=parseHTML('<html><body></body></html>');
  let visibility='visible',focus=document.body,clock=1000,nextRaf=firstRaf-1;
  Object.defineProperty(document,'visibilityState',{get:()=>visibility});
- Object.defineProperty(document,'activeElement',{get:()=>focus});
+ Object.defineProperty(document,'activeElement',{get:()=>focus?.isConnected?focus:document.body});
  window.HTMLElement.prototype.focus=function(){focus=this};
  window.HTMLElement.prototype.setPointerCapture=function(){};
  window.HTMLCanvasElement.prototype.getContext=function(){return {canvas:this,setTransform(){}}};
@@ -58,7 +60,7 @@ async function fixture({entry=source,runtime=null,paintFailure=false,ordinary=fa
  }
  const environment=createEnvironmentService(createMockEnvironment());await environment.refresh();const stop=environment.stop;
  environment.stop=()=>{counts.environmentStops++;stop()};
- const bindings={document,window,location:{search:'?qa=1',reload(){throw Error('Unexpected reload')}},localStorage:memoryStore,
+ const bindings={createRegionEntryPopup,installOrdinaryMenu,document,window,location:{search:'?qa=1',reload(){throw Error('Unexpected reload')}},localStorage:memoryStore,
   performance:{now:()=>clock},URLSearchParams,setTimeout:fn=>{queueMicrotask(fn);return 1},
   requestAnimationFrame:fn=>{const id=++nextRaf;queue.set(id,fn);allFrames.set(id,fn);return id},cancelAnimationFrame:id=>queue.delete(id),
   createEvolutionPresentation:()=>({busy:false,stop(){counts.evolutionStops++},play:async()=>{}}),
@@ -223,4 +225,61 @@ test('resumed render failure keeps one RAF and terminal tail times out without r
   await f.frame();assert.equal(f.pending,1);assert.equal(f.counts.finishes,1);assert.match(f.root.dataset.renderError,/QA paint failure/);assert.deepEqual(f.world.snapshot(),before);
   f.state.paintFailure=false;await f.frame();assert.equal(f.pending,1);assert.equal(f.counts.finishes,1);
  }finally{await f.cleanup()}
+});
+
+test('V2 actual entry checkbox Tab, X/M and touch close keep modal ownership and restore field focus',async()=>{
+ const f=await fixture({ordinary:true});try{
+  const position=f.world.snapshot().position;
+  f.el('menu').click();f.root.querySelector('[data-menu-page="settings"]').click();let box=f.root.querySelector('[data-large-text]');box.focus();
+  assert.equal(f.send(box,'keydown',{key:'Tab'}).defaultPrevented,true);assert.equal(f.document.activeElement.dataset.menuFocus,'back');
+  assert.equal(f.send(f.document.activeElement,'keydown',{key:'Tab',shiftKey:true}).defaultPrevented,true);assert.equal(f.document.activeElement,box);
+  f.send(box,'keydown',{key:'x'});assert.equal(f.document.activeElement.dataset.menuPage,'settings');
+  f.root.querySelector('[data-menu-page="settings"]').click();box=f.root.querySelector('[data-large-text]');box.focus();f.send(box,'keydown',{key:'m'});assert.equal(f.root.querySelector('aside').hidden,true);assert.equal(f.document.activeElement,f.el('field'));
+  f.el('menu').click();f.el('menu').click();assert.equal(f.root.querySelector('aside').hidden,true);assert.equal(f.document.activeElement,f.el('field'));
+  f.el('menu').click();f.el('cancel').click();assert.equal(f.root.querySelector('aside').hidden,true);assert.equal(f.document.activeElement,f.el('field'));
+  assert.deepEqual(f.world.snapshot().position,position);
+ }finally{await f.cleanup()}assertNoGlobalListeners(f);
+});
+test('V2 actual entry all-unseen Dex select traps Tab, native selection keys never move field',async()=>{
+ const f=await fixture({ordinary:true});try{
+  const before=JSON.stringify(f.world.snapshot());f.el('menu').click();f.root.querySelector('[data-menu-page="dex"]').click();const select=f.root.querySelector('[data-dex-filter]');select.focus();
+  assert.equal(f.root.querySelectorAll('[data-dex-id]:not(:disabled)').length,0);
+  assert.equal(f.send(select,'keydown',{key:'ArrowDown'}).defaultPrevented,false);assert.equal(f.document.activeElement,select);assert.equal(f.send(select,'keydown',{key:'Enter'}).defaultPrevented,false);
+  assert.equal(f.send(select,'keydown',{key:'Tab'}).defaultPrevented,true);assert.equal(f.document.activeElement.dataset.menuFocus,'back');
+  f.send(f.document.activeElement,'keydown',{key:'Tab',shiftKey:true});assert.equal(f.document.activeElement,select);f.send(select,'keydown',{key:'Escape'});assert.equal(f.document.activeElement.dataset.menuPage,'dex');
+  assert.equal(JSON.stringify(f.world.snapshot()),before);assert.equal(f.counts.saves,0);
+ }finally{await f.cleanup()}assertNoGlobalListeners(f);
+});
+test('V2 actual entry rerender preserves search draft/caret and select focus, with X/M as text',async()=>{
+ const f=await fixture({ordinary:true});try{
+  f.window.HTMLElement.prototype.setSelectionRange=function(start,end,direction){Object.assign(this,{selectionStart:start,selectionEnd:end,selectionDirection:direction})};
+  f.el('menu').click();f.root.querySelector('[data-menu-page="dex"]').click();const search=f.root.querySelector('[data-dex-search]');search.focus();search.value='xm동백';search.oninput();search.setSelectionRange(1,3,'backward');
+  for(const key of ['x','m','z','ArrowLeft','ArrowRight'])assert.equal(f.send(search,'keydown',{key}).defaultPrevented,false);
+  await f.el('action').onclick();await flush();const current=f.document.activeElement;assert.notEqual(current,search);assert.equal(current.isConnected,true);assert.equal(current.dataset.menuFocus,'dex-search');assert.equal(current.value,'xm동백');assert.equal(current.selectionStart,1);assert.equal(current.selectionEnd,3);assert.equal(current.selectionDirection,'backward');
+  assert.equal(f.send(current,'keydown',{key:'Enter'}).defaultPrevented,true);assert.equal(f.document.activeElement.dataset.menuFocus,'dex-search');
+  const select=f.root.querySelector('[data-dex-filter]');select.focus();select.querySelector('[value="unseen"]').selected=true;select.onchange();await f.el('action').onclick();await flush();assert.equal(f.document.activeElement.dataset.menuFocus,'dex-filter');assert.equal(f.document.activeElement.value,'unseen');assert.equal(f.document.activeElement.isConnected,true);
+  assert.equal(f.counts.saves,0);assert.equal(f.root.querySelector('aside').hidden,false);
+ }finally{await f.cleanup()}assertNoGlobalListeners(f);
+});
+test('V2 actual entry real item-use restores party action or safe heading; BODY fallback arrows stay in menu',async()=>{
+ for(const quantity of [2,1]){
+  const seed=new CanonicalWorld({adapter,hooks:{dialogue:async()=>{}},rng:()=>.99});for(const id of ['P00_HOME_START','P01_ECO_CENTER','P02_FIRST_PARTNER'])await seed.story.runEvent(id);const runtime=seed.snapshot();seed.dispose();runtime.progress.items={potion:quantity};runtime.party[0].hp=1;
+  const f=await fixture({ordinary:true,runtime});try{
+   f.el('menu').click();f.root.querySelector('[data-menu-page="party"]').click();const select=f.el('party').querySelector('select');select.querySelector('option').selected=true;const use=f.el('party').querySelector('[data-menu-focus^="item-use:"]');use.focus();const key=use.dataset.menuFocus;
+   await use.onclick();await flush();assert.equal(f.world.snapshot().party[0].hp,19);assert.equal(f.world.snapshot().progress.items.potion,quantity-1);assert.equal(f.counts.saves,1);assert.equal(f.document.activeElement.isConnected,true);assert.notEqual(f.document.activeElement,use);assert.equal(f.root.querySelector('aside').hidden,false);
+   if(quantity===2)assert.equal(f.document.activeElement.dataset.menuFocus,key);else assert.equal(f.document.activeElement.id,'eco-menu-heading');
+   const before=f.world.snapshot().position;f.document.body.focus();assert.equal(f.send(f.document.body,'keydown',{key:'ArrowDown',code:'ArrowDown'}).defaultPrevented,true);assert.equal(f.document.activeElement.dataset.menuFocus,'back');assert.deepEqual(f.world.snapshot().position,before);assert.equal(f.state.controls.direction,null);
+   f.document.body.focus();f.send(f.document.body,'keydown',{key:'x'});assert.equal(f.document.activeElement.dataset.menuPage,'party');f.send(f.document.activeElement,'keydown',{key:'m'});assert.equal(f.document.activeElement,f.el('field'));
+  }finally{await f.cleanup()}assertNoGlobalListeners(f);
+ }
+});
+
+test('V3 actual entry retains native-button repeat guard after restored party focus without repeating item use',async()=>{
+ const seed=new CanonicalWorld({adapter,hooks:{dialogue:async()=>{}},rng:()=>.99});for(const id of ['P00_HOME_START','P01_ECO_CENTER','P02_FIRST_PARTNER'])await seed.story.runEvent(id);const runtime=seed.snapshot();seed.dispose();runtime.progress.items={potion:2};runtime.party[0].hp=1;
+ const f=await fixture({ordinary:true,runtime});try{
+  f.el('menu').click();f.root.querySelector('[data-menu-page="party"]').click();const select=f.el('party').querySelector('select');select.querySelector('option').selected=true;let use=f.el('party').querySelector('[data-menu-focus^="item-use:"]');use.focus();
+  const native=f.send(use,'keydown',{key:'Enter',repeat:false});assert.equal(native.defaultPrevented,false);assert.equal(f.counts.saves,0,'no synthesized duplicate click before native activation');await use.onclick();await flush();assert.equal(f.counts.saves,1);assert.equal(f.world.snapshot().progress.items.potion,1);use=f.document.activeElement;
+  for(const key of ['Enter',' ']){const repeat=f.send(use,'keydown',{key,repeat:true});assert.equal(repeat.defaultPrevented,true,'held native activation must be cancelled at document/menu ownership');if(!repeat.defaultPrevented)await use.onclick();await flush();assert.equal(f.counts.saves,1);assert.equal(f.world.snapshot().progress.items.potion,1)}
+  f.send(use,'keydown',{key:'x'});f.root.querySelector('[data-menu-page="save"]').click();const save=f.root.querySelector('[data-ordinary-save]');save.focus();for(const key of ['Enter',' ']){assert.equal(f.send(save,'keydown',{key,repeat:true}).defaultPrevented,true);assert.equal(f.send(save,'keydown',{key,repeat:false}).defaultPrevented,false)}assert.equal(f.counts.saves,1);
+ }finally{await f.cleanup()}assertNoGlobalListeners(f);
 });
