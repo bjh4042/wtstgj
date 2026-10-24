@@ -8,10 +8,12 @@ Node.js 22.12+ (or a compatible newer release):
 
 ```sh
 npm ci
-npm run build
+node tools/build-ordinary-notice-v2.mjs
 npm test
 npm run dev
 ```
+
+Use the custom build command above for a clean checkout: it copies the four required static PWA resources before generating the PWA shell. Generic `npm run build` does not perform that copy. See [PUBLIC_SOURCE_PORTABLE.md](PUBLIC_SOURCE_PORTABLE.md) for verification details and optional archive-dependent tooling.
 
 The production base is `/wtstgj/`. Publish the generated `build/` directory, not a source ZIP. No provider credentials are required for the local single-player preview. Online services are not configured or claimed to work.
 
