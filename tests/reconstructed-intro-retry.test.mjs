@@ -1,0 +1,13 @@
+import test from'node:test';import assert from'node:assert/strict';import{createRequire}from'node:module';
+import{APPROVED_ATLAS_DATA}from'../dist/approved-atlas-data.mjs';
+const require=createRequire(import.meta.url),{parseHTML}=require('linkedom');
+test('actual retry button repaints stationary intro after terminal failure; old detached canvas never repaints',async()=>{
+ const nativeTimeout=globalThis.setTimeout,{document,window}=parseHTML('<html><body><dialog id="opening" open><canvas id="opening-world" width="960" height="640"></canvas></dialog></body></html>');globalThis.document=document;globalThis.window=window;globalThis.MutationObserver=window.MutationObserver;Object.defineProperty(document,'visibilityState',{value:'visible',configurable:true});
+ globalThis.setTimeout=(fn,ms,...args)=>nativeTimeout(fn,ms>=500?1:ms,...args);let fail=true,paints=0;const requests=[];
+ globalThis.Image=class{set src(src){this._src=src;requests.push(src);const atlas=Object.values(APPROVED_ATLAS_DATA.atlases).find(a=>a.src===src);this.naturalWidth=atlas?.width??256;this.naturalHeight=atlas?.height??256;queueMicrotask(()=>{if(fail&&atlas)this.onerror?.();else this.onload?.()})}get src(){return this._src}removeAttribute(){}};
+ const canvas=document.getElementById('opening-world'),context=new Proxy({canvas,globalAlpha:1,drawImage:image=>{if(image.src?.includes('/player/'))paints++}},{get:(o,k)=>k in o?o[k]:(()=>{})});canvas.getContext=()=>context;canvas.width=960;canvas.height=640;Object.defineProperty(document.getElementById('opening'),'open',{value:true});
+ const intro=await import('../dist/art/approved-intro.mjs'),runtime=await import('../dist/approved-atlas-runtime.mjs'),{installAtlasRetryStatus}=await import('../dist/qa/atlas-status.mjs');
+ intro.drawApprovedIntroWorld(canvas,{scene:'room',gender:'boy',x:4,y:3,facing:'down',steps:0});await intro.loadApprovedIntro();await new Promise(r=>nativeTimeout(r,20));assert.equal(paints,0);assert.equal(runtime.approvedAtlasStatuses().filter(s=>s.status==='failed').length,2);assert.equal(requests.filter(s=>s.includes('/player/')).length,6);
+ const qa=installAtlasRetryStatus(document,window);fail=false;await qa.box.querySelector('button').onclick();assert.ok(paints>0,'stationary intro must repaint without an artificial draw call');assert.equal(runtime.approvedAtlasStatuses().filter(s=>s.status==='ready').length,2);
+ const count=paints;canvas.remove();assert.equal(await intro.repaintApprovedIntroAfterRetry(),false);assert.equal(paints,count);qa.dispose();globalThis.setTimeout=nativeTimeout;delete globalThis.Image;delete globalThis.document;delete globalThis.window;delete globalThis.MutationObserver;
+});

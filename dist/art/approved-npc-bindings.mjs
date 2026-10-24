@@ -6385,8 +6385,22 @@ export const APPROVED_NPC_FRAMES=Object.freeze({
   },
   "FARMER_F_BASE.BACK.A": {
     "src": "./assets/approved-npc-web/FARMER_F_BASE/BACK/A.png",
-    "sha256": "3f5d739a5ab0dbca6aa53ea448af7813eb8298dda4c786fdcc0542d5ad6d5d41",
-    "sourceSha256": "9f0db16d4744d25d9144b0ff3b509cfcfae63216cc7ab9a857bc64847aa5b3a7",
+    "sha256": "7c6811d33681cb3c4932a5678aa32124a0c94a7ff9578021e9134173384c65dd",
+    "sourceSha256": "d7957423260791fc093d64d749c2e00ae77f34de97e0e944d9a3fbc37954e45d",
+    "width": 144,
+    "height": 192,
+    "bounds": [
+      0,
+      0,
+      144,
+      192
+    ],
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
+  },
+  "FARMER_F_BASE.BACK.B": {
+    "src": "./assets/approved-npc-web/FARMER_F_BASE/BACK/B.png",
+    "sha256": "8b4018bdfca6153c95646558381037872fbf24def0a9e81d7f26edb7811e15cd",
+    "sourceSha256": "fe0b66a7add97e687089029c18f1e659e2ddbbe7084a06fa0471ad5dad7fa50c",
     "width": 143,
     "height": 192,
     "bounds": [
@@ -6395,26 +6409,12 @@ export const APPROVED_NPC_FRAMES=Object.freeze({
       143,
       192
     ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
-  },
-  "FARMER_F_BASE.BACK.B": {
-    "src": "./assets/approved-npc-web/FARMER_F_BASE/BACK/B.png",
-    "sha256": "2876d98cd7bc6abee924e076d49d68e7c8a6878f5ae084c37a0c50d13c81d100",
-    "sourceSha256": "e23c14d5765a19586bc5c8f7ac32ca7529ca2773117500ff609b43aa12ca0c88",
-    "width": 142,
-    "height": 192,
-    "bounds": [
-      0,
-      0,
-      142,
-      192
-    ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
   },
   "FARMER_F_BASE.BACK.IDLE": {
     "src": "./assets/approved-npc-web/FARMER_F_BASE/BACK/IDLE.png",
-    "sha256": "3bdb903e6fdf02ac70706666e6ef34448c1392a08f575f48c2405a80543d398f",
-    "sourceSha256": "a88b12162f406837fe21bce71c3f8f831364c107217df402dad1d447f6679557",
+    "sha256": "96f357b76a351ca86804c9ddda60a56d28259785599d1448266c9656e9fc40ea",
+    "sourceSha256": "61605ff881d6228ca11f16e445421d558c6e5fd8e44dbea774ef5399b356b841",
     "width": 147,
     "height": 192,
     "bounds": [
@@ -6423,82 +6423,12 @@ export const APPROVED_NPC_FRAMES=Object.freeze({
       147,
       192
     ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
   },
   "FARMER_F_BASE.FRONT.A": {
     "src": "./assets/approved-npc-web/FARMER_F_BASE/FRONT/A.png",
-    "sha256": "2d6a458baf4ea97f57b38e5d368cd413dd835104bc47cdab95b68c271aa22a6f",
-    "sourceSha256": "5314eb10fd0245a56837fe1241ec749960b9baa2820e4ae05ca1fd82616fa0f2",
-    "width": 151,
-    "height": 192,
-    "bounds": [
-      0,
-      0,
-      151,
-      192
-    ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
-  },
-  "FARMER_F_BASE.FRONT.B": {
-    "src": "./assets/approved-npc-web/FARMER_F_BASE/FRONT/B.png",
-    "sha256": "bbcb36fe521ff047d921e2c8a53f4524f48ce3380fa77bf4d90661601a5d4fe2",
-    "sourceSha256": "3fcb392e4410c5bd5fe6ed4fa3958e7a3a4affc919ab86c617c14787f3fc1029",
-    "width": 152,
-    "height": 192,
-    "bounds": [
-      0,
-      0,
-      152,
-      192
-    ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
-  },
-  "FARMER_F_BASE.FRONT.IDLE": {
-    "src": "./assets/approved-npc-web/FARMER_F_BASE/FRONT/IDLE.png",
-    "sha256": "f0247ac402ffec383004897f6fb898e5ceb01351a71a99102b1acf4d1c15ad2a",
-    "sourceSha256": "ee221c0b5e4b30092fe7f738090cf81b3d214754adc184ffa5e0845fe97c412d",
-    "width": 199,
-    "height": 192,
-    "bounds": [
-      0,
-      0,
-      199,
-      192
-    ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
-  },
-  "FARMER_F_BASE.LEFT.A": {
-    "src": "./assets/approved-npc-web/FARMER_F_BASE/LEFT/A.png",
-    "sha256": "6e943e974daa398cbb7a3940f58e6fe58341b412ab09af707da1900ef255213b",
-    "sourceSha256": "2f1c1714e5eccf862d371807faa44ef797ce6d42cebf624817b4b2933430a2fe",
-    "width": 151,
-    "height": 192,
-    "bounds": [
-      0,
-      0,
-      151,
-      192
-    ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
-  },
-  "FARMER_F_BASE.LEFT.B": {
-    "src": "./assets/approved-npc-web/FARMER_F_BASE/LEFT/B.png",
-    "sha256": "6055bc82f294ab83758c0f862c94cb2dd2f90c8cf1a3255081863d86e1194710",
-    "sourceSha256": "e667d406e5774f1accf103916390dda3194c3118b11011f33263875e3dc92b65",
-    "width": 149,
-    "height": 192,
-    "bounds": [
-      0,
-      0,
-      149,
-      192
-    ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
-  },
-  "FARMER_F_BASE.LEFT.IDLE": {
-    "src": "./assets/approved-npc-web/FARMER_F_BASE/LEFT/IDLE.png",
-    "sha256": "af1317eae3862a966855cf542877a0c45e58eba18f318c2e34112cc26b504aad",
-    "sourceSha256": "cd6e08564ca4ba68858ebcb497e302c541bb15d53eb0f411b72698bb3e1ab1eb",
+    "sha256": "17b5e8130918ff5bef5a67a511b389fb5024df85b3b9a07302d598fa272c5b1c",
+    "sourceSha256": "29ee3994ef66313db98ff203b44659ee8afa67cb77413a1ca70d75285cfc3883",
     "width": 150,
     "height": 192,
     "bounds": [
@@ -6507,12 +6437,12 @@ export const APPROVED_NPC_FRAMES=Object.freeze({
       150,
       192
     ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
   },
-  "FARMER_F_BASE.RIGHT.A": {
-    "src": "./assets/approved-npc-web/FARMER_F_BASE/RIGHT/A.png",
-    "sha256": "e226693e2f07b90505488ef43a30ca29742391dd1c6e78b07cd0bc78fd05e85f",
-    "sourceSha256": "0e97ee2ab007299391fd98a5b4e03e0895fc8010482bf2fbc12cc3cb6195d71e",
+  "FARMER_F_BASE.FRONT.B": {
+    "src": "./assets/approved-npc-web/FARMER_F_BASE/FRONT/B.png",
+    "sha256": "c8a764f8c195d9df8b5d4f7b107a10e0532c7d931e4175d98f3724cb675f5e49",
+    "sourceSha256": "eb28788fc1f680138be9a5b10b98d09f2b04913f92ea5f3f88b0bb1c408e5c57",
     "width": 151,
     "height": 192,
     "bounds": [
@@ -6521,12 +6451,82 @@ export const APPROVED_NPC_FRAMES=Object.freeze({
       151,
       192
     ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
+  },
+  "FARMER_F_BASE.FRONT.IDLE": {
+    "src": "./assets/approved-npc-web/FARMER_F_BASE/FRONT/IDLE.png",
+    "sha256": "698202a463dde5a44d6ccea38b5e520b606861ec27b73128467718b6ce101b57",
+    "sourceSha256": "c3dd214e308fccc9c79038deb2401d483291c5ab993d93d153d4413612dadc72",
+    "width": 157,
+    "height": 192,
+    "bounds": [
+      0,
+      0,
+      157,
+      192
+    ],
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
+  },
+  "FARMER_F_BASE.LEFT.A": {
+    "src": "./assets/approved-npc-web/FARMER_F_BASE/LEFT/A.png",
+    "sha256": "3cb374dc470e6884e85ca2bf0a42af1067650a39c0e17892d07f77e475bd31ac",
+    "sourceSha256": "fe73fdf563c407369d8d1fa990c92292d1d73c3a76f45657f4c548bf53a094cd",
+    "width": 153,
+    "height": 192,
+    "bounds": [
+      0,
+      0,
+      153,
+      192
+    ],
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
+  },
+  "FARMER_F_BASE.LEFT.B": {
+    "src": "./assets/approved-npc-web/FARMER_F_BASE/LEFT/B.png",
+    "sha256": "d2825838789211fdda48ee2ab7dc10c6a3a3524999ddb669b3dafe9e44a5f168",
+    "sourceSha256": "b34586dececf7c53400657cecfc097af418f08785ce02de8771c16e4825d09ef",
+    "width": 150,
+    "height": 192,
+    "bounds": [
+      0,
+      0,
+      150,
+      192
+    ],
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
+  },
+  "FARMER_F_BASE.LEFT.IDLE": {
+    "src": "./assets/approved-npc-web/FARMER_F_BASE/LEFT/IDLE.png",
+    "sha256": "418f57fc415a238e4c35fedfe6f2531387ccb715630432783d44bffda1abfc18",
+    "sourceSha256": "516fa16d277e29e95fe7b9b5d76835ba819abd651de5e1446c1da9712e18554a",
+    "width": 150,
+    "height": 192,
+    "bounds": [
+      0,
+      0,
+      150,
+      192
+    ],
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
+  },
+  "FARMER_F_BASE.RIGHT.A": {
+    "src": "./assets/approved-npc-web/FARMER_F_BASE/RIGHT/A.png",
+    "sha256": "d3e00bfe263097b51ef38d1459bccb8f31bb751bc60e56f5f87ba77b4d1209c8",
+    "sourceSha256": "274a5d71f584811709d822a47e7ca7facce855b50c13008a5a5e15d8ef9ae933",
+    "width": 151,
+    "height": 192,
+    "bounds": [
+      0,
+      0,
+      151,
+      192
+    ],
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
   },
   "FARMER_F_BASE.RIGHT.B": {
     "src": "./assets/approved-npc-web/FARMER_F_BASE/RIGHT/B.png",
-    "sha256": "23bd6fcab71634b9524ad3fa52f65ad604163ed3f639417c51fa6054db60cb44",
-    "sourceSha256": "9f818f056410247aed223689fc210c53429108b0f987cc8599f52cc0c6ee8bb2",
+    "sha256": "d7291a5a13711ae5e78b964ecbeb737eda69889d66e740d7746de128ac05dc07",
+    "sourceSha256": "fb38f5ecfed050c494e55f6a5a6814d6dcb7d34f566aac39f3b09f88a6812d45",
     "width": 152,
     "height": 192,
     "bounds": [
@@ -6535,21 +6535,21 @@ export const APPROVED_NPC_FRAMES=Object.freeze({
       152,
       192
     ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
   },
   "FARMER_F_BASE.RIGHT.IDLE": {
     "src": "./assets/approved-npc-web/FARMER_F_BASE/RIGHT/IDLE.png",
-    "sha256": "5b32c35de96074037699a7d142e0c2123d6571faf125fefa20612d393578ea68",
-    "sourceSha256": "fd70b47f691d8ab7680c0f238ce72521db9a8929d1318c9c23593765c4efc4fb",
-    "width": 151,
+    "sha256": "4d7f94c2c8518af106ff20a6fc6a9c4a2804e0bc72819442299b1c47594e1a8e",
+    "sourceSha256": "26d1388ecf513b032bcd2ca7e0eb0270f8dc87c4f31dca0b74749e0a8dbbd004",
+    "width": 150,
     "height": 192,
     "bounds": [
       0,
       0,
-      151,
+      150,
       192
     ],
-    "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
+    "derivative": "Largest 8-connected alpha>32 body bbox plus 3px AA padding; original RGBA crop; aspect-preserving Lanczos to 192px height; no alpha threshold applied to pixels"
   },
   "SAFETY_RESCUE_M_VAR01.BACK.A": {
     "src": "./assets/approved-npc-web/SAFETY_RESCUE_M_VAR01/BACK/A.png",
@@ -9240,6 +9240,7 @@ export const APPROVED_NPC_FRAMES=Object.freeze({
     "derivative": "alpha-bounds crop, aspect-preserving Lanczos, visible height <=192px"
   }
 });
+
 export const APPROVED_NPC_ASSET_IDENTITIES=Object.freeze({
   "human.bomi.field": "BOMI",
   "human.dr-chae.field": "DOCTOR_CHAE",

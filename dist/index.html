@@ -7,11 +7,6 @@
   <meta name="description" content="거제의 숲과 바다를 여행하는 오리지널 생태몬 수집 RPG.">
   <title>생태몬스터:거제도</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23102b46'/%3E%3Cpath d='M5 21 14 7l5 9 4-6 5 13H5z' fill='%238fd06d'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=32">
-  <link rel="stylesheet" href="intro.css?v=33">
-  <link rel="stylesheet" href="release.css?v=32">
-  <link rel="stylesheet" href="vertical-slice.css?v=8">
-  <link rel="stylesheet" href="golden-field.css?v=7">
   <script>
   {
     const q={pageErrors:0,uncaught:0,unhandled:0,last:''},sync=()=>{for(const [k,v] of Object.entries(q))document.documentElement.dataset['qa'+k[0].toUpperCase()+k.slice(1)]=String(v)};
@@ -19,12 +14,14 @@
     addEventListener('unhandledrejection',event=>{q.unhandled++;q.last=String(event.reason?.message||event.reason||'unhandled rejection');sync()});sync();
   }
   </script>
-  <script type="module" src="game-entry.mjs"></script>
   <link rel="manifest" href="/wtstgj/pwa/manifest.webmanifest">
   <link rel="apple-touch-icon" href="/wtstgj/pwa/icon-192.png">
+  
+  
+  <script type="module" src="./ordinary-boot.mjs"></script>
+  <link rel="stylesheet" crossorigin href="/wtstgj/assets/ui-preview-WMU7-lXW.css">
+  <link rel="stylesheet" href="/wtstgj/nearby-safe-band-ordinary.css">
   <link rel="stylesheet" href="pwa/responsive.css">
-  <script type="module" src="pwa/install.mjs"></script>
-  <link rel="stylesheet" href="art/approved-intro.css">
 </head>
 <body>
   <main class="app-shell">

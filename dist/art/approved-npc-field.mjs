@@ -1,11 +1,11 @@
-import {approvedAtlasFrame,loadApprovedAtlas} from '../approved-atlas-runtime.mjs';
+import {approvedAtlasFrame,loadApprovedAtlas,approvedAtlasRevision,cancellableAtlasImage} from '../approved-atlas-runtime.mjs';
 import {APPROVED_NPC_FRAMES,APPROVED_NPC_ASSET_IDENTITIES,APPROVED_TRAINER_IDENTITIES} from './approved-npc-bindings.mjs';
-import {browserImageLoader} from '../asset-runtime.mjs';
-const images=new Map();const pending=new Map();
+
+const images=new Map();const pending=new Map();let pendingRevision=-1;
 const direction={down:'FRONT',right:'RIGHT',left:'LEFT',up:'BACK'},cycle=['A','IDLE','B','IDLE'];
 export const APPROVED_NPC_IDENTITIES=Object.freeze({npc_left:'OUTDOOR_EXPLORER_M_BASE',npc_fishing:'ANGLER_M_BASE',researcher:'DOCTOR_YOON'});
 // Consistent visible body height with the selected player. World/collision coordinates are never altered.
 export const APPROVED_NPC_HEIGHT=38;
 export function approvedNPCPose({id,assetId,x,y,facing='down',moving=false,walk=0,visibleHeight=APPROVED_NPC_HEIGHT},camera=0){const identity=APPROVED_TRAINER_IDENTITIES[id]??APPROVED_NPC_ASSET_IDENTITIES[assetId]??APPROVED_NPC_IDENTITIES[id];if(!identity)return null;const key=`${identity}.${direction[facing]}.${moving?cycle[Math.floor(Math.max(0,walk)/26)%4]:'IDLE'}`,f=APPROVED_NPC_FRAMES[key];if(!f)return null;const [l,t,r,b]=f.bounds,w=r-l,h=b-t,scale=visibleHeight/h;return {key,source:approvedAtlasFrame('npc',key)?.frame.source??[l,t,w,h],destination:[x-w*scale/2,y-camera-visibleHeight,w*scale,visibleHeight]}}
-export function loadApprovedNPCs(loader=browserImageLoader,identity=null){const ids=identity?[identity]:Object.values(APPROVED_NPC_IDENTITIES);return Promise.all(ids.map(id=>{if(!pending.has(id))pending.set(id,Promise.all(Object.entries(APPROVED_NPC_FRAMES).filter(([key])=>key.startsWith(id+'.')).map(async([key,f])=>{try{const im=await loadApprovedAtlas('npc',key,loader);if(im)images.set(key,im)}catch{ /* No unverified sprite fallback. */ }})));return pending.get(id)}))}
-export function drawApprovedNPC(c,actor,camera=0){const p=approvedNPCPose(actor,camera);if(!p)return false;const im=images.get(p.key);if(!im&&typeof document!=='undefined')loadApprovedNPCs(browserImageLoader,p.key.split('.')[0]);if(im){c.save();c.imageSmoothingEnabled=true;c.imageSmoothingQuality='high';c.drawImage(im,...p.source,...p.destination);c.restore()}return true}
+export function loadApprovedNPCs(loader=cancellableAtlasImage,identity=null){const revision=approvedAtlasRevision();if(pendingRevision!==revision){pending.clear();pendingRevision=revision}const ids=identity?[identity]:Object.values(APPROVED_NPC_IDENTITIES);return Promise.all(ids.map(id=>{if(!pending.has(id))pending.set(id,Promise.all(Object.entries(APPROVED_NPC_FRAMES).filter(([key])=>key.startsWith(id+'.')).map(async([key,f])=>{try{const im=await loadApprovedAtlas('npc',key,loader);if(im)images.set(key,im)}catch{ /* No unverified sprite fallback. */ }})));return pending.get(id)}))}
+export function drawApprovedNPC(c,actor,camera=0){const p=approvedNPCPose(actor,camera);if(!p)return false;const im=images.get(p.key);if(!im&&typeof document!=='undefined')loadApprovedNPCs(cancellableAtlasImage,p.key.split('.')[0]);if(im){c.save();c.imageSmoothingEnabled=true;c.imageSmoothingQuality='high';c.drawImage(im,...p.source,...p.destination);c.restore()}return true}

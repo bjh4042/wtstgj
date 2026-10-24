@@ -8,5 +8,5 @@
   "dist/compatibility/save-slots.mjs": "4c72a352c7fbe23d1721e270411b02cc4f71269352910b2ad742faf0dcc11f72",
   "dist/compatibility/canonical-runtime-adapter.mjs": "aad8a9a7f2f898ed056c2f3a5e68ad3105080466e83bfd9ee4a28d87222bbf9a",
   "dist/model.mjs": "134b3e0e839b148c22b2e73e1f9eebb82fb31158be85a99632ed0bf63839263f",
-  "dist/world/definition.mjs": "f68f5e166356c83a6b38881fc8b8f5a76e0bd38b13493ce276e9ceaa7ebbc92a"
+  "dist/world/definition.mjs": "d97de641836604ddb18175fa866e219dcc76c0ba2695a074001823cc7ac4bbb0"
 }

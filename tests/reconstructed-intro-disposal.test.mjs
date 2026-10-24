@@ -1,0 +1,2 @@
+import test from'node:test';import assert from'node:assert/strict';import{spawnSync}from'node:child_process';
+for(const mode of['dispose','hidden','pagehide','oldcanvas','current','hiddenreturn','healthyreturn'])test('actual pending intro + retry lifecycle: '+mode,()=>{const r=spawnSync(process.execPath,['tests/fixtures/reconstructed-retry/intro-lifecycle.mjs',mode],{encoding:'utf8',timeout:15000});assert.equal(r.status,0,r.stdout+r.stderr);assert.match(r.stdout,/pendingImages/)});

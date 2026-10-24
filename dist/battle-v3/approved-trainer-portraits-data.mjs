@@ -40,21 +40,21 @@ export const APPROVED_TRAINER_PORTRAITS={
     },
     "DOCTOR_YOON": {
       "src": "./assets/approved-battle-trainers/DOCTOR_YOON.webp",
-      "width": 305,
+      "width": 327,
       "height": 512,
-      "sourceSha256": "2eddb672d227fbed77015b6b92cffe60135b6655ff6a11263b5277979a3d2154",
-      "sha256": "04ad00f0341bcd90218b5ab69a036a2a5112aaab720e09039f974c379340af90",
+      "sourceSha256": "473a00873765ca8cd86b16fffa7c1ff54d495082a10a7141c42fc73ff042a489",
+      "sha256": "10c89b1f5c228451615b8b46ddefa2029421a2fff72692c84c785a248bbd7e0b",
       "sourceAlphaBounds": [
-        49,
+        25,
         0,
-        964,
+        1006,
         1536
       ],
       "sourceDimensions": [
         1024,
         1536
       ],
-      "bytes": 43762,
+      "bytes": 45584,
       "role": "approved-front-battle-portrait"
     },
     "EUNMI": {
@@ -135,21 +135,21 @@ export const APPROVED_TRAINER_PORTRAITS={
     },
     "JINSEONG": {
       "src": "./assets/approved-battle-trainers/JINSEONG.webp",
-      "width": 322,
+      "width": 335,
       "height": 512,
-      "sourceSha256": "3791698ddb7baea9f72fa0f79ed9b3d2fe5a3608ce87da92fbabc70864e303dd",
-      "sha256": "439278a7767acf7f86db1dbff0c75d571f79309a308f58e75cf76096dbc52601",
+      "sourceSha256": "a8c86cfb22f9556283413aa240886869ae540af93162c0a7edd8f80a05a54825",
+      "sha256": "35681f544c97fc239f3e6a17ba4b4f039093651d148f43ee409f7ca0742778dc",
       "sourceAlphaBounds": [
-        45,
         0,
-        1010,
+        0,
+        1006,
         1536
       ],
       "sourceDimensions": [
         1024,
         1536
       ],
-      "bytes": 32062,
+      "bytes": 33316,
       "role": "approved-front-battle-portrait"
     },
     "JUHYEOK": {
@@ -173,21 +173,21 @@ export const APPROVED_TRAINER_PORTRAITS={
     },
     "JUNHO": {
       "src": "./assets/approved-battle-trainers/JUNHO.webp",
-      "width": 338,
+      "width": 332,
       "height": 512,
-      "sourceSha256": "7a92bec41c27d42a10ba5d02d929e9d8d28402d3167442786c08161bc40721a2",
-      "sha256": "44c215f62cf9d78e4fe5090aec722474313da9188fe6daeb996f44a952c794f0",
+      "sourceSha256": "41eee3fb817ab4366a4fa5e38ae34d7165c030a5c9598791ab7d088ff2c6f736",
+      "sha256": "97ff5855a1c012a5fc9d178d6f6ab83689ee8ca4bbab76ee5a7915c260866b37",
       "sourceAlphaBounds": [
         0,
         0,
-        1015,
+        996,
         1536
       ],
       "sourceDimensions": [
         1024,
         1536
       ],
-      "bytes": 39826,
+      "bytes": 42440,
       "role": "approved-front-battle-portrait"
     },
     "JUNSEOK": {
@@ -251,38 +251,38 @@ export const APPROVED_TRAINER_PORTRAITS={
       "src": "./assets/approved-battle-trainers/PLAYER_FEMALE.webp",
       "width": 330,
       "height": 512,
-      "sourceSha256": "6778b316d9492d4e80f2de468eadc70a5b3284b5307b12eff43b1ebbdd390f05",
-      "sha256": "81dc259509ead3d6e83374ba3bda70019d2e8e63d8156b109b31fcdd9d3f06cb",
+      "sourceSha256": "aa0437f8228e9d95b2ea133878b76b90dd25b35d5f2372a2a1752789a136c31d",
+      "sha256": "0d510e3ecb5b19e97cdd59ab02ef47ad59e19894aef473d13623ee91bee1a1d8",
       "sourceAlphaBounds": [
-        49,
-        9,
-        1012,
-        1504
+        57,
+        18,
+        1004,
+        1486
       ],
       "sourceDimensions": [
         1024,
         1536
       ],
-      "bytes": 44466,
+      "bytes": 45808,
       "role": "approved-front-battle-portrait"
     },
     "PLAYER_MALE": {
       "src": "./assets/approved-battle-trainers/PLAYER_MALE.webp",
-      "width": 379,
-      "height": 512,
-      "sourceSha256": "c0a9c4bc14a2ed6ebada337ba6c35b7a3321cbb0ba621083370beacf3d9475f3",
-      "sha256": "6a9affbb6ecc6b16482fe2caee6ebad104d444a8f6bcb9b25677948243560eaf",
+      "width": 384,
+      "height": 511,
+      "sourceSha256": "593c455fcd41509dd2b58f2323254a5cfc4574b16b536d46cb11042035bdca7a",
+      "sha256": "cb56e968758d8def13e8e3345909f20dbc2bed10df9ef87390eafaaf9ffbe625",
       "sourceAlphaBounds": [
         0,
-        7,
-        1066,
+        12,
+        1080,
         1448
       ],
       "sourceDimensions": [
         1086,
         1448
       ],
-      "bytes": 43336,
+      "bytes": 42934,
       "role": "approved-front-battle-portrait"
     },
     "SIYOON": {
@@ -513,6 +513,63 @@ export const APPROVED_TRAINER_PORTRAITS={
       "bytes": 29020,
       "role": "approved-front-battle-portrait"
     },
+    "DIVER_M_VAR01": {
+      "src": "./assets/approved-battle-trainers/DIVER_M_VAR01.webp",
+      "width": 340,
+      "height": 512,
+      "sourceSha256": "b6cbe93facc5b2f7e496334be871f6122e20b7bcd9a660b10b134c155a5820fe",
+      "sha256": "82278aee0e4dcd6f6fcbead20ed0ae8a4725b6e763fe954f84b5cdf46407402b",
+      "sourceAlphaBounds": [
+        0,
+        19,
+        1000,
+        1524
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 33120,
+      "role": "approved-front-battle-portrait"
+    },
+    "ECO_EDUCATION_STAFF_F_BASE": {
+      "src": "./assets/approved-battle-trainers/ECO_EDUCATION_STAFF_F_BASE.webp",
+      "width": 327,
+      "height": 512,
+      "sourceSha256": "21c31742571b97a880a214fca14e9d85f1d19acd672051d945b3227d8812a44d",
+      "sha256": "5ec0100f31cf1722f13e94f7e891f3e48d5540156c74aa7cc681d5f7b6654448",
+      "sourceAlphaBounds": [
+        0,
+        16,
+        970,
+        1536
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 29786,
+      "role": "approved-front-battle-portrait"
+    },
+    "ECO_EDUCATION_STAFF_F_VAR01": {
+      "src": "./assets/approved-battle-trainers/ECO_EDUCATION_STAFF_F_VAR01.webp",
+      "width": 330,
+      "height": 512,
+      "sourceSha256": "3c24d3cee11b0a86aeb029295a01221e3310a610ef480d6192256b5b8b057947",
+      "sha256": "37c640f36c3a0f9c5572b6626b0c6c46c1059998af4b8f73b2b7559346da6f81",
+      "sourceAlphaBounds": [
+        25,
+        3,
+        996,
+        1510
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 29132,
+      "role": "approved-front-battle-portrait"
+    },
     "ECO_EDUCATION_STAFF_M_BASE": {
       "src": "./assets/approved-battle-trainers/ECO_EDUCATION_STAFF_M_BASE.webp",
       "width": 254,
@@ -530,6 +587,25 @@ export const APPROVED_TRAINER_PORTRAITS={
         1536
       ],
       "bytes": 28720,
+      "role": "approved-front-battle-portrait"
+    },
+    "ECO_EDUCATION_STAFF_M_VAR01": {
+      "src": "./assets/approved-battle-trainers/ECO_EDUCATION_STAFF_M_VAR01.webp",
+      "width": 317,
+      "height": 512,
+      "sourceSha256": "92380cf04fa5d1ad0a2b4eae2e846e9d0d83748e215d31186d741a4fa32b7910",
+      "sha256": "6bfe361b4b959975560208dd879014d7efb3bc8c11000ce69f64fe29689146b9",
+      "sourceAlphaBounds": [
+        0,
+        16,
+        940,
+        1536
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 28068,
       "role": "approved-front-battle-portrait"
     },
     "ECO_STUDENT_F_BASE": {
@@ -555,19 +631,19 @@ export const APPROVED_TRAINER_PORTRAITS={
       "src": "./assets/approved-battle-trainers/ECO_STUDENT_M_BASE.webp",
       "width": 251,
       "height": 512,
-      "sourceSha256": "b2fedf5b555c8bf51c094fe29a59c4a112ddb14576371abc2b484c026b0ea1d3",
-      "sha256": "172f3bca77b92397ac28ce7a2b5badf7887920477f28e4877a82b17a14668f3e",
+      "sourceSha256": "63839461757f543a810faacbd3d7cc44d563aac2908d974bfcf1b8d87215d3a9",
+      "sha256": "cdc71d62817716e1b20c86e12f5ca3e049d676ccd3eb16c8ec6cb869bd7f6115",
       "sourceAlphaBounds": [
-        242,
+        216,
         85,
-        956,
+        930,
         1539
       ],
       "sourceDimensions": [
         1172,
         1635
       ],
-      "bytes": 36344,
+      "bytes": 36454,
       "role": "approved-front-battle-portrait"
     },
     "FARMER_F_BASE": {
@@ -587,6 +663,25 @@ export const APPROVED_TRAINER_PORTRAITS={
         1664
       ],
       "bytes": 32882,
+      "role": "approved-front-battle-portrait"
+    },
+    "FARMER_F_VAR01": {
+      "src": "./assets/approved-battle-trainers/FARMER_F_VAR01.webp",
+      "width": 304,
+      "height": 512,
+      "sourceSha256": "94232c35d5e6183607be9779e0034b741ccf5da97a0c26fc9ff4eb708716efe9",
+      "sha256": "b5fddbcf01b80d360583b503452892343d344c9894c393e430611b302819e7b1",
+      "sourceAlphaBounds": [
+        89,
+        9,
+        986,
+        1520
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 31746,
       "role": "approved-front-battle-portrait"
     },
     "FARMER_M_BASE": {
@@ -667,21 +762,21 @@ export const APPROVED_TRAINER_PORTRAITS={
     },
     "FISHER_F_BASE": {
       "src": "./assets/approved-battle-trainers/FISHER_F_BASE.webp",
-      "width": 266,
+      "width": 309,
       "height": 512,
-      "sourceSha256": "eef8d74a3b2e076edfcf2315abeb756c4bcb0ab2d42901c5c73648552918d595",
-      "sha256": "77d1c000578393e0173542a3cac55d0930675293512316abfd2d42f84cba9840",
+      "sourceSha256": "9b3e8e4a45cf4e54b2fe6f72ebd601ebc7b049572d7ad8bc0feb13e932c07232",
+      "sha256": "3c035ccc86cfa7125d9ed0da3a47ba9b709f407561dc4dd87d28e9fdd983db3d",
       "sourceAlphaBounds": [
-        260,
-        77,
-        1029,
-        1556
+        63,
+        15,
+        972,
+        1520
       ],
       "sourceDimensions": [
-        1171,
-        1636
+        1024,
+        1536
       ],
-      "bytes": 35684,
+      "bytes": 32908,
       "role": "approved-front-battle-portrait"
     },
     "FISHER_M_BASE": {
@@ -950,23 +1045,61 @@ export const APPROVED_TRAINER_PORTRAITS={
       "bytes": 38136,
       "role": "approved-front-battle-portrait"
     },
+    "NPC_UNIQUE_MINAMI": {
+      "src": "./assets/approved-battle-trainers/NPC_UNIQUE_MINAMI.webp",
+      "width": 335,
+      "height": 512,
+      "sourceSha256": "dfc639cdc2cce6a780a7e4369518bdf7825a17d58db844d64b1b3ef1e623c412",
+      "sha256": "5a001eafe2f4f678d1366ca42551ab4a3fda9888ed1c7985c35fa16ce5d635a7",
+      "sourceAlphaBounds": [
+        0,
+        11,
+        994,
+        1528
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 45750,
+      "role": "approved-front-battle-portrait"
+    },
+    "NPC_UNIQUE_WONI": {
+      "src": "./assets/approved-battle-trainers/NPC_UNIQUE_WONI.webp",
+      "width": 342,
+      "height": 512,
+      "sourceSha256": "ba6a1df6f5bc58140dd20a084e38340078c90f674acaee5655e59e9a361e801d",
+      "sha256": "b980e01cdfa23c8301f4ce04f8a7e20e97ed96f9bc4ed22edf6c3404b10d27c4",
+      "sourceAlphaBounds": [
+        0,
+        0,
+        1008,
+        1507
+      ],
+      "sourceDimensions": [
+        1044,
+        1507
+      ],
+      "bytes": 33144,
+      "role": "approved-front-battle-portrait"
+    },
     "OUTDOOR_EXPLORER_F_BASE": {
       "src": "./assets/approved-battle-trainers/OUTDOOR_EXPLORER_F_BASE.webp",
       "width": 290,
       "height": 512,
-      "sourceSha256": "c0beec1e45c315bd49135ecae47579492e04c4afd0243558f32712106ca836f9",
-      "sha256": "799dc94edead213a40bc4dd0bdf6e1ba2ba6477bcc6a18e2abb059f79e61be52",
+      "sourceSha256": "346b45ec96ecc6fb25e5b051a71256d4fe7b541bb7418c8363c7c180d8a5d0f3",
+      "sha256": "8cd7925e666c5bbd26d87a1407ce88ea0c4ba640d5070e3cf83a793564e4fa75",
       "sourceAlphaBounds": [
-        55,
+        118,
         2,
-        906,
+        969,
         1504
       ],
       "sourceDimensions": [
         1024,
         1536
       ],
-      "bytes": 33492,
+      "bytes": 32880,
       "role": "approved-front-battle-portrait"
     },
     "OUTDOOR_EXPLORER_F_VAR01": {
@@ -1045,6 +1178,25 @@ export const APPROVED_TRAINER_PORTRAITS={
       "bytes": 30946,
       "role": "approved-front-battle-portrait"
     },
+    "SAFETY_RESCUE_F_VAR01": {
+      "src": "./assets/approved-battle-trainers/SAFETY_RESCUE_F_VAR01.webp",
+      "width": 344,
+      "height": 512,
+      "sourceSha256": "79f6582703a3cfa510f378c4a2c9c70cce73d7fa011a7d758d9e89613f977309",
+      "sha256": "6e5521ac947d87008cc802414c0b87d58c96f0a1a67b781fbf308eee11886686",
+      "sourceAlphaBounds": [
+        0,
+        9,
+        1010,
+        1514
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 34172,
+      "role": "approved-front-battle-portrait"
+    },
     "SAFETY_RESCUE_M_BASE": {
       "src": "./assets/approved-battle-trainers/SAFETY_RESCUE_M_BASE.webp",
       "width": 384,
@@ -1081,6 +1233,44 @@ export const APPROVED_TRAINER_PORTRAITS={
         1536
       ],
       "bytes": 32784,
+      "role": "approved-front-battle-portrait"
+    },
+    "SHIPYARD_TECHNICIAN_F_BASE": {
+      "src": "./assets/approved-battle-trainers/SHIPYARD_TECHNICIAN_F_BASE.webp",
+      "width": 312,
+      "height": 512,
+      "sourceSha256": "1242fcba38b9f48a82bd5bb5e6df7b94f66f95a2b85786af36e1abf9b67ebed9",
+      "sha256": "e471d9d51cded91d770d7bec40c2abac80e1eb381e848234f8da847bb45046aa",
+      "sourceAlphaBounds": [
+        75,
+        10,
+        992,
+        1514
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 29918,
+      "role": "approved-front-battle-portrait"
+    },
+    "SHIPYARD_TECHNICIAN_M_BASE": {
+      "src": "./assets/approved-battle-trainers/SHIPYARD_TECHNICIAN_M_BASE.webp",
+      "width": 270,
+      "height": 512,
+      "sourceSha256": "a9a702175037649274e82893cc97842f11e67a82de5233f77bce84ac36bd5194",
+      "sha256": "e85cca50795f7b01cb4c443fcaf0f171c7cbe80fbfe3d0e1c4f6b25a992b50d4",
+      "sourceAlphaBounds": [
+        183,
+        14,
+        978,
+        1523
+      ],
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 27614,
       "role": "approved-front-battle-portrait"
     },
     "SPORTS_UNIFORM_BLACK_F_BASE": {

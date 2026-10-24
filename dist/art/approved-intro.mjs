@@ -8,13 +8,13 @@ export function approvedStandingPortrait(role){
 }
 export function approvedDialoguePortrait(role){const a=INTRO_ART[`${role}_dialogue`];return a?`<img class="approved-dialogue-portrait" src="${a.src}" alt="${labels[role]}">`:'';}
 export function approvedMenuArt(){return '<picture><source media="(orientation:portrait)" srcset="./assets/approved-title/mobile.png"><img src="./assets/approved-title/desktop.png" alt="거제 해변의 생태몬"></picture>';}
-const images=new Map();const latestWorld=new WeakMap();let ready;
-export function loadApprovedIntro(){return ready??=Promise.all([loadApprovedPlayers(),...Object.entries(INTRO_ART).filter(([k])=>!['researcher','boy','girl'].includes(k)&&!k.endsWith('_dialogue')).map(async([k,a])=>{try{images.set(k,await browserImageLoader(a.src))}catch{/* Never substitute unknown artwork. */}})]);}
+const images=new Map();const latestWorld=new WeakMap();let activeCanvas=null;let repaintGeneration=0;let ready;
+export function loadApprovedIntro(){return Promise.all([loadApprovedPlayers(),ready??=Promise.all([...Object.entries(INTRO_ART).filter(([k])=>!['researcher','boy','girl'].includes(k)&&!k.endsWith('_dialogue')).map(async([k,a])=>{try{images.set(k,await browserImageLoader(a.src))}catch{/* Never substitute unknown artwork. */}})])]);}
 function fit(c,key,x,y,w,h){const im=images.get(key),a=INTRO_ART[key];if(!im)return;const [l,t,r,b]=a.bounds,sw=r-l,sh=b-t,s=Math.min(w/sw,h/sh);c.drawImage(im,l,t,sw,sh,x+(w-sw*s)/2,y+h-sh*s,sw*s,sh*s);}
 function tiles(c,key,x,y,w,h,size=16){const im=images.get(key);if(!im)return;for(let yy=y;yy<y+h;yy+=size)for(let xx=x;xx<x+w;xx+=size){c.save();c.beginPath();c.rect(x,y,w,h);c.clip();c.drawImage(im,xx,yy,size,size);c.restore();}}
 function building(c,x,y,w,h){fit(c,'wall',x,y+10,w,h-10);fit(c,'roof',x-3,y,w+6,18);fit(c,'window',x+7,y+20,12,12);fit(c,'window',x+w-19,y+20,12,12);fit(c,'door',x+w/2-6,y+h-20,12,20);}
 export function drawApprovedIntroWorld(canvas,world){
- const c=canvas?.getContext?.('2d');if(!c||!world)return;latestWorld.set(canvas,world);
+ const c=canvas?.getContext?.('2d');if(!c||!world)return;latestWorld.set(canvas,world);activeCanvas=canvas;
  c.setTransform(canvas.width/240,0,0,canvas.height/160,0,0);c.clearRect(0,0,240,160);c.imageSmoothingEnabled=true;c.imageSmoothingQuality='high';
  c.fillStyle='#e7eee4';c.fillRect(0,0,240,160);
  if(world.scene==='town'){
@@ -40,5 +40,18 @@ export function drawApprovedIntroWorld(canvas,world){
   fit(c,'door',110,130,20,16);
  }
  drawApprovedPlayer(c,{appearance:world.gender,x:world.x*16+8,y:world.y*16+14,visibleHeight:23,facing:world.facing,moving:Number.isInteger(world.walkFrame),walk:(world.walkFrame??world.steps%2)*26});
- loadApprovedIntro().then(()=>{if(canvas.isConnected&&!canvas.dataset.approvedIntroReady){canvas.dataset.approvedIntroReady='1';drawApprovedIntroWorld(canvas,latestWorld.get(canvas))}});
+ const generation=repaintGeneration;loadApprovedIntro().then(()=>{if(generation===repaintGeneration&&canPaintIntro(canvas)&&!canvas.dataset.approvedIntroReady){canvas.dataset.approvedIntroReady='1';drawApprovedIntroWorld(canvas,latestWorld.get(canvas))}});
+}
+
+function canPaintIntro(canvas){return !!canvas&&canvas===activeCanvas&&canvas.isConnected&&canvas.ownerDocument?.visibilityState!=='hidden'&&canvas.ownerDocument?.getElementById('opening-world')===canvas&&canvas.closest?.('dialog')?.open!==false}
+export function invalidateApprovedIntroRepaints(){repaintGeneration++}
+/** Retry repaint only the still-current connected opening scene; no UI/game mutation.
+ * @param {{isActive?:()=>boolean}} [options]
+ */
+export async function repaintApprovedIntroAfterRetry({isActive=()=>true}={}){
+ const canvas=activeCanvas,world=canvas&&latestWorld.get(canvas),generation=repaintGeneration;
+ if(!world||!canPaintIntro(canvas)||!isActive())return false;
+ await loadApprovedIntro();
+ if(generation!==repaintGeneration||!isActive()||!canPaintIntro(canvas))return false;
+ drawApprovedIntroWorld(canvas,latestWorld.get(canvas));return true;
 }

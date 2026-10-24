@@ -174,7 +174,13 @@ export class StoryProgressionService {
   id=this.#contract.aliases[id]??id;this.#idle();
   if(id==='YEJI_FINAL'&&isPost20260927(this.#catalog.encounterContract))return this.runYejiFinal(options);
   if(this.eventCompleted(id))return {completed:true,alreadyCompleted:true,runtime:this.snapshot()};
-  if(!this.eventAvailable(id))throw Error('Story event unavailable');const e=this.#contract.events[id];
+  if(!this.eventAvailable(id)){
+   // Expected gate feedback stays a rejection: no operations, rewards or save writes.
+   const needsRival=id==='P03_TUTORIAL'&&this.#contract.events[id].requiresEvents.includes('RIVAL_00')&&!this.#save.progress.completedEvents.includes('RIVAL_00');
+   const message=needsRival?'하린과의 첫 대결에서 승리한 뒤 다시 이야기해 주세요.':'아직 이 이야기를 진행할 수 없어요. 먼저 주변의 이야기와 대결을 진행해 주세요.';
+   throw Object.assign(new Error(message),{code:'STORY_EVENT_UNAVAILABLE',eventId:id});
+  }
+  const e=this.#contract.events[id];
   return this.#execute([...e.operations,...e.trainerId?[{op:'trainerBattle',trainerId:e.trainerId}]:[]],id,options);
  }
  async runTrainer(id,options={}){
