@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "project": "거제몬스터",
+    "file_name": "geoje_online_battle_firebase_rules_contract_v1_2.json",
+    "version": "v1.2_2026-09-27",
+    "database_rules_file": "database.rules.json",
+    "status": "STAGED__EMULATOR_26_CASES_PENDING"
+  },
+  "security_goals": [
+    "deny all by default",
+    "require Firebase auth for every room read/write",
+    "disallow /rooms list read",
+    "allow exact room-code read to authenticated clients",
+    "room host is creator auth.uid; guestUid can be claimed only once by joining uid",
+    "each user can mutate only own profile/presence/party/ready/commit/reveal/ack/endRequest",
+    "party becomes immutable after ready=true",
+    "commit/reveal/ack records are append-only",
+    "reveal allowed only after both commits exist",
+    "ack allowed only after both reveals exist",
+    "room activation requires both ready",
+    "expired rooms cannot accept gameplay writes",
+    "room deletion is limited to participants and safe terminal/expired cases",
+    "after guest claim, room reads are participant-only",
+    "WAITING room deletion is host-only",
+    "host profile validates correctly during initial whole-room create",
+    "party/member counts use only documented Realtime Database RuleDataSnapshot primitives"
+  ],
+  "non_goals": [
+    "server verification of local Save v3 ownership",
+    "ranked anti-cheat",
+    "server-authoritative battle simulation",
+    "hard global 40-room cap",
+    "automatic delayed deletion of fully orphaned rooms",
+    "server verification that COMPLETE/DISCONNECT_TIMEOUT/STALL end reason is truthful"
+  ],
+  "deployment_gate": [
+    "Firebase Anonymous Auth enabled",
+    "npm install succeeds for firebase-tools, firebase, @firebase/rules-unit-testing",
+    "Realtime Database emulator starts with database.rules.json",
+    "26-case allow/deny test suite passes",
+    "two-browser deterministic battle test passes",
+    "30-second reconnect test passes",
+    "school/shared-NAT anonymous auth burst test passes"
+  ],
+  "test_matrix": [
+    {
+      "id": "T01",
+      "case": "unauthenticated exact-room read",
+      "expected": "DENY"
+    },
+    {
+      "id": "T02",
+      "case": "authenticated create with hostUid != auth.uid",
+      "expected": "DENY"
+    },
+    {
+      "id": "T03",
+      "case": "authenticated valid 8-char-code host create with host profile",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T04",
+      "case": "host create using invalid/short room code",
+      "expected": "DENY"
+    },
+    {
+      "id": "T05",
+      "case": "read /rooms root/list",
+      "expected": "DENY"
+    },
+    {
+      "id": "T06",
+      "case": "authenticated exact secret room read before guest claim",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T07",
+      "case": "first guest claims guestUid with own uid",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T08",
+      "case": "second guest tries replacing guestUid",
+      "expected": "DENY"
+    },
+    {
+      "id": "T09",
+      "case": "third-party exact-room read after guest claim",
+      "expected": "DENY"
+    },
+    {
+      "id": "T10",
+      "case": "third party writes participant party/action path",
+      "expected": "DENY"
+    },
+    {
+      "id": "T11",
+      "case": "owner writes valid party before ready",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T12",
+      "case": "owner writes noncontiguous moveIds or bad memberCount",
+      "expected": "DENY"
+    },
+    {
+      "id": "T13",
+      "case": "host ready after valid party",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T14",
+      "case": "owner edits party after ready",
+      "expected": "DENY"
+    },
+    {
+      "id": "T15",
+      "case": "set ACTIVE before both ready",
+      "expected": "DENY"
+    },
+    {
+      "id": "T16",
+      "case": "guest writes profile, nonce, valid party and ready",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T17",
+      "case": "set ACTIVE after both ready + guest nonce",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T18",
+      "case": "commit own turn once",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T19",
+      "case": "edit existing commit",
+      "expected": "DENY"
+    },
+    {
+      "id": "T20",
+      "case": "reveal before opponent commit",
+      "expected": "DENY"
+    },
+    {
+      "id": "T21",
+      "case": "reveal after both commits",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T22",
+      "case": "ack before both reveals",
+      "expected": "DENY"
+    },
+    {
+      "id": "T23",
+      "case": "ack after both reveals",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "T24",
+      "case": "gameplay write after expiresAt",
+      "expected": "DENY"
+    },
+    {
+      "id": "T25",
+      "case": "guest deletes WAITING room",
+      "expected": "DENY"
+    },
+    {
+      "id": "T26",
+      "case": "participant deletes FINISHED/ABORTED room; nonparticipant delete denied",
+      "expected": "ALLOW/DENY"
+    }
+  ],
+  "firebase_documented_primitives_used": [
+    "auth.uid",
+    ".read/.write/.validate",
+    "root/data/newData/now",
+    "string.matches(regex)",
+    "onDisconnect presence",
+    "server timestamp"
+  ],
+  "rules": {
+    "rules": {
+      ".read": false,
+      ".write": false,
+      "rooms": {
+        ".read": false,
+        ".write": false,
+        "$roomCode": {
+          ".read": "auth !== null && data.exists() && (!data.child('guestUid').exists() || auth.uid === data.child('hostUid').val() || auth.uid === data.child('guestUid').val())",
+          ".write": "auth !== null && ((!data.exists() && newData.exists() && newData.child('hostUid').val() === auth.uid && newData.child('status').val() === 'WAITING') || (!newData.exists() && data.exists() && ((auth.uid === data.child('hostUid').val() && data.child('status').val() === 'WAITING') || ((auth.uid === data.child('hostUid').val() || auth.uid === data.child('guestUid').val()) && (data.child('status').val() === 'FINISHED' || data.child('status').val() === 'ABORTED' || data.child('expiresAt').val() <= now)))))",
+          ".validate": "$roomCode.matches(/^[A-HJ-NP-Z2-9]{8}$/) && newData.hasChildren(['protocolVersion','battleMasterVersion','battleMasterHash','status','hostUid','createdAt','expiresAt','hostNonce','profiles']) && newData.child('protocolVersion').val() === 1 && newData.child('battleMasterVersion').val() === 'v3.2_2026-09-27' && newData.child('battleMasterHash').val() === '637b9fa3cb78abd8ff9d2e2eb24ad0fd201cdd73d715d646ae69ca52b8ecf8e8' && (newData.child('status').val() === 'WAITING' || newData.child('status').val() === 'ACTIVE' || newData.child('status').val() === 'FINISHED' || newData.child('status').val() === 'ABORTED') && newData.child('hostUid').isString() && newData.child('createdAt').isNumber() && newData.child('expiresAt').isNumber() && newData.child('expiresAt').val() > newData.child('createdAt').val() && newData.child('expiresAt').val() <= newData.child('createdAt').val() + 7200000 && newData.child('hostNonce').isString() && newData.child('hostNonce').val().matches(/^[0-9a-f]{32}$/) && newData.child('profiles').child(newData.child('hostUid').val()).hasChildren(['role','displayName']) && newData.child('profiles').child(newData.child('hostUid').val()).child('role').val() === 'host' && newData.child('profiles').child(newData.child('hostUid').val()).child('displayName').isString() && newData.child('profiles').child(newData.child('hostUid').val()).child('displayName').val().length <= 12",
+          "protocolVersion": {
+            ".validate": "newData.isNumber() && newData.val() === 1"
+          },
+          "battleMasterVersion": {
+            ".validate": "newData.isString() && newData.val() === 'v3.2_2026-09-27'"
+          },
+          "battleMasterHash": {
+            ".validate": "newData.isString() && newData.val() === '637b9fa3cb78abd8ff9d2e2eb24ad0fd201cdd73d715d646ae69ca52b8ecf8e8'"
+          },
+          "hostUid": {
+            ".validate": "newData.isString()"
+          },
+          "createdAt": {
+            ".validate": "newData.isNumber() && newData.val() >= now - 10000 && newData.val() <= now + 10000"
+          },
+          "expiresAt": {
+            ".validate": "newData.isNumber()"
+          },
+          "hostNonce": {
+            ".validate": "newData.isString() && newData.val().matches(/^[0-9a-f]{32}$/)"
+          },
+          "guestUid": {
+            ".write": "auth !== null && !data.exists() && root.child('rooms').child($roomCode).child('status').val() === 'WAITING' && (root.child('rooms').child($roomCode).child('expiresAt').val() > now) && auth.uid !== root.child('rooms').child($roomCode).child('hostUid').val() && newData.val() === auth.uid",
+            ".validate": "newData.isString()"
+          },
+          "guestNonce": {
+            ".write": "auth !== null && !data.exists() && root.child('rooms').child($roomCode).child('status').val() === 'WAITING' && (root.child('rooms').child($roomCode).child('expiresAt').val() > now) && auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()",
+            ".validate": "newData.isString() && newData.val().matches(/^[0-9a-f]{32}$/)"
+          },
+          "status": {
+            ".write": "auth !== null && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && ((data.val() === 'WAITING' && newData.val() === 'ACTIVE' && root.child('rooms').child($roomCode).child('guestUid').exists() && root.child('rooms').child($roomCode).child('guestNonce').exists() && root.child('rooms').child($roomCode).child('ready').child(root.child('rooms').child($roomCode).child('hostUid').val()).val() === true && root.child('rooms').child($roomCode).child('ready').child(root.child('rooms').child($roomCode).child('guestUid').val()).val() === true && (root.child('rooms').child($roomCode).child('expiresAt').val() > now)) || (data.val() === 'WAITING' && newData.val() === 'ABORTED') || (data.val() === 'ACTIVE' && newData.val() === 'FINISHED' && root.child('rooms').child($roomCode).child('endRequests').child(auth.uid).child('reason').val() === 'COMPLETE') || (data.val() === 'ACTIVE' && newData.val() === 'ABORTED' && root.child('rooms').child($roomCode).child('endRequests').child(auth.uid).exists() && root.child('rooms').child($roomCode).child('endRequests').child(auth.uid).child('reason').val() !== 'COMPLETE'))",
+            ".validate": "newData.val() === 'WAITING' || newData.val() === 'ACTIVE' || newData.val() === 'FINISHED' || newData.val() === 'ABORTED'"
+          },
+          "profiles": {
+            "$uid": {
+              ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && !data.exists() && root.child('rooms').child($roomCode).child('status').val() === 'WAITING' && (root.child('rooms').child($roomCode).child('expiresAt').val() > now)",
+              ".validate": "newData.hasChildren(['role','displayName']) && newData.child('displayName').isString() && newData.child('displayName').val().length <= 12 && ((newData.child('role').val() === 'host' && ((root.child('rooms').child($roomCode).exists() && $uid === root.child('rooms').child($roomCode).child('hostUid').val()) || (!root.child('rooms').child($roomCode).exists() && $uid === auth.uid))) || (newData.child('role').val() === 'guest' && root.child('rooms').child($roomCode).exists() && $uid === root.child('rooms').child($roomCode).child('guestUid').val()))",
+              "role": {
+                ".validate": "newData.val() === 'host' || newData.val() === 'guest'"
+              },
+              "displayName": {
+                ".validate": "newData.isString() && newData.val().length <= 12"
+              },
+              "$other": {
+                ".validate": false
+              }
+            }
+          },
+          "presence": {
+            "$uid": {
+              ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val())",
+              ".validate": "newData.hasChildren(['connected','lastSeenAt']) && newData.child('connected').isBoolean() && newData.child('lastSeenAt').isNumber() && newData.child('lastSeenAt').val() <= now + 10000",
+              "connected": {
+                ".validate": "newData.isBoolean()"
+              },
+              "lastSeenAt": {
+                ".validate": "newData.isNumber()"
+              },
+              "$other": {
+                ".validate": false
+              }
+            }
+          },
+          "parties": {
+            "$uid": {
+              ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && root.child('rooms').child($roomCode).child('status').val() === 'WAITING' && root.child('rooms').child($roomCode).child('ready').child($uid).val() !== true && (root.child('rooms').child($roomCode).child('expiresAt').val() > now)",
+              ".validate": "newData.hasChildren(['memberCount','members']) && newData.child('memberCount').isNumber() && newData.child('memberCount').val() >= 1 && newData.child('memberCount').val() <= 6 && ((newData.child('memberCount').val() === 1 && newData.child('members').child('0').exists() && !newData.child('members').child('1').exists()) || (newData.child('memberCount').val() === 2 && newData.child('members').child('0').exists() && newData.child('members').child('1').exists() && !newData.child('members').child('2').exists()) || (newData.child('memberCount').val() === 3 && newData.child('members').child('0').exists() && newData.child('members').child('1').exists() && newData.child('members').child('2').exists() && !newData.child('members').child('3').exists()) || (newData.child('memberCount').val() === 4 && newData.child('members').child('0').exists() && newData.child('members').child('1').exists() && newData.child('members').child('2').exists() && newData.child('members').child('3').exists() && !newData.child('members').child('4').exists()) || (newData.child('memberCount').val() === 5 && newData.child('members').child('0').exists() && newData.child('members').child('1').exists() && newData.child('members').child('2').exists() && newData.child('members').child('3').exists() && newData.child('members').child('4').exists() && !newData.child('members').child('5').exists()) || (newData.child('memberCount').val() === 6 && newData.child('members').child('0').exists() && newData.child('members').child('1').exists() && newData.child('members').child('2').exists() && newData.child('members').child('3').exists() && newData.child('members').child('4').exists() && newData.child('members').child('5').exists()))",
+              "memberCount": {
+                ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 6"
+              },
+              "members": {
+                "$index": {
+                  ".validate": "$index.matches(/^[0-5]$/) && newData.hasChildren(['speciesNo','level','moveIds'])",
+                  "speciesNo": {
+                    ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 151"
+                  },
+                  "level": {
+                    ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 100"
+                  },
+                  "nickname": {
+                    ".validate": "newData.isString() && newData.val().length <= 12"
+                  },
+                  "moveIds": {
+                    ".validate": "newData.child('0').exists() && (!newData.child('2').exists() || newData.child('1').exists()) && (!newData.child('3').exists() || newData.child('2').exists())",
+                    "$moveIndex": {
+                      ".validate": "$moveIndex.matches(/^[0-3]$/) && newData.isString() && newData.val().matches(/^MV[0-9][0-9][0-9]$/)"
+                    }
+                  },
+                  "$other": {
+                    ".validate": false
+                  }
+                }
+              },
+              "$other": {
+                ".validate": false
+              }
+            }
+          },
+          "ready": {
+            "$uid": {
+              ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && root.child('rooms').child($roomCode).child('status').val() === 'WAITING' && root.child('rooms').child($roomCode).child('parties').child($uid).exists() && data.val() !== true && newData.val() === true && (root.child('rooms').child($roomCode).child('expiresAt').val() > now)",
+              ".validate": "newData.isBoolean() && newData.val() === true"
+            }
+          },
+          "commits": {
+            "$turnKey": {
+              "$uid": {
+                ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && root.child('rooms').child($roomCode).child('status').val() === 'ACTIVE' && (root.child('rooms').child($roomCode).child('expiresAt').val() > now) && $turnKey.matches(/^T[0-9][0-9][0-9]$/) && !data.exists()",
+                ".validate": "newData.isString() && newData.val().matches(/^[0-9a-f]{64}$/)"
+              }
+            }
+          },
+          "reveals": {
+            "$turnKey": {
+              "$uid": {
+                ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && root.child('rooms').child($roomCode).child('status').val() === 'ACTIVE' && (root.child('rooms').child($roomCode).child('expiresAt').val() > now) && $turnKey.matches(/^T[0-9][0-9][0-9]$/) && !data.exists() && root.child('rooms').child($roomCode).child('commits').child($turnKey).child(root.child('rooms').child($roomCode).child('hostUid').val()).exists() && root.child('rooms').child($roomCode).child('commits').child($turnKey).child(root.child('rooms').child($roomCode).child('guestUid').val()).exists()",
+                ".validate": "newData.hasChildren(['kind','slot','nonce','submittedAt']) && newData.child('kind').isString() && newData.child('slot').isNumber() && newData.child('nonce').isString() && newData.child('nonce').val().matches(/^[0-9a-f]{32}$/) && newData.child('submittedAt').isNumber() && ((newData.child('kind').val() === 'move' && newData.child('slot').val() >= 0 && newData.child('slot').val() <= 3) || (newData.child('kind').val() === 'switch' && newData.child('slot').val() >= 0 && newData.child('slot').val() <= 5 && newData.child('slot').val() < root.child('rooms').child($roomCode).child('parties').child($uid).child('memberCount').val()) || (newData.child('kind').val() === 'forfeit' && newData.child('slot').val() === -1))",
+                "kind": {
+                  ".validate": "newData.val() === 'move' || newData.val() === 'switch' || newData.val() === 'forfeit'"
+                },
+                "slot": {
+                  ".validate": "newData.isNumber()"
+                },
+                "nonce": {
+                  ".validate": "newData.isString() && newData.val().matches(/^[0-9a-f]{32}$/)"
+                },
+                "submittedAt": {
+                  ".validate": "newData.isNumber() && newData.val() <= now + 10000"
+                },
+                "$other": {
+                  ".validate": false
+                }
+              }
+            }
+          },
+          "acks": {
+            "$turnKey": {
+              "$uid": {
+                ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && root.child('rooms').child($roomCode).child('status').val() === 'ACTIVE' && (root.child('rooms').child($roomCode).child('expiresAt').val() > now) && $turnKey.matches(/^T[0-9][0-9][0-9]$/) && !data.exists() && root.child('rooms').child($roomCode).child('reveals').child($turnKey).child(root.child('rooms').child($roomCode).child('hostUid').val()).exists() && root.child('rooms').child($roomCode).child('reveals').child($turnKey).child(root.child('rooms').child($roomCode).child('guestUid').val()).exists()",
+                ".validate": "newData.hasChildren(['stateHash','submittedAt']) && newData.child('stateHash').isString() && newData.child('stateHash').val().matches(/^[0-9a-f]{64}$/) && newData.child('submittedAt').isNumber()",
+                "stateHash": {
+                  ".validate": "newData.isString() && newData.val().matches(/^[0-9a-f]{64}$/)"
+                },
+                "submittedAt": {
+                  ".validate": "newData.isNumber() && newData.val() <= now + 10000"
+                },
+                "$other": {
+                  ".validate": false
+                }
+              }
+            }
+          },
+          "endRequests": {
+            "$uid": {
+              ".write": "auth !== null && auth.uid === $uid && (auth.uid === root.child('rooms').child($roomCode).child('hostUid').val() || auth.uid === root.child('rooms').child($roomCode).child('guestUid').val()) && !data.exists() && (root.child('rooms').child($roomCode).child('status').val() === 'WAITING' || root.child('rooms').child($roomCode).child('status').val() === 'ACTIVE')",
+              ".validate": "newData.hasChildren(['reason','submittedAt']) && newData.child('reason').isString() && (newData.child('reason').val() === 'CANCEL' || newData.child('reason').val() === 'FORFEIT' || newData.child('reason').val() === 'DISCONNECT_TIMEOUT' || newData.child('reason').val() === 'DESYNC' || newData.child('reason').val() === 'INVALID_REVEAL' || newData.child('reason').val() === 'STALL' || newData.child('reason').val() === 'VERSION_MISMATCH' || newData.child('reason').val() === 'COMPLETE') && newData.child('submittedAt').isNumber()",
+              "reason": {
+                ".validate": "newData.isString()"
+              },
+              "turnKey": {
+                ".validate": "newData.isString() && newData.val().matches(/^T[0-9][0-9][0-9]$/)"
+              },
+              "stateHash": {
+                ".validate": "newData.isString() && newData.val().matches(/^[0-9a-f]{64}$/)"
+              },
+              "submittedAt": {
+                ".validate": "newData.isNumber() && newData.val() <= now + 10000"
+              },
+              "$other": {
+                ".validate": false
+              }
+            }
+          },
+          "$other": {
+            ".validate": false
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "meta": {
+    "project": "거제몬스터",
+    "file_name": "geoje_save_migration_alias_v1_to_v2.json",
+    "version": "v1_2026-09-17",
+    "source_schema": "geoje_save_schema_v1",
+    "target_schema": "geoje_save_schema_v2",
+    "status": "STATIC_VALIDATION_PASS"
+  },
+  "migration_modes": {
+    "safe_full_auto": {
+      "allowed_when": "legacy currentStage==PROLOGUE and no legacy BADGE_01..03 and no legacy S1/S2/S3 progression events",
+      "behavior": "full automatic migration"
+    },
+    "collection_preserving_story_reset": {
+      "requires_user_confirmation": true,
+      "behavior": "preserve creatures/dex/safe inventory/settings; reset story progress/currentStage to PROLOGUE; preserve original file as backup",
+      "reason": "legacy S1~S3 order and badge semantics changed"
+    },
+    "manual_reconciliation": {
+      "requires_developer_tool": true,
+      "behavior": "semantic mapping below may be used, but destination is not committed until progression gates validate"
+    }
+  },
+  "content_version_aliases": {
+    "stage": {
+      "geoje_stage_master_v2_1": "geoje_stage_master_v2_3"
+    },
+    "encounter": {
+      "geoje_encounter_master_v2_1": "geoje_encounter_master_v2_3"
+    },
+    "battle": {
+      "geoje_battle_collection_master_v2": "geoje_battle_collection_master_v3"
+    },
+    "flags": {
+      "geoje_story_flags_master_v1": "geoje_story_flags_master_v2"
+    },
+    "save": {
+      "1": "2"
+    }
+  },
+  "field_mappings": [
+    {
+      "from": "profile.playTimeSeconds",
+      "to": "profile.foregroundPlayTimeSeconds",
+      "transform": "copy legacy value; append migration warning that legacy time may include background time"
+    },
+    {
+      "from": "profile.playerName",
+      "to": "profile.playerName",
+      "transform": "NFC + shared name validator"
+    },
+    {
+      "from": "player.partyInstanceIds",
+      "to": "player.partyInstanceIds",
+      "transform": "copy unique ids preserving order"
+    },
+    {
+      "from": "player.boxOrder",
+      "to": "storage.boxes",
+      "transform": "distribute in order across BOX01..BOX10, 30 each; reject if >300"
+    },
+    {
+      "from": "creatures.instances",
+      "to": "creatures.instances",
+      "transform": "per-creature v1_to_v2 transform"
+    },
+    {
+      "from": "dex.seenSpeciesNos",
+      "to": "dex.seenSpeciesNos",
+      "transform": "unique sorted"
+    },
+    {
+      "from": "dex.caughtSpeciesNos",
+      "to": "dex.caughtSpeciesNos",
+      "transform": "unique sorted"
+    },
+    {
+      "from": "dex.researchRegisteredSpeciesNos",
+      "to": "dex.researchRegisteredSpeciesNos",
+      "transform": "unique sorted"
+    },
+    {
+      "from": "dex.landmarkFirstCaptureSpeciesNos",
+      "to": "dex.landmarkFirstCaptureSpeciesNos",
+      "transform": "unique sorted"
+    },
+    {
+      "from": "inventory.consumables",
+      "to": "inventory.items",
+      "transform": "copy supported item IDs after alias conversion"
+    },
+    {
+      "from": "inventory.capture_items",
+      "to": "inventory.capture_balls",
+      "transform": "apply capture ball aliases; never create geoje_ball from legacy guaranteed ball"
+    },
+    {
+      "from": "inventory.tm",
+      "to": "inventory.tm",
+      "transform": "copy TM item ownership/quantity"
+    },
+    {
+      "from": "inventory.key_items",
+      "to": "inventory.key_items",
+      "transform": "apply key item aliases/drops"
+    },
+    {
+      "from": "world.openedShortcuts",
+      "to": "world.openedShortcuts",
+      "transform": "copy unique"
+    },
+    {
+      "from": "world.npcTradeFirstCompletions",
+      "to": "world.npcTradeFirstCompletions",
+      "transform": "copy only IDs valid in current event catalogs"
+    },
+    {
+      "from": "world.landmarkFirstCompletions",
+      "to": "world.landmarkFirstCompletions",
+      "transform": "copy only valid IDs"
+    },
+    {
+      "from": "world.researchEventCompletions",
+      "to": "world.researchEventCompletions",
+      "transform": "copy only valid IDs"
+    },
+    {
+      "from": "world.claimedOneTimeItems",
+      "to": "world.claimedOneTimeItemIds",
+      "transform": "apply item aliases; remove obsolete EXP Share claims"
+    },
+    {
+      "from": "settings",
+      "to": "latestAccessibilitySettings",
+      "transform": "textSpeed/battleAnimations/reducedMotion/volume preserved; new fields use v2 defaults"
+    }
+  ],
+  "new_field_defaults": {
+    "profile.playerAppearance": {
+      "avatarId": "default",
+      "paletteId": null
+    },
+    "progress.tutorialState": {
+      "version": 1,
+      "currentTutorialId": null,
+      "completedTutorialIds": [],
+      "dismissedHintIds": []
+    },
+    "progress.badgeTraits": {
+      "authority": "derived_from_BADGE_01_08",
+      "activeTraitNames": []
+    },
+    "world.defeatedTrainerIds": [],
+    "world.visitedMapIds": [],
+    "world.visitedBusStops": [],
+    "rewards.claimedOneTimeRewardIds": [],
+    "rewards.geojeBallGrantHistory": [],
+    "achievements.firstChampionClearSnapshot": null,
+    "achievements.certificateData": {
+      "endingCertificate": null,
+      "lastGeneratedAt": null
+    },
+    "achievements.fullExplorationCertificate": {
+      "eligible": false,
+      "issuedAt": null,
+      "snapshot": null
+    }
+  },
+  "dex_activation_transform": {
+    "target": "dex.activatedSpeciesNos",
+    "rule": "sorted unique union(legacy caughtSpeciesNos, legacy researchRegisteredSpeciesNos, speciesNo from all creature instances)",
+    "also_ensure_seen_contains_activated": true
+  },
+  "creature_transform": {
+    "remove_fields": [
+      "gender",
+      "shiny",
+      "iv",
+      "ev",
+      "nature",
+      "ability",
+      "heldItem",
+      "egg",
+      "breeding"
+    ],
+    "exp_policy": "legacy exp semantics were undefined; preserve level exactly and set totalExp=max(level^3, level^3 + max(0,legacyExp) only if legacyExp is explicitly marked within_level). Default migration uses level^3 and records partial-exp-reset warning.",
+    "nickname": "preserve then revalidate with shared name validator",
+    "move_id_aliases": {
+      "TM01": "MV201",
+      "TM02": "MV202",
+      "TM03": "MV203",
+      "TM04": "MV204",
+      "TM05": "MV205",
+      "TM06": "MV206",
+      "TM07": "MV207",
+      "TM08": "MV208",
+      "TM09": "MV209",
+      "TM10": "MV210",
+      "TM11": "MV211",
+      "TM12": "MV212",
+      "TM13": "MV213",
+      "TM14": "MV214",
+      "TM15": "MV215",
+      "TM16": "MV216",
+      "TM17": "MV217",
+      "TM18": "MV218",
+      "TM19": "MV219",
+      "TM20": "MV220",
+      "TM21": "MV221",
+      "TM22": "MV222",
+      "TM23": "MV223",
+      "TM24": "MV224",
+      "TM25": "MV225",
+      "TM26": "MV226",
+      "TM27": "MV227",
+      "TM28": "MV228",
+      "TM29": "MV229",
+      "TM30": "MV230",
+      "TM31": "MV231",
+      "TM32": "MV232",
+      "TM33": "MV233",
+      "TM34": "MV234",
+      "TM35": "MV235",
+      "TM36": "MV236",
+      "TM37": "MV237",
+      "TM38": "MV238",
+      "TM39": "MV239",
+      "TM40": "MV240",
+      "TM41": "MV241",
+      "TM42": "MV242",
+      "TM43": "MV243",
+      "TM44": "MV244",
+      "TM45": "MV245",
+      "TM46": "MV246",
+      "TM47": "MV247",
+      "TM48": "MV248",
+      "TM49": "MV249",
+      "TM50": "CONDITIONAL: speciesNo==151 ? MV312 : MV250"
+    },
+    "pp_policy": "if legacy PP absent, initialize ppCurrent to current Battle v3 move max PP; otherwise clamp to current max PP",
+    "hp_policy": "recalculate maxHP under Battle v3 and clamp legacy currentHp to [0,maxHP]",
+    "status_policy": "preserve only valid v3 major status values; otherwise null",
+    "releaseProtected_default": "true for starter/story-unique/legend/mythic/research-protected acquisition tags when detectable; otherwise false"
+  },
+  "item_aliases": {
+    "capture_ball": {
+      "to": "ecology_ball",
+      "ratio": "1:1"
+    },
+    "great_ball": {
+      "to": "affinity_ball",
+      "ratio": "1:1"
+    },
+    "ultra_ball": {
+      "to": "resonance_ball",
+      "ratio": "1:1"
+    },
+    "net_ball": {
+      "to": "affinity_ball",
+      "ratio": "1:1",
+      "note": "legacy special effect removed"
+    },
+    "nest_ball": {
+      "to": "affinity_ball",
+      "ratio": "1:1",
+      "note": "legacy special effect removed"
+    },
+    "timer_ball": {
+      "to": "affinity_ball",
+      "ratio": "1:1",
+      "note": "legacy special effect removed"
+    },
+    "quick_ball": {
+      "to": "affinity_ball",
+      "ratio": "1:1",
+      "note": "legacy special effect removed"
+    },
+    "onseom_ball": {
+      "to": "resonance_ball",
+      "ratio": "1:1",
+      "note": "must NOT become geoje_ball; preserves 12-ball lifetime invariant"
+    },
+    "old_rod": {
+      "to": "basic_rod",
+      "ratio": "1:1"
+    },
+    "memory_piece": {
+      "to": "memory_fragment",
+      "ratio": "1:1"
+    },
+    "eco_share": {
+      "action": "DROP",
+      "reason": "EXP Share removed in v1 final design"
+    },
+    "exp_share": {
+      "action": "DROP",
+      "reason": "EXP Share removed in v1 final design"
+    }
+  },
+  "early_stage_semantic_aliases": {
+    "legacy_to_latest_stage_meaning": {
+      "S1": "S3",
+      "S2": "S1",
+      "S3": "S2"
+    },
+    "legacy_to_latest_badge_semantics": {
+      "BADGE_01": "BADGE_03",
+      "BADGE_02": "BADGE_01",
+      "BADGE_03": "BADGE_02"
+    },
+    "area_ids": {
+      "S1_AJU_GRASSLAND": "S3_AJU_GRASSLAND",
+      "S1_OKPO_FOREST_EDGE": "S3_OKPO_FOREST_EDGE",
+      "S2_YEONCHO_STREAM": "S1_YEONCHO_STREAM",
+      "S2_HACHEONG_WETLAND": "S1_HACHEONG_WETLAND",
+      "S2_HACHEONG_BRACKISH": "S1_HACHEONG_BRACKISH",
+      "S3_JANGMOK_COAST": "S2_JANGMOK_COAST",
+      "S3_JANGMOK_BIRD_HILL": "S2_JANGMOK_BIRD_HILL"
+    },
+    "safe_event_aliases": {
+      "S2_WATER_DECLINE": "S1_WATER_DECLINE",
+      "S2_TRAP_INVESTIGATION": "S1_TRAP_INVESTIGATION",
+      "S2_GYM_STORY": "S1_GYM_STORY",
+      "S3_BIRD_DISTURBANCE": "S2_BIRD_DISTURBANCE",
+      "S3_LURE_DISCOVERY": "S2_LURE_DISCOVERY",
+      "S3_WIND_EVENT": "S2_WIND_EVENT_150",
+      "S3_GYM_STORY": "S2_GYM_STORY",
+      "S1_ROUTE_TRAINERS": "S3_ROUTE_TRAINERS"
+    },
+    "ambiguous_events_no_auto_credit": [
+      "S1_VILLAIN_FIRST",
+      "RIVAL_01",
+      "RIVAL_02"
+    ],
+    "policy": "if any legacy early badge/progression event is present, safe_full_auto is blocked; never silently rewrite early progression"
+  },
+  "later_progression_policy": {
+    "BADGE_04_to_08": "same numeric IDs may be preserved after early reconciliation",
+    "S4_to_POST_currentStage": "preserve only after early progression reconciliation passes",
+    "story_flags": "copy only current Story Flags v2 IDs whose meaning is unchanged; unknown legacy flags are archived in migration.warnings and discarded from authoritative flags"
+  },
+  "geoje_ball_policy": {
+    "legacy_can_create_geoje_ball": false,
+    "history_default": [],
+    "reason": "거제볼은 current Story Flags v2 one-time grant ledger로만 발생하며 lifetime cap=12"
+  },
+  "champion_snapshot_policy": {
+    "legacy_MAIN_STORY_CLEAR_without_snapshot": "do not fabricate first-clear party/time; leave firstChampionClearSnapshot null and add migration warning",
+    "certificate": "may be regenerated from current state, but must not be presented as exact first-clear archive"
+  },
+  "migration_algorithm": [
+    "1. source schema/content versions 확인 및 원본 백업",
+    "2. safe_full_auto 가능 여부 검사; 초반 진행 흔적이 있으면 자동 commit 금지",
+    "3. content IDs/item/move aliases 적용",
+    "4. creature instances 변환 후 party/PC 재배치",
+    "5. dex activatedSpeciesNos 재구축 및 seen 보정",
+    "6. Story Flags v2에 존재하는 안전한 flags/events만 변환",
+    "7. 신규 v2 필드 기본값 채움",
+    "8. 이름 재검증",
+    "9. Save v2 invariants + geojeBall cap 검증",
+    "10. 검증 성공 시 선택한 user slot에 atomic import; 실패 시 원본/기존 slot 유지"
+  ]
+}

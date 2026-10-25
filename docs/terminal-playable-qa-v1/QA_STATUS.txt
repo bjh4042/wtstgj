@@ -1,0 +1,1 @@
+ISOLATED DEVELOPMENT QA, NOT A FINISHED GAME. No production entry, service worker or ordinary save changes. Browser/device checks remain pending. Only registered terminal geometry is usable; other town stops remain disabled.
