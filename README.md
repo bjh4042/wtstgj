@@ -89,3 +89,7 @@ art/originals/maps에는 생성 기록과 선정 원본 해시를 대조한 장�
 
 ## 현재 코드: WARP_FAST_R4_ENTRY_LEASE
 승인된 game code4개만 설치 영수증대로 반영했습니다. aggregate1643통과/0실패/기존11skip. e3e·S4·새미디어 없음. 과거 timeout2건 원인미확정, 공통 수명검사 통과와 extended3cycle 보류를 구분하며 전체게임·기기·콜드네트워크 완료가 아닙니다.
+
+
+## 현재 코드: WARP_FAST_R5_GYM3_BIRD_ENTRY
+승인된 game code2개만 설치 영수증대로 반영했습니다. aggregate1643통과/0실패/기존11skip. e3e·S4·새미디어 없음. 과거 timeout2건 원인미확정, 공통 수명검사 통과와 extended3cycle 보류를 구분하며 전체게임·기기·콜드네트워크 완료가 아닙니다.

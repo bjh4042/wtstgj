@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R4_ENTRY_LEASE",
+  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R5_GYM3_BIRD_ENTRY",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "bytes": 35394,
-      "sha256": "7997f4c470c063c1715254b8eac9e85db43c97db9783b4722ba4e703f4a6cab5",
-      "role": "active_R4_shipping_gamecode"
+      "bytes": 35720,
+      "sha256": "cabdb4ec6ed7f3ef4a45bd08cd2115a7c45cf572fd20d2654e23a39e103d65e8",
+      "role": "active_R5_shipping_gamecode"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "bytes": 102843,
-      "sha256": "d630f46fad3318088661d1344f8512b1cdffb5dbe9d1a716e5b0d182016edeae",
-      "role": "active_R4_shipping_gamecode"
+      "bytes": 103047,
+      "sha256": "0110940c97de6bb35a1587ec8444071204aa7f2c10bfcb3b983d4f59262a0f3a",
+      "role": "active_R5_shipping_gamecode"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -4406,10 +4406,10 @@
       "role": "explicit_nonpersonal_compiled_boolean_navigation_data"
     }
   },
-  "revision": "NEW_REBUILD_WARP_FAST_R4_ENTRY_LEASE",
-  "previous_public_commit": "00eff4c19f0cfe1e990842da8a9f0ca7c43ee515",
-  "revision_source_manifest_sha256": "a5b589bac84fb63b01e2d46a86a14d7026e91a85847257357a13dc188b0e989e",
-  "revision_scope": "Exact4shipping code changes, no newmedia orbinary. Prior masks/art/shelves preserved.",
+  "revision": "NEW_REBUILD_WARP_FAST_R5_GYM3_BIRD_ENTRY",
+  "previous_public_commit": "3493ed5509c9b12e2b596f448436196091658624",
+  "revision_source_manifest_sha256": "7001913aa3f4cea6094a45675dc95bd29bac40d490ffc834d95834b1a70f3f2a",
+  "revision_scope": "Exact2shipping code changes, no newmedia orbinary. Prior masks/art/shelves preserved.",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4607,10 +4607,10 @@
   "active_code_selection": {
     "spaceSafeCodeFiles": 870,
     "publicSafeCodeFiles": 752,
-    "reusedUnchangedPublicFiles": 748,
-    "changedOrAddedCodeFiles": 4,
+    "reusedUnchangedPublicFiles": 750,
+    "changedOrAddedCodeFiles": 2,
     "newPrivateOrInternalMetadataNotSelected": 117,
-    "managedManifestSHA256": "a5b589bac84fb63b01e2d46a86a14d7026e91a85847257357a13dc188b0e989e",
+    "managedManifestSHA256": "7001913aa3f4cea6094a45675dc95bd29bac40d490ffc834d95834b1a70f3f2a",
     "sourceCodeExactBytes": true,
     "aggregate": {
       "total": 1654,
@@ -4618,7 +4618,7 @@
       "fail": 0,
       "skip": 11
     },
-    "actualWarpScope": "GYM2entry mean0.896667/max1.0208s; AJUentry mean0.936467/max1.0637s. Quiet comparison R3 and candidate GYM1roundtrip plus AJU3entry/save/DOM bothPASS; candidatequietAJU mean0.8385/max0.9083s. Two prior timeouts OPEN causeunknown/rawunavailable; common lifecycle9checkpoints stable live/156closed/pending0 PASS, extended3cycle stability HOLD. Device/cold/allpaths HOLD; no deployment/fullgamecompletion."
+    "actualWarpScope": "GYM3entry3 mean0.723433/max0.782s; birdentry3 mean0.8112/max0.9957s. Return2each GYM3mean1.2037/max1.3313s,bird1.3777/max1.4415s. Menu/save/samepose restore PASS. Earlier2timeouts OPEN causeunknown; HTTPcoldclient/device/allpaths/extendedstability HOLD. Initialfixturepreparation6.3142/6.9276s separate; notdeployment/fullcompletion."
   },
   "explicit_compiled_binary_data": {
     "files": 3,
