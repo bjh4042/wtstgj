@@ -1,0 +1,15 @@
+import {loadResources as loadOriginal} from './jungle-resources.mjs';
+import {loadJungleSupport} from './jungle-support-r3.mjs';
+const assetModuleURL=import.meta.url;
+const base=new URL('./',assetModuleURL),spriteKey='interior_original_runtime/assets/player.png';
+const abort=()=>Object.assign(Error('JUNGLE_PRESENTATION_CANCELLED'),{name:'AbortError'});
+export async function loadLazyJungle({signal,fetcher=fetch,decode=b=>createImageBitmap(new Blob([b])),canvasFactory,preparePresentation=loadOriginal}={}){
+ const support=await loadJungleSupport({signal,fetcher,decode,canvasFactory});let dead=false,epoch=0,value=null,pending=null,sprite=null,spritePending=null,spriteEpoch=0,queue=Promise.resolve();
+ const check=()=>{if(dead||signal?.aborted)throw abort()};
+ function releasePresentation(){epoch++;value?.dispose();value=null;pending=null;}
+ function releaseHubSprite(){spriteEpoch++;sprite?.close?.();sprite=null;spritePending=null;}
+ async function ensurePresentation(){check();if(value)return value;if(pending)return pending;const e=++epoch;const job=queue.catch(()=>{}).then(async()=>{let v;try{check();if(e!==epoch)throw abort();v=await preparePresentation();check();if(e!==epoch)throw abort();value=v;return v;}catch(error){v?.dispose();throw error;}finally{if(e===epoch)pending=null;}});queue=job;pending=job;return job;}
+ async function ensureHubSprite(){check();if(sprite)return sprite;if(spritePending)return spritePending;const e=++spriteEpoch;const job=(async()=>{let im;try{const r=await fetcher(new URL('RESOURCE_PINS.json',base),{signal});if(!r.ok)throw Error('RESOURCE_MANIFEST_MISSING');const mb=await r.arrayBuffer(),hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');if(await hash(mb)!=='d71576611ef0e12fb98274c2dd536bb3171e9808fc2e449a8581c9a31a475b07')throw Error('RESOURCE_MANIFEST_PIN');const p=JSON.parse(new TextDecoder().decode(mb))[spriteKey],res=await fetcher(new URL(p.url,base),{signal});if(!res.ok)throw Error('HUB_PLAYER_MISSING');const bytes=await res.arrayBuffer();if(await hash(bytes)!==p.sha256)throw Error('HUB_PLAYER_PIN');check();if(e!==spriteEpoch)throw abort();im=await decode(bytes);check();if(e!==spriteEpoch)throw abort();sprite=im;return im;}catch(error){im?.close?.();throw error;}finally{if(e===spriteEpoch)spritePending=null;}})();spritePending=job;return job;}
+ const items=new Proxy({}, {get(_t,k){check();if(!value)throw Error('JUNGLE_PRESENTATION_NOT_READY');return value.items[k]}});
+ return {get pinsVerified(){return !dead&&support.pinsVerified},get supportPinsVerified(){return !dead&&support.pinsVerified},get presentationReady(){return !dead&&!!value},get presentationPinsVerified(){return !dead&&!!value?.pinsVerified},items,getHubPlayerSprite(){check();if(!sprite)throw Error('HUB_PLAYER_NOT_READY');return sprite},safe:(...a)=>support.safe(...a),supports:(...a)=>support.supports(...a),symbolSelection:support.symbolSelection,ensurePresentation,releasePresentation,ensureHubSprite,releaseHubSprite,dispose(){if(dead)return;dead=true;releasePresentation();releaseHubSprite();support.dispose()}};
+}

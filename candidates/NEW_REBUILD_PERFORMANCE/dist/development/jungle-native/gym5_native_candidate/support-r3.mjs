@@ -1,0 +1,12 @@
+import{loadSelectedPlayerFrames}from'../../gohyeon-pair/player_frames/load-player-frames.mjs';
+import{selectPlayerFrame}from'../../gohyeon-pair/player-frame.mjs';
+const moduleURL=import.meta.url,MANIFEST_SHA='8f57989e0b46d9342614fdc3c4f72b1928214bc3af6fcec2ac316652cb8a658d';
+export const GYM5_REVISION='GYM5_ORIGINAL4STATE_SELECTED_W04_49X37_R1';
+const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(v=>v.toString(16).padStart(2,'0')).join('');
+const footValue=f=>{if(!Array.isArray(f)||Object.getPrototypeOf(f)!==Array.prototype||Reflect.ownKeys(f).length!==3)return null;const d=[0,1].map(i=>Object.getOwnPropertyDescriptor(f,String(i)));return d.every(x=>x&&Object.hasOwn(x,'value')&&x.enumerable&&Number.isSafeInteger(x.value))?d.map(x=>x.value):null};
+import{verifySupportClosure}from'../main_ui_candidate/verified-support-closure-r3.mjs';
+export async function prepareGym5Support(options={}){let disposed=false;const get=await verifySupportClosure('gym',{...options,retain:u=>u.pathname.endsWith('.u8')||u.pathname.endsWith('/ASSET_PINS.json')}),pins=JSON.parse(new TextDecoder().decode(get(new URL('./ASSET_PINS.json',moduleURL)))),masks={};for(const[name,p]of Object.entries(pins))if(name.endsWith('.u8'))masks[name]=get(new URL(p.url,moduleURL));
+const safe=(foot,state)=>{const f=footValue(foot),m=masks['state'+state+'.safe.u8'];return!disposed&&!!f&&!!m&&Number.isInteger(state)&&state>=0&&state<=3&&f[0]>=0&&f[1]>=0&&f[0]<1448&&f[1]<1086&&m[f[1]*1448+f[0]]===1};
+const describe=(foot,facing,state)=>({sceneId:'native:gym:5',mapId:'world:gym:5',revision:GYM5_REVISION,imageSHA:pins['state'+state+'.png']?.sha256,maskSHA:pins['state'+state+'.safe.u8']?.sha256,foot:[...foot],facing,state});
+const validate=n=>{const keys=['sceneId','mapId','revision','imageSHA','maskSHA','foot','facing','state'];if(!n||Object.getPrototypeOf(n)!==Object.prototype||Reflect.ownKeys(n).length!==keys.length||keys.some(k=>{const d=Object.getOwnPropertyDescriptor(n,k);return!d?.enumerable||!Object.hasOwn(d,'value')}))return'GYM5_POSE_SHAPE';if(!safe(n.foot,n.state)||!['up','down','left','right'].includes(n.facing))return'GYM5_POSE_UNSUPPORTED';const expected=describe(n.foot,n.facing,n.state);return keys.every(k=>k==='foot'||n[k]===expected[k])?true:'GYM5_POSE_PIN'};
+return Object.freeze({get pinsVerified(){return !disposed},safe,validate,describe,dispose(){disposed=true}});}
