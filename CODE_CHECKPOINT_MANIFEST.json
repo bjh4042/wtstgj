@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_S4_CENTER_R1",
+  "checkpoint": "Stage63 + NEW_REBUILD_S4_CENTER_HOLD_R2",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "bytes": 41690,
-      "sha256": "733d80ab4ebd70997b1b2d4433b352dbda96e246ef5b0883d54a5cba4a864688",
-      "role": "active_S4_center_game_or_test_code"
+      "bytes": 42227,
+      "sha256": "f4a00eacb4434b3831a1675767d2fc50c9c292603eb88f8a3557d094d6685c89",
+      "role": "active_center_hold_R2_source"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "bytes": 119555,
-      "sha256": "930f19839b3cc9670dee8b8072d0d93aa85325e439698b621f1dff75c73ee302",
-      "role": "active_S4_center_game_or_test_code"
+      "bytes": 121660,
+      "sha256": "a7787b7e686b814a1fee51e72166d8a68f4a7599084a23c8152b5a1454652a5a",
+      "role": "active_center_hold_R2_source"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -4661,10 +4661,10 @@
       "role": "single_root_selected_safe_protected_tuple_exception"
     }
   },
-  "revision": "NEW_REBUILD_S4_CENTER_R1",
-  "previous_public_commit": "2b111640e87fc05b9bcc7107e2add356d37d9f6a",
-  "revision_source_manifest_sha256": "1c676bf0bed99eda91f615ea20442d554809376338814945a837df3650f36e57",
-  "revision_scope": "center development activation only, notdeployment/fullS4completion; gzip/area/GYM4/House3/QA excluded Exact protected-tuple JSON single exception included; no raw fixture.",
+  "revision": "NEW_REBUILD_S4_CENTER_HOLD_R2",
+  "previous_public_commit": "61f56b7da8d6037031862d6df295039e4ab8d36e",
+  "revision_source_manifest_sha256": "f991434bbf40271d8bec6ec1d0290da8acadd65a1e02401a1051608eb8c8c9f4",
+  "revision_scope": "Owner/host two presentation preparation hold changes only; exact protected tuple remains, no area/gzip/GYM4/House3",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4862,10 +4862,10 @@
   "active_code_selection": {
     "spaceSafeCodeFiles": 921,
     "publicSafeCodeFiles": 803,
-    "reusedUnchangedPublicFiles": 787,
-    "changedOrAddedCodeFiles": 16,
+    "reusedUnchangedPublicFiles": 801,
+    "changedOrAddedCodeFiles": 2,
     "newPrivateOrInternalMetadataNotSelected": 117,
-    "managedManifestSHA256": "1c676bf0bed99eda91f615ea20442d554809376338814945a837df3650f36e57",
+    "managedManifestSHA256": "f991434bbf40271d8bec6ec1d0290da8acadd65a1e02401a1051608eb8c8c9f4",
     "sourceCodeExactBytes": true,
     "aggregate": {
       "total": 1654,
@@ -4874,14 +4874,14 @@
       "skip": 11
     },
     "actualWarpScope": {
-      "scope": "center development activation only, notdeployment/fullS4completion; gzip/area/GYM4/House3/QA excluded",
+      "scope": "Center prepare entry/exit hold only",
       "limits": [
-        "Actual S4 loss original stage policy HOLD",
-        "completed S4 positive recovery fixture untested",
-        "cold/mobile/device/full difficulty/allpaths unverified",
-        "average~1second transition target remains HOLD; final-pin onepair1.8742/1.3548seconds is not general mean",
-        "original5200ms healing intentionally separate from warp",
-        "historical failed UI candidates and old unknown-cause browser timeouts preserved"
+        "HTTP cache uncontrolled/cold/device/fullgame unverified",
+        "Original5200ms healing separate from door latency",
+        "ActualS4loss and completedS4positive independently pending; not claimed here",
+        "historical browser timeouts causeunknownOPEN",
+        "Area/gzip/GYM4/House3 not installed",
+        "Original Nodeearned Lv100HP169PP0 checkpoint not normaldifficulty"
       ]
     }
   },

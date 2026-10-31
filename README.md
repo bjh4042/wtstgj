@@ -104,3 +104,6 @@ S4 허브 왕복 범위만 설치 완료. 게임8경로와 기존 원본39개 �
 
 ### 최종 단일 fixture 예외
 앞선 초안의 미포함 문구는 철회: tests/fixtures/approved-s2-r2-protected-tuple.json은 상대 코드경로·승인세대·SHA만 가진 명시 선택 예외로 포함합니다. 다른 fixture/raw 제외 유지.
+
+## 최신 활성: S4_CENTER_HOLD_R2
+owner/host 두 파일만 설치·원본 aggregate1643PASS/0FAIL/11SKIP 확인. 원본5200ms healing은 출입지연과 별도. 실제S4loss/cold/mobile/전체게임HOLD; area/gzip/GYM4/House3 미설치. 단일 protected tuple 예외 유지, 다른fixture와 registration 공개제외. 배포명령0/외부자동배포연계미확인.
