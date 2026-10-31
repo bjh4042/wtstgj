@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R5_GYM3_BIRD_ENTRY",
+  "checkpoint": "Stage63 + NEW_REBUILD_S4_HUB_PAIR_R1",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -752,9 +752,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/gohyeon-pair/native-selected-warp-authority.mjs": {
-      "sha256": "1fca915e78b3880972ab75079423a5c38d7b1172ef5e87ba93777a69c3559c82",
-      "bytes": 8632,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 9056,
+      "sha256": "7f8d546cb3148a728c2aae0b1e9292f569a09592d320fc92b8325a7d2a2d8392",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
     },
     "dist/development/gohyeon-pair/player-frame.mjs": {
       "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
@@ -1067,9 +1067,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
-      "sha256": "04f15eff84c44a3fe603227f4b590b614aa9f530da29620fbd096dd165d62806",
-      "bytes": 59054,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 66392,
+      "sha256": "4ef7747ca3b534faedb80d6637ecb31438ddf678f656a8ac3166c047724f99a0",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
     },
     "dist/development/jungle-native/main_ui_candidate/native-harin-authority.mjs": {
       "sha256": "09134f1f2df1fb760186cd986ffa82588393422cc09611b9091e2dee948c893d",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "bytes": 35720,
-      "sha256": "cabdb4ec6ed7f3ef4a45bd08cd2115a7c45cf572fd20d2654e23a39e103d65e8",
-      "role": "active_R5_shipping_gamecode"
+      "bytes": 36066,
+      "sha256": "3f4b7ec54de4391853efac212f29379ca395be93870429a72b2050886bdcee4c",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "bytes": 103047,
-      "sha256": "0110940c97de6bb35a1587ec8444071204aa7f2c10bfcb3b983d4f59262a0f3a",
-      "role": "active_R5_shipping_gamecode"
+      "bytes": 107864,
+      "sha256": "b98c9b4787aa0987ffdd2ecdd5fa6f01e47e9c79450d8c5f51a2ed5b3f5177a7",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -1137,9 +1137,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/travel-registration.mjs": {
-      "sha256": "cbad7863b27892a36a8c1d1f8e1efbf1a8e1ff7e65f2ee0ade04349aa065edd4",
-      "bytes": 2832,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 2934,
+      "sha256": "cf7d2e8a26ae65787a19a30db74acdc64926f00cef64df6b923b18bd1d885709",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
     },
     "dist/development/jungle-native/student_copy_review/student-copy.mjs": {
       "sha256": "745b7314836b91c55ae1b09b73a7df0f2c95c332e11d050aace6e366bfb9bda2",
@@ -4404,12 +4404,222 @@
       "bytes": 4248,
       "sha256": "4d68cff2fb736f334c7df39662509bf812ced15da89ef38dc4147c4995fc9ec1",
       "role": "explicit_nonpersonal_compiled_boolean_navigation_data"
+    },
+    "dist/development/s4-progression-native/known-warps.mjs": {
+      "bytes": 3526,
+      "sha256": "97fca7329c01daf2abc0325b8e9ca9238808b8b9788f7c65660854108b9829f7",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s3-stage-intermediate.mjs": {
+      "bytes": 1277,
+      "sha256": "a71e14cbf5547ca134a2eb5e2b007557004db3afaa8408b7803f0a055b3b8eba",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/development/s4-progression-native/hub-provider.mjs": {
+      "bytes": 15253,
+      "sha256": "e44c41f178e47de13deca96893a0cfca46bc21900996d2d79469efe0e02f4b6c",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/approved-atlas-data.mjs": {
+      "bytes": 554206,
+      "sha256": "31f6cb0486352416b7de298b286354003850680e1724715acb034f65660d5f5d",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/approved-atlas-runtime.mjs": {
+      "bytes": 1638,
+      "sha256": "3f1b0383887e49225fcd63b8fc6cd98b694f670eec8a0901c3f16a4b4bdec983",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/approved-species-data.mjs": {
+      "bytes": 167667,
+      "sha256": "90fe4176500591c99cbbaafc6117161b458523ea693b4d9344c54eb73f236353",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/approved-species.mjs": {
+      "bytes": 3030,
+      "sha256": "901d5cced8f7ff6dc5b33191ab349c25379652b0f65f5dc7e6eadcd4461eb261",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/art/field-bindings.mjs": {
+      "bytes": 10552,
+      "sha256": "694f1da74f61ae1cd64a370128b65d820fd7a8e9f82dc40636cd188cfffec74c",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/art/legacy-assets.mjs": {
+      "bytes": 59695,
+      "sha256": "bf68f277931ab00865827de84f681ad95b34c6025e8a995e3ea2e08d952f2b95",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/art/species-crops.mjs": {
+      "bytes": 44175,
+      "sha256": "2170ef32babe6709225784c48b0c2e1c69dbc5d3738bf60d183d1b8c9e904283",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/art/w03-field-atlases.mjs": {
+      "bytes": 9320,
+      "sha256": "9dd754bd8e7e9b7c4e1e11ba31abc8e556ab232d8434ee30cd70e1ad01db12de",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/art/w03-human-field.mjs": {
+      "bytes": 2067,
+      "sha256": "ddacffb2a238f18afd1d61e7d441b3bcedba8d8abb2de9919d2979c95fad3e76",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/art/w03-player-field.mjs": {
+      "bytes": 1249,
+      "sha256": "dbaba5076383aec3edc99b17e3d039fac42ddb9a2f681b3a1356c4beb6d7f1d5",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/asset-manifest.mjs": {
+      "bytes": 8520,
+      "sha256": "8cf6a0b26955ea3a0db6eb8132f43f709f333b5a39d1d66fa08b661b4004a2c4",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/atlas-retry-manager.mjs": {
+      "bytes": 17724,
+      "sha256": "3a9b46d51c31ce216056d4e9be1f93f0630faf8f3c7869e6f02fe0c0fb19ae0f",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/canonical-species-assets.mjs": {
+      "bytes": 2211,
+      "sha256": "da125c9697a437a0b2fdfcd9540fdfcf43d6cbaf7aa6804903f059f590683b7a",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/compatibility/codec.mjs": {
+      "bytes": 2470,
+      "sha256": "1996059f6159bc3af353b10306f37a9e9db27f76cecd56e7bb699a5219f7fa8c",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/compatibility/content-namespaces.mjs": {
+      "bytes": 573,
+      "sha256": "fe74668100d5d12c535dd16e588bcf976859e07c6682334eb73ad3ee4c8cc184",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/compatibility/encounter-adapter.mjs": {
+      "bytes": 7697,
+      "sha256": "1e66db1f808f5e98f6a058634b2ebe7cc486db641884521774e10cf35cacc511",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/compatibility/species-identity.mjs": {
+      "bytes": 1677,
+      "sha256": "429c08144c60c6a562d9c50255ae978bb9ef06bec6a28508d087ff2498935531",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/compatibility/species-registry.mjs": {
+      "bytes": 89513,
+      "sha256": "064a2fabfb235aee28c359cf6250dcd9d50cf767ffcc09c11fd14b4bede6248d",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/economy/consumables-v1.mjs": {
+      "bytes": 2597,
+      "sha256": "79350d1e50d877bb840c2888153bcd86d34c6013addf2f236b6b4647b456857c",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/economy/contract.mjs": {
+      "bytes": 7995,
+      "sha256": "a6faaf6705bdcccce680a5b44e9c9497faa61ec7e632d54dba45db1b9015da0b",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/economy/tutorial.mjs": {
+      "bytes": 1507,
+      "sha256": "f8f0f9e067245b9fa830b7aa2bc10bff800ec9a8aeb4dd5b4f66004d315487eb",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/encounter/access.mjs": {
+      "bytes": 5124,
+      "sha256": "fc76451b26fedb30ff9ba6fbb82ff3998dc3058135a13a010ffcd3966d21bb90",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/model.mjs": {
+      "bytes": 22927,
+      "sha256": "134b3e0e839b148c22b2e73e1f9eebb82fb31158be85a99632ed0bf63839263f",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/audio-hooks.mjs": {
+      "bytes": 1748,
+      "sha256": "d367986d43969684a1a4f1992eb9b05221b6b15f75d87d5b38551be9640fd361",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/battle-display.mjs": {
+      "bytes": 2263,
+      "sha256": "360fb0a72bfd5f51585f8d70dfa7bfaecfeacfdc3f7d77dc2bd8a393a6a2b562",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/battle-vfx.mjs": {
+      "bytes": 4453,
+      "sha256": "7ab5c1f8f73bd83eac732b902c82103da82e7a12f1b9861aa0096fcc99dc9f7f",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/lighting.mjs": {
+      "bytes": 2752,
+      "sha256": "1b44e023297c6e950f2eed16285fd762f6359c4dc0c44d2f771c8850ba8f4375",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/map-presentation.mjs": {
+      "bytes": 2049,
+      "sha256": "9d8ee849c0af605e650b8761473f5812b38b53fe9b2563d1e3c5c0da3ed09287",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/tile-animation.mjs": {
+      "bytes": 2722,
+      "sha256": "c0830c90bd3225ef455876ae6299dfc4455b1d71ea3af7312cce6914f10b07fc",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/time-provider.mjs": {
+      "bytes": 1579,
+      "sha256": "0a443889e7b888079caa1143bb6fcd8988213fb398490868e805aa82281452a2",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/presentation/weather-layer.mjs": {
+      "bytes": 2560,
+      "sha256": "f3dde0860b4bbd987a2b6279b64907113d5645593e4d4b89eb73e71a8f5a2a9a",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/regions.mjs": {
+      "bytes": 12914,
+      "sha256": "d9390b47bed895ce6c30a37d44dd49cd95755399f43534bf914d62dc7ff8e17d",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/species-asset-contract.mjs": {
+      "bytes": 2301,
+      "sha256": "c67abca806ce9308d93b2b6a5e7225a84b16426122247050384ff63baa32a7f3",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/species-asset-resolver.mjs": {
+      "bytes": 1165,
+      "sha256": "38f9b7b8b48aac047b758c4a9fbe5c08002a92cdd9d8d069e39fca13d8da7791",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/species-catalog-service.mjs": {
+      "bytes": 4953,
+      "sha256": "a6eeebc292eda12373d1e40db663ebc8c74acc87254192b8a45a56be242c4657",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/species-data.mjs": {
+      "bytes": 46534,
+      "sha256": "5622acdd5e721b71fb5cd0cc1d5ebebd63c8e784f961017f3d04fd6ff046c977",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/starter-config.mjs": {
+      "bytes": 699,
+      "sha256": "5fd44099a7c5768abd0c0d29a0d8156b3f39c374cbec84ce662d9e96f9dd880c",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/story/gates.mjs": {
+      "bytes": 2204,
+      "sha256": "9a4392e9b98fa427716fccae6d5fef122bb6b91ebbf171270b1a59edd6d6e962",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/tileset-contract.mjs": {
+      "bytes": 3639,
+      "sha256": "04babb76159d544568e5f4f932da1b0df3be46ad80ed6d0712181ef223df3e3c",
+      "role": "active_S4_hub_code_or_adopted_original_runtime"
     }
   },
-  "revision": "NEW_REBUILD_WARP_FAST_R5_GYM3_BIRD_ENTRY",
-  "previous_public_commit": "3493ed5509c9b12e2b596f448436196091658624",
-  "revision_source_manifest_sha256": "7001913aa3f4cea6094a45675dc95bd29bac40d490ffc834d95834b1a70f3f2a",
-  "revision_scope": "Exact2shipping code changes, no newmedia orbinary. Prior masks/art/shelves preserved.",
+  "revision": "NEW_REBUILD_S4_HUB_PAIR_R1",
+  "previous_public_commit": "4724cc5b974bf5fcb3111663cd2674bb19df5936",
+  "revision_source_manifest_sha256": "f1598ef991badb22c23f4492071016d8be8908f1a4aea6a3489649ecde3a9fce",
+  "revision_scope": "S4 hub pair only; center/area/GYM4/House3 not connected; gzipR2/R3 and QA not installed; notdeployment/fullS4completion",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4605,12 +4815,12 @@
     }
   },
   "active_code_selection": {
-    "spaceSafeCodeFiles": 870,
-    "publicSafeCodeFiles": 752,
-    "reusedUnchangedPublicFiles": 750,
-    "changedOrAddedCodeFiles": 2,
+    "spaceSafeCodeFiles": 912,
+    "publicSafeCodeFiles": 794,
+    "reusedUnchangedPublicFiles": 747,
+    "changedOrAddedCodeFiles": 47,
     "newPrivateOrInternalMetadataNotSelected": 117,
-    "managedManifestSHA256": "7001913aa3f4cea6094a45675dc95bd29bac40d490ffc834d95834b1a70f3f2a",
+    "managedManifestSHA256": "f1598ef991badb22c23f4492071016d8be8908f1a4aea6a3489649ecde3a9fce",
     "sourceCodeExactBytes": true,
     "aggregate": {
       "total": 1654,
@@ -4618,7 +4828,16 @@
       "fail": 0,
       "skip": 11
     },
-    "actualWarpScope": "GYM3entry3 mean0.723433/max0.782s; birdentry3 mean0.8112/max0.9957s. Return2each GYM3mean1.2037/max1.3313s,bird1.3777/max1.4415s. Menu/save/samepose restore PASS. Earlier2timeouts OPEN causeunknown; HTTPcoldclient/device/allpaths/extendedstability HOLD. Initialfixturepreparation6.3142/6.9276s separate; notdeployment/fullcompletion."
+    "actualWarpScope": {
+      "scope": "S4 hub pair only; center/area/GYM4/House3 not connected; gzipR2/R3 and QA not installed; notdeployment/fullS4completion",
+      "limits": [
+        "HTTPcache uncontrolled/device/fullcold/allpaths HOLD",
+        "initialfixture7138.8ms separate",
+        "historical2browsertimeouts causeunknownOPEN",
+        "original Nodeearned Lv100HP169PP0 checkpoint not normaldifficulty",
+        "first entry mean1.3606s still improvement opportunity"
+      ]
+    }
   },
   "explicit_compiled_binary_data": {
     "files": 3,

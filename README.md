@@ -93,3 +93,7 @@ art/originals/maps에는 생성 기록과 선정 원본 해시를 대조한 장�
 
 ## 현재 코드: WARP_FAST_R5_GYM3_BIRD_ENTRY
 승인된 game code2개만 설치 영수증대로 반영했습니다. aggregate1643통과/0실패/기존11skip. e3e·S4·새미디어 없음. 과거 timeout2건 원인미확정, 공통 수명검사 통과와 extended3cycle 보류를 구분하며 전체게임·기기·콜드네트워크 완료가 아닙니다.
+
+
+## 최신 활성 코드: S4_HUB_PAIR_R1
+S4 허브 왕복 범위만 설치 완료. 게임8경로와 기존 원본39개 관리채택 코드만 반영합니다. aggregate1643PASS/0FAIL/기존11SKIP. 센터/area/GYM4/House3/gzip 미설치. 전체S4·기기·콜드환경 완료 아님. 이 작업의 배포 명령 실행 없음; 외부 자동배포 연계는 조회 제한으로 미확인입니다.
