@@ -1,0 +1,743 @@
+{
+  "authority": "Exact frozen R2 full provider prepare successful; all observed original fetch bytes pinned; regenerate only with oracle closure audit.",
+  "providers": {
+    "prologue": [
+      {
+        "url": "../../../assets/approved-atlases/npc/HARIN.png",
+        "bytes": 475253,
+        "sha256": "eb8e1e17debaa1ffbdbde69bd86360c86cd971ff053a99e5954bdedf2f0adb02"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/PLAYER_FRAME_RECOVERY.json",
+        "bytes": 6568,
+        "sha256": "114146904e6df960a4bc215a523b6e4aa7aa55c6df5d4e4a92966815fed86f20"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor0.png",
+        "bytes": 10058,
+        "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor1.png",
+        "bytes": 9376,
+        "sha256": "d499c2a2c88fb3827137027bf2acd9f31d1cf46c0f8410195ec44ef9b0f04804"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor10.png",
+        "bytes": 8134,
+        "sha256": "066bc3241e8d408d5dc4a0b58a38c53e5d8f0d024288731c4d15ddcac685c44c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor11.png",
+        "bytes": 8293,
+        "sha256": "ef5a1f12a5b8461edfef9946e89f0b11c300109eb5f5efdf8e2fcae9b933b91c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor2.png",
+        "bytes": 9226,
+        "sha256": "917c2b1e0725f38880e0aef0394733582dd362bb67c629bd7510b69d8c13b143"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor3.png",
+        "bytes": 7987,
+        "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor4.png",
+        "bytes": 8732,
+        "sha256": "d5c402bab7484c5d85a9c0031f1fb5ef2425d81f595a60cbfc31cb8bab59a5c1"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor5.png",
+        "bytes": 8530,
+        "sha256": "0dc792dde0eaba036bd77e8f8083c023ccc3076d42acd2397c6250451d31bd27"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor6.png",
+        "bytes": 8137,
+        "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor7.png",
+        "bytes": 8891,
+        "sha256": "57ce0a9e6344dff2609fe13d7d614c9e1a043d8349db60a9ba5ba806aba5bf12"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor8.png",
+        "bytes": 8759,
+        "sha256": "7f35af79d2d64af5c05ee08bac386fa7f7c6a66a97283851d1f927b30ed71cda"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor9.png",
+        "bytes": 8500,
+        "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/boats.indices",
+        "bytes": 157080,
+        "sha256": "e2dd68faf1a1c2a989d9793c7fa3b6e75761a13c3469f64fc6a13f5e58b726fd"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/boats.rgb",
+        "bytes": 11309760,
+        "sha256": "e06bddc35629d448b131008f9957b71af9724b28a570bd8b04d5459a401e9e2c"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/central.indices",
+        "bytes": 547140,
+        "sha256": "946b9101978f9fe8f4ac3b8e403883629067fdd18c041530e01353bfaddaa513"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/central.rgb",
+        "bytes": 19697040,
+        "sha256": "8177b96b5d470b9346bc3e7b8ebb48c8dd4b3d1b5947ce077cdb69845700ca6b"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/sw.indices",
+        "bytes": 111240,
+        "sha256": "09fe563bb23827d7f0b7856341aa055f00d27c1125af2dc82751fb7053dda790"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/sw.rgb",
+        "bytes": 4004640,
+        "sha256": "e7070ecba6d24f4630da765ec26180c96cc7705fafa9230a451f82f92cab36b7"
+      },
+      {
+        "url": "../../prologue-native/assets/forest-lower-shrub-r1.png",
+        "bytes": 2118827,
+        "sha256": "9c42d777741bc8f5c10e17028689efe82fa501b88fe6c7450aba1d7218a64c0e"
+      },
+      {
+        "url": "../../prologue-native/assets/forest-openings-r5.png",
+        "bytes": 2576135,
+        "sha256": "c6bdc6b656086e99e6c436514083b1e133dc97dc1d48e0c7f372c1ae7ce29e00"
+      },
+      {
+        "url": "../../prologue-native/assets/junction-lamp-r3.png",
+        "bytes": 2092044,
+        "sha256": "7b47059f399bdf8d04eeba12834b233d65881aa30a1e63f6410e21da39529a74"
+      },
+      {
+        "url": "../../prologue-native/assets/main-junction-r3.safe.u8",
+        "bytes": 3146088,
+        "sha256": "052a5e927ef28040cf58021c24736f5f7dde5c178c1a727a3b3ee70e91f3b14e"
+      },
+      {
+        "url": "../../prologue-native/assets/main.safe.u8",
+        "bytes": 3146088,
+        "sha256": "c3984be57fe6b0de740fd9befbe45d8dbe010e768d49690fc57c745f65bf9de0"
+      },
+      {
+        "url": "../../prologue-native/assets/prologue.png",
+        "bytes": 7708495,
+        "sha256": "d31ee97f9210999b0b7bb3bc29f8ac61fe7b6bcfea1eb946dfe8c58585939f9a"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/EXACT_FOUR_indices.u32",
+        "bytes": 151548,
+        "sha256": "78d76f15099ba1965105d56421503ca17d8468f5e49d18094ace4855238ebd51"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/EXACT_FOUR_transmission.f64",
+        "bytes": 909288,
+        "sha256": "9f75a72f11346c34fb1b1ef522ad60378d8a1d1bf410dc8483160967ad87bd1a"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CENTRAL_LAMP_indices.u32",
+        "bytes": 18076,
+        "sha256": "fc7804adb661ef305222819be228ae562f6afaf287ba46a1bdec746ff6bd38b8"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CENTRAL_LAMP_transmission.f64",
+        "bytes": 108456,
+        "sha256": "3d3e4d9885de1e7326d80bd002561868b5160093ce790922c16fc0f8b236f37e"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CORE_EAST_indices.u32",
+        "bytes": 29156,
+        "sha256": "41397b47f1635a6faac3f693550d4a85e1f11225a4611618231159f4ef382109"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CORE_EAST_transmission.f64",
+        "bytes": 174936,
+        "sha256": "1492e712365bedcd4668985087624d39994c27430f4a5457e682c32b02e9f6db"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REMAINING_TWO_indices.u32",
+        "bytes": 59468,
+        "sha256": "6a5d9164a52745e942096b2d9448ec09a4a9e9e91debf0e95340c1753e8f4432"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REMAINING_TWO_transmission.f64",
+        "bytes": 356808,
+        "sha256": "5315e52aae1114a1726c078d6e874fe07e48e1f643489ad5fead8b5ee14e2e86"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REPAIRED_TWO_indices.u32",
+        "bytes": 2736,
+        "sha256": "551c5b04a4906749e8d1ef052bf37ff7fdc5d26bcc2fad6d9ebd3a71eb75bae4"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REPAIRED_TWO_transmission.f64",
+        "bytes": 16416,
+        "sha256": "4387fda9094bc1bc0e396886987b7680b4545d42bc1d029a0529bd582bf721af"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/WINDOW_R3_indices.u32",
+        "bytes": 366452,
+        "sha256": "7f5efeb816ed59b2e0c3ab9f9a2d00cde3b1722cecc3429844b2671a8799af3d"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/WINDOW_R3_transmission.f64",
+        "bytes": 2198712,
+        "sha256": "1ec2b16b319156daca33b0245c98e6745b1c42b7dd15e58b7f64da41d5713bb2"
+      }
+    ],
+    "forest": [
+      {
+        "url": "../../gohyeon-pair/player_frames/PLAYER_FRAME_RECOVERY.json",
+        "bytes": 6568,
+        "sha256": "114146904e6df960a4bc215a523b6e4aa7aa55c6df5d4e4a92966815fed86f20"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor0.png",
+        "bytes": 10058,
+        "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor1.png",
+        "bytes": 9376,
+        "sha256": "d499c2a2c88fb3827137027bf2acd9f31d1cf46c0f8410195ec44ef9b0f04804"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor10.png",
+        "bytes": 8134,
+        "sha256": "066bc3241e8d408d5dc4a0b58a38c53e5d8f0d024288731c4d15ddcac685c44c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor11.png",
+        "bytes": 8293,
+        "sha256": "ef5a1f12a5b8461edfef9946e89f0b11c300109eb5f5efdf8e2fcae9b933b91c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor2.png",
+        "bytes": 9226,
+        "sha256": "917c2b1e0725f38880e0aef0394733582dd362bb67c629bd7510b69d8c13b143"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor3.png",
+        "bytes": 7987,
+        "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor4.png",
+        "bytes": 8732,
+        "sha256": "d5c402bab7484c5d85a9c0031f1fb5ef2425d81f595a60cbfc31cb8bab59a5c1"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor5.png",
+        "bytes": 8530,
+        "sha256": "0dc792dde0eaba036bd77e8f8083c023ccc3076d42acd2397c6250451d31bd27"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor6.png",
+        "bytes": 8137,
+        "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor7.png",
+        "bytes": 8891,
+        "sha256": "57ce0a9e6344dff2609fe13d7d614c9e1a043d8349db60a9ba5ba806aba5bf12"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor8.png",
+        "bytes": 8759,
+        "sha256": "7f35af79d2d64af5c05ee08bac386fa7f7c6a66a97283851d1f927b30ed71cda"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor9.png",
+        "bytes": 8500,
+        "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4"
+      },
+      {
+        "url": "../../prologue-areas/assets/forest-lower-shrub-r1.main.u8",
+        "bytes": 3146088,
+        "sha256": "2d3e5252bc748fcf4dd5f42200efb47fd6d20b09a360f9a6cd075536a08ec6bc"
+      },
+      {
+        "url": "../../prologue-areas/assets/forest.main.u8",
+        "bytes": 3146088,
+        "sha256": "ec30099364368a5677ee7028a86339e5862c8dd7062189247952e0454c63d389"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/boats.indices",
+        "bytes": 157080,
+        "sha256": "e2dd68faf1a1c2a989d9793c7fa3b6e75761a13c3469f64fc6a13f5e58b726fd"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/boats.rgb",
+        "bytes": 11309760,
+        "sha256": "e06bddc35629d448b131008f9957b71af9724b28a570bd8b04d5459a401e9e2c"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/central.indices",
+        "bytes": 547140,
+        "sha256": "946b9101978f9fe8f4ac3b8e403883629067fdd18c041530e01353bfaddaa513"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/central.rgb",
+        "bytes": 19697040,
+        "sha256": "8177b96b5d470b9346bc3e7b8ebb48c8dd4b3d1b5947ce077cdb69845700ca6b"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/sw.indices",
+        "bytes": 111240,
+        "sha256": "09fe563bb23827d7f0b7856341aa055f00d27c1125af2dc82751fb7053dda790"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/sw.rgb",
+        "bytes": 4004640,
+        "sha256": "e7070ecba6d24f4630da765ec26180c96cc7705fafa9230a451f82f92cab36b7"
+      },
+      {
+        "url": "../../prologue-native/assets/forest-lower-shrub-r1.png",
+        "bytes": 2118827,
+        "sha256": "9c42d777741bc8f5c10e17028689efe82fa501b88fe6c7450aba1d7218a64c0e"
+      },
+      {
+        "url": "../../prologue-native/assets/forest-openings-r5.png",
+        "bytes": 2576135,
+        "sha256": "c6bdc6b656086e99e6c436514083b1e133dc97dc1d48e0c7f372c1ae7ce29e00"
+      },
+      {
+        "url": "../../prologue-native/assets/junction-lamp-r3.png",
+        "bytes": 2092044,
+        "sha256": "7b47059f399bdf8d04eeba12834b233d65881aa30a1e63f6410e21da39529a74"
+      },
+      {
+        "url": "../../prologue-native/assets/prologue.png",
+        "bytes": 7708495,
+        "sha256": "d31ee97f9210999b0b7bb3bc29f8ac61fe7b6bcfea1eb946dfe8c58585939f9a"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/EXACT_FOUR_indices.u32",
+        "bytes": 151548,
+        "sha256": "78d76f15099ba1965105d56421503ca17d8468f5e49d18094ace4855238ebd51"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/EXACT_FOUR_transmission.f64",
+        "bytes": 909288,
+        "sha256": "9f75a72f11346c34fb1b1ef522ad60378d8a1d1bf410dc8483160967ad87bd1a"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CENTRAL_LAMP_indices.u32",
+        "bytes": 18076,
+        "sha256": "fc7804adb661ef305222819be228ae562f6afaf287ba46a1bdec746ff6bd38b8"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CENTRAL_LAMP_transmission.f64",
+        "bytes": 108456,
+        "sha256": "3d3e4d9885de1e7326d80bd002561868b5160093ce790922c16fc0f8b236f37e"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CORE_EAST_indices.u32",
+        "bytes": 29156,
+        "sha256": "41397b47f1635a6faac3f693550d4a85e1f11225a4611618231159f4ef382109"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CORE_EAST_transmission.f64",
+        "bytes": 174936,
+        "sha256": "1492e712365bedcd4668985087624d39994c27430f4a5457e682c32b02e9f6db"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REMAINING_TWO_indices.u32",
+        "bytes": 59468,
+        "sha256": "6a5d9164a52745e942096b2d9448ec09a4a9e9e91debf0e95340c1753e8f4432"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REMAINING_TWO_transmission.f64",
+        "bytes": 356808,
+        "sha256": "5315e52aae1114a1726c078d6e874fe07e48e1f643489ad5fead8b5ee14e2e86"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REPAIRED_TWO_indices.u32",
+        "bytes": 2736,
+        "sha256": "551c5b04a4906749e8d1ef052bf37ff7fdc5d26bcc2fad6d9ebd3a71eb75bae4"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REPAIRED_TWO_transmission.f64",
+        "bytes": 16416,
+        "sha256": "4387fda9094bc1bc0e396886987b7680b4545d42bc1d029a0529bd582bf721af"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/WINDOW_R3_indices.u32",
+        "bytes": 366452,
+        "sha256": "7f5efeb816ed59b2e0c3ab9f9a2d00cde3b1722cecc3429844b2671a8799af3d"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/WINDOW_R3_transmission.f64",
+        "bytes": 2198712,
+        "sha256": "1ec2b16b319156daca33b0245c98e6745b1c42b7dd15e58b7f64da41d5713bb2"
+      }
+    ],
+    "coast": [
+      {
+        "url": "../../gohyeon-pair/player_frames/PLAYER_FRAME_RECOVERY.json",
+        "bytes": 6568,
+        "sha256": "114146904e6df960a4bc215a523b6e4aa7aa55c6df5d4e4a92966815fed86f20"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor0.png",
+        "bytes": 10058,
+        "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor1.png",
+        "bytes": 9376,
+        "sha256": "d499c2a2c88fb3827137027bf2acd9f31d1cf46c0f8410195ec44ef9b0f04804"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor10.png",
+        "bytes": 8134,
+        "sha256": "066bc3241e8d408d5dc4a0b58a38c53e5d8f0d024288731c4d15ddcac685c44c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor11.png",
+        "bytes": 8293,
+        "sha256": "ef5a1f12a5b8461edfef9946e89f0b11c300109eb5f5efdf8e2fcae9b933b91c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor2.png",
+        "bytes": 9226,
+        "sha256": "917c2b1e0725f38880e0aef0394733582dd362bb67c629bd7510b69d8c13b143"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor3.png",
+        "bytes": 7987,
+        "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor4.png",
+        "bytes": 8732,
+        "sha256": "d5c402bab7484c5d85a9c0031f1fb5ef2425d81f595a60cbfc31cb8bab59a5c1"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor5.png",
+        "bytes": 8530,
+        "sha256": "0dc792dde0eaba036bd77e8f8083c023ccc3076d42acd2397c6250451d31bd27"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor6.png",
+        "bytes": 8137,
+        "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor7.png",
+        "bytes": 8891,
+        "sha256": "57ce0a9e6344dff2609fe13d7d614c9e1a043d8349db60a9ba5ba806aba5bf12"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor8.png",
+        "bytes": 8759,
+        "sha256": "7f35af79d2d64af5c05ee08bac386fa7f7c6a66a97283851d1f927b30ed71cda"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor9.png",
+        "bytes": 8500,
+        "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4"
+      },
+      {
+        "url": "../../prologue-areas/assets/coast.main.u8",
+        "bytes": 3146088,
+        "sha256": "b688c6bf1172468092cf7c482a02dc396bda7e2a0bc3503dc3e9953f43836bd3"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/boats.indices",
+        "bytes": 157080,
+        "sha256": "e2dd68faf1a1c2a989d9793c7fa3b6e75761a13c3469f64fc6a13f5e58b726fd"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/boats.rgb",
+        "bytes": 11309760,
+        "sha256": "e06bddc35629d448b131008f9957b71af9724b28a570bd8b04d5459a401e9e2c"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/central.indices",
+        "bytes": 547140,
+        "sha256": "946b9101978f9fe8f4ac3b8e403883629067fdd18c041530e01353bfaddaa513"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/central.rgb",
+        "bytes": 19697040,
+        "sha256": "8177b96b5d470b9346bc3e7b8ebb48c8dd4b3d1b5947ce077cdb69845700ca6b"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/sw.indices",
+        "bytes": 111240,
+        "sha256": "09fe563bb23827d7f0b7856341aa055f00d27c1125af2dc82751fb7053dda790"
+      },
+      {
+        "url": "../../prologue-native/assets/environment/sw.rgb",
+        "bytes": 4004640,
+        "sha256": "e7070ecba6d24f4630da765ec26180c96cc7705fafa9230a451f82f92cab36b7"
+      },
+      {
+        "url": "../../prologue-native/assets/forest-lower-shrub-r1.png",
+        "bytes": 2118827,
+        "sha256": "9c42d777741bc8f5c10e17028689efe82fa501b88fe6c7450aba1d7218a64c0e"
+      },
+      {
+        "url": "../../prologue-native/assets/forest-openings-r5.png",
+        "bytes": 2576135,
+        "sha256": "c6bdc6b656086e99e6c436514083b1e133dc97dc1d48e0c7f372c1ae7ce29e00"
+      },
+      {
+        "url": "../../prologue-native/assets/junction-lamp-r3.png",
+        "bytes": 2092044,
+        "sha256": "7b47059f399bdf8d04eeba12834b233d65881aa30a1e63f6410e21da39529a74"
+      },
+      {
+        "url": "../../prologue-native/assets/prologue.png",
+        "bytes": 7708495,
+        "sha256": "d31ee97f9210999b0b7bb3bc29f8ac61fe7b6bcfea1eb946dfe8c58585939f9a"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/EXACT_FOUR_indices.u32",
+        "bytes": 151548,
+        "sha256": "78d76f15099ba1965105d56421503ca17d8468f5e49d18094ace4855238ebd51"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/EXACT_FOUR_transmission.f64",
+        "bytes": 909288,
+        "sha256": "9f75a72f11346c34fb1b1ef522ad60378d8a1d1bf410dc8483160967ad87bd1a"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CENTRAL_LAMP_indices.u32",
+        "bytes": 18076,
+        "sha256": "fc7804adb661ef305222819be228ae562f6afaf287ba46a1bdec746ff6bd38b8"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CENTRAL_LAMP_transmission.f64",
+        "bytes": 108456,
+        "sha256": "3d3e4d9885de1e7326d80bd002561868b5160093ce790922c16fc0f8b236f37e"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CORE_EAST_indices.u32",
+        "bytes": 29156,
+        "sha256": "41397b47f1635a6faac3f693550d4a85e1f11225a4611618231159f4ef382109"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/NEW_CORE_EAST_transmission.f64",
+        "bytes": 174936,
+        "sha256": "1492e712365bedcd4668985087624d39994c27430f4a5457e682c32b02e9f6db"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REMAINING_TWO_indices.u32",
+        "bytes": 59468,
+        "sha256": "6a5d9164a52745e942096b2d9448ec09a4a9e9e91debf0e95340c1753e8f4432"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REMAINING_TWO_transmission.f64",
+        "bytes": 356808,
+        "sha256": "5315e52aae1114a1726c078d6e874fe07e48e1f643489ad5fead8b5ee14e2e86"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REPAIRED_TWO_indices.u32",
+        "bytes": 2736,
+        "sha256": "551c5b04a4906749e8d1ef052bf37ff7fdc5d26bcc2fad6d9ebd3a71eb75bae4"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/REPAIRED_TWO_transmission.f64",
+        "bytes": 16416,
+        "sha256": "4387fda9094bc1bc0e396886987b7680b4545d42bc1d029a0529bd582bf721af"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/WINDOW_R3_indices.u32",
+        "bytes": 366452,
+        "sha256": "7f5efeb816ed59b2e0c3ab9f9a2d00cde3b1722cecc3429844b2671a8799af3d"
+      },
+      {
+        "url": "../../s9-transfer/lighting-assets/WINDOW_R3_transmission.f64",
+        "bytes": 2198712,
+        "sha256": "1ec2b16b319156daca33b0245c98e6745b1c42b7dd15e58b7f64da41d5713bb2"
+      }
+    ],
+    "gym": [
+      {
+        "url": "../../gohyeon-pair/player_frames/PLAYER_FRAME_RECOVERY.json",
+        "bytes": 6568,
+        "sha256": "114146904e6df960a4bc215a523b6e4aa7aa55c6df5d4e4a92966815fed86f20"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor0.png",
+        "bytes": 10058,
+        "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor1.png",
+        "bytes": 9376,
+        "sha256": "d499c2a2c88fb3827137027bf2acd9f31d1cf46c0f8410195ec44ef9b0f04804"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor10.png",
+        "bytes": 8134,
+        "sha256": "066bc3241e8d408d5dc4a0b58a38c53e5d8f0d024288731c4d15ddcac685c44c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor11.png",
+        "bytes": 8293,
+        "sha256": "ef5a1f12a5b8461edfef9946e89f0b11c300109eb5f5efdf8e2fcae9b933b91c"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor2.png",
+        "bytes": 9226,
+        "sha256": "917c2b1e0725f38880e0aef0394733582dd362bb67c629bd7510b69d8c13b143"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor3.png",
+        "bytes": 7987,
+        "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor4.png",
+        "bytes": 8732,
+        "sha256": "d5c402bab7484c5d85a9c0031f1fb5ef2425d81f595a60cbfc31cb8bab59a5c1"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor5.png",
+        "bytes": 8530,
+        "sha256": "0dc792dde0eaba036bd77e8f8083c023ccc3076d42acd2397c6250451d31bd27"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor6.png",
+        "bytes": 8137,
+        "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor7.png",
+        "bytes": 8891,
+        "sha256": "57ce0a9e6344dff2609fe13d7d614c9e1a043d8349db60a9ba5ba806aba5bf12"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor8.png",
+        "bytes": 8759,
+        "sha256": "7f35af79d2d64af5c05ee08bac386fa7f7c6a66a97283851d1f927b30ed71cda"
+      },
+      {
+        "url": "../../gohyeon-pair/player_frames/actors/actor9.png",
+        "bytes": 8500,
+        "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4"
+      },
+      {
+        "url": "../gym5_native_candidate/ASSET_PINS.json",
+        "bytes": 8034,
+        "sha256": "8f57989e0b46d9342614fdc3c4f72b1928214bc3af6fcec2ac316652cb8a658d"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/myeongju.png",
+        "bytes": 575063,
+        "sha256": "e8baf034d99759ac0fce46dd61a98e4c991e3a1cb45fa0edde32e39a23b2e45c"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state0.png",
+        "bytes": 2150506,
+        "sha256": "324930469c2aacb5e770a0585e54e4d7846cfadd4c50446c7b0da7a57a97606e"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state0.safe.u8",
+        "bytes": 1572528,
+        "sha256": "09ec134b87f918e49c477044d03706d8fafd21866fcd7a52cdd0c339b641bd9e"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state1.png",
+        "bytes": 2145213,
+        "sha256": "b7dd48aca9f47f8d0ea933bf3a99a16fe3cb6edc85072d31905688efb254092f"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state1.safe.u8",
+        "bytes": 1572528,
+        "sha256": "5b85d8ed6e206221115bb991a485a65d1b5564f46eb55904f89dce4311ba5d91"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state2.png",
+        "bytes": 2139537,
+        "sha256": "517dad75fc8dd5c14b16c8d9da714770d99872253607c8fc5a7a12561e4197f9"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state2.safe.u8",
+        "bytes": 1572528,
+        "sha256": "f976306e5b457f37125917b7e1cfc0991deb6940190014a4b6bc23da13a33720"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state3.png",
+        "bytes": 2134504,
+        "sha256": "c7b2af653b324d47fae2ca32eff6a7d7b9bd27574cd4c540bc8f074517d55c00"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/state3.safe.u8",
+        "bytes": 1572528,
+        "sha256": "02f77c23f857757c80e21ae02934f2ab19ee1c8c219483a8c7ddc2fa1296a7ec"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub1_back.png",
+        "bytes": 108472,
+        "sha256": "32980733121cc07e96a9144f139d7afd642a887d6f82924aeb87c08f794a43b4"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub1_front.png",
+        "bytes": 880315,
+        "sha256": "3894551b401befdb9ace1a8412fddd482d31dbe2b5ff8ea8e10970d0f562100e"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub1_left.png",
+        "bytes": 108903,
+        "sha256": "da77c993b85079742b8c1740101c4b8248362b5268f7834b726c5362d2e24370"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub1_right.png",
+        "bytes": 104790,
+        "sha256": "73f5ab7fd5650a67df5a83b11cfdd03044cc913a3fd23b4ebe77d0163c08a472"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub2_back.png",
+        "bytes": 390219,
+        "sha256": "a5fcc771fccd356c78da4a664a58b52f77b0118bd9ff9e92ba081ba0d9290e00"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub2_front.png",
+        "bytes": 1135242,
+        "sha256": "6b4fe4f21e02322279273193913e1962f6e3aa508e704337f99f3e87d5cc73be"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub2_left.png",
+        "bytes": 404398,
+        "sha256": "7253315373d56bf818435b4b0fe96bee29a8756c8afc74aa77bf2e91b2d90ce7"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub2_right.png",
+        "bytes": 396153,
+        "sha256": "fdce75c60d6e1af952479010e7dde37c2c6bbde194035be4497bb07983716c48"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub3_back.png",
+        "bytes": 343516,
+        "sha256": "14565bf07dc8926a80784fb61077e645dc60178f6a04018c2a4c9ff875b8db30"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub3_front.png",
+        "bytes": 586437,
+        "sha256": "4cdf61860cd35c0d306b28ea359cfa998380fcaa77e86f0995054359064728f9"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub3_left.png",
+        "bytes": 358530,
+        "sha256": "3b33aca14c673091e62ff3b95dc083c17e52387f202b542af80a7111eabafb3b"
+      },
+      {
+        "url": "../gym5_native_candidate/assets/sub3_right.png",
+        "bytes": 321545,
+        "sha256": "3c458b1b8b7df9057f2e0bb054b050da7de2cd081d8d2db77b93075270c81218"
+      }
+    ]
+  }
+}

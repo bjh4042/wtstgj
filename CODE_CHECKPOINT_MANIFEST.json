@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_R2",
+  "checkpoint": "Stage63 + NEW_REBUILD_PERFORMANCE",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -982,9 +982,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/gym-resources-v8.mjs": {
-      "sha256": "56ed1ec3bc06aa5f826e21d116cf3473d7142460def6823625a4fea6adaf6a73",
-      "bytes": 1206,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "d53a6da48e52053670cf5c1625435470ab2aa2b6c8a2aa0beacc9b8fb80510b6",
+      "bytes": 1181,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
     },
     "dist/development/jungle-native/main_ui_candidate/gym-session.mjs": {
       "sha256": "9feac4f502fb5e9800688534d6fe48c1ff591dc1eddb5f1fff874c6790e2bda0",
@@ -1097,9 +1097,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "sha256": "2b9b3527639e311ceb24dad90e4e5a241c88e88b91d6fe184d688ee0f1126af6",
-      "bytes": 24108,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "f265cd651d8da4966eb58c3c53863165dfbe4e7a30fc89d23f57d26cb488d8db",
+      "bytes": 24134,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "bb73d59a841808f309e4197282aeb1f514ed581c6abeaba6022c77fbbb73e00f",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "sha256": "239d534e8176d73115e09efdf4161f54264c82c7ab47b84e86c80ba91cef69a7",
-      "bytes": 64878,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "b12a11ceb99f6959c656b253eb94dd86bc6fd0bca0cb7b83fc41a2e96f28085f",
+      "bytes": 68983,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -2992,9 +2992,9 @@
       "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/gym12-native/provider.mjs": {
-      "sha256": "cf664b06126bbce8bc53801dd958e62e1da810bf00a36639b6ea575ac6bc2f4d",
-      "bytes": 5414,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "efb38ff8252336f9ee6aa3e8e86b895aebdcc4a1a8768e84266958e22cf5aec8",
+      "bytes": 8429,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
     },
     "dist/development/gym12-native/registration.mjs": {
       "sha256": "5e719fef4624a4ccaeb9896ea8a29feab09d09dc045eda4cf5d978026e3efd3a",
@@ -3022,9 +3022,9 @@
       "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/gym12-presentation/provider.mjs": {
-      "sha256": "9829e6346d0ac4e13ccd5a3756075b2412d45c80ad2ac6524dfacd74b69257fc",
-      "bytes": 3959,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "668cf23b360a1175746cb22f7ec7c1798287f654136e3ef23b3ded9bfcada76a",
+      "bytes": 4032,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
     },
     "dist/development/hacheong-brackish/s1-harin-pins.mjs": {
       "sha256": "46cc72dae291b3bad48cba68299954aa5f7b917053fd1dc01f98003914c37223",
@@ -3264,23 +3264,72 @@
       "bytes": 1178,
       "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
       "originalPath": "dist/development/jungle-native/main_ui_candidate/s1-stage-intermediate.mjs"
+    },
+    "dist/development/prologue-native/support-r3.mjs": {
+      "sha256": "d55c61032724314b18afe5c093f2b2e7485f9bd18877a338a88ff88059b53599",
+      "bytes": 3369,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/prologue-areas/support-r3.mjs": {
+      "sha256": "a5bd2737f1227bbd9fde502ecf411d2a46580f93b9f35a92d5eb079979d7e0b6",
+      "bytes": 3530,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/jungle-native/main_ui_candidate/lazy-renderer-r3.mjs": {
+      "sha256": "c5f3511eab8a750b48b28c79361f687be1baee52dd33e70e419c6b76a931ad60",
+      "bytes": 1841,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/jungle-native/main_ui_candidate/lazy-old-scenes-r3.mjs": {
+      "sha256": "bd1851cc29edc8b5f306e2d5848237e5f594f4c60790eca1bb2df642a0b67b19",
+      "bytes": 2422,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/jungle-native/main_ui_candidate/lazy-jungle-r3.mjs": {
+      "sha256": "96fa0669d3493153e0428fd625362b811ace645d029c4936939cebe14a96ad74",
+      "bytes": 3136,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/jungle-native/main_ui_candidate/verified-support-closure-r3.mjs": {
+      "sha256": "f6941af25bcd846eb7258acdf7f56a90840b5c797e9105640a427a8cf37def6b",
+      "bytes": 1222,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/jungle-native/main_ui_candidate/jungle-support-r3.mjs": {
+      "sha256": "394505b38febab62bad070602a97ec1335b399e2fd6118ab4f06a75dd0261d3b",
+      "bytes": 3502,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/jungle-native/main_ui_candidate/SUPPORT_CLOSURE_R3.json": {
+      "sha256": "36752c7794b6c3559df799faeebc6b9e8e4e1e16fe712a709940f1bbf7a02f3a",
+      "bytes": 29108,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/jungle-native/gym5_native_candidate/support-r3.mjs": {
+      "sha256": "c1d03d77eaaab743ff94d10e6aea9c09c18b373da749ff09ed045ad3f7e1b3aa",
+      "bytes": 2408,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+    },
+    "dist/development/gym-frame-allocation/animation.mjs": {
+      "sha256": "38b9d648c4a4afed5de001dcd5b15b2763f5b400a41aaba7c87d82909336ca94",
+      "bytes": 1479,
+      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
     }
   },
-  "revision": "NEW_REBUILD_R2",
-  "previous_public_commit": "695d8bbfea4d327195dbfe55c5a67b2dbe572f37",
-  "revision_source_manifest_sha256": "8cab772d68238a37b43eb2703761c342d023e8312b4eac9a6f1384734a286f42",
-  "revision_scope": "S1 RIVAL_01 and GYM1 native integration and strict persistence. Actual partial functional PASS; PERFORMANCE_HOLD; gym return journey unfinished. GYM2 dormant, S2 routes not integrated. Not exact lost code.",
+  "revision": "NEW_REBUILD_PERFORMANCE",
+  "previous_public_commit": "eefcca385ff586dea02db0158df9d9ae79057c8e",
+  "revision_source_manifest_sha256": "6b188faaf898f88afbc424e3207024a1fff375004e2735c8b3dcd31617dd4f52",
+  "revision_scope": "Installed performance code; bounded actual QA on Node-earned Lv100 fixture. DAY36.3ms/NIGHT38.1ms means; 500ms movement65/61px; return/restore/reader PASS. Coldload/restore/NIGHT spikes HOLD and5baseline aggregate failures remain. Not full fresh journey.",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
-      "status": "ISOLATED_COMBINED_CANDIDATE_NOT_INSTALLED",
+      "status": "PRESERVED_ORIGINAL_CANDIDATE_SHELF_NOW_PROMOTED_TO_ACTIVE_DIST",
       "source_manifest_sha256": "6b188faaf898f88afbc424e3207024a1fff375004e2735c8b3dcd31617dd4f52",
       "components_manifest_sha256": [
         "36fe5e9d255359b423b8c6d335e68e363b653030bb18fd271307343e27bdc681",
         "72d59e9b11d4cdaacd51bacf7df2a18a391aef2b1ff30e4a3553c886c69cbb13",
         "8352ec9c68a62607e40210c08e38100a2d3522f282c0d3fd1107f8029d104a21"
       ],
-      "validation": "R3 bounded S1 restore browser PASS; combined actual validation pending; GYM frame PERFORMANCE_HOLD until combined validation; aggregate retains 5 baseline failures",
       "files": [
         "candidates/NEW_REBUILD_PERFORMANCE/dist/development/prologue-native/support-r3.mjs",
         "candidates/NEW_REBUILD_PERFORMANCE/dist/development/prologue-areas/support-r3.mjs",
@@ -3297,7 +3346,9 @@
         "candidates/NEW_REBUILD_PERFORMANCE/dist/development/gym12-presentation/provider.mjs",
         "candidates/NEW_REBUILD_PERFORMANCE/dist/development/gym-frame-allocation/animation.mjs",
         "candidates/NEW_REBUILD_PERFORMANCE/dist/development/jungle-native/main_ui_candidate/review-host.mjs"
-      ]
+      ],
+      "validationAtShelfCreation": "R3 bounded S1 restore browser PASS; combined actual validation pending; GYM frame PERFORMANCE_HOLD until combined validation; aggregate retains 5 baseline failures",
+      "currentPromotion": "exact15files promoted to active code; bounded actual PASS, latency/spike HOLD remains"
     },
     "NEW_REBUILD_FOREST": {
       "status": "INDEPENDENT_REVIEW_PASS_ISOLATED_NOT_INSTALLED",
