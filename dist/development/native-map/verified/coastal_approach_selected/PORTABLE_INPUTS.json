@@ -1,0 +1,8 @@
+{
+  "originalSource": "../jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/public_quay_paving_candidate_r2/Jangmok_PUBLIC_QUAY_PAVING_CLEANUP_CANDIDATE_R2.png",
+  "originalSafe": "original_safe49.u8",
+  "newSafe": "new_safe49.u8",
+  "combinedSafe": "combined_safe49.u8",
+  "rootSelection": "ROOT_SELECTION.json",
+  "sourceReportAbsolutePaths": "Historical authoring paths in CANDIDATE/build script identify inputs, not runtime fetch paths. This portable mapping is authoritative for the bundle."
+}

@@ -1,0 +1,11 @@
+import {BIRD as r} from './registration.mjs';import {ENV} from './environment.mjs';
+import {prepareBirdSupport,pinnedBytes} from './support.mjs';import {createRenderer} from './renderer.mjs';
+export async function prepareBirdRegion({signal,fetcher=fetch,decode=b=>createImageBitmap(new Blob([b],{type:'image/png'})),canvasFactory=(w,h)=>new OffscreenCanvas(w,h)}={}){
+ let closed=false,bitmap=null,support=null,frame=null,canvas=null;
+ const dispose=()=>{if(closed)return;closed=true;bitmap?.close();bitmap=null;support?.dispose();frame=null;if(canvas)canvas.width=canvas.height=1;canvas=null;signal?.removeEventListener('abort',dispose)};
+ try{support=await prepareBirdSupport({signal,fetcher});bitmap=await decode(await pinnedBytes(r.image,{signal,fetcher}));if(signal?.aborted)throw Error('BIRD_ABORTED');if(bitmap.width!==r.size[0]||bitmap.height!==r.size[1])throw Error('BIRD_IMAGE_SIZE');canvas=canvasFactory(...r.size);const ctx=canvas.getContext('2d');ctx.drawImage(bitmap,0,0);const pixels=ctx.getImageData(0,0,...r.size).data;bitmap.close();bitmap=null;canvas.width=canvas.height=1;canvas=null;
+ const load=async name=>{const p=ENV.files.find(p=>p.path===name);if(!p)throw Error('BIRD_ENV_PIN');return pinnedBytes({file:name,sha256:p.sha256},{signal,fetcher})};const layers=[];for(const name of ['water','leaf'])layers.push({ids:new Uint32Array(await load(name+'.u32')),rgb:new Uint8Array(await load(name+'64.rgb'))});const light={ids:new Uint32Array(await load('light.u32')),trans:new Float64Array(await load('light.f64'))};frame=createRenderer(ENV,pixels,layers,light);if(signal?.aborted)throw Error('BIRD_ABORTED');signal?.addEventListener('abort',dispose,{once:true});
+ }catch(e){dispose();throw e}
+ function render(camera,t=0,options={}){if(closed)throw Error('BIRD_DISPOSED');if(!Number.isFinite(t)||t<0)throw Error('BIRD_TIME');if(!Array.isArray(camera)||camera.length!==4||camera[2]<1||camera[3]<1)throw Error('BIRD_CAMERA');return frame(camera,t,options)}
+ return Object.freeze({...support,registration:r,get pinsVerified(){return !closed},render,draw(ctx,{camera=[0,0,960,540],elapsedMs=0,nightMix=0,lights=true}={}){const pixels=render(camera,elapsedMs,{nightMix,lighting:lights});const image=ctx.createImageData(camera[2],camera[3]);image.data.set(pixels);ctx.putImageData(image,0,0)},dispose});
+}

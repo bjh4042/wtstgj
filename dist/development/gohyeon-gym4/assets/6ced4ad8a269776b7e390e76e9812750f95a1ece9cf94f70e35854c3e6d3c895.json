@@ -1,0 +1,19 @@
+{
+  "status": "ROOT_SELECTED_ALL_FIVE_REGIONS_AND_NATIVE_COPY",
+  "at": "2026-10-29T09:12:17Z",
+  "npcNativeDistance": 72,
+  "npcFacing": "up",
+  "sourceCanonicalDistance": 48,
+  "observationProximityHints": [
+    "벽그림의 방문 안내 확인",
+    "책장 옆 방문 확인"
+  ],
+  "presentationOnlyCorrection": [
+    "대기석 옆 안내를 확인한 뒤, 오른쪽 방의 책장 옆에서 방문을 확인하세요.",
+    "방문 확인이 끝났습니다. 안내에 따라 관장실로 이동하세요."
+  ],
+  "commonStoryTextChanged": false,
+  "newPuzzle": false,
+  "observationGeometry": "Selected by root after independent geometry and visible cue QA 2026-10-29T09:13:54Z",
+  "proposalSHA256": "448ec0c27a89d073040b16cd24c8543721287d029435100f08bb717c7a88c130"
+}

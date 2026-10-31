@@ -1,0 +1,384 @@
+{
+  "entry": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/index.html",
+  "frozen_original_inputs": 39,
+  "R3_consumer_inputs": 36,
+  "all_actual_SHA_match": true,
+  "files": [
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/west.png",
+      "sha256": "7febfdff117913f61044e6982de9822793b4914f8ee5fd3f14201da5e2a36a7c",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor9.png",
+      "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b4.mjs",
+      "sha256": "6152b935668508897335f0f5d29cfc3896311a41d90e3eba594561b8587b357f",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b2.mjs",
+      "sha256": "ade2101e4c1f6b105d98f0c0c16767dc50b411c476c095c484f1ca8b78f9c0b1",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b1.mjs",
+      "sha256": "ea869ad7be40ef3b19c7a0e859d1cdc49349d0bcecff1a17f04e084580a7ed86",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/derived.json",
+      "sha256": "4aaba442ab7596eb002e72cc301a4249c22246687201bcf8b8afc3deb1307ed3",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor2.png",
+      "sha256": "917c2b1e0725f38880e0aef0394733582dd362bb67c629bd7510b69d8c13b143",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b3.mjs",
+      "sha256": "dd3f7885e56b6f79b1982bbff7085e80ddbe7a58287252d1d0e4e797455c65f9",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor1.png",
+      "sha256": "d499c2a2c88fb3827137027bf2acd9f31d1cf46c0f8410195ec44ef9b0f04804",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/safe49-full.png",
+      "sha256": "480d2f02c2b84b64acb6c9c50ac3279023fe697af899aeb54f9b2a3317474f10",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/west_boat_inner_post_source_alpha.png",
+      "sha256": "9c00982f141958e5881421e3f8297f98f29df7cc43a6f7af049df7f7b0f3c59b",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b2_contract.json",
+      "sha256": "a335036107ba3f64e918f310188a2e76f16c516d106858a7f70aca19e2fbb41a",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/bird.png",
+      "sha256": "042c0b69b561193a16c11d4e2698477c15ea4567801069a3fe4c306658f4697a",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/east_cabinet_source_alpha.png",
+      "sha256": "c857754bedb43a56467fecab4518fd1147647c85d043aa92dfc606f5f47468a8",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/MANIFEST.json",
+      "sha256": "b58d39a66ec3584a1c0b65bc55878dc492cd596a2f45f558f53761a5cb237c45",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor0.png",
+      "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor6.png",
+      "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/index.html",
+      "sha256": "667f19de38839f230ecf3c0cb513b581c9f15113ba3601f0d6b654d8a45c27c7",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor11.png",
+      "sha256": "ef5a1f12a5b8461edfef9946e89f0b11c300109eb5f5efdf8e2fcae9b933b91c",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/coast.png",
+      "sha256": "25c6e7e3f953e18a19f4bd9d498f1572451ffd9fbc2115c873908bfa98800e80",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/page.mjs",
+      "sha256": "45af21a3b9643752e33a69acb15a01e49d039d90f2e654877e0e7bec2a486571",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor3.png",
+      "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/derived_water.mjs",
+      "sha256": "2214d55ff7b3460cd98166af0bdf2450c17ad5bd38e496453850e6485b1d377a",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor7.png",
+      "sha256": "57ce0a9e6344dff2609fe13d7d614c9e1a043d8349db60a9ba5ba806aba5bf12",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor10.png",
+      "sha256": "066bc3241e8d408d5dc4a0b58a38c53e5d8f0d024288731c4d15ddcac685c44c",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor4.png",
+      "sha256": "d5c402bab7484c5d85a9c0031f1fb5ef2425d81f595a60cbfc31cb8bab59a5c1",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/east.png",
+      "sha256": "8457c553a1442bfb15ca7e8755812a49aaf54b5cda8c110ae76743e51bc2aff5",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor5.png",
+      "sha256": "0dc792dde0eaba036bd77e8f8083c023ccc3076d42acd2397c6250451d31bd27",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor8.png",
+      "sha256": "7f35af79d2d64af5c05ee08bac386fa7f7c6a66a97283851d1f927b30ed71cda",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/public_quay_paving_candidate_r2/Jangmok_PUBLIC_QUAY_PAVING_CLEANUP_CANDIDATE_R2.png",
+      "sha256": "48e2b1289016299208667b4f5e13152b652756e3f5b2eae561f04454651c53f0",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_water_gate_plan_20261027/water_revision_r1/world_indices.u32",
+      "sha256": "71c61299219d2724a7daa73661ca6a8c3ab143afd41f1447fae2bc1d735411df",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_water_gate_plan_20261027/water_revision_r1/water48.rgb",
+      "sha256": "5af36b9fed77125e2c7ea503d7ec5c2b527e99a3326a80abe164d59317a09b09",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_next_boat_readonly_20261027/b1_motion_candidate_r1/indices.u32",
+      "sha256": "41d739998574efa989068ba0b6dbfd4ec12993ceae53bd43447096e9b50cb91c",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_next_boat_readonly_20261027/b1_motion_candidate_r1/frames96.rgb",
+      "sha256": "430519cb8fb81b3bbb41072555784d93ae9c4863701a77be30ab587c9b638308",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_next_boat_readonly_20261027/b3_bob_candidate_r5/RUNTIME_PINS.json",
+      "sha256": "949d778ebdcd6d314828ef6dd68dab3a69f786ab4c6e713625011b4699d3769c",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_next_boat_readonly_20261027/b3_bob_candidate_r5/B3_BOB_OVERLAY_ATLAS_96.png",
+      "sha256": "9fe345a78b7f9489b8eadbc7374c171b08d5efd3a9a80ef3445d2246f40ba6ee",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_b4_bob_candidate_r1/indices.u32",
+      "sha256": "3aaf1325b0b5559c3313397249cdae114e5344f2a431b2d97c0c10b067157853",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_b4_bob_candidate_r1/frames96.rgb",
+      "sha256": "cfa468209222f3f3f6df8241dfd15d16a8daed9cee599b0ce485f0e807bc6873",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_boat_separation_plan_r1/bob_candidate_r1/B2_BOB_GATE_OVERLAY_ATLAS_96.png",
+      "sha256": "4d2092cae0230de35163a684cf652aa7dfd87abf91e570b2e8feb6c794251ca8",
+      "role": "frozen_original"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/MANIFEST.json",
+      "sha256": "b58d39a66ec3584a1c0b65bc55878dc492cd596a2f45f558f53761a5cb237c45",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor0.png",
+      "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor1.png",
+      "sha256": "d499c2a2c88fb3827137027bf2acd9f31d1cf46c0f8410195ec44ef9b0f04804",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor10.png",
+      "sha256": "066bc3241e8d408d5dc4a0b58a38c53e5d8f0d024288731c4d15ddcac685c44c",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor11.png",
+      "sha256": "ef5a1f12a5b8461edfef9946e89f0b11c300109eb5f5efdf8e2fcae9b933b91c",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor2.png",
+      "sha256": "917c2b1e0725f38880e0aef0394733582dd362bb67c629bd7510b69d8c13b143",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor3.png",
+      "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor4.png",
+      "sha256": "d5c402bab7484c5d85a9c0031f1fb5ef2425d81f595a60cbfc31cb8bab59a5c1",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor5.png",
+      "sha256": "0dc792dde0eaba036bd77e8f8083c023ccc3076d42acd2397c6250451d31bd27",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor6.png",
+      "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor7.png",
+      "sha256": "57ce0a9e6344dff2609fe13d7d614c9e1a043d8349db60a9ba5ba806aba5bf12",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor8.png",
+      "sha256": "7f35af79d2d64af5c05ee08bac386fa7f7c6a66a97283851d1f927b30ed71cda",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/actor9.png",
+      "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b1.mjs",
+      "sha256": "ea869ad7be40ef3b19c7a0e859d1cdc49349d0bcecff1a17f04e084580a7ed86",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b2.mjs",
+      "sha256": "ade2101e4c1f6b105d98f0c0c16767dc50b411c476c095c484f1ca8b78f9c0b1",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b2_contract.json",
+      "sha256": "a335036107ba3f64e918f310188a2e76f16c516d106858a7f70aca19e2fbb41a",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b3.mjs",
+      "sha256": "dd3f7885e56b6f79b1982bbff7085e80ddbe7a58287252d1d0e4e797455c65f9",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b4.mjs",
+      "sha256": "6152b935668508897335f0f5d29cfc3896311a41d90e3eba594561b8587b357f",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/bird.png",
+      "sha256": "042c0b69b561193a16c11d4e2698477c15ea4567801069a3fe4c306658f4697a",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/coast.png",
+      "sha256": "25c6e7e3f953e18a19f4bd9d498f1572451ffd9fbc2115c873908bfa98800e80",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/day-night.mjs",
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/derived.json",
+      "sha256": "4aaba442ab7596eb002e72cc301a4249c22246687201bcf8b8afc3deb1307ed3",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/derived_water.mjs",
+      "sha256": "2214d55ff7b3460cd98166af0bdf2450c17ad5bd38e496453850e6485b1d377a",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/east.png",
+      "sha256": "8457c553a1442bfb15ca7e8755812a49aaf54b5cda8c110ae76743e51bc2aff5",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/east_cabinet_source_alpha.png",
+      "sha256": "c857754bedb43a56467fecab4518fd1147647c85d043aa92dfc606f5f47468a8",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/frame-lighting.mjs",
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/index.html",
+      "sha256": "1e4bac3a8b4d3cd0cd8577a5adc6a276cece5f4c55a724faf422a6e86dec13e0",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/lighting-MANIFEST.json",
+      "sha256": "70551f1f66fe527fdbda8f207390b40d17460c7d0a63e7a70644bab4320e4b96",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/lighting-indices.u32",
+      "sha256": "9ff445a23afb843546eb6ebb739bbbbe91ce192608c5e117652099217720556f",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/lighting-transmission.f64",
+      "sha256": "8c32931b0d8360a7f2a4df9fb4aa2ce7a9f9489e812785387a212a95636ad6d7",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/monotonic-delta.mjs",
+      "sha256": "4eddbe4bee62a900cbd4f26ff7b53ceca03554dbf817b0ec7664e09adc4bc9e7",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/page.mjs",
+      "sha256": "9e7e733902d59f473cead340be7e06f805a31a11ce14d29cf45a49dcd66b1b65",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/safe49-full.png",
+      "sha256": "480d2f02c2b84b64acb6c9c50ac3279023fe697af899aeb54f9b2a3317474f10",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/screen-lighting.mjs",
+      "sha256": "f4bc8afbc3d3e60b37917bdba06bdbd1ec0ded12497964d8f2f0133a6b130eb4",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/west.png",
+      "sha256": "7febfdff117913f61044e6982de9822793b4914f8ee5fd3f14201da5e2a36a7c",
+      "role": "R3_consumer"
+    },
+    {
+      "path": "jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/west_boat_inner_post_source_alpha.png",
+      "sha256": "9c00982f141958e5881421e3f8297f98f29df7cc43a6f7af049df7f7b0f3c59b",
+      "role": "R3_consumer"
+    }
+  ],
+  "status": "UNSELECTED_PENDING_INDEPENDENT_BROWSER"
+}

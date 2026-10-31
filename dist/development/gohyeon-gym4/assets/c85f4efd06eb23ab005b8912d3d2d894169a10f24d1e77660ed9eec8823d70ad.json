@@ -1,0 +1,15 @@
+{
+ "status":"NEW_SOURCE_PIXEL_LAYER_PROPOSAL_NOT_SELECTED",
+ "gateId":"gym:4:chain-gate:3",
+ "originalPixelsChanged":false,
+ "floorAuthority":false,
+ "parts":[
+  {"id":"NORTH_FRAME","depthY":307,"polygon":[[832,273],[859,273],[859,280],[966,280],[966,271],[991,271],[991,304],[966,306],[966,304],[859,304],[859,307],[832,305]],"states":["04","05"]},
+  {"id":"LEFT_POST","depthY":452,"polygon":[[843,304],[860,304],[860,451],[843,451]],"states":["04","05"]},
+  {"id":"RIGHT_POST","depthY":452,"polygon":[[970,303],[985,303],[985,451],[970,451]],"states":["04","05"]},
+  {"id":"CLOSED_LEAF","depthY":453,"polygon":[[865,307],[963,307],[963,452],[865,452]],"states":["04"]},
+  {"id":"SOUTH_FRAME","depthY":484,"polygon":[[832,452],[859,452],[859,459],[966,459],[966,452],[992,452],[992,482],[966,483],[966,480],[859,480],[859,483],[832,482]],"states":["04","05"]}
+ ],
+ "rules":"Original selected state pixels through fitted polygons only; merge objects and actors sorted by foot/depth. Actor foot>=depth stays in front. Distinct north/south frame depths prevent restoring the entire door ROI over an actor standing in front of north frame.",
+ "limits":["New pixel tracing/depth authoring requires independent visual QA/root selection","No floor/solid changes","No restoration of legacy large rectangular ClosedOverlay ROI","Not all furniture/room foregrounds covered"]
+}

@@ -1,0 +1,612 @@
+{
+  "status": "TWO_NEW_AUTHORED_NATIVE_PAIRS_THREE_UNASSIGNED",
+  "activePairs": [
+    {
+      "id": "upper",
+      "buildingId": "jangmok_port/upper_home",
+      "identityAuthority": {
+        "selectedInterior": "map_remaining_audit/SELECTED_ASSET_HANDOFF_V3.json homesAju buildingId + current batch_r2 selected contract",
+        "exteriorThreshold": "Selected upper.entryExterior.threshold",
+        "currentExteriorSourceSHA": "48e2b1289016299208667b4f5e13152b652756e3f5b2eae561f04454651c53f0",
+        "currentSourceSelection": "jangmok_selected_delivery_r3/SELECTION_RECORD.json"
+      },
+      "crop": {
+        "file": "evidence/upper_current_exterior.png",
+        "sha256": "53b4fe350a4fa94db38f3f5f7c353d4e2b04e209e6a001d570c31f5520667e6a",
+        "cropLTRB": [
+          2800,
+          0,
+          3760,
+          780
+        ],
+        "actualPixelsInspected": true
+      },
+      "architecture": "Flat-roof modern two-storey exterior with upper balcony/windows; selected southwest1F entry and preserved stair route to2F bedroom",
+      "newAuthoredExteriorPair": {
+        "historicalThreshold": [
+          3280,
+          500
+        ],
+        "readFoot": [
+          3280,
+          535
+        ],
+        "readFacing": "up",
+        "arrival": [
+          3280,
+          600
+        ],
+        "arrivalFacing": "down",
+        "approachRoute": [
+          [
+            3280,
+            600
+          ],
+          [
+            3280,
+            599
+          ],
+          [
+            3280,
+            598
+          ],
+          [
+            3280,
+            597
+          ],
+          [
+            3280,
+            596
+          ],
+          [
+            3280,
+            595
+          ],
+          [
+            3280,
+            594
+          ],
+          [
+            3280,
+            593
+          ],
+          [
+            3280,
+            592
+          ],
+          [
+            3280,
+            591
+          ],
+          [
+            3280,
+            590
+          ],
+          [
+            3280,
+            589
+          ],
+          [
+            3280,
+            588
+          ],
+          [
+            3280,
+            587
+          ],
+          [
+            3280,
+            586
+          ],
+          [
+            3280,
+            585
+          ],
+          [
+            3280,
+            584
+          ],
+          [
+            3280,
+            583
+          ],
+          [
+            3280,
+            582
+          ],
+          [
+            3280,
+            581
+          ],
+          [
+            3280,
+            580
+          ],
+          [
+            3280,
+            579
+          ],
+          [
+            3280,
+            578
+          ],
+          [
+            3280,
+            577
+          ],
+          [
+            3280,
+            576
+          ],
+          [
+            3280,
+            575
+          ],
+          [
+            3280,
+            574
+          ],
+          [
+            3280,
+            573
+          ],
+          [
+            3280,
+            572
+          ],
+          [
+            3280,
+            571
+          ],
+          [
+            3280,
+            570
+          ],
+          [
+            3280,
+            569
+          ],
+          [
+            3280,
+            568
+          ],
+          [
+            3280,
+            567
+          ],
+          [
+            3280,
+            566
+          ],
+          [
+            3280,
+            565
+          ],
+          [
+            3280,
+            564
+          ],
+          [
+            3280,
+            563
+          ],
+          [
+            3280,
+            562
+          ],
+          [
+            3280,
+            561
+          ],
+          [
+            3280,
+            560
+          ],
+          [
+            3280,
+            559
+          ],
+          [
+            3280,
+            558
+          ],
+          [
+            3280,
+            557
+          ],
+          [
+            3280,
+            556
+          ],
+          [
+            3280,
+            555
+          ],
+          [
+            3280,
+            554
+          ],
+          [
+            3280,
+            553
+          ],
+          [
+            3280,
+            552
+          ],
+          [
+            3280,
+            551
+          ],
+          [
+            3280,
+            550
+          ],
+          [
+            3280,
+            549
+          ],
+          [
+            3280,
+            548
+          ],
+          [
+            3280,
+            547
+          ],
+          [
+            3280,
+            546
+          ],
+          [
+            3280,
+            545
+          ],
+          [
+            3280,
+            544
+          ],
+          [
+            3280,
+            543
+          ],
+          [
+            3280,
+            542
+          ],
+          [
+            3280,
+            541
+          ],
+          [
+            3280,
+            540
+          ],
+          [
+            3280,
+            539
+          ],
+          [
+            3280,
+            538
+          ],
+          [
+            3280,
+            537
+          ],
+          [
+            3280,
+            536
+          ],
+          [
+            3280,
+            535
+          ]
+        ]
+      },
+      "selectedInteriorArrival": [
+        250,
+        310
+      ],
+      "selectedInteriorReturnRead": [
+        174,
+        378
+      ],
+      "floorIds": [
+        "upper_1F",
+        "upper_2F"
+      ],
+      "newAuthoredPlacement": true,
+      "recoveredCanonicalWarp": false,
+      "support": "Current Jangmok safe49 center mask byte-derived to0/1, no re-erosion; all approach route points>0. Existing indoor selected masks and transitions unchanged."
+    },
+    {
+      "id": "family",
+      "buildingId": "jangmok_port/family_home",
+      "identityAuthority": {
+        "selectedInterior": "map_remaining_audit/SELECTED_ASSET_HANDOFF_V3.json homesAju buildingId + current batch_r2 selected contract",
+        "exteriorThreshold": "Selected family.plans[0].exteriorThresholdPreserved",
+        "currentExteriorSourceSHA": "48e2b1289016299208667b4f5e13152b652756e3f5b2eae561f04454651c53f0",
+        "currentSourceSelection": "jangmok_selected_delivery_r3/SELECTION_RECORD.json"
+      },
+      "crop": {
+        "file": "evidence/family_current_exterior.png",
+        "sha256": "59da2071df2eceb97d9d817dc35870963737629888f77b14160582412c5c56d8",
+        "cropLTRB": [
+          0,
+          780,
+          960,
+          1536
+        ],
+        "actualPixelsInspected": true
+      },
+      "architecture": "Single-storey light render/orange entry wing with south-east exterior door; selected single-floor south-east interior entry; no fabricated stairs",
+      "newAuthoredExteriorPair": {
+        "historicalThreshold": [
+          452,
+          1180
+        ],
+        "readFoot": [
+          452,
+          1215
+        ],
+        "readFacing": "up",
+        "arrival": [
+          452,
+          1260
+        ],
+        "arrivalFacing": "down",
+        "approachRoute": [
+          [
+            452,
+            1260
+          ],
+          [
+            452,
+            1259
+          ],
+          [
+            452,
+            1258
+          ],
+          [
+            452,
+            1257
+          ],
+          [
+            452,
+            1256
+          ],
+          [
+            452,
+            1255
+          ],
+          [
+            452,
+            1254
+          ],
+          [
+            452,
+            1253
+          ],
+          [
+            452,
+            1252
+          ],
+          [
+            452,
+            1251
+          ],
+          [
+            452,
+            1250
+          ],
+          [
+            452,
+            1249
+          ],
+          [
+            452,
+            1248
+          ],
+          [
+            452,
+            1247
+          ],
+          [
+            452,
+            1246
+          ],
+          [
+            452,
+            1245
+          ],
+          [
+            452,
+            1244
+          ],
+          [
+            452,
+            1243
+          ],
+          [
+            452,
+            1242
+          ],
+          [
+            452,
+            1241
+          ],
+          [
+            452,
+            1240
+          ],
+          [
+            452,
+            1239
+          ],
+          [
+            452,
+            1238
+          ],
+          [
+            452,
+            1237
+          ],
+          [
+            452,
+            1236
+          ],
+          [
+            452,
+            1235
+          ],
+          [
+            452,
+            1234
+          ],
+          [
+            452,
+            1233
+          ],
+          [
+            452,
+            1232
+          ],
+          [
+            452,
+            1231
+          ],
+          [
+            452,
+            1230
+          ],
+          [
+            452,
+            1229
+          ],
+          [
+            452,
+            1228
+          ],
+          [
+            452,
+            1227
+          ],
+          [
+            452,
+            1226
+          ],
+          [
+            452,
+            1225
+          ],
+          [
+            452,
+            1224
+          ],
+          [
+            452,
+            1223
+          ],
+          [
+            452,
+            1222
+          ],
+          [
+            452,
+            1221
+          ],
+          [
+            452,
+            1220
+          ],
+          [
+            452,
+            1219
+          ],
+          [
+            452,
+            1218
+          ],
+          [
+            452,
+            1217
+          ],
+          [
+            452,
+            1216
+          ],
+          [
+            452,
+            1215
+          ]
+        ]
+      },
+      "selectedInteriorArrival": [
+        485,
+        320
+      ],
+      "selectedInteriorReturnRead": [
+        560,
+        392
+      ],
+      "floorIds": [
+        "family_1F"
+      ],
+      "newAuthoredPlacement": true,
+      "recoveredCanonicalWarp": false,
+      "support": "Current Jangmok safe49 center mask byte-derived to0/1, no re-erosion; all approach route points>0. Existing indoor selected masks and transitions unchanged."
+    }
+  ],
+  "unassigned": [
+    {
+      "id": "coastal",
+      "buildingId": "jangmok_port/coastal_home",
+      "reason": "CURRENT_SELECTED_APPROACH_UNSUPPORTED",
+      "historicalRead": [
+        1572,
+        1375
+      ],
+      "currentSafeValue": 0,
+      "firstSupportedSouthY": 1423,
+      "missing": "Selected current doorstep approach floor support; no remote interaction across currently unsupported approach authored; does not assert a physical wall"
+    },
+    {
+      "id": "garden_home_hanok",
+      "buildingId": "jangmok_port/garden_home",
+      "reason": "CURRENT_SELECTED_APPROACH_UNSUPPORTED_AND_HISTORICAL_PROPOSAL_ONLY",
+      "historicalRead": [
+        3312,
+        1210
+      ],
+      "currentSafeValue": 0,
+      "firstSupportedSouthY": 1262,
+      "missing": "Current selected doorstep floor/explicit final exterior binding; historical R1 proposal not promoted"
+    },
+    {
+      "id": "keeper_home",
+      "buildingId": "jangmok_port/keeper_home",
+      "reason": "MISSING_CURRENT_EXTERIOR_BUILDING_DOOR_CROSSWALK",
+      "exteriorFoot": null,
+      "missing": "Explicit current-source buildingId/door anchor contract; visual similar B10 not assigned by inference"
+    }
+  ],
+  "unassignedPixelsInspected": [
+    "evidence/coastal_current_exterior.png",
+    "evidence/garden_current_exterior.png",
+    "evidence/unassigned_B10_current_exterior.png"
+  ],
+  "unassignedB10Meaning": "Exploratory visible building crop only; never assigned keeper by appearance",
+  "unassignedInteriorPixelsInspected": [
+    "coastal_1F",
+    "garden_home_hanok_1F",
+    "keeper_home_1F"
+  ],
+  "historicalProposalWarning": "coastal/garden historical proposal is not current selected nav authority; safe0 here means no inherited support, not evidence of a physical wall",
+  "newArt": false,
+  "sourceFilesModified": false,
+  "canonicalWorldSaveConnected": false,
+  "actualBrowser": "HOLD_ENVIRONMENT",
+  "separateApproachProposal": "home_approach_audit_1531 owned by recovery agent; not imported here"
+}

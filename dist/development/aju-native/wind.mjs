@@ -1,0 +1,3 @@
+const hex=x=>typeof x==='string'&&/^[a-f0-9]{64}$/.test(x);export const REV='aju-all4-leaftip085-r1';
+export function claimWind(m,c){if(!m||!c||m.enabled!==true||m.rest!==false||m.conflict!==false||m.proofVerified!==true||!['NW','NE','SW','SE'].includes(m.region)||m.revision!==REV||c.revision!==REV||!hex(m.sourceSHA)||!hex(c.sourceSHA)||m.sourceSHA!==c.sourceSHA||!hex(m.proofSHA)||!hex(c.proofSHA)||m.proofSHA!==c.proofSHA||!Number.isFinite(m.worldMs)||m.worldMs<0||!(m.applied instanceof Set)||m.applied.has('ALL4_AMBIENT'))return false;m.applied.add('ALL4_AMBIENT');return true;}
+export function windPhase(worldMs){return Math.floor((worldMs%3200)/50)}

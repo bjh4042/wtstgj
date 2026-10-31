@@ -46,7 +46,7 @@ export function applyWorldAction(s,c,r,h){if(!s.world||!h?.world||s.world.versio
  if(r.type==='move'){const{x,y,facing}=r;if(!Number.isInteger(x)||!Number.isInteger(y)||Math.abs(x-from.x)+Math.abs(y-from.y)!==1||!['up','down','left','right'].includes(facing)||!h.canOccupy(s,m.id,x,y))throw Error('WORLD_MOVEMENT_BLOCKED');s.position=cellPosition(m.id,x,y,facing);applyOriginalWalkCounters(s,d);return}
  if(r.type==='warp'){const native=h.nativeCanWarp?.(s,p);if(native===undefined)at();else if(native!==true)throw Error('NATIVE_SUMMIT_WARP_AUTHORITY_REJECTED');const target=d.maps[p.targetMapId];if(p.kind!=='warp'||!target||!worldStageAccess(s,h.story,target.stageId)||!worldGate(s,h.story,p.gate))throw Error('WORLD_GATE_LOCKED');if(d.placementPolicy&&m.kind==='league'&&target.kind!=='league'&&!s.progress.flags.MAIN_STORY_CLEAR&&s.progress.leagueWins.length)throw Error('본편 리그 연전 중에는 외부 시설로 나갈 수 없습니다.');if(!h.canOccupy(s,target.id,...p.target))throw Error('WORLD_WARP_DESTINATION_BLOCKED');s.position=cellPosition(target.id,...p.target);syncWorldLocation(s,h);s.world.warps++;s.world.routeLog.push({from:m.id,to:target.id,warpId:p.id,walkedTiles:s.world.walkedTiles});if(s.world.routeLog.length>128)s.world.routeLog.shift();return}
  if(r.type==='hidden-geoje'||r.type==='hidden-marker'){
-  at();const policy=d.placementPolicy,slot=policy?.slots.find(x=>x.slotId===(p.slotId??p.id));
+  const native=h.nativeCanHidden?.(s,p);if(native===undefined)at();else if(native!==true||r.type!=='hidden-geoje'||p?.id!=='HIDDEN_GEOJE_03'||p.mapId!=='world:area:S3_OKPO_FOREST_EDGE'||s.position.scene!==p.mapId||s.world.mapId!==p.mapId)throw Error('NATIVE_FOREST_HIDDEN_AUTHORITY_REJECTED');const policy=d.placementPolicy,slot=policy?.slots.find(x=>x.slotId===(p.slotId??p.id));
   if(!slot||!worldStageAccess(s,h.story,slot.stage)||!worldGate(s,h.story,slot.accessGate))throw Error('숨김 지점 접근 조건을 충족하지 않았습니다.');
   if(r.type==='hidden-marker'){if(p.kind!=='hidden-marker'||!slot.requiredMarkers?.includes(p.id))throw Error('Unknown hidden marker');add(s.world.interactions,p.id);return}
   if(p.kind!=='hidden-geoje')throw Error('Not hidden reward');
@@ -54,7 +54,7 @@ export function applyWorldAction(s,c,r,h){if(!s.world||!h?.world||s.world.versio
   claimHiddenGeoje(s,slot);add(s.world.interactions,p.id);return;
  }
  if(r.type==='puzzle'){
-  const native=h.nativeCanPuzzle?.(s,p);if(native===undefined)at();else if(native!==true||!((s.position.scene===p?.mapId&&s.world.mapId===p?.mapId&&((p.mapId==='world:gym:1'&&['puzzle:1:step:1','puzzle:1'].includes(p.id))||(p.mapId==='world:gym:2'&&['puzzle:2:step:1','puzzle:2:step:2','puzzle:2'].includes(p.id))))||(p?.mapId==='world:gym:5'&&['puzzle:5:step:1','puzzle:5'].includes(p?.id))||(p?.mapId==='world:gym:4'&&['puzzle:4:step:1','puzzle:4'].includes(p?.id))))throw Error('NATIVE_GYM5_PUZZLE_AUTHORITY_REJECTED');if(p.kind!=='puzzle')throw Error('Not puzzle');
+  const native=h.nativeCanPuzzle?.(s,p);if(native===undefined)at();else if(native!==true||!((s.position.scene===p?.mapId&&s.world.mapId===p?.mapId&&((p.mapId==='world:gym:1'&&['puzzle:1:step:1','puzzle:1'].includes(p.id))||(p.mapId==='world:gym:2'&&['puzzle:2:step:1','puzzle:2:step:2','puzzle:2'].includes(p.id))||(p.mapId==='world:gym:3'&&['puzzle:3:step:1','puzzle:3'].includes(p.id))))||(p?.mapId==='world:gym:5'&&['puzzle:5:step:1','puzzle:5'].includes(p?.id))||(p?.mapId==='world:gym:4'&&['puzzle:4:step:1','puzzle:4'].includes(p?.id))))throw Error('NATIVE_GYM5_PUZZLE_AUTHORITY_REJECTED');if(p.kind!=='puzzle')throw Error('Not puzzle');
   if(s.world.puzzles.includes(p.puzzleId))return; // Preserve pre-polish completed switches.
   const missing=p.requiresInteractions?.find(id=>!s.world.interactions.includes(id));
   if(missing)throw Error('먼저 '+d.points[missing].label+'을(를) 확인하세요.');
@@ -72,7 +72,7 @@ export function applyWorldAction(s,c,r,h){if(!s.world||!h?.world||s.world.versio
   [s.party[partyIndex],s.box[boxIndex]]=[s.box[boxIndex],s.party[partyIndex]];
   return;
  }
- if(r.type==='interaction'){at();add(s.world.interactions,p.id);return}
+ if(r.type==='interaction'){const native=h.nativeCanForestClue?.(s,p);if(native===undefined)at();else if(native!==true||p?.id!=='HIDDEN_GEOJE_03:clue'||p.kind!=='hidden-clue'||p.mapId!=='world:area:S3_OKPO_FOREST_EDGE'||s.position.scene!==p.mapId||s.world.mapId!==p.mapId)throw Error('NATIVE_FOREST_CLUE_AUTHORITY_REJECTED');add(s.world.interactions,p.id);return}
  if(r.type==='survey-start'){if(!s.economy.quest.active)throw Error('No survey');s.world.surveyStartTiles=s.world.walkedTiles;return}
  if(r.type==='survey-end'){if(s.economy.quest.active||!Number.isSafeInteger(s.world.surveyStartTiles))throw Error('Survey incomplete');s.world.surveyTrips.push({round:s.economy.quest.round,tiles:s.world.walkedTiles-s.world.surveyStartTiles,secondsEstimate:(s.world.walkedTiles-s.world.surveyStartTiles)*d.walkMs/1000});delete s.world.surveyStartTiles;return}throw Error('Unsupported world operation');
 }

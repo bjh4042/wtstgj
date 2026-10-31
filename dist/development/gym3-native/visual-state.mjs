@@ -1,0 +1,4 @@
+import{GYM3}from'./registration.mjs';
+// NEW_REBUILD presentation only. Original source service owns all event/reward/trainer conditions.
+export function gym3VisualState(runtime,no=3){if(no!==3||!runtime?.world||!runtime?.progress)throw Error('GYM3_CANONICAL_REQUIRED');const i=runtime.world.interactions,p=runtime.world.puzzles,won=runtime.progress.defeatedTrainers;if(!Array.isArray(i)||!Array.isArray(p)||!Array.isArray(won))throw Error('GYM3_CANONICAL_REQUIRED');const phase=p.includes('gym-switch:3')?2:i.includes('puzzle:3:step:1')?1:0;return phase*4+(won.includes('GYM_03_SUB_01')?1:0)+(won.includes('GYM_03_SUB_02')?2:0)}
+export function gym3Actors(no,state){const r=GYM3[no];if(!r?.states[state])throw Error('GYM3_STATE');return r.actors.map((a,i)=>({...a,foot:[...(i<2&&(state&1<<i)?a.aside:a.foot)]}))}

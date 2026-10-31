@@ -1,0 +1,20 @@
+{
+  "status": "ROOT_SELECTED_LOCAL_BOUNDARY_LIGHTING_DAYNIGHT_20261028_061220",
+  "method": "Exact candidate compositor offline rendering, not browser recording",
+  "sourceSHA": "f3d270e23262cde19d56f88b3dffa7330a25e11140bffbf2bcd8345ab87f36d8",
+  "video": {
+    "size": [
+      960,
+      540
+    ],
+    "fps": 20,
+    "frames": 280,
+    "seconds": 14,
+    "segments": "0–7guide glazing / west lamp / west garden cap day to night;7–14east lamp / east garden cap night to dawn"
+  },
+  "pngSize": [
+    1536,
+    1024
+  ],
+  "limits": "Two actual lamps, 3 guide glazing groups, local west/east garden endcaps only; all9 anchors remain connected to bottom return. Historical core no battle/capture/quiz; vegetation static, no new building/interior/warp, no main install/fullmap completion"
+}

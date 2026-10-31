@@ -1,0 +1,1058 @@
+{
+  "status": "NEW_CANDIDATE_NOT_INSTALLED",
+  "width": 1536,
+  "height": 1024,
+  "tileSize": 256,
+  "sourceSHA256": "ae818b9499904178dd5bad555f535101985d3bd5e209ed09efa7cf3711a31b34",
+  "periodMs": 6000,
+  "stepMs": 50,
+  "lightManifest": {
+    "approval": "ROOT_REQUESTED_CANDIDATE",
+    "sourceSHA": "ae818b9499904178dd5bad555f535101985d3bd5e209ed09efa7cf3711a31b34",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "count": 42353,
+    "lamps": [
+      {
+        "id": "entry",
+        "ground": [
+          101,
+          287
+        ],
+        "bulb": [
+          101,
+          190
+        ],
+        "visibleHeightApprox": 124
+      },
+      {
+        "id": "observation",
+        "ground": [
+          1330,
+          276
+        ],
+        "bulb": [
+          1330,
+          178
+        ],
+        "visibleHeightApprox": 125
+      }
+    ],
+    "indicesSHA": "1552d168d404fd981e99f7a7aaa6cbe9f24d589cba3bde57b39d1f6accb68944",
+    "transmissionSHA": "e951677d4a9b41d82fa3d823f5b2c41f7c8ba5239b63162a1dcb818e217d14fd"
+  },
+  "tiles": [
+    {
+      "id": 0,
+      "x": 0,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "hx": 0,
+      "hy": 0,
+      "hw": 260,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 270400
+        },
+        "labels": {
+          "offset": 270400,
+          "bytes": 270400
+        },
+        "water": {
+          "offset": 540800,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 540800,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 540800,
+          "bytes": 8372
+        },
+        "transmission": {
+          "offset": 549176,
+          "bytes": 50232
+        }
+      },
+      "file": "tile0.deflate",
+      "encodedBytes": 237969,
+      "decodedBytes": 599408,
+      "encodedSHA256": "c318a5c86414b0ebf6bce5538c778fe5f1191ca362d67f18a84b3c5a9d2523d7",
+      "decodedSHA256": "2a4f4bbf92c6273d425b7215f3c186c8e1bd0d56998d00cfcf27df090fed2182"
+    },
+    {
+      "id": 1,
+      "x": 256,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "hx": 252,
+      "hy": 0,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 549120,
+          "bytes": 0
+        }
+      },
+      "file": "tile1.deflate",
+      "encodedBytes": 221844,
+      "decodedBytes": 549120,
+      "encodedSHA256": "f283638837f9caea4e9d9543a4ff037f1e50d725b91a9428cb4c82cd4ee903df",
+      "decodedSHA256": "821457f771714805615e741196c661c77f1e7a953325fdb30b70ebc3a52a1187"
+    },
+    {
+      "id": 2,
+      "x": 512,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "hx": 508,
+      "hy": 0,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 549120,
+          "bytes": 0
+        }
+      },
+      "file": "tile2.deflate",
+      "encodedBytes": 223487,
+      "decodedBytes": 549120,
+      "encodedSHA256": "4059b6876dcb61ca73e2880973539c8743816a5877a3401c2f484b1c47909d9b",
+      "decodedSHA256": "5e98092f70a877e1b45c06ffd6ba0be1234cd8c58c1b4f5f5eed8ae1fc1b8865"
+    },
+    {
+      "id": 3,
+      "x": 768,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "hx": 764,
+      "hy": 0,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 549120,
+          "bytes": 0
+        }
+      },
+      "file": "tile3.deflate",
+      "encodedBytes": 223137,
+      "decodedBytes": 549120,
+      "encodedSHA256": "93f65856a2a04af61bbef2186e08dac5c1338f0bb48dd11ec4de90381d8678b0",
+      "decodedSHA256": "1b83fca367779f79cf477c8924bbce4502a11e01509f2a997b95ae41cb0602c7"
+    },
+    {
+      "id": 4,
+      "x": 1024,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "hx": 1020,
+      "hy": 0,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 549120,
+          "bytes": 4760
+        },
+        "transmission": {
+          "offset": 553880,
+          "bytes": 28560
+        }
+      },
+      "file": "tile4.deflate",
+      "encodedBytes": 240268,
+      "decodedBytes": 582440,
+      "encodedSHA256": "c7c911526a9ca10dad3203f7472c089446199a9e794146b3ecb60e2c6c8202b8",
+      "decodedSHA256": "a93d34f274b18f5cc417b57722332893ebb97af69b96354d29fa5acdc452171d"
+    },
+    {
+      "id": 5,
+      "x": 1280,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "hx": 1276,
+      "hy": 0,
+      "hw": 260,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 270400
+        },
+        "labels": {
+          "offset": 270400,
+          "bytes": 270400
+        },
+        "water": {
+          "offset": 540800,
+          "bytes": 37548
+        },
+        "clearance": {
+          "offset": 578352,
+          "bytes": 37548
+        },
+        "lightIndices": {
+          "offset": 615904,
+          "bytes": 16904
+        },
+        "transmission": {
+          "offset": 632808,
+          "bytes": 101424
+        }
+      },
+      "file": "tile5.deflate",
+      "encodedBytes": 291712,
+      "decodedBytes": 734232,
+      "encodedSHA256": "01b1dacc405041bfb4d1b321ca3f27fe5a5dab8eaf583b04d57193f1b124790b",
+      "decodedSHA256": "a91aa9da00c3c938e98f674f8e4f2104b7c6bce9d056f0d1ab331917bb513fd9"
+    },
+    {
+      "id": 6,
+      "x": 0,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "hx": 0,
+      "hy": 252,
+      "hw": 260,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 549120,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 549120,
+          "bytes": 48028
+        },
+        "transmission": {
+          "offset": 597152,
+          "bytes": 288168
+        }
+      },
+      "file": "tile6.deflate",
+      "encodedBytes": 340233,
+      "decodedBytes": 885320,
+      "encodedSHA256": "afc8228861d893dd62d86e132e9c9ebf462e142a3582d8ab1642349c5cc5ea5d",
+      "decodedSHA256": "ccc2fb37dee53fcc73288580ff825627ed6484b2b69dbc6e234f8fc64872f79c"
+    },
+    {
+      "id": 7,
+      "x": 256,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "hx": 252,
+      "hy": 252,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 557568,
+          "bytes": 2100
+        },
+        "transmission": {
+          "offset": 559672,
+          "bytes": 12600
+        }
+      },
+      "file": "tile7.deflate",
+      "encodedBytes": 219870,
+      "decodedBytes": 572272,
+      "encodedSHA256": "811e060011f6aeda2a8e6eaa160a65c11e171a123c9189f4829350b2c3134abb",
+      "decodedSHA256": "f05f83948aba164f7a5755823e1f7ec84de1d09a69a1f1c8435a8c893cb1934c"
+    },
+    {
+      "id": 8,
+      "x": 512,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "hx": 508,
+      "hy": 252,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 557568,
+          "bytes": 0
+        }
+      },
+      "file": "tile8.deflate",
+      "encodedBytes": 205508,
+      "decodedBytes": 557568,
+      "encodedSHA256": "86b64ecaa3f89bc555f34321f026165de3c0ef67f984605fb1925d596e71099e",
+      "decodedSHA256": "1b6d7838bd6393e9614106d21ac2a503ed9809c431fb8f0d1209548ac9f6f0cc"
+    },
+    {
+      "id": 9,
+      "x": 768,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "hx": 764,
+      "hy": 252,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 557568,
+          "bytes": 0
+        }
+      },
+      "file": "tile9.deflate",
+      "encodedBytes": 210402,
+      "decodedBytes": 557568,
+      "encodedSHA256": "3b432bc21be6531f022ac5b2804fe03b0614c2daf160531f82725dffcedb353c",
+      "decodedSHA256": "532cb927dd1fd05c8de92b69fae30b1a5652739b539fb962e8fe30d3bc457076"
+    },
+    {
+      "id": 10,
+      "x": 1024,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "hx": 1020,
+      "hy": 252,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 557568,
+          "bytes": 34920
+        },
+        "transmission": {
+          "offset": 592488,
+          "bytes": 209520
+        }
+      },
+      "file": "tile10.deflate",
+      "encodedBytes": 324252,
+      "decodedBytes": 802008,
+      "encodedSHA256": "6ce21b1bb09583e38360542cabed66761e399b920abea271adaf6bb8969ac45d",
+      "decodedSHA256": "4a3aa62c76bb78f34716714763f214fdd16c8d037192cb7fa19a9ab3a9d75d91"
+    },
+    {
+      "id": 11,
+      "x": 1280,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "hx": 1276,
+      "hy": 252,
+      "hw": 260,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 180
+        },
+        "clearance": {
+          "offset": 549304,
+          "bytes": 180
+        },
+        "lightIndices": {
+          "offset": 549488,
+          "bytes": 54328
+        },
+        "transmission": {
+          "offset": 603816,
+          "bytes": 325968
+        }
+      },
+      "file": "tile11.deflate",
+      "encodedBytes": 369488,
+      "decodedBytes": 929784,
+      "encodedSHA256": "247d8343d5471541ad9d5429331318ee5a3f8a1ad1c7fbd376ae5f035a041e2b",
+      "decodedSHA256": "722c2493aa704c6741d77f3728ed2dbe6327f3c214ace3a6048b0a1e4d6d3d73"
+    },
+    {
+      "id": 12,
+      "x": 0,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "hx": 0,
+      "hy": 508,
+      "hw": 260,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 5604
+        },
+        "clearance": {
+          "offset": 554728,
+          "bytes": 5604
+        },
+        "lightIndices": {
+          "offset": 560336,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 560336,
+          "bytes": 0
+        }
+      },
+      "file": "tile12.deflate",
+      "encodedBytes": 233482,
+      "decodedBytes": 560336,
+      "encodedSHA256": "dc2e8ceb40e55ee3612ca4c0ee91b8e68fe010e60b636c3fdc0e58ed5e419e37",
+      "decodedSHA256": "c4594f6c08ca8db71d761f44ea78d5a34cb58df65ddfc12b72f62f2422ffa223"
+    },
+    {
+      "id": 13,
+      "x": 256,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "hx": 252,
+      "hy": 508,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 9248
+        },
+        "clearance": {
+          "offset": 566816,
+          "bytes": 9248
+        },
+        "lightIndices": {
+          "offset": 576064,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 576064,
+          "bytes": 0
+        }
+      },
+      "file": "tile13.deflate",
+      "encodedBytes": 238961,
+      "decodedBytes": 576064,
+      "encodedSHA256": "4118b1299141e61589b905d88f53551db4cad9b2d9743564bb335424ed18c1b7",
+      "decodedSHA256": "62bf6510249859663bce87ffc8fdd9b80a0df8c6968056d5cb17481aa9e49c98"
+    },
+    {
+      "id": 14,
+      "x": 512,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "hx": 508,
+      "hy": 508,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "clearance": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "lightIndices": {
+          "offset": 557568,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 557568,
+          "bytes": 0
+        }
+      },
+      "file": "tile14.deflate",
+      "encodedBytes": 216332,
+      "decodedBytes": 557568,
+      "encodedSHA256": "d211dc391181f133df6892fd0baacd87adc64388c588b496e68e35d1bf061695",
+      "decodedSHA256": "02c635c02cbbae50aa7ae153b6b8f76251214fd58b3cfa394e8ad86bf179c573"
+    },
+    {
+      "id": 15,
+      "x": 768,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "hx": 764,
+      "hy": 508,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 2136
+        },
+        "clearance": {
+          "offset": 559704,
+          "bytes": 2136
+        },
+        "lightIndices": {
+          "offset": 561840,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 561840,
+          "bytes": 0
+        }
+      },
+      "file": "tile15.deflate",
+      "encodedBytes": 216659,
+      "decodedBytes": 561840,
+      "encodedSHA256": "b6798f2bc145572e5f87f0abda9a093cb9ed896417a38e76efc4453c1bda6142",
+      "decodedSHA256": "6565ed500c7b189579a9c50aac26bf5b96cd83de7e5565a9fb3154f9204c6827"
+    },
+    {
+      "id": 16,
+      "x": 1024,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "hx": 1020,
+      "hy": 508,
+      "hw": 264,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 278784
+        },
+        "labels": {
+          "offset": 278784,
+          "bytes": 278784
+        },
+        "water": {
+          "offset": 557568,
+          "bytes": 55440
+        },
+        "clearance": {
+          "offset": 613008,
+          "bytes": 55440
+        },
+        "lightIndices": {
+          "offset": 668448,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 668448,
+          "bytes": 0
+        }
+      },
+      "file": "tile16.deflate",
+      "encodedBytes": 275862,
+      "decodedBytes": 668448,
+      "encodedSHA256": "8609ee7ecec5155d61b5537adb369a41bfdbcc862e496c71af486d0f7ac68495",
+      "decodedSHA256": "ac9c26534f9e6d2893f6c3847c75702d57c46f99ed8fc1659cdb8ed3aab77a9c"
+    },
+    {
+      "id": 17,
+      "x": 1280,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "hx": 1276,
+      "hy": 508,
+      "hw": 260,
+      "hh": 264,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 146736
+        },
+        "clearance": {
+          "offset": 695856,
+          "bytes": 146736
+        },
+        "lightIndices": {
+          "offset": 842592,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 842592,
+          "bytes": 0
+        }
+      },
+      "file": "tile17.deflate",
+      "encodedBytes": 325755,
+      "decodedBytes": 842592,
+      "encodedSHA256": "9d43438254af478910667ff52bb319f9c1a84450c7ee062e3c33b91b6c0ff902",
+      "decodedSHA256": "0e464f3c05db135657fbbbbe8bab16b1a9f3e46ab1182bbfd7d048f816646d0b"
+    },
+    {
+      "id": 18,
+      "x": 0,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "hx": 0,
+      "hy": 764,
+      "hw": 260,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 270400
+        },
+        "labels": {
+          "offset": 270400,
+          "bytes": 270400
+        },
+        "water": {
+          "offset": 540800,
+          "bytes": 205384
+        },
+        "clearance": {
+          "offset": 746184,
+          "bytes": 205384
+        },
+        "lightIndices": {
+          "offset": 951568,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 951568,
+          "bytes": 0
+        }
+      },
+      "file": "tile18.deflate",
+      "encodedBytes": 350925,
+      "decodedBytes": 951568,
+      "encodedSHA256": "7b2251f92e3f02ca17514b797d7dcfa16191f9d0f267f87589ff9a7f81f7d7fd",
+      "decodedSHA256": "44bc2c91f6c8aad5bbc60d7b7dd001b0459b7fcd1154e86f7e3a00aab3fb72b1"
+    },
+    {
+      "id": 19,
+      "x": 256,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "hx": 252,
+      "hy": 764,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 124032
+        },
+        "clearance": {
+          "offset": 673152,
+          "bytes": 124032
+        },
+        "lightIndices": {
+          "offset": 797184,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 797184,
+          "bytes": 0
+        }
+      },
+      "file": "tile19.deflate",
+      "encodedBytes": 314950,
+      "decodedBytes": 797184,
+      "encodedSHA256": "4ba5ae8a08fc9dabc7bcfaf4b5c6af5d429fe19400b06c64cc73f00a38eeb201",
+      "decodedSHA256": "3fed385d38f36a29833ca4acfa53a37239c9e6106e28ca6d52df09128b5a97a2"
+    },
+    {
+      "id": 20,
+      "x": 512,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "hx": 508,
+      "hy": 764,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 61600
+        },
+        "clearance": {
+          "offset": 610720,
+          "bytes": 61600
+        },
+        "lightIndices": {
+          "offset": 672320,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 672320,
+          "bytes": 0
+        }
+      },
+      "file": "tile20.deflate",
+      "encodedBytes": 264420,
+      "decodedBytes": 672320,
+      "encodedSHA256": "bb17bfd479e8a5ab34dedd92c5caff0108f09a0ce921b66b531d63c5417fa1f8",
+      "decodedSHA256": "d035f70742409028ebd07cb791b3053f1176282d717b42dcea442e4c367daf0c"
+    },
+    {
+      "id": 21,
+      "x": 768,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "hx": 764,
+      "hy": 764,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 70596
+        },
+        "clearance": {
+          "offset": 619720,
+          "bytes": 70596
+        },
+        "lightIndices": {
+          "offset": 690320,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 690320,
+          "bytes": 0
+        }
+      },
+      "file": "tile21.deflate",
+      "encodedBytes": 273319,
+      "decodedBytes": 690320,
+      "encodedSHA256": "0cfd21f28a161a7e8d21ff169c981ce563b55027b5806fa3077aaeeffccc6ae9",
+      "decodedSHA256": "a1306d65eb19ec6b7f3d5e383e6445ffeb8c4a9e9ec294bd57045304ccacaf7d"
+    },
+    {
+      "id": 22,
+      "x": 1024,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "hx": 1020,
+      "hy": 764,
+      "hw": 264,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 274560
+        },
+        "labels": {
+          "offset": 274560,
+          "bytes": 274560
+        },
+        "water": {
+          "offset": 549120,
+          "bytes": 111728
+        },
+        "clearance": {
+          "offset": 660848,
+          "bytes": 111728
+        },
+        "lightIndices": {
+          "offset": 772576,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 772576,
+          "bytes": 0
+        }
+      },
+      "file": "tile22.deflate",
+      "encodedBytes": 307804,
+      "decodedBytes": 772576,
+      "encodedSHA256": "b834589ebc408e883eb76eace31b2676735dcd7409a260a5035719655ab9b40b",
+      "decodedSHA256": "fdd94e0bcdb78d0b1dd186aefe102d1af5868a7edd3769a3492af69d9210a8cd"
+    },
+    {
+      "id": 23,
+      "x": 1280,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "hx": 1276,
+      "hy": 764,
+      "hw": 260,
+      "hh": 260,
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 270400
+        },
+        "labels": {
+          "offset": 270400,
+          "bytes": 270400
+        },
+        "water": {
+          "offset": 540800,
+          "bytes": 222724
+        },
+        "clearance": {
+          "offset": 763528,
+          "bytes": 222724
+        },
+        "lightIndices": {
+          "offset": 986256,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 986256,
+          "bytes": 0
+        }
+      },
+      "file": "tile23.deflate",
+      "encodedBytes": 358920,
+      "decodedBytes": 986256,
+      "encodedSHA256": "21e41dc57513f2fb2846096dd83ee3d8e82498ea9522c1aaef6fa5c5a7c8c62f",
+      "decodedSHA256": "a65c5296f402c0e1956af3a4077a5b11616f085aa97b29453a972aa59945448e"
+    }
+  ],
+  "totalEncodedBytes": 6485559,
+  "totalDecodedBytes": 16505032
+}

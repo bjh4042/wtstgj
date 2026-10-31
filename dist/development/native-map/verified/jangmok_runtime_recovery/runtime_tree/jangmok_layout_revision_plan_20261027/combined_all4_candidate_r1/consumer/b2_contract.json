@@ -1,0 +1,16 @@
+{
+  "revision": "JANGMOK_COMBINED_B2_R1",
+  "source": {
+    "sha256": "48e2b1289016299208667b4f5e13152b652756e3f5b2eae561f04454651c53f0"
+  },
+  "state": "CURRENT_SELECTED",
+  "owner": "JANGMOK_B2_BOB",
+  "gateCount": 32352,
+  "frames": 96,
+  "width": 5120,
+  "height": 1536,
+  "atlasSHA": "4d2092cae0230de35163a684cf652aa7dfd87abf91e570b2e8feb6c794251ca8",
+  "atlas": "../../../jangmok_boat_separation_plan_r1/bob_candidate_r1/B2_BOB_GATE_OVERLAY_ATLAS_96.png",
+  "clock": "existing worldMs/sharedPhase only",
+  "baseline": "separately selected B2 R1"
+}

@@ -1,0 +1,184 @@
+{
+  "build": "AJU_FOUR_AUTHORED_MAP_ONLY_R1",
+  "regions": {
+    "NW": {
+      "origin": [
+        390,
+        170
+      ],
+      "bounds": {
+        "center": [
+          530,
+          275
+        ],
+        "north": [
+          561,
+          246
+        ],
+        "south": [
+          453,
+          295
+        ],
+        "west": [
+          429,
+          287
+        ],
+        "east": [
+          585,
+          259
+        ]
+      },
+      "squareCenter": [
+        530,
+        275
+      ],
+      "route": [
+        [
+          440,
+          273
+        ],
+        [
+          490,
+          273
+        ]
+      ],
+      "routeTransitions": 4,
+      "supportCount": 2875
+    },
+    "NE": {
+      "origin": [
+        955,
+        190
+      ],
+      "bounds": {
+        "center": [
+          1090,
+          280
+        ],
+        "north": [
+          1087,
+          240
+        ],
+        "south": [
+          1124,
+          294
+        ],
+        "west": [
+          1051,
+          259
+        ],
+        "east": [
+          1147,
+          274
+        ]
+      },
+      "squareCenter": [
+        1090,
+        281
+      ],
+      "route": [
+        [
+          1063,
+          280
+        ],
+        [
+          1113,
+          280
+        ]
+      ],
+      "routeTransitions": 3,
+      "supportCount": 2075
+    },
+    "SW": {
+      "origin": [
+        395,
+        390
+      ],
+      "bounds": {
+        "center": [
+          512,
+          484
+        ],
+        "north": [
+          508,
+          438
+        ],
+        "south": [
+          512,
+          496
+        ],
+        "west": [
+          449,
+          450
+        ],
+        "east": [
+          573,
+          486
+        ]
+      },
+      "squareCenter": [
+        512,
+        490
+      ],
+      "route": [
+        [
+          489,
+          484
+        ],
+        [
+          539,
+          484
+        ]
+      ],
+      "routeTransitions": 4,
+      "supportCount": 2946
+    },
+    "SE": {
+      "origin": [
+        955,
+        395
+      ],
+      "bounds": {
+        "center": [
+          1092,
+          493
+        ],
+        "north": [
+          1150,
+          468
+        ],
+        "south": [
+          1167,
+          502
+        ],
+        "west": [
+          1080,
+          481
+        ],
+        "east": [
+          1201,
+          498
+        ]
+      },
+      "squareCenter": [
+        1098,
+        479
+      ],
+      "route": [
+        [
+          1115,
+          498
+        ],
+        [
+          1165,
+          498
+        ]
+      ],
+      "routeTransitions": 4,
+      "supportCount": 1746
+    }
+  },
+  "anchorCount": 87,
+  "sourceArtSHA": "10035f91c573726367eeede4479a09a41d27f6a84a7f64a780b571f7869a9cfd",
+  "floorEncounterEdits": 0
+}

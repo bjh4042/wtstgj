@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_S1_LAMP_GROUND_R4",
+  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R1",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -397,9 +397,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/gohyeon-gameplay/encounter/movement-proof.mjs": {
-      "sha256": "163b4910dd8895f330fecc82bfa15083b9ca7f1e679f365661a6df2c5007fb77",
-      "bytes": 28436,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "19b2d4e73b666ca8b7f8c428a7c06f415474ea8489c7d859aaec1b8c5bfe7c0d",
+      "bytes": 34388,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/gohyeon-gameplay/entry.mjs": {
       "sha256": "ad173aa7c56f8e1ab197cc697806be9fa64d502296a9d97de1a53e16cb2af84b",
@@ -752,9 +752,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/gohyeon-pair/native-selected-warp-authority.mjs": {
-      "sha256": "b53bd569ae815c542c0faa9a8b06f72429bb327e4b9e339f208e31256a5b345f",
-      "bytes": 7379,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "1fca915e78b3880972ab75079423a5c38d7b1172ef5e87ba93777a69c3559c82",
+      "bytes": 8632,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/gohyeon-pair/player-frame.mjs": {
       "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
@@ -1067,9 +1067,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
-      "sha256": "0d732652ef5df843dfaa536a6d2d8fab9fa5c560b30989183fc95d505a18462d",
-      "bytes": 43825,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "04f15eff84c44a3fe603227f4b590b614aa9f530da29620fbd096dd165d62806",
+      "bytes": 59054,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/native-harin-authority.mjs": {
       "sha256": "09134f1f2df1fb760186cd986ffa82588393422cc09611b9091e2dee948c893d",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "sha256": "82bdacd2d300483017f7c6426603e46726eaacb8e1af8702e8f86482f25b6ade",
-      "bytes": 25516,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "a36d682e066d047be1630938d07dd19efb75a57d4cb316c3d2a8f7bf73e72c2d",
+      "bytes": 33376,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "sha256": "3e4995b49e220496d378b0a34929ed7ab54288ef490cfeeefdc27036a5aea0ac",
-      "bytes": 73737,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "a3855694568f741690681fe8a576ac0f718ac42ac4608798950edf107715ad8b",
+      "bytes": 96303,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -1137,9 +1137,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/travel-registration.mjs": {
-      "sha256": "bfa334bad1b80e63ecf5939f2068af4ea5149af21b6f0b974f965fda6ae34227",
-      "bytes": 2426,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "cbad7863b27892a36a8c1d1f8e1efbf1a8e1ff7e65f2ee0ade04349aa065edd4",
+      "bytes": 2832,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/jungle-native/student_copy_review/student-copy.mjs": {
       "sha256": "745b7314836b91c55ae1b09b73a7df0f2c95c332e11d050aace6e366bfb9bda2",
@@ -1787,9 +1787,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/s1-local/presentation.mjs": {
-      "sha256": "7a3e745579377dd8d7b96e8982e9fc63d60f1d09989faf8b067e9bc01d89bfb1",
-      "bytes": 5168,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "c1838c8142c6203f6f647ef52a7186318c63ab73663f7c5608afb299393718c4",
+      "bytes": 5210,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/s1-local/scene.mjs": {
       "sha256": "482120c5f8e1459eaa53d2e7e7e25863f2ce9389aa654537062dcf04a36e0845",
@@ -2007,9 +2007,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/story/progression-service.mjs": {
-      "sha256": "fc3d3838e9a15a634a475ffab8ed7ab1f331591a966db11df75d1c46ba0e4d66",
-      "bytes": 43253,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "e07efdf0a872830e153d66e661e39a76de55d189538b2fc5578a3e773da30935",
+      "bytes": 46217,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/story/stage-completion-readiness.mjs": {
       "sha256": "7aa903c71258411034caf0504d3ff8faa02d8618165747409a1c464bf91b09d6",
@@ -2232,14 +2232,14 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/world/service.mjs": {
-      "sha256": "369bbb18c49ba2e589c210dd587f5a415633b8d52398bafc63c56fe7cb49ac4f",
-      "bytes": 40415,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "08ed2a623ac55d16baa731b25c39a7a116643e7988298dbd0d07abab30fe5b96",
+      "bytes": 48587,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/world/state.mjs": {
-      "sha256": "b8662a7e747dd973837a3596eb0a831a1b42ffa2c60d3f8f8a33c9c75ae5267b",
-      "bytes": 10531,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "6234228f4fcef88d66a10227c8171842d39047b182ea08c267b518d6d1ea84fc",
+      "bytes": 11183,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/world/summit-native-guard.mjs": {
       "sha256": "ab0e594b3558dc0a9a426bc5eaa4844789da8b21920aa2fbf591ba41ba151f35",
@@ -2367,9 +2367,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "tests/reconstructed-hidden-parity.test.mjs": {
-      "sha256": "390b697313c6a86006fe687be7edde2214a13b4fa40dbf694b08f150b6e66af2",
-      "bytes": 1845,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "eb84968de682625d7bb864a80a1973c20f19f8db21533d4cb1bfeb4d5b473aa6",
+      "bytes": 2767,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "tests/region-entry-canonical.test.mjs": {
       "sha256": "e40b58447f343c5f6fcb6da5358ce999e6654c988a4880706d36de6d0f9827ac",
@@ -2382,9 +2382,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "tests/w03-final-players.test.mjs": {
-      "sha256": "9ca85f8cfcd41caa59196a386bbafc1bbae5809d40188a2882609a51d022ce96",
-      "bytes": 5622,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "a85eff30b949572e3a14a3c0b1ba63f0125ae308a3af428dc281922d01b7a4da",
+      "bytes": 7689,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "tests/yeji-single-owner.test.mjs": {
       "sha256": "6eefb965217155b15a25d9b246843561b9f0543b0ede60e2942833b9a022ef47",
@@ -2412,9 +2412,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/hacheong-brackish/provider.mjs": {
-      "sha256": "8b0104c702671eb44c0d03d99e768339b5a66a3b61c7d53db14dfafab8a22e46",
-      "bytes": 9893,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "14ae43a9cdb411097e607bd7ccfe0d8a82268d1c1719d4e28c40660504681f79",
+      "bytes": 9935,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/hacheong-brackish/s1-continuous.mjs": {
       "sha256": "08defacaf7574cbcb85d52b3b685854bedc1e7217ddae63e8ae9d53efaa67a09",
@@ -2562,9 +2562,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/hacheong-brackish/seam-repair/load.mjs": {
-      "sha256": "0b0e55ca389791c7961556c5f536a3d43360472557c9349cc2c94693bad55645",
-      "bytes": 1881,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "87f071df44f7c658140d5cf367c6b7bb30014da8a826dadb96d40d30f7f9e092",
+      "bytes": 2379,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/hacheong-brackish/seam-repair/pins.mjs": {
       "sha256": "cb916b6065323b19188ae01e80a904aae3db13682b114edab3727a0dda2182b2",
@@ -2627,9 +2627,9 @@
       "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/s1-night/load.mjs": {
-      "sha256": "83bdb7f664a140d64d0addbb2a411435bcab49d9ed5a2584709d2339d9af0e44",
-      "bytes": 2669,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "38dab0c133d1b1a72e565ddebca97c2fff98f793b0fc5625abed75300d1998ad",
+      "bytes": 3927,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/s1-night/pins.mjs": {
       "sha256": "1538edce6b203c77969790e301e41c4388f4fe5cb3108ad3bafad062dbf983a1",
@@ -2642,9 +2642,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/s1-local/shared-image.mjs": {
-      "sha256": "bdcd774cd6e9759271b74f489dcb5300dae56cd7cbe27994e4c684529bee0847",
-      "bytes": 1953,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "49eff70bf0862d028820858dd1ecd0b2b6348835ef45d111d17914c8eff6f097",
+      "bytes": 2166,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/prologue-rival/fixed-registration.mjs": {
       "sha256": "9afc648797b0d8b6c1a7a955b361bdc048b833c0a0a90b0699935cd70139ceeb",
@@ -3576,9 +3576,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/s1-east-road/presentation.mjs": {
-      "sha256": "1d2964833ad791b1f6aab7a85db87b0d9982d686069ed0797036df5a4dc2807b",
-      "bytes": 3005,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "8bc56a9b5db316b138be594340628c150d9479e7b79a9673d5c09816df8e329a",
+      "bytes": 3831,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     },
     "dist/development/s1-east-road/registration.mjs": {
       "sha256": "8a25c4d9fb249a13f06eb39c1d7a9c026676fbf6b31ae33eddaa28cfd59f693b",
@@ -3809,12 +3809,582 @@
       "sha256": "ae818b9499904178dd5bad555f535101985d3bd5e209ed09efa7cf3711a31b34",
       "bytes": 4028224,
       "role": "archived_selected_generated_game_map_original_not_runtime_linked"
+    },
+    "dist/development/aju-native/anchors.json": {
+      "sha256": "7e508fab2bec30a5742f7c4cea967122da7c995c874cb84a6893e16070eb4cf7",
+      "bytes": 16382,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/asset-pins.mjs": {
+      "sha256": "9dee72ddcf46b277825c6f49eaeb400c196f6d8d0838df4fb62fcb57f539d583",
+      "bytes": 4230,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/config.json": {
+      "sha256": "d2a2e35f8fa5bf3d10d753a1f2c1f59e6b4fafea205c7f6cc8fd063858483f7b",
+      "bytes": 2736,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/contact-multi-r2.mjs": {
+      "sha256": "804d7384cd3d5ea472a40c7d3c85956de9225c23ae08aaa498d7a125a723159f",
+      "bytes": 3314,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/grass-wild.json": {
+      "sha256": "c2b53ab77ff81c2ed86c0836eb664607ccf6e53e26caaa779d354090a3feb880",
+      "bytes": 10039,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/night.mjs": {
+      "sha256": "21cad7178c7197ae9f04c1addad8fad15e1dda3aec338165dba93949fa5453fa",
+      "bytes": 632,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/point2.mjs": {
+      "sha256": "d088b112eb1087de245012fc5bfba4764766cf4a4933307056ff434d61309701",
+      "bytes": 1585,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/presentation.mjs": {
+      "sha256": "c4bfbbc5944da8994e30bd9ad0b70aea65f9f301c7aca5de4bdf80f284dd0c94",
+      "bytes": 4906,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/provider.mjs": {
+      "sha256": "05a66806ba46e80db1ffda5b2c0ed709a66afe7c9a34b2d898798052639742a9",
+      "bytes": 7873,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/registration.mjs": {
+      "sha256": "23358b6bbf69026bf39b7d2db997a5f3a880551678ee66942b6db2a6a94b0b0a",
+      "bytes": 8228,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/support.json": {
+      "sha256": "47aefbea19d9589c4c3ebb40e505fe24d4de920daefe076302d20e1acb615bf9",
+      "bytes": 24561,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/support.mjs": {
+      "sha256": "1236550034dc9507bf11c2a325fbb8e69446cc8518a899968f613d382500652c",
+      "bytes": 3767,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/wind-packet-manifest.mjs": {
+      "sha256": "609425376f24c3a51b56b6932eee550ea70c5365aab093792ce0c243c8319d1f",
+      "bytes": 3773,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/wind-packets.mjs": {
+      "sha256": "229f74663e0ba93dfeccb9e5f902e3b49e77cdc70b63c45738402c4be98eeda5",
+      "bytes": 3786,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/wind.mjs": {
+      "sha256": "abd8437a1a48a5f6871ec4271d82c2b570f89b215e9c8d22b3fff8a3b4fed84a",
+      "bytes": 658,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/aju-native/wind_contract.json": {
+      "sha256": "e3f2d634b54e06f75d2241f1550403f07d46fa552dd91b4c584857135af00ee4",
+      "bytes": 2868,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/authority.mjs": {
+      "sha256": "406bdee17a07f0c262b8d843a3453d8566f60f547ebde253a6b0513b08f81e21",
+      "bytes": 2439,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/environment.mjs": {
+      "sha256": "9bee66afaa2025d2ea89dc51fc1ac07ec9a2f1a21ca64ca71aa877ba49960998",
+      "bytes": 1638,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/open_field-wild.json": {
+      "sha256": "11aa3eb9ae79813ebada74d0a4c33f03db18debdd46dcdb4f3bbbff0f1daccde",
+      "bytes": 1809,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/presentation.mjs": {
+      "sha256": "482be9f2db68c73f4e91c38a2035af211b0806c6d267982db86a71ac7df49748",
+      "bytes": 5269,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/provider.mjs": {
+      "sha256": "82bbfbae565bd8ae190e5a4a5c789bcc64365e6580948e81692a686ff85a03fb",
+      "bytes": 2320,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/rare_sky-wild.json": {
+      "sha256": "8bc487e9528999979b325325b4e69a05865d689a945d172501766d83cc0ac6e9",
+      "bytes": 2857,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/registration.mjs": {
+      "sha256": "fdc33c0531a53147d81518f781cff28de6eb352788382c7fc7ec916b56c4fb84",
+      "bytes": 15265,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/renderer.mjs": {
+      "sha256": "5df028356bd5f40fba3313b97c264c687160a128a17dcdf38bbe379aa7980fd6",
+      "bytes": 1639,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/source-row-variants.mjs": {
+      "sha256": "ed338033d736cec689e30913b6e0773c0dd999eb9b7111028d7805a15f8a8b34",
+      "bytes": 17203,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/support.json": {
+      "sha256": "22113ffd27f97ae28e2d806dce18147295cd2ee40ce1b64732d4ecaa551b6abc",
+      "bytes": 42743,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/bird-hill-native/support.mjs": {
+      "sha256": "e3e67c43be03730ae07f98382729026e66c92c51ab1f88e71639d87d9435002b",
+      "bytes": 3763,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/assets/093e0d1a5392d1f6380e0af10b4ddfc24db20f2fd757aebad8415c4a1861b4bd.json": {
+      "sha256": "093e0d1a5392d1f6380e0af10b4ddfc24db20f2fd757aebad8415c4a1861b4bd",
+      "bytes": 1078,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/assets/6ced4ad8a269776b7e390e76e9812750f95a1ece9cf94f70e35854c3e6d3c895.json": {
+      "sha256": "6ced4ad8a269776b7e390e76e9812750f95a1ece9cf94f70e35854c3e6d3c895",
+      "bytes": 778,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/assets/85c9adaa30f84084f36bc88cac0df76c7d41ccacf0b79275676620951805a47c.json": {
+      "sha256": "85c9adaa30f84084f36bc88cac0df76c7d41ccacf0b79275676620951805a47c",
+      "bytes": 1343,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/assets/c85f4efd06eb23ab005b8912d3d2d894169a10f24d1e77660ed9eec8823d70ad.json": {
+      "sha256": "c85f4efd06eb23ab005b8912d3d2d894169a10f24d1e77660ed9eec8823d70ad",
+      "bytes": 1368,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/pow_park_environment_handoff_r1/DELIVERY_METADATA.json": {
+      "sha256": "c90ff37b996fd0571adbdf761690374d4d11afd95864ed9e8e879e0e9956284f",
+      "bytes": 793,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state0_safe.json": {
+      "sha256": "57de75b81d97af91f07ae3f315a1f6b8a854f08e483d9d6ba9d69657ff9b7d97",
+      "bytes": 17665,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state10_safe.json": {
+      "sha256": "75cb0ad98014954dd9f29f3edf4367bff9e216fd9bd94b64dc087c32e1ffdc11",
+      "bytes": 21743,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state11_safe.json": {
+      "sha256": "75cb0ad98014954dd9f29f3edf4367bff9e216fd9bd94b64dc087c32e1ffdc11",
+      "bytes": 21743,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state1_safe.json": {
+      "sha256": "57de75b81d97af91f07ae3f315a1f6b8a854f08e483d9d6ba9d69657ff9b7d97",
+      "bytes": 17665,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state2_safe.json": {
+      "sha256": "69fafca085bb8d173a23a79ae0a8ade454553ffcb669672cd7ef4994c57e4bcc",
+      "bytes": 17665,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state3_safe.json": {
+      "sha256": "69fafca085bb8d173a23a79ae0a8ade454553ffcb669672cd7ef4994c57e4bcc",
+      "bytes": 17665,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state4_safe.json": {
+      "sha256": "c89c72d1e810eb9f5c96277e79a7f2c261576b2c458c44f8df7fb6529ffc3eb9",
+      "bytes": 19105,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state5_safe.json": {
+      "sha256": "c89c72d1e810eb9f5c96277e79a7f2c261576b2c458c44f8df7fb6529ffc3eb9",
+      "bytes": 19105,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state6_safe.json": {
+      "sha256": "842a101912fec3d682986c22ba250db3375d7ef85da547fcfe549f219679769d",
+      "bytes": 19105,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state7_safe.json": {
+      "sha256": "842a101912fec3d682986c22ba250db3375d7ef85da547fcfe549f219679769d",
+      "bytes": 19105,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state8_safe.json": {
+      "sha256": "931bd354ce6614cdabeb82cec0aaedabb4c9b37ee01656ba7a2f495ea0e2168f",
+      "bytes": 21743,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/assets/G03_state9_safe.json": {
+      "sha256": "931bd354ce6614cdabeb82cec0aaedabb4c9b37ee01656ba7a2f495ea0e2168f",
+      "bytes": 21743,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/environment-registration.mjs": {
+      "sha256": "b27e22ffd302cb995cb214032f82128538daaf495ee187d04969fed9652b686e",
+      "bytes": 839,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/native-gym3-authority.mjs": {
+      "sha256": "b288e344b6c51c90c5122443d4fb28fcccfa195dcee675b3b579a98cb88d84c7",
+      "bytes": 3760,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/provider.mjs": {
+      "sha256": "0452b7b1e1f7540ae1b26a569b40875d38a15d80c3d4b6867136751cbaef21c9",
+      "bytes": 8531,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/registration.mjs": {
+      "sha256": "6e5cf5522d6dafc7fde5dc6b55923bc917ef428fd7d5771855c62f4943d499dd",
+      "bytes": 168985,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/selected-environment-core.mjs": {
+      "sha256": "0a69c0f6b8dc8aaac6eb2c9d1300d4f50e37159cdb2d218e0412ae99199b25a9",
+      "bytes": 1454,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/source-row-variants.mjs": {
+      "sha256": "163e46f6b84a47e09858421640948af94d159a819c3673a354a3ea5bb11f0bcd",
+      "bytes": 6861,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/visual-state.mjs": {
+      "sha256": "121d156bd3fcf31a98f598c4354df8943b2a0d1b5941936c498fec46645e32c5",
+      "bytes": 814,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-native/warp-registration.mjs": {
+      "sha256": "a7424700ba5a4d5c7debad5aa43e539516098004ba62e93741388daba16adb67",
+      "bytes": 485,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/gym3-presentation/provider.mjs": {
+      "sha256": "a5c38777a05c1f67238457be96f326e9bc31f75b17657c8ef59067489e595b0e",
+      "bytes": 4857,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/asset-pins.json": {
+      "sha256": "76ce3e746637dd0a4ffb08ea82cc58a6e11f498b87179238390222a6cd503969",
+      "bytes": 695,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/authority.mjs": {
+      "sha256": "2e45973eed4df5736e0fdddf6daa5160c213f6dff11942eb75d88cbb02360c1b",
+      "bytes": 3194,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/dryShore-wild.json": {
+      "sha256": "8dc0869664a3e6610b0808ff956063fab8e92c416a5a6459eb1e4db025bc3302",
+      "bytes": 2101,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/environment/PACKETS.json": {
+      "sha256": "b18420767864a968de10969880185e40757e90bc224ef9f7f647aab8b43c6c3d",
+      "bytes": 24300,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/environment/common/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/environment/common/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/environment/common/scene-lighting.mjs": {
+      "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+      "bytes": 1433,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/environment/common/screen-lighting.mjs": {
+      "sha256": "6876a931709fc667fab9640c0643e902b363d5442191cea48879720201100e98",
+      "bytes": 1585,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/environment/provider.mjs": {
+      "sha256": "47f7d94079e9ed754d84ebcbdc61436bbca48845d8df86ac06a9d43a2f16fc4d",
+      "bytes": 8328,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/grass-wild.json": {
+      "sha256": "c88e58468c5ed08504c41947732724a83a1a9d8b2d3dbe13fa0aaeef8685a2de",
+      "bytes": 1595,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/presentation-pins.mjs": {
+      "sha256": "d1d0241d3d9ddcfbc33b1157988545d2389bb77502f1dcc68a5a6e559e41b56f",
+      "bytes": 878,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/presentation.mjs": {
+      "sha256": "d1e7e41aee93b894dd37d8e2fd64a7f7295091f2592afef32a6c27803279f1eb",
+      "bytes": 7394,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/registration.mjs": {
+      "sha256": "429bd195f48a3d66ec2d617a60b997b733d032903747305212558d762ccf50b8",
+      "bytes": 7562,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/support.json": {
+      "sha256": "cea5d46b1649c3f804a0b2920cd52537843a0700fa6fdd000d9232d7788bcab6",
+      "bytes": 15130,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jangmok-coast-native/support.mjs": {
+      "sha256": "38cfbe858ba99fe6ca7dd4657eb52ee353f3256ee8d3f3669a6254b9877d04dd",
+      "bytes": 3765,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s2-stage-intermediate.mjs": {
+      "sha256": "fb808896d6a1772b8e11ef25ff08babf1fec72871635d86c1f46783436651b31",
+      "bytes": 1277,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/coastal_approach_selected/PORTABLE_INPUTS.json": {
+      "sha256": "25c48fd0e7f94e17c66bdd3edc50fa58db83277365c46dabbae04315c1589cc1",
+      "bytes": 524,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/coastal_approach_selected/ROUTES.json": {
+      "sha256": "e61a92a8d8c3039ca35f7e2a2f97f594b7485f15769af405ef8205e287ce9556",
+      "bytes": 19453,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/home_closeout_lane4/batch_r2/selected_contracts/garden_home_hanok_1F.json": {
+      "sha256": "ba73d082cd0de7f9474e2870a3bc2d9223bad4d68144d79c2e5355499d3361c6",
+      "bytes": 22681,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/home_closeout_lane4/batch_r2/selected_contracts/keeper_home_1F.json": {
+      "sha256": "d767f8e777bc2e0dc161907f76c12a2a995f2830f1a6fbd3c38ce768b832e2bd",
+      "bytes": 28330,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/home_closeout_lane4/batch_r2/selected_contracts/upper_1F.json": {
+      "sha256": "2428d5d88489210964ce5eb427575c9c74f2bd57122dc8e96f6477b1a64f4e5d",
+      "bytes": 5678,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/independent-qa/PORTABLE_EVIDENCE.json": {
+      "sha256": "15238c9d0d8d6bbe6dfd4909d9458cc1b4a84abf5f23b21d803b5fb7c7ab96e6",
+      "bytes": 283,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b2_contract.json": {
+      "sha256": "a335036107ba3f64e918f310188a2e76f16c516d106858a7f70aca19e2fbb41a",
+      "bytes": 554,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b2_contract.json": {
+      "sha256": "a335036107ba3f64e918f310188a2e76f16c516d106858a7f70aca19e2fbb41a",
+      "bytes": 554,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_next_boat_readonly_20261027/b3_bob_candidate_r5/RUNTIME_PINS.json": {
+      "sha256": "949d778ebdcd6d314828ef6dd68dab3a69f786ab4c6e713625011b4699d3769c",
+      "bytes": 309,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_selected_delivery_r3/RUNTIME_CLOSURE.json": {
+      "sha256": "42dcda9bae57cdd1412a8b489a43bca682c52aa87705e0b826c2c82bc55740af",
+      "bytes": 17434,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/PAIR_EVIDENCE.json": {
+      "sha256": "dc173a79348f3e4129cc194f8a1202a628308ca6213d11f5bcf1ea27117529bf",
+      "bytes": 12251,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/authority.mjs": {
+      "sha256": "ef27e0073a219f69fb9f36796213ed75a1faa25d85813c25808a436dce500805",
+      "bytes": 2475,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/east-wild.json": {
+      "sha256": "d2e291efbb750a526969ad832e2b9fa4afffbf9e7d79b08d31a209679de4ce22",
+      "bytes": 6417,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/environment-registration.mjs": {
+      "sha256": "6c165af84c854776e6433db86e73ee662d98e417dcc57fa4f008255270d961a4",
+      "bytes": 932,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/original-frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/original-light-compose.mjs": {
+      "sha256": "47a39b38fff511c913844cc208590f4062208d05b9e020fc60f19ece634967de",
+      "bytes": 1301,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/presentation.mjs": {
+      "sha256": "8b593300df9a07faddda06a9cba52dc8b0e682c8937c365f2f48cf5b94155475",
+      "bytes": 5106,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/provider.mjs": {
+      "sha256": "adcf70e9fc5b9ce01ed949350266e72c7dc4b050b3e25ad24f039b183f03ea8d",
+      "bytes": 4036,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/registration.mjs": {
+      "sha256": "d063c683e51fa1cf12d075c835d52c14055c1665e4b0afb2729a49d2c1b23fbb",
+      "bytes": 8852,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/source-row-variants.mjs": {
+      "sha256": "3f03e6133632e1195e5de7ac4434cd4de963316521a1bfc8971b653fc5e9be6c",
+      "bytes": 8777,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/support.json": {
+      "sha256": "30d96aee8bd92d22332fcaaeca593aa7f117347b23694ebcf622249d13cb812a",
+      "bytes": 26471,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/support.mjs": {
+      "sha256": "c2192635e396d0afce7b6c3b2b8e54635a73db79060ad27eb869f2c2f060c0d2",
+      "bytes": 3779,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-forest-native/west-wild.json": {
+      "sha256": "6081d9148a1ad5bf923c0b2962c356574ac6f24107e54be40d2c7b7182c93a80",
+      "bytes": 5335,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-hub-native/compose.mjs": {
+      "sha256": "70124092c89240278fab4eb13a7c60fb499a63d9d410308afad6b7ca18fa9b9c",
+      "bytes": 2272,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-hub-native/environment-pins.mjs": {
+      "sha256": "0f833c83338a503fa94e56f8fcb7931e6c4dbe29ccc376935770bd9ae8bcd236",
+      "bytes": 897,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-hub-native/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-hub-native/presentation.mjs": {
+      "sha256": "7aa3ddd23261cd890c640e1f8bbcb29531d58c55f51bad63a76ba06db0ba2469",
+      "bytes": 4855,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-hub-native/provider.mjs": {
+      "sha256": "9ca2b6460296eadc3258d18c12aaecdebddb96fc760ffd2e88bdd7676162f796",
+      "bytes": 3197,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-hub-native/support.json": {
+      "sha256": "980beddda3f3bfbc3cd9ff72022a2a22efae528e453ae61b34da84b572d5cd92",
+      "bytes": 20170,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/okpo-hub-native/support.mjs": {
+      "sha256": "07d5778ad48c36591be370739e6e43fddbf7e80f59e99cb5631306bcc09c0538",
+      "bytes": 3767,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/grass/SELECTED_REGISTRATION.json": {
+      "sha256": "d8650e33c4129367cff1ca4feab63959632091d1fdc45257788cf40d63b1fe81",
+      "bytes": 419,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/SELECTED_REGISTRATION.json": {
+      "sha256": "40d19d5d9b94e9a74be42471164b859702bcc05b54beca1c46093da8d93eee1a",
+      "bytes": 689,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s2-areas-native/warps.mjs": {
+      "sha256": "ab85f0215cdac5a21d2767a71f3e207428260c9a8ecc134534799a22b1dc441e",
+      "bytes": 6550,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s2-gym2-native/registration.mjs": {
+      "sha256": "df0848a8f2581b2e5b6394c6643619251a1ffda8b5c140be1ae60a4b749776b0",
+      "bytes": 5932,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s3-progression-native/center-registration.mjs": {
+      "sha256": "1bc1ca95344f1c634db951b75f9889ef99eb2c3de21fecc65f77ce8446af4c4e",
+      "bytes": 987,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s3-progression-native/contact-authority.mjs": {
+      "sha256": "b2d7f55a8891416adae5ba56d24ef098ef9aaebd9d6ef20cc00ad712213d82e6",
+      "bytes": 3369,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s3-progression-native/known-warps.mjs": {
+      "sha256": "f2f684d191eb0a90da4819aefe0c8403013146188f8720d4a94925d93b0373a7",
+      "bytes": 14677,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s3-progression-native/recovery.mjs": {
+      "sha256": "bc0e2e31e71d63275e57bfd66a513a60c3b6f0e87de2968fd40aeaa9028ec359",
+      "bytes": 2553,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s3-progression-native/source-row-variants.mjs": {
+      "sha256": "2df91e79a11eb2dba679fb9a5b0edc2102e8523aeadcaa29ca3ec524986f2afc",
+      "bytes": 7020,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "tests/battle-presentation-tail.test.mjs": {
+      "sha256": "de6b5575aab30351b1119b65e1ef757ef65d61b2ce1d0c8850274ae68aa0a3c0",
+      "bytes": 3444,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "tests/helpers/baseline-entry-semantics.mjs": {
+      "sha256": "8539df9028f1e0ccad903647a51ad86bcfc7994bf10f1ea87224d81273c3cc2f",
+      "bytes": 8193,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "tests/ordinary-convergence.test.mjs": {
+      "sha256": "0260917f7b39b5344f367ec99feae2f1b345912920c776a6ffec74eedfe5c8a5",
+      "bytes": 2884,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "tests/preparation-guidance.test.mjs": {
+      "sha256": "888b5f9918dfe30394cb2a80479200c3249635c3631da5e9db0e4d5025ac0040",
+      "bytes": 1302,
+      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
     }
   },
-  "revision": "NEW_REBUILD_S1_LAMP_GROUND_R4",
-  "previous_public_commit": "052584596122d49e97b0853482ccf75f39fa9662",
-  "revision_source_manifest_sha256": "5aee500402dce32b2264ce8280a4090217169a8164ee969861c21938d8087ec4",
-  "revision_scope": "Three exact LampR4 shipping files; bounded actual walk and save migration PASS; latency/fullgame HOLD; isolated S2 progression candidate code shelf and one archival generated coast original, not extra active connections",
+  "revision": "NEW_REBUILD_WARP_FAST_R1",
+  "previous_public_commit": "02a8be8cd59bc0fb0cc85d30f62af49fbf05a53f",
+  "revision_source_manifest_sha256": "34ce0d8f09df976c11b57c85d20ac6712c1b5899d02aa3897cf0f4ee9951a3f5",
+  "revision_scope": "Active S3 V22 and bounded fast warp game changes; safe code subset only, unchanged historical candidate shelves and selected original art preserved",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4008,5 +4578,21 @@
       "provenance": "native generated-image metadata, selected source registry, preserved production prompt, exact source SHA match and visual inspection",
       "source_inputs_and_references_included": false
     }
+  },
+  "active_code_selection": {
+    "spaceSafeCodeFiles": 867,
+    "publicSafeCodeFiles": 750,
+    "reusedUnchangedPublicFiles": 619,
+    "changedOrAddedCodeFiles": 131,
+    "newPrivateOrInternalMetadataNotSelected": 117,
+    "managedManifestSHA256": "34ce0d8f09df976c11b57c85d20ac6712c1b5899d02aa3897cf0f4ee9951a3f5",
+    "sourceCodeExactBytes": true,
+    "aggregate": {
+      "total": 1654,
+      "pass": 1643,
+      "fail": 0,
+      "skip": 11
+    },
+    "actualWarpScope": "Warm HTTP cache, original-command-earned QA progression, two directions three samples each. Mean GYM1toS1 1069.0ms and S1toGYM1 1219.1667ms, maxima1119.1/1344.0ms. First fixture preparation6374ms separate. Strict mean1000ms not met. Not physical-display timing, cold network, all paths or device guarantee."
   }
 }

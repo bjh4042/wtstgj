@@ -1,0 +1,258 @@
+{
+  "status": "ROOT_ART_SELECTED_NEW_GEOMETRY_PROPOSAL_PENDING_QA",
+  "building": "jangmok_port/upper_home",
+  "artSelection": "Root2026-10-27T08:06 accepted two native views as exterior-compatible initial-style art",
+  "plans": [
+    {
+      "id": "proposal:jangmok_port:upper_home:compact1F",
+      "floor": 1,
+      "floorRects": [
+        [
+          96,
+          194,
+          604,
+          388
+        ],
+        [
+          115,
+          388,
+          228,
+          402
+        ]
+      ],
+      "solids": [
+        {
+          "id": "sofa",
+          "rect": [
+            96,
+            191,
+            176,
+            334
+          ]
+        },
+        {
+          "id": "plant",
+          "rect": [
+            96,
+            308,
+            130,
+            350
+          ]
+        },
+        {
+          "id": "dining_north_chair",
+          "rect": [
+            540,
+            222,
+            583,
+            246
+          ]
+        },
+        {
+          "id": "dining_table",
+          "rect": [
+            519,
+            240,
+            599,
+            337
+          ]
+        },
+        {
+          "id": "dining_south_chair",
+          "rect": [
+            540,
+            337,
+            584,
+            382
+          ]
+        }
+      ],
+      "points": {
+        "entry": [
+          174,
+          378
+        ],
+        "entryArrival": [
+          250,
+          310
+        ],
+        "stair": [
+          514,
+          214
+        ],
+        "stairArrival": [
+          444,
+          250
+        ]
+      },
+      "triggers": {
+        "exit": [
+          153,
+          369,
+          195,
+          388
+        ],
+        "stairs": [
+          495,
+          202,
+          534,
+          225
+        ]
+      },
+      "routes": [
+        [
+          "entry",
+          "entryArrival"
+        ],
+        [
+          "entryArrival",
+          "stair"
+        ],
+        [
+          "stairArrival",
+          "entry"
+        ]
+      ],
+      "triggerIds": {
+        "exit": "proposal:jangmok_port:upper_home:compact1F:trigger:exit",
+        "stairs": "proposal:jangmok_port:upper_home:compact1F:trigger:stairs"
+      },
+      "landingIds": {
+        "entryArrival": "proposal:jangmok_port:upper_home:compact1F:landing:entryArrival",
+        "stairArrival": "proposal:jangmok_port:upper_home:compact1F:landing:stairArrival"
+      },
+      "image": "floor1.png",
+      "support": "support1.png"
+    },
+    {
+      "id": "proposal:jangmok_port:upper_home:compact2F",
+      "floor": 2,
+      "floorRects": [
+        [
+          108,
+          162,
+          588,
+          366
+        ]
+      ],
+      "solids": [
+        {
+          "id": "bed",
+          "rect": [
+            110,
+            129,
+            201,
+            294
+          ]
+        },
+        {
+          "id": "bedside",
+          "rect": [
+            199,
+            130,
+            246,
+            183
+          ]
+        },
+        {
+          "id": "desk_chair",
+          "rect": [
+            330,
+            127,
+            457,
+            219
+          ]
+        },
+        {
+          "id": "wardrobe",
+          "rect": [
+            498,
+            66,
+            587,
+            215
+          ]
+        },
+        {
+          "id": "low_cabinet",
+          "rect": [
+            560,
+            209,
+            589,
+            309
+          ]
+        }
+      ],
+      "points": {
+        "stair": [
+          348,
+          346
+        ],
+        "stairArrival": [
+          348,
+          278
+        ]
+      },
+      "triggers": {
+        "stairs": [
+          327,
+          336,
+          369,
+          357
+        ]
+      },
+      "routes": [
+        [
+          "stair",
+          "stairArrival"
+        ]
+      ],
+      "triggerIds": {
+        "stairs": "proposal:jangmok_port:upper_home:compact2F:trigger:stairs"
+      },
+      "landingIds": {
+        "stairArrival": "proposal:jangmok_port:upper_home:compact2F:landing:stairArrival"
+      },
+      "image": "floor2.png",
+      "support": "support2.png"
+    }
+  ],
+  "transitions": [
+    {
+      "fromFloor": "proposal:jangmok_port:upper_home:compact1F",
+      "trigger": "stairs",
+      "toFloor": "proposal:jangmok_port:upper_home:compact2F",
+      "arrival": "stairArrival",
+      "facing": "up"
+    },
+    {
+      "fromFloor": "proposal:jangmok_port:upper_home:compact2F",
+      "trigger": "stairs",
+      "toFloor": "proposal:jangmok_port:upper_home:compact1F",
+      "arrival": "stairArrival",
+      "facing": "down"
+    }
+  ],
+  "entryExterior": {
+    "threshold": [
+      3280,
+      500
+    ],
+    "map": "jangmok_port",
+    "insideArrival": [
+      250,
+      310
+    ],
+    "notInstalled": true
+  },
+  "interactionPolicy": "Explicit interaction on supported approach, no auto transition on continuous overlap. Arrival outside reverse trigger >=64px; require key release before another interaction. No controller modified.",
+  "stairScope": "1F foot514,214 is flat approach below visible staircase, not stair tread collision recovery. 2F south mat is offscreen stair-room endpoint.",
+  "actor": "80px QA-only not NPC",
+  "floorAuthority": "New conservative authored floor/solids from generated art, not original collision. Historical protagonist/R4 geometry not inherited.",
+  "foreground": "Native key approach proofs inspected: 1F stair actor is in front/south of cabinet/stair; entry actor is south/in front of sofa; 2F arrivals clear. No need for new foreground for these representative points. Does not certify all furniture edge crossings.",
+  "changes": {
+    "gameController": 0,
+    "originalProtagonist": 0,
+    "R4": 0,
+    "newImagegenAfterArt": 0
+  }
+}

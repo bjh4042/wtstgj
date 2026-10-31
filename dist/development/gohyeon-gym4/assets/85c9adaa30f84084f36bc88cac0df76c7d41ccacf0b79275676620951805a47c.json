@@ -1,0 +1,38 @@
+{
+  "status": "ROOT_SELECTED_NEW_DOOR_LAYERS_AND_ENTRY_RETURN",
+  "recordedAt": "2026-10-29T09:02:00Z",
+  "authority": "Root direct selection after actual contact/entry image review",
+  "doorParts": 5,
+  "entry": [
+    196,
+    1003,
+    "up"
+  ],
+  "exitAnchor": [
+    196,
+    1085,
+    "down"
+  ],
+  "nativeDistance": 48,
+  "approachFeet": 919,
+  "hubReturn": [
+    378,
+    1955,
+    "down"
+  ],
+  "constraints": [
+    "Closed interior poses diagnostic only, no walking authorization",
+    "Original images and source gates/rewards unchanged",
+    "Use newly derived raw-to-49x37 once plus simultaneous NPC3, not historical48x36 safe",
+    "Provider/owner/main closure still unimplemented"
+  ],
+  "pins": {
+    "DOOR_LAYER_PROPOSAL.json": "c85f4efd06eb23ab005b8912d3d2d894169a10f24d1e77660ed9eec8823d70ad",
+    "ENTRY_RETURN_PROPOSAL.json": "0749821f981c4de8fac302a31d251681081c7260e05f8c45e18a37fdb253517b",
+    "door-layers.mjs": "ac94b81358b5332e3497cc5bf45bfb3c311171801e134e66e6625f0a4c6a36c4",
+    "DOOR_STATE04_CONTACTS.png": "d72733caf24aaac94eed381f2db658f7acd34a203b7c8722306849d4a150137c",
+    "DOOR_STATE05_CONTACTS.png": "618854b119d8e5fd17af85e5b73888739b229a0f0f27b5ffa162cc6707ad873c",
+    "ENTRY_RETURN_APPROACH960.png": "c91436d61cf1eeafb95682781d1016e8b50161419c5f465e9fd842a42a74a6ed"
+  },
+  "sourceInstalled": false
+}

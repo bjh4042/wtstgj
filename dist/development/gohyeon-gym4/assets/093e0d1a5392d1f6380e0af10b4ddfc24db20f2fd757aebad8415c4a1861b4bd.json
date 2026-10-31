@@ -1,0 +1,29 @@
+{
+  "status": "ROOT_SELECTED_EXISTING_CLASS_BINDINGS_NATIVE_PLACEMENT_PENDING",
+  "selectedAt": "2026-10-29T08:28:50Z",
+  "rootInstruction": "Preserve exact approved field/battle two male class bindings; generic class reuse is not duplication of same named NPC. Original IDs/dialogue/roles preserved.",
+  "bindings": [
+    {
+      "trainerId": "GYM_04_SUB_01",
+      "identity": "ECO_EDUCATION_STAFF_M_BASE",
+      "required": false
+    },
+    {
+      "trainerId": "GYM_04_SUB_02",
+      "identity": "FIELD_RESEARCH_ASSISTANT_M_BASE",
+      "required": true
+    }
+  ],
+  "noNewFemaleReplacement": true,
+  "sourcePins": [
+    {
+      "path": "final_game_2302/source/dist/art/approved-npc-bindings.mjs",
+      "sha256": "b36a50fef9b5bbad513496333e1e45de4f1010e269a6db68985cb8cf2699b030"
+    },
+    {
+      "path": "final_game_2302/source/dist/battle-v3/approved-trainer-portraits-data.mjs",
+      "sha256": "5ee910b01ea0e71d3795533e25a6ed8a85af818d1ae557d6ed177657126902eb"
+    }
+  ],
+  "remaining": "root state04/05 mapping selection and geometry/actor/readiness independentQA"
+}
