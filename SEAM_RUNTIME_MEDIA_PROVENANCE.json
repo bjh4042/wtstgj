@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "included_files": [
+    {
+      "path": "dist/development/hacheong-brackish/seam-repair/assets/old-g1-seam-bounds-128x1320.png",
+      "bytes": 410251,
+      "sha256": "f341594ca8e9540938254c195d49fddbf0d92024bc8f018355fba7f6dc4736cc",
+      "dimensions": [
+        128,
+        1320
+      ],
+      "source_sha256": "ba5a9a1c08f0e7eb7e122324b76c04636edf57e73f750d837692af0196519497",
+      "source_dimensions": [
+        4812,
+        1719
+      ],
+      "crop_box_exclusive": [
+        3526,
+        0,
+        3654,
+        1320
+      ],
+      "decoded_RGB_channels_equal": true
+    }
+  ],
+  "provenance": "Exact crop of project-generated illustrated game-map production output; native creation and selection records verified separately. No resampling or color conversion.",
+  "scope": "Only this seam runtime PNG and this metadata are included. Full source artwork and the larger S1 topcrop PNG are NOT included in this public change. Not a complete media/game recovery.",
+  "runtime_selection": "Selected lossless seam resource retained by current runtime."
+}
