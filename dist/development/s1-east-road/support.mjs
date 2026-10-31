@@ -9,6 +9,9 @@ export async function prepareS1EastRoadSupport({signal,fetcher=fetch}={}){
  const dispose=()=>{if(disposed)return;disposed=true;rows.clear();signal?.removeEventListener('abort',dispose)};signal?.addEventListener('abort',dispose,{once:true});if(signal?.aborted){dispose();throw Error('S1_EAST_ROAD_SUPPORT_ABORTED')}
  const safe=f=>{const p=foot(f);return!disposed&&!!p&&p[0]>=0&&p[0]<R.width&&p[1]>=0&&p[1]<R.height&&!!rows.get(p[1])?.some(([a,b])=>p[0]>=a&&p[0]<b)};
  const describe=(f,facing)=>{const p=foot(f);if(!p||!dirs.includes(facing)||!safe(p))throw Error('S1_EAST_ROAD_POSE_SUPPORT');return{sceneId:R.sceneId,mapId:R.mapId,revision:R.revision,imageSHA:R.imageSHA,maskSHA:R.maskSHA,foot:[...p],facing}};
- const validate=p=>{const q=record(p);return!!q&&keys.slice(0,5).every(k=>q[k]===R[k])&&dirs.includes(q.facing)&&safe(q.foot)};
+ // One explicit prior geometry only. Old pins cannot authorize newly added ground.
+ const legacy={"sceneId":"native:yeoncho:local","mapId":"world:hub:S1","revision":"NEW_REBUILD_S1_EAST_ROAD_RELAXED_CONTACT_R3","imageSHA":"9309737253c4f43393162ab6b8ba9b316cb4f32ba030c9630e9c8ae01f152357","maskSHA":"a6c629bd8dc3f1a8c1361e73643db186fe62ae710c49d5c4cd29b58a87ea1909"};
+ const added=f=>f[0]>=4421&&f[0]<4501&&f[1]>=1007&&f[1]<1027;
+ const validate=p=>{const q=record(p);if(!q||!dirs.includes(q.facing)||!safe(q.foot))return false;return keys.slice(0,5).every(k=>q[k]===R[k])||keys.slice(0,5).every(k=>q[k]===legacy[k])&&!added(q.foot)};
  return Object.freeze({registration:R,get supportPinsVerified(){return!disposed},safe,describe,validate,dispose});
 }

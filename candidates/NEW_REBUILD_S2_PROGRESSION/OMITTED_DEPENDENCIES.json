@@ -1,0 +1,198 @@
+{
+  "source_manifest_sha256": "5f327dfac52b5f44ddc403f02652e4c64f46efb1b2454e07d5e286059c855ad0",
+  "standalone": false,
+  "files": [
+    {
+      "path": "dist/development/bird-hill-native/leaf.u32",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/bird-hill-native/leaf64.rgb",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/bird-hill-native/light.f64",
+      "sha256": "522778bbdf7d5fbf78bd3ef389509f0edb59b0cdfbf1cf05b9b20101cb8193da",
+      "bytes": 73968,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/bird-hill-native/light.u32",
+      "sha256": "4fcaf8a8a04f450cf77ac10275cc06043c38dad1eb523fc7d09a3619d179f91e",
+      "bytes": 12328,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/bird-hill-native/source.png",
+      "sha256": "41defa36d0da21a75aa1e4bd8bb8c3d28bf5fa5c99bd9a8f517d2a04c9084153",
+      "bytes": 12127684,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/bird-hill-native/water.u32",
+      "sha256": "0c1fd809464a58b9370f73395ca21bff0eb566376e68d4ddaaa9ab29461fee60",
+      "bytes": 639136,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/bird-hill-native/water64.rgb",
+      "sha256": "dba0da1a7903305401cff50e57ab714ca15b68323b2ef60204cf1127a8c7632c",
+      "bytes": 30678528,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile0.deflate",
+      "sha256": "c318a5c86414b0ebf6bce5538c778fe5f1191ca362d67f18a84b3c5a9d2523d7",
+      "bytes": 237969,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile1.deflate",
+      "sha256": "f283638837f9caea4e9d9543a4ff037f1e50d725b91a9428cb4c82cd4ee903df",
+      "bytes": 221844,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile10.deflate",
+      "sha256": "6ce21b1bb09583e38360542cabed66761e399b920abea271adaf6bb8969ac45d",
+      "bytes": 324252,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile11.deflate",
+      "sha256": "247d8343d5471541ad9d5429331318ee5a3f8a1ad1c7fbd376ae5f035a041e2b",
+      "bytes": 369488,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile12.deflate",
+      "sha256": "dc2e8ceb40e55ee3612ca4c0ee91b8e68fe010e60b636c3fdc0e58ed5e419e37",
+      "bytes": 233482,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile13.deflate",
+      "sha256": "4118b1299141e61589b905d88f53551db4cad9b2d9743564bb335424ed18c1b7",
+      "bytes": 238961,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile14.deflate",
+      "sha256": "d211dc391181f133df6892fd0baacd87adc64388c588b496e68e35d1bf061695",
+      "bytes": 216332,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile15.deflate",
+      "sha256": "b6798f2bc145572e5f87f0abda9a093cb9ed896417a38e76efc4453c1bda6142",
+      "bytes": 216659,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile16.deflate",
+      "sha256": "8609ee7ecec5155d61b5537adb369a41bfdbcc862e496c71af486d0f7ac68495",
+      "bytes": 275862,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile17.deflate",
+      "sha256": "9d43438254af478910667ff52bb319f9c1a84450c7ee062e3c33b91b6c0ff902",
+      "bytes": 325755,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile18.deflate",
+      "sha256": "7b2251f92e3f02ca17514b797d7dcfa16191f9d0f267f87589ff9a7f81f7d7fd",
+      "bytes": 350925,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile19.deflate",
+      "sha256": "4ba5ae8a08fc9dabc7bcfaf4b5c6af5d429fe19400b06c64cc73f00a38eeb201",
+      "bytes": 314950,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile2.deflate",
+      "sha256": "4059b6876dcb61ca73e2880973539c8743816a5877a3401c2f484b1c47909d9b",
+      "bytes": 223487,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile20.deflate",
+      "sha256": "bb17bfd479e8a5ab34dedd92c5caff0108f09a0ce921b66b531d63c5417fa1f8",
+      "bytes": 264420,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile21.deflate",
+      "sha256": "0cfd21f28a161a7e8d21ff169c981ce563b55027b5806fa3077aaeeffccc6ae9",
+      "bytes": 273319,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile22.deflate",
+      "sha256": "b834589ebc408e883eb76eace31b2676735dcd7409a260a5035719655ab9b40b",
+      "bytes": 307804,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile23.deflate",
+      "sha256": "21e41dc57513f2fb2846096dd83ee3d8e82498ea9522c1aaef6fa5c5a7c8c62f",
+      "bytes": 358920,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile3.deflate",
+      "sha256": "93f65856a2a04af61bbef2186e08dac5c1338f0bb48dd11ec4de90381d8678b0",
+      "bytes": 223137,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile4.deflate",
+      "sha256": "c7c911526a9ca10dad3203f7472c089446199a9e794146b3ecb60e2c6c8202b8",
+      "bytes": 240268,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile5.deflate",
+      "sha256": "01b1dacc405041bfb4d1b321ca3f27fe5a5dab8eaf583b04d57193f1b124790b",
+      "bytes": 291712,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile6.deflate",
+      "sha256": "afc8228861d893dd62d86e132e9c9ebf462e142a3582d8ab1642349c5cc5ea5d",
+      "bytes": 340233,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile7.deflate",
+      "sha256": "811e060011f6aeda2a8e6eaa160a65c11e171a123c9189f4829350b2c3134abb",
+      "bytes": 219870,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile8.deflate",
+      "sha256": "86b64ecaa3f89bc555f34321f026165de3c0ef67f984605fb1925d596e71099e",
+      "bytes": 205508,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/environment/tile9.deflate",
+      "sha256": "3b432bc21be6531f022ac5b2804fe03b0614c2daf160531f82725dffcedb353c",
+      "bytes": 210402,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    },
+    {
+      "path": "dist/development/jangmok-coast-native/source.png",
+      "sha256": "ae818b9499904178dd5bad555f535101985d3bd5e209ed09efa7cf3711a31b34",
+      "bytes": 4028224,
+      "reason": "media_or_environment_binary_not_in_this_candidate_code_backup"
+    }
+  ]
+}

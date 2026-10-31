@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_S1_S2_NATIVE_V19",
+  "checkpoint": "Stage63 + NEW_REBUILD_S1_LAMP_GROUND_R4",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -3566,9 +3566,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/s1-east-road/assets/selected-safe.rows.json": {
-      "sha256": "4192ec61d34759a1f37f307ef6bd84b9f674b45382922c17f1511c33ff1f7a0a",
-      "bytes": 40816,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "1edc29ae08cc2c660128ea09a5f2ffb4e98e7366db3c8209740ab112f876da26",
+      "bytes": 40475,
+      "role": "active_NEW_REBUILD_S1_LAMP_GROUND_R4_source"
     },
     "dist/development/s1-east-road/compose-support.mjs": {
       "sha256": "dc53730956734171e30304fdfc23ccc93d7055192b9720a43c00bef1951cc1a5",
@@ -3581,14 +3581,14 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/s1-east-road/registration.mjs": {
-      "sha256": "a250a8af51ea232af94b181548049b3ee39bac6dc4411822b3e9910e9ce97de2",
-      "bytes": 696,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "8a25c4d9fb249a13f06eb39c1d7a9c026676fbf6b31ae33eddaa28cfd59f693b",
+      "bytes": 690,
+      "role": "active_NEW_REBUILD_S1_LAMP_GROUND_R4_source"
     },
     "dist/development/s1-east-road/support.mjs": {
-      "sha256": "d51828f7ee6969188541e69a115186ba8ce54407ba4d3fedd31f860a72384fe4",
-      "bytes": 2868,
-      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+      "sha256": "f813688a4bd9e2b8ff1cca933edf2e7bd7881bf37f1acbcce8c335c033d162cd",
+      "bytes": 3376,
+      "role": "active_NEW_REBUILD_S1_LAMP_GROUND_R4_source"
     },
     "dist/development/s1-s2-native/registration.mjs": {
       "sha256": "47210a53189836db48a2d53e2a8064316b659cdfbb00a4e5363b8dab78050903",
@@ -3604,12 +3604,217 @@
       "sha256": "6ecb1537e2e4943f31d22c24c41b6d6d80a76a1d28bddbb453c833cd6f0bd751",
       "bytes": 7864320,
       "role": "exact_selected_newly_authored_geometry_binary"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/authority.mjs": {
+      "sha256": "406bdee17a07f0c262b8d843a3453d8566f60f547ebde253a6b0513b08f81e21",
+      "bytes": 2439,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/environment.mjs": {
+      "sha256": "9bee66afaa2025d2ea89dc51fc1ac07ec9a2f1a21ca64ca71aa877ba49960998",
+      "bytes": 1638,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/open_field-wild.json": {
+      "sha256": "11aa3eb9ae79813ebada74d0a4c33f03db18debdd46dcdb4f3bbbff0f1daccde",
+      "bytes": 1809,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/presentation.mjs": {
+      "sha256": "482be9f2db68c73f4e91c38a2035af211b0806c6d267982db86a71ac7df49748",
+      "bytes": 5269,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/provider.mjs": {
+      "sha256": "82bbfbae565bd8ae190e5a4a5c789bcc64365e6580948e81692a686ff85a03fb",
+      "bytes": 2320,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/rare_sky-wild.json": {
+      "sha256": "8bc487e9528999979b325325b4e69a05865d689a945d172501766d83cc0ac6e9",
+      "bytes": 2857,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/registration.mjs": {
+      "sha256": "fdc33c0531a53147d81518f781cff28de6eb352788382c7fc7ec916b56c4fb84",
+      "bytes": 15265,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/renderer.mjs": {
+      "sha256": "5df028356bd5f40fba3313b97c264c687160a128a17dcdf38bbe379aa7980fd6",
+      "bytes": 1639,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/source-row-variants.mjs": {
+      "sha256": "ed338033d736cec689e30913b6e0773c0dd999eb9b7111028d7805a15f8a8b34",
+      "bytes": 17203,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/support.json": {
+      "sha256": "22113ffd27f97ae28e2d806dce18147295cd2ee40ce1b64732d4ecaa551b6abc",
+      "bytes": 42743,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/support.mjs": {
+      "sha256": "e3e67c43be03730ae07f98382729026e66c92c51ab1f88e71639d87d9435002b",
+      "bytes": 3763,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/gohyeon-gameplay/encounter/movement-proof.mjs": {
+      "sha256": "cf83fd54ae8fe9231661ee9e6f83fc44e2ccc2cfe63889727818e8d8c3c2972b",
+      "bytes": 31454,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/gohyeon-pair/native-selected-warp-authority.mjs": {
+      "sha256": "ccdfd97954f7e07d6b4868aa3823860d5d973555f8b9e4f3e968ed191d4ee97c",
+      "bytes": 8208,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/authority.mjs": {
+      "sha256": "2e45973eed4df5736e0fdddf6daa5160c213f6dff11942eb75d88cbb02360c1b",
+      "bytes": 3194,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/dryShore-wild.json": {
+      "sha256": "8dc0869664a3e6610b0808ff956063fab8e92c416a5a6459eb1e4db025bc3302",
+      "bytes": 2101,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/PACKETS.json": {
+      "sha256": "b18420767864a968de10969880185e40757e90bc224ef9f7f647aab8b43c6c3d",
+      "bytes": 24300,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/scene-lighting.mjs": {
+      "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+      "bytes": 1433,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/screen-lighting.mjs": {
+      "sha256": "6876a931709fc667fab9640c0643e902b363d5442191cea48879720201100e98",
+      "bytes": 1585,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/provider.mjs": {
+      "sha256": "47f7d94079e9ed754d84ebcbdc61436bbca48845d8df86ac06a9d43a2f16fc4d",
+      "bytes": 8328,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/grass-wild.json": {
+      "sha256": "c88e58468c5ed08504c41947732724a83a1a9d8b2d3dbe13fa0aaeef8685a2de",
+      "bytes": 1595,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/presentation-pins.mjs": {
+      "sha256": "d1d0241d3d9ddcfbc33b1157988545d2389bb77502f1dcc68a5a6e559e41b56f",
+      "bytes": 878,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/presentation.mjs": {
+      "sha256": "d1e7e41aee93b894dd37d8e2fd64a7f7295091f2592afef32a6c27803279f1eb",
+      "bytes": 7394,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/registration.mjs": {
+      "sha256": "429bd195f48a3d66ec2d617a60b997b733d032903747305212558d762ccf50b8",
+      "bytes": 7562,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/support.json": {
+      "sha256": "cea5d46b1649c3f804a0b2920cd52537843a0700fa6fdd000d9232d7788bcab6",
+      "bytes": 15130,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/support.mjs": {
+      "sha256": "38cfbe858ba99fe6ca7dd4657eb52ee353f3256ee8d3f3669a6254b9877d04dd",
+      "bytes": 3765,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
+      "sha256": "67827c13983926b5b34051eec24b3fb2ca988708eca2268c2d70078b867b5d1a",
+      "bytes": 52410,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
+      "sha256": "b214c875468cbadab6fac1634a21b5d926ec7892c92e7ad2227508da3b16cb49",
+      "bytes": 28320,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
+      "sha256": "112e1ebf9594ee3543dff5e199e69a3690858e2ad8f35b308c2647cf0eaa29cd",
+      "bytes": 82133,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/travel-registration.mjs": {
+      "sha256": "db9a270776b1d44bf269f54a01d2554e8e7c5973cc090471ab2ed4bc187ba6d6",
+      "bytes": 2653,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s1-east-road/assets/selected-safe.rows.json": {
+      "sha256": "1edc29ae08cc2c660128ea09a5f2ffb4e98e7366db3c8209740ab112f876da26",
+      "bytes": 40475,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s1-east-road/registration.mjs": {
+      "sha256": "8a25c4d9fb249a13f06eb39c1d7a9c026676fbf6b31ae33eddaa28cfd59f693b",
+      "bytes": 690,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s1-east-road/support.mjs": {
+      "sha256": "f813688a4bd9e2b8ff1cca933edf2e7bd7881bf37f1acbcce8c335c033d162cd",
+      "bytes": 3376,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s2-areas-native/warps.mjs": {
+      "sha256": "ab85f0215cdac5a21d2767a71f3e207428260c9a8ecc134534799a22b1dc441e",
+      "bytes": 6550,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s2-gym2-native/registration.mjs": {
+      "sha256": "df0848a8f2581b2e5b6394c6643619251a1ffda8b5c140be1ae60a4b749776b0",
+      "bytes": 5932,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/story/progression-service.mjs": {
+      "sha256": "8d9b71453698c13384a2a0ebe25d851fd191588a308e40f778db5d2f3e2dd2c3",
+      "bytes": 44698,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/dist/world/service.mjs": {
+      "sha256": "6346bde5e06989c135a7dbcf0e7e9d6bd93ac85d30b7c9aa270e9887e69fe66c",
+      "bytes": 43595,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "candidates/NEW_REBUILD_S2_PROGRESSION/OMITTED_DEPENDENCIES.json": {
+      "sha256": "95e4ca696903c16c1891e85b419850049c5fc0614a9d2a6245001bd7a49ae596",
+      "bytes": 8986,
+      "role": "isolated_candidate_code_or_metadata"
+    },
+    "art/originals/maps/jangmok-coast-encounter-native-v5.png": {
+      "sha256": "ae818b9499904178dd5bad555f535101985d3bd5e209ed09efa7cf3711a31b34",
+      "bytes": 4028224,
+      "role": "archived_selected_generated_game_map_original_not_runtime_linked"
     }
   },
-  "revision": "NEW_REBUILD_S1_S2_NATIVE_V19",
-  "previous_public_commit": "f76ca1b0c6e5021a76eaf34438439c18d0bbfda1",
-  "revision_source_manifest_sha256": "41f847098bacb0eeacb42043d5cfe90ae6b1ae456d40a4dba3c2014babe76ad5",
-  "revision_scope": "Bounded S1-east/S2-west roundtrip, save restore and menu lock actual PASS; latency and full game HOLD; no coast/BIRD/GYM2 connection; two historical authored geometry arrays added to backup only",
+  "revision": "NEW_REBUILD_S1_LAMP_GROUND_R4",
+  "previous_public_commit": "052584596122d49e97b0853482ccf75f39fa9662",
+  "revision_source_manifest_sha256": "5aee500402dce32b2264ce8280a4090217169a8164ee969861c21938d8087ec4",
+  "revision_scope": "Three exact LampR4 shipping files; bounded actual walk and save migration PASS; latency/fullgame HOLD; isolated S2 progression candidate code shelf and one archival generated coast original, not extra active connections",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -3722,6 +3927,61 @@
       "standalone": false,
       "validation": "New async-presented receipt fix included. Independent final audit and browser integration remain pending; no complete-game claim.",
       "currentPromotion": "32 exact code/JSON source files promoted; bounded actual S1-S2 route PASS. Shelf history retained."
+    },
+    "NEW_REBUILD_S2_PROGRESSION": {
+      "status": "ISOLATED_NOT_INSTALLED_ACTUAL_QA_IN_PROGRESS",
+      "source_manifest_sha256": "5f327dfac52b5f44ddc403f02652e4c64f46efb1b2454e07d5e286059c855ad0",
+      "files": [
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/authority.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/environment.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/frame-lighting.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/open_field-wild.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/presentation.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/provider.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/rare_sky-wild.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/registration.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/renderer.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/source-row-variants.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/support.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/bird-hill-native/support.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/gohyeon-gameplay/encounter/movement-proof.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/gohyeon-pair/native-selected-warp-authority.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/authority.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/dryShore-wild.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/PACKETS.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/day-night.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/frame-lighting.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/scene-lighting.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/common/screen-lighting.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/environment/provider.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/grass-wild.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/presentation-pins.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/presentation.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/registration.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/support.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jangmok-coast-native/support.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/native-envelope.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/review-host.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/session-owner.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/jungle-native/main_ui_candidate/travel-registration.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s1-east-road/assets/selected-safe.rows.json",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s1-east-road/registration.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s1-east-road/support.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s2-areas-native/warps.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/development/s2-gym2-native/registration.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/story/progression-service.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/dist/world/service.mjs",
+        "candidates/NEW_REBUILD_S2_PROGRESSION/OMITTED_DEPENDENCIES.json"
+      ],
+      "standalone": false,
+      "excluded": [
+        "topcrop",
+        "nightbank",
+        "loading_parallel",
+        "QAhelpers",
+        "private_fixtures",
+        "media_and_environment_binary_dependencies"
+      ]
     }
   },
   "explicit_binary_exceptions": {
@@ -3738,5 +3998,15 @@
       }
     ],
     "scope": "No artwork pixels; independently reproduced from authored polygon and erosion, exact historical bytes; not new collision behavior."
+  },
+  "original_art_backups": {
+    "JANGMOK_COAST_V5": {
+      "path": "art/originals/maps/jangmok-coast-encounter-native-v5.png",
+      "sha256": "ae818b9499904178dd5bad555f535101985d3bd5e209ed09efa7cf3711a31b34",
+      "bytes": 4028224,
+      "role": "selected generated game-map original archival copy; not runtime integration",
+      "provenance": "native generated-image metadata, selected source registry, preserved production prompt, exact source SHA match and visual inspection",
+      "source_inputs_and_references_included": false
+    }
   }
 }
