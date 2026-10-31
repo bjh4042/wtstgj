@@ -1,3 +1,4 @@
+import{GEOMETRY_PINS as S4_SELECTED_GEOMETRY}from'../geometry-pins.mjs';
 import{AJU as S3_AJU}from'../../aju-native/registration.mjs';
 import{FOREST as S3_FOREST}from'../../okpo-forest-native/registration.mjs';
 import{BIRD as S2_BIRD}from'../../bird-hill-native/registration.mjs';
@@ -173,6 +174,20 @@ export function createS3AreaEncounterWalker({region,getInputReady,getWorld,getPo
  const valid=()=>{const p=getPose(),provider=getProvider(),w=getWorld();return !disposed&&p&&w?.snapshot().position.scene===R.mapId&&p.sceneId===R.sceneId&&p.imageSHA===R.image.sha256&&p.maskSHA===R.support.sha256&&provider?.pinsVerified&&provider.validate(p)===true&&getSignal() instanceof AbortSignal&&!getSignal().aborted};
  scene.reset=()=>{if(state.inFlight||state.pending)throw Error('S3_AREA_PENDING_MOVE_RESET');reset(state);state.lastFoot=null};
  scene.move=(dx,dy)=>{if(!getInputReady()||!valid()||!Number.isInteger(dx)||!Number.isInteger(dy)||(dx&&dy)||Math.abs(dx||dy)>240)return 0;const w=getWorld(),p=getPose();if(w.busy||w.inputLocked||w.story.pendingCommit||state.inFlight||state.pending)return 0;if(!state.lastFoot)state.lastFoot=[...p.foot];if(!same(state.lastFoot,p.foot)){reset(state);state.carry=0;state.lastFoot=[...p.foot];return 0}let moved=0;for(let i=0;i<Math.abs(dx||dy);i++){const from=[...getPose().foot],to=[from[0]+Math.sign(dx),from[1]+Math.sign(dy)];if(!getProvider().safe(to))break;commitFoot(to);if(!same(getPose().foot,to))throw Error('S3_AREA_REAL_PIXEL_COMMIT_DRIFT');state.lastFoot=[...to];moved++;if(credit(state,from,to))break}autoDispatch(scene);return moved};
+ scene.settled=async()=>{const task=state.inFlight;if(task)try{await task}finally{await Promise.resolve();await Promise.resolve()}};scene.resumePendingNativeEncounter=()=>{if(!state.pending&&!getWorld()?.story.pendingCommit)state.error=null;return state.pending?.state==='sealed'?autoDispatch(scene):null};
+ Object.defineProperty(scene,'encounterNotice',{get:()=>state.pending?.state==='pending'?'조우 기록 저장을 다시 시도해 주세요.':state.error?'조우 처리를 확인해 주세요.':null});
+ scene.dispose=()=>{disposed=true;reset(state);states.delete(scene)};return Object.freeze(scene);
+}
+
+// Same original private credit/dispatch producer, fixed two selected S4 maps only.
+export function createS4SelectedAreaEncounterWalker({region,getInputReady,getWorld,getPose,getProvider,getSignal,commitFoot,initialCarry=0}={}){
+ if([getInputReady,getWorld,getPose,getProvider,getSignal,commitFoot].some(f=>typeof f!=='function'))throw Error('S4_SELECTED_AREA_WALK_OWNER_REQUIRED');
+ if(!Number.isInteger(initialCarry)||initialCarry<0||initialCarry>47)throw Error('S4_SELECTED_AREA_INITIAL_CARRY');const map=region==='park'?'world:area:S4_POW_CAMP_PARK_EDGE':region==='greenbelt'?'world:area:S4_GOHYEON_GREENBELT':null,R=S4_SELECTED_GEOMETRY.maps.find(r=>r.mapId===map);if(!R)throw Error('S4_SELECTED_REGION_REQUIRED');let disposed=false;const geo={tableAt:foot=>getProvider()?.wildZone(foot)?.tableId??null};
+ const scene={mapId:R.mapId,sessionEpoch:1,get busy(){return !!state.inFlight||!!state.pending},get world(){return getWorld()},get disposed(){return disposed},getGameplaySignal:getSignal,getLocation(){const p=getPose();return p?{...p,foot:[...p.foot]}:null}};
+ const state={geo,carry:initialCarry,residual:0,table:null,pending:null,localSerial:0,lastFoot:null,epoch:1};states.set(scene,state);
+ const valid=()=>{const p=getPose(),provider=getProvider(),w=getWorld();return !disposed&&p&&w?.snapshot().position.scene===R.mapId&&p.mapId===R.mapId&&p.state==='FIXED'&&p.imageSHA===R.imageSHA&&p.maskSHA===R.selectedSolidSafe.sha256&&provider?.pinsVerified&&provider.validate(p)===true&&getSignal() instanceof AbortSignal&&!getSignal().aborted};
+ scene.reset=()=>{if(state.inFlight||state.pending)throw Error('S4_SELECTED_AREA_PENDING_MOVE_RESET');reset(state);state.lastFoot=null};
+ scene.move=(dx,dy)=>{if(!getInputReady()||!valid()||!Number.isInteger(dx)||!Number.isInteger(dy)||(dx&&dy)||Math.abs(dx||dy)>240)return 0;const w=getWorld(),p=getPose();if(w.busy||w.inputLocked||w.story.pendingCommit||state.inFlight||state.pending)return 0;if(!state.lastFoot)state.lastFoot=[...p.foot];if(!same(state.lastFoot,p.foot)){reset(state);state.carry=0;state.lastFoot=[...p.foot];return 0}let moved=0;for(let i=0;i<Math.abs(dx||dy);i++){const from=[...getPose().foot],to=[from[0]+Math.sign(dx),from[1]+Math.sign(dy)];if(!getProvider().safe(to,'FIXED'))break;commitFoot(to);if(!same(getPose().foot,to))throw Error('S4_SELECTED_AREA_REAL_PIXEL_COMMIT_DRIFT');state.lastFoot=[...to];moved++;if(credit(state,from,to))break}autoDispatch(scene);return moved};
  scene.settled=async()=>{const task=state.inFlight;if(task)try{await task}finally{await Promise.resolve();await Promise.resolve()}};scene.resumePendingNativeEncounter=()=>{if(!state.pending&&!getWorld()?.story.pendingCommit)state.error=null;return state.pending?.state==='sealed'?autoDispatch(scene):null};
  Object.defineProperty(scene,'encounterNotice',{get:()=>state.pending?.state==='pending'?'조우 기록 저장을 다시 시도해 주세요.':state.error?'조우 처리를 확인해 주세요.':null});
  scene.dispose=()=>{disposed=true;reset(state);states.delete(scene)};return Object.freeze(scene);

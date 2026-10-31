@@ -107,3 +107,6 @@ S4 허브 왕복 범위만 설치 완료. 게임8경로와 기존 원본39개 �
 
 ## 최신 활성: S4_CENTER_HOLD_R2
 owner/host 두 파일만 설치·원본 aggregate1643PASS/0FAIL/11SKIP 확인. 원본5200ms healing은 출입지연과 별도. 실제S4loss/cold/mobile/전체게임HOLD; area/gzip/GYM4/House3 미설치. 단일 protected tuple 예외 유지, 다른fixture와 registration 공개제외. 배포명령0/외부자동배포연계미확인.
+
+## 최신 활성: S4_AREA_GYM4_R1
+게임17경로만 설치/aggregate1643PASS0FAIL11SKIP. S5/gzip/House3 미설치; cold/mobile/전체게임 미검증. GYM4입장평균0.926s/귀환1.355s,초기8.529s별도. 별도 completedS4→S3 actual23턴loss→S4 복귀·명시save/restore Node19checks100closed PASS이며 browser loss 아님. incompleteS4fallback/lossfault는미검증. 배포명령0/외부자동배포미확인.

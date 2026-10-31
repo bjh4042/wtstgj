@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_S4_CENTER_HOLD_R2",
+  "checkpoint": "Stage63 + NEW_REBUILD_S4_AREA_GYM4_R1",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -397,9 +397,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/gohyeon-gameplay/encounter/movement-proof.mjs": {
-      "sha256": "19b2d4e73b666ca8b7f8c428a7c06f415474ea8489c7d859aaec1b8c5bfe7c0d",
-      "bytes": 34388,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 37526,
+      "sha256": "1e01fb32babcccaf48c4a5ff231dbb6855d273ef942b608f2275470d0e25f6e3",
+      "role": "active_S4_area_gym4_source"
     },
     "dist/development/gohyeon-gameplay/entry.mjs": {
       "sha256": "ad173aa7c56f8e1ab197cc697806be9fa64d502296a9d97de1a53e16cb2af84b",
@@ -422,9 +422,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/gohyeon-gameplay/native-gameplay-authority.mjs": {
-      "sha256": "cfe95446becb95fc6a0ffacdab9436ac892d39e99604ae2804cb6167bc5e1cc3",
-      "bytes": 3775,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "bytes": 5860,
+      "sha256": "a4d94ac40911f0b30201e2fe05973c051158bc2c97feffd36619fd74e2a16653",
+      "role": "active_S4_area_gym4_source"
     },
     "dist/development/gohyeon-gameplay/npc-layer.mjs": {
       "sha256": "2c503d4b5b68c8a60d12074077dee0e84863e63f607b71f0bd6130fd40a4c982",
@@ -1067,9 +1067,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
-      "bytes": 70931,
-      "sha256": "066b2451f330748ee34f9e60d04561b702f01bee807e7fd2e0cf636587461aa3",
-      "role": "active_S4_center_game_or_test_code"
+      "bytes": 71889,
+      "sha256": "6102e19169091a49797a3014a17395665b239ab20ddb63c6fa7538eeffa4da52",
+      "role": "active_S4_area_gym4_source"
     },
     "dist/development/jungle-native/main_ui_candidate/native-harin-authority.mjs": {
       "sha256": "09134f1f2df1fb760186cd986ffa82588393422cc09611b9091e2dee948c893d",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "bytes": 42227,
-      "sha256": "f4a00eacb4434b3831a1675767d2fc50c9c292603eb88f8a3557d094d6685c89",
-      "role": "active_center_hold_R2_source"
+      "bytes": 45599,
+      "sha256": "17837336cdd8392ea03f93bd151b6e972e92da8cfb6e0d49f440ae18e00e855d",
+      "role": "active_S4_area_gym4_source"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "bytes": 121660,
-      "sha256": "a7787b7e686b814a1fee51e72166d8a68f4a7599084a23c8152b5a1454652a5a",
-      "role": "active_center_hold_R2_source"
+      "bytes": 139465,
+      "sha256": "7bb4c601f9c18329cd8cbc924c75826182159ac970aefec062098bc6811c2f01",
+      "role": "active_S4_area_gym4_source"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -1137,9 +1137,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/travel-registration.mjs": {
-      "bytes": 2934,
-      "sha256": "cf7d2e8a26ae65787a19a30db74acdc64926f00cef64df6b923b18bd1d885709",
-      "role": "active_S4_hub_code_or_adopted_original_runtime"
+      "bytes": 3017,
+      "sha256": "50114e2dd9798fd07be52df10e2a7b55c027d626ac0f3dc0015e00bb7147c076",
+      "role": "active_S4_area_gym4_source"
     },
     "dist/development/jungle-native/student_copy_review/student-copy.mjs": {
       "sha256": "745b7314836b91c55ae1b09b73a7df0f2c95c332e11d050aace6e366bfb9bda2",
@@ -4406,9 +4406,9 @@
       "role": "explicit_nonpersonal_compiled_boolean_navigation_data"
     },
     "dist/development/s4-progression-native/known-warps.mjs": {
-      "bytes": 3526,
-      "sha256": "97fca7329c01daf2abc0325b8e9ca9238808b8b9788f7c65660854108b9829f7",
-      "role": "active_S4_hub_code_or_adopted_original_runtime"
+      "bytes": 13912,
+      "sha256": "78215073ef39d308e04b4f79a93b531f446f885ba97f62e564d689d048c3fbac",
+      "role": "active_S4_area_gym4_source"
     },
     "dist/development/jungle-native/main_ui_candidate/s3-stage-intermediate.mjs": {
       "bytes": 1277,
@@ -4659,12 +4659,62 @@
       "bytes": 1949,
       "sha256": "e80e78e5f677246e85e63a3ffc82eaaa8fad7413dfaabdf22cfb5adb81558b95",
       "role": "single_root_selected_safe_protected_tuple_exception"
+    },
+    "dist/development/s4-area-native/area-support.mjs": {
+      "bytes": 1689,
+      "sha256": "038160de40ba53cb6607dbef47923dbd3dc077599711f99e0809d042533c5e84",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/area.mjs": {
+      "bytes": 3404,
+      "sha256": "b48a74eae85a4ab6a91e0a79c30ca1d4e2b2f2ae6b76c8bf23e35d36255c807f",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/bridge.mjs": {
+      "bytes": 4592,
+      "sha256": "99d2307c7ee25a14da41516bad1addabeb9dfcbb7046baac5a01f9301c28893b",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/common.mjs": {
+      "bytes": 6391,
+      "sha256": "7b2c3a7f6d4faade66ba47ac75d9808d47a86efa1579a24457c97e6f8e949903",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/support.mjs": {
+      "bytes": 3966,
+      "sha256": "029f5b0851b3878c1cc3fa23ac9a67355df5ea086cbf80d5cecc2f9c3efa5622",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/target-renderer.mjs": {
+      "bytes": 5340,
+      "sha256": "d6de287b99c5178880954dd935a93742c324130567fa7e50015ee97632f2ca53",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/visible-proof.mjs": {
+      "bytes": 2687,
+      "sha256": "a86a2e3cea71c98b640d36a58ed2ac450b6741ec77e1cba9fe31024e34f2ca7b",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/gym-renderer.mjs": {
+      "bytes": 2527,
+      "sha256": "b4185a9a0a1a48f7b790f12789f50ebe2bfc0d5769c6a04ab9ef53a1068f4571",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/gym.mjs": {
+      "bytes": 2690,
+      "sha256": "258129a9fafe3485c2cf10964266522695e8a993817451db1ff286768f3e1baa",
+      "role": "active_S4_area_gym4_source"
+    },
+    "dist/development/s4-area-native/gym-saved-pose.mjs": {
+      "bytes": 834,
+      "sha256": "5097d9372aba21468b821c393663ee07376d95b54f2bba44ce87db0a57b5b963",
+      "role": "active_S4_area_gym4_source"
     }
   },
-  "revision": "NEW_REBUILD_S4_CENTER_HOLD_R2",
-  "previous_public_commit": "61f56b7da8d6037031862d6df295039e4ab8d36e",
-  "revision_source_manifest_sha256": "f991434bbf40271d8bec6ec1d0290da8acadd65a1e02401a1051608eb8c8c9f4",
-  "revision_scope": "Owner/host two presentation preparation hold changes only; exact protected tuple remains, no area/gzip/GYM4/House3",
+  "revision": "NEW_REBUILD_S4_AREA_GYM4_R1",
+  "previous_public_commit": "d28edb2e3c7c7f266cea47834ca6b4b6f567ac76",
+  "revision_source_manifest_sha256": "d87e6df907115ad1f733eb88755f387489759694494f29184a67a4887414d201",
+  "revision_scope": "Installed game17 area/GYM4 union only; exact protected tuple retained; no S5/gzip/House3",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4860,12 +4910,12 @@
     }
   },
   "active_code_selection": {
-    "spaceSafeCodeFiles": 921,
-    "publicSafeCodeFiles": 803,
-    "reusedUnchangedPublicFiles": 801,
-    "changedOrAddedCodeFiles": 2,
+    "spaceSafeCodeFiles": 931,
+    "publicSafeCodeFiles": 813,
+    "reusedUnchangedPublicFiles": 796,
+    "changedOrAddedCodeFiles": 17,
     "newPrivateOrInternalMetadataNotSelected": 117,
-    "managedManifestSHA256": "f991434bbf40271d8bec6ec1d0290da8acadd65a1e02401a1051608eb8c8c9f4",
+    "managedManifestSHA256": "d87e6df907115ad1f733eb88755f387489759694494f29184a67a4887414d201",
     "sourceCodeExactBytes": true,
     "aggregate": {
       "total": 1654,
@@ -4874,14 +4924,15 @@
       "skip": 11
     },
     "actualWarpScope": {
-      "scope": "Center prepare entry/exit hold only",
+      "scope": "S4 area/GYM4 bounded actual; completedS4 Node loss positive is separate, not browser loss",
       "limits": [
-        "HTTP cache uncontrolled/cold/device/fullgame unverified",
-        "Original5200ms healing separate from door latency",
-        "ActualS4loss and completedS4positive independently pending; not claimed here",
-        "historical browser timeouts causeunknownOPEN",
-        "Area/gzip/GYM4/House3 not installed",
-        "Original Nodeearned Lv100HP169PP0 checkpoint not normaldifficulty"
+        "HTTPcacheuncontrolled/cold/device/mobile/fullgameunverified",
+        "GYM4entrymean0.926s returnmean1.355s; observedmax1.491s; initial8.529s separate",
+        "Original5200mscenterheal separatefromwarp",
+        "Historical503 valid3.1177s preservedoldsourcecohort",
+        "Historical57/60CUAtimeoutcausesOPEN",
+        "S5/gzip/House3 notinstalled; notdeployment",
+        "NodeearnedLv100checkpoints notnormaldifficulty/fullUIjourney"
       ]
     }
   },
