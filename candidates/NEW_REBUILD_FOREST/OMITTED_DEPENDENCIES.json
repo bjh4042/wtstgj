@@ -1,0 +1,34 @@
+{
+  "status": "PARTIAL_BACKUP_DEPENDENCIES_NOT_INCLUDED",
+  "omitted": [
+    {
+      "originalPath": "dist/development/okpo-forest-native/light_transmission.f64",
+      "sha256": "5d53105c999140ea991e0739fcf7c3c746404350fb789c500c0a3275c8d202a8",
+      "bytes": 553224,
+      "included": false,
+      "reason": "existing original art or light binary omitted from partial code/runtime-data backup"
+    },
+    {
+      "originalPath": "dist/development/okpo-forest-native/light_indices.u32",
+      "sha256": "e888c4e033c941e1aa3b14b955daf7761dddae51de18d2340b35c4c267b289df",
+      "bytes": 92204,
+      "included": false,
+      "reason": "existing original art or light binary omitted from partial code/runtime-data backup"
+    },
+    {
+      "originalPath": "dist/development/okpo-forest-native/source.png",
+      "sha256": "f2b2a977d20ca048e66c7b030ac361e4e749c6f5bf2be200e21e261562a8fd47",
+      "bytes": 5022274,
+      "included": false,
+      "reason": "existing original art or light binary omitted from partial code/runtime-data backup"
+    }
+  ],
+  "externalApprovedAtlasManifestSHA256": "3f337223b51724f825810ff0a15a6eecbb02897a1202f836342f35a9272ff4cc",
+  "smallBinaryException": {
+    "originalPath": "dist/development/okpo-forest-native/lamp-depth.u32",
+    "bytes": 6800,
+    "sha256": "4c523e3fb28a91386165cef79cfec89e58c8fc64a36f0d36d5f90ad4ac46a41a",
+    "type": "1700 little-endian uint32 pixel indices; within1536x1024; unique1700",
+    "authorization": "explicit one-file original runtime-data exception; not general media permission"
+  }
+}

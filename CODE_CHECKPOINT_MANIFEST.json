@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "kind": "PARTIAL_DEVELOPMENT_CODE_CHECKPOINT",
+  "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
   "checkpoint": "Stage63 + NEW_REBUILD_R2",
   "standalone": false,
   "final_game": false,
@@ -3145,10 +3145,129 @@
       "bytes": 24134,
       "role": "ISOLATED_PERFORMANCE_CANDIDATE_NOT_INSTALLED",
       "originalPath": "dist/development/jungle-native/main_ui_candidate/review-host.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/lamp-depth.u32": {
+      "sha256": "4c523e3fb28a91386165cef79cfec89e58c8fc64a36f0d36d5f90ad4ac46a41a",
+      "bytes": 6800,
+      "role": "CANDIDATE_ORIGINAL_SMALL_RUNTIME_DATA",
+      "originalPath": "dist/development/okpo-forest-native/lamp-depth.u32"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/original-light-compose.mjs": {
+      "sha256": "47a39b38fff511c913844cc208590f4062208d05b9e020fc60f19ece634967de",
+      "bytes": 1301,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/original-light-compose.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/registration.mjs": {
+      "sha256": "d063c683e51fa1cf12d075c835d52c14055c1665e4b0afb2729a49d2c1b23fbb",
+      "bytes": 8852,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/registration.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/west-wild.json": {
+      "sha256": "6081d9148a1ad5bf923c0b2962c356574ac6f24107e54be40d2c7b7182c93a80",
+      "bytes": 5335,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/west-wild.json"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/support.mjs": {
+      "sha256": "c2192635e396d0afce7b6c3b2b8e54635a73db79060ad27eb869f2c2f060c0d2",
+      "bytes": 3779,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/support.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/authority.mjs": {
+      "sha256": "ef27e0073a219f69fb9f36796213ed75a1faa25d85813c25808a436dce500805",
+      "bytes": 2475,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/authority.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/environment-registration.mjs": {
+      "sha256": "6c165af84c854776e6433db86e73ee662d98e417dcc57fa4f008255270d961a4",
+      "bytes": 932,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/environment-registration.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/provider.mjs": {
+      "sha256": "adcf70e9fc5b9ce01ed949350266e72c7dc4b050b3e25ad24f039b183f03ea8d",
+      "bytes": 4036,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/provider.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/original-frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/original-frame-lighting.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/east-wild.json": {
+      "sha256": "d2e291efbb750a526969ad832e2b9fa4afffbf9e7d79b08d31a209679de4ce22",
+      "bytes": 6417,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/east-wild.json"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/support.json": {
+      "sha256": "30d96aee8bd92d22332fcaaeca593aa7f117347b23694ebcf622249d13cb812a",
+      "bytes": 26471,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/support.json"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/presentation.mjs": {
+      "sha256": "36c9ac4cdb1b5430f6e95bbfcc0a60ec70bd3cf3aeae1b431bd4c565e2cc89a7",
+      "bytes": 4458,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/presentation.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/source-row-variants.mjs": {
+      "sha256": "3f03e6133632e1195e5de7ac4434cd4de963316521a1bfc8971b653fc5e9be6c",
+      "bytes": 8777,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/okpo-forest-native/source-row-variants.mjs"
+    },
+    "candidates/NEW_REBUILD_FOREST/OMITTED_DEPENDENCIES.json": {
+      "sha256": "57795ac9a9cdd6cfdb34fdacdc2ca1792aa6cc1b60c3bd7ed7cd02b487988124",
+      "bytes": 1558,
+      "role": "OMITTED_DEPENDENCY_HASH_RECORD"
+    },
+    "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/SELECTION.json": {
+      "sha256": "9f70ebb8c7fadefccf28b86a5a8efeb94dc1d7889b5ee030f0dbeea86ef32e58",
+      "bytes": 882,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/jangmok-town-native/SELECTION.json"
+    },
+    "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/assets/selected-safe.rows.json": {
+      "sha256": "9ed1578eba6311342b60565ebb2c2ca664084b4034f6250f152f846ceb03e8e9",
+      "bytes": 95070,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/jangmok-town-native/assets/selected-safe.rows.json"
+    },
+    "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/registration.mjs": {
+      "sha256": "a7c907180eaf71f3747537a7644ac5ddde92fbc1def3d160869464cf465a4a01",
+      "bytes": 1810,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/jangmok-town-native/registration.mjs"
+    },
+    "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/support.mjs": {
+      "sha256": "e180081a913eb165a62b3c812ab9499785a8f59c22bb57693b6fa55273ff8e0a",
+      "bytes": 2829,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/jangmok-town-native/support.mjs"
+    },
+    "candidates/NEW_REBUILD_S1_S2_HELPERS/dist/development/jungle-native/main_ui_candidate/s1-s2-route-contract.mjs": {
+      "sha256": "61b4259b0aa69b7f8a6a6e8af6ba331c8482ecd765cfa08d04926741e88bc827",
+      "bytes": 503,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/jungle-native/main_ui_candidate/s1-s2-route-contract.mjs"
+    },
+    "candidates/NEW_REBUILD_S1_S2_HELPERS/dist/development/jungle-native/main_ui_candidate/s1-stage-intermediate.mjs": {
+      "sha256": "01e046de946bb82ca305b40cd53bf2eafd5b3b40780b70f4a5230fee5c6ec73f",
+      "bytes": 1178,
+      "role": "ISOLATED_CANDIDATE_SOURCE_DATA_NOT_INSTALLED",
+      "originalPath": "dist/development/jungle-native/main_ui_candidate/s1-stage-intermediate.mjs"
     }
   },
   "revision": "NEW_REBUILD_R2",
-  "previous_public_commit": "f2a7b80329acf7ba828366a33efa7616ca1433c3",
+  "previous_public_commit": "695d8bbfea4d327195dbfe55c5a67b2dbe572f37",
   "revision_source_manifest_sha256": "8cab772d68238a37b43eb2703761c342d023e8312b4eac9a6f1384734a286f42",
   "revision_scope": "S1 RIVAL_01 and GYM1 native integration and strict persistence. Actual partial functional PASS; PERFORMANCE_HOLD; gym return journey unfinished. GYM2 dormant, S2 routes not integrated. Not exact lost code.",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
@@ -3179,6 +3298,47 @@
         "candidates/NEW_REBUILD_PERFORMANCE/dist/development/gym-frame-allocation/animation.mjs",
         "candidates/NEW_REBUILD_PERFORMANCE/dist/development/jungle-native/main_ui_candidate/review-host.mjs"
       ]
+    },
+    "NEW_REBUILD_FOREST": {
+      "status": "INDEPENDENT_REVIEW_PASS_ISOLATED_NOT_INSTALLED",
+      "source_manifest_sha256": "d0dc8e1f0dc25f6988d9f1c2aa4dbf0c8c60549e732dab6e3d96dd5424e69bbf",
+      "files": [
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/lamp-depth.u32",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/original-light-compose.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/registration.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/west-wild.json",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/support.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/authority.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/environment-registration.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/provider.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/original-frame-lighting.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/east-wild.json",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/support.json",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/presentation.mjs",
+        "candidates/NEW_REBUILD_FOREST/dist/development/okpo-forest-native/source-row-variants.mjs",
+        "candidates/NEW_REBUILD_FOREST/OMITTED_DEPENDENCIES.json"
+      ],
+      "standalone": false
+    },
+    "NEW_REBUILD_S2_SUPPORT": {
+      "status": "INDEPENDENT_REVIEW_PASS_ISOLATED_NOT_INSTALLED",
+      "source_manifest_sha256": "8ed927049faa600235cca889c2753cd239264859e3794c0f0886537956d97bc2",
+      "files": [
+        "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/SELECTION.json",
+        "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/assets/selected-safe.rows.json",
+        "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/registration.mjs",
+        "candidates/NEW_REBUILD_S2_SUPPORT/dist/development/jangmok-town-native/support.mjs"
+      ],
+      "standalone": false
+    },
+    "NEW_REBUILD_S1_S2_HELPERS": {
+      "status": "INDEPENDENT_REVIEW_PASS_ISOLATED_NOT_INSTALLED",
+      "source_manifest_sha256": "552b815e5a921279150c15131bbf9277f7825372dddec799668551f2e47ff4af",
+      "files": [
+        "candidates/NEW_REBUILD_S1_S2_HELPERS/dist/development/jungle-native/main_ui_candidate/s1-s2-route-contract.mjs",
+        "candidates/NEW_REBUILD_S1_S2_HELPERS/dist/development/jungle-native/main_ui_candidate/s1-stage-intermediate.mjs"
+      ],
+      "standalone": false
     }
   }
 }
