@@ -1,3 +1,4 @@
+import{loadS1CompiledMask}from'../s1-compiled-masks/load.mjs';
 import{claimS1SharedImage}from'./shared-image.mjs';
 import{loadS1Night}from'../s1-night/load.mjs';
 import{S1_LOCAL_SCENE as R}from'./scene.mjs';
@@ -15,7 +16,7 @@ export async function prepareS1Local({signal,fetcher=fetch,decode=async b=>creat
  const read=async path=>{check();const r=await fetcher(new URL(path,moduleURL),{signal});if(!r.ok)throw Error('S1_LOCAL_INPUT_MISSING');const raw=await r.arrayBuffer(),bytes=new Uint8Array(raw instanceof ArrayBuffer?raw.slice(0):raw);check();return bytes};
  const decodeOwned=async bytes=>{check();const value=await decode(bytes);if(disposed||signal?.aborted){try{value.close?.()}finally{throw Error('S1_LOCAL_PREPARE_CANCELLED')}}return value};
  try{
-  const[art,mask,oc]=await Promise.all([sharedImageToken?null:read('./assets/yeoncho-open.png'),read('./assets/local-main.u8'),read('./assets/opaque-origins.json')]);
+  const[art,mask,oc]=await Promise.all([sharedImageToken?null:read('./assets/yeoncho-open.png'),loadS1CompiledMask('local',{fetcher,signal}),read('./assets/opaque-origins.json')]);
   if((!sharedImageToken&&await hash(art)!==R.imageSHA)||await hash(mask)!==R.maskSHA||mask.length!==R.width*R.height||await hash(oc)!==ORIGINS_SHA)throw Error('S1_LOCAL_PIN_MISMATCH');check();
   const origins=JSON.parse(new TextDecoder().decode(oc));
   const safe=foot=>{const f=footValue(foot);return!disposed&&!!f&&f[0]>=0&&f[1]>=0&&f[0]<R.width&&f[1]<R.height&&mask[f[1]*R.width+f[0]]===1};

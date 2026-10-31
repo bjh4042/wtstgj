@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R1",
+  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R3_COAST_RESOURCE",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "sha256": "a36d682e066d047be1630938d07dd19efb75a57d4cb316c3d2a8f7bf73e72c2d",
-      "bytes": 33376,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 35072,
+      "sha256": "b669748f275f8944ef6eae34249e69cbc86573b6cde6d2b9e7fea3a24cd44ab0",
+      "role": "active_R3_safe_code"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "sha256": "a3855694568f741690681fe8a576ac0f718ac42ac4608798950edf107715ad8b",
-      "bytes": 96303,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 102304,
+      "sha256": "148eea28332fd4da16b20f416745f0c502db3fdecfa083060fdea4c0029524cd",
+      "role": "active_R3_safe_code"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -1787,9 +1787,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/s1-local/presentation.mjs": {
-      "sha256": "c1838c8142c6203f6f647ef52a7186318c63ab73663f7c5608afb299393718c4",
-      "bytes": 5210,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 5287,
+      "sha256": "949b3cac0d84efda93603ea99676b5982cfc20caa573d3050b693d3cd37ac340",
+      "role": "active_R3_safe_code"
     },
     "dist/development/s1-local/scene.mjs": {
       "sha256": "482120c5f8e1459eaa53d2e7e7e25863f2ce9389aa654537062dcf04a36e0845",
@@ -1797,9 +1797,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/s1-local/support.mjs": {
-      "sha256": "bb8fe59f175d24ae13e08b215b1812454029dff549a762ec4f528443a976712f",
-      "bytes": 2071,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "bytes": 1947,
+      "sha256": "4f76a047c00d7fb872a7762db397c8aedbf5ba5d02c6c6f74bdd53aa5c1b88ce",
+      "role": "active_R3_safe_code"
     },
     "dist/development/s9-transfer/entry.mjs": {
       "sha256": "860631b836e54695f84e34d5ea0b624056b0567410f2111bfdca5bfec2fd78f5",
@@ -2412,9 +2412,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/hacheong-brackish/provider.mjs": {
-      "sha256": "14ae43a9cdb411097e607bd7ccfe0d8a82268d1c1719d4e28c40660504681f79",
-      "bytes": 9935,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 10064,
+      "sha256": "72f801d00e8ac5a1169ea2c76918f6f069ce489f29008b63fd3e2211d22fea2f",
+      "role": "active_R3_safe_code"
     },
     "dist/development/hacheong-brackish/s1-continuous.mjs": {
       "sha256": "08defacaf7574cbcb85d52b3b685854bedc1e7217ddae63e8ae9d53efaa67a09",
@@ -2757,9 +2757,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/hacheong-wetland/support.mjs": {
-      "sha256": "7a6dccd4551f4af0e0d8447027c62aea05dfc6f086bef800b851d1437fc1dc5a",
-      "bytes": 2980,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "bytes": 3135,
+      "sha256": "8005f11e0c63fc33a94d9533df6f1bdafc23ebc3ff1bc4b3d02665ae5a4a8ebf",
+      "role": "active_R3_safe_code"
     },
     "dist/development/hacheong-brackish/night/layer.mjs": {
       "sha256": "95a523102ef8569c48b9d118dd10b7dce6fd73a57cca51271fb1fc309cefc15a",
@@ -4379,12 +4379,37 @@
       "sha256": "888b5f9918dfe30394cb2a80479200c3249635c3631da5e9db0e4d5025ac0040",
       "bytes": 1302,
       "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+    },
+    "dist/development/s1-compiled-masks/load.mjs": {
+      "bytes": 2028,
+      "sha256": "383b3ef306a05d3784bde0156fa5f2fa5bdbd4b6b675698333ed5587af578237",
+      "role": "active_R3_safe_code"
+    },
+    "dist/development/s1-compiled-masks/pins.mjs": {
+      "bytes": 1293,
+      "sha256": "e30aeabf2116d898362391c1ec3cb1da67694d834dad5226d9a412554d6d5d68",
+      "role": "active_R3_safe_code"
+    },
+    "dist/development/s1-compiled-masks/assets/local.runs": {
+      "bytes": 6480,
+      "sha256": "14e2a7670407407947f4f5125d99727aa273bcaa5346bdead5e2a96f184f0e96",
+      "role": "explicit_nonpersonal_compiled_boolean_navigation_data"
+    },
+    "dist/development/s1-compiled-masks/assets/east.runs": {
+      "bytes": 8072,
+      "sha256": "25119575cc063ddd12930b13c10d1623d68b028a50d22db4d95027068c2baf43",
+      "role": "explicit_nonpersonal_compiled_boolean_navigation_data"
+    },
+    "dist/development/s1-compiled-masks/assets/approach.runs": {
+      "bytes": 4248,
+      "sha256": "4d68cff2fb736f334c7df39662509bf812ced15da89ef38dc4147c4995fc9ec1",
+      "role": "explicit_nonpersonal_compiled_boolean_navigation_data"
     }
   },
-  "revision": "NEW_REBUILD_WARP_FAST_R1",
-  "previous_public_commit": "02a8be8cd59bc0fb0cc85d30f62af49fbf05a53f",
-  "revision_source_manifest_sha256": "34ce0d8f09df976c11b57c85d20ac6712c1b5899d02aa3897cf0f4ee9951a3f5",
-  "revision_scope": "Active S3 V22 and bounded fast warp game changes; safe code subset only, unchanged historical candidate shelves and selected original art preserved",
+  "revision": "NEW_REBUILD_WARP_FAST_R3_COAST_RESOURCE",
+  "previous_public_commit": "4ee417f5326f121c24dc4f2d117ddc206976a1d0",
+  "revision_source_manifest_sha256": "b729afaa3f6412b99d3dddfce2bd6067d35b35c8a0ffa87410cb2813c6a259b2",
+  "revision_scope": "8 safe code changes and3 explicit compiled boolean masks; no new artwork, raw fixtures or QA observers",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4580,12 +4605,12 @@
     }
   },
   "active_code_selection": {
-    "spaceSafeCodeFiles": 867,
-    "publicSafeCodeFiles": 750,
-    "reusedUnchangedPublicFiles": 619,
-    "changedOrAddedCodeFiles": 131,
+    "spaceSafeCodeFiles": 869,
+    "publicSafeCodeFiles": 752,
+    "reusedUnchangedPublicFiles": 744,
+    "changedOrAddedCodeFiles": 8,
     "newPrivateOrInternalMetadataNotSelected": 117,
-    "managedManifestSHA256": "34ce0d8f09df976c11b57c85d20ac6712c1b5899d02aa3897cf0f4ee9951a3f5",
+    "managedManifestSHA256": "b729afaa3f6412b99d3dddfce2bd6067d35b35c8a0ffa87410cb2813c6a259b2",
     "sourceCodeExactBytes": true,
     "aggregate": {
       "total": 1654,
@@ -4593,6 +4618,13 @@
       "fail": 0,
       "skip": 11
     },
-    "actualWarpScope": "Warm HTTP cache, original-command-earned QA progression, two directions three samples each. Mean GYM1toS1 1069.0ms and S1toGYM1 1219.1667ms, maxima1119.1/1344.0ms. First fixture preparation6374ms separate. Strict mean1000ms not met. Not physical-display timing, cold network, all paths or device guarantee."
+    "actualWarpScope": "Confirmed80save→80restore PASS; initial111→87 lacked savecompletion evidence, not claimedfixed. Warmcache bounded routes only, allpath/device/coldnetwork HOLD."
+  },
+  "explicit_compiled_binary_data": {
+    "files": 3,
+    "bytes": 18800,
+    "format": "S1MASKR1 header64+safeindex uint32LE runs",
+    "noArtworkOrPersonalData": true,
+    "exactLogicalSourceRoundtrip": true
   }
 }

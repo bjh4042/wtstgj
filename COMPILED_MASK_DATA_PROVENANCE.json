@@ -1,0 +1,47 @@
+{
+  "kind": "LOSSLESS_NONPERSONAL_BOOLEAN_NAVIGATION_DATA",
+  "format": "S1MASKR1 header64 + uint32LE[start,end) safe-only global-index runs",
+  "files": [
+    {
+      "path": "dist/development/s1-compiled-masks/assets/local.runs",
+      "file": "assets/local.runs",
+      "artifactSHA256": "14e2a7670407407947f4f5125d99727aa273bcaa5346bdead5e2a96f184f0e96",
+      "artifactBytes": 6480,
+      "sourcePath": "dist/development/s1-local/assets/local-main.u8",
+      "logicalSHA256": "9b31838d38428e131d8e0fae2c2e9ffbc5d676e468e7a40c1898a91b6eac3127",
+      "width": 4812,
+      "height": 1719,
+      "decodedBytes": 8271828,
+      "runCount": 802,
+      "safeCells": 114480
+    },
+    {
+      "path": "dist/development/s1-compiled-masks/assets/east.runs",
+      "file": "assets/east.runs",
+      "artifactSHA256": "25119575cc063ddd12930b13c10d1623d68b028a50d22db4d95027068c2baf43",
+      "artifactBytes": 8072,
+      "sourcePath": "dist/development/hacheong-brackish/assets/s1-east-exclusive.u8",
+      "logicalSHA256": "163cf7b27f4fc21aeaafb87068e87cc393f12bb2f12e4ad7316fbb2acd8f18dc",
+      "width": 4812,
+      "height": 1719,
+      "decodedBytes": 8271828,
+      "runCount": 1001,
+      "safeCells": 152388
+    },
+    {
+      "path": "dist/development/s1-compiled-masks/assets/approach.runs",
+      "file": "assets/approach.runs",
+      "artifactSHA256": "4d68cff2fb736f334c7df39662509bf812ced15da89ef38dc4147c4995fc9ec1",
+      "artifactBytes": 4248,
+      "sourcePath": "dist/development/hacheong-wetland/assets/s1-approach-exclusive.u8",
+      "logicalSHA256": "52b160edf30aa29be3ceaf88d77a8ff93dd404c208a054d6aab15f7c136c5061",
+      "width": 4812,
+      "height": 1719,
+      "decodedBytes": 8271828,
+      "runCount": 523,
+      "safeCells": 18808
+    }
+  ],
+  "validation": "Entire binary consists only of fixed magic, dimensions, counts, source hash and range indices. All logical cells are0/1, fullroundtrip exact. No pixels, strings, personal data, source reference inputs or secrets embedded.",
+  "authority": "Packaging existing selected masks only; no new collision policy or walkability modifications."
+}
