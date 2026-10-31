@@ -1,0 +1,4 @@
+import{GYM12}from'./registration.mjs';
+// Derived presentation only. Existing completed switches override missing legacy step receipts.
+export function gym12VisualState(runtime,no){if(!GYM12[no]||!runtime?.world||!runtime?.progress)throw Error('GYM12_CANONICAL_REQUIRED');const i=runtime.world.interactions,p=runtime.world.puzzles,won=runtime.progress.defeatedTrainers;if(!Array.isArray(i)||!Array.isArray(p)||!Array.isArray(won))throw Error('GYM12_CANONICAL_REQUIRED');let phase=0;if(p.includes(`gym-switch:${no}`))phase=no===1?2:3;else if(i.includes(`puzzle:${no}:step:1`))phase=no===2&&i.includes('puzzle:2:step:2')?2:1;return phase*4+(won.includes(`GYM_0${no}_SUB_01`)?1:0)+(won.includes(`GYM_0${no}_SUB_02`)?2:0)}
+export function gym12Actors(no,state){const r=GYM12[no];if(!r?.states[state])throw Error('GYM12_STATE');return r.actors.map((a,i)=>({...a,foot:[...(i<2&&(state&1<<i)?a.aside:a.foot)]}))}

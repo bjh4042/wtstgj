@@ -54,7 +54,7 @@ export function applyWorldAction(s,c,r,h){if(!s.world||!h?.world||s.world.versio
   claimHiddenGeoje(s,slot);add(s.world.interactions,p.id);return;
  }
  if(r.type==='puzzle'){
-  const native=h.nativeCanPuzzle?.(s,p);if(native===undefined)at();else if(native!==true||!((p?.mapId==='world:gym:5'&&['puzzle:5:step:1','puzzle:5'].includes(p?.id))||(p?.mapId==='world:gym:4'&&['puzzle:4:step:1','puzzle:4'].includes(p?.id))))throw Error('NATIVE_GYM5_PUZZLE_AUTHORITY_REJECTED');if(p.kind!=='puzzle')throw Error('Not puzzle');
+  const native=h.nativeCanPuzzle?.(s,p);if(native===undefined)at();else if(native!==true||!((s.position.scene===p?.mapId&&s.world.mapId===p?.mapId&&((p.mapId==='world:gym:1'&&['puzzle:1:step:1','puzzle:1'].includes(p.id))||(p.mapId==='world:gym:2'&&['puzzle:2:step:1','puzzle:2:step:2','puzzle:2'].includes(p.id))))||(p?.mapId==='world:gym:5'&&['puzzle:5:step:1','puzzle:5'].includes(p?.id))||(p?.mapId==='world:gym:4'&&['puzzle:4:step:1','puzzle:4'].includes(p?.id))))throw Error('NATIVE_GYM5_PUZZLE_AUTHORITY_REJECTED');if(p.kind!=='puzzle')throw Error('Not puzzle');
   if(s.world.puzzles.includes(p.puzzleId))return; // Preserve pre-polish completed switches.
   const missing=p.requiresInteractions?.find(id=>!s.world.interactions.includes(id));
   if(missing)throw Error('먼저 '+d.points[missing].label+'을(를) 확인하세요.');

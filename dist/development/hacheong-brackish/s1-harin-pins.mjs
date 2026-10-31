@@ -1,0 +1,2 @@
+/** Root-selected native composition only; does not grant safe floor or story authority. */
+export const S1_HARIN=Object.freeze({path:'../jungle-native/main_ui_candidate/assets/harin-left-idle.png',sha256:'48b6cbd1fbf19f213bf8fc2509de1839f3ed19e67dbd993f20b403174fd542e6',bytes:52386,sourceSize:Object.freeze([256,256]),foot:Object.freeze([4300,1010]),facing:'left',drawSize:Object.freeze([107,107]),pivot:Object.freeze([54,90])});

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_R1",
+  "checkpoint": "Stage63 + NEW_REBUILD_R2",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -752,9 +752,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/gohyeon-pair/native-selected-warp-authority.mjs": {
-      "sha256": "d410809de94ab0cdfb8e1635e3e3ac35f36467a014d75becc7888e344463a213",
-      "bytes": 6545,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "980c2a2648278c0bcf89fd10faa50be417e3e2926422b03dd8a7899396ac312b",
+      "bytes": 6964,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/gohyeon-pair/player-frame.mjs": {
       "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
@@ -1067,9 +1067,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
-      "sha256": "651551742fd7169f287e348ae06274195c65862af48a3f3f7030ce474849bf31",
-      "bytes": 35702,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "7452dfa88705be3df485995cb3894fa3d1931df53d67a4d86893f08a4fff5940",
+      "bytes": 39353,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/jungle-native/main_ui_candidate/native-harin-authority.mjs": {
       "sha256": "09134f1f2df1fb760186cd986ffa82588393422cc09611b9091e2dee948c893d",
@@ -1097,9 +1097,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "sha256": "4edca81fd575af91c96f5bbb6b62759507b6a5c16a461b94469253e19e6f6f0a",
-      "bytes": 23144,
-      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "2b9b3527639e311ceb24dad90e4e5a241c88e88b91d6fe184d688ee0f1126af6",
+      "bytes": 24108,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "bb73d59a841808f309e4197282aeb1f514ed581c6abeaba6022c77fbbb73e00f",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "sha256": "52976b61af39f3c1155231badcec3cee99be7fa4801f47a75f4fd00e970d219a",
-      "bytes": 60025,
-      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "239d534e8176d73115e09efdf4161f54264c82c7ab47b84e86c80ba91cef69a7",
+      "bytes": 64878,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -1137,9 +1137,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/travel-registration.mjs": {
-      "sha256": "15f60e492f2bdc70cbff22500da16fa37c75ccdae6e3d51ff779aedd7d43069c",
-      "bytes": 2220,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "ecae815c2d7a01ef4fd52a95dfc96c41f753859e3b15c3604e3bd63db8779361",
+      "bytes": 2315,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/jungle-native/student_copy_review/student-copy.mjs": {
       "sha256": "745b7314836b91c55ae1b09b73a7df0f2c95c332e11d050aace6e366bfb9bda2",
@@ -1892,9 +1892,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/yeoncho-stream-roles/native-role-authority.mjs": {
-      "sha256": "07ea8d096f1fcfc9a40626625b8978869c409563c14cc93a4908569e68162354",
-      "bytes": 4799,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "ff37ffcdc6c416ad3beefa195fc65fa10ae443ede38b71c72b8dc1ad224a8c3a",
+      "bytes": 5287,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/yeoncho-stream/assets/camera-bounds.json": {
       "sha256": "24936f0a05187436de6a673b770d4190d0eaccad966f95e6afcfbdae83dc6cec",
@@ -2007,9 +2007,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/story/progression-service.mjs": {
-      "sha256": "120ee020183a463705f591a81713963a81e57026a020af735037f96337a70e6e",
-      "bytes": 42387,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "fc3d3838e9a15a634a475ffab8ed7ab1f331591a966db11df75d1c46ba0e4d66",
+      "bytes": 43253,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/story/stage-completion-readiness.mjs": {
       "sha256": "7aa903c71258411034caf0504d3ff8faa02d8618165747409a1c464bf91b09d6",
@@ -2232,14 +2232,14 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/world/service.mjs": {
-      "sha256": "1fa852eb95451f1af58b1e8b9d300b71020be187b306b6a5314d17c1c3277c79",
-      "bytes": 39245,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "369bbb18c49ba2e589c210dd587f5a415633b8d52398bafc63c56fe7cb49ac4f",
+      "bytes": 40415,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/world/state.mjs": {
-      "sha256": "c64fb6f8c66f3199118960393146a26bc35e522d3f07fa88ca9c38ec75724945",
-      "bytes": 10306,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "b8662a7e747dd973837a3596eb0a831a1b42ffa2c60d3f8f8a33c9c75ae5267b",
+      "bytes": 10531,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/world/summit-native-guard.mjs": {
       "sha256": "ab0e594b3558dc0a9a426bc5eaa4844789da8b21920aa2fbf591ba41ba151f35",
@@ -2412,9 +2412,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/hacheong-brackish/provider.mjs": {
-      "sha256": "8753ea7022933156d346b0e5c440dc7e69b4d9c0c1a1966831901b7ec4dfb02d",
-      "bytes": 8150,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "808c6fc9605dc65704cec5d47524bb6195e54654340081836cdbeaa8c6a6da59",
+      "bytes": 9226,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/hacheong-brackish/s1-continuous.mjs": {
       "sha256": "08defacaf7574cbcb85d52b3b685854bedc1e7217ddae63e8ae9d53efaa67a09",
@@ -2622,14 +2622,14 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/s1-night/layer.mjs": {
-      "sha256": "d76e8786f60082db83619a18417d1953207128f8a051db84c16996e40794ecfd",
-      "bytes": 4824,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "ccf1d8aa0d520e1a32c306b409ed7351f4766078bd8c0b1391521a171f50bfb1",
+      "bytes": 5688,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/s1-night/load.mjs": {
-      "sha256": "cad1be4173f742a176447f4e2999a47208748d0451d16508b5764a944b295934",
-      "bytes": 2632,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "83bdb7f664a140d64d0addbb2a411435bcab49d9ed5a2584709d2339d9af0e44",
+      "bytes": 2669,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/s1-night/pins.mjs": {
       "sha256": "1538edce6b203c77969790e301e41c4388f4fe5cb3108ad3bafad062dbf983a1",
@@ -2840,10 +2840,226 @@
       "sha256": "10494fb9372b0ccebd0a9350b2ca61f968b6d178ba19be03811d29357958c70b",
       "bytes": 436,
       "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state0_safe.json": {
+      "sha256": "f59b52f2371e15d1c51b1631af98ef015b87d94556aa1edcf4269f6e9582a690",
+      "bytes": 24747,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state10_safe.json": {
+      "sha256": "733571b1eee2cbb8cc05938c22d190a1b8c7403bb1eaf8d7c87d9f79f5ac0297",
+      "bytes": 27785,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state11_safe.json": {
+      "sha256": "1253373d11fea9794f8a99c4249a95e28654bf86e8721d8adbe6018a1ebe75ed",
+      "bytes": 26763,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state1_safe.json": {
+      "sha256": "3d9a5ef496e3bc916408b4d15fc3516c03f16f7e663f766115cdae507abe3871",
+      "bytes": 23725,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state2_safe.json": {
+      "sha256": "266c8685bd0f177a9ef3819a45844c12de9121310ffc3571b6c64a4ff542f625",
+      "bytes": 24747,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state3_safe.json": {
+      "sha256": "255591d6caa0eb90d78f3985e4ab11bea15da887ff10fed80a1642c9e2fa7174",
+      "bytes": 23725,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state4_safe.json": {
+      "sha256": "6ba263efe7654626470688864f6680dc1a7782d7991573227473ba9a03493d43",
+      "bytes": 27155,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state5_safe.json": {
+      "sha256": "58cc0bbd944303e88400dbf8cdc86c75e214af961ca4a5d994d8294ab542ccef",
+      "bytes": 26133,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state6_safe.json": {
+      "sha256": "3f982b47115ab0378013cf204f8253024d1621c7933174193ce212a8fda5e033",
+      "bytes": 27155,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state7_safe.json": {
+      "sha256": "7ef2f75e6b5ae6418bc6f4a9f32b183e361bc9391d602c4c39e094fb9136eaa2",
+      "bytes": 26133,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state8_safe.json": {
+      "sha256": "df2accd6f56b34d8c9419a63794f638c056295838e315b94a1cefc088adacd0f",
+      "bytes": 27785,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G01_state9_safe.json": {
+      "sha256": "c5d67dd2141170c82893ff6ed941852dacf23391bb1ccc35efd9eef36db18920",
+      "bytes": 26763,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state0_safe.json": {
+      "sha256": "4645f76f7e9335ea7e5f378ea3fdc0931334c730578008e30b4235b65805e407",
+      "bytes": 15523,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state10_safe.json": {
+      "sha256": "b733baca2c6703c2a6336dd5ffb7151202919fa0f1144859a4035294af2a5fa2",
+      "bytes": 17399,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state11_safe.json": {
+      "sha256": "1a37242f85d5ce4d3786146f7d1688dd69054f7fa399d49c65a9702a4d0756b2",
+      "bytes": 16304,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state12_safe.json": {
+      "sha256": "c3f930958fd6c0e8fdcaed5fe56632d2edd188880c2da0dec5cc234a5e9ec3ad",
+      "bytes": 19933,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state13_safe.json": {
+      "sha256": "15ee77526f0d65811ff6c400fc6474ecf01cd1b4a1e0fc4fc540b241194f9431",
+      "bytes": 18838,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state14_safe.json": {
+      "sha256": "3183611f7dad9fc968cbde8c528437aab3b03610113ed06541190079dd022f44",
+      "bytes": 18911,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state15_safe.json": {
+      "sha256": "c8bea7b196d653fd397e38587526a214bf2bc9cb54f6d6452c28ce4a9fc63041",
+      "bytes": 17816,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state1_safe.json": {
+      "sha256": "dd6a50e15799a324f982283d7133b4b7bf5b412200bc5acd9f394fe4bcd9ade1",
+      "bytes": 14428,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state2_safe.json": {
+      "sha256": "6f9df40a21061e181684c3d3a3b4c49a0dc58f0d6dc3967428e7d68e14181d84",
+      "bytes": 14501,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state3_safe.json": {
+      "sha256": "6a230ce1b4a039e5853c842e95c31269d79320948be39665d9a749c2a89c04e7",
+      "bytes": 13406,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state4_safe.json": {
+      "sha256": "cdf860eeb59ceec89b5239a8585a8dad761513e60036cf9ca680d8fa484ca2e6",
+      "bytes": 16979,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state5_safe.json": {
+      "sha256": "62be6e77c6f73964659aef0b4d46b12000eec592a0ebb81798a4fbbde1abb06f",
+      "bytes": 15884,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state6_safe.json": {
+      "sha256": "a6296ea09549c419b162d54aa9aaf2c20c16dfbeb767ef080cbca1adff85ea75",
+      "bytes": 15957,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state7_safe.json": {
+      "sha256": "c6f8643553f983c900abe0a69cf829afec92f4471cf677e5c5558530f514315d",
+      "bytes": 14862,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state8_safe.json": {
+      "sha256": "c9cd57c24e7c698e8b8be8349d8178dd94497874ad4b2a35ad7fe6f99ed57e25",
+      "bytes": 18421,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/assets/G02_state9_safe.json": {
+      "sha256": "68ec89fe09384c22d84679e3554c574e06eec5d3937f944e0f1214e1ade34795",
+      "bytes": 17326,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/environment-registration.mjs": {
+      "sha256": "86f33b49b497e1c65fd49e8c5a220ec7032c0d41f2aaa98348a8eafff6046756",
+      "bytes": 1663,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/native-gym12-authority.mjs": {
+      "sha256": "a1c69d73b9166606a680d0fe7f19a691c8fb1e273d4a75ccb50995e95366544a",
+      "bytes": 3783,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/provider.mjs": {
+      "sha256": "cf664b06126bbce8bc53801dd958e62e1da810bf00a36639b6ea575ac6bc2f4d",
+      "bytes": 5414,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/registration.mjs": {
+      "sha256": "5e719fef4624a4ccaeb9896ea8a29feab09d09dc045eda4cf5d978026e3efd3a",
+      "bytes": 473612,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/selected-environment-core.mjs": {
+      "sha256": "0a69c0f6b8dc8aaac6eb2c9d1300d4f50e37159cdb2d218e0412ae99199b25a9",
+      "bytes": 1454,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/source-row-variants.mjs": {
+      "sha256": "499768a1b6a9150455c375deba8e0c11017275e32b49f36c6d2284f608146d97",
+      "bytes": 12959,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/visual-state.mjs": {
+      "sha256": "e99a2381ea728682895cbbbcd985bcff3eb5f094b8bde9acbd3e72c56d9d17b6",
+      "bytes": 906,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-native/warp-registration.mjs": {
+      "sha256": "6257a134933267a65baf9e3dcb9bfd39a8686714f2f711a0cef90ea42b4090dc",
+      "bytes": 700,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/gym12-presentation/provider.mjs": {
+      "sha256": "9829e6346d0ac4e13ccd5a3756075b2412d45c80ad2ac6524dfacd74b69257fc",
+      "bytes": 3959,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/hacheong-brackish/s1-harin-pins.mjs": {
+      "sha256": "46cc72dae291b3bad48cba68299954aa5f7b917053fd1dc01f98003914c37223",
+      "bytes": 432,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/s1-completion/contact-rows.mjs": {
+      "sha256": "48691a4ac449e5d6f24ee595da81f62b71438310da70e73d80186e004ac5337c",
+      "bytes": 1515,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/s1-completion/gym-action-support.mjs": {
+      "sha256": "d76ed62b59833ca06e03ddef0aed8210ea0d8c2877d410c0275d8067bd4833e3",
+      "bytes": 1025,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/s1-completion/role-registration.mjs": {
+      "sha256": "2444d53bd371a580e64be6dcf8b8fb567804ddb8bc610f6f74b390381d5e2c79",
+      "bytes": 1062,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/s1-completion/warp-registration.mjs": {
+      "sha256": "73b1628535c83a7aab122a90b48511c6cf61a61de77f5a9d55edcb0086fab0f4",
+      "bytes": 1532,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+    },
+    "tests/rebuild-r2-registration.test.mjs": {
+      "sha256": "4b0a3fdf228e3d3e95d736395b3cf32a8f346d418e1f9cfdeba496f48686ebdd",
+      "bytes": 6873,
+      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     }
   },
-  "revision": "NEW_REBUILD_R1",
-  "previous_public_commit": "7aa41c4965d7d2150cefafdf7f7eb9c2b88743ab",
-  "revision_source_manifest_sha256": "ef7ed8e0122c4cca61329b4238170af51562878e67bf0e726d73e51928075713",
-  "revision_scope": "Existing S1 destination leave/release chooser and newest-generation retained-frame restore preparation; not original lost Stage64-80 bytes."
+  "revision": "NEW_REBUILD_R2",
+  "previous_public_commit": "43cb7743e8d2c4dffeeac9de6aee342773ca21d9",
+  "revision_source_manifest_sha256": "8cab772d68238a37b43eb2703761c342d023e8312b4eac9a6f1384734a286f42",
+  "revision_scope": "S1 RIVAL_01 and GYM1 native integration and strict persistence. Actual partial functional PASS; PERFORMANCE_HOLD; gym return journey unfinished. GYM2 dormant, S2 routes not integrated. Not exact lost code.",
+  "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9"
 }
