@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R3_COAST_RESOURCE",
+  "checkpoint": "Stage63 + NEW_REBUILD_WARP_FAST_R4_ENTRY_LEASE",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "bytes": 35072,
-      "sha256": "b669748f275f8944ef6eae34249e69cbc86573b6cde6d2b9e7fea3a24cd44ab0",
-      "role": "active_R3_safe_code"
+      "bytes": 35394,
+      "sha256": "7997f4c470c063c1715254b8eac9e85db43c97db9783b4722ba4e703f4a6cab5",
+      "role": "active_R4_shipping_gamecode"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "bytes": 102304,
-      "sha256": "148eea28332fd4da16b20f416745f0c502db3fdecfa083060fdea4c0029524cd",
-      "role": "active_R3_safe_code"
+      "bytes": 102843,
+      "sha256": "d630f46fad3318088661d1344f8512b1cdffb5dbe9d1a716e5b0d182016edeae",
+      "role": "active_R4_shipping_gamecode"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -2992,9 +2992,9 @@
       "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/gym12-native/provider.mjs": {
-      "sha256": "20783dde97dd8d71977a1636e6d8ea71e2991aa4d90621176abbc26f778a7efc",
-      "bytes": 8549,
-      "role": "ACTIVE_INSTALLED_NEW_REBUILD_LATENCY_PHASE1_SOURCE_NOT_FINAL_GAME"
+      "bytes": 9435,
+      "sha256": "7337abe9035e07f85f91f44dd0c2037fb5733e03bc1903239ec7ab69ebeb82f0",
+      "role": "active_R4_shipping_gamecode"
     },
     "dist/development/gym12-native/registration.mjs": {
       "sha256": "5e719fef4624a4ccaeb9896ea8a29feab09d09dc045eda4cf5d978026e3efd3a",
@@ -3022,9 +3022,9 @@
       "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/gym12-presentation/provider.mjs": {
-      "sha256": "668cf23b360a1175746cb22f7ec7c1798287f654136e3ef23b3ded9bfcada76a",
-      "bytes": 4032,
-      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+      "bytes": 4148,
+      "sha256": "72714ff9f22bc7e75fc655c3cafe456b9070ab06c26580bcaf6bdb4bb9f1976a",
+      "role": "active_R4_shipping_gamecode"
     },
     "dist/development/hacheong-brackish/s1-harin-pins.mjs": {
       "sha256": "46cc72dae291b3bad48cba68299954aa5f7b917053fd1dc01f98003914c37223",
@@ -4406,10 +4406,10 @@
       "role": "explicit_nonpersonal_compiled_boolean_navigation_data"
     }
   },
-  "revision": "NEW_REBUILD_WARP_FAST_R3_COAST_RESOURCE",
-  "previous_public_commit": "4ee417f5326f121c24dc4f2d117ddc206976a1d0",
-  "revision_source_manifest_sha256": "b729afaa3f6412b99d3dddfce2bd6067d35b35c8a0ffa87410cb2813c6a259b2",
-  "revision_scope": "8 safe code changes and3 explicit compiled boolean masks; no new artwork, raw fixtures or QA observers",
+  "revision": "NEW_REBUILD_WARP_FAST_R4_ENTRY_LEASE",
+  "previous_public_commit": "00eff4c19f0cfe1e990842da8a9f0ca7c43ee515",
+  "revision_source_manifest_sha256": "a5b589bac84fb63b01e2d46a86a14d7026e91a85847257357a13dc188b0e989e",
+  "revision_scope": "Exact4shipping code changes, no newmedia orbinary. Prior masks/art/shelves preserved.",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4605,12 +4605,12 @@
     }
   },
   "active_code_selection": {
-    "spaceSafeCodeFiles": 869,
+    "spaceSafeCodeFiles": 870,
     "publicSafeCodeFiles": 752,
-    "reusedUnchangedPublicFiles": 744,
-    "changedOrAddedCodeFiles": 8,
+    "reusedUnchangedPublicFiles": 748,
+    "changedOrAddedCodeFiles": 4,
     "newPrivateOrInternalMetadataNotSelected": 117,
-    "managedManifestSHA256": "b729afaa3f6412b99d3dddfce2bd6067d35b35c8a0ffa87410cb2813c6a259b2",
+    "managedManifestSHA256": "a5b589bac84fb63b01e2d46a86a14d7026e91a85847257357a13dc188b0e989e",
     "sourceCodeExactBytes": true,
     "aggregate": {
       "total": 1654,
@@ -4618,7 +4618,7 @@
       "fail": 0,
       "skip": 11
     },
-    "actualWarpScope": "Confirmed80save→80restore PASS; initial111→87 lacked savecompletion evidence, not claimedfixed. Warmcache bounded routes only, allpath/device/coldnetwork HOLD."
+    "actualWarpScope": "GYM2entry mean0.896667/max1.0208s; AJUentry mean0.936467/max1.0637s. Quiet comparison R3 and candidate GYM1roundtrip plus AJU3entry/save/DOM bothPASS; candidatequietAJU mean0.8385/max0.9083s. Two prior timeouts OPEN causeunknown/rawunavailable; common lifecycle9checkpoints stable live/156closed/pending0 PASS, extended3cycle stability HOLD. Device/cold/allpaths HOLD; no deployment/fullgamecompletion."
   },
   "explicit_compiled_binary_data": {
     "files": 3,
