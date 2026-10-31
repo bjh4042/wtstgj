@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_CHECKPOINT",
-  "checkpoint": "Stage63",
+  "checkpoint": "Stage63 + NEW_REBUILD_R1",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -957,9 +957,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/entry.mjs": {
-      "sha256": "2a258bb0c1ab7103e26da05442a880da706182089fbc98bce4c190a2b02fa403",
-      "bytes": 4053,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "503bedd34e256ea0d0804ffb570a65dc009d37e4db6390dd2df9240faba7880d",
+      "bytes": 4298,
+      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/jungle-native/main_ui_candidate/exhibit-qa-ready.mjs": {
       "sha256": "508f1141c517c18d758a6dadc9d5fb820ab288bb5e9b958c8318adf271207843",
@@ -1097,9 +1097,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "sha256": "29fe4c5a5ac02fcf16bd0f080ccec884b24520efb2fc6b7ce34d66deee1455a6",
-      "bytes": 22561,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "4edca81fd575af91c96f5bbb6b62759507b6a5c16a461b94469253e19e6f6f0a",
+      "bytes": 23144,
+      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "bb73d59a841808f309e4197282aeb1f514ed581c6abeaba6022c77fbbb73e00f",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "sha256": "bcda76850c81c84544a67e300e611b809c4d84723eb0109ad2b7fa9666a7f0a6",
-      "bytes": 59718,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "52976b61af39f3c1155231badcec3cee99be7fa4801f47a75f4fd00e970d219a",
+      "bytes": 60025,
+      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -2830,6 +2830,20 @@
       "sha256": "8e3d12daaf6540935f0da8d1832b37c7f5460ee3c64fe04b4bfbe357f1582550",
       "bytes": 8447,
       "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/rebuild-r1-restoration-chooser.test.mjs": {
+      "sha256": "cf1caaa372631c035828d896791cc74ce6b10868e1c3a0cb5b60b0f4562ae065",
+      "bytes": 10362,
+      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
+    },
+    "dist/development/jungle-native/main_ui_candidate/preparation-gate.mjs": {
+      "sha256": "10494fb9372b0ccebd0a9350b2ca61f968b6d178ba19be03811d29357958c70b",
+      "bytes": 436,
+      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
     }
-  }
+  },
+  "revision": "NEW_REBUILD_R1",
+  "previous_public_commit": "7aa41c4965d7d2150cefafdf7f7eb9c2b88743ab",
+  "revision_source_manifest_sha256": "ef7ed8e0122c4cca61329b4238170af51562878e67bf0e726d73e51928075713",
+  "revision_scope": "Existing S1 destination leave/release chooser and newest-generation retained-frame restore preparation; not original lost Stage64-80 bytes."
 }
