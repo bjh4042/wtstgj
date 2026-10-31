@@ -1,0 +1,50 @@
+import{createJangmokProvider,createBrowserTransport}from'./environment/provider.mjs';
+import{INPUT_PINS}from'./presentation-pins.mjs';
+import{prepareJangmokTownSupport}from'./support.mjs';
+import{loadSelectedPlayerFrames}from'../gohyeon-pair/player_frames/load-player-frames.mjs';
+import{selectPlayerFrame}from'../gohyeon-pair/player-frame.mjs';
+const assetModuleURL=import.meta.url,hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(v=>v.toString(16).padStart(2,'0')).join('');
+const aborted=()=>Object.assign(Error('JANGMOK_PRESENTATION_ABORTED'),{name:'AbortError'});
+// Pure presentation. No world/clock/save writes, RAF, full-map bitmap or caller verification flags.
+export async function prepareJangmokTownPresentation({signal,appearance='boy',initialPose,elapsedMs=0,minutes=720,fetcher=fetch,decode=async b=>createImageBitmap(new Blob([b])),canvasFactory=(w,h)=>new OffscreenCanvas(w,h)}={}){
+ if(!['boy','girl'].includes(appearance))throw Error('JANGMOK_APPROVED_APPEARANCE_UNAVAILABLE');
+ const abort=new AbortController(),images=new Set(),closed=new WeakSet(),canvases=[];let disposed=false,support,actors,provider,latest,lastInfo=null,lastPresentedInfo=null,pending=null,pendingRaw=null,lastError=null,prepared=false,requestedKey=null;
+ const close=im=>{if(im&&!closed.has(im)){closed.add(im);try{im.close?.()}catch{}}};
+ const stop=()=>dispose();signal?.addEventListener('abort',stop,{once:true});
+ function dispose(){if(disposed)return;disposed=true;abort.abort();signal?.removeEventListener('abort',stop);provider?.dispose();support?.dispose();try{actors?.dispose()}catch{}for(const im of images)close(im);images.clear();for(const c of canvases){c.width=1;c.height=1}latest=null;lastInfo=null;lastPresentedInfo=null;prepared=false;}
+ const check=()=>{if(disposed||signal?.aborted)throw aborted()};
+ const canvas=(w,h)=>{const c=canvasFactory(w,h);c.width=w;c.height=h;canvases.push(c);return c};
+ const fetchOwned=async url=>{check();const r=await fetcher(url,{signal:abort.signal});check();return r};
+ async function read(path){check();const pin=INPUT_PINS[path];if(!pin)throw Error('JANGMOK_UNKNOWN_INPUT');const r=await fetchOwned(new URL(path,assetModuleURL));if(!r.ok)throw Error('JANGMOK_INPUT_HTTP');const b=new Uint8Array(await r.arrayBuffer());check();if(b.length!==pin.bytes||await hash(b)!==pin.sha256)throw Error('JANGMOK_INPUT_PIN');check();return b;}
+ async function image(bytes){check();const im=await decode(bytes);if(disposed||signal?.aborted){close(im);throw aborted()}images.add(im);return im;}
+ try{
+  check();support=await prepareJangmokTownSupport({signal:abort.signal,fetcher:fetchOwned});check();
+  const manifest=JSON.parse(new TextDecoder().decode(await read('environment/PACKETS.json'))),transport=createBrowserTransport(new URL('./environment/',assetModuleURL));
+  // Same bounded streaming transport, injected fetcher only for deterministic tests.
+  transport.load=async(d,s)=>{check();const r=await fetcher(new URL(d.file,new URL('./environment/',assetModuleURL)),{signal:s});if(!r.ok)throw Error('JANGMOK_PACKET_HTTP');const reader=r.body?.getReader();if(!reader){const b=new Uint8Array(await r.arrayBuffer());if(b.length>d.encodedBytes)throw Error('encoded-size-cap');check();return b}const out=new Uint8Array(d.encodedBytes);let n=0;try{for(;;){check();if(s.aborted)throw aborted();const q=await reader.read();if(q.done)break;if(n+q.value.length>out.length)throw Error('encoded-size-cap');out.set(q.value,n);n+=q.value.length}if(n!==out.length)throw Error('encoded-size-short');return out}catch(e){await reader.cancel();throw e}finally{reader.releaseLock()}};
+  provider=createJangmokProvider({manifest,...transport});
+  if(appearance==='boy')actors=await loadSelectedPlayerFrames({fetcher:fetchOwned,decode:async b=>{const im=await image(b);return{width:im.width,height:im.height,image:im,close:()=>close(im)}}});
+  else{const am=JSON.parse(new TextDecoder().decode(await read('../../assets/approved-atlases/manifest.json'))),pin=am.atlases['player/PLAYER_FEMALE'],im=await image(await read('../../'+pin.src)),frames={};if(im.width!==pin.width||im.height!==pin.height)throw Error('JANGMOK_FEMALE_ATLAS_SIZE');for(let i=0;i<12;i++){const key='PLAYER_FEMALE.'+['FRONT','RIGHT','LEFT','BACK'][Math.floor(i/3)]+'.'+['IDLE','A','B'][i%3],f=am.frames.player[key];if(!f||f.atlas!=='player/PLAYER_FEMALE')throw Error('JANGMOK_FEMALE_FRAME');const c=canvas(107,107),ctx=c.getContext('2d'),sc=80/192;ctx.imageSmoothingEnabled=false;ctx.drawImage(im,...f.rect,53-f.anchor[0]*sc,90-f.anchor[1]*sc,f.width*sc,f.height*sc);frames['actor:'+i]={width:107,height:107,image:c}}close(im);images.delete(im);actors={actors:frames,dispose(){}}}check();
+  const scratch=canvas(960,540),z=scratch.getContext('2d'),completed=canvas(960,540),cz=completed.getContext('2d'),depthCanvas=canvas(107,107),dz=depthCanvas.getContext('2d'),actorMask=new Uint8Array(960*540),depthFrame=dz.createImageData(107,107);
+  const pixels=im=>{dz.clearRect(0,0,107,107);dz.drawImage(im,0,0);return dz.getImageData(0,0,im.width,im.height).data};
+  const actorData=Array.from({length:12},(_,i)=>pixels(actors.actors['actor:'+i].image)),signs=[],depth=[];
+  for(const row of manifest.signs){const im=await image(await read('environment/'+row.png));if(im.width!==96||im.height!==96)throw Error('JANGMOK_SIGN_SIZE');signs.push({...row,image:im})}
+  for(const row of manifest.depth){const im=await image(await read('environment/'+row.png));if(im.width!==row.size[0]||im.height!==row.size[1])throw Error('JANGMOK_DEPTH_SIZE');depth.push({...row,pixels:pixels(im)});close(im);images.delete(im)}
+  function normalize(s){check();if(!support.validate(s.pose)||typeof(s.walking??s.moving??false)!=='boolean'||(s.walking!==undefined&&s.moving!==undefined&&s.walking!==s.moving)||!Number.isFinite(s.elapsedMs)||s.elapsedMs<0||!Number.isFinite(s.minutes))throw Error('JANGMOK_DRAW_STATE');const foot=[...s.pose.foot],camera=s.camera?[...s.camera]:[Math.max(0,Math.min(4160,foot[0]-480)),Math.max(0,Math.min(996,foot[1]-270)),960,540];if(camera.length!==4||!camera.every(Number.isSafeInteger)||camera[0]<0||camera[1]<0||camera[0]>4160||camera[1]>996||camera[2]!==960||camera[3]!==540)throw Error('JANGMOK_CAMERA');return{pose:{...s.pose,foot},walking:s.walking??s.moving??false,elapsedMs:s.elapsedMs,minutes:s.minutes,camera};}
+  function compose(s){const base=provider.render(s);if(!base)return false;const {foot,facing}=s.pose,frame=selectPlayerFrame({facing,walking:s.walking,elapsedMs:s.elapsedMs}),aa=actorData[frame],[cx,cy]=s.camera;const f=z.createImageData(960,540);f.data.set(base.pixels);z.putImageData(f,0,0);
+   for(const sign of signs)if(sign.groundY<=foot[1])z.drawImage(sign.image,sign.origin[0]-cx,sign.origin[1]-cy);
+   z.drawImage(actors.actors['actor:'+frame].image,foot[0]-53-cx,foot[1]-90-cy);
+   depthFrame.data.fill(0);let restored=0;for(const d of depth)if(foot[1]<d.groundY)for(let y=0;y<d.size[1];y++)for(let x=0;x<d.size[0];x++){const si=(y*d.size[0]+x)*4,ax=d.origin[0]+x-(foot[0]-53),ay=d.origin[1]+y-(foot[1]-90);if(ax>=0&&ay>=0&&ax<107&&ay<107&&d.pixels[si+3]&&aa[(ay*107+ax)*4+3]>8){depthFrame.data.set(d.pixels.subarray(si,si+4),(ay*107+ax)*4);restored++}}
+   if(restored){dz.putImageData(depthFrame,0,0);z.drawImage(depthCanvas,foot[0]-53-cx,foot[1]-90-cy)}
+   for(const sign of signs)if(sign.groundY>foot[1])z.drawImage(sign.image,sign.origin[0]-cx,sign.origin[1]-cy);
+   // Original selected source binary actor exclusion, including depth-occluded sprite alpha.
+   actorMask.fill(0);for(let y=0;y<107;y++)for(let x=0;x<107;x++){const vx=foot[0]-53-cx+x,vy=foot[1]-90-cy+y;if(vx>=0&&vx<960&&vy>=0&&vy<540&&aa[(y*107+x)*4+3]>0)actorMask[vy*960+vx]=1}
+   f.data.set(provider.finishLighting(z.getImageData(0,0,960,540).data,{camera:s.camera,minutes:s.minutes,actorMask}));cz.putImageData(f,0,0);lastInfo={camera:[...s.camera],foot:[...foot],facing,frame,elapsedMs:s.elapsedMs,minutes:s.minutes,phase:base.phase,restoredSourcePixels:restored};return true;
+  }
+  function requestKey(s){return manifest.tiles.filter(t=>t.x<s.camera[0]+960&&t.x+t.w>s.camera[0]&&t.y<s.camera[1]+540&&t.y+t.h>s.camera[1]).map(t=>t.id).join(',')+'|'+Math.floor(((s.elapsedMs%4800)+4800)%4800/400)}
+  function request(state){let s;try{s=normalize(state)}catch(e){return Promise.reject(e)}latest=s;const key=requestKey(s);requestedKey=key;const raw=provider.request(s);if(raw===pendingRaw)return pending;pendingRaw=raw;const job=raw.then(()=>{check();const fresh=compose(latest);lastError=null;return{fresh,composed:lastInfo?structuredClone(lastInfo):null,displayed:lastPresentedInfo?structuredClone(lastPresentedInfo):null}},e=>{if(!disposed){lastError=String(e.message);if(requestedKey===key)requestedKey=null}throw e});pending=job;job.then(()=>{if(pending===job){pending=null;pendingRaw=null}},()=>{if(pending===job){pending=null;pendingRaw=null}});return job;}
+  function draw(ctx,state){const s=normalize(state);latest=s;const fresh=compose(s);if(!fresh||requestedKey!==requestKey(s))request(s).catch(()=>{});if(lastInfo){ctx.drawImage(completed,0,0);lastPresentedInfo=structuredClone(lastInfo)}return{fresh,pending:!!pending,displayed:lastPresentedInfo?structuredClone(lastPresentedInfo):null,error:lastError};}
+  await request({pose:initialPose,elapsedMs,minutes});check();if(!lastInfo)throw Error('JANGMOK_FIRST_FRAME_UNAVAILABLE');prepared=true;
+  return Object.freeze({get ready(){return prepared&&!disposed},get presentationPinsVerified(){return prepared&&!disposed},get allDeclaredBytesVerified(){return false},verificationScope:'PINNED_MANIFEST_SMALL_ART_AND_DEMANDED_VIEWPORT_PACKETS',request,update:request,draw,stats:()=>({disposed,ready:prepared&&!disposed,pending:!!pending,lastError,smallImages:images.size,smallBitmapNominalBytes:[...images].reduce((n,im)=>n+im.width*im.height*4,0),retainedCanvasNominalBytes:canvases.reduce((n,c)=>n+c.width*c.height*4,0),packetBudgetNotHeap:provider.stats(),composed:lastInfo?structuredClone(lastInfo):null,displayed:lastPresentedInfo?structuredClone(lastPresentedInfo):null}),dispose});
+ }catch(e){dispose();throw e}
+}

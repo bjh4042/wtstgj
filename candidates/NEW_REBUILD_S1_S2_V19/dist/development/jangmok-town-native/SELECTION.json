@@ -1,0 +1,34 @@
+{
+  "sourceImageSHA": "48e2b1289016299208667b4f5e13152b652756e3f5b2eae561f04454651c53f0",
+  "originalMaskSHA": "26d3c918039b5d19d8ed91a5df79a820f8c7fdaa4f28192bb25135fb4101b982",
+  "originalCells": 962358,
+  "groundRectangleHalfOpen": [
+    4120,
+    530,
+    4800,
+    760
+  ],
+  "footprint": [
+    49,
+    37
+  ],
+  "erosionOnceOffsets": [
+    24,
+    18
+  ],
+  "newSafeCenterRectangleHalfOpen": [
+    4144,
+    548,
+    4776,
+    742
+  ],
+  "originalRemoved": 0,
+  "newAddedCells": 105418,
+  "combinedCells": 1067776,
+  "combinedSafeSHA256": "0ad018c1df7a0778b80f44e0cc37d0ef0959b4d9641dd73c5b6c00baccd5b1a0",
+  "newSafeSHA256": "4ffb1f8da658c19edf806ab4416ca49f293829de1aa9b304ac4c337820e34c9c",
+  "status": "ROOT_SELECTED_NEW_REBUILD_GEOMETRY_NOT_RECOVERED_LOST71_72",
+  "selectedUtc": "2026-10-31T02:08:37Z",
+  "geometryOnly": true,
+  "renderOrWorldBindingInstalled": false
+}

@@ -1,0 +1,20 @@
+import{prepareS1StageExitContinuous}from'../../s1-east-road/presentation.mjs';
+import{prepareWetlandSupport}from'../../hacheong-wetland/support.mjs';import{prepareWetlandRegion}from'../../hacheong-wetland/provider.mjs';
+import{loadResources as loadGymJourney}from'./gym-resources-v8.mjs';
+import{prepareS1Support}from'../../s1-local/support.mjs';
+import{prepareS1Continuous}from'../../hacheong-brackish/s1-continuous.mjs';
+import{prepareBrackishRegion}from'../../hacheong-brackish/provider.mjs';
+import{prepareYeonchoStreamSupport}from'../../yeoncho-stream/support.mjs';
+import{prepareYeonchoStream}from'../../yeoncho-stream/presentation.mjs';
+// Root-selected east-only support. Original V10 local validator remains separately pinned for migration.
+export async function loadResources({signal}={}){
+ let base,s1Support,originalS1Support,streamSupport,brackishSupport,wetlandSupport,disposed=false;const abort=new AbortController(),slots={s1:{value:null,pending:null},stream:{value:null,pending:null},brackish:{value:null,pending:null},wetland:{value:null,pending:null}};
+ const stop=()=>abort.abort(signal?.reason);signal?.addEventListener('abort',stop,{once:true});if(signal?.aborted)stop();
+ const close=value=>{try{value?.dispose()}catch{}};
+ const dispose=()=>{if(disposed)return;disposed=true;abort.abort();signal?.removeEventListener('abort',stop);for(const slot of Object.values(slots)){const value=slot.value;slot.value=null;close(value)}close(s1Support);close(originalS1Support);close(streamSupport);close(brackishSupport);close(wetlandSupport);close(base)};
+ async function ensure(key,extra={}){if(disposed||abort.signal.aborted)throw Error('JOURNEY_RESOURCE_DISPOSED');const slot=slots[key];if(slot.value)return slot.value;if(slot.pending)return slot.pending;slot.pending=(async()=>{const p=await(key==='wetland'?prepareWetlandRegion({signal:abort.signal,...extra}):key==='s1'?prepareS1StageExitContinuous({signal:abort.signal}):key==='brackish'?prepareBrackishRegion('brackish',{signal:abort.signal}):prepareYeonchoStream({signal:abort.signal}));if(disposed||abort.signal.aborted){close(p);throw Error('JOURNEY_RESOURCE_DISPOSED')}slot.value=p;return p})();try{return await slot.pending}finally{slot.pending=null}}
+ function release(key){const slot=slots[key];if(slot.pending)throw Error('JOURNEY_RESOURCE_LOAD_PENDING');const value=slot.value;slot.value=null;close(value)}
+ try{base=await loadGymJourney({signal:abort.signal});originalS1Support=await prepareS1Support({signal:abort.signal});s1Support=await prepareS1Continuous({signal:abort.signal,presentation:false});streamSupport=await prepareYeonchoStreamSupport({signal:abort.signal});brackishSupport=await prepareBrackishRegion('brackish',{signal:abort.signal,presentation:false});wetlandSupport=await prepareWetlandSupport('wetland',{signal:abort.signal});if(disposed||abort.signal.aborted)throw Error('JOURNEY_RESOURCE_PREPARATION_ABORTED');
+ return{...base,s1Support,originalS1Support,streamSupport,brackishSupport,wetlandSupport,get s1(){return slots.s1.value},get stream(){return slots.stream.value},get brackish(){return slots.brackish.value},get wetland(){return slots.wetland.value},get supportPinsVerified(){return!disposed&&base.supportPinsVerified&&s1Support.supportPinsVerified&&streamSupport.supportPinsVerified&&brackishSupport.supportPinsVerified&&wetlandSupport.supportPinsVerified},get allDeclaredBytesVerified(){return!disposed&&base.allDeclaredBytesVerified},get pinsVerified(){return!disposed&&base.pinsVerified&&s1Support.supportPinsVerified&&streamSupport.supportPinsVerified&&brackishSupport.supportPinsVerified&&wetlandSupport.supportPinsVerified},ensureWetland:extra=>ensure('wetland',extra),releaseWetland:()=>release('wetland'),ensureS1:()=>ensure('s1'),ensureStream:()=>ensure('stream'),ensureBrackish:()=>ensure('brackish'),releaseS1:()=>release('s1'),releaseStream:()=>release('stream'),releaseBrackish:()=>release('brackish'),dispose};
+ }catch(e){dispose();throw e}
+}
