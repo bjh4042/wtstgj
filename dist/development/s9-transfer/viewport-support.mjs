@@ -1,0 +1,3 @@
+// NEW proposed presentation-support restriction; original physical floor remains unchanged.
+export const S9_GANGWAY_VIEWPORT=Object.freeze({sceneId:'ship_deck_a',revision:'NEW_S9_CARGO_GANGWAY_VIEWPORT_R1',minimumFootX:33,visibleHeight:80,actorAlphaLeftExtent:31,margin:2,scopeRectHalfOpen:Object.freeze([0,400,235,522])});
+export function cargoS9ViewportSupports(scene,foot){if(scene!==S9_GANGWAY_VIEWPORT.sceneId)return true;if(!Array.isArray(foot)||foot.length!==2||!foot.every(Number.isSafeInteger))return false;const[x,y]=foot;return !(x>=0&&x<235&&y>=400&&y<522)||x>=S9_GANGWAY_VIEWPORT.minimumFootX;}

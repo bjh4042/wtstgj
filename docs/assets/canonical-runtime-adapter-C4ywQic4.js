@@ -1,1 +1,0 @@
-import{t as e}from"./canonical-runtime-adapter-D2tHM7jW.js";export{e as loadCanonicalRuntimeAdapter};

@@ -1,0 +1,14 @@
+const assetModuleURL=import.meta.url;
+import {TARGET_PINS_SHA} from './target-pins.mjs';
+const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+export async function loadS4TargetInputs({fetcher=fetch,decode=async b=>createImageBitmap(new Blob([b]))}={}){
+ const base=new URL('./',assetModuleURL),raw=async p=>{const r=await fetcher(new URL(p,base));if(!r.ok)throw Error('TARGET_INPUT_MISSING');return new Uint8Array(await r.arrayBuffer()).slice()},p=await raw('TARGET_INPUT_PINS.json');if(await hash(p)!==TARGET_PINS_SHA)throw Error('TARGET_PINS_MISMATCH');const pins=JSON.parse(new TextDecoder().decode(p)),read=async key=>{const pin=pins[key];if(!pin)throw Error('UNPINNED_TARGET_INPUT');const bytes=await raw(pin.path);if(bytes.byteLength!==pin.bytes||await hash(bytes)!==pin.sha256)throw Error('TARGET_INPUT_SHA_MISMATCH');return bytes},json=async key=>JSON.parse(new TextDecoder().decode(await read(key)));
+ const images=[],closed=new WeakSet(),dispose=()=>{for(const im of images)if(im&&!closed.has(im)){closed.add(im);im.close?.()}};
+ try{const greenManifest=await json('greenManifest'),greenSelection=await json('greenSelection'),parkManifest=await json('parkManifest'),parkSelection=await json('parkSelection');
+ const image=async key=>{const im=await decode(await read(key));images.push(im);if(im.width!==1536||im.height!==1024)throw Error('TARGET_IMAGE_DIMENSION');return im};
+ const greenImage=await image('greenImage'),parkImage=await image('parkImage');const typed=async(k,T)=>{const b=await read(k);if(b.byteLength%T.BYTES_PER_ELEMENT)throw Error('TARGET_TYPED_ALIGNMENT');return new T(b.buffer,b.byteOffset,b.byteLength/T.BYTES_PER_ELEMENT)};
+ const green={image:greenImage,manifest:greenManifest,selection:greenSelection,mask:await read('greenMask'),layers:[{ids:await typed('greenWaterIds',Uint32Array),rgb:await read('greenWaterRGB')},{ids:await typed('greenLeafIds',Uint32Array),rgb:await read('greenLeafRGB')}],light:{ids:await typed('greenLightIds',Uint32Array),trans:await typed('greenLightTransmission',Float64Array)}};
+ const park={image:parkImage,manifest:parkManifest,selection:parkSelection,mask:await read('parkMask'),ids:await typed('parkLightIds',Uint32Array),transmission:await typed('parkLightTransmission',Float64Array)};
+ if(green.mask.length!==1536*1024||park.mask.length!==1536*1024)throw Error('TARGET_MASK_DIMENSION');const otherPortsSelection=await json('otherPortsSelection'),otherPortsProposal=await json('otherPortsProposal');const hubFloorSelection=await json('hubFloorSelection'),greenFrontProposal=await json('greenFrontProposal'),hubMasks={OPEN:await read('hubOpenMask'),CLOSED:await read('hubClosedMask')};if(Object.values(hubMasks).some(b=>b.length!==4294*2400))throw Error('HUB_MASK_DIMENSION');return{green,park,hubMasks,otherPortsSelection,otherPortsProposal,hubFloorSelection,greenFrontProposal,dispose};
+ }catch(e){dispose();throw e}
+}

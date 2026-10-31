@@ -1,0 +1,2835 @@
+{
+  "schema": 1,
+  "kind": "PARTIAL_DEVELOPMENT_CODE_CHECKPOINT",
+  "checkpoint": "Stage63",
+  "standalone": false,
+  "final_game": false,
+  "base_commit": "645923a3634e08878966ac72210f2189386011f8",
+  "files": {
+    "dist/art/approved-npc-bindings.mjs": {
+      "sha256": "f8e2a51a3606a1964b5b8be9f6a6ef54977a785b7c8de1d0ffa0ca3da9562735",
+      "bytes": 313920,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/assets/mobile-viewport-CKi2spbv.js": {
+      "sha256": "000235882e41ccd4a1e38dbffb81a03566b65d86372f543058e349df1721edb9",
+      "bytes": 12323,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/assets/ui-preview-WMU7-lXW.css": {
+      "sha256": "f1d0146d32ace9cc096086ea31dcac8bfd080f5d668c23995240f663b578586b",
+      "bytes": 130199,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/battle-v3/approved-trainer-portraits-data.mjs": {
+      "sha256": "e931d02355da781e405784d5bef3b79f2da354414f08ee044e3729c15de74f74",
+      "bytes": 42983,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/cargo-memory-host.mjs": {
+      "sha256": "5fed3254aad8e96bb0910a750ea6820f61cc01928cfcf97da5dc7956605ac84a",
+      "bytes": 27479,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/entry.mjs": {
+      "sha256": "f0e866452354ced86f640f1bf9d7791eccbe63e17fb2bc2eafbbccfdbb1385b6",
+      "bytes": 5445,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/host-bound-consumer.mjs": {
+      "sha256": "f5daa3ec35e0d27d178671ce7c79ad8333a9ddbfdbf07b5752784b198ff65279",
+      "bytes": 7373,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/memory-storage.mjs": {
+      "sha256": "ac9a626d5583b9c7dd8d4e428c87a1972ab3388af002c313c65d9d148689de52",
+      "bytes": 685,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/native-envelope.mjs": {
+      "sha256": "146e0f408d820a86d0a844be68599840da90168dee90312d31f54425535e1030",
+      "bytes": 7243,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/page-cache.mjs": {
+      "sha256": "88dfb34e5cb6f831d9af3868a5d5e0f86a5d3a251f1080318ff550991f6acf6b",
+      "bytes": 3106,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/port-adapter.mjs": {
+      "sha256": "fa25f6132ecdf46574730ddee18e4d7354a9cbdc8c7c3a1ba6b1d61586d51e61",
+      "bytes": 12799,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/port-room-session.mjs": {
+      "sha256": "6169eeb5df37bdfece7f51a0c786c39caaced41a8a6703e5461573846fbefd85",
+      "bytes": 9414,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/resources.mjs": {
+      "sha256": "3d074fcfd37e477edcdedc95a52cddab32067bd80fd56c19c8ddbeeda3a0afb8",
+      "bytes": 4603,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/save-slots.mjs": {
+      "sha256": "c2a0e3c69bc2550c9492289e9883c61743cae2c8a38b1f8a90e21e46dbf225df",
+      "bytes": 15503,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-memory/session-owner.mjs": {
+      "sha256": "9274929fa78cdc4b3f3bc1131042a6f4e1d745de5b107ff31645526bf830db9e",
+      "bytes": 12625,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/VISUAL_ENVELOPES_R3.json": {
+      "sha256": "b4528357706a4c619c349219ea585b902fba66049a62079869fa66ffe02ade04",
+      "bytes": 1060,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/boss-door-owner.mjs": {
+      "sha256": "3b4e5a4702ae967c7837876d8a321871266384bafe7d8b9a0d7517a769c71595",
+      "bytes": 3302,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/bridge-browser-loader.mjs": {
+      "sha256": "5f8626f72d8165f3bd7110fe49d731805854839f7871534743f8a40c63ce8246",
+      "bytes": 969,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/browser-loader.mjs": {
+      "sha256": "9a1961fd726dd01ff623925c822cf53373027c7628443dd77d7a300e9f68e4ae",
+      "bytes": 1675,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/canonical/canonical-gate.mjs": {
+      "sha256": "4533b4254556eac869d2f794db7c79ad7816f6040fb202ba33239eb6ccf30f53",
+      "bytes": 9846,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/canonical/content.mjs": {
+      "sha256": "dfb5eabc1ff1239db5b03a2b3e8c655882482d24174179d8857db72781388571",
+      "bytes": 3013,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/canonical/room-interactions.mjs": {
+      "sha256": "2d1ee88d1e351ebdc2cb244ae55c453abbaa9bd8dd096370f6750fb3586e9d53",
+      "bytes": 9643,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/cargo-chest-physics.mjs": {
+      "sha256": "e8f01aa7a8865954442ff4abcc4f50de394a7a5c3ac9f137e8bcee1930be10ed",
+      "bytes": 3742,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/cargo-main-host.mjs": {
+      "sha256": "d9f275a5c7e7234a9f6e60f2d4c58598137b47122ae218b6ee09387a7d7e9ac3",
+      "bytes": 29576,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/chest-host-readers.mjs": {
+      "sha256": "2c936f96dec88bc2396b0d615f11951dda80b60cba77b91fd1165a03639d90f6",
+      "bytes": 1945,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/chest-physics-r1/CHEST_APPROACH_RLE.json": {
+      "sha256": "3ca9ef6b38c84acf15cdbee10579be85708f7e23c01ed93bd1417855d8ea27f9",
+      "bytes": 23654,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/content.mjs": {
+      "sha256": "dfb5eabc1ff1239db5b03a2b3e8c655882482d24174179d8857db72781388571",
+      "bytes": 3013,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/door-state.mjs": {
+      "sha256": "d3cc805c6d489a6cbd8406b30dd5c1bec263b8946520cc924d01db391c5beee4",
+      "bytes": 758,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/engine-side-barriers.mjs": {
+      "sha256": "2dce66b77aea526f63469b9ff2c05ed5d23e3e72cec6f44077854a5d851713d6",
+      "bytes": 1496,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/engine-upper-layer.mjs": {
+      "sha256": "3e23b67bf416a7269758341599cc2a11db4bddc9d3e49ec750e9e944366047ab",
+      "bytes": 3735,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/engine-upper-r1/LAYER_CONTRACT.json": {
+      "sha256": "cc53471141673f0ad6159158092679f1d5f115ed7580754760c252cb6b32d120",
+      "bytes": 5911,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/entry.mjs": {
+      "sha256": "f40935af96ee25b9c0672d03534b97bf91a9a5a364e6e8a6d40efc61cbcd7d1f",
+      "bytes": 3881,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/environment-frame.mjs": {
+      "sha256": "3cb462b73ed3605a1610f01b2c952ef4652f2a73bab0e210b4c09e141b572c10",
+      "bytes": 5850,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/host-bound-consumer.mjs": {
+      "sha256": "6bec624eb3c5b5790955993eeb6580b6fc1fd6cb002201281f48e22e8cb41076",
+      "bytes": 7344,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/host-readers.mjs": {
+      "sha256": "3fb29a1a7da3e0d00be328fb123a4f87a5f4bf64697e16c9dfd4102c94513cb3",
+      "bytes": 1729,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/last-selected-scene-browser-loader.mjs": {
+      "sha256": "7ea9895d90912007f481b2d877a7cbb256f640c8875c922dc8e685dffa1d6405",
+      "bytes": 999,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/next-selected-scene-browser-loader.mjs": {
+      "sha256": "d5ff6a045f7e55a5e4ec7ae32fedd1fa405f7744053a2d893bd885c07f3b8633",
+      "bytes": 998,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/night/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/night/night.mjs": {
+      "sha256": "21cad7178c7197ae9f04c1addad8fad15e1dda3aec338165dba93949fa5453fa",
+      "bytes": 632,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/officer-host-readers.mjs": {
+      "sha256": "abbb93fc6200f5d6ac6de54920fe2b6969727e137c486d5955b458f98402e09f",
+      "bytes": 1747,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/officer-presentation.mjs": {
+      "sha256": "e8d952af5aa855fb5dfa1405f41e7b26ddc096c8ff466c2bcd65dcae3938f9f9",
+      "bytes": 1087,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/officer-registration.mjs": {
+      "sha256": "e1b66ca02b976dba807ad53fde2b4b8193894cf6f00ab85f6a345b8bd7817c95",
+      "bytes": 7357,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/original-door-render.mjs": {
+      "sha256": "34c0bebdef7b833d0f8165c5550698c1e8171362e63a56f81da63c734da35733",
+      "bytes": 826,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/port-adapter.mjs": {
+      "sha256": "4f72c77d74bb8d2ecf3b654a9e4b3ba9817fb5118698dc0678cb6597bc5dadff",
+      "bytes": 11930,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/port-approach-r1/PORT_APPROACH_RLE.json": {
+      "sha256": "d21c4a937cfd7ae9490bd14e5758c100a4cc34b7379b85588190a9b96ef8a8c8",
+      "bytes": 56176,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/port-approach-r3/PORT_APPROACH_RLE.json": {
+      "sha256": "26bc03a433a66b9e0b5a85b91dfd49deb85c58413cae62b5aed039ba124bff17",
+      "bytes": 21981,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/port-approach.mjs": {
+      "sha256": "2cf1a433b9fd07588ebddf3a70781b3364757cfb06661bea805661680b88afb5",
+      "bytes": 1950,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/port-room-session.mjs": {
+      "sha256": "41bf04c69a294e6a8635e1f13792fb590f73a20971514345f17668c971b6b9d6",
+      "bytes": 8578,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/qa-initial-fixture.mjs": {
+      "sha256": "954af43b8cdca39c23d69b2939ba32902199c9baf3626031b7b1defa75e285d1",
+      "bytes": 4803,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/qa-officer-checkpoint.mjs": {
+      "sha256": "b7abd36f055d1859bb7362b196b03e899a20140af41d9eb7afcda35a3e316fe5",
+      "bytes": 969,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/registry.json": {
+      "sha256": "d00c21efcc6f1f6282f53c9f957b983fd9156f6af4e72d1af4dcbc16c2cd4202",
+      "bytes": 46397,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/rescue-browser-loader.mjs": {
+      "sha256": "cae68e5c5ae488d08e1d1c4426d3461e0404c94a1c53ade1e96f52101e410c25",
+      "bytes": 674,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/rescue-host-readers.mjs": {
+      "sha256": "0635650ed20a3a43f49d586dcd70623f34123b404af9400e13856f06aed3e2b1",
+      "bytes": 2032,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/rescue-port-access.mjs": {
+      "sha256": "4aaddec8cffb9db9f906897ec992c80197853c1b2977f587713fe37e4b33e1dd",
+      "bytes": 2227,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/rescue-presentation.mjs": {
+      "sha256": "e802226637ce5e76eddbf50ea33260d56a935f7eea7898edcfbaacc8118a556a",
+      "bytes": 741,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/resource-pins.mjs": {
+      "sha256": "5463075f892d0004a7cdabf5d76a4964e1ac1883f875e7f9b3c1035a97e9bb53",
+      "bytes": 8910,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/room-approach-r1/ROOM_APPROACH_RLE.json": {
+      "sha256": "dde70f52a2a3b4338b1abc23eb53120b8824eca26f383f73dfcc3886b55f9964",
+      "bytes": 33144,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/room-approach.mjs": {
+      "sha256": "eebe382dea7c5b968c6d67657d9649858e8aa348aa6a7e2ea6d952ac81d34312",
+      "bytes": 1931,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/room-interactions.mjs": {
+      "sha256": "8d53f3923288e99ebe7b3180de6a845399bea143642553bd8a8c42aac800c6af",
+      "bytes": 9989,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/selected-scene-browser-loader.mjs": {
+      "sha256": "0c38fbfa5ff5326fa4a122994c0d177ddd0aae9c51d33aedf043417312f7c77e",
+      "bytes": 987,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/water/water.mjs": {
+      "sha256": "aa6452270b42c985257cea73758b472fc9a008b1717601586c04ff0aaec56aa0",
+      "bytes": 1634,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/zone-host-readers.mjs": {
+      "sha256": "805eee7cf48c1592c79e26905e631b2f4f6690320d47734100bf4649e439392f",
+      "bytes": 1402,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/cargo-native/zone-registration.mjs": {
+      "sha256": "07d02b78b46f9954b9f9b731807ec739d672332eb2ae9d468c09a0cac62d7b62",
+      "bytes": 4428,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/ART_PINS.json": {
+      "sha256": "7cc7b7c820d3eb3476c00a5212cf9c1330bf829ef8630c274a2f264c53278a15",
+      "bytes": 1869,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/approved-animation/healing.mjs": {
+      "sha256": "e7be517324065be5526a62075a72174fe8ea297754012c59fa6b8068d3772eb7",
+      "bytes": 5628,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/approved-animation/layout.json": {
+      "sha256": "a328ebc230f2b27a3e92c1895d0a2354bd710728f0bc8f92da7281760662bff6",
+      "bytes": 11970,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/approved-animation/scene.mjs": {
+      "sha256": "fabe0c14dc83f173b79affae8457624e328d602a15b07244a3bd282af418c59d",
+      "bytes": 567,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/center-controller.mjs": {
+      "sha256": "6599899fa2fa3d320ec9c41c93704313154c016e681e47522329b0f3427cdc4b",
+      "bytes": 4473,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/center-overlay.mjs": {
+      "sha256": "29eff7a2c510059ddbef3c336ebb7cb1d72614ec1cf155c6f544c9141e9bb769",
+      "bytes": 6840,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/center-service.mjs": {
+      "sha256": "65037b137e286b073a481e5a8f3b944b493966516439f2c365a573ed6665c1b4",
+      "bytes": 12746,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center/center-visual-loader.mjs": {
+      "sha256": "a0d32baf2052d60d2774cac5b3a03c55ec01d180b3f603dc09f34dc2953c548b",
+      "bytes": 1377,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/final-game-entry.mjs": {
+      "sha256": "e89e14324da626910709854f3ad763166a6045d18db69cac6e6c50eef8bb914f",
+      "bytes": 4686,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/asset-index.mjs": {
+      "sha256": "904450879788c1711311bf13ab77a737263a6d8a5da51b7bf688211737005222",
+      "bytes": 3813,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/assets/104c0c2ab40383a4eec073d8aa7388dd57ae4d5909dea7c17f65576abe739241.json": {
+      "sha256": "104c0c2ab40383a4eec073d8aa7388dd57ae4d5909dea7c17f65576abe739241",
+      "bytes": 2243,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/attach-additional-gameplay.mjs": {
+      "sha256": "9cb3f788ca478f7bd352b4de5ed41852ffb9236697f74dd577ba3189388e4d1f",
+      "bytes": 2873,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/bootstrap-recovery-candidate.mjs": {
+      "sha256": "84cfd8d22337017a17f6103c18ed803a008f3f1ae2a568adfb168924430c13d7",
+      "bytes": 8335,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/decorate-target-scene.mjs": {
+      "sha256": "d1d49ccfa6869f3ac11be17daa4e91f3bda5894a8267bbaadd0988a5d93918c3",
+      "bytes": 3273,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/encounter/geometry.mjs": {
+      "sha256": "9ce884ac7d59665e9962803b0591d06328266a3c582524fe4873f0c31a747bb5",
+      "bytes": 1440,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/encounter/movement-proof.mjs": {
+      "sha256": "163b4910dd8895f330fecc82bfa15083b9ca7f1e679f365661a6df2c5007fb77",
+      "bytes": 28436,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/entry.mjs": {
+      "sha256": "ad173aa7c56f8e1ab197cc697806be9fa64d502296a9d97de1a53e16cb2af84b",
+      "bytes": 5376,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/fixed-gameplay-registration.mjs": {
+      "sha256": "c288d16aa700dfbe0dcb18c5a3db2ecbcbaebae9da014329246f1115b43403c3",
+      "bytes": 25609,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/load-assets.mjs": {
+      "sha256": "62429722a326a3cacc82a8af4f2e0a9ed545d871e4c948f9ffcbe6809c8ab647",
+      "bytes": 598,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/main-mount.mjs": {
+      "sha256": "51c928c4f721a4b27be26efcebf219cabff1d0dac3d488c194f1f3cbd3c780bb",
+      "bytes": 1622,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/native-gameplay-authority.mjs": {
+      "sha256": "cfe95446becb95fc6a0ffacdab9436ac892d39e99604ae2804cb6167bc5e1cc3",
+      "bytes": 3775,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/npc-layer.mjs": {
+      "sha256": "2c503d4b5b68c8a60d12074077dee0e84863e63f607b71f0bd6130fd40a4c982",
+      "bytes": 2155,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/prepare-recovery-scenes.mjs": {
+      "sha256": "271702a3564e231f65a62c0b23c508ae8566330695a1a879c56baa5bfaf1e23b",
+      "bytes": 2526,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/qa-initial-fixture.mjs": {
+      "sha256": "8d664db631b0fa0d91a90191883a7af8b9744436f5e96b82a6a8b0d47718556c",
+      "bytes": 4897,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/recovery/prologue-provider.mjs": {
+      "sha256": "637dac1deb5cd5f211a79256ae994542b9a855d639ab047116ee1e818b64c656",
+      "bytes": 2300,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/recovery/recovery-mapper.mjs": {
+      "sha256": "c31e2edb4eb681036020b712a538cfca47eef76057f170aa6bda0477532d7274",
+      "bytes": 2251,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/recovery/registered-recovery-locations.mjs": {
+      "sha256": "a9ec29977a65c5524132a7606256ab06e72019c0c3ba05531e6343355a02f158",
+      "bytes": 3720,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/recovery/selection-pin.mjs": {
+      "sha256": "709f813949d5df86a295827a9e293ffd11e33e612a2fe671a593d66ae5342fdf",
+      "bytes": 494,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/render-gameplay-target.mjs": {
+      "sha256": "2e442f365944dc50324c7c867acaf5e49616c9b1c9aba4d064456ef3e8b72982",
+      "bytes": 5089,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/selected-geometry.mjs": {
+      "sha256": "58ec42704a77fdcc6733c195c8078cb07aa80de8fde236fe438dba7c08c5921c",
+      "bytes": 1469,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gameplay/selected-npc-art.mjs": {
+      "sha256": "297de40fae3a6705e4f3e845357eccd7a9678ae4f237d8e9257665b7f9ca69ea",
+      "bytes": 1295,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/ASSET_PINS.json": {
+      "sha256": "91357ee11ff99d302652b5fc2e327d1b8f11ae328b0303b70b6493b50f9dfa2c",
+      "bytes": 3345,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/asset-pins.mjs": {
+      "sha256": "47a0faba76c64429539da194792dc61117ab90a94039342b65c3ae2ab693b60f",
+      "bytes": 105,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/bootstrap.mjs": {
+      "sha256": "65826faf6950f2f4821a510285c81c15face7daec132338453c0298ae61d6bde",
+      "bytes": 10339,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/door-layers.mjs": {
+      "sha256": "ac94b81358b5332e3497cc5bf45bfb3c311171801e134e66e6625f0a4c6a36c4",
+      "bytes": 2203,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/entry.mjs": {
+      "sha256": "3d4ead652ff42cd707068c905cf80e0cf98a8621a5338f00e3274787eac12cd5",
+      "bytes": 5719,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/fixed-registration.mjs": {
+      "sha256": "80b61f1063737269fd6a3853e3774d08bb0f0a35120444d9f79f0981ef6d3e90",
+      "bytes": 10004,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/fixed-warp-registration.mjs": {
+      "sha256": "bccda56780e2668214fb6f15c6fb63cc2c91d67e9962509450dabd34e0b62f91",
+      "bytes": 3040,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/load.mjs": {
+      "sha256": "0f2986f06348871a3b2af848e4f9a45f418f368d7f208f0b54504767ce74c40f",
+      "bytes": 1793,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/main-mount.mjs": {
+      "sha256": "22aff064f9685d88eddb208052bb2fe2d93172309e60bdfaf26e4c646b98c9a7",
+      "bytes": 1603,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/native-gym4-authority.mjs": {
+      "sha256": "36e2831f74f4b6874488d95b9bd671b19523e9927026fac5b1b52c640f3ed0c8",
+      "bytes": 3593,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/prepare-scenes.mjs": {
+      "sha256": "a9d9d3e9098f095163366af022336e3e24cb95d0bb484dea7f2e21c963b2c003",
+      "bytes": 1352,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/presentation.mjs": {
+      "sha256": "e3498d042cac40ce058faa60ef20def9d6cf3beeda5362ec894f00281416e8e4",
+      "bytes": 701,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/provider.mjs": {
+      "sha256": "50bc86dc7767d4d7166858f214ad2d3cd2b2ec85b97c1ad1e9194cd7cf58140f",
+      "bytes": 2399,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/registered-locations.mjs": {
+      "sha256": "22f00d1ffd579af22e8e9dfe9deacfb2a7ed4b999c6c795d086b76ac1d4b1d39",
+      "bytes": 3956,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/render.mjs": {
+      "sha256": "ee86802b09230d2f4b8b92369a79c2d541b48d4132774d117df963b4a363782d",
+      "bytes": 2466,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/scene.mjs": {
+      "sha256": "7dc3274b8647362568189a1565e8c1aa1e3dc031b033a88294c9f8ee973e758c",
+      "bytes": 4630,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-gym4/visual-state.mjs": {
+      "sha256": "a97a577c1ce32cbbea74f194e97fb3064f86f2a0575929dca585de7c6a3e9891",
+      "bytes": 643,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/entry.mjs": {
+      "sha256": "d17850dba79234c80a032a04e4f5059e5ed61daa83530a8c6e25e20e1f745f08",
+      "bytes": 4372,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/gohyeon_outdoor_lighting_r1/upstream/Gohyeon_Expanded4294_River_CalmRefraction_Selected_R1/consumer/adapter.mjs": {
+      "sha256": "2e4297cac1d2511a96729e15b292ada399b34cbba9ad9b84c8c2a8e789a337b7",
+      "bytes": 1145,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/gohyeon_outdoor_lighting_r1/upstream/Gohyeon_V3_StrictNativeHost_DevSourceQA/host.mjs": {
+      "sha256": "580a5bc89877e7410a28517c25da53fc6fdb9592aa3f302fc2a67cea772764b9",
+      "bytes": 4515,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/gohyeon_outdoor_lighting_r2/compose.mjs": {
+      "sha256": "ad56f8b6166fabc131c01c4065a5a25513a3f525072fa444ec6bb49c7d4815d1",
+      "bytes": 1487,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/gohyeon_outdoor_lighting_r2/light-layer.mjs": {
+      "sha256": "cc3309d5eb2308d5dc1b720e51cdef8db051739196529b431c831e1023941df0",
+      "bytes": 1425,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/home_closeout_lane4/unpacked/Gohyeon_House3_Compact_Selected_TwoFloor_MapOnly_SourceQA_R1/logic.mjs": {
+      "sha256": "003a2b09f02f7033856c852b0fb6aec4726a383ac58c651e8e811dc7d178dbdb",
+      "bytes": 1565,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/jisepo_daynight_consumer/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/native_house_entry_gohyeon3_env_1456/contract.json": {
+      "sha256": "4fcbf38cc99a2d482d6cebd4f01de64bd71fdc80dae49e386cdd50e3f117c9d1",
+      "bytes": 11399,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/native_house_entry_gohyeon3_env_1456/session.mjs": {
+      "sha256": "899dde1b4e35a2b6143707e16d26de3c5fd3a713a8089fb9b27388bdb9b38ab8",
+      "bytes": 6377,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/house3/House3_Environment_Native_R1/smooth_daynight_2209/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/INPUT_PINS.json": {
+      "sha256": "4a71352a91c3fb6d2427fd636cd900eb9a5b211b3a0360c7c9bdb6cacf08fce0",
+      "bytes": 10076,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/door_approach_proposal/approach.mjs": {
+      "sha256": "9cfcfd1fd178b96c4de07118a613fc25ca88db5daaae49e063ab06b0c09dd0b4",
+      "bytes": 3848,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/door_approach_proposal/load.mjs": {
+      "sha256": "2ed559a8490c78e814c689fb74bdb441b1952e7a87c203b44e211fdc6a401140",
+      "bytes": 1248,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/door_approach_proposal/pins.mjs": {
+      "sha256": "f3ea6fb558a1907fbf89dffc11577c31ffb498f24fa50eb8f12cb1c70bbb8db3",
+      "bytes": 95,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/host.mjs": {
+      "sha256": "68f82a7f0cddf9c796fb98171f0197379f6d51d6789656ed92a8703407eb5c4c",
+      "bytes": 1221,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/lamp_extension_candidates/load.mjs": {
+      "sha256": "553ccba7ea68e889ab3e29177b94563fefae00a7feae282a1803f3de7ec065da",
+      "bytes": 2013,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/lamp_extension_candidates/pins.mjs": {
+      "sha256": "924648b762b338b978acc9c77bd7db9db9a382e1142200f53c523c061609a3b1",
+      "bytes": 194,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/lamp_layer_proposal/layer.mjs": {
+      "sha256": "1ff756652ef0349ebc60006bf7d84f32436013b90f656ea3d5628222080ac89d",
+      "bytes": 825,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/lamp_layer_proposal/load.mjs": {
+      "sha256": "78eb7215f9c52efa5c9b054fb08197f82bd4a75c220d5ef370602668e7456739",
+      "bytes": 2400,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/lamp_layer_proposal/pins.mjs": {
+      "sha256": "15f943201f44d5cc26a5e48e686460ce852803b989a2db02f3df5b076c360546",
+      "bytes": 94,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/lamp_layer_proposal/selection-pin.mjs": {
+      "sha256": "6a274ad7d5128e1967009ae9455e0e88848678f51008184c165d86a3f4401fc0",
+      "bytes": 100,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/load.mjs": {
+      "sha256": "e7017b0aa389ebcaae276ab8b770fa1a75418ee6e5af9358b17f2ce83a81a29c",
+      "bytes": 3979,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/main-host.mjs": {
+      "sha256": "2ab6a780e6fd83d3bc96e2f0548967fc9938cab8cfd36b5ddf4259c1e8a22d35",
+      "bytes": 7442,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/pins.mjs": {
+      "sha256": "125b9784dae8f97b512cd8cad570b88c83d802b8ef956eaddce4806d807a74a3",
+      "bytes": 90,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/render.mjs": {
+      "sha256": "e24dae5f9fb4b475e2969696cdc2a5336706f6ed8c7e0f187a7ec909e4788337",
+      "bytes": 4460,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-native/native_candidate/scene.mjs": {
+      "sha256": "e62c14032cb987fd60034791177d1ab7c5a4a83d41d8cd4438533c8ee15d441e",
+      "bytes": 2945,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/TARGET_INPUT_PINS.json": {
+      "sha256": "afbfd4445506ca78c53477fe10d05c372789301b7adeb0f54f56307e610a1a96",
+      "bytes": 5041,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/animated-target-scene.mjs": {
+      "sha256": "8a4272a61939a5fd98e14db94d879b994c07020b5fa25d837a64f1d7ed4bdd5c",
+      "bytes": 551,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/bootstrap.mjs": {
+      "sha256": "2ab0e71cbc2e9f8bf2d3efd9a31429a2fe51677bb152a29f5fb355ec91580e8f",
+      "bytes": 5960,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/entry.mjs": {
+      "sha256": "0c1a7c7e3c20359de69e3f03dd0124598f77b8b60b8f536f8a64d4475789188e",
+      "bytes": 5663,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/fixed-registration.mjs": {
+      "sha256": "a6dc7a8ddb04b33f36458fa06f543171f2beabe4f43688d838a6811888ab9a77",
+      "bytes": 17648,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/foreground-selected.mjs": {
+      "sha256": "61f06e3fba448f628cbb82e7f064f1905a493052a78dabe1ea77c975ce79cfaa",
+      "bytes": 1029,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/house-location.mjs": {
+      "sha256": "7f695016392412918fb535463139b1bcc1b78f4f38018e0dc359fe17d78ad231",
+      "bytes": 4559,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/house-session.mjs": {
+      "sha256": "7843d45897af719e91481c9483c546fa6f446defe20e58b83223fe7da8f37c89",
+      "bytes": 3258,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/hub-scene.mjs": {
+      "sha256": "e61fb55ac70e25a5fce0c33653eb346d7333fa44ed89e52db0082c49d530073d",
+      "bytes": 3644,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/load-targets.mjs": {
+      "sha256": "c60f7de1ba07d669bb202a9d8c497e9d4f6f33b610f984abd80065ce0ca92758",
+      "bytes": 2965,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/main-host.mjs": {
+      "sha256": "49fb1b0ccc685a7ec0309c7a078762799e79c39fe0dc690daedf3cf10183801b",
+      "bytes": 11139,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/main-mount.mjs": {
+      "sha256": "2e6b4eb1fff8beae5a75c201fa8940db098358a5e47b5fdeb4f164ba31845b5e",
+      "bytes": 1589,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/native-selected-warp-authority.mjs": {
+      "sha256": "d410809de94ab0cdfb8e1635e3e3ac35f36467a014d75becc7888e344463a213",
+      "bytes": 6545,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/player-frame.mjs": {
+      "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
+      "bytes": 419,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/player_frames/load-player-frames.mjs": {
+      "sha256": "5668f316ec792c1a1dc198b1973e4eedade738e9635f1f45fbf964ed951bf2b3",
+      "bytes": 1239,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/player_frames/pins.mjs": {
+      "sha256": "40ab9a8db261afaee29f1169b72ff9b72c3f24cc5278dc92636d6d3e762aedf7",
+      "bytes": 101,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/prepare-scenes.mjs": {
+      "sha256": "e3081ab56088d779581882df4c4331a761edf81626e01572699ef944e6efc2f3",
+      "bytes": 1265,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/registered-locations.mjs": {
+      "sha256": "527c15428d77d4e0a87e42e2fbd44163012da5ceed68dd3437bb275a2faaeb26",
+      "bytes": 2985,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/render-target-animated.mjs": {
+      "sha256": "211fcbdc00b2a4e0bb2a1138a4c554029528d8492a60b2ed58cfb2be73ece1a9",
+      "bytes": 4656,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/render-target.mjs": {
+      "sha256": "5bd90c0d486fe1216c90d4541ceca8f74eaf8bf2bfdd01b07b8f1bd18d87497a",
+      "bytes": 3894,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/selected_depth/depth-pins.mjs": {
+      "sha256": "addc7a802acaa0a23dd980a7b68dedef87f0de6a1d87e0c778f93d7fc5784e13",
+      "bytes": 101,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/selected_depth/load-depth.mjs": {
+      "sha256": "e05698729f9952a372435ff182a1f6f3c1824dd7948b8ede39b9726a8aeb6ab8",
+      "bytes": 954,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/target-pins.mjs": {
+      "sha256": "777b25da0b9c819c5f03a3c28b4a4aef5e93b60a09256cc9e99a583d7d1a49f1",
+      "bytes": 97,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/target-scene.mjs": {
+      "sha256": "3ed86baf4eb2a2810166d99ac56a7861bbd0d3b91c6c8d607e356accfdcc2625",
+      "bytes": 3207,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/transition-owner-candidate.mjs": {
+      "sha256": "8d1b6fc63da3a21d08775fc454c3716a7238b271ed1151ba07e0ac8a203a97c9",
+      "bytes": 21707,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/renderer.mjs": {
+      "sha256": "2060296eac7b8ac571a92eb5f540c5d0062b39861ba26b681ab44d319114bee4",
+      "bytes": 1921,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/selected-water-adapter.mjs": {
+      "sha256": "8190184b25e3cdeb4dc295689a172fe9a84b6bc733078cc3c8096b5d3150e2d3",
+      "bytes": 1141,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/jisepo_daynight_consumer/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon-pair/vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/pow_park_environment_r1/compose.mjs": {
+      "sha256": "9498c091c7f61cfc1ae366f84b9b9ceef6aed862bd36688e0af4fbdd2bfebee8",
+      "bytes": 1317,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/gohyeon/selected-services-host.mjs": {
+      "sha256": "56bb4dfc247f1e52440a4a489b997b41145c88396d0cc7a6e2af8753f4796471",
+      "bytes": 4473,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jangmok-fixture.mjs": {
+      "sha256": "ffba7ee5d8c8e9e4e73910ff6dae23f1909396570c47090617b3a07c71bfc7d1",
+      "bytes": 294,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jangmok-funded-fixture.mjs": {
+      "sha256": "f39de274b86f9fbdb1320cec5180942251194c04c07cb0ab8da405c7d37e47cf",
+      "bytes": 1660,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jangmok-qa-runtime.mjs": {
+      "sha256": "948e08ac35b269071a496c04b3a44cac937be41923e75d5d3a388d7edc74c035",
+      "bytes": 10535,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jangmok-service-review-host.mjs": {
+      "sha256": "bd2c84e7f35baf64dd1bfc8bb8245f58d788ae932cc23d587303cde6d46fbde5",
+      "bytes": 6460,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jangmok/selected-services-host.mjs": {
+      "sha256": "a260a844f1b8306fe47ca6a84fb3425dd79c44a9496ff58d8061e069d499dba5",
+      "bytes": 4164,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/bottom_return_candidate/region.mjs": {
+      "sha256": "096f4eb35999404f7fa4fbfb505b711f0753dc01230b2d132ce76bbb94ed75d0",
+      "bytes": 1872,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/entry.mjs": {
+      "sha256": "946f68f3d5dd6eb71795327e4cb22ca95c31a92e6454e55b64088db4b45ee3c2",
+      "bytes": 6015,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/gym5_authority_candidate/fixed-registration.mjs": {
+      "sha256": "7088f2aeb051e86e3ed2eca801008dfdb90ec7db125afa3fbebcc67c8b093a5f",
+      "bytes": 73425,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/gym5_authority_candidate/fixed-warp-registration.mjs": {
+      "sha256": "6b10bd5af54b39fa81089c008613b0a4456673fb17b06055700b081afa3d3c20",
+      "bytes": 4015,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/gym5_authority_candidate/gym5-visual-state.mjs": {
+      "sha256": "d46eeb9306b1726aa536ede58581cb960c0b6e4836e437fe8c364d141c588f97",
+      "bytes": 549,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/gym5_authority_candidate/native-gym5-authority.mjs": {
+      "sha256": "bb1e679af7cae54b37f12a64d8211992f407939da6339789878c78423dffae40",
+      "bytes": 3757,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/gym5_native_candidate/ASSET_PINS.json": {
+      "sha256": "8f57989e0b46d9342614fdc3c4f72b1928214bc3af6fcec2ac316652cb8a658d",
+      "bytes": 8034,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/gym5_native_candidate/presentation.mjs": {
+      "sha256": "d6b3148901bc2c37b622d85885b6d2b6af698987c685abeab3650dc4de804135",
+      "bytes": 4988,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/integration_inputs/exterior_environment/environment.mjs": {
+      "sha256": "1b153f1a9f73c28b8bd753e2fbcb59d589adc7162467d9b548239649378ba7fc",
+      "bytes": 1077,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/integration_inputs/interior_original_runtime/ambient-registration.json": {
+      "sha256": "edf9cd7f3609d4bfea776db115f6a4bb531c3e94be589a676c54ad1dfd88216a",
+      "bytes": 135437,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/integration_inputs/interior_original_runtime/ambient.mjs": {
+      "sha256": "dfee34d8c85a5e9d954057935f954bd90f7b0b07ccf4d408aaf71a63af95b615",
+      "bytes": 1186,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/integration_inputs/interior_original_runtime/pins.mjs": {
+      "sha256": "85cf4cf2efd5acf72f52ce340bea4e6d771d5f2ea407e8b5d796a512e5e33395",
+      "bytes": 159,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/integration_inputs/interior_original_runtime/water.mjs": {
+      "sha256": "dee2e13d80795d1de5b00e54e369b08e7001f52f2c81b71b876b79c912d228d0",
+      "bytes": 2719,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/integration_inputs/jungle_environment_candidate_r7/consumer/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/center-visuals.mjs": {
+      "sha256": "28136b9c6ee3d95da793fe67d4ff1bdecfd3979e37e58d04ed65c78a78fcb33a",
+      "bytes": 918,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/early-stream-journey.mjs": {
+      "sha256": "7b60f24e684444b867b2ec7ec3ce0ca0e0ddf43070fc291cafa5c5a2bcbaf7bd",
+      "bytes": 5017,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/entry.mjs": {
+      "sha256": "2a258bb0c1ab7103e26da05442a880da706182089fbc98bce4c190a2b02fa403",
+      "bytes": 4053,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/exhibit-qa-ready.mjs": {
+      "sha256": "508f1141c517c18d758a6dadc9d5fb820ab288bb5e9b958c8318adf271207843",
+      "bytes": 3796,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/exhibit-region.mjs": {
+      "sha256": "b4376aa4bfade65cf516f36ffdda92c99eaa3b2c06f13b7cbc00cc2db04366dc",
+      "bytes": 1710,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/exit-readiness.mjs": {
+      "sha256": "a1b3ed8f550cfe91c55f64b1b627231e6432e1e3f20a0303126bd58f046c254c",
+      "bytes": 1179,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/gym-copy.mjs": {
+      "sha256": "9dd6dbfffe9571512dc2330c0f539a8d0e55244680f78ccdf17974babbd198c8",
+      "bytes": 1582,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/gym-resources-v8.mjs": {
+      "sha256": "56ed1ec3bc06aa5f826e21d116cf3473d7142460def6823625a4fea6adaf6a73",
+      "bytes": 1206,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/gym-session.mjs": {
+      "sha256": "9feac4f502fb5e9800688534d6fe48c1ff591dc1eddb5f1fff874c6790e2bda0",
+      "bytes": 1192,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/gym5-first-battle-qa-ready.mjs": {
+      "sha256": "e474b513e1c2e14730ad2729b7de34fa2241292150bafdeb7c4d8cb3d2e30fac",
+      "bytes": 5635,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/harin-registration.mjs": {
+      "sha256": "19cedd3d7c05d2250b54a24e9d575ce7feb63549282ee5f49cc5aa0f3c35f4c9",
+      "bytes": 6735,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub-entry-authority.mjs": {
+      "sha256": "cde49ef381bcd4e0f4a36830f8552bbebfed2b2e47197771bcf255f8148e0162",
+      "bytes": 2660,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub-registration.mjs": {
+      "sha256": "968c4b7d2aa7f540076ca755866a2aa0aff127d85d405c277a50d0f3c176ad6d",
+      "bytes": 2816,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub-resources.mjs": {
+      "sha256": "9de412fad584dab18b1d118798f13b608b079b879850663e693abc868221d069",
+      "bytes": 2228,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub_assets/common/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub_assets/common/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub_assets/common/scene-lighting.mjs": {
+      "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+      "bytes": 1433,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub_assets/common/screen-lighting.mjs": {
+      "sha256": "6876a931709fc667fab9640c0643e902b363d5442191cea48879720201100e98",
+      "bytes": 1585,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub_assets/environment.mjs": {
+      "sha256": "37532e9bc8d44c0062bbe0f6a28937b1080eff742a19edf803ef54856ea785ca",
+      "bytes": 1896,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/jungle-renderer.mjs": {
+      "sha256": "89b2ea2d203e8ad4ddad3f4bb6cde7403831d761a498b40d31a8f57d526e82a7",
+      "bytes": 3493,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/jungle-resources.mjs": {
+      "sha256": "ac6b8a7826f8cc61d6684e2ec277b136b4f486315851430ed9f5994cc5eb8db3",
+      "bytes": 3179,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/legacy-hub-resources.mjs": {
+      "sha256": "0cbd0ae1641d5bba6c9fd83354f1352165042551e44fe929ccdd018f4fd04933",
+      "bytes": 2278,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/legacy-main-envelope.mjs": {
+      "sha256": "7648652291f430569e42a14a73ed8c8fac6900605ac4e56708daef2cfe736e37",
+      "bytes": 5813,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/legacy-registration.mjs": {
+      "sha256": "cfdca2079181a6e8dfcd1d72ce79ffed1eb001f10641d870b388682ce8a2972f",
+      "bytes": 2814,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
+      "sha256": "651551742fd7169f287e348ae06274195c65862af48a3f3f7030ce474849bf31",
+      "bytes": 35702,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/native-harin-authority.mjs": {
+      "sha256": "09134f1f2df1fb760186cd986ffa82588393422cc09611b9091e2dee948c893d",
+      "bytes": 3254,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/native-jungle-authority.mjs": {
+      "sha256": "91e96731b8dcc437fdb8243b6ee01adc9b81ac015712e948dc683092ded318aa",
+      "bytes": 5642,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/prologue-pair-qa-ready.mjs": {
+      "sha256": "b64f66bbef16acbfb5204451322a089d4842754c2cef031f3e5970252505186d",
+      "bytes": 4180,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/renderer.mjs": {
+      "sha256": "d39a8fc7183e2b3fd071280573a93c1a03cbb7ac09e582452757ae70375b8a7e",
+      "bytes": 1330,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/resources.mjs": {
+      "sha256": "1ec0979f99d7c5ac45714aaa5c7d7207fb0dfe516abdc7bf295f49284506be74",
+      "bytes": 3594,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
+      "sha256": "29fe4c5a5ac02fcf16bd0f080ccec884b24520efb2fc6b7ce34d66deee1455a6",
+      "bytes": 22561,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
+      "sha256": "bb73d59a841808f309e4197282aeb1f514ed581c6abeaba6022c77fbbb73e00f",
+      "bytes": 1722,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s5-heal-binding.mjs": {
+      "sha256": "2f5c4a8e0f00932b62776c1b728daf70a03ff67c4a90b12f53fd35951f5fb5dc",
+      "bytes": 2752,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s5-recovery.mjs": {
+      "sha256": "9867e731a2fb60806f0ac6566df4158a72c0e922afeec175e99d251fdf1552aa",
+      "bytes": 1586,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/save-slots.mjs": {
+      "sha256": "1646e10abc18ee81aa70f623926909b11c7108e2fe5b1d3485b4548b0ed1cf2d",
+      "bytes": 15521,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
+      "sha256": "bcda76850c81c84544a67e300e611b809c4d84723eb0109ad2b7fa9666a7f0a6",
+      "bytes": 59718,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
+      "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
+      "bytes": 878,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/stream-role-copy.mjs": {
+      "sha256": "0718ccdc5d347c9297665bd5f5830a17b2dfd2f4a12594cf39471d1e47b6416a",
+      "bytes": 846,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/travel-registration.mjs": {
+      "sha256": "15f60e492f2bdc70cbff22500da16fa37c75ccdae6e3d51ff779aedd7d43069c",
+      "bytes": 2220,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_copy_review/student-copy.mjs": {
+      "sha256": "745b7314836b91c55ae1b09b73a7df0f2c95c332e11d050aace6e366bfb9bda2",
+      "bytes": 746,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_native_consumer/approach-regions.mjs": {
+      "sha256": "414ae11e5100ddb3293166b46a17ebc75490f5a7cebfb6959403315ed4b1ab8c",
+      "bytes": 3314,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_native_consumer/host.mjs": {
+      "sha256": "8bee90ef6fa9f0913b160c607ccbdebbc32a30eca5bbc01df0f280a39769568a",
+      "bytes": 3880,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_native_consumer/transition.mjs": {
+      "sha256": "7b9a8b6d59d6e484a2901b5a0a84cda1cd6d739cb9bb07b41164765b4d56ec1b",
+      "bytes": 774,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_puzzle_candidate/controller.mjs": {
+      "sha256": "37d4f0da623f34887d0a42d790e450594d6e1f5bd856ff18ee40175df869adb1",
+      "bytes": 5115,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_puzzle_candidate/layer-walker.mjs": {
+      "sha256": "1d3c424c6c1571e2817f951c36a77fc27f7bca4e54b3f34e46e6edc502b2d06c",
+      "bytes": 1810,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_puzzle_candidate/progress-shape.mjs": {
+      "sha256": "ec72aabf61fbd1d918462b4d2c0da1134008c468c86bcdd767d0e73c4617d417",
+      "bytes": 1561,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/student_puzzle_candidate/snapshot-receipt.mjs": {
+      "sha256": "1cd51fb9001f394943fa83235cf6f61fd84a88d407be51fb7259ff0aec042f9b",
+      "bytes": 1868,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/teardown_candidate/presentation-scope.mjs": {
+      "sha256": "2c34aed169638eb9adb9b28608144bd3e337266194e66b4a9ff39794c5a80a47",
+      "bytes": 1025,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/browser-loader.mjs": {
+      "sha256": "e6b8508a32d19a7e4a6b0d0345b284921b0275b0c117a55119ee87a21893be7b",
+      "bytes": 3447,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/native-adapter.mjs": {
+      "sha256": "af473caae1a0510087805e8814f2886ab0088b229b133bce26a2b66968c3e239",
+      "bytes": 6497,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/tests/adapter.test.mjs": {
+      "sha256": "bb7fa885db3ad2f3d1322137c9651133aed07fca8e7d31a7cfe2b44dab1d808c",
+      "bytes": 3901,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/coastal_approach_selected/INPUT_PINS.json": {
+      "sha256": "f49c320075a4ea4f2250342794e2bd73ee611553907db5043b1f36b1b325c1d9",
+      "bytes": 1340,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/coastal_approach_selected/scope-guard.mjs": {
+      "sha256": "c5ca06cd01ce41700b1f0fff87581e7415ddd46c111408721c1b579759423a3e",
+      "bytes": 765,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/coastal_approach_selected/scope-guard.test.mjs": {
+      "sha256": "3c36b146eb32e0eb28cc457f9c239971998577b34b6f3844e0055c5c0a824da5",
+      "bytes": 1061,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/independent-qa/coastal-session-independent.test.mjs": {
+      "sha256": "ad13444b1a998d797bdeb43f04a4833dcee90aabcb913c0f51d15df7e12846af",
+      "bytes": 2611,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/independent-qa/unified-independent.test.mjs": {
+      "sha256": "157ad2df173c24fc8ebbd0d48155f173399b6babf8fbcc2748fa84c58fe3fe48",
+      "bytes": 2600,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b1.mjs": {
+      "sha256": "ea869ad7be40ef3b19c7a0e859d1cdc49349d0bcecff1a17f04e084580a7ed86",
+      "bytes": 1526,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b2.mjs": {
+      "sha256": "ade2101e4c1f6b105d98f0c0c16767dc50b411c476c095c484f1ca8b78f9c0b1",
+      "bytes": 1398,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b3.mjs": {
+      "sha256": "dd3f7885e56b6f79b1982bbff7085e80ddbe7a58287252d1d0e4e797455c65f9",
+      "bytes": 945,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/b4.mjs": {
+      "sha256": "6152b935668508897335f0f5d29cfc3896311a41d90e3eba594561b8587b357f",
+      "bytes": 1534,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/derived_water.mjs": {
+      "sha256": "2214d55ff7b3460cd98166af0bdf2450c17ad5bd38e496453850e6485b1d377a",
+      "bytes": 1455,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/page.mjs": {
+      "sha256": "45af21a3b9643752e33a69acb15a01e49d039d90f2e654877e0e7bec2a486571",
+      "bytes": 10308,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b1.mjs": {
+      "sha256": "ea869ad7be40ef3b19c7a0e859d1cdc49349d0bcecff1a17f04e084580a7ed86",
+      "bytes": 1526,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b2.mjs": {
+      "sha256": "ade2101e4c1f6b105d98f0c0c16767dc50b411c476c095c484f1ca8b78f9c0b1",
+      "bytes": 1398,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b3.mjs": {
+      "sha256": "dd3f7885e56b6f79b1982bbff7085e80ddbe7a58287252d1d0e4e797455c65f9",
+      "bytes": 945,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/b4.mjs": {
+      "sha256": "6152b935668508897335f0f5d29cfc3896311a41d90e3eba594561b8587b357f",
+      "bytes": 1534,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/derived_water.mjs": {
+      "sha256": "2214d55ff7b3460cd98166af0bdf2450c17ad5bd38e496453850e6485b1d377a",
+      "bytes": 1455,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/monotonic-delta.mjs": {
+      "sha256": "4eddbe4bee62a900cbd4f26ff7b53ceca03554dbf817b0ec7664e09adc4bc9e7",
+      "bytes": 465,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/page.mjs": {
+      "sha256": "9e7e733902d59f473cead340be7e06f805a31a11ce14d29cf45a49dcd66b1b65",
+      "bytes": 12627,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/screen-lighting.mjs": {
+      "sha256": "f4bc8afbc3d3e60b37917bdba06bdbd1ec0ded12497964d8f2f0133a6b130eb4",
+      "bytes": 1588,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/INPUT_PINS.json": {
+      "sha256": "4e91dd8e73a9081b4d7afa416e5e5d220097aab1aa9f44041ee514832dec6b6e",
+      "bytes": 17879,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/RENDER_ADAPTATION.json": {
+      "sha256": "1ce58f5af8cf10d60dd49d4ad63d692cb37856504b4e7c2baceb8121142f33e8",
+      "bytes": 867,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/assets.mjs": {
+      "sha256": "4ba131b46cd44d7d0a9c461a4c5875a9b99e2a89d6f9969baffc192b17bdd268",
+      "bytes": 3033,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/contract.json": {
+      "sha256": "ccb1e7ee45321a766b1ce6a432f9ce6ab44df95a4b9c4eb8b223e33a002aad97",
+      "bytes": 124108,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/environment.mjs": {
+      "sha256": "e4f3f0f35bf4cf5c50a19d3242a80f2fb1cd79760a9f4126f081c4bf9182d244",
+      "bytes": 2129,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/jangmok-render.mjs": {
+      "sha256": "b8ec40acafd2d1da6b15265504e5b4da1c60359fb549743f9593c9a996bb1e63",
+      "bytes": 7190,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/render-proofs.mjs": {
+      "sha256": "a5e57ba860bcc53c1932ef33c4e0b672bb29fb19785ae54d250881a7410c636a",
+      "bytes": 2270,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/render-recovery-proofs.mjs": {
+      "sha256": "d0e058e2ea22b9ae8ed14eed6d548c8feca673aaa2cf7b3d1bf1cdb8f9e60ea9",
+      "bytes": 2401,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/render.mjs": {
+      "sha256": "72d53c7f32054d6635fbbd39b59ea4ed7e28e0f092af4f4da29fb563a78751d3",
+      "bytes": 1221,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/session.mjs": {
+      "sha256": "03a27a06facb9f134a2dc81ef2d51733ed50db23827ee359da202571289356a9",
+      "bytes": 6861,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/tests/coastal-scope.test.mjs": {
+      "sha256": "1cfc2df2f25c4b0faeec2d10deff05b55ebd28fed8f846d21e8e90d9bd0d9531",
+      "bytes": 2398,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/tests/environment.test.mjs": {
+      "sha256": "35a53a962829f7458ab02f0fb3d6cf4d4365e4ddfea6a70cb0db224e41b8968e",
+      "bytes": 9835,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/tests/gait-render.test.mjs": {
+      "sha256": "31b15f261ee14bd392ce36b677ca30e80b949842cf7252f31240a21ae5e7a34b",
+      "bytes": 1331,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/tests/independent-qa.test.mjs": {
+      "sha256": "a6a3f0c0e55f91f14ebf695f5f4718435876746d23628c6edf818a14781dce76",
+      "bytes": 2528,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/tests/load-assets.mjs": {
+      "sha256": "c63efff311db3cae14cedcbec695876680c4d49a74a8dfa561d189c2b1999cc2",
+      "bytes": 1105,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/tests/session.test.mjs": {
+      "sha256": "e292b9deb341989b618a63ae3ee90a46487d88c7b56d1ccc878432123821c0e6",
+      "bytes": 9065,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/tests/unified-recovery.test.mjs": {
+      "sha256": "ab34e41787c0f6d52804fe67a73eca6b14004fdb14b20db507bc15686f310495",
+      "bytes": 3920,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/travel-routes.json": {
+      "sha256": "613102b0d36897c576e53f0b94dea08f6effcf9568bb0afe02ec4de4bf8f1368",
+      "bytes": 203865,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/ui-ticket.mjs": {
+      "sha256": "753c8b596e3237101a57f7ebcbafb6baea0da2871095e9330bd22fc74bb1fbee",
+      "bytes": 205,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_home_entries_remaining_1524/viewer.mjs": {
+      "sha256": "d4117b3dc587cee51cc92a3d75534204d29feb23a55a5b131a1ccf100e36de8a",
+      "bytes": 8286,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_house_entry_gohyeon3_env_1456/session.mjs": {
+      "sha256": "899dde1b4e35a2b6143707e16d26de3c5fd3a713a8089fb9b27388bdb9b38ab8",
+      "bytes": 6377,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-map/verified/native_house_entry_gohyeon3_env_1456/ui-ticket.mjs": {
+      "sha256": "753c8b596e3237101a57f7ebcbafb6baea0da2871095e9330bd22fc74bb1fbee",
+      "bytes": 205,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-review-host.mjs": {
+      "sha256": "a2fef0eb303c646e20eda551bdddec5a49852e31806b44717b13c1a273d5df09",
+      "bytes": 3936,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-save/memory-entry.mjs": {
+      "sha256": "afe93f8af5427ab6ed4f5b53403b2f134df759fc393f12a979a4244f926ec776",
+      "bytes": 2935,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-save/memory-review-host.mjs": {
+      "sha256": "aaee87cb9450b2537017ebe4303db48bc20d6d54609e4adbc8b2d4b9bf0c89ed",
+      "bytes": 2278,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-save/memory-view.mjs": {
+      "sha256": "5553f66e1f0f36e7e19c44cd272ccd70f410e821e48275eaa1829d2933dda876",
+      "bytes": 3578,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-save/native-envelope.mjs": {
+      "sha256": "d4d4db67b565c2ff59226d1bc63e996b3a307cc82b6bad631095d2633ad5f2fd",
+      "bytes": 4462,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-save/native-location.mjs": {
+      "sha256": "78e5e00a655850bc9bea771904c74881697cb8585ca1a27e2bd71b9f100dc51b",
+      "bytes": 5768,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-save/native-session-owner.mjs": {
+      "sha256": "1e542aa466e20a68f21caa287a6442b2b97eae1a128ec755d08f1b913a62cca6",
+      "bytes": 6039,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/native-save/save-slots.mjs": {
+      "sha256": "c2a0e3c69bc2550c9492289e9883c61743cae2c8a38b1f8a90e21e46dbf225df",
+      "bytes": 15503,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan-entry.mjs": {
+      "sha256": "521a4637fccfb95c95a17e8024d6afe3a7ff3d010dac05e72eed9103bb55957c",
+      "bytes": 2699,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/ambient.mjs": {
+      "sha256": "aa3dd11b8a74ac152e5f6ac4017c9112149c69b00befd7616811bb7a92d53ee4",
+      "bytes": 1407,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/load.mjs": {
+      "sha256": "5efa7a4591adb314a29f6b6bd184c2cadedcd9fa970bb961949cf7dc7bcdaf25",
+      "bytes": 2440,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/main-host.mjs": {
+      "sha256": "8d8d88686bf574ee7b180dc3d8ccef2cb43aa1b18ba1233056a43ed55e03d8b8",
+      "bytes": 5134,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/native-state.mjs": {
+      "sha256": "dbbb820177a57bf79397d24bcb89f45b82985aa1c960f612f2d7a1789f9da4fd",
+      "bytes": 2606,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/qa-ready-banner.mjs": {
+      "sha256": "c81421bc601897d9a4682193a845173183aa5514a5c9345e7f08cc6c60f0c81e",
+      "bytes": 554,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/qa-ready.mjs": {
+      "sha256": "48713d7984f2b3444a3f397e1e45c53e5f7d0f5f7f43b53471281a5b4798b7be",
+      "bytes": 4236,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/nojasan/scene.mjs": {
+      "sha256": "327e8af94f0a0cd8c2f01e596caa16e05ef0a1be93800df125fe78004fe83890",
+      "bytes": 6324,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/paired/entry.mjs": {
+      "sha256": "6f2b1a1126a1fe10c5514aca9e8490f5cdf5acc0ea0984de120952ee4fdd35da",
+      "bytes": 6431,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/paired/paired-review-host.mjs": {
+      "sha256": "314729e2edfeb5793171dae3b88d1ddd08c5d147993940187e06eea8bc290c01",
+      "bytes": 8838,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/paired/post-native-host.mjs": {
+      "sha256": "4c81ae0f3ef9b968cab53f9e7259a068defcb286b828f7fcc2d37fdab33951d4",
+      "bytes": 7715,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/paired/post-recovery.mjs": {
+      "sha256": "2576b7fe8c21f1b8f68dd5abc8695f05c614525a58768fe571edaa84bd7ffc0a",
+      "bytes": 1700,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/paired/registered-locations.mjs": {
+      "sha256": "8ea0ad50a227a663b279c0cce06f0e7e04b9adc599904aa7c7358513b3e505ee",
+      "bytes": 3035,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/paired/scene-adapters.mjs": {
+      "sha256": "d6b64168ee8bac1d3249b7f6abee833fd377cd372ae07fc55ac08154aa4369d6",
+      "bytes": 3528,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/paired/transition-owner.mjs": {
+      "sha256": "2078e54207d98dff431fd5e0f70698c89733acac580e9a5f26dd80c9768e1df0",
+      "bytes": 10276,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-entry.mjs": {
+      "sha256": "dd581d12ff05c4a0f501093638136391df60c6ff8c36527624ba2e1bf4fd1fc4",
+      "bytes": 2083,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/PINS.json": {
+      "sha256": "5a91ae03f0a1d95ccf6019d2f7b4ef427d70fac4114b49790c7f1abb58ee1183",
+      "bytes": 6115,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/post-native-host.mjs": {
+      "sha256": "8a857578ce3483531b70ac5d90f340572975cbebf842aa0c87df0f121461648a",
+      "bytes": 6363,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/grass/CONFIG.json": {
+      "sha256": "36723500edfbe0995f064e35d889fd3cdfec3452b298069973f85d71a90a8c4f",
+      "bytes": 2593,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/grass/plant.mjs": {
+      "sha256": "c4fc59a01bcd298072c6be09504fe40cae04252307fdc35cb7af78bca504e7dd",
+      "bytes": 1862,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/hub/common/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/hub/common/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/hub/common/scene-lighting.mjs": {
+      "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+      "bytes": 1433,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/hub/common/screen-lighting.mjs": {
+      "sha256": "6876a931709fc667fab9640c0643e902b363d5442191cea48879720201100e98",
+      "bytes": 1585,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/hub/environment.mjs": {
+      "sha256": "b9cb1aea70d79c81c6c8c580cfdd93781ad9cc5f8016b8324d454d4573c8ed48",
+      "bytes": 1356,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/CONFIG.json": {
+      "sha256": "1e50a09ffd9172e67dd1aebb667efa4fe43d689c5c6d482fd1aa98bba16fc743",
+      "bytes": 818,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/NEW_WATER.json": {
+      "sha256": "968ee917d57f57c47cdd29d235fe8053f25dc1ff290776ffbb70a8f8ad98df2b",
+      "bytes": 477,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/chest.mjs": {
+      "sha256": "9cd6d55aa361368f033e5bb467b2c8486f05cbf80ee5952d6859a361f923ed15",
+      "bytes": 924,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/new-water.mjs": {
+      "sha256": "788fd0f5981b10451f57625b58d7f346695cfaf8160e64c095084406ce445ec2",
+      "bytes": 803,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/scene-lighting.mjs": {
+      "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+      "bytes": 1433,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/water-adapter.mjs": {
+      "sha256": "b1616547b49a77171f2ffa46e95fa2925314de782e81f49ca159c26bea5e7d57",
+      "bytes": 1758,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/effects/island/water-contract.json": {
+      "sha256": "e3f6698ec58fad7f28573fb49990b83d56714a6e356a31192444735d423da663",
+      "bytes": 1260,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/post_two_scene_native_r2/NATIVE49_INPUTS.json": {
+      "sha256": "efd4a2be1a5f968e5746a14dd416ab52da3a506d27e398289a364e0606ad9a3e",
+      "bytes": 52273,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/post_two_scene_native_r2/native-state.mjs": {
+      "sha256": "dbbb820177a57bf79397d24bcb89f45b82985aa1c960f612f2d7a1789f9da4fd",
+      "bytes": 2606,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-map/vendor/selected-environment.mjs": {
+      "sha256": "1704c134ca169c8282a658d92df84ea3dfc162062e3e3867c08fc9d999b9dd5e",
+      "bytes": 9523,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-memory-fixture.json": {
+      "sha256": "5221bb8cfb8b9f7cffc227b72d3a87b6926392d9630140dbbe798cfcfa8bacdf",
+      "bytes": 44668,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/post-review-host.mjs": {
+      "sha256": "6cecc7b8a9c5d31f51ccdd3f31d07b9fddb32bfdb7210a8e99258f4a879e3d27",
+      "bytes": 6179,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-areas/fixed-registration.mjs": {
+      "sha256": "4a5ca30ab5c6822a9005ca428a804126bf03940d38cbf7fd7a83a64f9eaa0c11",
+      "bytes": 23273,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-areas/presentation.mjs": {
+      "sha256": "5800c9bf1f1b48deb007736c9b591e5cea740594d290ff005f6c52fedf2735cf",
+      "bytes": 5914,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-areas/scenes.mjs": {
+      "sha256": "a0d476ace29f83c06fc7f0686029fbcda56b50d2f63bbea01601f0638cc269ef",
+      "bytes": 1422,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/entry.mjs": {
+      "sha256": "c8c68d0d69d2dcb51153c6183623877685a4cda820c8d299a831acd86fe6f0d8",
+      "bytes": 1360,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/environment-loader.mjs": {
+      "sha256": "bbc0ca288b014ace4b7cb171963207766303b4742a20bb7072683271e0cbd99b",
+      "bytes": 1974,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/environment.mjs": {
+      "sha256": "b9ff327ade7b91f594828981210bab88d54c89744b0125396708ecf84a169b2b",
+      "bytes": 3427,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/junction-overlay.mjs": {
+      "sha256": "88b13ab38b50eab24cdded41cbccb7832aa58a495c89938c6fd781d6011f495b",
+      "bytes": 1421,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/junction-registration.mjs": {
+      "sha256": "c029f9bd536d1121e857f1ac54e4d82f64b16bdd725314d45dd96bad21a46f81",
+      "bytes": 1628,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/loader.mjs": {
+      "sha256": "45e440223d9f347e8fc155eadbdbb4b9c15f81d21e9857a4d12043d43a9e9df7",
+      "bytes": 2323,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/lower-shrub-layer.mjs": {
+      "sha256": "601b5323accbff7bb5258613e750596acc35142bc291ad19bf910261b6bdea0b",
+      "bytes": 1776,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/lower-shrub-registration.mjs": {
+      "sha256": "7050b4bb4ca8885919ebf0175e5165e36dc2d58e9cf23e039f087ab57d44a3ac",
+      "bytes": 723,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/opening-overlay-feather.mjs": {
+      "sha256": "7148c0b843a12274858ef7d4e545443f80d0d67f24efc83066941c0fecb26e16",
+      "bytes": 1050,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/opening-overlay.mjs": {
+      "sha256": "3afe963a02d9d596d7e5e3923a5fccf9f73ec100ccf1f1efa8cfc27ce5757c7a",
+      "bytes": 825,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/original-motion.mjs": {
+      "sha256": "356f2fbb59023e7a0eb76384a06af77c4b08960c4f5e8276a7ef16f7326aa68c",
+      "bytes": 1898,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/presentation.mjs": {
+      "sha256": "b072f5b181070d67754be5b1a3b10cc6b9b96cf5305ff6f7fefe291be9c5cb8f",
+      "bytes": 6411,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/recovery-mapper.mjs": {
+      "sha256": "3b2ed0a90e065f718c978f51eda9602212560c00cb958ab0b4d3290ac42e465c",
+      "bytes": 1705,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/review-host.mjs": {
+      "sha256": "e8257ae244534fd768c819373c59fd774456ffd9404473b8dc6df049f8d54e4b",
+      "bytes": 4707,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/scene.mjs": {
+      "sha256": "7fef626b9f6036c59bf88b22d3068866735eea2cc4b47cc4e894e232b6c73bba",
+      "bytes": 4358,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/typed-endpoints.mjs": {
+      "sha256": "7bd62cee8a6f47f37344f3af4f7b0496ebafa4969a824d97c68cc6b766970422",
+      "bytes": 3206,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/visual-layer.mjs": {
+      "sha256": "8915dfbc2053cde8eee6a1ce7ffacb6fe302c548b1afb76efc40586ce26dd3cd",
+      "bytes": 2819,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/review-position-hud.mjs": {
+      "sha256": "58d4a4abd6d8c4876ceee79f90a41eb1a199abd2626ecfea7cd87ca07ffe290e",
+      "bytes": 1102,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/assets/opaque-origins.json": {
+      "sha256": "700e9bfb90718aa06b912636f9242e562a4e88787bc6da633c8041a815d2bd30",
+      "bytes": 17668,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/continuous-camera.mjs": {
+      "sha256": "24dbcdbca8d31934daee888e9735272df7df6f371a7525ad86b99785ca7e891c",
+      "bytes": 1656,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/exit-choices.mjs": {
+      "sha256": "9a7e1374736e23bf6171ef88d1ddf78e352048f9152def63f7fd65987744af09",
+      "bytes": 1439,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/fixed-registration.mjs": {
+      "sha256": "2988c1ed1efd583748ece3f9df9c6aa104c952cfc97cc089551734ccc7fe9f4f",
+      "bytes": 15871,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/presentation.mjs": {
+      "sha256": "7a3e745579377dd8d7b96e8982e9fc63d60f1d09989faf8b067e9bc01d89bfb1",
+      "bytes": 5168,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/scene.mjs": {
+      "sha256": "482120c5f8e1459eaa53d2e7e7e25863f2ce9389aa654537062dcf04a36e0845",
+      "bytes": 436,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/support.mjs": {
+      "sha256": "bb8fe59f175d24ae13e08b215b1812454029dff549a762ec4f528443a976712f",
+      "bytes": 2071,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/entry.mjs": {
+      "sha256": "860631b836e54695f84e34d5ea0b624056b0567410f2111bfdca5bfec2fd78f5",
+      "bytes": 6046,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/fixed-registration.mjs": {
+      "sha256": "885e5ae05a42fe3b10ac7d5686f395c9cc38c4f44001b983bbe4146109b5593d",
+      "bytes": 2946,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/host-bound-consumer.mjs": {
+      "sha256": "3fdc741ef983619cc6dc29ca75c4d41c8d25471db5b242ab57bcd64ceedf2aa8",
+      "bytes": 7358,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/hub-support.mjs": {
+      "sha256": "eafe2009c2d8277c92e73b1528fbfe50d6e20e08ebc67941d5a10992693c7c25",
+      "bytes": 1725,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/hub-view.mjs": {
+      "sha256": "05a96469f4deea2911f2cad529a6ce8fe47622b2874060cba5dd38ccd8901aa3",
+      "bytes": 4772,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/lighting-current.mjs": {
+      "sha256": "2721d785d38376ee796f2e65e892ff41ab57dec8e4393f9665a6a3fab30ad4a1",
+      "bytes": 3466,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/lighting-loader.mjs": {
+      "sha256": "50edd349f134046dd6b51dbd8e7af9c545fde2484b065a4f4be6e9682186d41d",
+      "bytes": 2054,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/paired-envelope.mjs": {
+      "sha256": "05b060ec9743579aa4009b83bc73ebd543827f3d1725ac5d42ba8ff6982c6755",
+      "bytes": 2931,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/paired-host.mjs": {
+      "sha256": "9bf2de2ef451e58e2dac7d4be8bbbfd9868449a85435c81d3c8bb19734cd72f9",
+      "bytes": 31065,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/port-adapter.mjs": {
+      "sha256": "c8f79ced4e07504e30a482b35994f957bcff0bab640ca86b61053dbc470cc84f",
+      "bytes": 12709,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/port-room-session.mjs": {
+      "sha256": "6a14a51403f89d45d17c220385a2950006c8b8f9d5e4e7602e74b9682d03c6c7",
+      "bytes": 9354,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/save-slots.mjs": {
+      "sha256": "996ed1b4722f2d5ca86f52dedcf174bf2847dd0dceabe153f416b06dae8e1c40",
+      "bytes": 15503,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/session-owner.mjs": {
+      "sha256": "42bcf019fca38ceb392804ac34afc80db10a61190fbccde2f91b95e8fa1d899c",
+      "bytes": 18129,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/viewport-support.mjs": {
+      "sha256": "9aee6013f02631728472abb984fe4e25484cf6cdfebb6b729ffa13f62878b254",
+      "bytes": 609,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop/post-shop-controller.mjs": {
+      "sha256": "43624d155d7876bf3b6b64137040b2de1cc753b35d9cf04e68cd86111d731523",
+      "bytes": 6139,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop/post-shop-overlay.mjs": {
+      "sha256": "a90a4bf655755fb95156f6c4e477817c2b8e372a2c94fc02830a906ae7a64d3e",
+      "bytes": 8699,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop/selected-shop-overlay.mjs": {
+      "sha256": "c6d7fcf91c26c6dfc0fac1db262b55db32a96aa2f3c16352b2dd255a27aa1dcf",
+      "bytes": 8930,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream-roles/fixed-registration.mjs": {
+      "sha256": "4d7d7fbe3f5e1a7764d47a490fe21c6748004eeb521a13f54ff28096043666aa",
+      "bytes": 8537,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream-roles/native-role-authority.mjs": {
+      "sha256": "07ea8d096f1fcfc9a40626625b8978869c409563c14cc93a4908569e68162354",
+      "bytes": 4799,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/assets/camera-bounds.json": {
+      "sha256": "24936f0a05187436de6a673b770d4190d0eaccad966f95e6afcfbdae83dc6cec",
+      "bytes": 45018,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/assets/opaque-origins.json": {
+      "sha256": "7d1668269a7f2c4ab0c337c86e8cff671c696d9637b47b41a113e2d538873da9",
+      "bytes": 79123,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/assets/water-registration.json": {
+      "sha256": "6e58f622a0e054f63a9800e46a1c8ad55c27a84aefebef21a20c90d8665a2432",
+      "bytes": 7885,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/assets/water/middle_REGISTRATION.json": {
+      "sha256": "0b41bdc124e9ea1efb944cc6a341f927a33da991b03b4ddfcb0a6da14dea385a",
+      "bytes": 1801,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/continuous-camera.mjs": {
+      "sha256": "6b733acc35d4de215504bf3d72271ce1af351731bb66427c7a757d2583af6cd4",
+      "bytes": 2308,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/fixed-registration.mjs": {
+      "sha256": "18cc87f44b51f3deab171139746a4b79dbda8ee921c91b9437cfceaa1d0bc2d9",
+      "bytes": 14176,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/original-water/adapter.mjs": {
+      "sha256": "9bd287fe764af3ce74d84d3411645563031f60bb7c236180424259d48c4c5005",
+      "bytes": 3444,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/original-water/middle-adapter.mjs": {
+      "sha256": "6bf5dbe2499329fa049721db20d65b57d74380c231897ebd2549da26f8651120",
+      "bytes": 2084,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/original-water/upper-render.mjs": {
+      "sha256": "efb2b7fe48e9f724b92571d5404d8018478090698218b51db772719920cd34a2",
+      "bytes": 1320,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/pins.mjs": {
+      "sha256": "591a63efe9fc100d06dfd373558d8a3db5e75ee21a245b997c38bffd0c5bfdb7",
+      "bytes": 5466,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/presentation.mjs": {
+      "sha256": "a3bec282d157c285ed303466b668289c820fa58ecbb712a5899d25cc7ef139db",
+      "bytes": 7410,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/scene.mjs": {
+      "sha256": "f1437ba7dbc48ad4cfa01f1c48ed34846a875d2319f3c4b35bfce4a1bc724af3",
+      "bytes": 581,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/support.mjs": {
+      "sha256": "7f22591fda3c4dc8c111cfb28660ca4afcfbea10092384e8cfc672afa39313bb",
+      "bytes": 2109,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/water.mjs": {
+      "sha256": "a4fb56a51b6b6b04bd2e62beeeba90dc0c7916e502e6323ef780385726d16981",
+      "bytes": 1893,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/economy/actions.mjs": {
+      "sha256": "e65d0cdfb20a3edaa5be38386136b3b351eef3e8f09af30577a7c6192458c06e",
+      "bytes": 6514,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/game-entry.mjs": {
+      "sha256": "c0824ed085ce9e6b0f6238feff6e95e84dd231f5d1d0ab2726a204a7c2840dbe",
+      "bytes": 4153,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/nearby-safe-band-ordinary.css": {
+      "sha256": "816afcf03fa56d35f204015f7593d161bf501cbd4a0928eaa5b7710a4a57e51f",
+      "bytes": 1361,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/nearby-safe-band.mjs": {
+      "sha256": "cd436dec46a6cf6ff65859c398c1d512b2acc20993d6c0905747399f4c1f8d4a",
+      "bytes": 1185,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/story/availability-readiness.mjs": {
+      "sha256": "fef80f930d943e1a8c9344d45423df1f24530924b7b2026954677e469c36918f",
+      "bytes": 1657,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/story/native-cargo-officer-wait.mjs": {
+      "sha256": "008ccea4dea4e2b5e6130f967b4141e95dc80e076a63d9d26370e0fe55ce39af",
+      "bytes": 669,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/story/native-harin-battle-wait.mjs": {
+      "sha256": "7c3695ed3abfc24129f75abea6442b7cb041bb0716059ec6989243ecf5a0930d",
+      "bytes": 652,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/story/native-s4-gameplay-wait.mjs": {
+      "sha256": "99c45e07a5ec14e741f44972b624491f87f1a44647e6dc4bcfc79d078e91705c",
+      "bytes": 681,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/story/progression-service.mjs": {
+      "sha256": "120ee020183a463705f591a81713963a81e57026a020af735037f96337a70e6e",
+      "bytes": 42387,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/story/stage-completion-readiness.mjs": {
+      "sha256": "7aa903c71258411034caf0504d3ff8faa02d8618165747409a1c464bf91b09d6",
+      "bytes": 440,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-bridge-geometry.mjs": {
+      "sha256": "d75b19c0847b3a7b745308112b8ba2e1dd0ed2a4fd3afe60fc78a838aec7f20a",
+      "bytes": 4940,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-bridge-registration.mjs": {
+      "sha256": "de05c11420daafdf6249997240f0ba4bf07ea5bea53be7c853fca272dc8190fc",
+      "bytes": 5468,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-eight-scene-geometry.mjs": {
+      "sha256": "44b3101284ec919a6061a1993c958990b59b6b4e615b2cd61d6aa5a5b268753e",
+      "bytes": 6192,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-five-scene-geometry.mjs": {
+      "sha256": "924ff6fcb5df3db680d8488335446d9ebcc27a6d61720cd44c2203feea63ff34",
+      "bytes": 5193,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-last-two-registration.mjs": {
+      "sha256": "822cc446275cacf33633321ef2c3c8a276750ad6fe9f0effbe1bc545f0cd24af",
+      "bytes": 130531,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-native-authority.mjs": {
+      "sha256": "927192bd942ec06baf7ba31810a23b3b8dbbf543863461d02d41715364bbd18c",
+      "bytes": 3914,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-next-two-registration.mjs": {
+      "sha256": "23cfb80b5b170a2f8c3d9e408d4da9df3fcc7a32f7f97454d8cb8dea0e4dea3f",
+      "bytes": 12174,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-officer-authority.mjs": {
+      "sha256": "a9042478f6a14ce00cb72e7e0a30408755e42e4572b346a41a5d5275456b6637",
+      "bytes": 2542,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-rescue-authority.mjs": {
+      "sha256": "65e9f4c968d25fbc7525a3275aa0cb7fe46386bd6609a5710f272e53f49cfbd9",
+      "bytes": 2145,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-rescue-location.mjs": {
+      "sha256": "c408c87f49cebcced476668e164eff5321a91823cb343a0cc2cd359f83d2efcb",
+      "bytes": 2531,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-rescue-registration.mjs": {
+      "sha256": "7593ae3f4de344a66b63f60aaac9f37889016876451187d47c97e33fd184013d",
+      "bytes": 36490,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-safe-mask.mjs": {
+      "sha256": "436b6568f30a8f3ccfc69537255ae978e6f39d36552e189b3f5d1c4b3d91b371",
+      "bytes": 378,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-seven-scene-geometry.mjs": {
+      "sha256": "180bdffaa3ac226173109db2518ac4d910dfa591040ee640b4ab52c39941e1e3",
+      "bytes": 5426,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-supply-access.mjs": {
+      "sha256": "fd805436400956ff13b7f04da9a5413748373efa95ced1f91e836e592756387b",
+      "bytes": 548,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-supply-authority.mjs": {
+      "sha256": "1e03d5759d0b22fcaf2e699179f23c7fd1c73ad9decd48c7201ad93f48ccd805",
+      "bytes": 4311,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-supply-placements.mjs": {
+      "sha256": "28321a46b3d8a7ecf0d941d10754ccbf3116785368291029c5147448108411ba",
+      "bytes": 32144,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-supply-receipts.mjs": {
+      "sha256": "afb5b01d97624ff4d72505e3fa0c31034696d0a0948d1595b4589c05152606e9",
+      "bytes": 956,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-supply-rows.mjs": {
+      "sha256": "8c9debc08a4fd8ef80873007f80e58c5522a25d6920785894c490f6a78d07eb0",
+      "bytes": 7153,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-three-scene-geometry.mjs": {
+      "sha256": "3b7bda19d8943aec212c6f7a729ba8e856108e23c244647e8d52f0faef074a34",
+      "bytes": 5180,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-two-scene-registration.mjs": {
+      "sha256": "2396d5be62676d85157bcf725dac2b98e89c86828f8f381e34df76a1bbe7de2d",
+      "bytes": 12156,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/cargo-zone-authority.mjs": {
+      "sha256": "71c373de01cf2f94e3e9f02df8064d340515adf1b7058915149d181729e137ea",
+      "bytes": 1818,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/definition.mjs": {
+      "sha256": "0194c424720587114c9fdc7ce1223ce3c4607363711394f29d9e9a89354e4823",
+      "bytes": 17077,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/entry.mjs": {
+      "sha256": "f85932637942c0f8e49ad8165af26e0f5a3370410d0fc8b74523b47e692273b8",
+      "bytes": 38055,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/gohyeon-heal-binding.mjs": {
+      "sha256": "c908a2edaab4793c11228e9a1671f2182fc90cf8c153c0950cff23d155cbbfe4",
+      "bytes": 3386,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/gohyeon-purchase-binding.mjs": {
+      "sha256": "6f624e93d3d5071493205a68c8746d3df5749f2f785981caef6ca5dcba77d9f5",
+      "bytes": 3480,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/jangmok-service-bindings.mjs": {
+      "sha256": "e3a0453df467488337a6c3433d762a5d37ad4ce989039d15bebf594f1553c256",
+      "bytes": 4947,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/movement-effects.mjs": {
+      "sha256": "6fcd9c0619512923ef5d8f477139f93b635dc65f5b0bd6d133ba38faf0ac5d6d",
+      "bytes": 314,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-gym4-authority.mjs": {
+      "sha256": "49d34141497c91ba0368bd11669d814028cc8bc66b4b92afbbe30ef75a6929e8",
+      "bytes": 71,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-gym5-authority.mjs": {
+      "sha256": "5c4aeb16840769c29d000069e2f934e3ef133c42e6587fc660682bc8c9b32240",
+      "bytes": 94,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-harin-authority.mjs": {
+      "sha256": "2f02f66f878588cbf65650809722da0850a66864da26469212c0bb002909a3b0",
+      "bytes": 91,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-jungle-authority.mjs": {
+      "sha256": "94c98c02589f7d47892ef31b7693e7ba22d92ac58ba7279236b4580ddb84ec6b",
+      "bytes": 161,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-runtime-policy.mjs": {
+      "sha256": "77b7041c89e26799b616265904a2631780308af3882e36a12554798a6f7c196f",
+      "bytes": 409,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-s4-encounter-authority.mjs": {
+      "sha256": "f6b2770388561d17f73fd3c43715d1a37a15430174e7d1c04080a6d40002c574",
+      "bytes": 78,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-s4-gameplay-authority.mjs": {
+      "sha256": "2354d27310e08b51225dc3a687524bd5c2e81bcd3e15c9751b211ec2eb75f8dc",
+      "bytes": 79,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-selected-warp-authority.mjs": {
+      "sha256": "10511d0de3a6f669021377d040f72bcedbd8511826d9d837bb696e698aca1d4d",
+      "bytes": 80,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-stream-role-authority.mjs": {
+      "sha256": "680eed2aa3752274797f2f262348fc86cadd1e65bd411cfc25052724932b51c1",
+      "bytes": 76,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-summit-authority.mjs": {
+      "sha256": "97d10b925426554f02f243c03226c070f47b4edd3479c9a6faa14772d77b6670",
+      "bytes": 2173,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/post-entry-authority.mjs": {
+      "sha256": "47582dc3fd6f08fded7105d0eb3c8fbb240df18676aa1ce8592954ff1f742bf0",
+      "bytes": 5458,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/post-heal-authority.mjs": {
+      "sha256": "509348319b879b10d8c8a8aba5961cc22baff3eae676ac397c4d4674402111c2",
+      "bytes": 2192,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/post-shop-authority.mjs": {
+      "sha256": "0b7df3a6c5867d02d7bd5401f349c060d32226daffc1113b834b78ef7c13a993",
+      "bytes": 2334,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/s5-entry-authority.mjs": {
+      "sha256": "60f055c4a769aedd085475fdbb4c7d894f2fb372daf2e57faeec51d977a812d0",
+      "bytes": 85,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/selected-heal-authority.mjs": {
+      "sha256": "532058514a736da1ba61f2f6f57d016e2db1229c0b239eeca1f5594bd1e05cac",
+      "bytes": 12822,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/selected-purchase-authority.mjs": {
+      "sha256": "a64f984a6935d9e6b8e133791ed24d2172ca2086f7b06f57f05dc3f2b14006f3",
+      "bytes": 9950,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/service.mjs": {
+      "sha256": "1fa852eb95451f1af58b1e8b9d300b71020be187b306b6a5314d17c1c3277c79",
+      "bytes": 39245,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/state.mjs": {
+      "sha256": "c64fb6f8c66f3199118960393146a26bc35e522d3f07fa88ca9c38ec75724945",
+      "bytes": 10306,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/summit-native-guard.mjs": {
+      "sha256": "ab0e594b3558dc0a9a426bc5eaa4844789da8b21920aa2fbf591ba41ba151f35",
+      "bytes": 2383,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/yeji-location.mjs": {
+      "sha256": "4822107cb58283d9756532ffae29e3066fa196c3894233ef579a56937f5addc2",
+      "bytes": 1964,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/canonical-entry-lifecycle.test.mjs": {
+      "sha256": "8947d208fdfc2be9f6e56df2ec413326a3eb63ce56d304cc85a0c4f2ec93845c",
+      "bytes": 28419,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/dev-shell-materialization.test.mjs": {
+      "sha256": "8e978b15980c76efdddeae2003dfc34f9dd6eb8a48810587916bd9b746f932ed",
+      "bytes": 496,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/fixtures/native-authority-source-delta.json": {
+      "sha256": "9a93254735177c5f780baabd52d40b4913513e93ae697586a89d0cc3c53d535a",
+      "bytes": 5596,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/fixtures/post-native-memory.json": {
+      "sha256": "5221bb8cfb8b9f7cffc227b72d3a87b6926392d9630140dbbe798cfcfa8bacdf",
+      "bytes": 44668,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/helpers-native-shop.mjs": {
+      "sha256": "9a5100bfed823c85340a984ac474aeca01c52b537ac59179290d65a291a080b2",
+      "bytes": 1383,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-authority-lifecycle.test.mjs": {
+      "sha256": "0ef81a63ab44902941773ff417a010e68c2ba28271230841803f9a5168f76932",
+      "bytes": 3175,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-battle-routing.test.mjs": {
+      "sha256": "ca6f757b55836b2026801e5f591fe2ce19cd11e8429505dad453d9d2a3790cf4",
+      "bytes": 1545,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-fixed-viewport.test.mjs": {
+      "sha256": "e2e6c3ab307ebd670598b5d15f5fd4d6546e70395957315dccdf713541d864d2",
+      "bytes": 1358,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-frame-clock.test.mjs": {
+      "sha256": "cbe412f7da1256626bbcd65d032f7c9b74ea89e6ef0dba60a344aa6da9f570e6",
+      "bytes": 1021,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-house-atomic.test.mjs": {
+      "sha256": "a5a0b8a0abd3c8727ccfc5445a261b505246b960d22c03e226384b13ab046d9c",
+      "bytes": 23397,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-hud-refresh.test.mjs": {
+      "sha256": "c22afcd52769b304d69dca7f5c95b400550d46d93963f292facfc811b2fb9501",
+      "bytes": 2307,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-jangmok-owner.test.mjs": {
+      "sha256": "f79710e9ebf783ed19bc2c388126f19a5480b21187ead809b29bdada32dae0fd",
+      "bytes": 5874,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-memory-host.test.mjs": {
+      "sha256": "b071a723366b1e64b4156b48a4142677715c9374b72a7f9a5a4a5c8e552805ae",
+      "bytes": 3426,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-paired-owner.test.mjs": {
+      "sha256": "1aa8491651303845167a219591ec19b9eca455405327f6f585db847ff27ee876",
+      "bytes": 10925,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-paired-ui.test.mjs": {
+      "sha256": "273a34f744d720750f3ddaf31ba5bd90293b751ecb0dc4435bfa4fdc52ace93e",
+      "bytes": 8958,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-post-authority.test.mjs": {
+      "sha256": "0f7d5d8e1ff298761aed44f5862ebe1ae5f76e16a5bf229fcd8011c740a826e8",
+      "bytes": 4387,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-post-entry-authority.test.mjs": {
+      "sha256": "6a7d16f7dc6bd20ba443d81bd8328268e11d43ddedc4c7880f935b0d46bc69b7",
+      "bytes": 6990,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-qa-ready.test.mjs": {
+      "sha256": "0132664c0b158086a2597ec38ae874afd3b850d95370421d61378efb32506b0e",
+      "bytes": 2770,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-review-integration.test.mjs": {
+      "sha256": "cc84a4082a2ecee3db3046ba6a74b82c17084825600f06eda7da734cc53289f2",
+      "bytes": 2272,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-shop-authority.test.mjs": {
+      "sha256": "422df80190a203bc9b0bf631d37a9a57abd791a0a8cc13488bf7af0771d32779",
+      "bytes": 7456,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-summit-authority.test.mjs": {
+      "sha256": "9e112457959c794e6f23385dd443235e26dde0becaeb73a7cff2be3c8741c32a",
+      "bytes": 7621,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-summit-main-host.test.mjs": {
+      "sha256": "1890ce1c6b87f330ada5608bb49d61f139d06ed122b3c27fdce169c14a225f93",
+      "bytes": 6725,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/ordinary-notice-v2.test.mjs": {
+      "sha256": "003968199acd20b8924d2df07625710490b6aeadd26099e755a213ae7d615a19",
+      "bytes": 14582,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/reconstructed-hidden-parity.test.mjs": {
+      "sha256": "390b697313c6a86006fe687be7edde2214a13b4fa40dbf694b08f150b6e66af2",
+      "bytes": 1845,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/region-entry-canonical.test.mjs": {
+      "sha256": "e40b58447f343c5f6fcb6da5358ce999e6654c988a4880706d36de6d0f9827ac",
+      "bytes": 46644,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/review-position-hud.test.mjs": {
+      "sha256": "48cc9d70c47abfec9bfa5b8f34d3047fc010ad3725e83740da3cd0f0ff5b0e47",
+      "bytes": 1705,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/w03-final-players.test.mjs": {
+      "sha256": "9ca85f8cfcd41caa59196a386bbafc1bbae5809d40188a2882609a51d022ce96",
+      "bytes": 5622,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/yeji-single-owner.test.mjs": {
+      "sha256": "6eefb965217155b15a25d9b246843561b9f0543b0ede60e2942833b9a022ef47",
+      "bytes": 2816,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tools/build-ordinary-notice-v2.mjs": {
+      "sha256": "07a701e14008c7b97ae3e3d5c16f8299d4b885f622929f237a5bdb2f1bbb72b2",
+      "bytes": 1017,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s9-transfer/core-east-foreground.mjs": {
+      "sha256": "1c6fcae13b34b54f0be1cc0e83569abe4f735d919dbb879b7a2d83fcdbecfccc",
+      "bytes": 1569,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/fixed-pair.mjs": {
+      "sha256": "54caab4ddd8e6bb16628b544cdcda949f94dccbd75d58b666c459f56f0b2e163",
+      "bytes": 13287,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/lamp-occlusion.mjs": {
+      "sha256": "b906a65d2bcaeacff43b4ab1ac1c9d914f224422a98d006227c58f4efca46ef2",
+      "bytes": 1392,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/provider.mjs": {
+      "sha256": "8753ea7022933156d346b0e5c440dc7e69b4d9c0c1a1966831901b7ec4dfb02d",
+      "bytes": 8150,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/s1-continuous.mjs": {
+      "sha256": "08defacaf7574cbcb85d52b3b685854bedc1e7217ddae63e8ae9d53efaa67a09",
+      "bytes": 3509,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/scenes.mjs": {
+      "sha256": "785e003fcaa3aee44e0cb936a02cdbc0778cbd71b3d4f1876440cbb52186b70d",
+      "bytes": 1267,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/upper-water/upper-loader.mjs": {
+      "sha256": "06a6588e1896f86b1512697e158757e7dacf32936d1f823fd7323629a7ca3edc",
+      "bytes": 1448,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/upper-water/upper-render.mjs": {
+      "sha256": "efb2b7fe48e9f724b92571d5404d8018478090698218b51db772719920cd34a2",
+      "bytes": 1320,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/upper-water/upper-water.mjs": {
+      "sha256": "644df9dbcf0bc149c2018db1cabaef682cc346d97bfe597a851eb3fd243b39fe",
+      "bytes": 2049,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/center-counter-intent.mjs": {
+      "sha256": "c99a856101c467b3a5ed1b3f0ef3bfbd5520d9bccfd73eac4e3cab20ae840221",
+      "bytes": 1436,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/center-interior-scene.mjs": {
+      "sha256": "8869c287744eb05a7b00aa888ad746cf2911cd5df03ba63ba6ba7de900177c04",
+      "bytes": 5369,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/fixed-contract.mjs": {
+      "sha256": "1768d5e6ede4f7f258f02368532ef2cb2222010b62bcd5f62356d09a4cea2cc0",
+      "bytes": 3496,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/heal-binding.mjs": {
+      "sha256": "12fa3895e0cb9397581ee3c3494f50c007f935c5f29e1858322be9b1fbd30a66",
+      "bytes": 2667,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/load.mjs": {
+      "sha256": "f24ec54a170e63c25cd52514fa9b2a5a7c99305c361be173925cdcd8c37bb0b9",
+      "bytes": 1682,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/location-registry.mjs": {
+      "sha256": "65d443b1b967d3a98719227f4fb032b9d4590741f49dfaeb53f4604cdb2c4878",
+      "bytes": 3333,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/prepare-scenes.mjs": {
+      "sha256": "20752b4fbf8d63e48e73ce0edacfd0c1fc31286970982d12ec0d717e59db4482",
+      "bytes": 1552,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/room-provider.mjs": {
+      "sha256": "7fdc1dbb2e59d6a1e4cc2e2b74067bc49ce54d998d4d0fde07a587b4abdec2ad",
+      "bytes": 1580,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/center-interior/transition.mjs": {
+      "sha256": "0156e56a071e3b49c79e6dbbfe34af9e6e64e6bfed237fc26050a0468b8323c4",
+      "bytes": 1268,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "tests/native-center-interior.test.mjs": {
+      "sha256": "66d44ca7df2e9106a1ace771fc4f60deebd39235c7bc24c41e6be0bb69a18c46",
+      "bytes": 15256,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/npc-presentation.mjs": {
+      "sha256": "7e4cad5e8677ebdabd529891938015a45bbd1cfe7ea076443af007c5df5c49f6",
+      "bytes": 1367,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/npc-registration.mjs": {
+      "sha256": "6f0ff4ad433b91d50fef42a920325bed452d2c22abae7f4e2cf1833db2909362",
+      "bytes": 13838,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/load.mjs": {
+      "sha256": "a1f2f6465027a7012723d952bf5483a5f66a40a0c8d8cc723e12bac019b5a97b",
+      "bytes": 1421,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/purchase-binding.mjs": {
+      "sha256": "2512e78fd4303eff9c582545c1e6a5b12dcaa4835e6b06e4dbb4aa850543a238",
+      "bytes": 2149,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/shop-interior-scene.mjs": {
+      "sha256": "16db469d4ad7d8c1f4517a0b24fcfdf92fe39b620b86f7c45a44e17661032205",
+      "bytes": 4364,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/location-registry.mjs": {
+      "sha256": "10f53a40402d72a546f6414cacdd95d35285a5426321f60206d41799fe01ebb4",
+      "bytes": 3036,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/shop-r3-provider.mjs": {
+      "sha256": "fb2d63b543f4063a90aa39cb3f29da55a7d026708f162ad967dabe765bc6c2fd",
+      "bytes": 3637,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/counter-predicate.mjs": {
+      "sha256": "af27ef173560ab706672034a6df47f2f14ad5caec7a4e164de1a8ac97da6e109",
+      "bytes": 1197,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/transition.mjs": {
+      "sha256": "cb3e14366db31b322479b6baa96ddd9124bb972918a008aa823de29b361be297",
+      "bytes": 1349,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/asset-pins.mjs": {
+      "sha256": "98dfce60d0a043a8a6accbf239a4596b06e1584ae9f0899470d324d0ca2c933b",
+      "bytes": 267,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/shop-interior/prepare-scenes.mjs": {
+      "sha256": "6d9e370fa8024b388d327bd5f6e4153bd0fff20904db6071812939b345776549",
+      "bytes": 1327,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/encounter-registration.mjs": {
+      "sha256": "73542f860a5d4ca41097fa362522fe9201fdb0359ed7e95c6922819adfd11696",
+      "bytes": 2354,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/brackish-water/water.mjs": {
+      "sha256": "7e0145f9ec42ba33db2b31477c7b990bfb944e3ad27b6d691c334334002d105e",
+      "bytes": 2365,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/brackish-water/loader.mjs": {
+      "sha256": "3761d9fdf35f7e7fd16c583595350d8206ea919da05eb321f55d2cc1def66d40",
+      "bytes": 1267,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/seam-repair/load.mjs": {
+      "sha256": "0b0e55ca389791c7961556c5f536a3d43360472557c9349cc2c94693bad55645",
+      "bytes": 1881,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/seam-repair/pins.mjs": {
+      "sha256": "cb916b6065323b19188ae01e80a904aae3db13682b114edab3727a0dda2182b2",
+      "bytes": 267,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/seam-repair/layer.mjs": {
+      "sha256": "e820f123fcd4c8c5288028d733218b364c9397c6a758595c38768fde055bdd00",
+      "bytes": 1848,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/story/event-runner.mjs": {
+      "sha256": "0e2f7cfbd14bc1db93851c74ee32f006860d6cce10f466c8f7aba2e0a51fb6c9",
+      "bytes": 2133,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/lab-interior/REGISTRATION.json": {
+      "sha256": "dd5753e6cea7f00b87881721c05c61db5cae1c4ec53004692421abac7f8fa08c",
+      "bytes": 7332,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/lab-interior/fixed-contract.mjs": {
+      "sha256": "0bbb264d92679b72155674752eae5c2e87057bf40a47ce1db8b8fccefd17ceec",
+      "bytes": 3169,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/lab-interior/lab-provider.mjs": {
+      "sha256": "a8fc6a087f758e0169d25d598d83e36af51da7d1f53cb4970909b4afaa35c5de",
+      "bytes": 3386,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/lab-interior/lab-scene.mjs": {
+      "sha256": "0d0042b286e5e8d066ef03b9eb6d3c9b73b6f87d77399545fb1675b45c6fb9de",
+      "bytes": 2054,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/lab-interior/load-inputs.mjs": {
+      "sha256": "ed0062df8bf16b7c7e2b74890b23d328b3da3b6711616fd934680716c4500560",
+      "bytes": 2246,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/lab-interior/pose-codec.mjs": {
+      "sha256": "b9c55b4b5b67bd5c9b7dbb8392be4240822b04b3077739d6d4657086a5b3d417",
+      "bytes": 1462,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-lab-authority.mjs": {
+      "sha256": "2f16e107e8497bdbc7caf9da2a032fa29edb893feada633bf39ea905d4ad9185",
+      "bytes": 3005,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-night/depth.json": {
+      "sha256": "9fc993ad418243d2b1876b7367c11edf200f036a6a1f792b62e15682d9b0c48e",
+      "bytes": 8122,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-night/layer.mjs": {
+      "sha256": "d76e8786f60082db83619a18417d1953207128f8a051db84c16996e40794ecfd",
+      "bytes": 4824,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-night/load.mjs": {
+      "sha256": "cad1be4173f742a176447f4e2999a47208748d0451d16508b5764a944b295934",
+      "bytes": 2632,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-night/pins.mjs": {
+      "sha256": "1538edce6b203c77969790e301e41c4388f4fe5cb3108ad3bafad062dbf983a1",
+      "bytes": 860,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/legacy-support-resources.mjs": {
+      "sha256": "b0471c99ee46c141145ed038108ddb50e5b1aa197df0f6e72864069f6f469b7e",
+      "bytes": 3876,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/s1-local/shared-image.mjs": {
+      "sha256": "bdcd774cd6e9759271b74f489dcb5300dae56cd7cbe27994e4c684529bee0847",
+      "bytes": 1953,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-rival/fixed-registration.mjs": {
+      "sha256": "9afc648797b0d8b6c1a7a955b361bdc048b833c0a0a90b0699935cd70139ceeb",
+      "bytes": 2160,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-rival/geometry.mjs": {
+      "sha256": "386580191dcbfab26aadebb1c8b564545582f66470a6ac2a4dbcd109856e5759",
+      "bytes": 563,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-prologue-rival-authority.mjs": {
+      "sha256": "26b26915dae997e52a32ad0b03bc7a3fcc51b20a73fcd74496c9d5d552f039bb",
+      "bytes": 3142,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/night/layer.mjs": {
+      "sha256": "8801ea5ae92682fcafcfd9b85a0f8ae80ef1624a9486722a0909e8b9285014f5",
+      "bytes": 2396,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/night/load.mjs": {
+      "sha256": "28dfe792bee33829eb4d066da54f1c1c6ab719010c94986245d9bf62ac477b6e",
+      "bytes": 2538,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/yeoncho-stream/night/pins.mjs": {
+      "sha256": "e2812d9cfc09bceb445748ba38c7eaa78a7641e729370f44259fae6a7f6f7ada",
+      "bytes": 508,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/approach-decoration.mjs": {
+      "sha256": "8938cad7f4dcc11549e1885ed9b68a6933ebd4919e00032b847dc0ea23fc4450",
+      "bytes": 2087,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/WATER_LOSSLESS_LAYOUT.json": {
+      "sha256": "5ea125a94647a2caf5000330d4702f8a2320e3be794344a419c1a65ada812c34",
+      "bytes": 71806,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/clock-consumer.mjs": {
+      "sha256": "ce3e4751432ddae081a00a9b612ad6182880b019310bcf8f9844c8c8e5954c9b",
+      "bytes": 2132,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/common/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/common/frame-lighting.mjs": {
+      "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+      "bytes": 2279,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/common/load-lighting.mjs": {
+      "sha256": "927b082c90ece64cbcc2062def4a12d078332022ab56b865cbb469b4cbb13bca",
+      "bytes": 1755,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/common/scene-lighting.mjs": {
+      "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+      "bytes": 1433,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/common/screen-lighting.mjs": {
+      "sha256": "6876a931709fc667fab9640c0643e902b363d5442191cea48879720201100e98",
+      "bytes": 1585,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/common/ui-clock.mjs": {
+      "sha256": "5a51deb396fbc8c53fb18378f7ed77fd34f4e1e3adff0232391c7c9a9c0d1aaa",
+      "bytes": 878,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/load.mjs": {
+      "sha256": "7000be1cad05c667469acb0a69098614671e8dbfd3750392b2abd4b5b8464571",
+      "bytes": 3487,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/pins.mjs": {
+      "sha256": "fe3bf11f9c528a8365d19a1991ef96ad20423ced80ceae5e051139c8a7297913",
+      "bytes": 2170,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/sparse-environment.mjs": {
+      "sha256": "55c7c83cf45b867238ca949138f8a94e14a54c936268362cf4b5bedcbab66e40",
+      "bytes": 2229,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/environment/water-cache.mjs": {
+      "sha256": "7b6408b033d29aef85026efa7937e7cc564dc9b0120f2a5251ded1db93c01f60",
+      "bytes": 4705,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/fixed-pair.mjs": {
+      "sha256": "8047c314648579b8bcc2e75e30957e33a86045538555d15836b70e847d91ff68",
+      "bytes": 11339,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/provider.mjs": {
+      "sha256": "11d79b0dc2538546da09703bf3b2e6845b898b22654aab1855808b017c2bf129",
+      "bytes": 3602,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/scenes.mjs": {
+      "sha256": "1b8559ab67233fc756ca96873c72866d58ab630161b90979c80e63254982fc7d",
+      "bytes": 1209,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/support.mjs": {
+      "sha256": "7a6dccd4551f4af0e0d8447027c62aea05dfc6f086bef800b851d1437fc1dc5a",
+      "bytes": 2980,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/night/layer.mjs": {
+      "sha256": "95a523102ef8569c48b9d118dd10b7dce6fd73a57cca51271fb1fc309cefc15a",
+      "bytes": 2853,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/night/load.mjs": {
+      "sha256": "3c070888b58ba53d4278dc909162ba1ddea6126c61f3787be0022ea0e174fb71",
+      "bytes": 3186,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-brackish/night/pins.mjs": {
+      "sha256": "b83a717f2abab33c7145b4ac9fe65969b366d814c28a2abc359525b9c2db3c06",
+      "bytes": 374,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/hub-presentation-need.mjs": {
+      "sha256": "c246f775b32a46f26ec42653ac9d6f24e840b53925ed03c8c7f7a9d9bf654427",
+      "bytes": 580,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/lazy-hub-resources.mjs": {
+      "sha256": "dbbe0b1d3fa0eda94e62ad775b7f73e468bdc48c16e4bca50c3ec0d6515a037b",
+      "bytes": 3678,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-field/fixed-registration.mjs": {
+      "sha256": "86d9e0ef55b698db556e94f4279c8ee73476d49e6efe5bfdc81e5c3393777756",
+      "bytes": 7233,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/world/native-prologue-field-authority.mjs": {
+      "sha256": "678d035ad0317b906bce299275cc366e0fe400fe490971f667e80e2dc78c8f59",
+      "bytes": 4314,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-field/wild-registration.mjs": {
+      "sha256": "2817c217ed0eeb88229e677801f093cc28ce1a5e6f0c602483dc6c47e796c187",
+      "bytes": 13704,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/lighting-adapter.mjs": {
+      "sha256": "5f9da3cbb5203f0c1610b0471bf6646f2fc0e232084a4f45e60e4e3da398e35c",
+      "bytes": 3542,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/prologue-native/lighting-lease.mjs": {
+      "sha256": "95d5be6d9951bb8c8a882b38d987696a329a3b05a736784ef5d0d20618f7d02a",
+      "bytes": 1548,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/jungle-native/main_ui_candidate/native-diagnostics.mjs": {
+      "sha256": "862d4cee02f6da1ec676bd5496d5c9810e05786b64c9f582092f5662b49fcbde",
+      "bytes": 3520,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/encounter-registration.mjs": {
+      "sha256": "edfa659b911df437f00d82be14e9e24e065c0e3fc212851bf8663f0fa8ed1f52",
+      "bytes": 4476,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/npc-presentation.mjs": {
+      "sha256": "6fe1a2aa72d1c0e462c7722bf5172c3feaee8234cbb1599d7a00b2a7aa1c45b5",
+      "bytes": 1960,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    },
+    "dist/development/hacheong-wetland/role-registration.mjs": {
+      "sha256": "8e3d12daaf6540935f0da8d1832b37c7f5460ee3c64fe04b4bfbe357f1582550",
+      "bytes": 8447,
+      "role": "managed_stage63_text_source_or_runtime_data"
+    }
+  }
+}

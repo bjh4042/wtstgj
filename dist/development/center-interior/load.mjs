@@ -1,0 +1,8 @@
+import {loadCenterVisuals} from '../center/center-visual-loader.mjs';
+import {CENTER_CONTRACT as C} from './fixed-contract.mjs';
+const base=import.meta.url,hash=async b=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',b)),x=>x.toString(16).padStart(2,'0')).join('');
+export async function loadCenterInteriorInputs({fetcher=fetch,decode,signal}={}){
+ decode??=b=>createImageBitmap(new Blob([b]));const decoded=new Set(),cleanupErrors=[];const cleanup=()=>{const pending=[...decoded];decoded.clear();for(const i of pending)try{i.close?.()}catch(e){cleanupErrors.push(e)}};const check=()=>{if(signal?.aborted)throw Error('CENTER_LOAD_ABORTED')};
+ const read=async u=>{check();const r=await fetcher(u,{signal});if(!r.ok)throw Error('CENTER_INPUT_MISSING');const b=new Uint8Array(await r.arrayBuffer());check();return b},image=async b=>{const i=await decode(b);decoded.add(i);check();return i};
+ try{const visuals=await loadCenterVisuals({read,decode:image}),safe=await read(new URL('./center.safe.u8',base));if(await hash(safe)!==C.inputs.safe.sha256)throw Error('CENTER_SAFE_PIN_MISMATCH');const depth={};for(const[id,filename,sha]of [['low_leaf_sculpture','low_leaf_sculpture_foreground.png','79ad4142b9d148f57ae43eb698baf517fb68a9e245af520baa0e9ee7ef057f0e'],['booklet_rack','booklet_rack_foreground.png','0376db305f32039e2f8c5b740cf7e251231bd9c504a5701a3fdec4d1b369c683']]){const b=await read(new URL('../center/approved-animation/assets/'+filename,base));if(await hash(b)!==sha)throw Error('CENTER_DEPTH_PIN_MISMATCH');depth[id]=await image(b)}return{...visuals,safe,assets:{...visuals.assets,depth},cleanupErrors,dispose(){cleanup()}}}catch(e){cleanup();throw e}
+}

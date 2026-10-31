@@ -1,0 +1,562 @@
+[
+  {
+    "id": "YEONCHO_LAMP_01",
+    "ground": [
+      280,
+      1054
+    ],
+    "origin": [
+      240,
+      874
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          280,
+          1030
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          280,
+          1078
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_02",
+    "ground": [
+      700,
+      975
+    ],
+    "origin": [
+      660,
+      795
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          700,
+          951
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          700,
+          999
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_03",
+    "ground": [
+      1300,
+      975
+    ],
+    "origin": [
+      1260,
+      795
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          1300,
+          951
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          1300,
+          999
+        ],
+        "safe": true,
+        "synthetic": false
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_04",
+    "ground": [
+      1660,
+      1054
+    ],
+    "origin": [
+      1620,
+      874
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          1660,
+          1030
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          1660,
+          1078
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_05",
+    "ground": [
+      2120,
+      975
+    ],
+    "origin": [
+      2080,
+      795
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": true,
+    "poses": [
+      {
+        "foot": [
+          2120,
+          951
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          2120,
+          999
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_06",
+    "ground": [
+      2460,
+      975
+    ],
+    "origin": [
+      2420,
+      795
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": true,
+    "poses": [
+      {
+        "foot": [
+          2460,
+          951
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          2460,
+          999
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_07",
+    "ground": [
+      2850,
+      1054
+    ],
+    "origin": [
+      2810,
+      874
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": true,
+    "poses": [
+      {
+        "foot": [
+          2850,
+          1030
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          2850,
+          1078
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_08",
+    "ground": [
+      3350,
+      975
+    ],
+    "origin": [
+      3310,
+      795
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": true,
+    "poses": [
+      {
+        "foot": [
+          3350,
+          951
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          3350,
+          999
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_09",
+    "ground": [
+      3710,
+      1054
+    ],
+    "origin": [
+      3670,
+      874
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": true,
+    "poses": [
+      {
+        "foot": [
+          3710,
+          1030
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          3710,
+          1078
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_10",
+    "ground": [
+      4000,
+      975
+    ],
+    "origin": [
+      3960,
+      795
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": true,
+    "poses": [
+      {
+        "foot": [
+          4000,
+          951
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          4000,
+          999
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_11",
+    "ground": [
+      4460,
+      1054
+    ],
+    "origin": [
+      4420,
+      874
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          4460,
+          1030
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          4460,
+          1078
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_12",
+    "ground": [
+      4650,
+      975
+    ],
+    "origin": [
+      4610,
+      795
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          4650,
+          951
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          4650,
+          999
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_13",
+    "ground": [
+      1485,
+      1240
+    ],
+    "origin": [
+      1445,
+      1060
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          1485,
+          1216
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          1485,
+          1264
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_15",
+    "ground": [
+      1405,
+      600
+    ],
+    "origin": [
+      1365,
+      420
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          1405,
+          576
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          1405,
+          624
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_16",
+    "ground": [
+      1370,
+      230
+    ],
+    "origin": [
+      1330,
+      50
+    ],
+    "dimensions": [
+      80,
+      200
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          1370,
+          206
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          1370,
+          254
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "id": "YEONCHO_LAMP_14",
+    "ground": [
+      1485,
+      1575
+    ],
+    "origin": [
+      1440,
+      1400
+    ],
+    "dimensions": [
+      90,
+      183
+    ],
+    "templateOpaqueMAE": 0.0,
+    "alreadyRegistered": false,
+    "poses": [
+      {
+        "foot": [
+          1485,
+          1551
+        ],
+        "safe": false,
+        "synthetic": true
+      },
+      {
+        "foot": [
+          1485,
+          1599
+        ],
+        "safe": false,
+        "synthetic": true
+      }
+    ]
+  }
+]

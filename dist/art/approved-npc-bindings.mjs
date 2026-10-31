@@ -9278,7 +9278,7 @@ export const APPROVED_TRAINER_IDENTITIES=Object.freeze({
   "actor:trainer:ROUTE_S3_03": "LOCAL_WALKER_F_VAR01",
   "actor:trainer:ROUTE_S3_04": "NATURE_HOBBYIST_F_VAR01",
   "actor:trainer:ROUTE_S4_01": "LOCAL_WALKER_M_VAR01",
-  "actor:trainer:ROUTE_S4_02": "LOCAL_RESIDENT_F_BASE",
+  "actor:trainer:ROUTE_S4_02": "ECO_EDUCATION_STAFF_F_BASE",
   "actor:trainer:ROUTE_S4_03": "OUTDOOR_EXPLORER_F_BASE",
   "actor:trainer:ROUTE_S5_01": "FARMER_M_BASE",
   "actor:trainer:ROUTE_S5_02": "NATURE_HOBBYIST_M_VAR01",

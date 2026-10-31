@@ -1,0 +1,1 @@
+export const SEAM_PINS={"old-g1-original.png":{"sha256":"ba5a9a1c08f0e7eb7e122324b76c04636edf57e73f750d837692af0196519497","bytes":18796156},"new-seam-plate-original.png":{"sha256":"0e882c6ba9e55b4ea8ed8929449b24b793b6f3148eb049d03637bf18a03855c1","bytes":3194102}};

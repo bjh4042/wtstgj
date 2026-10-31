@@ -1,0 +1,17 @@
+import{applyMotion}from'./original-motion.mjs';
+// Candidate pure receiver renderer. Caller owns existing clock, camera and final actor pass. No RAF or gameplay state.
+export const CURRENT_SOURCE_SHA='d31ee97f9210999b0b7bb3bc29f8ac61fe7b6bcfea1eb946dfe8c58585939f9a';
+export const CALIBRATION_SOURCE_SHA='ccb716cbdad1553005d5d6a3c958078bf09e469091f0ab0f309efb133152bb4e';
+const ROWS=Object.freeze([
+ Object.freeze({key:'sw',bounds:Object.freeze([4,935,272,1118]),pixels:27810,frames:48,indicesSHA:'09fe563bb23827d7f0b7856341aa055f00d27c1125af2dc82751fb7053dda790',rgbSHA:'e7070ecba6d24f4630da765ec26180c96cc7705fafa9230a451f82f92cab36b7'}),
+ Object.freeze({key:'central',bounds:Object.freeze([4,868,956,1118]),pixels:136785,frames:48,indicesSHA:'946b9101978f9fe8f4ac3b8e403883629067fdd18c041530e01353bfaddaa513',rgbSHA:'8177b96b5d470b9346bc3e7b8ebb48c8dd4b3d1b5947ce077cdb69845700ca6b'}),
+ Object.freeze({key:'boats',bounds:Object.freeze([2513,720,2804,1045]),pixels:39270,frames:96,indicesSHA:'e2dd68faf1a1c2a989d9793c7fa3b6e75761a13c3469f64fc6a13f5e58b726fd',rgbSHA:'e06bddc35629d448b131008f9957b71af9724b28a570bd8b04d5459a401e9e2c'})]);
+const hash=async b=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',b)),v=>v.toString(16).padStart(2,'0')).join('');
+export async function preparePrologueEnvironment({readBytes,sourceSHA,signal}={}){
+ if(sourceSHA!==CURRENT_SOURCE_SHA||typeof readBytes!=='function')throw Error('ENVIRONMENT_TRUST_ANCHOR');let disposed=false;const layers=[];
+ const check=()=>{if(disposed||signal?.aborted)throw Error('ENVIRONMENT_CANCELLED')};
+ const read=async name=>{check();const raw=await readBytes(name);const b=raw instanceof Uint8Array?new Uint8Array(raw):raw instanceof ArrayBuffer?new Uint8Array(raw.slice(0)):null;if(!b)throw Error('ENVIRONMENT_BYTES');check();return b};
+ try{for(const row of ROWS){const idsBytes=await read(row.key+'.indices'),rgb=await read(row.key+'.rgb');if(await hash(idsBytes)!==row.indicesSHA||await hash(rgb)!==row.rgbSHA||idsBytes.length!==row.pixels*4||rgb.length!==row.pixels*row.frames*3)throw Error('ENVIRONMENT_PIN');check();const view=new DataView(idsBytes.buffer),ids=new Uint32Array(row.pixels);let prev=-1;for(let i=0;i<ids.length;i++){ids[i]=view.getUint32(i*4,true);if(ids[i]<=prev||ids[i]>=2804*1122)throw Error('ENVIRONMENT_INDEX');prev=ids[i]}layers.push({row,ids,rgb,manifest:{...row,sourceSHA:CALIBRATION_SOURCE_SHA,frameMs:50,periodMs:row.frames*50},verified:true})}
+ return Object.freeze({dispose(){disposed=true;layers.length=0},drawBackground(ctx,{origin,timeMs}){check();if(!Array.isArray(origin)||origin.length!==2||!origin.every(Number.isInteger)||!Number.isFinite(timeMs)||timeMs<0)throw Error('ENVIRONMENT_FRAME');const[x,y]=origin,w=ctx.canvas.width,h=ctx.canvas.height;if(x<0||y<0||x+w>2804||y+h>1122)throw Error('ENVIRONMENT_CAMERA');if(!layers.some(({row})=>x<row.bounds[2]&&x+w>row.bounds[0]&&y<row.bounds[3]&&y+h>row.bounds[1]))return 0;const frame=ctx.getImageData(0,0,w,h);const result=applyMotion(frame.data,Object.fromEntries(layers.map(l=>[l.row.key,l])),{sourceSHA:CALIBRATION_SOURCE_SHA,expectedSourceSHA:CALIBRATION_SOURCE_SHA,verified:true,alreadyApplied:false,timeMs,camera:[x,y,w,h],waterEnabled:true,boatsEnabled:true,rest:false});if(!result.available)throw Error('ENVIRONMENT_ORIGINAL_RENDER_REJECTED');ctx.putImageData(frame,0,0);return result.writes}})
+ }catch(e){disposed=true;layers.length=0;throw e}
+}

@@ -1,0 +1,2 @@
+const freeze=o=>{for(const v of Object.values(o))if(v&&typeof v==='object')freeze(v);return Object.freeze(o)};
+export const STREAM_SCENE=freeze({"sceneId":"native:yeoncho:stream:bounded","mapId":"world:area:S1_YEONCHO_STREAM","revision":"YEONCHO_STREAM_RECOVERED_BOUND_CONTACT49_R1","imageSHA":"9309737253c4f43393162ab6b8ba9b316cb4f32ba030c9630e9c8ae01f152357","maskSHA":"89972322e104d85dd945cb9b1e3bbbeb7ebd88df9650644f03f5562135dfa699","imageWidth":4812,"imageHeight":6709,"maskOrigin":[984,1550],"maskSize":[1448,5159],"landing":[1450,1605],"facing":"down","safeFeet":530913});

@@ -1,3 +1,11 @@
+import{storyStageUnlocked,storyEventReady,storyTrainerAvailable}from'./availability-readiness.mjs';
+import{applyOriginalWalkCounters}from'../world/movement-effects.mjs';
+import{markS4DistanceAttempt,acknowledgeS4Distance}from'../development/gohyeon-gameplay/encounter/movement-proof.mjs';
+import{waitCargoOfficerBattle}from'./native-cargo-officer-wait.mjs';
+import{readS4EncounterGrant,markS4EncounterAttempt}from'../world/native-s4-encounter-authority.mjs';
+import{waitS4GameplayBattle}from'./native-s4-gameplay-wait.mjs';
+import{waitNativeHarinBattle}from'./native-harin-battle-wait.mjs';
+import{canCompleteStoryStage}from'./stage-completion-readiness.mjs';
 import {selectWeatherEncounter} from '../encounter/species-weather.mjs';
 import {adoptApprovedEconomy} from '../economy/approved-v1.mjs';
 import {economyAction,recoverAfterLoss,recoverAtLastHub} from '../economy/actions.mjs';
@@ -47,19 +55,10 @@ export class StoryProgressionService {
  rewardClaimed(id){if(!this.#contract.rewards[id]&&!this.#contract.geojeGrants[id])throw Error('Unknown canonical reward');return this.#save.progress.rewardClaims.includes(id)||(Array.isArray(this.#save.progress.geojeBallGrantHistory)&&this.#save.progress.geojeBallGrantHistory.includes(id))}
  gymCleared(id){return this.#save.progress.gymClears.includes(id)}
  badgeObtained(id){return this.#save.progress.badges.includes(id)}
- stageUnlocked(id,save=this.#save){const st=this.#contract.stages[id];return !!st&&st.prerequisites.every(p=>save.progress.completedStages.includes(p))&&(!st.entryGate||this.gate(st.entryGate,save))}
- #eventReady(id,save=this.#save){
-  const e=this.#contract.events[id],p=save.progress;if(enhancedLeagueActive(save))return false;
-  return !!e?.active&&!e.acquisitionOnly&&e.stageId===p.currentStage&&!p.completedEvents.includes(id)&&e.requiresEvents.every(x=>p.completedEvents.includes(x))&&e.requiresGates.every(x=>this.gate(x,save))&&(id!=='FINAL_LEAGUE'||p.leagueWins.length===4);
- }
+ stageUnlocked(id,save=this.#save){return storyStageUnlocked(id,save,this.#contract)}
+ #eventReady(id,save=this.#save){return storyEventReady(id,save,this.#contract)}
  eventAvailable(id){id=this.#contract.aliases[id]??id;const e=this.#contract.events[id];return this.#eventReady(id)&&(!e.trainerId||this.trainerAvailable(e.trainerId))}
- trainerAvailable(id,save=this.#save){
-  const t=this.#contract.trainers[id],p=save.progress;if(enhancedLeagueActive(save)||!t||t.stageId!==p.currentStage||!save.party.some(m=>m.hp>0)||!this.stageUnlocked(t.stageId,save)||p.defeatedTrainers.includes(id)&&!t.repeatable)return false;
-  if(t.eventId&&!this.#eventReady(t.eventId,save))return false;
-  if(t.kind==='gym'&&Object.values(this.#contract.trainers).some(x=>x.stageId===t.stageId&&x.kind==='gym_subtrainer'&&x.required&&!p.defeatedTrainers.includes(x.id)))return false;
-  if(t.kind==='elite'&&(p.flags.MAIN_STORY_CLEAR||p.leagueWins.length!==t.order-1||!this.gate('CAN_ENTER_LEAGUE',save)))return false;
-  return true;
- }
+ trainerAvailable(id,save=this.#save){return storyTrainerAvailable(id,save,this.#contract)}
  resolveTrainerParty(id){
   const t=this.#contract.trainers[id];if(!t)throw Error('Unknown canonical trainer');
   const partyId=t.variantPartyIds?.[this.#save.starterId]??t.partyId,party=this.#contract.parties[partyId];if(!party)throw Error('Missing canonical trainer party');return clone(party);
@@ -90,7 +89,7 @@ export class StoryProgressionService {
  async clearFlag(id){return this.setFlag(id,false)}
  async enterStage(id){return this.#change(s=>{if(enhancedLeagueActive(s)||!this.stageUnlocked(id,s))throw Error('Stage prerequisites not met');s.progress.currentStage=id;this.#leagueCheckpoint(s)})}
  #leagueCheckpoint(s){const p=s.progress;p.leagueRunState=p.flags.MAIN_STORY_CLEAR?'idle':p.leagueWins.length===4?'champion':p.currentStage==='FINAL'||p.leagueWins.length?`elite_${p.leagueWins.length+1}`:'idle'}
- #completeStage(s,id){const st=this.#contract.stages[id],p=s.progress;if(!st?.completionEnabled||id!==p.currentStage||st.eventIds.some(e=>!p.completedEvents.includes(e))||st.requiredTrainerIds.some(t=>!p.defeatedTrainers.includes(t)))throw Error('Stage completion conditions not met');add(p.completedStages,id)}
+ #completeStage(s,id){const p=s.progress;if(!canCompleteStoryStage(s,this.#contract,id))throw Error('Stage completion conditions not met');add(p.completedStages,id)}
  async completeStage(id=this.#save.progress.currentStage){
   if(this.#save.progress.completedStages.includes(id))return this.snapshot();return this.#change(s=>this.#completeStage(s,id));
  }
@@ -137,7 +136,7 @@ export class StoryProgressionService {
   if(op.op==='stageComplete'){this.#completeStage(s,op.stageId);return}
   throw Error('Unsupported story mutation');
  }
- async #fight(draft,trainerId,{battleDriver,rng,map}={}){
+ async #fight(draft,trainerId,{battleDriver,rng,map,nativeHarinSignal,nativeS4GameplaySignal,nativeCargoOfficerSignal,nativeGym5Signal,nativeGym4Signal,nativeStreamRoleSignal,nativePrologueRivalSignal}={}){
   if(!this.trainerAvailable(trainerId,draft))throw Error('Trainer battle unavailable');
   const t=this.#contract.trainers[trainerId],party=this.resolveTrainerParty(trainerId);
   const battleId=draft.economy?`${draft.sessionId}:${++draft.economy.battleSerial}`:null;
@@ -147,8 +146,8 @@ export class StoryProgressionService {
   const battle=startSessionBattle(createGameSession(storyBattleInput(draft,this.#catalog),this.#catalog),{kind:'trainer',opponents:party.members,partyId:party.id,map:battleMap,rng},{adapter:this.#adapter});this.#battle=battle;
   await this.#runner.cue({op:'cameraCue',cue:'battle-entry',trainerId,npcId:t.npcId});
   try{
-   if(battleDriver)await battleDriver(battle);
-   else await new Promise(resolve=>{this.#battleResolve=resolve;this.#hooks.battleReady?.(battle.snapshot())});
+   const play=()=>battleDriver?battleDriver(battle):new Promise(resolve=>{this.#battleResolve=resolve;this.#hooks.battleReady?.(battle.snapshot())});
+   if(trainerId==='RIVAL_00'&&nativePrologueRivalSignal!==undefined)await waitNativeHarinBattle(play,nativePrologueRivalSignal);else if(trainerId==='RIVAL_03'&&nativeHarinSignal!==undefined)await waitNativeHarinBattle(play,nativeHarinSignal);else if(['ROUTE_S4_01','ROUTE_S4_02','ROUTE_S4_04'].includes(trainerId)&&nativeS4GameplaySignal!==undefined)await waitS4GameplayBattle(play,nativeS4GameplaySignal);else if(['BLACKNET_BOMI_FINAL','BLACKNET_JUNSEOK_FINAL','BLACKNET_HWIGYEONG_FINAL'].includes(trainerId)&&nativeCargoOfficerSignal!==undefined)await waitCargoOfficerBattle(play,nativeCargoOfficerSignal);else if(['GYM_05_SUB_01','GYM_05_SUB_02','GYM_05_SUB_03','NPC_GYM_05_MYEONGJU'].includes(trainerId)&&nativeGym5Signal!==undefined)await waitS4GameplayBattle(play,nativeGym5Signal);else if(['GYM_04_SUB_01','GYM_04_SUB_02','NPC_GYM_04_JINSEONG'].includes(trainerId)&&nativeGym4Signal!==undefined)await waitS4GameplayBattle(play,nativeGym4Signal);else if(['ROUTE_S1_01','ROUTE_S1_07','ROUTE_S1_03','ROUTE_S1_04','ROUTE_S1_06','ROUTE_S1_02','ROUTE_S1_05','ROUTE_S1_08'].includes(trainerId)&&nativeStreamRoleSignal!==undefined)await waitS4GameplayBattle(play,nativeStreamRoleSignal);else await play();
    if(battle.snapshot().phase!=='ended')throw Error('Battle driver must finish the real Battle v3 engine');
    const result=battle.snapshot().outcome;Object.assign(draft,mergeStoryAftermath(draft,battle.aftermath(),this.#catalog));
    if(result==='lost')recoverAfterLoss(draft,this.#catalog,this.#economyHost,battleId);
@@ -163,9 +162,30 @@ export class StoryProgressionService {
  }
  actBattle(action){if(!this.#battle||!this.#battleResolve)throw Error('No interactive story battle');const snapshot=this.#battle.act(action);if(snapshot.phase==='ended')this.#battleResolve();return snapshot}
  async #execute(operations,eventId,options){
+  const prologueFieldGuard=options.nativePrologueFieldRejectOnly;if(prologueFieldGuard!==undefined&&(eventId!=='P04_SUSPICIOUS_TRACE'||typeof prologueFieldGuard!=='function'||!(options.nativePrologueFieldSignal instanceof AbortSignal)))throw Error('INVALID_PROLOGUE_FIELD_GUARD');prologueFieldGuard?.();
+  const rivalGuard=options.nativePrologueRivalRejectOnly;if(rivalGuard!==undefined&&(eventId!=='RIVAL_00'||typeof rivalGuard!=='function'||!(options.nativePrologueRivalSignal instanceof AbortSignal)))throw Error('INVALID_PROLOGUE_RIVAL_GUARD');rivalGuard?.();
+  const freshGuard=options.nativeFreshStartRejectOnly;if(freshGuard!==undefined&&(eventId!=='P00_HOME_START'||typeof freshGuard!=='function'||!(options.nativeFreshStartSignal instanceof AbortSignal)||options.nativeLabRejectOnly!==undefined))throw Error('INVALID_FRESH_START_GUARD');freshGuard?.();const labGuard=options.nativeLabRejectOnly;if(labGuard!==undefined&&(!['P01_ECO_CENTER','P02_FIRST_PARTNER','P03_TUTORIAL'].includes(eventId)||typeof labGuard!=='function'||!(options.nativeLabSignal instanceof AbortSignal)))throw Error('INVALID_LAB_GUARD');labGuard?.();
+  const wetlandRoleSelected=eventId==='S1_TRAP_INVESTIGATION'||operations.some(o=>o.op==='trainerBattle'&&['ROUTE_S1_02','ROUTE_S1_05','ROUTE_S1_08'].includes(o.trainerId));const streamRoleSelected=wetlandRoleSelected||eventId==='S1_WATER_DECLINE'||operations.some(o=>o.op==='trainerBattle'&&['ROUTE_S1_01','ROUTE_S1_07','ROUTE_S1_03','ROUTE_S1_04','ROUTE_S1_06','ROUTE_S1_02','ROUTE_S1_05','ROUTE_S1_08'].includes(o.trainerId)),streamRoleGuard=options.nativeStreamRoleRejectOnly;if(streamRoleGuard!==undefined&&(!streamRoleSelected||typeof streamRoleGuard!=='function'))throw Error('INVALID_STREAM_ROLE_GUARD');streamRoleGuard?.();
+  const gym5Selected=eventId==='S5_GYM_STORY'||operations.some(o=>o.op==='trainerBattle'&&['GYM_05_SUB_01','GYM_05_SUB_02','GYM_05_SUB_03','NPC_GYM_05_MYEONGJU'].includes(o.trainerId)),gym5Guard=options.nativeGym5RejectOnly;if(gym5Guard!==undefined&&(!gym5Selected||typeof gym5Guard!=='function'))throw Error('INVALID_GYM5_GUARD');gym5Guard?.();
+  const gym4Selected=eventId==='S4_GYM_STORY'||operations.some(o=>o.op==='trainerBattle'&&['GYM_04_SUB_01','GYM_04_SUB_02','NPC_GYM_04_JINSEONG'].includes(o.trainerId)),gym4Guard=options.nativeGym4RejectOnly;if(gym4Guard!==undefined&&(!gym4Selected||typeof gym4Guard!=='function'))throw Error('INVALID_GYM4_GUARD');gym4Guard?.();
+  const s4Guard=(['S4_HISTORY_INVESTIGATION','S4_VILLAIN_NETWORK'].includes(eventId)||operations.some(o=>o.op==='trainerBattle'&&['ROUTE_S4_01','ROUTE_S4_02','ROUTE_S4_04'].includes(o.trainerId)))?options.nativeS4GameplayRejectOnly:undefined;if(s4Guard!==undefined&&typeof s4Guard!=='function')throw Error('INVALID_S4_GAMEPLAY_GUARD');s4Guard?.();
+  const cargoZoneGuard=options.nativeCargoZoneRejectOnly;if(cargoZoneGuard!==undefined&&(!['S9_SHIP_ZONE1_COMPLETE_EVENT','S9_SHIP_ZONE2_RESCUE_EVENT'].includes(eventId)||typeof cargoZoneGuard!=='function'))throw Error('INVALID_CARGO_ZONE_GUARD');
+  const cargoOfficerGuard=options.nativeCargoOfficerRejectOnly;if(cargoOfficerGuard!==undefined&&(!['BLACKNET_BOMI_FINAL','BLACKNET_JUNSEOK_FINAL','BLACKNET_HWIGYEONG_FINAL'].includes(eventId)||typeof cargoOfficerGuard!=='function'))throw Error('INVALID_CARGO_OFFICER_GUARD');
+  const cargoRescueGuard=options.nativeCargoRescueRejectOnly;if(cargoRescueGuard!==undefined&&(!['S9_FINAL_VILLAIN_RAID','RIVAL_S9_ALLY','S9_RELEASE_RESCUED'].includes(eventId)||typeof cargoRescueGuard!=='function'))throw Error('INVALID_CARGO_RESCUE_GUARD');
   this.#idle();this.#busy=true;const draft=this.snapshot();
   try{
-   const result=await this.#runner.run(operations,{apply:op=>this.#apply(draft,op),battle:id=>this.#fight(draft,id,options)});
+   cargoRescueGuard?.();cargoOfficerGuard?.();cargoZoneGuard?.();
+   if(eventId==='S5_JUNGLE_DOME_EXPEDITION'&&options.nativeJungleRejectOnly!==undefined){if(typeof options.nativeJungleRejectOnly!=='function')throw Error('INVALID_JUNGLE_GUARD');options.nativeJungleRejectOnly();}
+   if(eventId==='RIVAL_03'&&options.nativeHarinRejectOnly!==undefined){if(typeof options.nativeHarinRejectOnly!=='function')throw Error('INVALID_HARIN_GUARD');options.nativeHarinRejectOnly();}
+   const result=await this.#runner.run(operations,{apply:op=>this.#apply(draft,op),battle:id=>this.#fight(draft,id,options),guard:labGuard??freshGuard??rivalGuard??prologueFieldGuard??(wetlandRoleSelected?streamRoleGuard:undefined),signal:labGuard?options.nativeLabSignal:freshGuard?options.nativeFreshStartSignal:rivalGuard?options.nativePrologueRivalSignal:prologueFieldGuard?options.nativePrologueFieldSignal:wetlandRoleSelected&&streamRoleGuard?options.nativeStreamRoleSignal:undefined});
+   labGuard?.();freshGuard?.();rivalGuard?.();prologueFieldGuard?.();
+   if(eventId==='S5_JUNGLE_DOME_EXPEDITION'&&options.nativeJungleRejectOnly!==undefined)options.nativeJungleRejectOnly();
+   if(eventId==='RIVAL_03'&&options.nativeHarinRejectOnly!==undefined)options.nativeHarinRejectOnly();
+   cargoRescueGuard?.();cargoOfficerGuard?.();cargoZoneGuard?.();
+   s4Guard?.();
+   gym5Guard?.();
+   gym4Guard?.();
+   streamRoleGuard?.();
    if(result.completed&&eventId)this.#finishEvent(draft,eventId);
    await this.#commit(draft);return {completed:result.completed,runtime:this.snapshot()};
   }finally{this.#busy=false}
@@ -280,13 +300,13 @@ export class StoryProgressionService {
   const c=this.#encounters();return this.#change(s=>{const e=c.events[eventId];if(!e?.requirements.includes('story_evening_survey')||areaAccess(s,c,e.areaId)||s.encounter.areaId!==e.areaId)throw Error('Survey unavailable');add(s.encounter.surveys,eventId)});
  }
  #selectRandomEncounter(table,rng){return selectWeatherEncounter(table,rng,{config:this.#encounters().speciesWeatherWeights,environment:this.#encounterEnvironment,onDiagnostic:this.#encounterDiagnostic})}
- async #wild(draft,request,{battleDriver,rng,map,tutorialPermit}={}){
+ async #wild(draft,request,{battleDriver,rng,map,tutorialPermit,nativeS4EncounterSignal}={}){
   const battleId=draft.economy?`${draft.sessionId}:${++draft.economy.battleSerial}`:null;
   const encounterPermit=issueEncounterPermit(draft,this.#catalog,request);
   const battle=startSessionBattle(createGameSession(storyBattleInput(draft,this.#catalog),this.#catalog),{kind:'wild',opponents:[{namespace:'canonical',speciesId:request.speciesId,level:request.level}],encounterPermit,tutorialPermit,map:map??{id:draft.position.scene,biomeId:'GRASSLAND'},rng},{adapter:this.#adapter});this.#battle=battle;
   try{
    await this.#runner.cue({op:'inputLock'});await this.#runner.cue({op:'cameraCue',cue:'battle-entry',kind:'wild'});
-   if(battleDriver)await battleDriver(battle);else await new Promise(resolve=>{this.#battleResolve=resolve;this.#hooks.battleReady?.(battle.snapshot())});
+   const play=()=>battleDriver?battleDriver(battle):new Promise(resolve=>{this.#battleResolve=resolve;this.#hooks.battleReady?.(battle.snapshot())});if(nativeS4EncounterSignal!==undefined)await waitS4GameplayBattle(play,nativeS4EncounterSignal);else await play();
    if(battle.snapshot().phase!=='ended')throw Error('Battle driver must finish Battle v3');
    const outcome=battle.snapshot().outcome;Object.assign(draft,mergeStoryAftermath(draft,battle.aftermath(),this.#catalog));afterWildBattle(draft.encounter);
    if(outcome==='lost')recoverAfterLoss(draft,this.#catalog,this.#economyHost,battleId);
@@ -297,14 +317,21 @@ export class StoryProgressionService {
  async encounterStep(movement,options={}){
   const c=this.#encounters();this.#idle();const {from,to,serial,areaId,method,eligible,moved,blocked}=movement??{};
   if(!eligible||!moved||blocked||!from||!to||[from.x,from.y,to.x,to.y].some(n=>!Number.isInteger(n))||Math.abs(from.x-to.x)+Math.abs(from.y-to.y)!==1)return {triggered:false,reason:'NOT_ELIGIBLE_MOVEMENT'};
+  return this.#eligibleEncounterStep(movement,options);
+ }
+ async nativeS4DistanceStep(grant,world){if(world?.story!==this)throw Error('NATIVE_DISTANCE_WRONG_STORY');const p=readS4EncounterGrant(grant,world);if(!p.counterDue||p.distanceCommitted)throw Error('DISTANCE_PROOF_ALREADY_CONSUMED');this.#idle();this.#busy=true;const draft=this.snapshot();try{markS4DistanceAttempt(grant,world);applyOriginalWalkCounters(draft,this.#economyHost.world);await this.#commit(draft);acknowledgeS4Distance(grant,world);return{distanceCommitted:true}}finally{this.#busy=false}}
+ async nativeS4EncounterStep(grant,world,options={}){if(world?.story!==this)throw Error('NATIVE_ENCOUNTER_WRONG_STORY');const p=readS4EncounterGrant(grant,world);return this.#eligibleEncounterStep(p,{...options,nativeS4EncounterProof:grant,nativeS4EncounterWorld:world,nativeS4EncounterSignal:p.signal,nativeS4EncounterRejectOnly:()=>readS4EncounterGrant(grant,world)})}
+ async #eligibleEncounterStep(movement,options){const c=this.#encounters();this.#idle();const{serial,areaId,method}=movement;
   if(!Number.isSafeInteger(serial)||serial<=this.#save.encounter.movementSerial)return {triggered:false,reason:'DUPLICATE_MOVEMENT'};
   if(areaId!==this.#save.encounter.areaId||method!==this.#save.encounter.method)return {triggered:false,reason:'REGION_MISMATCH'};
   if(c.policyExcludedTables?.[`${areaId}:${method}`])return {triggered:false,eligible:false,reason:'POLICY_NO_RANDOM_ENCOUNTER'};
   const table=c.tables[`${areaId}:${method}`],error=tableAccess(this.#save,c,`${areaId}:${method}`);
   if(error||table.rod||!this.#save.party.some(m=>m.hp>0))return {triggered:false,reason:error??'NOT_WALK_ENCOUNTER'};
   this.#busy=true;const draft=this.snapshot();try{
+   options.nativeS4EncounterRejectOnly?.();if(options.nativeS4EncounterProof)markS4EncounterAttempt(options.nativeS4EncounterProof,options.nativeS4EncounterWorld);
    draft.encounter.movementSerial=serial;if(movement.position)draft.position=clone(movement.position);const result=checkEncounterStep(draft.encounter,table.profile,options.rng);
    if(result.triggered){const request=this.#selectRandomEncounter(table,options.rng);result.selection=request;result.outcome=await this.#wild(draft,request,options)}
+   options.nativeS4EncounterRejectOnly?.();
    await this.#commit(draft);return result;
   }finally{this.#busy=false}
  }
@@ -322,12 +349,14 @@ export class StoryProgressionService {
   return this.#tableBattle('P_ECO_CENTER_EDGE:land_grass',options,true);
  }
  async #tableBattle(tableId,options,tutorial=false){
+  const fieldGuard=options.nativePrologueFieldRejectOnly;if(fieldGuard!==undefined&&(!tutorial||tableId!=='P_ECO_CENTER_EDGE:land_grass'||typeof fieldGuard!=='function'||!(options.nativePrologueFieldSignal instanceof AbortSignal)))throw Error('INVALID_PROLOGUE_TUTORIAL_GUARD');fieldGuard?.();
   if(this.#encounters().policyExcludedTables?.[tableId])return {triggered:false,eligible:false,reason:'POLICY_NO_RANDOM_ENCOUNTER'};
   const c=this.#encounters();this.#idle();const error=tableAccess(this.#save,c,tableId);if(error)throw Error(error);
-  this.#busy=true;const draft=this.snapshot();try{const table=c.tables[tableId],selection=table.rod||tutorial?selectEncounter(table,options.rng):this.#selectRandomEncounter(table,options.rng),outcome=await this.#wild(draft,selection,{...options,tutorialPermit:tutorial?issueTutorialPermit(draft,selection):null});await this.#commit(draft);return {selection,outcome}}finally{this.#busy=false}
+  this.#busy=true;const draft=this.snapshot();try{const table=c.tables[tableId],selection=table.rod||tutorial?selectEncounter(table,options.rng):this.#selectRandomEncounter(table,options.rng),outcome=await this.#wild(draft,selection,{...options,nativeS4EncounterSignal:fieldGuard?options.nativePrologueFieldSignal:options.nativeS4EncounterSignal,tutorialPermit:tutorial?issueTutorialPermit(draft,selection):null});fieldGuard?.();await this.#commit(draft);return {selection,outcome}}finally{this.#busy=false}
  }
  acquisitionAvailable(id){const c=this.#encounters();return !acquisitionAccess(this.#save,c,id)}
  async acquire(id,options={}){
+  const s4Guard=['OBSERVE_086_OWL','RESEARCH_084_OTTER'].includes(id)?options.nativeS4GameplayRejectOnly:undefined;if(s4Guard!==undefined&&typeof s4Guard!=='function')throw Error('INVALID_S4_GAMEPLAY_GUARD');s4Guard?.();
   const c=this.#encounters(),event=c.events[id];this.#idle();
   const staged=isPost20260927(c),sanctuary=staged&&[148,149,150].find(no=>id===`LEGEND_${no}_CAPTURE`),first151=staged&&id==='MYTHIC_151_CAPTURE';
   if(first151&&this.eventCompleted('POST_ONSEOM_GARDEN_FIRST_151'))throw Error('First garden encounter already completed; use approved roaming nodes');
@@ -341,6 +370,7 @@ export class StoryProgressionService {
     if(sanctuary&&['won','captured'].includes(outcome))this.#finishEvent(draft,SANCTUARIES[sanctuary].event);
     if(first151){this.#finishEvent(draft,'POST_ONSEOM_GARDEN_FIRST_151');if(outcome!=='captured')relocateRoamer20260927(draft,this.#contract,this.#economyHost?.world,151,options.rng)}
    }else receipt=grantAcquisition(draft,this.#catalog,event,options);
+   s4Guard?.();
    if(receipt){recordAcquisition(draft,event,receipt);this.#finishEvent(draft,event.storyId)}
    await this.#commit(draft);return {completed:!!receipt,runtime:this.snapshot()};
   }finally{this.#busy=false}

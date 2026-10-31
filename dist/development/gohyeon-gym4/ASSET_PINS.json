@@ -1,0 +1,104 @@
+{
+  "image04": {
+    "path": "assets/addfd309968b78f2e33f9b322ffbd7a8ebec456bac42f3ab385e905dbdb808e4.png",
+    "sha256": "addfd309968b78f2e33f9b322ffbd7a8ebec456bac42f3ab385e905dbdb808e4",
+    "bytes": 2075303,
+    "kind": "image",
+    "dimensions": [
+      1448,
+      1086
+    ]
+  },
+  "safe04": {
+    "path": "assets/81a417693e0a0ac3ee32baa1f2366398e4d16e0fd9252ac0e02cf246328cbcee.u8",
+    "sha256": "81a417693e0a0ac3ee32baa1f2366398e4d16e0fd9252ac0e02cf246328cbcee",
+    "bytes": 1572528,
+    "kind": "mask"
+  },
+  "image05": {
+    "path": "assets/455bb15d0715c471e0828558498242d786bb80f84bd1d2169683710689d707af.png",
+    "sha256": "455bb15d0715c471e0828558498242d786bb80f84bd1d2169683710689d707af",
+    "bytes": 2075384,
+    "kind": "image",
+    "dimensions": [
+      1448,
+      1086
+    ]
+  },
+  "safe05": {
+    "path": "assets/0c89a593a508b70fc6eca1162959075ffaf741ef6d4a3053e4658cfda96934ff.u8",
+    "sha256": "0c89a593a508b70fc6eca1162959075ffaf741ef6d4a3053e4658cfda96934ff",
+    "bytes": 1572528,
+    "kind": "mask"
+  },
+  "player": {
+    "path": "assets/36238353e9a4f943296a289a2c45639ef283e9056a72a6d37a39dc237b860390.png",
+    "sha256": "36238353e9a4f943296a289a2c45639ef283e9056a72a6d37a39dc237b860390",
+    "bytes": 472620,
+    "kind": "image",
+    "dimensions": [
+      768,
+      1024
+    ]
+  },
+  "leader": {
+    "path": "assets/4a744e54dfeffe11039e6f0c93883b1bc885a024bd19f89e34d6d88099080955.png",
+    "sha256": "4a744e54dfeffe11039e6f0c93883b1bc885a024bd19f89e34d6d88099080955",
+    "bytes": 538222,
+    "kind": "image",
+    "dimensions": [
+      768,
+      1024
+    ]
+  },
+  "sub01": {
+    "path": "assets/018de7d90f8b4dec3170481ed8d6ab3172068b6e38be17a9625eec9c796acbac.png",
+    "sha256": "018de7d90f8b4dec3170481ed8d6ab3172068b6e38be17a9625eec9c796acbac",
+    "bytes": 695987,
+    "kind": "image",
+    "dimensions": [
+      712,
+      1088
+    ]
+  },
+  "sub02": {
+    "path": "assets/4cdf61860cd35c0d306b28ea359cfa998380fcaa77e86f0995054359064728f9.png",
+    "sha256": "4cdf61860cd35c0d306b28ea359cfa998380fcaa77e86f0995054359064728f9",
+    "bytes": 586437,
+    "kind": "image",
+    "dimensions": [
+      661,
+      997
+    ]
+  },
+  "insideSelection": {
+    "path": "assets/6ced4ad8a269776b7e390e76e9812750f95a1ece9cf94f70e35854c3e6d3c895.json",
+    "sha256": "6ced4ad8a269776b7e390e76e9812750f95a1ece9cf94f70e35854c3e6d3c895",
+    "bytes": 778,
+    "kind": "json"
+  },
+  "stateSelection": {
+    "path": "assets/8a28818f90ce7f7799de85b724f32761fcbe02f37717576ab652774d2bdba5fa.json",
+    "sha256": "8a28818f90ce7f7799de85b724f32761fcbe02f37717576ab652774d2bdba5fa",
+    "bytes": 4516,
+    "kind": "json"
+  },
+  "doorSelection": {
+    "path": "assets/85c9adaa30f84084f36bc88cac0df76c7d41ccacf0b79275676620951805a47c.json",
+    "sha256": "85c9adaa30f84084f36bc88cac0df76c7d41ccacf0b79275676620951805a47c",
+    "bytes": 1343,
+    "kind": "json"
+  },
+  "classes": {
+    "path": "assets/093e0d1a5392d1f6380e0af10b4ddfc24db20f2fd757aebad8415c4a1861b4bd.json",
+    "sha256": "093e0d1a5392d1f6380e0af10b4ddfc24db20f2fd757aebad8415c4a1861b4bd",
+    "bytes": 1078,
+    "kind": "json"
+  },
+  "doorLayers": {
+    "path": "assets/c85f4efd06eb23ab005b8912d3d2d894169a10f24d1e77660ed9eec8823d70ad.json",
+    "sha256": "c85f4efd06eb23ab005b8912d3d2d894169a10f24d1e77660ed9eec8823d70ad",
+    "bytes": 1368,
+    "kind": "json"
+  }
+}

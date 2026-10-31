@@ -1,0 +1,1 @@
+export const PROPOSAL_SHA="3ef0b9d8b840baa71bdbe6e6185795bd890783a92ff32b91689f15ac5eb60996";

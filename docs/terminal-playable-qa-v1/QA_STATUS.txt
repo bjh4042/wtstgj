@@ -1,1 +1,0 @@
-ISOLATED V4 DEVELOPMENT QA, NOT A FINISHED GAME. Wall-contact furniture and an indoor exit mat; exterior door animation is retained. V4 uses separate QA save slots and never reads or changes V3 slots. No production entry, service worker or ordinary save changes. V4 hosted browser smoke is pending; real-device coverage is not claimed. Other town stops remain disabled.

@@ -1,0 +1,3493 @@
+{
+  "revision": "CARGO_TWELVE_PORT_APPROACH_R1",
+  "rows": [
+    {
+      "id": "NEW_A_BAY_OPEN",
+      "sceneId": "ship_deck_a",
+      "direction": {
+        "id": "NEW_A_BAY_OPEN",
+        "reverseId": "NEW_HA_SOUTH_OPEN",
+        "pairId": "NEW_A_BAY_OPEN__NEW_HA_SOUTH_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_deck_a",
+        "targetSceneId": "ship_hold_a",
+        "departureFoot": [
+          1320,
+          145
+        ],
+        "departureFacing": "up",
+        "arrivalFoot": [
+          768,
+          905
+        ],
+        "arrivalFacing": "up",
+        "arrivalPathIndex": 405,
+        "returnDepartureFoot": [
+          768,
+          945
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_A_BAY_OPEN",
+          "targetPort": "NEW_HA_SOUTH_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 2145,
+      "runs": [
+        [
+          133,
+          1288,
+          1353
+        ],
+        [
+          134,
+          1288,
+          1353
+        ],
+        [
+          135,
+          1288,
+          1353
+        ],
+        [
+          136,
+          1288,
+          1353
+        ],
+        [
+          137,
+          1288,
+          1353
+        ],
+        [
+          138,
+          1288,
+          1353
+        ],
+        [
+          139,
+          1288,
+          1353
+        ],
+        [
+          140,
+          1288,
+          1353
+        ],
+        [
+          141,
+          1288,
+          1353
+        ],
+        [
+          142,
+          1288,
+          1353
+        ],
+        [
+          143,
+          1288,
+          1353
+        ],
+        [
+          144,
+          1288,
+          1353
+        ],
+        [
+          145,
+          1288,
+          1353
+        ],
+        [
+          146,
+          1288,
+          1353
+        ],
+        [
+          147,
+          1288,
+          1353
+        ],
+        [
+          148,
+          1288,
+          1353
+        ],
+        [
+          149,
+          1288,
+          1353
+        ],
+        [
+          150,
+          1288,
+          1353
+        ],
+        [
+          151,
+          1288,
+          1353
+        ],
+        [
+          152,
+          1288,
+          1353
+        ],
+        [
+          153,
+          1288,
+          1353
+        ],
+        [
+          154,
+          1288,
+          1353
+        ],
+        [
+          155,
+          1288,
+          1353
+        ],
+        [
+          156,
+          1288,
+          1353
+        ],
+        [
+          157,
+          1288,
+          1353
+        ],
+        [
+          158,
+          1288,
+          1353
+        ],
+        [
+          159,
+          1288,
+          1353
+        ],
+        [
+          160,
+          1288,
+          1353
+        ],
+        [
+          161,
+          1288,
+          1353
+        ],
+        [
+          162,
+          1288,
+          1353
+        ],
+        [
+          163,
+          1288,
+          1353
+        ],
+        [
+          164,
+          1288,
+          1353
+        ],
+        [
+          165,
+          1288,
+          1353
+        ]
+      ],
+      "maskSHA": "ece61aa81f721359dfa2449925058281c4b2c73e16296ce7f47843d0ebcaa6f5"
+    },
+    {
+      "id": "NEW_HA_SOUTH_OPEN",
+      "sceneId": "ship_hold_a",
+      "direction": {
+        "id": "NEW_HA_SOUTH_OPEN",
+        "reverseId": "NEW_A_BAY_OPEN",
+        "pairId": "NEW_A_BAY_OPEN__NEW_HA_SOUTH_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_hold_a",
+        "targetSceneId": "ship_deck_a",
+        "departureFoot": [
+          768,
+          945
+        ],
+        "departureFacing": "down",
+        "arrivalFoot": [
+          1320,
+          185
+        ],
+        "arrivalFacing": "down",
+        "arrivalPathIndex": 867,
+        "returnDepartureFoot": [
+          1320,
+          145
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_HA_SOUTH_OPEN",
+          "targetPort": "NEW_A_BAY_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 1394,
+      "runs": [
+        [
+          924,
+          751,
+          785
+        ],
+        [
+          925,
+          751,
+          785
+        ],
+        [
+          926,
+          751,
+          785
+        ],
+        [
+          927,
+          751,
+          785
+        ],
+        [
+          928,
+          751,
+          785
+        ],
+        [
+          929,
+          751,
+          785
+        ],
+        [
+          930,
+          751,
+          785
+        ],
+        [
+          931,
+          751,
+          785
+        ],
+        [
+          932,
+          751,
+          785
+        ],
+        [
+          933,
+          751,
+          785
+        ],
+        [
+          934,
+          751,
+          785
+        ],
+        [
+          935,
+          751,
+          785
+        ],
+        [
+          936,
+          751,
+          785
+        ],
+        [
+          937,
+          751,
+          785
+        ],
+        [
+          938,
+          751,
+          785
+        ],
+        [
+          939,
+          751,
+          785
+        ],
+        [
+          940,
+          751,
+          785
+        ],
+        [
+          941,
+          751,
+          785
+        ],
+        [
+          942,
+          751,
+          785
+        ],
+        [
+          943,
+          751,
+          785
+        ],
+        [
+          944,
+          751,
+          785
+        ],
+        [
+          945,
+          751,
+          785
+        ],
+        [
+          946,
+          751,
+          785
+        ],
+        [
+          947,
+          751,
+          785
+        ],
+        [
+          948,
+          751,
+          785
+        ],
+        [
+          949,
+          751,
+          785
+        ],
+        [
+          950,
+          751,
+          785
+        ],
+        [
+          951,
+          751,
+          785
+        ],
+        [
+          952,
+          751,
+          785
+        ],
+        [
+          953,
+          751,
+          785
+        ],
+        [
+          954,
+          751,
+          785
+        ],
+        [
+          955,
+          751,
+          785
+        ],
+        [
+          956,
+          751,
+          785
+        ],
+        [
+          957,
+          751,
+          785
+        ],
+        [
+          958,
+          751,
+          785
+        ],
+        [
+          959,
+          751,
+          785
+        ],
+        [
+          960,
+          751,
+          785
+        ],
+        [
+          961,
+          751,
+          785
+        ],
+        [
+          962,
+          751,
+          785
+        ],
+        [
+          963,
+          751,
+          785
+        ],
+        [
+          964,
+          751,
+          785
+        ]
+      ],
+      "maskSHA": "6d6f025f1387c5f951936ba048476be0b9a1aa4a2c6b63e8099615e88814767a"
+    },
+    {
+      "id": "NEW_A_NORTH_CONTINUATION",
+      "sceneId": "ship_deck_a",
+      "direction": {
+        "id": "NEW_A_NORTH_CONTINUATION",
+        "reverseId": "NEW_B_SOUTH_CONTINUATION",
+        "pairId": "NEW_A_NORTH_CONTINUATION__NEW_B_SOUTH_CONTINUATION",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_deck_a",
+        "targetSceneId": "ship_deck_b",
+        "departureFoot": [
+          768,
+          40
+        ],
+        "departureFacing": "up",
+        "arrivalFoot": [
+          768,
+          940
+        ],
+        "arrivalFacing": "up",
+        "arrivalPathIndex": 408,
+        "returnDepartureFoot": [
+          768,
+          980
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "ROOT_AUTHORIZED_NEW_OPEN_DECK_CONTINUATION_DEV_ONLY",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_A_NORTH_CONTINUATION",
+          "targetPort": "NEW_B_SOUTH_CONTINUATION",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 7937,
+      "runs": [
+        [
+          24,
+          640,
+          897
+        ],
+        [
+          25,
+          640,
+          897
+        ],
+        [
+          26,
+          640,
+          897
+        ],
+        [
+          27,
+          640,
+          897
+        ],
+        [
+          28,
+          640,
+          897
+        ],
+        [
+          29,
+          640,
+          897
+        ],
+        [
+          30,
+          640,
+          897
+        ],
+        [
+          31,
+          640,
+          897
+        ],
+        [
+          32,
+          640,
+          897
+        ],
+        [
+          33,
+          640,
+          897
+        ],
+        [
+          34,
+          640,
+          897
+        ],
+        [
+          35,
+          640,
+          897
+        ],
+        [
+          36,
+          640,
+          897
+        ],
+        [
+          37,
+          640,
+          897
+        ],
+        [
+          38,
+          640,
+          897
+        ],
+        [
+          39,
+          640,
+          897
+        ],
+        [
+          40,
+          640,
+          897
+        ],
+        [
+          41,
+          640,
+          897
+        ],
+        [
+          42,
+          640,
+          897
+        ],
+        [
+          43,
+          640,
+          897
+        ],
+        [
+          44,
+          640,
+          897
+        ],
+        [
+          45,
+          640,
+          897
+        ],
+        [
+          46,
+          640,
+          897
+        ],
+        [
+          47,
+          640,
+          897
+        ],
+        [
+          48,
+          640,
+          897
+        ],
+        [
+          49,
+          708,
+          897
+        ],
+        [
+          50,
+          708,
+          897
+        ],
+        [
+          51,
+          708,
+          897
+        ],
+        [
+          52,
+          708,
+          897
+        ],
+        [
+          53,
+          708,
+          897
+        ],
+        [
+          54,
+          708,
+          897
+        ],
+        [
+          55,
+          708,
+          897
+        ],
+        [
+          56,
+          708,
+          897
+        ]
+      ],
+      "maskSHA": "b13e31c0d6e1941eaed60e15b1a4c78e82dad656f5614e8aa948758226e33c64"
+    },
+    {
+      "id": "NEW_B_SOUTH_CONTINUATION",
+      "sceneId": "ship_deck_b",
+      "direction": {
+        "id": "NEW_B_SOUTH_CONTINUATION",
+        "reverseId": "NEW_A_NORTH_CONTINUATION",
+        "pairId": "NEW_A_NORTH_CONTINUATION__NEW_B_SOUTH_CONTINUATION",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_deck_b",
+        "targetSceneId": "ship_deck_a",
+        "departureFoot": [
+          768,
+          980
+        ],
+        "departureFacing": "down",
+        "arrivalFoot": [
+          768,
+          80
+        ],
+        "arrivalFacing": "down",
+        "arrivalPathIndex": 420,
+        "returnDepartureFoot": [
+          768,
+          40
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "ROOT_AUTHORIZED_NEW_OPEN_DECK_CONTINUATION_DEV_ONLY",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_B_SOUTH_CONTINUATION",
+          "targetPort": "NEW_A_NORTH_CONTINUATION",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 8481,
+      "runs": [
+        [
+          964,
+          640,
+          897
+        ],
+        [
+          965,
+          640,
+          897
+        ],
+        [
+          966,
+          640,
+          897
+        ],
+        [
+          967,
+          640,
+          897
+        ],
+        [
+          968,
+          640,
+          897
+        ],
+        [
+          969,
+          640,
+          897
+        ],
+        [
+          970,
+          640,
+          897
+        ],
+        [
+          971,
+          640,
+          897
+        ],
+        [
+          972,
+          640,
+          897
+        ],
+        [
+          973,
+          640,
+          897
+        ],
+        [
+          974,
+          640,
+          897
+        ],
+        [
+          975,
+          640,
+          897
+        ],
+        [
+          976,
+          640,
+          897
+        ],
+        [
+          977,
+          640,
+          897
+        ],
+        [
+          978,
+          640,
+          897
+        ],
+        [
+          979,
+          640,
+          897
+        ],
+        [
+          980,
+          640,
+          897
+        ],
+        [
+          981,
+          640,
+          897
+        ],
+        [
+          982,
+          640,
+          897
+        ],
+        [
+          983,
+          640,
+          897
+        ],
+        [
+          984,
+          640,
+          897
+        ],
+        [
+          985,
+          640,
+          897
+        ],
+        [
+          986,
+          640,
+          897
+        ],
+        [
+          987,
+          640,
+          897
+        ],
+        [
+          988,
+          640,
+          897
+        ],
+        [
+          989,
+          640,
+          897
+        ],
+        [
+          990,
+          640,
+          897
+        ],
+        [
+          991,
+          640,
+          897
+        ],
+        [
+          992,
+          640,
+          897
+        ],
+        [
+          993,
+          640,
+          897
+        ],
+        [
+          994,
+          640,
+          897
+        ],
+        [
+          995,
+          640,
+          897
+        ],
+        [
+          996,
+          640,
+          897
+        ]
+      ],
+      "maskSHA": "246d0eec4993b41545922aff561ba80f90d9dad5853f75dc1d8ded64696dc8ae"
+    },
+    {
+      "id": "NEW_HA_WEST_OPEN",
+      "sceneId": "ship_hold_a",
+      "direction": {
+        "id": "NEW_HA_WEST_OPEN",
+        "reverseId": "NEW_HB_EAST_OPEN",
+        "pairId": "NEW_HA_WEST_OPEN__NEW_HB_EAST_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_hold_a",
+        "targetSceneId": "ship_hold_b",
+        "departureFoot": [
+          105,
+          500
+        ],
+        "departureFacing": "left",
+        "arrivalFoot": [
+          1415,
+          300
+        ],
+        "arrivalFacing": "left",
+        "arrivalPathIndex": 697,
+        "returnDepartureFoot": [
+          1415,
+          260
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_HA_WEST_OPEN",
+          "targetPort": "NEW_HB_EAST_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 2135,
+      "runs": [
+        [
+          470,
+          96,
+          131
+        ],
+        [
+          471,
+          96,
+          131
+        ],
+        [
+          472,
+          96,
+          131
+        ],
+        [
+          473,
+          96,
+          131
+        ],
+        [
+          474,
+          96,
+          131
+        ],
+        [
+          475,
+          96,
+          131
+        ],
+        [
+          476,
+          96,
+          131
+        ],
+        [
+          477,
+          96,
+          131
+        ],
+        [
+          478,
+          96,
+          131
+        ],
+        [
+          479,
+          96,
+          131
+        ],
+        [
+          480,
+          96,
+          131
+        ],
+        [
+          481,
+          96,
+          131
+        ],
+        [
+          482,
+          96,
+          131
+        ],
+        [
+          483,
+          96,
+          131
+        ],
+        [
+          484,
+          96,
+          131
+        ],
+        [
+          485,
+          96,
+          131
+        ],
+        [
+          486,
+          96,
+          131
+        ],
+        [
+          487,
+          96,
+          131
+        ],
+        [
+          488,
+          96,
+          131
+        ],
+        [
+          489,
+          96,
+          131
+        ],
+        [
+          490,
+          96,
+          131
+        ],
+        [
+          491,
+          96,
+          131
+        ],
+        [
+          492,
+          96,
+          131
+        ],
+        [
+          493,
+          96,
+          131
+        ],
+        [
+          494,
+          96,
+          131
+        ],
+        [
+          495,
+          96,
+          131
+        ],
+        [
+          496,
+          96,
+          131
+        ],
+        [
+          497,
+          96,
+          131
+        ],
+        [
+          498,
+          96,
+          131
+        ],
+        [
+          499,
+          96,
+          131
+        ],
+        [
+          500,
+          96,
+          131
+        ],
+        [
+          501,
+          96,
+          131
+        ],
+        [
+          502,
+          96,
+          131
+        ],
+        [
+          503,
+          96,
+          131
+        ],
+        [
+          504,
+          96,
+          131
+        ],
+        [
+          505,
+          96,
+          131
+        ],
+        [
+          506,
+          96,
+          131
+        ],
+        [
+          507,
+          96,
+          131
+        ],
+        [
+          508,
+          96,
+          131
+        ],
+        [
+          509,
+          96,
+          131
+        ],
+        [
+          510,
+          96,
+          131
+        ],
+        [
+          511,
+          96,
+          131
+        ],
+        [
+          512,
+          96,
+          131
+        ],
+        [
+          513,
+          96,
+          131
+        ],
+        [
+          514,
+          96,
+          131
+        ],
+        [
+          515,
+          96,
+          131
+        ],
+        [
+          516,
+          96,
+          131
+        ],
+        [
+          517,
+          96,
+          131
+        ],
+        [
+          518,
+          96,
+          131
+        ],
+        [
+          519,
+          96,
+          131
+        ],
+        [
+          520,
+          96,
+          131
+        ],
+        [
+          521,
+          96,
+          131
+        ],
+        [
+          522,
+          96,
+          131
+        ],
+        [
+          523,
+          96,
+          131
+        ],
+        [
+          524,
+          96,
+          131
+        ],
+        [
+          525,
+          96,
+          131
+        ],
+        [
+          526,
+          96,
+          131
+        ],
+        [
+          527,
+          96,
+          131
+        ],
+        [
+          528,
+          96,
+          131
+        ],
+        [
+          529,
+          96,
+          131
+        ],
+        [
+          530,
+          96,
+          131
+        ]
+      ],
+      "maskSHA": "8046242c2bbcdb6813820dbd938611a15d8173aab92f7a6e1a7685c2e89c7e29"
+    },
+    {
+      "id": "NEW_HB_EAST_OPEN",
+      "sceneId": "ship_hold_b",
+      "direction": {
+        "id": "NEW_HB_EAST_OPEN",
+        "reverseId": "NEW_HA_WEST_OPEN",
+        "pairId": "NEW_HA_WEST_OPEN__NEW_HB_EAST_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_hold_b",
+        "targetSceneId": "ship_hold_a",
+        "departureFoot": [
+          1415,
+          260
+        ],
+        "departureFacing": "right",
+        "arrivalFoot": [
+          129,
+          484
+        ],
+        "arrivalFacing": "right",
+        "arrivalPathIndex": 655,
+        "returnDepartureFoot": [
+          105,
+          500
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_HB_EAST_OPEN",
+          "targetPort": "NEW_HA_WEST_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 2847,
+      "runs": [
+        [
+          224,
+          1398,
+          1437
+        ],
+        [
+          225,
+          1398,
+          1437
+        ],
+        [
+          226,
+          1398,
+          1437
+        ],
+        [
+          227,
+          1398,
+          1437
+        ],
+        [
+          228,
+          1398,
+          1437
+        ],
+        [
+          229,
+          1398,
+          1437
+        ],
+        [
+          230,
+          1398,
+          1437
+        ],
+        [
+          231,
+          1398,
+          1437
+        ],
+        [
+          232,
+          1398,
+          1437
+        ],
+        [
+          233,
+          1398,
+          1437
+        ],
+        [
+          234,
+          1398,
+          1437
+        ],
+        [
+          235,
+          1398,
+          1437
+        ],
+        [
+          236,
+          1398,
+          1437
+        ],
+        [
+          237,
+          1398,
+          1437
+        ],
+        [
+          238,
+          1398,
+          1437
+        ],
+        [
+          239,
+          1398,
+          1437
+        ],
+        [
+          240,
+          1398,
+          1437
+        ],
+        [
+          241,
+          1398,
+          1437
+        ],
+        [
+          242,
+          1398,
+          1437
+        ],
+        [
+          243,
+          1398,
+          1437
+        ],
+        [
+          244,
+          1398,
+          1437
+        ],
+        [
+          245,
+          1398,
+          1437
+        ],
+        [
+          246,
+          1398,
+          1437
+        ],
+        [
+          247,
+          1398,
+          1437
+        ],
+        [
+          248,
+          1398,
+          1437
+        ],
+        [
+          249,
+          1398,
+          1437
+        ],
+        [
+          250,
+          1398,
+          1437
+        ],
+        [
+          251,
+          1398,
+          1437
+        ],
+        [
+          252,
+          1398,
+          1437
+        ],
+        [
+          253,
+          1398,
+          1437
+        ],
+        [
+          254,
+          1398,
+          1437
+        ],
+        [
+          255,
+          1398,
+          1437
+        ],
+        [
+          256,
+          1398,
+          1437
+        ],
+        [
+          257,
+          1398,
+          1437
+        ],
+        [
+          258,
+          1398,
+          1437
+        ],
+        [
+          259,
+          1398,
+          1437
+        ],
+        [
+          260,
+          1398,
+          1437
+        ],
+        [
+          261,
+          1398,
+          1437
+        ],
+        [
+          262,
+          1398,
+          1437
+        ],
+        [
+          263,
+          1398,
+          1437
+        ],
+        [
+          264,
+          1398,
+          1437
+        ],
+        [
+          265,
+          1398,
+          1437
+        ],
+        [
+          266,
+          1398,
+          1437
+        ],
+        [
+          267,
+          1398,
+          1437
+        ],
+        [
+          268,
+          1398,
+          1437
+        ],
+        [
+          269,
+          1398,
+          1437
+        ],
+        [
+          270,
+          1398,
+          1437
+        ],
+        [
+          271,
+          1398,
+          1437
+        ],
+        [
+          272,
+          1398,
+          1437
+        ],
+        [
+          273,
+          1398,
+          1437
+        ],
+        [
+          274,
+          1398,
+          1437
+        ],
+        [
+          275,
+          1398,
+          1437
+        ],
+        [
+          276,
+          1398,
+          1437
+        ],
+        [
+          277,
+          1398,
+          1437
+        ],
+        [
+          278,
+          1398,
+          1437
+        ],
+        [
+          279,
+          1398,
+          1437
+        ],
+        [
+          280,
+          1398,
+          1437
+        ],
+        [
+          281,
+          1398,
+          1437
+        ],
+        [
+          282,
+          1398,
+          1437
+        ],
+        [
+          283,
+          1398,
+          1437
+        ],
+        [
+          284,
+          1398,
+          1437
+        ],
+        [
+          285,
+          1398,
+          1437
+        ],
+        [
+          286,
+          1398,
+          1437
+        ],
+        [
+          287,
+          1398,
+          1437
+        ],
+        [
+          288,
+          1398,
+          1437
+        ],
+        [
+          289,
+          1398,
+          1437
+        ],
+        [
+          290,
+          1398,
+          1437
+        ],
+        [
+          291,
+          1398,
+          1437
+        ],
+        [
+          292,
+          1398,
+          1437
+        ],
+        [
+          293,
+          1398,
+          1437
+        ],
+        [
+          294,
+          1398,
+          1437
+        ],
+        [
+          295,
+          1398,
+          1437
+        ],
+        [
+          296,
+          1398,
+          1437
+        ]
+      ],
+      "maskSHA": "f6964a8729fd11db41714b52c003bb4d9b3faf04b9ad7b33acb22e2d907ae7ad"
+    },
+    {
+      "id": "NEW_HB_WEST_OPEN",
+      "sceneId": "ship_hold_b",
+      "direction": {
+        "id": "NEW_HB_WEST_OPEN",
+        "reverseId": "NEW_C_EAST_OPEN",
+        "pairId": "NEW_HB_WEST_OPEN__NEW_C_EAST_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_hold_b",
+        "targetSceneId": "ship_cabins",
+        "departureFoot": [
+          115,
+          260
+        ],
+        "departureFacing": "left",
+        "arrivalFoot": [
+          1380,
+          440
+        ],
+        "arrivalFacing": "left",
+        "arrivalPathIndex": 615,
+        "returnDepartureFoot": [
+          1420,
+          440
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_HB_WEST_OPEN",
+          "targetPort": "NEW_C_EAST_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 2847,
+      "runs": [
+        [
+          224,
+          99,
+          138
+        ],
+        [
+          225,
+          99,
+          138
+        ],
+        [
+          226,
+          99,
+          138
+        ],
+        [
+          227,
+          99,
+          138
+        ],
+        [
+          228,
+          99,
+          138
+        ],
+        [
+          229,
+          99,
+          138
+        ],
+        [
+          230,
+          99,
+          138
+        ],
+        [
+          231,
+          99,
+          138
+        ],
+        [
+          232,
+          99,
+          138
+        ],
+        [
+          233,
+          99,
+          138
+        ],
+        [
+          234,
+          99,
+          138
+        ],
+        [
+          235,
+          99,
+          138
+        ],
+        [
+          236,
+          99,
+          138
+        ],
+        [
+          237,
+          99,
+          138
+        ],
+        [
+          238,
+          99,
+          138
+        ],
+        [
+          239,
+          99,
+          138
+        ],
+        [
+          240,
+          99,
+          138
+        ],
+        [
+          241,
+          99,
+          138
+        ],
+        [
+          242,
+          99,
+          138
+        ],
+        [
+          243,
+          99,
+          138
+        ],
+        [
+          244,
+          99,
+          138
+        ],
+        [
+          245,
+          99,
+          138
+        ],
+        [
+          246,
+          99,
+          138
+        ],
+        [
+          247,
+          99,
+          138
+        ],
+        [
+          248,
+          99,
+          138
+        ],
+        [
+          249,
+          99,
+          138
+        ],
+        [
+          250,
+          99,
+          138
+        ],
+        [
+          251,
+          99,
+          138
+        ],
+        [
+          252,
+          99,
+          138
+        ],
+        [
+          253,
+          99,
+          138
+        ],
+        [
+          254,
+          99,
+          138
+        ],
+        [
+          255,
+          99,
+          138
+        ],
+        [
+          256,
+          99,
+          138
+        ],
+        [
+          257,
+          99,
+          138
+        ],
+        [
+          258,
+          99,
+          138
+        ],
+        [
+          259,
+          99,
+          138
+        ],
+        [
+          260,
+          99,
+          138
+        ],
+        [
+          261,
+          99,
+          138
+        ],
+        [
+          262,
+          99,
+          138
+        ],
+        [
+          263,
+          99,
+          138
+        ],
+        [
+          264,
+          99,
+          138
+        ],
+        [
+          265,
+          99,
+          138
+        ],
+        [
+          266,
+          99,
+          138
+        ],
+        [
+          267,
+          99,
+          138
+        ],
+        [
+          268,
+          99,
+          138
+        ],
+        [
+          269,
+          99,
+          138
+        ],
+        [
+          270,
+          99,
+          138
+        ],
+        [
+          271,
+          99,
+          138
+        ],
+        [
+          272,
+          99,
+          138
+        ],
+        [
+          273,
+          99,
+          138
+        ],
+        [
+          274,
+          99,
+          138
+        ],
+        [
+          275,
+          99,
+          138
+        ],
+        [
+          276,
+          99,
+          138
+        ],
+        [
+          277,
+          99,
+          138
+        ],
+        [
+          278,
+          99,
+          138
+        ],
+        [
+          279,
+          99,
+          138
+        ],
+        [
+          280,
+          99,
+          138
+        ],
+        [
+          281,
+          99,
+          138
+        ],
+        [
+          282,
+          99,
+          138
+        ],
+        [
+          283,
+          99,
+          138
+        ],
+        [
+          284,
+          99,
+          138
+        ],
+        [
+          285,
+          99,
+          138
+        ],
+        [
+          286,
+          99,
+          138
+        ],
+        [
+          287,
+          99,
+          138
+        ],
+        [
+          288,
+          99,
+          138
+        ],
+        [
+          289,
+          99,
+          138
+        ],
+        [
+          290,
+          99,
+          138
+        ],
+        [
+          291,
+          99,
+          138
+        ],
+        [
+          292,
+          99,
+          138
+        ],
+        [
+          293,
+          99,
+          138
+        ],
+        [
+          294,
+          99,
+          138
+        ],
+        [
+          295,
+          99,
+          138
+        ],
+        [
+          296,
+          99,
+          138
+        ]
+      ],
+      "maskSHA": "7089c6d5d0e1aa5a0088411db919d126b486bd190a19eb081de9d1286db8be70"
+    },
+    {
+      "id": "NEW_C_EAST_OPEN",
+      "sceneId": "ship_cabins",
+      "direction": {
+        "id": "NEW_C_EAST_OPEN",
+        "reverseId": "NEW_HB_WEST_OPEN",
+        "pairId": "NEW_HB_WEST_OPEN__NEW_C_EAST_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_cabins",
+        "targetSceneId": "ship_hold_b",
+        "departureFoot": [
+          1420,
+          440
+        ],
+        "departureFacing": "right",
+        "arrivalFoot": [
+          115,
+          300
+        ],
+        "arrivalFacing": "right",
+        "arrivalPathIndex": 703,
+        "returnDepartureFoot": [
+          115,
+          260
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_C_EAST_OPEN",
+          "targetPort": "NEW_HB_WEST_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 1989,
+      "runs": [
+        [
+          415,
+          1398,
+          1437
+        ],
+        [
+          416,
+          1398,
+          1437
+        ],
+        [
+          417,
+          1398,
+          1437
+        ],
+        [
+          418,
+          1398,
+          1437
+        ],
+        [
+          419,
+          1398,
+          1437
+        ],
+        [
+          420,
+          1398,
+          1437
+        ],
+        [
+          421,
+          1398,
+          1437
+        ],
+        [
+          422,
+          1398,
+          1437
+        ],
+        [
+          423,
+          1398,
+          1437
+        ],
+        [
+          424,
+          1398,
+          1437
+        ],
+        [
+          425,
+          1398,
+          1437
+        ],
+        [
+          426,
+          1398,
+          1437
+        ],
+        [
+          427,
+          1398,
+          1437
+        ],
+        [
+          428,
+          1398,
+          1437
+        ],
+        [
+          429,
+          1398,
+          1437
+        ],
+        [
+          430,
+          1398,
+          1437
+        ],
+        [
+          431,
+          1398,
+          1437
+        ],
+        [
+          432,
+          1398,
+          1437
+        ],
+        [
+          433,
+          1398,
+          1437
+        ],
+        [
+          434,
+          1398,
+          1437
+        ],
+        [
+          435,
+          1398,
+          1437
+        ],
+        [
+          436,
+          1398,
+          1437
+        ],
+        [
+          437,
+          1398,
+          1437
+        ],
+        [
+          438,
+          1398,
+          1437
+        ],
+        [
+          439,
+          1398,
+          1437
+        ],
+        [
+          440,
+          1398,
+          1437
+        ],
+        [
+          441,
+          1398,
+          1437
+        ],
+        [
+          442,
+          1398,
+          1437
+        ],
+        [
+          443,
+          1398,
+          1437
+        ],
+        [
+          444,
+          1398,
+          1437
+        ],
+        [
+          445,
+          1398,
+          1437
+        ],
+        [
+          446,
+          1398,
+          1437
+        ],
+        [
+          447,
+          1398,
+          1437
+        ],
+        [
+          448,
+          1398,
+          1437
+        ],
+        [
+          449,
+          1398,
+          1437
+        ],
+        [
+          450,
+          1398,
+          1437
+        ],
+        [
+          451,
+          1398,
+          1437
+        ],
+        [
+          452,
+          1398,
+          1437
+        ],
+        [
+          453,
+          1398,
+          1437
+        ],
+        [
+          454,
+          1398,
+          1437
+        ],
+        [
+          455,
+          1398,
+          1437
+        ],
+        [
+          456,
+          1398,
+          1437
+        ],
+        [
+          457,
+          1398,
+          1437
+        ],
+        [
+          458,
+          1398,
+          1437
+        ],
+        [
+          459,
+          1398,
+          1437
+        ],
+        [
+          460,
+          1398,
+          1437
+        ],
+        [
+          461,
+          1398,
+          1437
+        ],
+        [
+          462,
+          1398,
+          1437
+        ],
+        [
+          463,
+          1398,
+          1437
+        ],
+        [
+          464,
+          1398,
+          1437
+        ],
+        [
+          465,
+          1398,
+          1437
+        ]
+      ],
+      "maskSHA": "038de5a7ca9999d005e0fb6a04ef2ec3181454c26eb2991f8b3c3f3b6348d4d3"
+    },
+    {
+      "id": "NEW_C_WEST_OPEN",
+      "sceneId": "ship_cabins",
+      "direction": {
+        "id": "NEW_C_WEST_OPEN",
+        "reverseId": "NEW_E_EAST_OPEN",
+        "pairId": "NEW_C_WEST_OPEN__NEW_E_EAST_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_cabins",
+        "targetSceneId": "ship_engine",
+        "departureFoot": [
+          115,
+          440
+        ],
+        "departureFacing": "left",
+        "arrivalFoot": [
+          1414,
+          534
+        ],
+        "arrivalFacing": "left",
+        "arrivalPathIndex": 712,
+        "returnDepartureFoot": [
+          1420,
+          500
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_C_WEST_OPEN",
+          "targetPort": "NEW_E_EAST_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 1989,
+      "runs": [
+        [
+          415,
+          99,
+          138
+        ],
+        [
+          416,
+          99,
+          138
+        ],
+        [
+          417,
+          99,
+          138
+        ],
+        [
+          418,
+          99,
+          138
+        ],
+        [
+          419,
+          99,
+          138
+        ],
+        [
+          420,
+          99,
+          138
+        ],
+        [
+          421,
+          99,
+          138
+        ],
+        [
+          422,
+          99,
+          138
+        ],
+        [
+          423,
+          99,
+          138
+        ],
+        [
+          424,
+          99,
+          138
+        ],
+        [
+          425,
+          99,
+          138
+        ],
+        [
+          426,
+          99,
+          138
+        ],
+        [
+          427,
+          99,
+          138
+        ],
+        [
+          428,
+          99,
+          138
+        ],
+        [
+          429,
+          99,
+          138
+        ],
+        [
+          430,
+          99,
+          138
+        ],
+        [
+          431,
+          99,
+          138
+        ],
+        [
+          432,
+          99,
+          138
+        ],
+        [
+          433,
+          99,
+          138
+        ],
+        [
+          434,
+          99,
+          138
+        ],
+        [
+          435,
+          99,
+          138
+        ],
+        [
+          436,
+          99,
+          138
+        ],
+        [
+          437,
+          99,
+          138
+        ],
+        [
+          438,
+          99,
+          138
+        ],
+        [
+          439,
+          99,
+          138
+        ],
+        [
+          440,
+          99,
+          138
+        ],
+        [
+          441,
+          99,
+          138
+        ],
+        [
+          442,
+          99,
+          138
+        ],
+        [
+          443,
+          99,
+          138
+        ],
+        [
+          444,
+          99,
+          138
+        ],
+        [
+          445,
+          99,
+          138
+        ],
+        [
+          446,
+          99,
+          138
+        ],
+        [
+          447,
+          99,
+          138
+        ],
+        [
+          448,
+          99,
+          138
+        ],
+        [
+          449,
+          99,
+          138
+        ],
+        [
+          450,
+          99,
+          138
+        ],
+        [
+          451,
+          99,
+          138
+        ],
+        [
+          452,
+          99,
+          138
+        ],
+        [
+          453,
+          99,
+          138
+        ],
+        [
+          454,
+          99,
+          138
+        ],
+        [
+          455,
+          99,
+          138
+        ],
+        [
+          456,
+          99,
+          138
+        ],
+        [
+          457,
+          99,
+          138
+        ],
+        [
+          458,
+          99,
+          138
+        ],
+        [
+          459,
+          99,
+          138
+        ],
+        [
+          460,
+          99,
+          138
+        ],
+        [
+          461,
+          99,
+          138
+        ],
+        [
+          462,
+          99,
+          138
+        ],
+        [
+          463,
+          99,
+          138
+        ],
+        [
+          464,
+          99,
+          138
+        ],
+        [
+          465,
+          99,
+          138
+        ]
+      ],
+      "maskSHA": "1b97e65a85d2ab6d608f6e0a1957359a2ffb82ccdc8ca9e7f1e41917535bb148"
+    },
+    {
+      "id": "NEW_E_EAST_OPEN",
+      "sceneId": "ship_engine",
+      "direction": {
+        "id": "NEW_E_EAST_OPEN",
+        "reverseId": "NEW_C_WEST_OPEN",
+        "pairId": "NEW_C_WEST_OPEN__NEW_E_EAST_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_engine",
+        "targetSceneId": "ship_cabins",
+        "departureFoot": [
+          1420,
+          500
+        ],
+        "departureFacing": "right",
+        "arrivalFoot": [
+          155,
+          440
+        ],
+        "arrivalFacing": "right",
+        "arrivalPathIndex": 610,
+        "returnDepartureFoot": [
+          115,
+          440
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_E_EAST_OPEN",
+          "targetPort": "NEW_C_WEST_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 1989,
+      "runs": [
+        [
+          475,
+          1398,
+          1437
+        ],
+        [
+          476,
+          1398,
+          1437
+        ],
+        [
+          477,
+          1398,
+          1437
+        ],
+        [
+          478,
+          1398,
+          1437
+        ],
+        [
+          479,
+          1398,
+          1437
+        ],
+        [
+          480,
+          1398,
+          1437
+        ],
+        [
+          481,
+          1398,
+          1437
+        ],
+        [
+          482,
+          1398,
+          1437
+        ],
+        [
+          483,
+          1398,
+          1437
+        ],
+        [
+          484,
+          1398,
+          1437
+        ],
+        [
+          485,
+          1398,
+          1437
+        ],
+        [
+          486,
+          1398,
+          1437
+        ],
+        [
+          487,
+          1398,
+          1437
+        ],
+        [
+          488,
+          1398,
+          1437
+        ],
+        [
+          489,
+          1398,
+          1437
+        ],
+        [
+          490,
+          1398,
+          1437
+        ],
+        [
+          491,
+          1398,
+          1437
+        ],
+        [
+          492,
+          1398,
+          1437
+        ],
+        [
+          493,
+          1398,
+          1437
+        ],
+        [
+          494,
+          1398,
+          1437
+        ],
+        [
+          495,
+          1398,
+          1437
+        ],
+        [
+          496,
+          1398,
+          1437
+        ],
+        [
+          497,
+          1398,
+          1437
+        ],
+        [
+          498,
+          1398,
+          1437
+        ],
+        [
+          499,
+          1398,
+          1437
+        ],
+        [
+          500,
+          1398,
+          1437
+        ],
+        [
+          501,
+          1398,
+          1437
+        ],
+        [
+          502,
+          1398,
+          1437
+        ],
+        [
+          503,
+          1398,
+          1437
+        ],
+        [
+          504,
+          1398,
+          1437
+        ],
+        [
+          505,
+          1398,
+          1437
+        ],
+        [
+          506,
+          1398,
+          1437
+        ],
+        [
+          507,
+          1398,
+          1437
+        ],
+        [
+          508,
+          1398,
+          1437
+        ],
+        [
+          509,
+          1398,
+          1437
+        ],
+        [
+          510,
+          1398,
+          1437
+        ],
+        [
+          511,
+          1398,
+          1437
+        ],
+        [
+          512,
+          1398,
+          1437
+        ],
+        [
+          513,
+          1398,
+          1437
+        ],
+        [
+          514,
+          1398,
+          1437
+        ],
+        [
+          515,
+          1398,
+          1437
+        ],
+        [
+          516,
+          1398,
+          1437
+        ],
+        [
+          517,
+          1398,
+          1437
+        ],
+        [
+          518,
+          1398,
+          1437
+        ],
+        [
+          519,
+          1398,
+          1437
+        ],
+        [
+          520,
+          1398,
+          1437
+        ],
+        [
+          521,
+          1398,
+          1437
+        ],
+        [
+          522,
+          1398,
+          1437
+        ],
+        [
+          523,
+          1398,
+          1437
+        ],
+        [
+          524,
+          1398,
+          1437
+        ],
+        [
+          525,
+          1398,
+          1437
+        ]
+      ],
+      "maskSHA": "1fc0cfecec48f0fefc0a16a4610ec435153a1d5c96b413af2e257fb23cdde467"
+    },
+    {
+      "id": "NEW_E_WEST_OPEN",
+      "sceneId": "ship_engine",
+      "direction": {
+        "id": "NEW_E_WEST_OPEN",
+        "reverseId": "NEW_BR_SOUTH_OPEN",
+        "pairId": "NEW_E_WEST_OPEN__NEW_BR_SOUTH_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_engine",
+        "targetSceneId": "ship_bridge",
+        "departureFoot": [
+          115,
+          500
+        ],
+        "departureFacing": "left",
+        "arrivalFoot": [
+          768,
+          835
+        ],
+        "arrivalFacing": "up",
+        "arrivalPathIndex": 155,
+        "returnDepartureFoot": [
+          768,
+          875
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_E_WEST_OPEN",
+          "targetPort": "NEW_BR_SOUTH_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 1989,
+      "runs": [
+        [
+          475,
+          99,
+          138
+        ],
+        [
+          476,
+          99,
+          138
+        ],
+        [
+          477,
+          99,
+          138
+        ],
+        [
+          478,
+          99,
+          138
+        ],
+        [
+          479,
+          99,
+          138
+        ],
+        [
+          480,
+          99,
+          138
+        ],
+        [
+          481,
+          99,
+          138
+        ],
+        [
+          482,
+          99,
+          138
+        ],
+        [
+          483,
+          99,
+          138
+        ],
+        [
+          484,
+          99,
+          138
+        ],
+        [
+          485,
+          99,
+          138
+        ],
+        [
+          486,
+          99,
+          138
+        ],
+        [
+          487,
+          99,
+          138
+        ],
+        [
+          488,
+          99,
+          138
+        ],
+        [
+          489,
+          99,
+          138
+        ],
+        [
+          490,
+          99,
+          138
+        ],
+        [
+          491,
+          99,
+          138
+        ],
+        [
+          492,
+          99,
+          138
+        ],
+        [
+          493,
+          99,
+          138
+        ],
+        [
+          494,
+          99,
+          138
+        ],
+        [
+          495,
+          99,
+          138
+        ],
+        [
+          496,
+          99,
+          138
+        ],
+        [
+          497,
+          99,
+          138
+        ],
+        [
+          498,
+          99,
+          138
+        ],
+        [
+          499,
+          99,
+          138
+        ],
+        [
+          500,
+          99,
+          138
+        ],
+        [
+          501,
+          99,
+          138
+        ],
+        [
+          502,
+          99,
+          138
+        ],
+        [
+          503,
+          99,
+          138
+        ],
+        [
+          504,
+          99,
+          138
+        ],
+        [
+          505,
+          99,
+          138
+        ],
+        [
+          506,
+          99,
+          138
+        ],
+        [
+          507,
+          99,
+          138
+        ],
+        [
+          508,
+          99,
+          138
+        ],
+        [
+          509,
+          99,
+          138
+        ],
+        [
+          510,
+          99,
+          138
+        ],
+        [
+          511,
+          99,
+          138
+        ],
+        [
+          512,
+          99,
+          138
+        ],
+        [
+          513,
+          99,
+          138
+        ],
+        [
+          514,
+          99,
+          138
+        ],
+        [
+          515,
+          99,
+          138
+        ],
+        [
+          516,
+          99,
+          138
+        ],
+        [
+          517,
+          99,
+          138
+        ],
+        [
+          518,
+          99,
+          138
+        ],
+        [
+          519,
+          99,
+          138
+        ],
+        [
+          520,
+          99,
+          138
+        ],
+        [
+          521,
+          99,
+          138
+        ],
+        [
+          522,
+          99,
+          138
+        ],
+        [
+          523,
+          99,
+          138
+        ],
+        [
+          524,
+          99,
+          138
+        ],
+        [
+          525,
+          99,
+          138
+        ]
+      ],
+      "maskSHA": "a0256378149aa86f8c28cbf3a54bbca69be72512f55bd0f17c421f9a4198335a"
+    },
+    {
+      "id": "NEW_BR_SOUTH_OPEN",
+      "sceneId": "ship_bridge",
+      "direction": {
+        "id": "NEW_BR_SOUTH_OPEN",
+        "reverseId": "NEW_E_WEST_OPEN",
+        "pairId": "NEW_E_WEST_OPEN__NEW_BR_SOUTH_OPEN",
+        "sourceMapId": "world:ship:S9",
+        "targetMapId": "world:ship:S9",
+        "sourceSceneId": "ship_bridge",
+        "targetSceneId": "ship_engine",
+        "departureFoot": [
+          768,
+          875
+        ],
+        "departureFacing": "down",
+        "arrivalFoot": [
+          121,
+          534
+        ],
+        "arrivalFacing": "right",
+        "arrivalPathIndex": 713,
+        "returnDepartureFoot": [
+          115,
+          500
+        ],
+        "trigger": "EXPLICIT_FRESH_INPUT_AT_EXACT_PROVEN_FOOT",
+        "condition": "DEV_ONLY_CURRENT_OPEN_PASSAGES",
+        "mode": "development",
+        "canonicalInstalled": false,
+        "evidence": {
+          "contract": "cargo_scene_lifecycle_candidate_r3/NEW_PORT_LINK_CONTRACT.json",
+          "sourcePort": "NEW_BR_SOUTH_OPEN",
+          "targetPort": "NEW_E_WEST_OPEN",
+          "conditionSelection": "cargo_scene_environment_links_delivery_r2/ROOT_SELECTION.json",
+          "safeArrivalRoute": "cargo_scene_lifecycle_candidate_r3/PIXEL_PATHS.json",
+          "routeDistanceInside": 40
+        }
+      },
+      "count": 2665,
+      "runs": [
+        [
+          855,
+          736,
+          801
+        ],
+        [
+          856,
+          736,
+          801
+        ],
+        [
+          857,
+          736,
+          801
+        ],
+        [
+          858,
+          736,
+          801
+        ],
+        [
+          859,
+          736,
+          801
+        ],
+        [
+          860,
+          736,
+          801
+        ],
+        [
+          861,
+          736,
+          801
+        ],
+        [
+          862,
+          736,
+          801
+        ],
+        [
+          863,
+          736,
+          801
+        ],
+        [
+          864,
+          736,
+          801
+        ],
+        [
+          865,
+          736,
+          801
+        ],
+        [
+          866,
+          736,
+          801
+        ],
+        [
+          867,
+          736,
+          801
+        ],
+        [
+          868,
+          736,
+          801
+        ],
+        [
+          869,
+          736,
+          801
+        ],
+        [
+          870,
+          736,
+          801
+        ],
+        [
+          871,
+          736,
+          801
+        ],
+        [
+          872,
+          736,
+          801
+        ],
+        [
+          873,
+          736,
+          801
+        ],
+        [
+          874,
+          736,
+          801
+        ],
+        [
+          875,
+          736,
+          801
+        ],
+        [
+          876,
+          736,
+          801
+        ],
+        [
+          877,
+          736,
+          801
+        ],
+        [
+          878,
+          736,
+          801
+        ],
+        [
+          879,
+          736,
+          801
+        ],
+        [
+          880,
+          736,
+          801
+        ],
+        [
+          881,
+          736,
+          801
+        ],
+        [
+          882,
+          736,
+          801
+        ],
+        [
+          883,
+          736,
+          801
+        ],
+        [
+          884,
+          736,
+          801
+        ],
+        [
+          885,
+          736,
+          801
+        ],
+        [
+          886,
+          736,
+          801
+        ],
+        [
+          887,
+          736,
+          801
+        ],
+        [
+          888,
+          736,
+          801
+        ],
+        [
+          889,
+          736,
+          801
+        ],
+        [
+          890,
+          736,
+          801
+        ],
+        [
+          891,
+          736,
+          801
+        ],
+        [
+          892,
+          736,
+          801
+        ],
+        [
+          893,
+          736,
+          801
+        ],
+        [
+          894,
+          736,
+          801
+        ],
+        [
+          895,
+          736,
+          801
+        ]
+      ],
+      "maskSHA": "01ab686dfe1cc4efe1eb4fc327b9907bf8345dbee339f41f1b11d8a3af6ad867"
+    }
+  ]
+}

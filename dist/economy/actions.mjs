@@ -35,6 +35,7 @@ export function economyAction(s,catalog,request,host){
   const n=Math.max(1,Math.ceil(Math.hypot(to.x-from.x,to.y-from.y)/4));for(let i=1;i<=n;i++)if(!validLanding({...to,x:from.x+(to.x-from.x)*i/n,y:from.y+(to.y-from.y)*i/n}))throw Error('Walking blocked');
   s.economy.walkedDistance=(s.economy.walkedDistance??0)+Math.hypot(to.x-from.x,to.y-from.y);s.position={...to,facing:to.facing??from.facing};return;
  }
+ if(type==='cargo-supply-claim'){const ds=Object.getOwnPropertyDescriptors(request);if(Object.getPrototypeOf(request)!==Object.prototype||Reflect.ownKeys(ds).length!==2||!Object.hasOwn(ds.type??{},'value')||!Object.hasOwn(ds.chestId??{},'value')||typeof host?.claimCargoSupply!=='function')throw Error('CARGO_SUPPLY_SCOPED_HOST_REQUIRED');return host.claimCargoSupply(s,catalog,request.chestId);}
  return transaction(s,transactionId,request,()=>{
   if(type==='purchase'){
    atHub(s,host,request.hubId);const q=quotePurchase(s,catalog.itemContract,request.itemId,request.quantity,{unlimited:true,approved:policy.id===APPROVED_ID,hubId:request.hubId});

@@ -1,0 +1,9 @@
+import{dataRecord,validatedState}from'./progress-shape.mjs';
+import{RULE_REVISION,JunglePuzzle}from'./controller.mjs';
+const receipts=new WeakMap();
+export function validatePuzzleSnapshot(s){return validatedState(s,RULE_REVISION)!==null}
+export function exportProgress(controller){return Object.freeze({schema:'JUNGLE_LOCAL_PROGRESS_V1',ruleRevision:RULE_REVISION,state:controller.snapshot(),storageWritten:false})}
+// Shape validation only, never an authentication bypass. No localStorage/IndexedDB writes.
+export function restoreProgress(controller,envelope){const e=dataRecord(envelope,['schema','ruleRevision','state','storageWritten']);if(!e||e.schema!=='JUNGLE_LOCAL_PROGRESS_V1'||e.ruleRevision!==RULE_REVISION||e.storageWritten!==false||!validatePuzzleSnapshot(e.state)||!(controller instanceof JunglePuzzle)||controller.disposed)return{ok:false,reason:'REVISION_OR_SHAPE'};JunglePuzzle.prototype.restoreLocalShape.call(controller,e.state);return{ok:true,rewardAuthority:false,needsAtomicSaveOwnerValidation:true}}
+export function issueLocalReceipt(controller){if(!(controller instanceof JunglePuzzle)||!JunglePuzzle.prototype.receiptEligible.call(controller))return null;const snapshot=JunglePuzzle.prototype.snapshot.call(controller),fingerprint=JSON.stringify(snapshot);const receipt=Object.freeze({kind:'JUNGLE_LOCAL_COMPLETION_CANDIDATE',ruleRevision:RULE_REVISION,epoch:snapshot.epoch,sourceEvent:'S5_JUNGLE_DOME_EXPEDITION',sourceReward:'TX_S5_JUNGLE_DOME_REWARD',canonicalCalls:0,persistCalls:0,grantCalls:0});receipts.set(receipt,{controller,fingerprint});return receipt}
+export function verifyLocalReceipt(receipt,controller){const proof=receipts.get(receipt);return !!proof&&proof.controller===controller&&JunglePuzzle.prototype.receiptEligible.call(controller)&&proof.fingerprint===JSON.stringify(JunglePuzzle.prototype.snapshot.call(controller))}

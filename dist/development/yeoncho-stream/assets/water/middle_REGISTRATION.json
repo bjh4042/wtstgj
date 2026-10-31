@@ -1,0 +1,53 @@
+{
+  "revision": "YEONCHO_MIDDLE_SEMANTIC_WATER_20261027_R1",
+  "authority": "LatestselectedOpenClosedart and Root-approved37659px semanticwater; NOT exacthistorical6132floor",
+  "origin": [
+    1560,
+    2700
+  ],
+  "size": [
+    960,
+    540
+  ],
+  "waterPixels": 37659,
+  "activeGainPixels": 33733,
+  "maxGain": 0.9,
+  "sourcePins": {
+    "open": {
+      "originalSHA": "9309737253c4f43393162ab6b8ba9b316cb4f32ba030c9630e9c8ae01f152357",
+      "cropPNG": "open.png",
+      "cropSHA": "074d2d5e7ce6a17a3c486dfd8eeb05cafa0a30987386e6bfe73c88c44d5c6989"
+    },
+    "closed": {
+      "originalSHA": "753700a278085380c0c388015227e1d65262f22d7bb4c7972e1982d2db97468d",
+      "cropPNG": "closed.png",
+      "cropSHA": "074d2d5e7ce6a17a3c486dfd8eeb05cafa0a30987386e6bfe73c88c44d5c6989"
+    }
+  },
+  "files": {
+    "gain_f64le.bin": {
+      "sha256": "341bf82e04b1cecfa24fbeb993d0c7d35a0b019d9929dea214b1f3cdf9ac9152",
+      "bytes": 4147200
+    },
+    "water_u8.bin": {
+      "sha256": "5d60a4b2eefdb6317a6e741c4c46dac5f3dc641143ad70748a92995f48095215",
+      "bytes": 518400
+    },
+    "source_rgba.bin": {
+      "sha256": "b264d2888946e7c776d2f969188c02ef9f9da48e0f608124612c77a9229de4a3",
+      "bytes": 2073600
+    }
+  },
+  "sharedClock": {
+    "periodMs": 2400,
+    "phaseCount": 24,
+    "phaseMs": 100,
+    "worldCoordinates": true,
+    "gainFormula": "0.9*clip((distanceToWaterBoundary-2)/8,0,1)"
+  },
+  "fixedUnknownPolicy": "outsidewater/fixed/UNKNOWN/alpha unchanged;4cornerwaterrequired",
+  "navigation": "No actualwalk/collision/Surf changes. Check a separatecurrentfloorcontract before main-game installation.",
+  "existingFloorRole": "olderbasefloor+3intersection0 is ancillary only, no latestflooridentityclaim",
+  "rootPlanApprovalUTC": "2026-10-27T02:59:38Z",
+  "runtimeInstalled": false
+}

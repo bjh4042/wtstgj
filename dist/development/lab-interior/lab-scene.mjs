@@ -1,0 +1,10 @@
+import{createLabProvider}from'./lab-provider.mjs';import{loadLabInputs,isLabInputs,readLabSafe}from'./load-inputs.mjs';
+import{selectPlayerFrame}from'../gohyeon-pair/player-frame.mjs';
+const owned=new WeakMap();
+export const readOwnedLabPose=scene=>{const s=owned.get(scene);return s&&!s.disposed?s.provider.snapshot():null};
+export const ownedLabWorld=scene=>{const s=owned.get(scene);return s&&!s.disposed?s.world:null};
+export async function createLabScene({readBytes,decode,signal,foot,facing,playerFrames={},sessionEpoch=0,inputs:sharedInputs=null,onSuccessfulPixel=()=>{},released=false,left=false}={}){
+ if(!Number.isSafeInteger(sessionEpoch)||sessionEpoch<0)throw Error('LAB_EPOCH_REQUIRED');if(sharedInputs&&!isLabInputs(sharedInputs))throw Error('LAB_VERIFIED_INPUT_REQUIRED');const inputs=sharedInputs??await loadLabInputs({readBytes,decode,signal});let provider;
+ try{provider=createLabProvider({safe:readLabSafe(inputs),assets:{...inputs.assets,playerFrames},foot,facing,released,left,onSuccessfulPixel});}catch(e){if(!sharedInputs)inputs.dispose();throw e}
+ const state={provider,world:null,disposed:false};const scene={get sessionEpoch(){return sessionEpoch},readNative:()=>null,readReviewNative:()=>readOwnedLabPose(scene),bindWorld(w){if(!w||state.disposed||state.world&&state.world!==w)throw Error('LAB_WORLD_BINDING_REJECTED');state.world=w},frame:(...a)=>provider.frame(...a),draw:(ctx,o={})=>{const p=provider.snapshot();return provider.draw(ctx,{...o,playerFrame:selectPlayerFrame({facing:p.facing,walking:p.moving,elapsedMs:o.elapsedMs??0})})},stop:()=>provider.stop(),releaseAction:()=>provider.releaseAction(),setFocused:v=>provider.setFocused(v),setReader:v=>provider.setReader(v),setPending:v=>provider.setPending(v),canConsult:()=>!state.disposed&&provider.canConsult(),canReturn:()=>!state.disposed&&provider.canReturn(),dispose(){if(state.disposed)return;state.disposed=true;state.world=null;provider.dispose();if(!sharedInputs)inputs.dispose()},get disposed(){return state.disposed}};owned.set(scene,state);return scene;
+}

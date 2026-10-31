@@ -1,0 +1,11 @@
+const originalPoints={"S9_FINAL_VILLAIN_RAID":{"id":"event:S9_FINAL_VILLAIN_RAID","kind":"event","mapId":"world:hub:S9","stageId":"S9","areaId":null,"x":15,"y":11,"label":"숨은 부두 → 흑망단 경비 → 포획선 3구역 순으로 최종작전을 진행한다.","placementStatus":"DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY","eventId":"S9_FINAL_VILLAIN_RAID","npcId":null},"RIVAL_S9_ALLY":{"id":"event:RIVAL_S9_ALLY","kind":"event","mapId":"world:hub:S9","stageId":"S9","areaId":null,"x":20,"y":11,"label":"하린이 포획선 작전에서 동료로 참여하며 최종 리더전은 주인공이 맡는다.","placementStatus":"DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY","eventId":"RIVAL_S9_ALLY","npcId":null},"S9_RELEASE_RESCUED":{"id":"event:S9_RELEASE_RESCUED","kind":"event","mapId":"world:hub:S9","stageId":"S9","areaId":null,"x":25,"y":11,"label":"구조된 생태몬들이 각자의 서식지로 돌아가며 148~150은 POST 서식지 조우로 이어진다.","placementStatus":"DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY","eventId":"S9_RELEASE_RESCUED","npcId":null}};
+// NEW root-selected explicit relocation. Call on mutable definition before deepFreeze.
+// Logical event markers are nonphysical; original story operations/IDs are untouched.
+export const CARGO_RESCUE_LOCATION_REVISION='CARGO_RESCUE_EXPLICIT_LOCATION_R1';
+const rows=Object.freeze([['S9_FINAL_VILLAIN_RAID',26,16],['RIVAL_S9_ALLY',30,16],['S9_RELEASE_RESCUED',34,16]]);
+export function applyCargoRescueLocation({maps,points,eventBindings}){
+ const hub=maps['world:hub:S9'],ship=maps['world:ship:S9'];if(!hub||!ship)throw Error('CARGO_RESCUE_MAPS_REQUIRED');
+ for(const[event,x,y]of rows){const id='event:'+event,p=points[id];if(!p||p.kind!=='event'||p.eventId!==event||p.mapId!==hub.id||eventBindings[event]!==id||JSON.stringify(p)!==JSON.stringify(originalPoints[event]))throw Error('CARGO_RESCUE_BASELINE_DRIFT');if(Object.values(points).some(q=>q.mapId===ship.id&&q.x===x&&q.y===y)||ship.solidObjects.some(o=>x>=o.rect[0]&&x<o.rect[0]+o.rect[2]&&y>=o.rect[1]&&y<o.rect[1]+o.rect[3]))throw Error('CARGO_RESCUE_CELL_OCCUPIED');}
+ for(const[event,x,y]of rows){const id='event:'+event,p=points[id];hub.points=hub.points.filter(v=>v!==id);hub.storyTriggers=hub.storyTriggers.filter(v=>v!==id);hub.actors=hub.actors.filter(a=>a.pointId!==id);Object.assign(p,{mapId:ship.id,x,y,placementStatus:CARGO_RESCUE_LOCATION_REVISION,nativeSceneId:'ship_rescue',nonPhysicalEventMarker:true});ship.points.push(id);ship.storyTriggers.push(id);}
+ return CARGO_RESCUE_LOCATION_REVISION;
+}

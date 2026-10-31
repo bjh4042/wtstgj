@@ -1,0 +1,7 @@
+// A private owner-bound intent gate, not a canonical healing grant or gameplay mutation.
+export function createCenterCounterIntent({contract,getScene,getWorld}){
+ if(contract?.originalPointId!=='heal:S4'||contract.mapId!=='world:hub:S4'||typeof getScene!=='function'||typeof getWorld!=='function')throw Error('FIXED_CENTER_CONTRACT_REQUIRED');
+ const tokens=new WeakMap();let disposed=false;
+ function read(){const scene=getScene(),world=getWorld();if(disposed||!scene||scene.disposed||!world||world.busy||world.inputLocked||world.field?.menu!=null)return null;const p=scene.readServicePose?.();if(!p||p.sceneId!==contract.sceneId||p.imageSHA!==contract.inputs.image.sha256||p.maskSHA!==contract.inputs.safe.sha256||p.facing!=='up'||p.focused!==true||p.stopped!==true||p.pending!==false||!Number.isSafeInteger(p.epoch)||p.epoch<1||world.snapshot().position.scene!=='world:hub:S4'||!Array.isArray(p.foot)||p.foot.length!==2||!p.foot.every(Number.isSafeInteger)||!contract.counter.approachRows.some(([y,l,r])=>p.foot[1]===y&&p.foot[0]>=l&&p.foot[0]<r))return null;return{scene,world,pose:JSON.stringify(p)};}
+ return Object.freeze({canRequest:()=>!!read(),capture(){const state=read();if(!state)throw Error('CENTER_COUNTER_NOT_READY');const t=Object.freeze({});tokens.set(t,state);return t},isCurrent(t){const a=tokens.get(t),b=read();return !!a&&!!b&&a.scene===b.scene&&a.world===b.world&&a.pose===b.pose},dispose(){disposed=true}});
+}

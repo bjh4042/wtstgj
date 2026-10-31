@@ -1,0 +1,162 @@
+{
+  "effects/grass/CONFIG.json": {
+    "sha256": "36723500edfbe0995f064e35d889fd3cdfec3452b298069973f85d71a90a8c4f",
+    "bytes": 2593
+  },
+  "effects/grass/SELECTED_REGISTRATION.json": {
+    "sha256": "d8650e33c4129367cff1ca4feab63959632091d1fdc45257788cf40d63b1fe81",
+    "bytes": 419
+  },
+  "effects/grass/cleanplate_generated.png": {
+    "sha256": "7254ef83415b251cddbcc73c431fe9f19d3d83c3b5e114248a9d3667b8cdd4c9",
+    "bytes": 1523676
+  },
+  "effects/grass/habitat.u8": {
+    "sha256": "30665fddfa564df993cd92e407178db1aef705e6f8bebd2a4e3898afd18209ac",
+    "bytes": 3145728
+  },
+  "effects/grass/plant.mjs": {
+    "sha256": "c4fc59a01bcd298072c6be09504fe40cae04252307fdc35cb7af78bca504e7dd",
+    "bytes": 1862
+  },
+  "effects/grass/plant_generated.png": {
+    "sha256": "2fbca82f2d964a878d31954cb6ec32db431214b28570d7cc2c45a3776dfb5df6",
+    "bytes": 231401
+  },
+  "effects/grass/safe_centres.u8": {
+    "sha256": "d71eb449582db395a79a40426f3640daeb37d9a5ca4abe0c2439b939e7447a52",
+    "bytes": 3145728
+  },
+  "effects/hub/LIGHT_MANIFEST.json": {
+    "sha256": "fc14379330c20fef954cd5286ee1c5e4c1b716db3994f9f3abcf8b577e417222",
+    "bytes": 1507
+  },
+  "effects/hub/ROOT_SELECTION.json": {
+    "sha256": "5c5080ab602e1d5f743127f47b5d7fe9ce86d0818727cca57479eed7f30aaf77",
+    "bytes": 806
+  },
+  "effects/hub/common/day-night.mjs": {
+    "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+    "bytes": 2855
+  },
+  "effects/hub/common/frame-lighting.mjs": {
+    "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+    "bytes": 2279
+  },
+  "effects/hub/common/scene-lighting.mjs": {
+    "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+    "bytes": 1433
+  },
+  "effects/hub/common/screen-lighting.mjs": {
+    "sha256": "6876a931709fc667fab9640c0643e902b363d5442191cea48879720201100e98",
+    "bytes": 1585
+  },
+  "effects/hub/environment.mjs": {
+    "sha256": "b9cb1aea70d79c81c6c8c580cfdd93781ad9cc5f8016b8324d454d4573c8ed48",
+    "bytes": 1356
+  },
+  "effects/hub/light_indices.u32": {
+    "sha256": "e875394bceb0950769e571a7cf87094430e234e5640475c81479f0529706c908",
+    "bytes": 285180
+  },
+  "effects/hub/light_transmission.f64": {
+    "sha256": "c99e5dbfb7dd15f0367cdf806ba2d06dc701d5aad4319dd986e838d2abe9918d",
+    "bytes": 1711080
+  },
+  "effects/island/CONFIG.json": {
+    "sha256": "1e50a09ffd9172e67dd1aebb667efa4fe43d689c5c6d482fd1aa98bba16fc743",
+    "bytes": 818
+  },
+  "effects/island/NEW_WATER.json": {
+    "sha256": "968ee917d57f57c47cdd29d235fe8053f25dc1ff290776ffbb70a8f8ad98df2b",
+    "bytes": 477
+  },
+  "effects/island/SELECTED_REGISTRATION.json": {
+    "sha256": "40d19d5d9b94e9a74be42471164b859702bcc05b54beca1c46093da8d93eee1a",
+    "bytes": 689
+  },
+  "effects/island/chest.mjs": {
+    "sha256": "9cd6d55aa361368f033e5bb467b2c8486f05cbf80ee5952d6859a361f923ed15",
+    "bytes": 924
+  },
+  "effects/island/day-night.mjs": {
+    "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+    "bytes": 2855
+  },
+  "effects/island/frame-lighting.mjs": {
+    "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308",
+    "bytes": 2279
+  },
+  "effects/island/indices.u32": {
+    "sha256": "a0a1c6a2fd3c8cfc0a807a5cb9abff78da0a757072c2496d3955c7cea7334fd7",
+    "bytes": 157476
+  },
+  "effects/island/new-water.mjs": {
+    "sha256": "788fd0f5981b10451f57625b58d7f346695cfaf8160e64c095084406ce445ec2",
+    "bytes": 803
+  },
+  "effects/island/new_indices.u32": {
+    "sha256": "9b6ad3ac51ff0b1d894dbf1c76a532eaa1a4ddb182f29884b512e57a44e85432",
+    "bytes": 346608
+  },
+  "effects/island/new_water120.rgb": {
+    "sha256": "a24e9b010740e2424d6f1f472926a46ef64a271f8781d88216365d06155ddce9",
+    "bytes": 31194720
+  },
+  "effects/island/open_generated.png": {
+    "sha256": "58ea6e6db1aeb7f911ae165a340ac0171a1f591bbe20636309c55bb10d89660d",
+    "bytes": 1505938
+  },
+  "effects/island/scene-lighting.mjs": {
+    "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6",
+    "bytes": 1433
+  },
+  "effects/island/water-adapter.mjs": {
+    "sha256": "b1616547b49a77171f2ffa46e95fa2925314de782e81f49ca159c26bea5e7d57",
+    "bytes": 1758
+  },
+  "effects/island/water-contract.json": {
+    "sha256": "e3f6698ec58fad7f28573fb49990b83d56714a6e356a31192444735d423da663",
+    "bytes": 1260
+  },
+  "effects/island/water.rgb": {
+    "sha256": "0acf7b8c093bd4cf28c2d6a4d9af905e3de482c043cf40f7825afa2ba33ef7f8",
+    "bytes": 14172840
+  },
+  "elite_four_actual_npc_source_audit/drive_read_pass/player_facing_followup/PLAYER_MALE_FIELD12_COMMON256.png": {
+    "sha256": "36238353e9a4f943296a289a2c45639ef283e9056a72a6d37a39dc237b860390",
+    "bytes": 472620
+  },
+  "nojasan_binding_audit/source/source/YEJI-approved-atlas.png": {
+    "sha256": "c0a373f7463b043147d6442b6af266a8f512a71c8a0954fb66cc97886988b9dd",
+    "bytes": 498165
+  },
+  "post7_open_layers/frozen_selected/POST7_Hidden11_12_OpenLayers_Selected_SourceQA/candidates/hidden11-open1layer-local-RGBA.png": {
+    "sha256": "870598e9cc99fc16c10871d63c0291c409d32a25328ee4d5fcbfa97d76ba3a06",
+    "bytes": 42499
+  },
+  "post7_open_layers/source/POST-ISLAND-EXPEDITION-native3072x1024-v5.png": {
+    "sha256": "dd9212579f3e90dbc30e6b873d0b76edd15ee9d2663a1267776720bfc200e374",
+    "bytes": 7212257
+  },
+  "post7_open_layers/water_inventory_followup/other5_source/POST-HUB-native3072x1024-v3.png": {
+    "sha256": "29e0513d5d7ed29ba72badb58a4082a0e594853a07ae8e197a6e33e01d6e53f8",
+    "bytes": 6063343
+  },
+  "post_two_scene_native_r2/CONFIG.json": {
+    "sha256": "e5259279550cdb26b07bff6da368fe46c7ceaad166a2823dc206fcac6422ecf1",
+    "bytes": 23348
+  },
+  "post_two_scene_native_r2/NATIVE49_INPUTS.json": {
+    "sha256": "efd4a2be1a5f968e5746a14dd416ab52da3a506d27e398289a364e0606ad9a3e",
+    "bytes": 52273
+  },
+  "post_two_scene_native_r2/native-state.mjs": {
+    "sha256": "dbbb820177a57bf79397d24bcb89f45b82985aa1c960f612f2d7a1789f9da4fd",
+    "bytes": 2606
+  },
+  "selected-environment.mjs": {
+    "sha256": "1704c134ca169c8282a658d92df84ea3dfc162062e3e3867c08fc9d999b9dd5e",
+    "bytes": 9523
+  }
+}

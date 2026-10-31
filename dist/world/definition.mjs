@@ -1,3 +1,5 @@
+import{applyCargoRescueLocation}from'./cargo-rescue-location.mjs';
+import {applyYejiLocationFix} from './yeji-location.mjs';
 import {applyGymPolish} from './gym-polish.mjs';
 import {applyApprovedPlacement} from './approved-placement.mjs';
 import {applyStagedTrainerPlacement,STAGED_TRAINER_PLACEMENT} from './staged-trainer-placement.mjs';
@@ -65,6 +67,8 @@ export function createWorldDefinition(adapter){
   })):null;
   // Restore the already approved latest-only hidden-route two-cell repair from published QA.
   if(staged&&adapter.releaseProvenance?.policy==='LATEST_STORY_RETAINED_COMBAT_V1')for(const id of ['S4_GOHYEON_GREENBELT','S9_JANGSEUNGPO_RETURN_ROUTE']){const m=maps[areaMapId(id)];if(m.tiles[3][22]!==T.BLOCKED)throw Error('Hidden route repair baseline drift');m.tiles[3][22]=T.GROUND}
+  if(staged&&adapter.releaseProvenance?.policy==='LATEST_STORY_RETAINED_COMBAT_V1')applyYejiLocationFix({maps,points,eventBindings,trainerBindings});
+  if(adapter.releaseProvenance?.policy==='LATEST_STORY_RETAINED_COMBAT_V1')applyCargoRescueLocation({maps,points,eventBindings});
   return deepFreeze({polishCollisions,placementCollisions,trainerPlacementCollisions:stagedPlacement?.collisions??[],trainerPlacementVersion:staged?STAGED_TRAINER_PLACEMENT:null,trainerPlacements:stagedPlacement?.placements??null,roamingNodes,roamingNodeApproval:staged?'APPROVED':'UNAPPROVED_DEV_TEST_ONLY',placementPolicy:placement,version:WORLD_VERSION,grid:GRID,walkMs:WALK_MS,maps,points,trainerBindings,eventBindings,areaBindings,fishingBindings,initialMapId:hubId('PROLOGUE'),initialPosition:cellPosition(hubId('PROLOGUE'),4,12),initialHub:'CENTER:PROLOGUE',stageSequence:story.sequence,geojeGrantPolicy:placement?.id??GEOJE_GRANT_POLICY,geographyStatus:'SCHEMATIC_RELATIVE_POSITION_NOT_GIS',postBlockers:[...adapter.harinPostRematch?.active?[]:['POST_HARIN_PARTY_NOT_IN_CANONICAL_SOURCE'],...staged||adapter.enhancedLeague?.active?[]:['PREVIEW_APPROVAL_AND_ENHANCED_LEAGUE_GATE_NOT_ACTIVATED']]});
 }
 export function pointDistance(position,p){const c=positionCell(position);return position.scene===p.mapId?Math.abs(c.x-p.x)+Math.abs(c.y-p.y):Infinity}

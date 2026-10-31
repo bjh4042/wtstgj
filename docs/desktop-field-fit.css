@@ -1,2 +1,0 @@
-/* Fit only scene pixels. Typography, button targets and the outer UI stay natural. */
-#canonical-world.desktop-field-fit canvas[data-w=field]{width:var(--desktop-field-width);height:var(--desktop-field-height);max-width:100%;max-height:none;aspect-ratio:16/9;object-fit:contain;display:block;margin-inline:auto;box-sizing:content-box;border:0;outline:1px solid #588A9B;box-shadow:none}

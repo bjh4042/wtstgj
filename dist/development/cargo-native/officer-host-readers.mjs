@@ -1,0 +1,8 @@
+import{verifyEightSceneMaterial}from'../../world/cargo-eight-scene-geometry.mjs';
+import{cargoOfficerRow,inCargoOfficerFront}from'./officer-registration.mjs';
+const readers=new WeakSet();
+export function createCargoOfficerHostReaders({getConsumer,getMaterial,getWorld,getConsumerWorld,getSessionEpoch,getSignal,registry}){
+ for(const f of[getConsumer,getMaterial,getWorld,getConsumerWorld,getSessionEpoch,getSignal])if(typeof f!=='function')throw Error('OFFICER_PRIVATE_OWNER_REQUIRED');
+ const out=Object.freeze({readNative(id){const r=cargoOfficerRow(id),w=getWorld(),c=getConsumer(),signal=getSignal();if(!r||!w||w!==getConsumerWorld()||!c||!(signal instanceof AbortSignal)||signal.aborted)return null;const s=c.snapshot(),n=s.native,epoch=getSessionEpoch(),spec=registry.scenes[n?.sceneId],m=getMaterial(n?.sceneId);if(s.active!==true||s.hidden!==false||s.fixturePending!==false||s.uiMode!==null||n?.active!==true||n.pending||n.clock?.paused!==false||n.mapId!=='world:ship:S9'||!Number.isSafeInteger(epoch)||epoch<0||!spec||!verifyEightSceneMaterial(spec,m)||!m.isSafeFoot(n.foot)||!inCargoOfficerFront(id,n.sceneId,n.foot,n.facing))return null;if(!r.support.some(p=>p.safeSHA===m.footMaskSHA256))return null;if(r.trainerId==='BLACKNET_HWIGYEONG_FINAL'&&s.doors.S9_BOSS_PASSWORD_GATE?.phase!=='open')return null;return{version:1,pointId:id,sceneId:n.sceneId,mapId:'world:ship:S9',bodyRevision:r.revision,revision:m.geometryRevision,imageSHA:m.artSHA256,maskSHA:m.footMaskSHA256,foot:[...n.foot],facing:n.facing,sessionEpoch:epoch}},readRoomContext(){const c=getConsumer();return c?structuredClone(c.snapshot().rooms):null},signal(){return getSignal()}});readers.add(out);return out;
+}
+export const isCargoOfficerHostReaders=r=>readers.has(r);

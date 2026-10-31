@@ -1,0 +1,11 @@
+import{EXTRA_GAMEPLAY}from'./fixed-gameplay-registration.mjs';
+// Selected original interactions only. No mask/pose/clock mutation and no gym warp.
+export function attachAdditionalGameplay(scene,{getWorld}){
+ const rows=EXTRA_GAMEPLAY.filter(r=>r.mapId===scene.mapId);if(!rows.length)return scene;
+ const read=scene.readNative.bind(scene),inspect=scene.inspect.bind(scene),hint=scene.proximityHint?.bind(scene),dispose=scene.dispose.bind(scene),isHub=scene.mapId==='world:hub:S4',life=isHub?new AbortController():null;
+ if(isHub){scene.getGameplaySignal=()=>life.signal;scene.readGameplayNative=()=>{const n=read();return n?{...n,gameplayRevision:'S4_SELECTED_ADDITIONAL_INTERACTIONS_R1'}:null};scene.dispose=()=>{life.abort();dispose()}}
+ const point=()=>{const n=read();return n&&rows.find(r=>n.facing===r.requiredFacing&&r.rows.some(([y,a,b])=>n.foot[1]===y&&n.foot[0]>=a&&n.foot[0]<b))};
+ scene.proximityHint=()=>{const p=point();return p?(p.kind==='event'?'기록관의 원래 사건 확인 · 조사':'수달 연구 관찰 · 조사'):hint?.()};
+ scene.inspect=async execution=>{const p=point();if(!p)return inspect(execution);const w=getWorld();if(!w||scene.world!==w||scene.disposed||scene.locked||w.busy||w.inputLocked)throw Error('INPUT_LOCKED');let result;try{result=await w.interactNativeS4Gameplay(p.pointId,{type:p.kind})}catch(error){const notices={'Storage full; acquisition not committed':'동료와 보관함이 가득 차 연구 동료를 등록할 수 없습니다. 공간을 비운 뒤 다시 조사해 주세요.','Base registration proof required for this existing chain':'이미 보유한 진화 계열의 기본 도감 등록을 먼저 확인해 주세요.',S4_GAMEPLAY_UNAVAILABLE:'현재 이 사건을 실행할 수 없습니다.',AREA_STAGE_LOCKED:'아직 이 지역의 진행 조건을 충족하지 못했습니다.',ACQUISITION_STAGE_LOCKED:'아직 이 관찰의 진행 조건을 충족하지 못했습니다.',EVENT_ORDER_LOCKED:'먼저 원래 선행 사건을 완료해 주세요.'};if(typeof error?.message==='string'&&Object.hasOwn(notices,error.message)){const shown=new Error(notices[error.message],{cause:error});shown.code=error.message;throw shown}throw error}
+ const gameplayNotice=p.kind==='acquisition'?(result?.alreadyCompleted===true?'이미 수달 연구 관찰을 완료했습니다. 도감과 동료·보관함을 확인해 주세요.':result?.completed===true?'수달 연구 관찰을 완료했습니다. 도감과 동료·보관함에 반영된 결과를 확인해 주세요.':'수달 연구 관찰이 완료되지 않았습니다.'):(result?.alreadyCompleted===true?'이미 기록관의 사건을 확인했습니다.':result?.completed===true?'기록관의 사건 확인을 완료했습니다.':'기록관의 사건이 완료되지 않았습니다.');return{...result,gameplayHandled:true,gameplayNotice};};return scene;
+}

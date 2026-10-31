@@ -1,0 +1,2 @@
+export const S4_RECOVERY_SELECTION_SHA='7f4ff6061ecb77a1473ed126d40703591430a42c7a872a985d8cb0f91a74653d';
+export async function verifyS4RecoverySelection(bytes){if(!(bytes instanceof Uint8Array))throw Error('RECOVERY_SELECTION_BYTES_REQUIRED');const owned=new Uint8Array(bytes),hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',owned))].map(x=>x.toString(16).padStart(2,'0')).join('');if(hash!==S4_RECOVERY_SELECTION_SHA)throw Error('RECOVERY_ROOT_SELECTION_MISMATCH');return true}

@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+test('audited shell/HUD static imports exist in dev root byte-identical to pinned published originals',()=>{for(const path of ['assets/mobile-viewport-CKi2spbv.js','assets/ui-preview-WMU7-lXW.css','nearby-safe-band.mjs','nearby-safe-band-ordinary.css'])assert.deepEqual(readFileSync(new URL('../dist/'+path,import.meta.url)),readFileSync(new URL('../docs/'+path,import.meta.url)),path)});

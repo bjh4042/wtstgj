@@ -1,0 +1,342 @@
+{
+  "status": "ROOT_DIRECTION_SELECTED_EXACT_LAYER_AND_RAILING_AWAIT_QA",
+  "revision": "CARGO_ENGINE_CENTRAL_STAIRS_UPPER_R1",
+  "sceneId": "ship_engine",
+  "imageSHA": "b0116424f5735c730092d7da7948cdfda27a2c480caa265a45ce9638952d131e",
+  "groundRegistryRevision": "CARGO_SEVEN_SCENE_SELECTED_GROUNDFLOORS_R2_BRIDGE_R4_20261029",
+  "rawPolygons": {
+    "upper_landing": [
+      [
+        669,
+        110
+      ],
+      [
+        866,
+        110
+      ],
+      [
+        866,
+        137
+      ],
+      [
+        845,
+        161
+      ],
+      [
+        692,
+        161
+      ],
+      [
+        669,
+        137
+      ]
+    ],
+    "central_visible_stairs": [
+      [
+        725,
+        159
+      ],
+      [
+        814,
+        159
+      ],
+      [
+        814,
+        260
+      ],
+      [
+        725,
+        260
+      ]
+    ]
+  },
+  "footprint": [
+    49,
+    37
+  ],
+  "erosionCount": 1,
+  "layerRule": {
+    "upper": "upperSafe && footY<230",
+    "ground": "original groundSafe (including overlap)",
+    "transition": "same coordinate, per-pixel walk; ground→upper at y230→229 inside overlap x749..790, return at y230",
+    "noSnap": true,
+    "noNewWarp": true,
+    "noUnderPlatformPath": true
+  },
+  "raw": {
+    "path": "UPPER_RAW.png",
+    "sha256": "39e94f516cae457868bff29341d82d9d43cdffc78c7355afd44c24188a833aef"
+  },
+  "safe": {
+    "path": "UPPER_SAFE49x37.png",
+    "sha256": "5e224f32fe7a9bf5e6a022feeb29943cc7ba9f3f2269b57fdba0c7a56b55c447"
+  },
+  "states": [
+    {
+      "state": "doors_00",
+      "groundMaskSHA": "36127140a03d6d8a8320c04e0f67fd1b8d90e4530d371241ee98b0be2c34acd0",
+      "overlapCount": 546,
+      "overlapBoundsHalfOpen": [
+        749,
+        230,
+        791,
+        243
+      ],
+      "upperSafeCount": 6074,
+      "newSupportedCount": 5528,
+      "directNewPorts": 0
+    },
+    {
+      "state": "doors_01",
+      "groundMaskSHA": "5f5e497168f1f973eb8c4ad9c1e9abf3e24cd7d593b6c5a1edf2c7b08d5c9b54",
+      "overlapCount": 546,
+      "overlapBoundsHalfOpen": [
+        749,
+        230,
+        791,
+        243
+      ],
+      "upperSafeCount": 6074,
+      "newSupportedCount": 5528,
+      "directNewPorts": 0
+    },
+    {
+      "state": "doors_10",
+      "groundMaskSHA": "28f1976cc3f78835d368e29ca334dae4752989b8de4ea179e4ee45616162c081",
+      "overlapCount": 546,
+      "overlapBoundsHalfOpen": [
+        749,
+        230,
+        791,
+        243
+      ],
+      "upperSafeCount": 6074,
+      "newSupportedCount": 5528,
+      "directNewPorts": 0
+    },
+    {
+      "state": "doors_11",
+      "groundMaskSHA": "e507429cc7457f5480c019d192f08dc4a404c559cfb4998fc337e20236ce7f3f",
+      "overlapCount": 546,
+      "overlapBoundsHalfOpen": [
+        749,
+        230,
+        791,
+        243
+      ],
+      "upperSafeCount": 6074,
+      "newSupportedCount": 5528,
+      "directNewPorts": 0
+    }
+  ],
+  "railings": {
+    "method": "clip original image pixels on thin authored rail contours after player only if player footY<=164; foreground-only, never floor blocker",
+    "polygons": [
+      [
+        [
+          667,
+          125
+        ],
+        [
+          670,
+          123
+        ],
+        [
+          695,
+          141
+        ],
+        [
+          692,
+          145
+        ]
+      ],
+      [
+        [
+          692,
+          139
+        ],
+        [
+          728,
+          139
+        ],
+        [
+          728,
+          143
+        ],
+        [
+          692,
+          143
+        ]
+      ],
+      [
+        [
+          690,
+          140
+        ],
+        [
+          695,
+          140
+        ],
+        [
+          695,
+          165
+        ],
+        [
+          690,
+          165
+        ]
+      ],
+      [
+        [
+          724,
+          140
+        ],
+        [
+          728,
+          140
+        ],
+        [
+          728,
+          162
+        ],
+        [
+          724,
+          162
+        ]
+      ],
+      [
+        [
+          692,
+          157
+        ],
+        [
+          727,
+          157
+        ],
+        [
+          727,
+          163
+        ],
+        [
+          692,
+          163
+        ]
+      ],
+      [
+        [
+          869,
+          125
+        ],
+        [
+          866,
+          123
+        ],
+        [
+          841,
+          141
+        ],
+        [
+          844,
+          145
+        ]
+      ],
+      [
+        [
+          844,
+          139
+        ],
+        [
+          808,
+          139
+        ],
+        [
+          808,
+          143
+        ],
+        [
+          844,
+          143
+        ]
+      ],
+      [
+        [
+          846,
+          140
+        ],
+        [
+          841,
+          140
+        ],
+        [
+          841,
+          165
+        ],
+        [
+          846,
+          165
+        ]
+      ],
+      [
+        [
+          812,
+          140
+        ],
+        [
+          808,
+          140
+        ],
+        [
+          808,
+          162
+        ],
+        [
+          812,
+          162
+        ]
+      ],
+      [
+        [
+          844,
+          157
+        ],
+        [
+          809,
+          157
+        ],
+        [
+          809,
+          163
+        ],
+        [
+          844,
+          163
+        ]
+      ]
+    ],
+    "status": "NEW_OCCLUSION_PROPOSAL_AWAIT_VISUAL_QA"
+  },
+  "sideStairs": {
+    "left": [
+      616,
+      110,
+      670,
+      212
+    ],
+    "right": [
+      868,
+      110,
+      922,
+      212
+    ],
+    "playable": false,
+    "reason": "49x37 cannot turn onto landing in conservative visible tread geometry; no shrink/no fabricated connector",
+    "notice": "측면 계단 점검 중 — 중앙 계단을 이용해 주세요.",
+    "barrierArt": "NEEDED_NOT_SELECTED; source-approved O_FENCE_WOOD is garden fence, not silently reused as ship safety barrier"
+  },
+  "events": {
+    "upperTerminal": null,
+    "bridgeBossMoved": false,
+    "newMandatoryCondition": false,
+    "newReward": false
+  }
+}

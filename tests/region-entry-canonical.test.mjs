@@ -1,3 +1,4 @@
+import {allowCanonicalCommand,nativeFrameDelta} from '../dist/world/native-runtime-policy.mjs';
 import {popupTimers} from './helpers/region-popup-timers.mjs';
 import {createRegionEntryPopup} from '../dist/ui/region-entry-popup.mjs';
 import {installNearbySafeBand} from '../docs/nearby-safe-band.mjs';
@@ -65,7 +66,7 @@ async function fixture({entry=source,runtime=null,paintFailure=false,ordinary=fa
  const environment=createEnvironmentService(createMockEnvironment());await environment.refresh();const stop=environment.stop;
  environment.stop=()=>{counts.environmentStops++;stop()};
  const timers=popupTimers();
- const bindings={installOrdinaryMenu:options=>{
+ const bindings={allowCanonicalCommand,nativeFrameDelta,installOrdinaryMenu:options=>{
    // Linkedom has no capture-before-target ordering. Record the application's
    // real root/document capture functions, then run them before modeled native
    // pointer focus and target click. No alternate application guard is injected.

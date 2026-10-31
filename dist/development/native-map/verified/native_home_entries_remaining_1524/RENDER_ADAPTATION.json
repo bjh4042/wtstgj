@@ -1,0 +1,19 @@
+{
+  "original": "jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/lighting_all_candidate_r3/consumer/page.mjs",
+  "sha256": "9e7e733902d59f473cead340be7e06f805a31a11ce14d29cf45a49dcd66b1b65",
+  "generated": "jangmok-render.mjs",
+  "changes": [
+    "Parameter binding instead of DOM globals",
+    "DOM/window status assignment changed to return value",
+    "Optional actorOFF skips actor/depth and uses empty actor alpha for exact environment fixtures",
+    "Optional lights switch skips selected screen stage only",
+    "ImageData constructor via context.createImageData for offline same render portability"
+  ],
+  "unchanged": [
+    "original water and all4boat/sign depth order",
+    "original alpha mask policy",
+    "original ambient and screen math",
+    "original phase/camera/source proof arguments"
+  ],
+  "sourceModified": false
+}

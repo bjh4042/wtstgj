@@ -1,0 +1,1 @@
+export const PINS={"assets/depth-alpha.u8": {"bytes": 16000, "sha256": "3fa6135299deb621d0a347a089efb33ff54caa81480ad887624ece28cc654666"}, "assets/light.f32": {"bytes": 176544, "sha256": "c48041591eb2823cd6555981a1600fd5a423463f4f2f5d9ed00d248c5e39583d"}, "assets/light.u32": {"bytes": 58848, "sha256": "ae390cc3be7937464351b4e5dec405a235c5e031b4fad8c8ddeb77085bc829bc"}};

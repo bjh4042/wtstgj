@@ -1,0 +1,470 @@
+{
+  "status": "NEW_AUTHORED_SINGLE_NATIVE_HOUSE_PORTAL_WITH_SELECTED_ENVIRONMENT_CANDIDATE",
+  "buildingId": "house_3",
+  "sceneIds": {
+    "exterior": "dev:native:gohyeon-v3:house3-exterior",
+    "1F": "dev:native:gohyeon-house3:1F",
+    "2F": "dev:native:gohyeon-house3:2F"
+  },
+  "canonicalMapBinding": null,
+  "canonicalWarpIds": null,
+  "worldConnected": false,
+  "saveConnected": false,
+  "sources": {
+    "exterior:OPEN": {
+      "path": "../gohyeon_outdoor_lighting_r1/upstream/Gohyeon_Expanded4294_River_CalmRefraction_Selected_R1/consumer/OPEN.png",
+      "sha256": "038580aac4dba41ce4c0712a76bb8977766b5e11b2a0b8507070104ec4b6eafd"
+    },
+    "exterior:CLOSED": {
+      "path": "../gohyeon_outdoor_lighting_r1/upstream/Gohyeon_Expanded4294_River_CalmRefraction_Selected_R1/consumer/CLOSED.png",
+      "sha256": "3db97399291159f05c050578691023efa43204699f603fe7017498157669e8f4"
+    },
+    "1F": {
+      "path": "../home_closeout_lane4/batch_r2/assets/gohyeon3_1F.png",
+      "sha256": "5dd3f9c64ad30ce859f878f4e08a2ce2585eacd856b7bfa66556736f6ab2fbb1"
+    },
+    "2F": {
+      "path": "../home_closeout_lane4/batch_r2/assets/gohyeon3_2F.png",
+      "sha256": "1524b39a62643a048fe271f5da675efc2b31f7b7221c096808a6f537d6e56a3b"
+    }
+  },
+  "floorMasks": {
+    "1F": {
+      "path": "../home_closeout_lane4/batch_r2/assets/gohyeon3_1F.safe.u8",
+      "sha256": "ef2e2cd3c5ffdb11ffdca039b7af0042d96c7e19cc7d059c1161e551a019a487"
+    },
+    "2F": {
+      "path": "../home_closeout_lane4/batch_r2/assets/gohyeon3_2F.safe.u8",
+      "sha256": "aab1f332ce418a602f8ea29334e05dc47c404af182ccbe6540df2389fb92b7f7"
+    }
+  },
+  "actors": {
+    "0": {
+      "path": "../jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor0.png",
+      "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7"
+    },
+    "6": {
+      "path": "../jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor6.png",
+      "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7"
+    },
+    "9": {
+      "path": "../jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor9.png",
+      "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4"
+    },
+    "3": {
+      "path": "../jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/actor3.png",
+      "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163"
+    }
+  },
+  "actor": {
+    "size": [
+      107,
+      107
+    ],
+    "pivot": [
+      53,
+      90
+    ],
+    "visibleHeightApprox": 80,
+    "scale": 1,
+    "posePolicy": "Exact same selected actor static poses0/3/6/9 (down/right/left/up); no new character art and no gait completion claim",
+    "rightEvidence": {
+      "manifest": "jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/MANIFEST.json",
+      "frame": "actor3.png",
+      "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163",
+      "directionCode": "jangmok_runtime_recovery/runtime_tree/jangmok_layout_revision_plan_20261027/combined_all4_candidate_r1/consumer/page.mjs:16 positive dx chooses base3",
+      "sameCharacterOtherPosesExact": true
+    }
+  },
+  "interiorContract": {
+    "path": "../home_closeout_lane4/unpacked/Gohyeon_House3_Compact_Selected_TwoFloor_MapOnly_SourceQA_R1/PROPOSED_REGISTRATION.json",
+    "sha256": "2008c6b37fe5297a238331b113ec58eb466e45bf822f0103fd082d29f001a2a2"
+  },
+  "interiorLogic": {
+    "path": "../home_closeout_lane4/unpacked/Gohyeon_House3_Compact_Selected_TwoFloor_MapOnly_SourceQA_R1/logic.mjs",
+    "sha256": "003a2b09f02f7033856c852b0fb6aec4726a383ac58c651e8e811dc7d178dbdb"
+  },
+  "exteriorContract": {
+    "path": "../gohyeon_outdoor_lighting_r1/upstream/Gohyeon_V3_StrictNativeHost_DevSourceQA/CONTRACT.json",
+    "sha256": "14f58bcfbf4a235678f9a7c883511bcba58d029d62521ccd13276a027aae7958"
+  },
+  "exteriorSourceSize": [
+    4294,
+    2400
+  ],
+  "interiorSize": [
+    696,
+    464
+  ],
+  "footprint": [
+    49,
+    37
+  ],
+  "exteriorSupport": "Exact existing GohyeonV3Host.safe; no new corridor/doorway pixels",
+  "exteriorDoor": {
+    "objectAnchor": [
+      757,
+      670
+    ],
+    "readFoot": [
+      757,
+      710
+    ],
+    "arrival": [
+      757,
+      770
+    ],
+    "readFacing": "up",
+    "arrivalFacing": "down",
+    "anchorStatus": "NEW_AUTHORED_ON_SAME_VERIFIED_HOUSE3_SOURCE",
+    "approachRoute": [
+      [
+        757,
+        770
+      ],
+      [
+        757,
+        769
+      ],
+      [
+        757,
+        768
+      ],
+      [
+        757,
+        767
+      ],
+      [
+        757,
+        766
+      ],
+      [
+        757,
+        765
+      ],
+      [
+        757,
+        764
+      ],
+      [
+        757,
+        763
+      ],
+      [
+        757,
+        762
+      ],
+      [
+        757,
+        761
+      ],
+      [
+        757,
+        760
+      ],
+      [
+        757,
+        759
+      ],
+      [
+        757,
+        758
+      ],
+      [
+        757,
+        757
+      ],
+      [
+        757,
+        756
+      ],
+      [
+        757,
+        755
+      ],
+      [
+        757,
+        754
+      ],
+      [
+        757,
+        753
+      ],
+      [
+        757,
+        752
+      ],
+      [
+        757,
+        751
+      ],
+      [
+        757,
+        750
+      ],
+      [
+        757,
+        749
+      ],
+      [
+        757,
+        748
+      ],
+      [
+        757,
+        747
+      ],
+      [
+        757,
+        746
+      ],
+      [
+        757,
+        745
+      ],
+      [
+        757,
+        744
+      ],
+      [
+        757,
+        743
+      ],
+      [
+        757,
+        742
+      ],
+      [
+        757,
+        741
+      ],
+      [
+        757,
+        740
+      ],
+      [
+        757,
+        739
+      ],
+      [
+        757,
+        738
+      ],
+      [
+        757,
+        737
+      ],
+      [
+        757,
+        736
+      ],
+      [
+        757,
+        735
+      ],
+      [
+        757,
+        734
+      ],
+      [
+        757,
+        733
+      ],
+      [
+        757,
+        732
+      ],
+      [
+        757,
+        731
+      ],
+      [
+        757,
+        730
+      ],
+      [
+        757,
+        729
+      ],
+      [
+        757,
+        728
+      ],
+      [
+        757,
+        727
+      ],
+      [
+        757,
+        726
+      ],
+      [
+        757,
+        725
+      ],
+      [
+        757,
+        724
+      ],
+      [
+        757,
+        723
+      ],
+      [
+        757,
+        722
+      ],
+      [
+        757,
+        721
+      ],
+      [
+        757,
+        720
+      ],
+      [
+        757,
+        719
+      ],
+      [
+        757,
+        718
+      ],
+      [
+        757,
+        717
+      ],
+      [
+        757,
+        716
+      ],
+      [
+        757,
+        715
+      ],
+      [
+        757,
+        714
+      ],
+      [
+        757,
+        713
+      ],
+      [
+        757,
+        712
+      ],
+      [
+        757,
+        711
+      ],
+      [
+        757,
+        710
+      ]
+    ],
+    "defaultAccessState": "CLOSED",
+    "allowedAccessStates": [
+      "OPEN",
+      "CLOSED",
+      "BLOCKED"
+    ],
+    "accessMeaning": "Independent development door permission, not original town OPEN/CLOSED (eastgate). Door art stays unchanged; explicit interaction only, never walk through facade."
+  },
+  "interiorDoor": {
+    "floor": "1F",
+    "arrival": [
+      270,
+      244
+    ],
+    "returnFoot": [
+      242,
+      351
+    ],
+    "returnFacing": "down",
+    "arrivalFacing": "up",
+    "geometry": "Exact selected1Farrival/exitReadFoot reused; facing requirement is new development interaction rule"
+  },
+  "stairs": "Exact existing two-floor logic/points/masks; no new stair or balcony exit",
+  "interactionPolicy": "Explicit action edge only; after every transfer require action release and destination trigger clearance before another transfer",
+  "closedPolicy": "CLOSED/BLOCKED rejects exterior entry and indoor exit; reset/cancel-preview remains available for test recovery",
+  "scopedEvidence": {
+    "exteriorCropLTRB": [
+      620,
+      160,
+      1080,
+      850
+    ],
+    "doorCropLTRB": [
+      690,
+      590,
+      830,
+      830
+    ],
+    "visual": "Original source pixels inspected: flat roof,2storey redbrick/cream facade, south-facing left door, upper balcony. Selected interior1Fleft entry and2Fbalcony belong to house_3 in prior building-ID handoff.",
+    "identityChain": [
+      "Selected art handoff homesAju[id=gohyeon_house3].buildingId=house_3",
+      "Selected outdoor manifest house3_*window/sconce coordinate groups",
+      "Strict native host home3 apron[717,670,797,810]",
+      "Current selected original SHA matched for both town states"
+    ],
+    "notClaimed": [
+      "recovered historical portal",
+      "main-game installation",
+      "canonical coordinate conversion",
+      "physical mobile QA",
+      "whole-town traversal certification"
+    ]
+  },
+  "environmentAssets": {
+    "lightManifest": {
+      "path": "../gohyeon_outdoor_lighting_r2/MANIFEST.json",
+      "sha256": "d2e3620f2f439ba8561a65f2379689fbfd77dc1857c2a264b3620adc1c200554"
+    },
+    "lightIds": {
+      "path": "../gohyeon_outdoor_lighting_r2/indices.u32",
+      "sha256": "60d5397b4f74657c5503c61b56b97b36d663107210f178a4111ffde88ce68f99"
+    },
+    "lightTransmission": {
+      "path": "../gohyeon_outdoor_lighting_r2/transmission.f64",
+      "sha256": "bf97730f3e13832403e4db45664f10f58ea9a515108b7856f76f9d64a1baa919"
+    },
+    "waterManifest": {
+      "path": "../gohyeon_outdoor_lighting_r1/upstream/Gohyeon_Expanded4294_River_CalmRefraction_Selected_R1/consumer/MANIFEST.json",
+      "sha256": "1f85d83320cfbf7ed0e8c8685f2443404e1212a725716c1a983dd866d919618d"
+    },
+    "waterIds": {
+      "path": "../gohyeon_outdoor_lighting_r1/upstream/Gohyeon_Expanded4294_River_CalmRefraction_Selected_R1/consumer/indices.u32",
+      "sha256": "5a9fad27a97efcd478c4a19b816897efc757748080d2b8e4839eb11ae482ac7e"
+    },
+    "waterRGB": {
+      "path": "../gohyeon_outdoor_lighting_r1/upstream/Gohyeon_Expanded4294_River_CalmRefraction_Selected_R1/consumer/refraction48.rgb",
+      "sha256": "79f84b80d891e4f3e9878906a300d9407c22fb72ad04ee862eb68e5016e248fc"
+    },
+    "dependencyPins": {
+      "path": "../gohyeon_outdoor_lighting_r2/DEPENDENCY_PINS.json",
+      "sha256": "b1d1e10f03aaca9b1f484c9ba8177f2d47a8afe58d6b711cc960a53ba05a8d6a"
+    }
+  },
+  "environmentPolicy": {
+    "consumer": "gohyeon_outdoor_lighting_r2/compose.mjs unchanged",
+    "clockOwnerCount": 1,
+    "clockContinuesWhileInside": true,
+    "clockPausesOnHiddenOrUserPause": true,
+    "optionsPreservedAcrossPortalAndStairs": true,
+    "interiorEnvironmentNotRetuned": true,
+    "wrongSourceFailsClosed": true,
+    "actorOriginalFileBytesUnchanged": true,
+    "actorAmbientApplicationsPerVisibleFrame": 1,
+    "actorLocalLightModelAuthored": false,
+    "baked2DLightOcclusion": "NEW_COMPOSITION_POLICY: block all baked2D light writes wherever exact actor alpha>0, including antialias edges",
+    "renderOrder": [
+      "original source",
+      "original refraction",
+      "actor",
+      "original ambient once",
+      "original baked light, actor alpha occluded",
+      "optional debug marks"
+    ]
+  }
+}

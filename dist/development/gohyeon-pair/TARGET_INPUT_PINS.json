@@ -1,0 +1,112 @@
+{
+  "greenManifest": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/MANIFEST.json",
+    "sha256": "d064d258f4f07be13fa5781fee9038c50c95912ec2f53d744f8789ca77e8bc1a",
+    "bytes": 3857
+  },
+  "greenSelection": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/ROOT_SELECTION.json",
+    "sha256": "c7cc7cf81a97e45b2a4044e66858073b2d703eecb01a3dd3788989e34a8f6ad0",
+    "bytes": 603
+  },
+  "greenImage": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/source.png",
+    "sha256": "1d2542e68a36b9aed9fe9a0ddfed917f401abac580d89fb8fcbbd4a470c9dc77",
+    "bytes": 3909638
+  },
+  "greenWaterIds": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/water.u32",
+    "sha256": "01fe493a89047e97a3b44985fca89051059bb261b94e3f3b5fd9c6008eda3e37",
+    "bytes": 101964
+  },
+  "greenWaterRGB": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/water48.rgb",
+    "sha256": "34646d519e0b04d876cf36b0e96f1e18606e3def7530a8b0fcae40bf9a7bb867",
+    "bytes": 3670704
+  },
+  "greenLeafIds": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/leaf.u32",
+    "sha256": "698a840ea3c590c7d6f6033a1b699ceb9f94d71cff381ea13f9b1dc5e33a0097",
+    "bytes": 87556
+  },
+  "greenLeafRGB": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/leaf64.rgb",
+    "sha256": "ef95c2d412aed9c1392f54159f95788fda325ccb13c9e0a2842c6e63dbf51b5e",
+    "bytes": 4202688
+  },
+  "greenLightIds": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/light.u32",
+    "sha256": "6ceb79ad0f0265916c122cf9a6e56c9fe799ebd9e21263c44b7c3701e912bef4",
+    "bytes": 164512
+  },
+  "greenLightTransmission": {
+    "path": "vendor/s4_target_inputs/GOHYEON_GREENBELT_SELECTED_R2_RECOVERY/gohyeon_greenbelt_effects_r2/light.f64",
+    "sha256": "77cd869f8ae33b703a9de45f98fa86dc707111465beaf5f8b1003e783b58dbad",
+    "bytes": 987072
+  },
+  "parkManifest": {
+    "path": "vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/pow_park_environment_r1/LIGHT_MANIFEST.json",
+    "sha256": "5b9faab1ef2665a261a587328d9922e9f8f27785bea68a1ec8984e7782a846ba",
+    "bytes": 504
+  },
+  "parkSelection": {
+    "path": "vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/pow_park_environment_handoff_r1/DELIVERY_METADATA.json",
+    "sha256": "c90ff37b996fd0571adbdf761690374d4d11afd95864ed9e8e879e0e9956284f",
+    "bytes": 793
+  },
+  "parkImage": {
+    "path": "vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/pow_park_environment_r1/heritage-edge-v2.1-visible-boundaries-candidate.png",
+    "sha256": "f3d270e23262cde19d56f88b3dffa7330a25e11140bffbf2bcd8345ab87f36d8",
+    "bytes": 4943215
+  },
+  "parkLightIds": {
+    "path": "vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/pow_park_environment_r1/light_indices.u32",
+    "sha256": "8e7ff6dc4825bd8d5a6565d7499188c30c701a203936697cb25d43f382aea02d",
+    "bytes": 279204
+  },
+  "parkLightTransmission": {
+    "path": "vendor/s4_target_inputs/POW_Park_VisibleGardenBoundaries_Lighting_Daynight_R1_Recovery/pow_park_environment_r1/light_transmission.f64",
+    "sha256": "1b1ae0dcebcaf4fbf7c192995203b1906631a6899a49bf62fc454bb53652ce45",
+    "bytes": 1675224
+  },
+  "greenMask": {
+    "path": "GREENBELT.safe.u8",
+    "sha256": "d0990fca19a63e687b623ca357897b189c7a91d4b619bbb2ea8d46f2ee2ad512",
+    "bytes": 1572864
+  },
+  "parkMask": {
+    "path": "PARK.safe.u8",
+    "sha256": "8b8f2f9ff75400aecba9fd4ed0d1ff6a3898da74ed12195688db33fde8e7f922",
+    "bytes": 1572864
+  },
+  "otherPortsSelection": {
+    "path": "port_fronts_r2/ROOT_SELECTION.json",
+    "sha256": "c52123a3085a6a0dcfd5534e65e45083b6ba0fe8d130f887d2df99b9b9a68adf",
+    "bytes": 968
+  },
+  "otherPortsProposal": {
+    "path": "port_fronts_r2/PROPOSAL.json",
+    "sha256": "de889e509f834d1dcbf552b5bc3c4308e932fe7ea54d5fa6010650cf4b62728e",
+    "bytes": 31755
+  },
+  "hubOpenMask": {
+    "path": "green_local_proposal/OPEN.safe.u8",
+    "sha256": "b2f15b237007f2a0a28fa50009db69dcabbd6b0d9f22031bb00b058b1bba5da2",
+    "bytes": 10305600
+  },
+  "hubClosedMask": {
+    "path": "green_local_proposal/CLOSED.safe.u8",
+    "sha256": "98d5ece9a02ae8e79aba916be7d5e81a5ee2770cca3b9ead38375d7b1856c21a",
+    "bytes": 10305600
+  },
+  "hubFloorSelection": {
+    "path": "green_local_proposal/ROOT_SELECTION.json",
+    "sha256": "4c1c085e5ee3620550eb06c045c5a070c6509f37994ba12c2d5207f4ce088995",
+    "bytes": 1464
+  },
+  "greenFrontProposal": {
+    "path": "green_local_proposal/front_r2/PROPOSAL.json",
+    "sha256": "4150926b4f773d4b68a7b28fdbbf129c026960b9a6cbfa74987a30b01cb3412b",
+    "bytes": 26345
+  }
+}

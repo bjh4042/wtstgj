@@ -1,0 +1,18 @@
+{
+  "approved-animation/scene.mjs": "fabe0c14dc83f173b79affae8457624e328d602a15b07244a3bd282af418c59d",
+  "approved-animation/healing.mjs": "e7be517324065be5526a62075a72174fe8ea297754012c59fa6b8068d3772eb7",
+  "approved-animation/layout.json": "a328ebc230f2b27a3e92c1895d0a2354bd710728f0bc8f92da7281760662bff6",
+  "approved-animation/assets/original.png": "b47b1d901d2c3c2cd46b48c3718ff64ab3030459f17ddc05361bd7892debe8be",
+  "approved-animation/assets/floor.u8": "bfc4c618f4728cdb2492a13ecc9dedd758da13798c0aee0f37e52b8c88c1fef5",
+  "approved-animation/assets/previous_selected_room.png": "8cb77b8617d7567a39341de5d807841e0589cff5106c7bcd8341c795b7036885",
+  "approved-animation/assets/ecology_ball_yuzu_original.png": "561dfb3ca14656601029172a3c7c02ac4e2cab2fd24faadd5d24866d205c986c",
+  "approved-animation/assets/DOCTOR_FRONT_SOURCE.png": "9c83d49d7bea5709590acfe3e1d45112adfdc4130c20bccece599c2bfb5353e3",
+  "approved-animation/assets/low_leaf_sculpture_foreground.png": "79ad4142b9d148f57ae43eb698baf517fb68a9e245af520baa0e9ee7ef057f0e",
+  "approved-animation/assets/booklet_rack_foreground.png": "0376db305f32039e2f8c5b740cf7e251231bd9c504a5701a3fdec4d1b369c683",
+  "approved-animation/assets/RECOVERY_DEVICE_PROTECTED_MASK.png": "6675a2281c711288cb74818b7912684e968efc6a27c31070b5c162a80711ef6d",
+  "approved-animation/assets/room.png": "40bdabf7481dcb9737dd7bd16244a739637e5292bf1ab52945310f13ea67c3ca",
+  "approved-animation/assets/foreground.png": "176e872ab69fd1787e9c865c91133b98f4ca1f9f51a11abeee7f0fee3c4fce87",
+  "approved-animation/assets/doctor_support.u8": "c10f504256edfe14d8fcdaa34731d5912bcbf2a0e60a1e4af49dbbcc313fa85e",
+  "approved-animation/assets/doctor.png": "ca52728ffc95a7dd6061c82b3805ffdd7a63beb9563a593552cd2bf325e57c7b",
+  "approved-animation/assets/player_floor.u8": "bfc4c618f4728cdb2492a13ecc9dedd758da13798c0aee0f37e52b8c88c1fef5"
+}

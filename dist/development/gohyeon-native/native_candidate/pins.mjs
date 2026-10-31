@@ -1,0 +1,1 @@
+export const PINS_SHA="4a71352a91c3fb6d2427fd636cd900eb9a5b211b3a0360c7c9bdb6cacf08fce0";

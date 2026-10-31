@@ -1,3 +1,4 @@
+import {applyOriginalWalkCounters} from './movement-effects.mjs';
 import {gymBarrierAt,GYM_POLISH_VERSION} from './gym-polish.mjs';
 import {HIDDEN_PLACEMENT_V1} from './hidden-placement-v1.mjs';
 import {claimHiddenGeoje} from './hidden-geoje-ledger.mjs';
@@ -42,8 +43,8 @@ export function syncWorldLocation(s,h){const m=h.world.maps[s.position.scene];s.
 export function applyWorldAction(s,c,r,h){if(!s.world||!h?.world||s.world.version!==h.world.version)throw Error('World host required');const d=h.world,m=d.maps[s.position.scene],from=positionCell(s.position),p=d.points[r.pointId],at=()=>{if(!p||pointDistance(s.position,p)>1)throw Error('해당 위치 가까이에서 조사하세요.')};
  if(s.enhancedLeague?.phase==='active'&&!['face','move'].includes(r.type))throw Error('강화 리그 도전 중에는 이동·파티 정비·다음 대결·중도 포기만 가능합니다.');
  if(r.type==='face'){if(!['up','down','left','right'].includes(r.facing))throw Error('Invalid direction');s.position.facing=r.facing;return}
- if(r.type==='move'){const{x,y,facing}=r;if(!Number.isInteger(x)||!Number.isInteger(y)||Math.abs(x-from.x)+Math.abs(y-from.y)!==1||!['up','down','left','right'].includes(facing)||!h.canOccupy(s,m.id,x,y))throw Error('WORLD_MOVEMENT_BLOCKED');s.position=cellPosition(m.id,x,y,facing);s.world.walkedTiles++;s.world.walkedMsEstimate+=d.walkMs;if(s.economy?.policyId)s.economy.walkedDistance=(s.economy.walkedDistance??0)+GRID;return}
- if(r.type==='warp'){at();const target=d.maps[p.targetMapId];if(p.kind!=='warp'||!target||!worldStageAccess(s,h.story,target.stageId)||!worldGate(s,h.story,p.gate))throw Error('WORLD_GATE_LOCKED');if(d.placementPolicy&&m.kind==='league'&&target.kind!=='league'&&!s.progress.flags.MAIN_STORY_CLEAR&&s.progress.leagueWins.length)throw Error('본편 리그 연전 중에는 외부 시설로 나갈 수 없습니다.');if(!h.canOccupy(s,target.id,...p.target))throw Error('WORLD_WARP_DESTINATION_BLOCKED');s.position=cellPosition(target.id,...p.target);syncWorldLocation(s,h);s.world.warps++;s.world.routeLog.push({from:m.id,to:target.id,warpId:p.id,walkedTiles:s.world.walkedTiles});if(s.world.routeLog.length>128)s.world.routeLog.shift();return}
+ if(r.type==='move'){const{x,y,facing}=r;if(!Number.isInteger(x)||!Number.isInteger(y)||Math.abs(x-from.x)+Math.abs(y-from.y)!==1||!['up','down','left','right'].includes(facing)||!h.canOccupy(s,m.id,x,y))throw Error('WORLD_MOVEMENT_BLOCKED');s.position=cellPosition(m.id,x,y,facing);applyOriginalWalkCounters(s,d);return}
+ if(r.type==='warp'){const native=h.nativeCanWarp?.(s,p);if(native===undefined)at();else if(native!==true)throw Error('NATIVE_SUMMIT_WARP_AUTHORITY_REJECTED');const target=d.maps[p.targetMapId];if(p.kind!=='warp'||!target||!worldStageAccess(s,h.story,target.stageId)||!worldGate(s,h.story,p.gate))throw Error('WORLD_GATE_LOCKED');if(d.placementPolicy&&m.kind==='league'&&target.kind!=='league'&&!s.progress.flags.MAIN_STORY_CLEAR&&s.progress.leagueWins.length)throw Error('본편 리그 연전 중에는 외부 시설로 나갈 수 없습니다.');if(!h.canOccupy(s,target.id,...p.target))throw Error('WORLD_WARP_DESTINATION_BLOCKED');s.position=cellPosition(target.id,...p.target);syncWorldLocation(s,h);s.world.warps++;s.world.routeLog.push({from:m.id,to:target.id,warpId:p.id,walkedTiles:s.world.walkedTiles});if(s.world.routeLog.length>128)s.world.routeLog.shift();return}
  if(r.type==='hidden-geoje'||r.type==='hidden-marker'){
   at();const policy=d.placementPolicy,slot=policy?.slots.find(x=>x.slotId===(p.slotId??p.id));
   if(!slot||!worldStageAccess(s,h.story,slot.stage)||!worldGate(s,h.story,slot.accessGate))throw Error('숨김 지점 접근 조건을 충족하지 않았습니다.');
@@ -53,7 +54,7 @@ export function applyWorldAction(s,c,r,h){if(!s.world||!h?.world||s.world.versio
   claimHiddenGeoje(s,slot);add(s.world.interactions,p.id);return;
  }
  if(r.type==='puzzle'){
-  at();if(p.kind!=='puzzle')throw Error('Not puzzle');
+  const native=h.nativeCanPuzzle?.(s,p);if(native===undefined)at();else if(native!==true||!((p?.mapId==='world:gym:5'&&['puzzle:5:step:1','puzzle:5'].includes(p?.id))||(p?.mapId==='world:gym:4'&&['puzzle:4:step:1','puzzle:4'].includes(p?.id))))throw Error('NATIVE_GYM5_PUZZLE_AUTHORITY_REJECTED');if(p.kind!=='puzzle')throw Error('Not puzzle');
   if(s.world.puzzles.includes(p.puzzleId))return; // Preserve pre-polish completed switches.
   const missing=p.requiresInteractions?.find(id=>!s.world.interactions.includes(id));
   if(missing)throw Error('먼저 '+d.points[missing].label+'을(를) 확인하세요.');
@@ -61,7 +62,7 @@ export function applyWorldAction(s,c,r,h){if(!s.world||!h?.world||s.world.versio
   if(p.completesPuzzle!==false)add(s.world.puzzles,p.puzzleId);
   return;
  }
- if(r.type==='visit-hub'){at();if(p.kind!=='heal')throw Error('Not center');add(s.world.visitedHubs,p.hubId);return}
+ if(r.type==='visit-hub'){const native=h.nativeCanVisitHub?.(s,p);if(native===undefined)at();else if(native!==true)throw Error('NATIVE_HEAL_AUTHORITY_REJECTED');if(p.kind!=='heal')throw Error('Not center');add(s.world.visitedHubs,p.hubId);return}
  if(r.type==='storage-exchange'){
   at();if(p.kind!=='heal')throw Error('보관함은 생태센터에서 이용하세요.');
   const partyIndex=s.party.findIndex(mon=>mon.instanceId===r.partyInstanceId),boxIndex=s.box.findIndex(mon=>mon.instanceId===r.boxInstanceId);

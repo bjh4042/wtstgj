@@ -1,0 +1,18 @@
+import{createS4FixedLocationRegistry}from'../../gohyeon-pair/registered-locations.mjs';
+import{PROLOGUE_SCENE as R,PROLOGUE_PREVIOUS_SCENE as OLD}from'../../prologue-native/scene.mjs';
+const fields=['version','sceneId','mapId','mapRevision','imageSHA','maskSHA','foot','facing','retainedHubState'];
+const data=(o,k)=>{const d=Object.getOwnPropertyDescriptor(o,k);return d?.enumerable&&Object.hasOwn(d,'value')?d:null};
+const sha=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+export async function createS4RecoveryLocationRegistry(masks){
+ const b=masks.prologueMask;if(!(b instanceof Uint8Array))throw Error('PROLOGUE_MASK_REQUIRED');const owned=new Uint8Array(b);const previous=masks.prologuePreviousMask;if(!(previous instanceof Uint8Array))throw Error('PREVIOUS_PROLOGUE_MASK_REQUIRED');const oldOwned=new Uint8Array(previous);
+ // Base factory also owns every supplied mask before its first await.
+ const [base]=await Promise.all([createS4FixedLocationRegistry(masks),(async()=>{if(owned.length!==R.width*R.height||await sha(owned)!==R.maskSHA)throw Error('PROLOGUE_EXACT_MASK_REQUIRED');if(oldOwned.length!==OLD.width*OLD.height||await sha(oldOwned)!==OLD.maskSHA)throw Error('PREVIOUS_PROLOGUE_EXACT_MASK_REQUIRED')})()]);
+ function validate(n){if(!n||Object.getPrototypeOf(n)!==Object.prototype||![fields.length,fields.length+1].includes(Reflect.ownKeys(n).length)||fields.some(k=>!data(n,k)))return 'INVALID_LOCATION_SCHEMA';
+ const keys=Reflect.ownKeys(n);if(keys.some(k=>!fields.includes(k)&&k!=='movement'))return 'INVALID_LOCATION_SCHEMA';if(Object.hasOwn(n,'movement')){const d=data(n,'movement'),v=d?.value;if(!v||Object.getPrototypeOf(v)!==Object.prototype||Reflect.ownKeys(v).length!==2||!data(v,'version')||!data(v,'carry')||v.version!==1||!Number.isInteger(v.carry)||v.carry<0||v.carry>=48)return 'INVALID_MOVEMENT_DTO'}
+ const plain={};for(const k of fields)plain[k]=n[k];if(n.mapId!==R.mapId)return base.validate(plain);
+ const rev=n.mapRevision===OLD.revision?OLD:R;if(n.version!==1||n.sceneId!==rev.sceneId||n.mapRevision!==rev.revision||n.imageSHA!==rev.imageSHA||n.maskSHA!==rev.maskSHA)return 'PROLOGUE_PIN_MISMATCH';
+ if(!['OPEN','CLOSED'].includes(n.retainedHubState))return 'RETAINED_HUB_STATE_REQUIRED';if(!['up','down','left','right'].includes(n.facing))return 'INVALID_FACING';
+ const f=n.foot;if(!Array.isArray(f)||Object.getPrototypeOf(f)!==Array.prototype||f.length!==2||Reflect.ownKeys(f).length!==3||[0,1].some(i=>!data(f,String(i))||!Number.isSafeInteger(data(f,String(i)).value)))return 'INVALID_FOOT';const[x,y]=f;return x>=0&&y>=0&&x<R.width&&y<R.height&&(rev===OLD?oldOwned:owned)[y*R.width+x]===1?null:'UNSUPPORTED_FOOT';}
+ function normalizePrevious(n){const error=validate(n);if(error)throw Error(error);if(n.mapId!==R.mapId||n.mapRevision===R.revision)return{...structuredClone(n),movement:structuredClone(n.movement??{version:1,carry:0})};const[x,y]=n.foot;if(owned[y*R.width+x]!==1)throw Error('PREVIOUS_PROLOGUE_SAME_FOOT_HOLD');return{...structuredClone(n),mapRevision:R.revision,imageSHA:R.imageSHA,maskSHA:R.maskSHA,movement:structuredClone(n.movement??{version:1,carry:0})}}
+ return Object.freeze({validate,normalizePrevious,transferMovement(from,to){const a=normalizePrevious(from),b=normalizePrevious(to);return{...b,movement:{...a.movement}}},describe(id,state){if(id!==R.mapId)return{...base.describe(id,state),movement:{version:1,carry:0}};if(!['OPEN','CLOSED'].includes(state))throw Error('RETAINED_HUB_STATE_REQUIRED');return{version:1,sceneId:R.sceneId,mapId:R.mapId,mapRevision:R.revision,imageSHA:R.imageSHA,maskSHA:R.maskSHA,retainedHubState:state,movement:{version:1,carry:0}}}});
+}

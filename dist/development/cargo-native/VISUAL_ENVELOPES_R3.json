@@ -1,0 +1,36 @@
+{
+  "status": "R3_SINGLE_CONFIRMED_APERTURE_VISUAL_ADAPTER",
+  "doors": {
+    "S9_ROOM_DECK_MANIFEST": {
+      "sourceFile": "assets/ship_deck_b.png",
+      "sourceSHA256": "002df105341d16232cfc0d3be09938dac62126ecdaba8947144b9b73e1b1348f",
+      "innerRectXYWH": [
+        320,
+        209,
+        67,
+        67
+      ],
+      "sourceInspectionROI": [
+        290,
+        185,
+        415,
+        300
+      ],
+      "sourceFramePreserved": true,
+      "drawAdditionalFrame": false,
+      "leavesSource": "assets/front-panel-130x52.png",
+      "change": "Clip existing split steel leaves to visible inner aperture. Original frame and yellow threshold remain untouched.",
+      "unchanged": [
+        "door registration pivot350,280",
+        "clearWidth82",
+        "collider",
+        "safety envelope",
+        "30switch positions",
+        "sourcePNG"
+      ],
+      "scope": "Visual surface only. Not a new collision aperture or actor clearance claim."
+    }
+  },
+  "other14RoomDoors": "No confirmed same defect; unchanged",
+  "bossGate": "unchanged"
+}

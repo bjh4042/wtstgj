@@ -1,0 +1,11 @@
+{
+  "count": 86652,
+  "frames": 120,
+  "periodMs": 6000,
+  "sourceSHA": "dd9212579f3e90dbc30e6b873d0b76edd15ee9d2663a1267776720bfc200e374",
+  "indicesSHA": "9b6ad3ac51ff0b1d894dbf1c76a532eaa1a4ddb182f29884b512e57a44e85432",
+  "rgbSHA": "a24e9b010740e2424d6f1f472926a46ef64a271f8781d88216365d06155ddce9",
+  "newOldOverlap": 0,
+  "revision": "post-island-whole-visible-sea-complement-r1",
+  "scope": "new water only; explicit rocks/coast protected; not surf/fishing permission"
+}

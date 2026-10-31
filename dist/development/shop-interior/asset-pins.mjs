@@ -1,0 +1,1 @@
+export const SHOP_ASSET_PINS=Object.freeze({"room.png": {"sha256": "d8cd6e9c3fec9db8ddbb7b280733f6bf7b6b4cdc655cf4b52887e6489037dc80", "bytes": 1800108}, "cashier.png": {"sha256": "09256fecdfb0a85bb8ec32cf116991b98c2b1a89e5dd21d6401a780f83db4d63", "bytes": 40803}});

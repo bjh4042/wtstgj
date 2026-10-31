@@ -1,0 +1,288 @@
+{
+  "state0.png": {
+    "url": "./assets/state0.png",
+    "sha256": "324930469c2aacb5e770a0585e54e4d7846cfadd4c50446c7b0da7a57a97606e",
+    "bytes": 2150506,
+    "kind": "original-state-art",
+    "width": 1448,
+    "height": 1086
+  },
+  "state0.safe.u8": {
+    "url": "./assets/state0.safe.u8",
+    "sha256": "09ec134b87f918e49c477044d03706d8fafd21866fcd7a52cdd0c339b641bd9e",
+    "bytes": 1572528,
+    "kind": "derived-once49x37-safe-with-selected-four-npc-solid",
+    "width": 1448,
+    "height": 1086,
+    "originalRawSHA256": "b4bcbdfa761599d1574a40f5bfe5508e5ffc273416606f9d9371a827b506521a"
+  },
+  "state1.png": {
+    "url": "./assets/state1.png",
+    "sha256": "b7dd48aca9f47f8d0ea933bf3a99a16fe3cb6edc85072d31905688efb254092f",
+    "bytes": 2145213,
+    "kind": "original-state-art",
+    "width": 1448,
+    "height": 1086
+  },
+  "state1.safe.u8": {
+    "url": "./assets/state1.safe.u8",
+    "sha256": "5b85d8ed6e206221115bb991a485a65d1b5564f46eb55904f89dce4311ba5d91",
+    "bytes": 1572528,
+    "kind": "derived-once49x37-safe-with-selected-four-npc-solid",
+    "width": 1448,
+    "height": 1086,
+    "originalRawSHA256": "85ce2e227dfc985cb06ed5f9a78ebcff258191d2c91947a2bee8bf03a265c725"
+  },
+  "state2.png": {
+    "url": "./assets/state2.png",
+    "sha256": "517dad75fc8dd5c14b16c8d9da714770d99872253607c8fc5a7a12561e4197f9",
+    "bytes": 2139537,
+    "kind": "original-state-art",
+    "width": 1448,
+    "height": 1086
+  },
+  "state2.safe.u8": {
+    "url": "./assets/state2.safe.u8",
+    "sha256": "f976306e5b457f37125917b7e1cfc0991deb6940190014a4b6bc23da13a33720",
+    "bytes": 1572528,
+    "kind": "derived-once49x37-safe-with-selected-four-npc-solid",
+    "width": 1448,
+    "height": 1086,
+    "originalRawSHA256": "8f24c13ef49441bfe4628a1bcea4e84cd4429d2535fec98ed5bac6b4ed079d81"
+  },
+  "state3.png": {
+    "url": "./assets/state3.png",
+    "sha256": "c7b2af653b324d47fae2ca32eff6a7d7b9bd27574cd4c540bc8f074517d55c00",
+    "bytes": 2134504,
+    "kind": "original-state-art",
+    "width": 1448,
+    "height": 1086
+  },
+  "state3.safe.u8": {
+    "url": "./assets/state3.safe.u8",
+    "sha256": "02f77c23f857757c80e21ae02934f2ab19ee1c8c219483a8c7ddc2fa1296a7ec",
+    "bytes": 1572528,
+    "kind": "derived-once49x37-safe-with-selected-four-npc-solid",
+    "width": 1448,
+    "height": 1086,
+    "originalRawSHA256": "339ecf6fb6d6d120c1a346294f6a9834e9efb406aff64cda5dfe21a361e5c536"
+  },
+  "sub1_back.png": {
+    "url": "./assets/sub1_back.png",
+    "sha256": "32980733121cc07e96a9144f139d7afd642a887d6f82924aeb87c08f794a43b4",
+    "bytes": 108472,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FARMER_M_BASE",
+    "width": 273,
+    "height": 378,
+    "alphaBounds": [
+      13,
+      14,
+      258,
+      365
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub1_front.png": {
+    "url": "./assets/sub1_front.png",
+    "sha256": "3894551b401befdb9ace1a8412fddd482d31dbe2b5ff8ea8e10970d0f562100e",
+    "bytes": 880315,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FARMER_M_BASE",
+    "width": 1254,
+    "height": 1254,
+    "alphaBounds": [
+      0,
+      51,
+      1222,
+      1254
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub1_left.png": {
+    "url": "./assets/sub1_left.png",
+    "sha256": "da77c993b85079742b8c1740101c4b8248362b5268f7834b726c5362d2e24370",
+    "bytes": 108903,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FARMER_M_BASE",
+    "width": 280,
+    "height": 373,
+    "alphaBounds": [
+      13,
+      14,
+      267,
+      359
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub1_right.png": {
+    "url": "./assets/sub1_right.png",
+    "sha256": "73f5ab7fd5650a67df5a83b11cfdd03044cc913a3fd23b4ebe77d0163c08a472",
+    "bytes": 104790,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FARMER_M_BASE",
+    "width": 281,
+    "height": 376,
+    "alphaBounds": [
+      14,
+      14,
+      267,
+      363
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub2_back.png": {
+    "url": "./assets/sub2_back.png",
+    "sha256": "a5fcc771fccd356c78da4a664a58b52f77b0118bd9ff9e92ba081ba0d9290e00",
+    "bytes": 390219,
+    "kind": "original-selected-w04-idle",
+    "assetId": "NATURE_HOBBYIST_M_VAR01",
+    "width": 403,
+    "height": 805,
+    "alphaBounds": [
+      14,
+      13,
+      389,
+      790
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub2_front.png": {
+    "url": "./assets/sub2_front.png",
+    "sha256": "6b4fe4f21e02322279273193913e1962f6e3aa508e704337f99f3e87d5cc73be",
+    "bytes": 1135242,
+    "kind": "original-selected-w04-idle",
+    "assetId": "NATURE_HOBBYIST_M_VAR01",
+    "width": 846,
+    "height": 1330,
+    "alphaBounds": [
+      24,
+      24,
+      822,
+      1306
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub2_left.png": {
+    "url": "./assets/sub2_left.png",
+    "sha256": "7253315373d56bf818435b4b0fe96bee29a8756c8afc74aa77bf2e91b2d90ce7",
+    "bytes": 404398,
+    "kind": "original-selected-w04-idle",
+    "assetId": "NATURE_HOBBYIST_M_VAR01",
+    "width": 469,
+    "height": 797,
+    "alphaBounds": [
+      14,
+      8,
+      455,
+      782
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub2_right.png": {
+    "url": "./assets/sub2_right.png",
+    "sha256": "fdce75c60d6e1af952479010e7dde37c2c6bbde194035be4497bb07983716c48",
+    "bytes": 396153,
+    "kind": "original-selected-w04-idle",
+    "assetId": "NATURE_HOBBYIST_M_VAR01",
+    "width": 437,
+    "height": 793,
+    "alphaBounds": [
+      14,
+      6,
+      421,
+      783
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub3_back.png": {
+    "url": "./assets/sub3_back.png",
+    "sha256": "14565bf07dc8926a80784fb61077e645dc60178f6a04018c2a4c9ff875b8db30",
+    "bytes": 343516,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FIELD_RESEARCH_ASSISTANT_M_BASE",
+    "width": 511,
+    "height": 742,
+    "alphaBounds": [
+      18,
+      18,
+      493,
+      724
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub3_front.png": {
+    "url": "./assets/sub3_front.png",
+    "sha256": "4cdf61860cd35c0d306b28ea359cfa998380fcaa77e86f0995054359064728f9",
+    "bytes": 586437,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FIELD_RESEARCH_ASSISTANT_M_BASE",
+    "width": 661,
+    "height": 997,
+    "alphaBounds": [
+      24,
+      24,
+      637,
+      973
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub3_left.png": {
+    "url": "./assets/sub3_left.png",
+    "sha256": "3b33aca14c673091e62ff3b95dc083c17e52387f202b542af80a7111eabafb3b",
+    "bytes": 358530,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FIELD_RESEARCH_ASSISTANT_M_BASE",
+    "width": 520,
+    "height": 765,
+    "alphaBounds": [
+      18,
+      18,
+      502,
+      747
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "sub3_right.png": {
+    "url": "./assets/sub3_right.png",
+    "sha256": "3c458b1b8b7df9057f2e0bb054b050da7de2cd081d8d2db77b93075270c81218",
+    "bytes": 321545,
+    "kind": "original-selected-w04-idle",
+    "assetId": "FIELD_RESEARCH_ASSISTANT_M_BASE",
+    "width": 505,
+    "height": 723,
+    "alphaBounds": [
+      18,
+      18,
+      487,
+      705
+    ],
+    "displayHeight": 80,
+    "pivot": "ROOT_SELECTED_NEW_ALPHA_BOUNDS_BOTTOM_CENTER"
+  },
+  "myeongju.png": {
+    "url": "./assets/myeongju.png",
+    "sha256": "e8baf034d99759ac0fce46dd61a98e4c991e3a1cb45fa0edde32e39a23b2e45c",
+    "bytes": 575063,
+    "kind": "original-w03-common256",
+    "width": 768,
+    "height": 1024,
+    "cell": 256,
+    "pivot": [
+      128,
+      216
+    ],
+    "scale": 0.4166666666666667
+  }
+}

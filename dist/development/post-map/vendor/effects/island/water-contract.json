@@ -1,0 +1,39 @@
+{
+  "revision": "POST_ISLAND_SOUTHEAST_SEA39369_SOURCE_UV5_R1",
+  "sourceURL": "/recovery_1306/post_island/input/POST-ISLAND-EXPEDITION-native3072x1024-v5.png",
+  "sourceSHA": "dd9212579f3e90dbc30e6b873d0b76edd15ee9d2663a1267776720bfc200e374",
+  "size": [
+    3072,
+    1024
+  ],
+  "ownerPixels": 39369,
+  "frames": 120,
+  "periodMs": 6000,
+  "frameMs": 50,
+  "clocks": 1,
+  "indicesURL": "/recovery_1306/post_island/w1_source_uv_candidate_r1/water_indices.u32",
+  "indicesSHA": "a0a1c6a2fd3c8cfc0a807a5cb9abff78da0a757072c2496d3955c7cea7334fd7",
+  "rgbURL": "/recovery_1306/post_island/w1_source_uv_candidate_r1/water120.rgb",
+  "rgbSHA": "0acf7b8c093bd4cf28c2d6a4d9af905e3de482c043cf40f7825afa2ba33ef7f8",
+  "gateSHA": "2bf9f0ca91f0efe4c42fe19a64beb81c8aaa3f6555753ef0d2a35415858132e6",
+  "camera": [
+    2112,
+    484,
+    960,
+    540
+  ],
+  "design": {
+    "UV": [
+      5,
+      3
+    ],
+    "curve": ".85*y+.15*x+7*sin(x/137)-112*phase/120",
+    "gain": "clamp((padded-distance-7)/14,0,1)",
+    "opticalStrokes": 0,
+    "sameComponent4Donor": true
+  },
+  "existing5120TechnicalSample": "unchanged/unintegrated preserved separate authority",
+  "sourceStoryFloorNPCSurfFishingWrites": 0,
+  "rootApprovalUTC": "2026-10-27T15:57:45Z",
+  "selected": false
+}

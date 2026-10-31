@@ -1,0 +1,4 @@
+const assetModuleURL=import.meta.url;
+import {DEPTH_SELECTION_SHA} from './depth-pins.mjs';
+const sha=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+export async function loadSelectedTargetDepth({fetcher=fetch}={}){const base=new URL('./',assetModuleURL),raw=async path=>{const r=await fetcher(new URL(path,base));if(!r.ok)throw Error('DEPTH_INPUT_MISSING');return new Uint8Array(await r.arrayBuffer()).slice()},b=await raw('ROOT_DEPTH_SELECTION.json');if(await sha(b)!==DEPTH_SELECTION_SHA)throw Error('DEPTH_SELECTION_MISMATCH');const selection=JSON.parse(new TextDecoder().decode(b)),layers=[];if(selection.layers.length!==2)throw Error('DEPTH_SCOPE_MISMATCH');for(const l of selection.layers){const mask=await raw(l.maskPath);if(mask.length!==l.size[0]*l.size[1]||await sha(mask)!==l.maskSHA)throw Error('DEPTH_MASK_MISMATCH');layers.push({...l,mask})}return{selection,layers}}

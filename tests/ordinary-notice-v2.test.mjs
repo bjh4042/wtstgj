@@ -1,3 +1,4 @@
+import {allowCanonicalCommand,nativeFrameDelta} from '../dist/world/native-runtime-policy.mjs';
 import {createRegionEntryPopup} from '../dist/ui/region-entry-popup.mjs';
 import {installOrdinaryMenu} from '../dist/ui/ordinary-menu.mjs';
 import test from 'node:test';
@@ -60,7 +61,7 @@ async function fixture({entry=source,runtime=null,paintFailure=false,ordinary=fa
  }
  const environment=createEnvironmentService(createMockEnvironment());await environment.refresh();const stop=environment.stop;
  environment.stop=()=>{counts.environmentStops++;stop()};
- const bindings={createRegionEntryPopup,installOrdinaryMenu,document,window,location:{search:'?qa=1',reload(){throw Error('Unexpected reload')}},localStorage:memoryStore,
+ const bindings={allowCanonicalCommand,nativeFrameDelta,createRegionEntryPopup,installOrdinaryMenu,document,window,location:{search:'?qa=1',reload(){throw Error('Unexpected reload')}},localStorage:memoryStore,
   performance:{now:()=>clock},URLSearchParams,setTimeout:fn=>{queueMicrotask(fn);return 1},
   requestAnimationFrame:fn=>{const id=++nextRaf;queue.set(id,fn);allFrames.set(id,fn);return id},cancelAnimationFrame:id=>queue.delete(id),
   createEvolutionPresentation:()=>({busy:false,stop(){counts.evolutionStops++},play:async()=>{}}),

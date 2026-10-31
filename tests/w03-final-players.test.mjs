@@ -46,6 +46,6 @@ test('shared generic trainer slots preserve their original descriptor and anchor
 test('both existing Save v3 avatar states roundtrip without position, party or inventory changes',()=>{
  for(const appearance of ['boy','girl']){const w=freshWorld({appearance}),saved=w.snapshot(),store=createWorldStore(memory(),w.catalog,w.host,{qa:true});store.save('SLOT_1',saved);const restored=store.load('SLOT_1');assert.deepEqual(restored,saved);const loaded=freshWorld({runtime:restored});assert.deepEqual(loaded.snapshot(),saved);assert.equal(playerFieldAssetId(loaded.snapshot().player.appearance),playerFieldAssetId(appearance));loaded.dispose();w.dispose()}
 });
-test('W04 trainer assignment, movement, collision, save and canonical gameplay source hashes are preserved',()=>{
- const protectedFiles=json('tests/fixtures/w03-protected-source-sha.json');for(const [p,h] of Object.entries(protectedFiles))assert.equal(sha(bytes(p)),h,p);
+test('W04 protected hashes remain pinned, with explicit native authority and summit-owner delta',()=>{
+ const protectedFiles=json('tests/fixtures/w03-protected-source-sha.json'),delta=json('tests/fixtures/native-authority-source-delta.json');assert.deepEqual(Object.keys(delta).sort(),['dist/world/definition.mjs','dist/world/service.mjs','dist/world/state.mjs']);for(const [p,h] of Object.entries(protectedFiles)){if(delta[p])assert.equal(delta[p].baselineSHA256,h,p+' baseline');assert.equal(sha(bytes(p)),delta[p]?.replacementSHA256??h,p);}
 });

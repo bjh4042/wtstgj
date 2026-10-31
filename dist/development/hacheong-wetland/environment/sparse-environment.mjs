@@ -1,0 +1,11 @@
+// Same selected formulas, NEW lossless data layout; no scheduling/authority.
+import{createScreenLayer}from'./common/screen-lighting.mjs';import{createSceneLighting}from'./common/scene-lighting.mjs';import{createLightingSampler,createFrame}from'./common/day-night.mjs';
+export function createSparseEnvironment({source,waterCache,waterManifest,lightManifest,lightIndices,transmission,reedIndices,reedFlags,reedClearance}){
+const W=2836,H=1820,frame=createFrame(),sampler=createLightingSampler({night:[.4,.47,.6],schedule:{dawnStart:240,dayStart:540,duskStart:1020,nightStart:1260}}),street=createScreenLayer({manifest:lightManifest,indices:lightIndices,transmission,expectedSourceSHA:waterManifest.sourceSHA,expectedSize:[W,H]});
+return function render({camera=[0,1280,960,540],ms=0,minutes=720,waterOn=true,reedOn=true,lightOn=true,rest=false}={}){
+ const[cx,cy,w,h]=camera;if(!camera.every(Number.isInteger)||cx<0||cy<0||w<1||h<1||cx+w>W||cy+h>H||![ms,minutes].every(Number.isFinite))throw Error('frame-contract');
+ const out=new Uint8ClampedArray(w*h*4);for(let y=0;y<h;y++)out.set(source.subarray(((cy+y)*W+cx)*4,((cy+y)*W+cx+w)*4),y*w*4);const written=waterOn&&!rest?waterCache.draw(out,camera,ms):{};let reedChanged=0;
+ if(reedOn&&!rest)for(let ri=0;ri<reedIndices.length;ri++){const id=reedIndices[ri];const x=id%W,y=Math.floor(id/W);if(x<cx||y<cy||x>=cx+w||y>=cy+h)continue;const gain=Math.min(1,Math.max(0,(reedClearance[ri]-1)/3)),dx=2.2*Math.sin(2*Math.PI*((ms%4800)/4800+x/900))*gain,sx=x+dx,x0=Math.floor(sx),x1=x0+1;if(x0<0||x1>=W||!(reedFlags[ri]&(1<<(x0-x+3)))||!(reedFlags[ri]&(1<<(x1-x+3))))continue;const frac=sx-x0,o=((y-cy)*w+x-cx)*4;let changed=false;for(let c=0;c<3;c++){const v=Math.round(source[(y*W+x0)*4+c]*(1-frac)+source[(y*W+x1)*4+c]*frac);changed||=v!==out[o+c];out[o+c]=v;}reedChanged+=changed;}
+ const stats={waterWritten:written.gap??0,oldAvailable:true,reedChanged,nightMix:0};
+ if(lightOn&&!rest){sampler.sample(minutes,frame);const target=new Uint8ClampedArray(out.length);createSceneLighting({nightTint:[.4,.47,.6],streetLayer:street,frameBytes:out.length})(out,target,{nightMix:frame.nightMix,camera});stats.nightMix=frame.nightMix;return{pixels:target,stats};}return{pixels:out,stats};
+};}

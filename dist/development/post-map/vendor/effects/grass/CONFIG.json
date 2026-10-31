@@ -1,0 +1,79 @@
+{
+  "sourceSHA": "dd9212579f3e90dbc30e6b873d0b76edd15ee9d2663a1267776720bfc200e374",
+  "size": [
+    3072,
+    1024
+  ],
+  "patch": [
+    920,
+    270,
+    100,
+    80
+  ],
+  "rootWorld": [
+    970,
+    312
+  ],
+  "imageEdit": "built-in imagegen cleanplate + transparent original-clump extraction; new art only one bounded clump",
+  "inputs": {
+    "safe_centres.u8": "d71eb449582db395a79a40426f3640daeb37d9a5ca4abe0c2439b939e7447a52",
+    "cleanplate_generated.png": "7254ef83415b251cddbcc73c431fe9f19d3d83c3b5e114248a9d3667b8cdd4c9",
+    "habitat.u8": "30665fddfa564df993cd92e407178db1aef705e6f8bebd2a4e3898afd18209ac",
+    "player.png": "3818c47e1e0b3b0221a57d8a11736a3af04365feae10dc1fd5f252c077e8e073",
+    "source.png": "dd9212579f3e90dbc30e6b873d0b76edd15ee9d2663a1267776720bfc200e374",
+    "plant_generated.png": "2fbca82f2d964a878d31954cb6ec32db431214b28570d7cc2c45a3776dfb5df6"
+  },
+  "inheritedWaterInputs": {
+    "status": "CANDIDATE",
+    "files": [
+      {
+        "path": "page.mjs",
+        "sha256": "0cd71d7ecbe65609df10a2eceda5abcd9d6b5adc7ffcd24df3fa7c76631aa959"
+      },
+      {
+        "path": "scene-lighting.mjs",
+        "sha256": "6581937a64f1fb97b19cc5a3eccd0833ea0338b2b959e28b58cbe79f2d23daa6"
+      },
+      {
+        "path": "indices.u32",
+        "sha256": "a0a1c6a2fd3c8cfc0a807a5cb9abff78da0a757072c2496d3955c7cea7334fd7"
+      },
+      {
+        "path": "CONFIG.json",
+        "sha256": "001ee7142a694465371b73843eae43ab98be8d256d2c486ef7d2d58c5d79ac1f"
+      },
+      {
+        "path": "water-adapter.mjs",
+        "sha256": "b1616547b49a77171f2ffa46e95fa2925314de782e81f49ca159c26bea5e7d57"
+      },
+      {
+        "path": "day-night.mjs",
+        "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69"
+      },
+      {
+        "path": "water.rgb",
+        "sha256": "0acf7b8c093bd4cf28c2d6a4d9af905e3de482c043cf40f7825afa2ba33ef7f8"
+      },
+      {
+        "path": "ui-clock.mjs",
+        "sha256": "5a51deb396fbc8c53fb18378f7ed77fd34f4e1e3adff0232391c7c9a9c0d1aaa"
+      },
+      {
+        "path": "water-contract.json",
+        "sha256": "e3f6698ec58fad7f28573fb49990b83d56714a6e356a31192444735d423da663"
+      },
+      {
+        "path": "source.png",
+        "sha256": "dd9212579f3e90dbc30e6b873d0b76edd15ee9d2663a1267776720bfc200e374"
+      },
+      {
+        "path": "index.html",
+        "sha256": "51caa0435935199b1759a014fe84d12ad8d873fea6f0ffe4ee4247fa160f941b"
+      },
+      {
+        "path": "frame-lighting.mjs",
+        "sha256": "7f20dd930fb1b8b14f4f5075124eb3a0e49b34a676cfa0a4327df5487c110308"
+      }
+    ]
+  }
+}

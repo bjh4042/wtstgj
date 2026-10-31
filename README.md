@@ -1,47 +1,17 @@
-# 생태몬스터: 거제도 — development preview
+# 생태몬스터: 거제도 — Stage63 개발 코드 체크포인트
 
-This repository is an **unfinished development build**, not a finished game or a claim of production quality. It is prepared for remote browser testing.
+이 자료는 개발 중 코드 유실을 방지하기 위한 **부분 코드 백업**입니다. 완성 게임, 독립 실행 패키지, 전체 원화 백업 또는 출시본이 아닙니다.
 
-## Run
+## 포함 범위
+- 검증된 Stage63 관리 소스 중 선택된 JavaScript 모듈, 스타일 및 런타임 JSON 데이터의 원본 바이트.
+- 포함 파일별 SHA-256과 바이트 수. 복원 무결성 검증은 게임 기능·권리·실기 QA 완료를 뜻하지 않습니다.
 
-Node.js 22.12+ (or a compatible newer release):
+## 제외 및 한계
+- 이미지·오디오·대용량 환경 바이너리, 미검증 참고자료, 내부 제작/검수 문서 및 비공개 경로를 담은 파일은 포함하지 않습니다.
+- 필요한 원화, 기본 프로젝트 파일, 일부 모듈 및 의존성이 빠져 있습니다. 이 체크포인트만으로 설치·빌드·테스트·게임 실행이 가능하다고 주장하지 않습니다.
+- 외부 저작물 원본, ROM, 비밀키, 개인정보 및 비공개 참고자료를 공개 범위에 포함하지 않습니다.
+- 일부 소스에는 제외된 자산 ID에 대한 기존 비활성 참조가 남아 있을 수 있습니다. 해당 자산의 포함·등장·사용 허가를 뜻하지 않습니다.
+- 실제 브라우저·모바일·전체 여정 검수 및 최종 아트 품질 검수 완료를 주장하지 않습니다.
+- 이후 새로 재구성한 코드는 원본 Stage63과 구별해 별도로 기록합니다. 이 스냅샷은 Stage80 복원본이 아닙니다.
 
-```sh
-npm ci
-node tools/build-ordinary-notice-v2.mjs
-npm test
-npm run dev
-```
-
-Use the custom build command above for a clean checkout: it copies the four required static PWA resources before generating the PWA shell. Generic `npm run build` does not perform that copy. See [PUBLIC_SOURCE_PORTABLE.md](PUBLIC_SOURCE_PORTABLE.md) for verification details and optional archive-dependent tooling.
-
-The production base is `/wtstgj/`. Publish the generated `build/` directory, not a source ZIP. No provider credentials are required for the local single-player preview. Online services are not configured or claimed to work.
-
-## Current scope
-
-- Fresh ordinary games use the approved latest56 map/story/ending release. Existing unversioned saves remain on historical55. Unknown release identifiers fail closed; there is no automatic migration or reset.
-- The latest release retains historical player learnsets, moves, items, capture rules, economy and existing trainer parties. Only explicitly approved new trainer/story bindings are added.
-- Trainer introductions, send-out/recall, faint, confirmed capture results, manual evolution visuals and surfing presentation are connected to existing game outcomes. No new automatic evolution trigger is added.
-- Optional preparation and free-healing guidance adds no compulsory tutorial gate.
-- Selected original smooth player/NPC art, semantic terrain, opening art, 11 battle backgrounds and original monster battle art replace excluded historical images.
-- Saved progress is not reset or migrated. Legacy saved-game routing remains, but its visual replacement is incomplete and may show missing/fallback presentation.
-- Install support uses the browser's optional installation prompt. iOS receives manual installation guidance. Browser address-bar controls and desktop shortcuts cannot be forced.
-- The service worker caches only a small installation/offline shell. Full offline gameplay is not yet supported.
-
-## Known unfinished work
-
-Map composition, building/person proportions, some old-route/interior visuals, battle UI integration and complete story playthrough still need work. Two monster rear views (GM004 and GM132) are intentionally deferred and display a neutral “후면 준비 중” marker. Special action art, follower/bicycle/surf presentation and shared effects are not all wired. No final audio package is included.
-
-Responsive styles and automated geometry tests are present; real desktop/tablet/phone, orientation, zoom, safe-area, browser-bar and installed-mode checks are **not yet executed**. Static recordings are not browser QA. See `QA.md` and `QA_TEST_MAPPING.json`.
-
-## Assets and rights
-
-Only explicitly selected project artwork and the bundled OFL-licensed font are distributed. Original-source and runtime-derivative hashes are retained in approved bindings. Historical screenshot-derived artwork, ROMs, extracted sprites, provider logs and private archives are excluded. No third-party franchise affiliation is implied. No general license grant is made for project artwork; see the font's bundled OFL for its separate terms.
-
-## Lossless runtime sheets
-
-Human frames are packed per identity and monster front/back images per species, without resizing or changing RGBA pixels. Runtime sheets load lazily. The public atlas tests verify every original frame pixel hash, source rectangle, transparent deferred view and padding. This packaging reduces upload/network file counts, not image quality.
-
-## Latest development delta
-
-See QA_LATEST56_DEVELOPMENT.md for current verification and remaining release blockers. The original QA.md describes the earlier frozen snapshot, not this latest delta. Local browser saves are not cloud synchronization. Private regional scene prototypes are excluded from this source projection and production dependency graph.
+기존 공개 브랜치 및 배포 상태와 분리된 백업 후보이며, 이 자료 준비만으로 공개 배포나 기존 사용자 저장 변경을 수행하지 않습니다.

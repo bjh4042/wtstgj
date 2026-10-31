@@ -1,0 +1,35 @@
+{
+  "name": "PostIsland entire visible sea complement",
+  "size": [
+    3072,
+    1024
+  ],
+  "sourceSHA": "dd9212579f3e90dbc30e6b873d0b76edd15ee9d2663a1267776720bfc200e374",
+  "rgbSHA": "0acf7b8c093bd4cf28c2d6a4d9af905e3de482c043cf40f7825afa2ba33ef7f8",
+  "indicesSHA": "a0a1c6a2fd3c8cfc0a807a5cb9abff78da0a757072c2496d3955c7cea7334fd7",
+  "waterContractSHA": "e3f6698ec58fad7f28573fb49990b83d56714a6e356a31192444735d423da663",
+  "cameras": [
+    [
+      1900,
+      0,
+      960,
+      540
+    ],
+    [
+      2112,
+      0,
+      960,
+      540
+    ],
+    [
+      2112,
+      484,
+      960,
+      540
+    ]
+  ],
+  "kind": "compose",
+  "actualLights": [],
+  "actors": false,
+  "canonicalScope": "exact selected raster only; no floor/portal/story/canonical map install; postIsland 5120 technical sample is separate"
+}

@@ -1,0 +1,129 @@
+import{cargoMemoryHostBinding}from'./session-owner.mjs';
+import{createCargoZoneHostReaders}from'../../development/cargo-native/zone-host-readers.mjs';
+import{createCargoZoneAuthority}from'../../world/cargo-zone-authority.mjs';
+import{cargoZoneRows,inCargoZoneFront}from'../../development/cargo-native/zone-registration.mjs';
+import{inCargoOfficerFront}from'../../development/cargo-native/officer-registration.mjs';
+import{createCargoOfficerHostReaders}from'../../development/cargo-native/officer-host-readers.mjs';
+import{createCargoOfficerAuthority}from'../../world/cargo-officer-authority.mjs';
+import{cargoOfficerRows}from'../../development/cargo-native/officer-registration.mjs';
+import{loadCargoOfficers}from'../../development/cargo-native/officer-presentation.mjs';
+import{createBossDoorAuthority}from'../../development/cargo-native/boss-door-owner.mjs';
+import{createPresentationScope}from'../../development/jungle-native/teardown_candidate/presentation-scope.mjs';
+import{createEightSceneRegistry}from'../../world/cargo-eight-scene-geometry.mjs';
+import{createCargoRescueAuthority}from'../../world/cargo-rescue-authority.mjs';
+import{createCargoRescueHostReaders,RESCUE_IDS}from'../../development/cargo-native/rescue-host-readers.mjs';
+import{createRescuePortAccess,isRescuePort,allowsRescuePort}from'../../development/cargo-native/rescue-port-access.mjs';
+import{loadRescueScene}from'../../development/cargo-native/rescue-browser-loader.mjs';
+import{loadRescueHarin}from'../../development/cargo-native/rescue-presentation.mjs';
+import {createCargoSupplyAuthority} from '../../world/cargo-supply-authority.mjs';
+import {cargoSupplyCommitted} from '../../world/cargo-supply-receipts.mjs';
+import {loadCargoChestPhysics,allowsCargoChestInteraction,disposeCargoChestPhysics} from '../../development/cargo-native/cargo-chest-physics.mjs';
+import {createCargoChestHostReaders} from '../../development/cargo-native/chest-host-readers.mjs';
+import {loadEngineUpperLayer,drawEngineUpperForeground,engineSideStairNotice,disposeEngineUpperLayer} from '../../development/cargo-native/engine-upper-layer.mjs';
+import {loadRoomApproach,allowsRoomRead,allowsRoomSwitch} from '../../development/cargo-native/room-approach.mjs';
+import {loadPortApproach,allowsPortApproach} from '../../development/cargo-native/port-approach.mjs';
+import {sha256,stableJSON} from '../../compatibility/codec.mjs';
+import {createCargoNativeAuthority} from '../../world/cargo-native-authority.mjs';
+import {verifySevenSceneRegistry} from '../../world/cargo-seven-scene-geometry.mjs';
+import {createCargoHostReaders} from '../../development/cargo-native/host-readers.mjs';
+import {createHostBoundCargoConsumer} from '../../development/cargo-native/host-bound-consumer.mjs';
+import {loadSelectedBridge} from '../../development/cargo-native/bridge-browser-loader.mjs';
+import {loadSelectedScene} from '../../development/cargo-native/selected-scene-browser-loader.mjs';
+import {loadNextSelectedScene} from '../../development/cargo-native/next-selected-scene-browser-loader.mjs';
+import {loadLastSelectedScene} from '../../development/cargo-native/last-selected-scene-browser-loader.mjs';
+import {createEnvironment} from '../../development/cargo-native/environment-frame.mjs';
+import {loadApprovedPlayers,drawApprovedPlayer} from '../../art/approved-player-field.mjs';
+import {RESOURCE_PINS} from '../../development/cargo-native/resource-pins.mjs';
+const assetModuleURL=new URL('../../development/cargo-native/cargo-main-host.mjs',import.meta.url).href;
+const ROOT=new URL('./',assetModuleURL),owners=new WeakMap();
+const near=(a,b)=>a.every((n,i)=>Math.abs(n-b[i])<=8);
+export function prepareCargoMemoryReviewInputs(memoryOwner){const b=cargoMemoryHostBinding(memoryOwner),r=b.resources;const inputs=Object.freeze({});owners.set(inputs,{...b.readers,memoryOwner,binding:b,consumer:null,consumerWorld:b.world,sessionEpoch:0,currentWorld:()=>b.world,materials:b.materials,contract:r.contract,registry:r.registry,readBytes:r.readBytes,readJSON:r.readJSON,engineUpperLayer:r.engineUpperLayer,chestPhysics:r.chestPhysics,roomApproach:r.roomApproach,portApproach:r.portApproach,installed:false});return inputs;}
+// Integer per-pixel movement: no endpoint jump through thin walls. One room crossing
+// owner selected by its existing door axis, never by invented room membership.
+export function stepCargoMovement(consumer,contract,direction,pixels){
+ const delta={left:[-1,0],right:[1,0],up:[0,-1],down:[0,1]}[direction];if(!delta)return 0;let moved=0;
+ for(let k=0;k<Math.min(32,Math.max(0,Math.floor(pixels)));k++){
+  const n=consumer.snapshot().native,to=n.foot.map((v,i)=>v+delta[i]);
+  const room=contract.rooms.find(r=>{if(r.mapId!==n.sceneId)return false;const axis=r.door.asset==='side'?0:1,other=1-axis;return Math.abs(n.foot[axis]-r.door.pivotWorld[axis])<=16&&Math.abs(n.foot[other]-r.door.pivotWorld[other])<=r.door.clearWidth/2});
+  if(!consumer.recordMovement({to,facing:direction,roomId:room?.roomId??null})){consumer.recordMovement({to:n.foot,facing:direction});break}moved++;
+ }return moved;
+}
+export function installCargoReviewHost({root,canvas,getWorld,environment,clearInput=()=>{},onStatus=()=>{},refreshCanonical=()=>{},onRestoreRequested=null,inputs}){
+ const o=owners.get(inputs);if(!o||o.installed)throw Error('CARGO_INPUTS_ALREADY_USED_OR_UNKNOWN');o.installed=true;o.currentWorld=getWorld;
+ let lastCanonicalStamp=null,supplyPending=false,active=false,loading=false,disposed=false,paused=false,epoch=0,held=false,credit=0,walk=0,moving=false,view=null,read=null,savedSize=null,entryPosition=null,entryController=null,api;
+ const panel=document.createElement('section');panel.dataset.cargoReview='true';
+ const label=document.createElement('p');label.textContent='화물선 개발 검토 · 8개 장면 / DEV 격리 메모리 저장 · 실제 사용자 슬롯 변경 없음 / 구조실은 원래 최종 전투 승리 후 진입';panel.append(label);
+ const positionReview=document.createElement('output');positionReview.dataset.cargoPositionReview='true';positionReview.textContent='검토 위치: 입장 대기';panel.append(positionReview);
+ const bar=document.createElement('div'),body=document.createElement('div');panel.append(bar,body);root.append(panel);
+ const listeners=new AbortController();
+ const statusText={CARGO_UNSTABLE_CHECKPOINT:'수첩/기록 창을 닫고 문과 이동이 멈춘 뒤 기억 저장하세요. 미확정 카드는 저장되지 않습니다.',CARGO_SAVE_LOCKED:'진행 또는 저장 처리가 끝난 뒤 기억 저장할 수 있습니다.',CARGO_SLOT_CONFLICT:'다른 세션에서 기억 저장이 바뀌었습니다. 현재 입력을 멈추고 명시적으로 불러오세요.',NO_PENDING_COMMIT:'재시도할 기억 저장이 없습니다.',RESCUE_POSTBOSS_COMMIT_REQUIRED:'원래 최종 전투의 승리 기록과 저장이 완료된 뒤 구조실로 갈 수 있습니다.',ARRIVAL_LATCH:'조사 키를 놓고 통로 영역 밖으로 걸어나온 뒤 다시 다가가세요.',LOAD_FAILED:'목적지 자료를 읽지 못했거나 세션이 바뀌었습니다. 현재 위치에서 다시 확인해 주세요.',CARGO_CANONICAL_MAP_REQUIRED:'원래 화물선 지도에서만 개발 검토에 들어갈 수 있습니다.',OK:'문 스위치를 작동했습니다.',BUSY:'문이 움직이고 있습니다.',OCCUPIED:'문 아래에서 벗어난 뒤 닫아 주세요.',TRANSITIONED:'통로를 지나왔습니다.',SOURCE_FOOT_FACING:'선택된 안전 접근 영역에서 통로 방향을 바라보고 다시 조사하세요.',NOT_AT_SWITCH_PAD:'문 스위치 가까이 다가가세요.',INTERACTION_LOCKED:'현재 작업이 끝난 뒤 조사할 수 있습니다.',NATIVE_TERMINAL_APPROACH_REQUIRED:'단말 가까이 다가가세요.',BOSS_TERMINAL_APPROACH_REQUIRED:'암호는 선교 단말 앞에서 확인하세요.',HOST_REQUEST_PREPARED:'원래 보스 도전 조건을 확인했습니다.',EXISTING_WORLD_INTERACTION_RESOLVED:'원래 전투 처리가 끝났습니다.',CANONICAL_OPERATION_PENDING:'원래 전투 처리가 진행 중입니다.'};
+ const say=x=>{const code=typeof x==='string'?x:x?.reason;onStatus(statusText[code]??(typeof code==='string'&&/[가-힣]/.test(code)?code:x?.ok===true?'조사를 완료했습니다.':'아직 필요한 방문·기록 또는 원래 이야기 조건을 충족하지 못했습니다.'));};
+ const button=(parent,text,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.onclick=()=>Promise.resolve().then(fn).catch(e=>{if(!disposed)say(e.message)});parent.append(b);return b};
+ const busy=()=>{const w=getWorld();return !w||w.busy||w.inputLocked||w.story?.pendingCommit};
+ const refreshSameOwner=(force=false)=>{const w=getWorld();if(disposed||!active||w!==o.consumerWorld)return;const s=w.snapshot(),stamp=s.sessionId+':'+s.revision;if(force||stamp!==lastCanonicalStamp){lastCanonicalStamp=stamp;refreshCanonical()}};
+ const resetInput=()=>{credit=0;moving=false;clearInput()};
+ const cancelUI=()=>{read=null;body.replaceChildren()};
+ const releaseCaptured=(consumer,ticket)=>{consumer?.inputUp('cargo-main-action');if(ticket===epoch)held=false};
+ const releaseAction=()=>releaseCaptured(o.consumer,epoch);
+ const closeRead=()=>{o.consumer?.cancelRead();cancelUI();resetInput()};
+ const renderNotebook=()=>{body.replaceChildren();const s=o.consumer.snapshot(),book=s.notebook;const p=document.createElement('p');p.textContent=`방문 ${book.visited}/15 · 읽기 ${book.read}/15 · ${book.orderHint}\n선택: ${s.draft.join(' → ')}`;body.append(p);
+  for(const card of book.cards){const b=button(body,card.label,()=>{o.consumer.selectCard(card.id);renderNotebook()});b.disabled=!card.available}
+  button(body,'한 장 취소',()=>{o.consumer.undoCard();renderNotebook()});button(body,'암호 확인 (단말 앞)',()=>{say(o.consumer.submitCards());renderNotebook()});button(body,'수첩 닫기',()=>{o.consumer.closeNotebook();cancelUI();resetInput()});
+  for(const entry of book.entries){const p=document.createElement('p');p.textContent='기록 '+String(book.entries.indexOf(entry)+1).padStart(2,'0')+'/15 · '+entry.name+': '+(entry.read?entry.content.text:'아직 읽지 않음');body.append(p)}
+ };
+ const notebook=()=>{if(active&&!paused&&!busy()&&o.consumer.openNotebook()){resetInput();renderNotebook()}};
+ const action=async()=>{
+  if(held||!active||paused||busy()||!o.consumer.canAct())return false;if(getWorld()!==o.consumerWorld||getWorld().map?.id!=='world:ship:S9'){pause();say('정규 지도 또는 세션 변경으로 검토를 잠갔습니다.');return false}held=true;
+  const actionEpoch=epoch,actionWorld=getWorld(),current=()=>!disposed&&active&&epoch===actionEpoch&&getWorld()===actionWorld&&actionWorld.map?.id==='world:ship:S9';
+  const n=o.consumer.snapshot().native;
+  const room=o.contract.rooms.find(r=>r.mapId===n.sceneId&&allowsRoomRead(o.roomApproach,r.roomId,n.sceneId,n.foot));
+  const door=o.contract.rooms.find(r=>r.mapId===n.sceneId&&allowsRoomSwitch(o.roomApproach,r.roomId,n.sceneId,n.foot));
+  const chest=o.contract.chests.find(a=>a.map===n.sceneId&&allowsCargoChestInteraction(o.chestPhysics,a.id,o.registry.scenes[n.sceneId],o.materials.get(n.sceneId),n.foot,n.facing));
+  const openRecord=()=>{if(!current())return false;const request=o.consumer.requestRead(room.roomId);if(!request){say('방 안에 들어가 기록을 확인해 주세요.');return false}read=request;body.replaceChildren();const title=document.createElement('p');title.textContent='기록 '+String(o.contract.rooms.findIndex(r=>r.roomId===room.roomId)+1).padStart(2,'0')+'/15 · '+room.name;body.append(title);const p=document.createElement('p');p.textContent=request.content.text;body.append(p);button(body,'읽고 수첩에 기록',()=>{if(!current()||read!==request)return;const a={token:request.token,roomId:request.roomId};if(!o.consumer.acknowledgeDisplayed({...a,text:p.textContent})){say('읽기 위치가 바뀌었습니다');closeRead();return}say(o.consumer.confirmRead(a));cancelUI();resetInput()});button(body,'취소',()=>{if(current())closeRead()});resetInput();return true};
+  const switchDoor=()=>{if(!current())return false;say(o.consumer.toggleRoom(door.roomId));cancelUI();resetInput();return true};
+  const claimChest=async()=>{if(!current()||supplyPending||busy())return false;const now=o.consumer.snapshot().native;if(!allowsCargoChestInteraction(o.chestPhysics,chest.id,o.registry.scenes[now.sceneId],o.materials.get(now.sceneId),now.foot,now.facing)){say('상자를 바라보고 가까이 다가가세요.');return false}if(cargoSupplyCommitted(actionWorld.snapshot(),chest.id)){say('이미 보급품을 받은 상자입니다.');cancelUI();return true}const consumer=o.consumer,claimEpoch=o.sessionEpoch,claimCurrent=()=>current()&&o.consumer===consumer&&o.sessionEpoch===claimEpoch;supplyPending=true;actionButton.disabled=true;notebookButton.disabled=true;cancelUI();resetInput();say('보급품을 확인하고 있습니다.');try{await actionWorld.claimNativeCargoSupply(chest.id);if(claimCurrent()){if(cargoSupplyCommitted(actionWorld.snapshot(),chest.id))say(`${chest.effectiveItem.name} ${chest.quantity}개를 받았습니다.`);else say('보급품 수령이 아직 완료되지 않았습니다.')}return true}catch(error){if(claimCurrent()){if(actionWorld.story.pendingCommit){say('저장에 실패했습니다. 원래 저장 재시도 기능으로 다시 시도해 주세요.');}else say(error.message==='CARGO_SUPPLY_BAG_CAP'?'가방이 가득 찼습니다. 물품을 사용한 뒤 다시 조사하세요.':'지금은 보급품을 받을 수 없습니다. 원래 이야기 조건과 접근 위치를 확인하세요.')}return false}finally{if(current()&&o.consumer===consumer){supplyPending=false;actionButton.disabled=false;notebookButton.disabled=false}}};
+  if([room,door,chest].filter(Boolean).length>1){body.replaceChildren();const p=document.createElement('p');p.textContent='조사할 대상을 선택하세요.';body.append(p);if(room)button(body,'기록 조사',openRecord);if(door)button(body,'문 스위치',switchDoor);if(chest)button(body,'보급 상자',claimChest);button(body,'취소',()=>{if(current()){cancelUI();resetInput()}});resetInput();return true}
+  if(room)return openRecord();if(door)return switchDoor();if(chest)return claimChest();
+  const zone=cargoZoneRows().find(r=>o.zoneReaders.readNative(r.pointId));
+  if(zone){const consumer=o.consumer,claimEpoch=o.sessionEpoch,stillCurrent=()=>current()&&o.consumer===consumer&&o.sessionEpoch===claimEpoch;if(actionWorld.story.eventCompleted(zone.eventId)){say('이미 확인한 구역입니다. 다음 작전을 진행하세요.');return true}supplyPending=true;actionButton.disabled=true;notebookButton.disabled=true;try{await actionWorld.interactNativeCargoZone(zone.pointId,{type:'interact'});if(stillCurrent())say(zone.label+' · 원래 작전 기록 완료');return true}catch(error){if(stillCurrent())say(actionWorld.story.pendingCommit?'저장에 실패했습니다. 원래 저장 재시도를 이용해 주세요.':'앞선 작전 기록과 조사 위치를 확인해 주세요.');return false}finally{if(current()&&o.consumer===consumer){supplyPending=false;actionButton.disabled=false;notebookButton.disabled=false}}}
+  const officer=cargoOfficerRows().find(r=>o.officerReaders.readNative(r.pointId));
+  if(officer){const consumer=o.consumer,claimEpoch=o.sessionEpoch,stillCurrent=()=>current()&&o.consumer===consumer&&o.sessionEpoch===claimEpoch;if(actionWorld.snapshot().progress.defeatedTrainers.includes(officer.trainerId)){say('이미 이긴 간부입니다. 다음 구역을 조사하세요.');return true}supplyPending=true;actionButton.disabled=true;notebookButton.disabled=true;try{await actionWorld.interactNativeCargoOfficer(officer.pointId,{type:'challenge'});if(stillCurrent())say('원래 전투 결과를 기록했습니다.');return true}catch(error){if(stillCurrent())say(actionWorld.story.pendingCommit?'저장에 실패했습니다. 원래 저장 재시도를 이용해 주세요.':'앞선 구역 조사와 원래 이야기 조건을 확인해 주세요.');return false}finally{if(current()&&o.consumer===consumer){supplyPending=false;actionButton.disabled=false;notebookButton.disabled=false}}}
+  const rescueId=RESCUE_IDS.find(id=>o.rescueReaders.readNative(id));
+  if(rescueId){const consumer=o.consumer,claimEpoch=o.sessionEpoch,stillCurrent=()=>current()&&o.consumer===consumer&&o.sessionEpoch===claimEpoch;supplyPending=true;actionButton.disabled=true;notebookButton.disabled=true;cancelUI();resetInput();try{await actionWorld.interactNativeCargoRescue(rescueId,{type:'interact'});if(stillCurrent())say(rescueId==='event:S9_RELEASE_RESCUED'?'구조 회로 해제 완료 · 원래 이야기 진행을 기록했습니다.':rescueId==='event:RIVAL_S9_ALLY'?'하린과 작전 내용을 확인했습니다.':'구조 회로의 작전 기록을 확인했습니다.');return true}catch(error){if(stillCurrent())say(actionWorld.story.pendingCommit?'기록 저장에 실패했습니다. 원래 저장 재시도를 이용해 주세요.':'앞선 작전 기록과 현재 조사 위치를 확인해 주세요.');return false}finally{if(current()&&o.consumer===consumer){supplyPending=false;actionButton.disabled=false;notebookButton.disabled=false}}}
+  const port=o.registry.directions.find(d=>d.sourceSceneId===n.sceneId&&(isRescuePort(d)?allowsRescuePort(o.rescueAccess,d,n.foot,o.materials.get(n.sceneId)):allowsPortApproach(o.portApproach,d,n.foot,o.materials.get(n.sceneId)))&&d.departureFacing===n.facing);
+  if(port){say('이동 중입니다. 목적지 지도를 확인하고 있습니다.');actionButton.disabled=true;notebookButton.disabled=true;resetInput();try{const result=await o.consumer.requestPort(port.id,{token:'cargo-main-action'});if(current())say(result);return true}catch(error){if(current())say(error.message);return false}finally{if(current()){actionButton.disabled=false;notebookButton.disabled=false}}}
+  if(n.sceneId===o.contract.bossGate.mapId&&o.contract.bossGate.switchInteractionPadCenters.some(p=>near(p,n.foot))){const prepared=o.consumer.prepareBoss({token:'cargo-main-action',explicitInteract:true});say(prepared);if(prepared.ok){const result=await o.consumer.requestBoss(prepared.token);if(current())say(result);}return true}
+  say('가까운 문 스위치·기록·통로를 바라보고 조사하세요. 구조문은 원래 최종 전투 승리 기록 후 열립니다. 기관실은 중앙 계단을 이용해 주세요.');return false;
+ };
+ const disposeMaterials=()=>{if(o.memoryOwner)return;for(const m of o.materials.values())m.dispose?.();o.materials.clear()};
+ const exit=()=>{if(!active&&!loading)return;if(busy()&&active){say('원래 전투·저장 처리가 끝난 뒤 돌아갈 수 있습니다.');return}epoch++;entryController?.abort();loading=false;active=false;releaseAction();o.consumer?.destroy();o.consumer=null;o.presentationScope?.dispose();o.presentationScope=null;disposeMaterials();view?.dispose();view=null;cancelUI();resetInput();if(savedSize){[canvas.width,canvas.height]=savedSize;savedSize=null}enterButton.disabled=false;exitButton.disabled=true;
+  const now=getWorld()?.snapshot().position;if(entryPosition&&stableJSON(now)!==entryPosition)say('정규 위치 변경 감지: 자동 재배치하지 않았습니다.');else say('DEV native 일시정지 · 현재 장면/수첩 유지');entryPosition=null;
+ };
+ const enter=async()=>{if(active||loading||disposed||busy())return;const world=getWorld();if(world!==o.binding.world)throw Error('CARGO_MEMORY_WORLD_IDENTITY');if(world.snapshot().developmentOnly!==true)throw Error('DEVELOPMENT_WORLD_REQUIRED');if(world.map?.id!=='world:ship:S9'||world.snapshot().position.scene!=='world:ship:S9')throw Error('CARGO_CANONICAL_MAP_REQUIRED');const ticket=++epoch;o.sessionEpoch++;loading=true;enterButton.disabled=true;resetInput();entryPosition=stableJSON(world.snapshot().position);const localMaterials=new Map(),controller=new AbortController();entryController=controller;let localView=null,localScope=null;
+  const loadScene=async(spec,{signal}={})=>{const loader=spec.sceneId==='ship_bridge'?loadSelectedBridge:['ship_deck_a','ship_hold_b'].includes(spec.sceneId)?loadSelectedScene:['ship_deck_b','ship_hold_a'].includes(spec.sceneId)?loadNextSelectedScene:loadLastSelectedScene;const options={signal:signal??controller.signal,readDoors:()=>o.consumer?.doorSnapshot()??{}};const m=await(['ship_bridge','ship_rescue'].includes(spec.sceneId)?loadRescueScene(spec,{...options,readBytes:o.readBytes}):loader(spec,options));if(disposed||ticket!==epoch){m.dispose();throw Error('CARGO_LOAD_CANCELLED')}localMaterials.set(spec.sceneId,m);return m};
+  try{
+   // Explicit review landing is an existing port arrival; NOT a canonical entry warp.
+   const landing=o.registry.directions.find(d=>d.targetSceneId==='ship_deck_a');if(!landing)throw Error('REGISTERED_REVIEW_LANDING_REQUIRED');
+   const material=null;for(const[k,v]of o.materials)localMaterials.set(k,v);
+   localView=await createEnvironment({contract:o.contract,readJSON:p=>o.readJSON(p,{signal:controller.signal}),readBytes:p=>o.readBytes(p,{signal:controller.signal}),getArt:id=>o.binding.materials.get(id)?.art,getChestClaimState:id=>getWorld()===world&&cargoSupplyCommitted(world.snapshot(),id),getRescueAllyCompleted:()=>getWorld()===world&&world.snapshot().progress.completedEvents.includes('RIVAL_S9_ALLY')});await loadApprovedPlayers();await loadRescueHarin();await loadCargoOfficers();
+   if(disposed||ticket!==epoch||getWorld()!==world)throw Error('CARGO_STALE_WORLD');
+   localScope=null;
+   view=localView;o.consumerWorld=world;o.consumer=o.binding.hostConsumer;o.consumer.setPaused(false);
+   savedSize=[canvas.width,canvas.height];canvas.width=960;canvas.height=540;active=true;loading=false;paused=false;supplyPending=false;exitButton.disabled=false;actionButton.disabled=false;notebookButton.disabled=false;say('화물선 개발 검토 진입 · 정규 위치는 이동하지 않음 / DEV 기억 저장으로 수첩·문·위치와 원래 진행을 함께 보관');
+  }catch(e){if(ticket===epoch)panel.dataset.lastError=e.message;localMaterials.clear();localView?.dispose();localScope?.dispose();if(ticket===epoch){loading=false;o.consumer?.destroy();o.consumer=null;view=null;enterButton.disabled=false;if(!disposed)say(e.message)}}
+ };
+ const enterButton=button(bar,'화물선 개발 검토 진입',enter),exitButton=button(bar,'native 일시정지',exit);exitButton.disabled=true;
+ const actionButton=button(bar,'조사',async()=>{const c=o.consumer,ticket=epoch;try{await action()}finally{releaseCaptured(c,ticket)}});const notebookButton=button(bar,'수첩',notebook);
+ const saveButton=button(bar,'DEV 기억 저장',()=>{if(disposed||!active||getWorld()!==o.binding.world)return false;o.memoryOwner.save();say('DEV 기억 저장 완료 · 수첩/문/위치/원래 진행 원자 보관')});const restoreButton=button(bar,'DEV 기억 불러오기',()=>{if(disposed||!active||getWorld()!==o.binding.world)return false;if(busy()||!active)throw Error('진행 중에는 불러올 수 없습니다.');if(typeof onRestoreRequested!=='function')throw Error('복원 lifecycle이 연결되지 않았습니다.');return onRestoreRequested()});
+ button(bar,'DEV 기억 저장 재시도',async()=>{if(disposed||getWorld()!==o.binding.world)return false;await o.memoryOwner.retryCommit();if(!disposed&&getWorld()===o.binding.world)say('DEV 기억 저장 재시도 완료 · 원래 작업 재실행 없음')});
+ const pause=()=>{paused=true;releaseAction();cancelUI();resetInput();o.consumer?.setPaused(true)};
+ const resume=()=>{if(disposed)return;paused=false;o.consumer?.setPaused(false);resetInput();refreshSameOwner(true)};
+ const blur=()=>{releaseAction();cancelUI();resetInput();o.consumer?.blur()};
+ window.addEventListener('focus',()=>refreshSameOwner(true),{signal:listeners.signal});window.addEventListener('pagehide',()=>api.dispose(),{signal:listeners.signal});window.addEventListener('keyup',event=>{if(['KeyZ','Enter','Space'].includes(event.code))releaseAction()},{signal:listeners.signal});window.addEventListener('blur',blur,{signal:listeners.signal});document.addEventListener('visibilitychange',()=>{blur();o.consumer?.setHidden(document.hidden)},{signal:listeners.signal});
+ return api=Object.freeze({get active(){return active},get blocked(){return !disposed},action,get releaseAction(){const c=o.consumer,ticket=epoch;return()=>releaseCaptured(c,ticket)},pause,resume,enter,exit,
+  frame(dt,direction,now){if(!active||disposed)return;if(o.consumerWorld&&(getWorld()!==o.consumerWorld||getWorld()?.map?.id!=='world:ship:S9')){pause();say('정규 세션 변경 · 검토 잠금');return}const c=o.consumer;refreshSameOwner();if(supplyPending){credit=0;moving=false;return}if(paused||busy()||dt<=0){credit=0;moving=false;c.blur();return}else{c.frame(now);if(direction&&c.canAct()){credit+=Math.min(50,Math.max(0,dt))*0.18;const steps=Math.floor(credit);credit-=steps;const moved=stepCargoMovement(c,o.contract,direction,steps);walk+=moved;moving=moved>0;if(moved<steps){credit=0;const stopped=c.snapshot().native,notice=engineSideStairNotice(o.engineUpperLayer,stopped.sceneId,stopped.foot,direction);if(notice)say(notice)}}else{credit=0;moving=false}}
+   const s=c.snapshot(),n=s.native,minute=environment.getFrame(getWorld().map).lighting.minutes;const reviewText=`검토 위치: ${n.sceneId} · 발 ${n.foot[0]}, ${n.foot[1]} · 방향 ${{up:'위',down:'아래',left:'왼쪽',right:'오른쪽'}[n.facing]??'알 수 없음'} · ${n.pending?'이동 중':'대기'}`;const nearbyRecord=o.contract.rooms.find(r=>r.mapId===n.sceneId&&allowsRoomRead(o.roomApproach,r.roomId,n.sceneId,n.foot));const nearbyZone=cargoZoneRows().find(r=>inCargoZoneFront(r.pointId,n.sceneId,n.foot,r.facing)),nearbyOfficer=cargoOfficerRows().find(r=>inCargoOfficerFront(r.pointId,n.sceneId,n.foot,r.facing));const recordHint=(nearbyRecord?' · 기록 '+String(o.contract.rooms.findIndex(r=>r.roomId===nearbyRecord.roomId)+1).padStart(2,'0')+'/15 · '+nearbyRecord.name+': 조사':'')+(nearbyZone?' · '+nearbyZone.label+' — 아래를 보고 조사':'')+(nearbyOfficer?' · '+nearbyOfficer.sourcePoint.label+' — 위를 보고 대화':'');if(positionReview.textContent!==reviewText+recordHint)positionReview.textContent=reviewText+recordHint;view.syncDoors(s.doors);const f=view.frame(n.sceneId,n.clock.elapsedMs,minute,true,{footY:n.foot[1],draw:ctx=>{drawApprovedPlayer(ctx,{x:n.foot[0],y:n.foot[1],facing:n.facing,moving,walk,visibleHeight:80,appearance:getWorld().snapshot().player.appearance});drawEngineUpperForeground(o.engineUpperLayer,ctx,o.registry.scenes[n.sceneId],o.materials.get(n.sceneId),n.foot)}}),ctx=canvas.getContext('2d'),cx=Math.max(0,Math.min(1536-canvas.width,n.foot[0]-canvas.width/2)),cy=Math.max(0,Math.min(1024-canvas.height,n.foot[1]-canvas.height/2));ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(f.canvas,cx,cy,canvas.width,canvas.height,0,0,canvas.width,canvas.height);
+
+  },snapshot(){return o.consumer?.snapshot()??null},dispose(){if(disposed)return;disposed=true;epoch++;entryController?.abort();releaseAction();o.consumer?.destroy();o.consumer=null;o.presentationScope?.dispose();o.presentationScope=null;disposeMaterials();view?.dispose();view=null;o.memoryOwner.dispose();o.currentWorld=()=>null;listeners.abort();panel.remove();if(savedSize)[canvas.width,canvas.height]=savedSize;active=loading=false;resetInput()}
+ });
+}

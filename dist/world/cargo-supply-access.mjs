@@ -1,0 +1,2 @@
+const freeze=o=>{if(o&&typeof o==='object'){for(const v of Object.values(o))freeze(v);Object.freeze(o)}return o};
+export const CARGO_SUPPLY_ACCESS=freeze({"point":{"id":"ship-entry:S9","kind":"warp","mapId":"world:hub:S9","stageId":"S9","areaId":null,"x":34,"y":3,"label":"흑망단 포획선","placementStatus":"DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY","targetMapId":"world:ship:S9","target":[3,12],"gate":"CAN_ENTER_BLACKNET_SHIP","exit":false,"reverseId":"ship-entry:S9:return"},"gate":{"id":"CAN_ENTER_BLACKNET_SHIP","expr":"S9_HIDDEN_DOCK_OPEN"}});

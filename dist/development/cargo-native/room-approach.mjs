@@ -1,0 +1,9 @@
+// Private selected UI interaction proof, never movement/position/save authority.
+const owned=new WeakMap(),PINS={"ROOT_SELECTION.json": "0bbab7b81979666f810c3cd8a6c15af7165dbb32e4e20103d4e8be9bcf4ccfcb", "ROOM_APPROACH_RLE.json": "dde70f52a2a3b4338b1abc23eb53120b8824eca26f383f73dfcc3886b55f9964", "NEW_ROOM_APPROACH_PROPOSAL.json": "49ded0a952174d82c0d7e911aff73377b08f59b8b23903323c455e31c1bbda53"};
+const ownBytes=x=>x instanceof ArrayBuffer?new Uint8Array(x.slice(0)):x instanceof Uint8Array?new Uint8Array(x):null;
+const hash=async b=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');
+export async function loadRoomApproach({readBytes}){const decoded={};for(const[name,pin]of Object.entries(PINS)){const bytes=ownBytes(await readBytes('room-approach-r1/'+name));if(!bytes||await hash(bytes)!==pin)throw Error('ROOM_APPROACH_PIN');decoded[name]=JSON.parse(new TextDecoder().decode(bytes))}const rows=new Map();for(const r of decoded['ROOM_APPROACH_RLE.json'].rows){const masks={};for(const[k,runs]of Object.entries(r.masks)){const lines=new Map();for(const[y,l,end]of runs){if(!lines.has(y))lines.set(y,[]);lines.get(y).push([l,end])}masks[k]=lines}rows.set(r.roomId,{sceneId:r.sceneId,masks})}const authority=Object.freeze({revision:decoded['ROOM_APPROACH_RLE.json'].revision});owned.set(authority,rows);return authority}
+export const isRoomApproach=a=>owned.has(a);
+function contains(a,roomId,sceneId,foot,kind){const row=owned.get(a)?.get(roomId);return !!row&&row.sceneId===sceneId&&Array.isArray(foot)&&foot.length===2&&foot.every(Number.isInteger)&&(row.masks[kind]?.get(foot[1])??[]).some(([l,end])=>foot[0]>=l&&foot[0]<end)}
+export const allowsRoomSwitch=(a,roomId,sceneId,foot)=>contains(a,roomId,sceneId,foot,'inside')||contains(a,roomId,sceneId,foot,'outside');
+export const allowsRoomRead=(a,roomId,sceneId,foot)=>contains(a,roomId,sceneId,foot,'clue');

@@ -1,0 +1,45 @@
+{
+  "status": "ROOT_SELECTED_NEW_GAMEPLAY_PLACEMENT_NOT_INSTALLED",
+  "selectedAtUTC": "2026-10-29T05:17:13Z",
+  "decisionEvidence": "Root directly reviewed NPC preview and both gameplay diagnostics; confirmed conditional placement after independent NPC support and simultaneous solid/bypass PASS.",
+  "pins": [
+    {
+      "path": "final_game_2302/gohyeon/gameplay_proposal/GEOMETRY_PROPOSAL.json",
+      "sha256": "15c34402dafcccfc26f28f2ae776cedeb16ea6433d82995ed07769387e6114e0"
+    },
+    {
+      "path": "final_game_2302/gohyeon/gameplay_proposal/SEMANTIC_EQUIVALENCE_BASELINE.json",
+      "sha256": "a64f7753fbe28eb471e718788f2e7070e7f6bef5f3e79ef0824f4b252bb139fa"
+    },
+    {
+      "path": "final_game_2302/gohyeon/gameplay_proposal/SOLID_AND_BYPASS_CHECK.json",
+      "sha256": "0329d9458587f9a317cf858e331b4c344c3e353a7671b78fd7dd5f516da60d10"
+    },
+    {
+      "path": "final_game_2302/gohyeon/gameplay_proposal/GEOMETRY_CHECK_RESULTS.json",
+      "sha256": "2b0f3f2c331b1ebfd7f1143726ba2c863d4801be07c18d0ff2c797d6f1c29273"
+    },
+    {
+      "path": "final_game_2302/gohyeon/gameplay_proposal/W04_RECOVERY.json",
+      "sha256": "49cbcb84d09dff5b51cb1e52677da359434b9ac125eb62dbe725abb4a7a8f9b4"
+    }
+  ],
+  "selectedTrainerBindings": {
+    "ROUTE_S4_01": "LOCAL_WALKER_M_VAR01",
+    "ROUTE_S4_02": "ECO_EDUCATION_STAFF_F_BASE",
+    "ROUTE_S4_04": "LOCAL_WALKER_F_VAR01"
+  },
+  "selectedScope": [
+    "Three original trainer IDs/parties/conditions unchanged; proposed feet and native front72 approach masks selected.",
+    "Park original history board and owl observation site; three recovered habitat footprints selected for original-table integration.",
+    "Original images, canonical48, movement floors, lighting unchanged; no mandatory crossing bands."
+  ],
+  "runtimeConditions": [
+    "Original pipeline prerequisite/unavailable/defeat/retry/once reward tests required before install.",
+    "Epoch-scoped reject-only interaction guard required.",
+    "Native encounter accumulation needs separate 48px genuine movement proof; no fake canonical cell moves.",
+    "Latest source release correction belongs to sole writer; do not overwrite."
+  ],
+  "ordinaryUserSaveCertified": false,
+  "nativeGameplayInstalled": false
+}

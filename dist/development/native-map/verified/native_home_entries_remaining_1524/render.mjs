@@ -1,0 +1,6 @@
+export function renderNativeHome(g,{contract:c,assets,environment,status:s,marks=false,actorEnabled=true,supported=true}){
+ const outside=s.scene==='exterior',w=outside?960:696,h=outside?540:464,camera=outside?[Math.round(Math.max(0,Math.min(4160,s.foot[0]-480))),Math.round(Math.max(0,Math.min(996,s.foot[1]-270))),960,540]:[0,0,696,464],pose=Number.isInteger(s.pose)?s.pose:{down:0,right:3,left:6,up:9}[s.facing];g.canvas.width=w;g.canvas.height=h;let result=null;
+ if(outside){if(!environment)throw Error('ENVIRONMENT_REQUIRED');result=environment.render(g,{foot:s.foot,pose,camera,actorEnabled})}else{g.drawImage(assets[s.scene],0,0);if(actorEnabled)g.drawImage(assets['actor:'+pose],s.foot[0]-53,s.foot[1]-90)}
+ if(marks){g.strokeStyle=supported?'#64efa0':'#ff6868';g.strokeRect(s.foot[0]-camera[0]-24.5,s.foot[1]-camera[1]-18.5,49,37)}
+ return {camera,pose,actorSize:[107,107],actorPivot:[53,90],nativeZoom:1,sourceSHA:c.sources[s.scene].sha256,environmentConnected:outside,environment:environment?.read()??null,environmentResult:result,selectedNativeSupport:supported,originalEnvironmentSupport:result?.safe49??null,worldConnected:false,saveConnected:false,gaitLogicTested:true,actualBrowserGaitVerified:false};
+}
