@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_LATENCY_PHASE1",
+  "checkpoint": "Stage63 + NEW_REBUILD_S1_S2_NATIVE_V19",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -752,9 +752,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/gohyeon-pair/native-selected-warp-authority.mjs": {
-      "sha256": "980c2a2648278c0bcf89fd10faa50be417e3e2926422b03dd8a7899396ac312b",
-      "bytes": 6964,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "b53bd569ae815c542c0faa9a8b06f72429bb327e4b9e339f208e31256a5b345f",
+      "bytes": 7379,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/gohyeon-pair/player-frame.mjs": {
       "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
@@ -1067,9 +1067,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
-      "sha256": "4d4f8ddb40db0be1e2ad5619efe4a53ce73d11b268d69cbed611efa30b4b7339",
-      "bytes": 39360,
-      "role": "ACTIVE_INSTALLED_NEW_REBUILD_LATENCY_PHASE1_SOURCE_NOT_FINAL_GAME"
+      "sha256": "0d732652ef5df843dfaa536a6d2d8fab9fa5c560b30989183fc95d505a18462d",
+      "bytes": 43825,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/native-harin-authority.mjs": {
       "sha256": "09134f1f2df1fb760186cd986ffa82588393422cc09611b9091e2dee948c893d",
@@ -1092,19 +1092,19 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/resources.mjs": {
-      "sha256": "a8283e296860b55211372b41360d63491a2a2a473cfcfcff99b34a28273e1413",
-      "bytes": 3881,
-      "role": "ACTIVE_INSTALLED_NEW_REBUILD_LATENCY_PHASE1_SOURCE_NOT_FINAL_GAME"
+      "sha256": "e64b48416a1ad8a8dd9d63b0426840ea0b7fa7d065f82515d2628190a3079bb8",
+      "bytes": 3969,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "sha256": "f265cd651d8da4966eb58c3c53863165dfbe4e7a30fc89d23f57d26cb488d8db",
-      "bytes": 24134,
-      "role": "ACTIVE_INSTALLED_NEW_REBUILD_PERFORMANCE_SOURCE_NOT_FINAL_GAME"
+      "sha256": "82bdacd2d300483017f7c6426603e46726eaacb8e1af8702e8f86482f25b6ade",
+      "bytes": 25516,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
-      "sha256": "bb73d59a841808f309e4197282aeb1f514ed581c6abeaba6022c77fbbb73e00f",
-      "bytes": 1722,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
+      "bytes": 1843,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/s5-heal-binding.mjs": {
       "sha256": "a9dce191f1c46789b9c4237d59d17d62746334c19acb59027c2f90c0398e643c",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "sha256": "ccf285127d73c43cb5181e2d1fd1d56c3e9a3cf4a3b84eb1b53c6a38c62759fb",
-      "bytes": 70399,
-      "role": "ACTIVE_INSTALLED_NEW_REBUILD_LATENCY_PHASE1_SOURCE_NOT_FINAL_GAME"
+      "sha256": "3e4995b49e220496d378b0a34929ed7ab54288ef490cfeeefdc27036a5aea0ac",
+      "bytes": 73737,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -1137,9 +1137,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/travel-registration.mjs": {
-      "sha256": "ecae815c2d7a01ef4fd52a95dfc96c41f753859e3b15c3604e3bd63db8779361",
-      "bytes": 2315,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "bfa334bad1b80e63ecf5939f2068af4ea5149af21b6f0b974f965fda6ae34227",
+      "bytes": 2426,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/student_copy_review/student-copy.mjs": {
       "sha256": "745b7314836b91c55ae1b09b73a7df0f2c95c332e11d050aace6e366bfb9bda2",
@@ -2412,9 +2412,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/hacheong-brackish/provider.mjs": {
-      "sha256": "808c6fc9605dc65704cec5d47524bb6195e54654340081836cdbeaa8c6a6da59",
-      "bytes": 9226,
-      "role": "NEW_REBUILD_R2_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "8b0104c702671eb44c0d03d99e768339b5a66a3b61c7d53db14dfafab8a22e46",
+      "bytes": 9893,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/hacheong-brackish/s1-continuous.mjs": {
       "sha256": "08defacaf7574cbcb85d52b3b685854bedc1e7217ddae63e8ae9d53efaa67a09",
@@ -2832,9 +2832,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "tests/rebuild-r1-restoration-chooser.test.mjs": {
-      "sha256": "cf1caaa372631c035828d896791cc74ce6b10868e1c3a0cb5b60b0f4562ae065",
-      "bytes": 10362,
-      "role": "NEW_REBUILD_R1_source_or_test_not_exact_lost_checkpoint"
+      "sha256": "1574b0fa5bfe17b04a91cd7bb3f4dc7edcd245c0b631ed422da9a7de6d9abe7f",
+      "bytes": 10928,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/preparation-gate.mjs": {
       "sha256": "10494fb9372b0ccebd0a9350b2ca61f968b6d178ba19be03811d29357958c70b",
@@ -3479,12 +3479,137 @@
       "sha256": "374b05c8907b84bb12582a8be21f6e78538e708a9553faeab752592d0b1f1c87",
       "bytes": 47755,
       "role": "isolated_candidate_code_or_runtime_data_not_active"
+    },
+    "dist/development/jangmok-town-native/SELECTION.json": {
+      "sha256": "9f70ebb8c7fadefccf28b86a5a8efeb94dc1d7889b5ee030f0dbeea86ef32e58",
+      "bytes": 882,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/assets/selected-safe.rows.json": {
+      "sha256": "9ed1578eba6311342b60565ebb2c2ca664084b4034f6250f152f846ceb03e8e9",
+      "bytes": 95070,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/environment/PACKETS.json": {
+      "sha256": "14e61e0cf171a52875e26c771346b89068bb6c25a49dae75634807dec1ce9ac0",
+      "bytes": 186369,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/environment/common/day-night.mjs": {
+      "sha256": "303a90489acc6c1baf988a0504272edca2989c0dc806b601a30e1f401c53fe69",
+      "bytes": 2855,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/environment/common/frame-lighting.mjs": {
+      "sha256": "08120b454b9f4732405a6330f514bd4ff793f9743d6ec8797e6c49dcfdf46b23",
+      "bytes": 2666,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/environment/common/screen-lighting.mjs": {
+      "sha256": "f4bc8afbc3d3e60b37917bdba06bdbd1ec0ded12497964d8f2f0133a6b130eb4",
+      "bytes": 1588,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/environment/provider.mjs": {
+      "sha256": "aad81c396e88e4680e1ae67385412ffae3c4aae041b870ef55bfc5cb3ccd8303",
+      "bytes": 8077,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/environment/transport.mjs": {
+      "sha256": "34a3fec2ae15e494f2e9954cc28729a7511de138699be97502dcb40052e87f83",
+      "bytes": 1127,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/presentation-pins.mjs": {
+      "sha256": "8d72942819ddbd81a146029ee1dbb91f4133c2b16844f07bad07ff7a0a494292",
+      "bytes": 1190,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/presentation.mjs": {
+      "sha256": "7a35032f4b6d167ea1008ea864b476890c2dc4da95f1639cb01983b1bb08df06",
+      "bytes": 10101,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/registration.mjs": {
+      "sha256": "a7c907180eaf71f3747537a7644ac5ddde92fbc1def3d160869464cf465a4a01",
+      "bytes": 1810,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jangmok-town-native/support.mjs": {
+      "sha256": "e180081a913eb165a62b3c812ab9499785a8f59c22bb57693b6fa55273ff8e0a",
+      "bytes": 2829,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s1-s2-route-contract.mjs": {
+      "sha256": "61b4259b0aa69b7f8a6a6e8af6ba331c8482ecd765cfa08d04926741e88bc827",
+      "bytes": 503,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s1-stage-intermediate.mjs": {
+      "sha256": "01e046de946bb82ca305b40cd53bf2eafd5b3b40780b70f4a5230fee5c6ec73f",
+      "bytes": 1178,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/jungle-native/main_ui_candidate/s2-presented-pose.mjs": {
+      "sha256": "105cd2b66a6ec3146d2478b3bf510cd45c46f8d3089cea1ca1f5e3902498e84b",
+      "bytes": 358,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-east-pillar/load.mjs": {
+      "sha256": "d121996f22858276dcb0c5e8cf9a196a38fb4bbe01bd904fe847ebc0bf16fd71",
+      "bytes": 1888,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-east-pillar/pins.mjs": {
+      "sha256": "9ada5e0ed71969b2f03a0e526abbfaf647477d630932a55724f7a1e96ad6a57f",
+      "bytes": 608,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-east-road/assets/selected-safe.rows.json": {
+      "sha256": "4192ec61d34759a1f37f307ef6bd84b9f674b45382922c17f1511c33ff1f7a0a",
+      "bytes": 40816,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-east-road/compose-support.mjs": {
+      "sha256": "dc53730956734171e30304fdfc23ccc93d7055192b9720a43c00bef1951cc1a5",
+      "bytes": 598,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-east-road/presentation.mjs": {
+      "sha256": "1d2964833ad791b1f6aab7a85db87b0d9982d686069ed0797036df5a4dc2807b",
+      "bytes": 3005,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-east-road/registration.mjs": {
+      "sha256": "a250a8af51ea232af94b181548049b3ee39bac6dc4411822b3e9910e9ce97de2",
+      "bytes": 696,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-east-road/support.mjs": {
+      "sha256": "d51828f7ee6969188541e69a115186ba8ce54407ba4d3fedd31f860a72384fe4",
+      "bytes": 2868,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/s1-s2-native/registration.mjs": {
+      "sha256": "47210a53189836db48a2d53e2a8064316b659cdfbb00a4e5363b8dab78050903",
+      "bytes": 3396,
+      "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
+    },
+    "dist/development/native-map/verified/coastal_approach_selected/raw_floor.u8": {
+      "sha256": "d7632264a65246627bbc226450d195196d8091a75fab0ed5f5f2737627bb2dbb",
+      "bytes": 7864320,
+      "role": "exact_selected_newly_authored_geometry_binary"
+    },
+    "dist/development/native-map/verified/coastal_approach_selected/new_safe49.u8": {
+      "sha256": "6ecb1537e2e4943f31d22c24c41b6d6d80a76a1d28bddbb453c833cd6f0bd751",
+      "bytes": 7864320,
+      "role": "exact_selected_newly_authored_geometry_binary"
     }
   },
-  "revision": "NEW_REBUILD_LATENCY_PHASE1",
-  "previous_public_commit": "0986f43d1636af563c6e6b573073783318dc56aa",
-  "revision_source_manifest_sha256": "b9ea7e80fc660600b101bfd72ff55e75ad78a0f4d876ff32caecd57fdf934dc2",
-  "revision_scope": "Installed14file latency phase1 and GYM12 scalar strictness; bounded actual functional PASS on synthetic Node-earned fixture, 18.5s S1 transition HOLD. Not full fresh journey or complete performance acceptance. Existing5baseline failures retained.",
+  "revision": "NEW_REBUILD_S1_S2_NATIVE_V19",
+  "previous_public_commit": "f76ca1b0c6e5021a76eaf34438439c18d0bbfda1",
+  "revision_source_manifest_sha256": "41f847098bacb0eeacb42043d5cfe90ae6b1ae456d40a4dba3c2014babe76ad5",
+  "revision_scope": "Bounded S1-east/S2-west roundtrip, save restore and menu lock actual PASS; latency and full game HOLD; no coast/BIRD/GYM2 connection; two historical authored geometry arrays added to backup only",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -3595,7 +3720,23 @@
         "candidates/NEW_REBUILD_S1_S2_V19/OMITTED_DEPENDENCIES.json"
       ],
       "standalone": false,
-      "validation": "New async-presented receipt fix included. Independent final audit and browser integration remain pending; no complete-game claim."
+      "validation": "New async-presented receipt fix included. Independent final audit and browser integration remain pending; no complete-game claim.",
+      "currentPromotion": "32 exact code/JSON source files promoted; bounded actual S1-S2 route PASS. Shelf history retained."
     }
+  },
+  "explicit_binary_exceptions": {
+    "newly_added_geometry": [
+      {
+        "path": "dist/development/native-map/verified/coastal_approach_selected/raw_floor.u8",
+        "bytes": 7864320,
+        "sha256": "d7632264a65246627bbc226450d195196d8091a75fab0ed5f5f2737627bb2dbb"
+      },
+      {
+        "path": "dist/development/native-map/verified/coastal_approach_selected/new_safe49.u8",
+        "bytes": 7864320,
+        "sha256": "6ecb1537e2e4943f31d22c24c41b6d6d80a76a1d28bddbb453c833cd6f0bd751"
+      }
+    ],
+    "scope": "No artwork pixels; independently reproduced from authored polygon and erosion, exact historical bytes; not new collision behavior."
   }
 }

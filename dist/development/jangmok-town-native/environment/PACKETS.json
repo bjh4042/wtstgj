@@ -1,0 +1,8201 @@
+{
+  "status": "NEW_R2_EIGHT_PHASE_INTERLEAVED_BLOCK_NOT_GAME_INSTALLED",
+  "sourceSHA256": "48e2b1289016299208667b4f5e13152b652756e3f5b2eae561f04454651c53f0",
+  "width": 5120,
+  "height": 1536,
+  "tileSize": 256,
+  "phaseCount": 96,
+  "stepMs": 50,
+  "periodMs": 4800,
+  "waterUniquePhases": 48,
+  "phaseEncoding": "RGB_XOR_IMMUTABLE_SOURCE_AT_LAYER_INDICES",
+  "layerOrder": [
+    "water",
+    "b2",
+    "b4",
+    "b1",
+    "b3"
+  ],
+  "lightManifest": {
+    "status": "UNSELECTED_CANDIDATE_PENDING_INDEPENDENT_QA",
+    "sourceSHA": "48e2b1289016299208667b4f5e13152b652756e3f5b2eae561f04454651c53f0",
+    "semanticPlanSHA": "45d6e8748ba6c1ba393341dbf0080a9cdc272182859f698a935f8a681e57ba86",
+    "width": 5120,
+    "height": 1536,
+    "count": 309487,
+    "indicesURL": "indices.u32",
+    "transmissionURL": "transmission.f64",
+    "indicesSHA": "9ff445a23afb843546eb6ebb739bbbbe91ce192608c5e117652099217720556f",
+    "transmissionSHA": "8c32931b0d8360a7f2a4df9fb4aa2ce7a9f9489e812785387a212a95636ad6d7",
+    "ambientTint": [
+      0.4,
+      0.47,
+      0.6
+    ],
+    "format": "sorted unique Uint32LE world index; Float64LE RGB screen transmission",
+    "apply_contract": "apply ambient to CURRENT animated RGBA then screen blend by same nightMix; nightMix=0 byte exact",
+    "buildings": 10,
+    "actual_wall_eave_sign_fixtures": 27,
+    "independent_pole_streetlights": 0,
+    "notes": [
+      "No new painted objects",
+      "B06 source panel preserved, B07 visible glass, B08 weak canopy, B09 source lantern and rail-separated glass",
+      "Fixed masks modify visible faces only; no volumetric wall-penetrating glow",
+      "Original 39 runtime inputs frozen",
+      "Endpoint source-render proof, not yet runtime playback",
+      "Only B04 existing wall lamp visible-face falloff changed: smooth narrow cone, original emitter untouched"
+    ],
+    "revision": "B04_VISIBLE_WALL_CONE_R2",
+    "parentTransmissionSHA": "7292e98f6d7f46f0df4b4928257e23480fdfdcb16a42e040dd452be570450a2e"
+  },
+  "schedule": {
+    "dawnStart": 300,
+    "dayStart": 420,
+    "duskStart": 1080,
+    "nightStart": 1200
+  },
+  "atlasAlphaProof": {
+    "b2": {
+      "frames": 96,
+      "opaqueCountPerFrame": 32352,
+      "partialAlpha": 0,
+      "sameMaskAll96": true,
+      "atlasSHA256": "4d2092cae0230de35163a684cf652aa7dfd87abf91e570b2e8feb6c794251ca8"
+    },
+    "b3": {
+      "frames": 96,
+      "opaqueCountPerFrame": 25079,
+      "partialAlpha": 0,
+      "sameMaskAll96": true,
+      "atlasSHA256": "9fe345a78b7f9489b8eadbc7374c171b08d5efd3a9a80ef3445d2246f40ba6ee"
+    }
+  },
+  "signs": [
+    {
+      "id": "west",
+      "png": "west.png",
+      "sha": "7febfdff117913f61044e6982de9822793b4914f8ee5fd3f14201da5e2a36a7c",
+      "origin": [
+        61,
+        598
+      ],
+      "groundY": 690
+    },
+    {
+      "id": "east",
+      "png": "east.png",
+      "sha": "8457c553a1442bfb15ca7e8755812a49aaf54b5cda8c110ae76743e51bc2aff5",
+      "origin": [
+        4976,
+        630
+      ],
+      "groundY": 722
+    },
+    {
+      "id": "coast",
+      "png": "coast.png",
+      "sha": "25c6e7e3f953e18a19f4bd9d498f1572451ffd9fbc2115c873908bfa98800e80",
+      "origin": [
+        402,
+        590
+      ],
+      "groundY": 682
+    },
+    {
+      "id": "bird",
+      "png": "bird.png",
+      "sha": "042c0b69b561193a16c11d4e2698477c15ea4567801069a3fe4c306658f4697a",
+      "origin": [
+        3700,
+        658
+      ],
+      "groundY": 750
+    }
+  ],
+  "depth": [
+    {
+      "id": "west_boat_inner_post",
+      "png": "west_boat_inner_post_source_alpha.png",
+      "sha": "9c00982f141958e5881421e3f8297f98f29df7cc43a6f7af049df7f7b0f3c59b",
+      "origin": [
+        481,
+        247
+      ],
+      "size": [
+        38,
+        42
+      ],
+      "groundY": 288
+    },
+    {
+      "id": "east_cabinet",
+      "png": "east_cabinet_source_alpha.png",
+      "sha": "c857754bedb43a56467fecab4518fd1147647c85d043aa92dfc606f5f47468a8",
+      "origin": [
+        1053,
+        379
+      ],
+      "size": [
+        32,
+        60
+      ],
+      "groundY": 438
+    }
+  ],
+  "tiles": [
+    {
+      "id": 0,
+      "x": 0,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/62e9782a77bda2d0d872926d981f2094499d0f2c715eb5d8e2d073f2defde9c0.deflate",
+        "encodedBytes": 212703,
+        "decodedBytes": 262144,
+        "encodedSHA256": "afb9c5c78c5ff267b99e3a556eddbf041a4b0373ffcb6bb2ebafdf3e01a6d19d",
+        "decodedSHA256": "62e9782a77bda2d0d872926d981f2094499d0f2c715eb5d8e2d073f2defde9c0"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 1,
+      "x": 256,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 135
+        },
+        "b2": {
+          "count": 10145
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 5980
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 540
+        },
+        "b2Indices": {
+          "offset": 262688,
+          "bytes": 40580
+        },
+        "b4Indices": {
+          "offset": 303272,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 303272,
+          "bytes": 23920
+        },
+        "b3Indices": {
+          "offset": 327192,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/5458c3150e1a88d3c06a9dbee91667147abcf56feecdb0fc82b34ed0ae361433.deflate",
+        "encodedBytes": 225002,
+        "decodedBytes": 327192,
+        "encodedSHA256": "2691a78360c2c67d9526038b2c2f4aed29e080485db8baf52b8c47df5eabdec7",
+        "decodedSHA256": "5458c3150e1a88d3c06a9dbee91667147abcf56feecdb0fc82b34ed0ae361433"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 2,
+      "x": 512,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 27371
+        },
+        "b2": {
+          "count": 16864
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 109484
+        },
+        "b2Indices": {
+          "offset": 371632,
+          "bytes": 67456
+        },
+        "b4Indices": {
+          "offset": 439088,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 439088,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 439088,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/7d3d8122c9871f807e6295af9149ef2516f79515add5629b966c3a4af18b5d36.deflate",
+        "encodedBytes": 234281,
+        "decodedBytes": 439088,
+        "encodedSHA256": "d025da7b7640beb89580d14b9a5c11f3830bff4886b75e333260f40133ac0f93",
+        "decodedSHA256": "7d3d8122c9871f807e6295af9149ef2516f79515add5629b966c3a4af18b5d36"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 3,
+      "x": 768,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 65536
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 262144
+        },
+        "b2Indices": {
+          "offset": 524288,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 524288,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 524288,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 524288,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/241636196e300f602423f146c07e831990523e12f44c0acc0c3fda7b29f3a316.deflate",
+        "encodedBytes": 223814,
+        "decodedBytes": 524288,
+        "encodedSHA256": "0c524a55186b288283a514e5ac3c941cce29777b666b9aa1e3f0c50ba6aac624",
+        "decodedSHA256": "241636196e300f602423f146c07e831990523e12f44c0acc0c3fda7b29f3a316"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 4,
+      "x": 1024,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 17936
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 4869
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 8575
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 71744
+        },
+        "b2Indices": {
+          "offset": 333888,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 333888,
+          "bytes": 19476
+        },
+        "b1Indices": {
+          "offset": 353368,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 353368,
+          "bytes": 34300
+        }
+      },
+      "static": {
+        "file": "packets_xor/c1c2a81f26d2c79d1db2b9d793ad810e28129c453a0f90ee9dabc524d31ac118.deflate",
+        "encodedBytes": 203599,
+        "decodedBytes": 387668,
+        "encodedSHA256": "8fbd130d7cdc99397ce8c5cd4bcf7c84d4c11a025c001104940e2e08a11e81b0",
+        "decodedSHA256": "c1c2a81f26d2c79d1db2b9d793ad810e28129c453a0f90ee9dabc524d31ac118"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 5,
+      "x": 1280,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 16504
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 66016
+        }
+      },
+      "static": {
+        "file": "packets_xor/85ddccd021fb9030d0e63aefad1f0e2dbed937b597fa7757b1bc3289f13133f5.deflate",
+        "encodedBytes": 217785,
+        "decodedBytes": 328160,
+        "encodedSHA256": "52a6624da88d90498f2b6263a1f30e1ba5ffb76ed9a34f8025c61bcd5968485e",
+        "decodedSHA256": "85ddccd021fb9030d0e63aefad1f0e2dbed937b597fa7757b1bc3289f13133f5"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 6,
+      "x": 1536,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/646a61222ec01879c78a04fe5dd6129b4e52e456668efff4fa4d55456919d733.deflate",
+        "encodedBytes": 217046,
+        "decodedBytes": 262144,
+        "encodedSHA256": "22ce47dc324c744f5fafa49b93641cd537faebacd2157b4db49549229d7499c7",
+        "decodedSHA256": "646a61222ec01879c78a04fe5dd6129b4e52e456668efff4fa4d55456919d733"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 7,
+      "x": 1792,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/cfd6c413dc9295372aa666b28f082a747e82b5b8686dd4a9b46b224064ea18f3.deflate",
+        "encodedBytes": 213419,
+        "decodedBytes": 262144,
+        "encodedSHA256": "adb097e8ab5fd71b405a0f46246d58d34e8eb09b073cdf21bfe673512eaf95f3",
+        "decodedSHA256": "cfd6c413dc9295372aa666b28f082a747e82b5b8686dd4a9b46b224064ea18f3"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 8,
+      "x": 2048,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/94636706ee99f80892ebdc4d460a7f45998b62354a230dad9c458bcc52f4ffac.deflate",
+        "encodedBytes": 214715,
+        "decodedBytes": 262144,
+        "encodedSHA256": "55289a7f793e68550efe13711e666674e01205bf1f00de22b9d08db3be56bdb7",
+        "decodedSHA256": "94636706ee99f80892ebdc4d460a7f45998b62354a230dad9c458bcc52f4ffac"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 9,
+      "x": 2304,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ce82e8699317b7306d27a240daa99e4883f0ec2af82a543bc128834a89b7d7e7.deflate",
+        "encodedBytes": 216051,
+        "decodedBytes": 262144,
+        "encodedSHA256": "e81cbf5aca1b86a15ace5bd5c7030d8b1c3b0d7cefd698e89ff7a8bb2bff46ed",
+        "decodedSHA256": "ce82e8699317b7306d27a240daa99e4883f0ec2af82a543bc128834a89b7d7e7"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 10,
+      "x": 2560,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d0664b5d130b4ec2bdac6863e424e4549d29ce14fcfa23f4ba96cb850ed06da3.deflate",
+        "encodedBytes": 212399,
+        "decodedBytes": 262144,
+        "encodedSHA256": "ba31e2588a20e2bfe8b95a1c67d774cbf0c7920f0dcb6fdfa205c2c24111c455",
+        "decodedSHA256": "d0664b5d130b4ec2bdac6863e424e4549d29ce14fcfa23f4ba96cb850ed06da3"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 11,
+      "x": 2816,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/386a4f357d71deee5b2f3db5748cf4c66d3645f65b0712e9169fe095bfef70dc.deflate",
+        "encodedBytes": 212709,
+        "decodedBytes": 262144,
+        "encodedSHA256": "9585105c8dd1b55069ced7518fc525fd63aba10111a8bbec22fbeef5ccb45e53",
+        "decodedSHA256": "386a4f357d71deee5b2f3db5748cf4c66d3645f65b0712e9169fe095bfef70dc"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 12,
+      "x": 3072,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 2144
+        },
+        "transmission": {
+          "offset": 264288,
+          "bytes": 12864
+        },
+        "waterIndices": {
+          "offset": 277152,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 277152,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 277152,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 277152,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 277152,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/fc3ed54965dcc4433beb10e5c0fceb69d565caefa613b9fbdd32db7e55057be8.deflate",
+        "encodedBytes": 206853,
+        "decodedBytes": 277152,
+        "encodedSHA256": "442d0207d2e65a444dbc0bd5322038e6423d513b7e143c3a137d28901e5a24aa",
+        "decodedSHA256": "fc3ed54965dcc4433beb10e5c0fceb69d565caefa613b9fbdd32db7e55057be8"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 13,
+      "x": 3328,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 2184
+        },
+        "transmission": {
+          "offset": 264328,
+          "bytes": 13104
+        },
+        "waterIndices": {
+          "offset": 277432,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 277432,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 277432,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 277432,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 277432,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c876eb0f18716e8ee6980f9f540f892b834afbd95e15e163fe0afd1e76d13496.deflate",
+        "encodedBytes": 192508,
+        "decodedBytes": 277432,
+        "encodedSHA256": "f5df95138604afd02038386fd0039da986b00e9c2c2fe865fde5210c4b7c5459",
+        "decodedSHA256": "c876eb0f18716e8ee6980f9f540f892b834afbd95e15e163fe0afd1e76d13496"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 14,
+      "x": 3584,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/46ef7cc0716b703e1c54e835aa90596b4da9bf1dfb16166db6fe3ba3ab7ede9c.deflate",
+        "encodedBytes": 218154,
+        "decodedBytes": 262144,
+        "encodedSHA256": "4acd6e6a7ed59924b80b378c9f294aa120100c5064e03f3b45d4f4d11d9e3b5b",
+        "decodedSHA256": "46ef7cc0716b703e1c54e835aa90596b4da9bf1dfb16166db6fe3ba3ab7ede9c"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 15,
+      "x": 3840,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/573f41a7005255269706cd9f5bbe7f9b85a17bf5e42ab1fab2f67f8b8811e0c9.deflate",
+        "encodedBytes": 213738,
+        "decodedBytes": 262144,
+        "encodedSHA256": "dbce340fb79a9788a54f01bdc90fb719fe9a65d14208c2682eb18cd642b7edb5",
+        "decodedSHA256": "573f41a7005255269706cd9f5bbe7f9b85a17bf5e42ab1fab2f67f8b8811e0c9"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 16,
+      "x": 4096,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 14736
+        },
+        "transmission": {
+          "offset": 276880,
+          "bytes": 88416
+        },
+        "waterIndices": {
+          "offset": 365296,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 365296,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 365296,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 365296,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 365296,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/9a11cdcf9343bf88b9f990651b15ef35cc1c583caa6c7609e1d360f28233cec3.deflate",
+        "encodedBytes": 245055,
+        "decodedBytes": 365296,
+        "encodedSHA256": "d1cc11f406b01d5cbb7da4b381b143aaa5598db4d038c511d5ff70619d14bcea",
+        "decodedSHA256": "9a11cdcf9343bf88b9f990651b15ef35cc1c583caa6c7609e1d360f28233cec3"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 17,
+      "x": 4352,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/30599a40506c23b889b42cb86e9988d0017cb1c9410cb77a48d8b6df08ec5188.deflate",
+        "encodedBytes": 201975,
+        "decodedBytes": 262144,
+        "encodedSHA256": "c9ae8a2501c38f8b6e6099481f4d04464f9a209c70ccfd91d8114138284a89a7",
+        "decodedSHA256": "30599a40506c23b889b42cb86e9988d0017cb1c9410cb77a48d8b6df08ec5188"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 18,
+      "x": 4608,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 780
+        },
+        "transmission": {
+          "offset": 262928,
+          "bytes": 4680
+        },
+        "waterIndices": {
+          "offset": 267608,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 267608,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 267608,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 267608,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 267608,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/a429d6a475a41e581ae8f133febf8c60dfd793077b4bedeed88de2a297826e33.deflate",
+        "encodedBytes": 215548,
+        "decodedBytes": 267608,
+        "encodedSHA256": "7548c48e7d11c942f2655a08946a602c3e3410f84f8e23baeee4d21ecd271fb7",
+        "decodedSHA256": "a429d6a475a41e581ae8f133febf8c60dfd793077b4bedeed88de2a297826e33"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 19,
+      "x": 4864,
+      "y": 0,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/b1cf0e84c5ac23980f8590c9e58977cda0c9f3f019acc46b9d44c4b5fbd58507.deflate",
+        "encodedBytes": 212802,
+        "decodedBytes": 262144,
+        "encodedSHA256": "505224e73af67525b73073133453cbf0eb1b8e0fb68d929a66a4cc51cf5d3af3",
+        "decodedSHA256": "b1cf0e84c5ac23980f8590c9e58977cda0c9f3f019acc46b9d44c4b5fbd58507"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 20,
+      "x": 0,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/cd32543d5a4607cb0db25f969973a4d371b3f732c1bd192a0f14621aceca1c6c.deflate",
+        "encodedBytes": 212631,
+        "decodedBytes": 262144,
+        "encodedSHA256": "744a16366a286438f0f4c11d6e5dc6508d9bf05d101ba8c6df1e866ab883bb8e",
+        "decodedSHA256": "cd32543d5a4607cb0db25f969973a4d371b3f732c1bd192a0f14621aceca1c6c"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 21,
+      "x": 256,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/4a95776630d80f033b1a0451850ddb40f5fee023783ab82056192ce6b27fb0af.deflate",
+        "encodedBytes": 208227,
+        "decodedBytes": 262144,
+        "encodedSHA256": "8af5ed08698b2befec42defca6b1dd84c8c4295f68c0315a107b8dd8075d8598",
+        "decodedSHA256": "4a95776630d80f033b1a0451850ddb40f5fee023783ab82056192ce6b27fb0af"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 22,
+      "x": 512,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 6936
+        },
+        "b2": {
+          "count": 5343
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 27744
+        },
+        "b2Indices": {
+          "offset": 289888,
+          "bytes": 21372
+        },
+        "b4Indices": {
+          "offset": 311264,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 311264,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 311264,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/cbaac1227ff9d36d2cec358cd87b61ee1d57782a77bacb49be139cf224fc79f2.deflate",
+        "encodedBytes": 209160,
+        "decodedBytes": 311264,
+        "encodedSHA256": "d5eb4d199fe0a74934d8cda2bba47e6df876600f89de1756e10fea4b6f081e9d",
+        "decodedSHA256": "cbaac1227ff9d36d2cec358cd87b61ee1d57782a77bacb49be139cf224fc79f2"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 23,
+      "x": 768,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 26677
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 106708
+        },
+        "b2Indices": {
+          "offset": 368856,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 368856,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 368856,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 368856,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/716699721d46223e734c93bf1a4b7f7737a731dd4bb51c83eafbd9a819f2ed19.deflate",
+        "encodedBytes": 225370,
+        "decodedBytes": 368856,
+        "encodedSHA256": "d950ac2b6a08295a15b3ce918a77c9a0b6f893614a830831cbd9220c3e1cd389",
+        "decodedSHA256": "716699721d46223e734c93bf1a4b7f7737a731dd4bb51c83eafbd9a819f2ed19"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 24,
+      "x": 1024,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 1130
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 14442
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 4520
+        },
+        "b2Indices": {
+          "offset": 266664,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 266664,
+          "bytes": 57768
+        },
+        "b1Indices": {
+          "offset": 324432,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 324432,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/83ec3df3f19f4b37bc6980587344ad09cc9950f8a226bf45c74bb217bb114801.deflate",
+        "encodedBytes": 223806,
+        "decodedBytes": 324432,
+        "encodedSHA256": "43cce8e47e989623bef7d89eb9f5af646a7bacf1bdaf4b11e9d92e4e124254a7",
+        "decodedSHA256": "83ec3df3f19f4b37bc6980587344ad09cc9950f8a226bf45c74bb217bb114801"
+      },
+      "hasAnimation": true
+    },
+    {
+      "id": 25,
+      "x": 1280,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ed96d5c0175a6c89738f3480c5143b89ca9e1fa0668d9d63d5aec48f25892342.deflate",
+        "encodedBytes": 184672,
+        "decodedBytes": 262144,
+        "encodedSHA256": "6ac92c9b7b7810c5522e24e973031fc0e4276fa8dac1054c379cb77ccfabf124",
+        "decodedSHA256": "ed96d5c0175a6c89738f3480c5143b89ca9e1fa0668d9d63d5aec48f25892342"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 26,
+      "x": 1536,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/5d1a8dfcb8eb463af1b86a7c263fee53c2f4c6c83593c6a942e539bf4f30e015.deflate",
+        "encodedBytes": 143774,
+        "decodedBytes": 262144,
+        "encodedSHA256": "5d0f3a71daf8c3565cd1953226e5f0b3ff1f76ed8b2254347a3a1eea1a0c8b26",
+        "decodedSHA256": "5d1a8dfcb8eb463af1b86a7c263fee53c2f4c6c83593c6a942e539bf4f30e015"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 27,
+      "x": 1792,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d127b609d8d078a4fa7e633e8ab3258235b64014f6258388c6dc83e1f1e3bc33.deflate",
+        "encodedBytes": 173293,
+        "decodedBytes": 262144,
+        "encodedSHA256": "d2776b6c185ef96ac9bef6acaac205403215eea64aca01ebee3f7ca72293a802",
+        "decodedSHA256": "d127b609d8d078a4fa7e633e8ab3258235b64014f6258388c6dc83e1f1e3bc33"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 28,
+      "x": 2048,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 3416
+        },
+        "transmission": {
+          "offset": 265560,
+          "bytes": 20496
+        },
+        "waterIndices": {
+          "offset": 286056,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 286056,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 286056,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 286056,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 286056,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/b57bf3b019c782c832e2c4c96ffb2f235361b10390a490eeef9d26fba1a1738e.deflate",
+        "encodedBytes": 211956,
+        "decodedBytes": 286056,
+        "encodedSHA256": "f683ecfe8722ab77881a424c2bd2e3f29c085d5752783de6d82717b2f6512630",
+        "decodedSHA256": "b57bf3b019c782c832e2c4c96ffb2f235361b10390a490eeef9d26fba1a1738e"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 29,
+      "x": 2304,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 8548
+        },
+        "transmission": {
+          "offset": 270696,
+          "bytes": 51288
+        },
+        "waterIndices": {
+          "offset": 321984,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 321984,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 321984,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 321984,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 321984,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ae418fabc8463980fc822c5f3e2273e2229a4f6ab00e6b53a2dbef945a0676cc.deflate",
+        "encodedBytes": 205303,
+        "decodedBytes": 321984,
+        "encodedSHA256": "9221abdad42edf2aa0f838a09ce93d280da13b5799f9b1394aa8ba70bff5db27",
+        "decodedSHA256": "ae418fabc8463980fc822c5f3e2273e2229a4f6ab00e6b53a2dbef945a0676cc"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 30,
+      "x": 2560,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/a286a45d11283eea37f81a393fba17d3acec4c804c29c649e04f10a34a82c447.deflate",
+        "encodedBytes": 212933,
+        "decodedBytes": 262144,
+        "encodedSHA256": "0c6d74991a12ca9ceaedff02314b1faa1427c154f7d6055feaa287d94038b729",
+        "decodedSHA256": "a286a45d11283eea37f81a393fba17d3acec4c804c29c649e04f10a34a82c447"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 31,
+      "x": 2816,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/349259b70955766a4ded22bc355f1681644d0c17c8cfb254d8da5c7d07283509.deflate",
+        "encodedBytes": 214030,
+        "decodedBytes": 262144,
+        "encodedSHA256": "b85392eec0f378e48fe6bdce594667ca3c7ffb5077d040234d89ef4e66577a0d",
+        "decodedSHA256": "349259b70955766a4ded22bc355f1681644d0c17c8cfb254d8da5c7d07283509"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 32,
+      "x": 3072,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 15628
+        },
+        "transmission": {
+          "offset": 277776,
+          "bytes": 93768
+        },
+        "waterIndices": {
+          "offset": 371544,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 371544,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 371544,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 371544,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 371544,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ccbc2cc76a44c99596aa8664d64744406d3b3b888b2ded2f0d8669a993612dec.deflate",
+        "encodedBytes": 253802,
+        "decodedBytes": 371544,
+        "encodedSHA256": "6bfa367f3c77047d3d224563c1a02694142d2f05d4cba5032a5266b62bdae479",
+        "decodedSHA256": "ccbc2cc76a44c99596aa8664d64744406d3b3b888b2ded2f0d8669a993612dec"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 33,
+      "x": 3328,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 57048
+        },
+        "transmission": {
+          "offset": 319192,
+          "bytes": 342288
+        },
+        "waterIndices": {
+          "offset": 661480,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 661480,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 661480,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 661480,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 661480,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c890f90c3a1a97ac828b58f4644b6894f3052ed588d444bb8cb20b7524404c1f.deflate",
+        "encodedBytes": 321417,
+        "decodedBytes": 661480,
+        "encodedSHA256": "a1cf5474722d6d5c6276c5448767f68b28166524a5cfd233b6c4393b40a3af6d",
+        "decodedSHA256": "c890f90c3a1a97ac828b58f4644b6894f3052ed588d444bb8cb20b7524404c1f"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 34,
+      "x": 3584,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d43ba99e5ebe09104673593a480497b4cab88a46dfce9539852c5d38f3d73cc4.deflate",
+        "encodedBytes": 217220,
+        "decodedBytes": 262144,
+        "encodedSHA256": "bd07eb0f6af4b15ad1d3f1b2a61de33c0b1af46bebd85e1a762afa0fc111c32d",
+        "decodedSHA256": "d43ba99e5ebe09104673593a480497b4cab88a46dfce9539852c5d38f3d73cc4"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 35,
+      "x": 3840,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/fa5c3e2d2120b80611d87bac49c660d2dcdd6697887482201d1e9e903b2cf28a.deflate",
+        "encodedBytes": 215039,
+        "decodedBytes": 262144,
+        "encodedSHA256": "1fc2a4710cd194a8a67eb20d4d5b1d997c25eb08a90025568abcc0b0834412fd",
+        "decodedSHA256": "fa5c3e2d2120b80611d87bac49c660d2dcdd6697887482201d1e9e903b2cf28a"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 36,
+      "x": 4096,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 47492
+        },
+        "transmission": {
+          "offset": 309640,
+          "bytes": 284952
+        },
+        "waterIndices": {
+          "offset": 594592,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 594592,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 594592,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 594592,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 594592,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/866244799a8c546bb89d5d49902710ff52726c6ce32966ce841f5350e9f229ae.deflate",
+        "encodedBytes": 311226,
+        "decodedBytes": 594592,
+        "encodedSHA256": "77e8be6c48a3ef9390294dec4409f3514ebdb8a6b02439867a921ce8dd64dc08",
+        "decodedSHA256": "866244799a8c546bb89d5d49902710ff52726c6ce32966ce841f5350e9f229ae"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 37,
+      "x": 4352,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 60524
+        },
+        "transmission": {
+          "offset": 322672,
+          "bytes": 363144
+        },
+        "waterIndices": {
+          "offset": 685816,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 685816,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 685816,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 685816,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 685816,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/bebee118e2350ce07d1f4330b724d23f1552227454024fe134c86c117465e100.deflate",
+        "encodedBytes": 358230,
+        "decodedBytes": 685816,
+        "encodedSHA256": "50923f7696ab965faa712327888f2f44d013b8657b734290669d3f7c9f7a1eca",
+        "decodedSHA256": "bebee118e2350ce07d1f4330b724d23f1552227454024fe134c86c117465e100"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 38,
+      "x": 4608,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 47212
+        },
+        "transmission": {
+          "offset": 309360,
+          "bytes": 283272
+        },
+        "waterIndices": {
+          "offset": 592632,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 592632,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 592632,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 592632,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 592632,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c182bb4352989f0cf6697d30248ff3e78359762335858701ed222e4ffc330794.deflate",
+        "encodedBytes": 322359,
+        "decodedBytes": 592632,
+        "encodedSHA256": "5c5b7f70d8d86ccfd64ff279a07a3754ac7ebf1b1c2ce2ab70cebbcc5abde3d2",
+        "decodedSHA256": "c182bb4352989f0cf6697d30248ff3e78359762335858701ed222e4ffc330794"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 39,
+      "x": 4864,
+      "y": 256,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/7e8014a443ec3e4977898ebae21647062ab2f952fcf8bbdb90fe6f74f95c0cb3.deflate",
+        "encodedBytes": 217006,
+        "decodedBytes": 262144,
+        "encodedSHA256": "3ed4ea975aa32565c9bce98677903b6e84701c4f8562b38ff2d399b5b22a14c3",
+        "decodedSHA256": "7e8014a443ec3e4977898ebae21647062ab2f952fcf8bbdb90fe6f74f95c0cb3"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 40,
+      "x": 0,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/2d580ce48ac12da9111451c7696197a15f1f0b85cada9c1937164fc6c3ce0298.deflate",
+        "encodedBytes": 174672,
+        "decodedBytes": 262144,
+        "encodedSHA256": "4bbe98ce372075f51a9bf601c1145db15f3c2c5eeaf5f2718e93f085c4219fa9",
+        "decodedSHA256": "2d580ce48ac12da9111451c7696197a15f1f0b85cada9c1937164fc6c3ce0298"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 41,
+      "x": 256,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/99339d14753a50e14266c519c7fd2dbfee4d2da1f78c1d696d5cc383c9e9f63c.deflate",
+        "encodedBytes": 177574,
+        "decodedBytes": 262144,
+        "encodedSHA256": "b762f026cba0af8f775cbac2fcfb9ce22d82d82d1299a3f51ef691217c9cf9c9",
+        "decodedSHA256": "99339d14753a50e14266c519c7fd2dbfee4d2da1f78c1d696d5cc383c9e9f63c"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 42,
+      "x": 512,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 1800
+        },
+        "transmission": {
+          "offset": 263944,
+          "bytes": 10800
+        },
+        "waterIndices": {
+          "offset": 274744,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 274744,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 274744,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 274744,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 274744,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/0c82c3aedb84375e7201e371a1929a9d553fe1abc373e76d36cc3564621a56a5.deflate",
+        "encodedBytes": 189774,
+        "decodedBytes": 274744,
+        "encodedSHA256": "2be664680951a2ced7bc95e040ae5e438f947b4b2575f55691fda2ac61e1bb0a",
+        "decodedSHA256": "0c82c3aedb84375e7201e371a1929a9d553fe1abc373e76d36cc3564621a56a5"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 43,
+      "x": 768,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d6340a0f916619c1bbf38e32963751bc79a225b034826701f34e881fc8d80408.deflate",
+        "encodedBytes": 143243,
+        "decodedBytes": 262144,
+        "encodedSHA256": "9edf47c721f328ee9bc83f884d2019de5074a47a71cbdb8554e8e174c5a846e7",
+        "decodedSHA256": "d6340a0f916619c1bbf38e32963751bc79a225b034826701f34e881fc8d80408"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 44,
+      "x": 1024,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 1884
+        },
+        "transmission": {
+          "offset": 264032,
+          "bytes": 11304
+        },
+        "waterIndices": {
+          "offset": 275336,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 275336,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 275336,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 275336,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 275336,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/f20ddbd8617149a1397f067fdd164cd87947930dea5ac5538d02adbe656da085.deflate",
+        "encodedBytes": 196624,
+        "decodedBytes": 275336,
+        "encodedSHA256": "d022d00d0c4689caf8c2eef8339e17d4be90597cf863c276de14d17a79d433d5",
+        "decodedSHA256": "f20ddbd8617149a1397f067fdd164cd87947930dea5ac5538d02adbe656da085"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 45,
+      "x": 1280,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 17840
+        },
+        "transmission": {
+          "offset": 279984,
+          "bytes": 107040
+        },
+        "waterIndices": {
+          "offset": 387024,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 387024,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 387024,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 387024,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 387024,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c0cc01e0a7850c2e4f903bef3bdb3cedf4e193f4d182e16ecf6bcb71df1895df.deflate",
+        "encodedBytes": 277463,
+        "decodedBytes": 387024,
+        "encodedSHA256": "ab854cde6def8c8dfdadd20bec3741c4ad762c2f46dcd5d18beca0da7d4fc5e2",
+        "decodedSHA256": "c0cc01e0a7850c2e4f903bef3bdb3cedf4e193f4d182e16ecf6bcb71df1895df"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 46,
+      "x": 1536,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 62936
+        },
+        "transmission": {
+          "offset": 325080,
+          "bytes": 377616
+        },
+        "waterIndices": {
+          "offset": 702696,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 702696,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 702696,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 702696,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 702696,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/714f537fa2f772b7fb668672af46309fcf92b360fcc0e20bf184d85d0bd327e7.deflate",
+        "encodedBytes": 450773,
+        "decodedBytes": 702696,
+        "encodedSHA256": "2470bcc3d0f31ee4dd28f3cbf082559664956849d197f36bc368fc9ac74d9ed5",
+        "decodedSHA256": "714f537fa2f772b7fb668672af46309fcf92b360fcc0e20bf184d85d0bd327e7"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 47,
+      "x": 1792,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 29780
+        },
+        "transmission": {
+          "offset": 291928,
+          "bytes": 178680
+        },
+        "waterIndices": {
+          "offset": 470608,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 470608,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 470608,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 470608,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 470608,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/9ad9743c2f149143dceb67c75fd72d86089806135749b84978570a5222a4cb73.deflate",
+        "encodedBytes": 314565,
+        "decodedBytes": 470608,
+        "encodedSHA256": "87a642439c5eab104bcbfd43b4fc4e03b19ba3ba34c6729d61b6d6176597f03c",
+        "decodedSHA256": "9ad9743c2f149143dceb67c75fd72d86089806135749b84978570a5222a4cb73"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 48,
+      "x": 2048,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 23728
+        },
+        "transmission": {
+          "offset": 285872,
+          "bytes": 142368
+        },
+        "waterIndices": {
+          "offset": 428240,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 428240,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 428240,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 428240,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 428240,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ef4c0064db21fe266736bf9a9aac7e2f1cb85cfc709de9a87b7fee5b54fd63a5.deflate",
+        "encodedBytes": 244970,
+        "decodedBytes": 428240,
+        "encodedSHA256": "3da4fa0714225f2a15a29880032fc465053c768b53f65d9475918066417c182d",
+        "decodedSHA256": "ef4c0064db21fe266736bf9a9aac7e2f1cb85cfc709de9a87b7fee5b54fd63a5"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 49,
+      "x": 2304,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 126756
+        },
+        "transmission": {
+          "offset": 388904,
+          "bytes": 760536
+        },
+        "waterIndices": {
+          "offset": 1149440,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 1149440,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 1149440,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 1149440,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 1149440,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d4869964f713eb91268a12bb5d22e4032fda32593a59d534f1c5aec4677829a4.deflate",
+        "encodedBytes": 579303,
+        "decodedBytes": 1149440,
+        "encodedSHA256": "0f0eb1a5d91336b18a38401744edcc0db83b0068b6a5a51f82851f43f9cf127f",
+        "decodedSHA256": "d4869964f713eb91268a12bb5d22e4032fda32593a59d534f1c5aec4677829a4"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 50,
+      "x": 2560,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/2da03c547b16fadbb899311d057eccaa70e9acc8d53fa6cf45ac712f2486593d.deflate",
+        "encodedBytes": 204307,
+        "decodedBytes": 262144,
+        "encodedSHA256": "15d4abe550417310fd6024a0a6d085670140d19979b8c159c65b1553e9dca6b5",
+        "decodedSHA256": "2da03c547b16fadbb899311d057eccaa70e9acc8d53fa6cf45ac712f2486593d"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 51,
+      "x": 2816,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/04ced3ada4968f44de2a7b52f5a98d59628f516a5a78dcdfbfd1e4c1f09df460.deflate",
+        "encodedBytes": 191626,
+        "decodedBytes": 262144,
+        "encodedSHA256": "08926acdb13d7c29d5a63465bc58e753f4d96ecbc2b63214dc20c3a01b1ebed9",
+        "decodedSHA256": "04ced3ada4968f44de2a7b52f5a98d59628f516a5a78dcdfbfd1e4c1f09df460"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 52,
+      "x": 3072,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 25608
+        },
+        "transmission": {
+          "offset": 287752,
+          "bytes": 153648
+        },
+        "waterIndices": {
+          "offset": 441400,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 441400,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 441400,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 441400,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 441400,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c1e88fdb5c7345ebba03e276abd64ea4a1679c85b100156de7dc6c736b4051ba.deflate",
+        "encodedBytes": 280090,
+        "decodedBytes": 441400,
+        "encodedSHA256": "bc13b3d8d87a6636a15c11813b5b11d54f8fd01e13071e80188fc0d8fe899f52",
+        "decodedSHA256": "c1e88fdb5c7345ebba03e276abd64ea4a1679c85b100156de7dc6c736b4051ba"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 53,
+      "x": 3328,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 528
+        },
+        "transmission": {
+          "offset": 262672,
+          "bytes": 3168
+        },
+        "waterIndices": {
+          "offset": 265840,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 265840,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 265840,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 265840,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 265840,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d29c667aafe8304f1d465a14339b237fd4d9f4d3b78fb1073a3f8cd834c175ac.deflate",
+        "encodedBytes": 192317,
+        "decodedBytes": 265840,
+        "encodedSHA256": "18ce07b8684f69b91d768d3d4022c2d1cadf5d7064c4ce5460c7b80e6cc1a013",
+        "decodedSHA256": "d29c667aafe8304f1d465a14339b237fd4d9f4d3b78fb1073a3f8cd834c175ac"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 54,
+      "x": 3584,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/9e9ada28e4c4f11d71dbd3297dc08b6dbed413d272450ac7ce8a68169157b702.deflate",
+        "encodedBytes": 189894,
+        "decodedBytes": 262144,
+        "encodedSHA256": "2dcd52d2f62352acb9dc5a68dc044bb01fda4a32459ac645449f48fa76311742",
+        "decodedSHA256": "9e9ada28e4c4f11d71dbd3297dc08b6dbed413d272450ac7ce8a68169157b702"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 55,
+      "x": 3840,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/6c4e50cb01ebcc73849415b3cc060ff1cf591ef5177b532bf124b2dd15cf982d.deflate",
+        "encodedBytes": 186541,
+        "decodedBytes": 262144,
+        "encodedSHA256": "ece74f104b17675bf0baf78d80a42859a33045efd12ddb75d70474a343ca6888",
+        "decodedSHA256": "6c4e50cb01ebcc73849415b3cc060ff1cf591ef5177b532bf124b2dd15cf982d"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 56,
+      "x": 4096,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 1232
+        },
+        "transmission": {
+          "offset": 263376,
+          "bytes": 7392
+        },
+        "waterIndices": {
+          "offset": 270768,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 270768,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 270768,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 270768,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 270768,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/70bfbff70fd33cd96129b5b59cce031463bce9014b65e987a8ed71358ba96c5b.deflate",
+        "encodedBytes": 160149,
+        "decodedBytes": 270768,
+        "encodedSHA256": "75a38148d6c771b36e82d1c458d2653ef0925af1fa26e5d9df192d9ac584f863",
+        "decodedSHA256": "70bfbff70fd33cd96129b5b59cce031463bce9014b65e987a8ed71358ba96c5b"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 57,
+      "x": 4352,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 72708
+        },
+        "transmission": {
+          "offset": 334856,
+          "bytes": 436248
+        },
+        "waterIndices": {
+          "offset": 771104,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 771104,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 771104,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 771104,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 771104,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c0a54a9576aec9037969a9806861d3ebf91ca32785dc00dbdeaa378609569c6c.deflate",
+        "encodedBytes": 416793,
+        "decodedBytes": 771104,
+        "encodedSHA256": "fe0fd0d87de8588f478b05143c1b1f103dc7dec1ddcff919d065e8eb1fcd313d",
+        "decodedSHA256": "c0a54a9576aec9037969a9806861d3ebf91ca32785dc00dbdeaa378609569c6c"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 58,
+      "x": 4608,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/5de12007b23c1b433975a3d1be5c7b008bfe4459116432ced0b446d265ea49e5.deflate",
+        "encodedBytes": 158462,
+        "decodedBytes": 262144,
+        "encodedSHA256": "dcb96e5c976388e612df99c3e41eaef0e08f2cc1abb2fa1e135d2e4c1fa46d4e",
+        "decodedSHA256": "5de12007b23c1b433975a3d1be5c7b008bfe4459116432ced0b446d265ea49e5"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 59,
+      "x": 4864,
+      "y": 512,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/e92b1b74b9b658bf5f1214557bf60e7bdbde1aa8794c09b594ef0b645809d930.deflate",
+        "encodedBytes": 180432,
+        "decodedBytes": 262144,
+        "encodedSHA256": "263545d3a9cbc52cacfca0b3881aadc3d266a87c06273214df358d46dc054b2c",
+        "decodedSHA256": "e92b1b74b9b658bf5f1214557bf60e7bdbde1aa8794c09b594ef0b645809d930"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 60,
+      "x": 0,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/621543d92f01a8d977d6afee439e29600b994a2558ae24a1e55c138e26a4d518.deflate",
+        "encodedBytes": 204309,
+        "decodedBytes": 262144,
+        "encodedSHA256": "76139faa18d15034eeb908eb2ce19f9e2688ae1638957a2e9cc5aef2c4ba6dd5",
+        "decodedSHA256": "621543d92f01a8d977d6afee439e29600b994a2558ae24a1e55c138e26a4d518"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 61,
+      "x": 256,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d7017ffc21dc50a89208d6e9d35edd35ba77b7818f05a2d18d74ca3064fbf4c4.deflate",
+        "encodedBytes": 182286,
+        "decodedBytes": 262144,
+        "encodedSHA256": "1c93e2c61b4a73e9dfed29868adc2f320050d2b6269c881cc6cbcb666a46f284",
+        "decodedSHA256": "d7017ffc21dc50a89208d6e9d35edd35ba77b7818f05a2d18d74ca3064fbf4c4"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 62,
+      "x": 512,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 25456
+        },
+        "transmission": {
+          "offset": 287600,
+          "bytes": 152736
+        },
+        "waterIndices": {
+          "offset": 440336,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 440336,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 440336,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 440336,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 440336,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/416409d2c7aa7940041ea2cff8d7f6633712194736fc3a3c77c806d43c0a09ae.deflate",
+        "encodedBytes": 245269,
+        "decodedBytes": 440336,
+        "encodedSHA256": "42536953ec15848637778233931a31990b7d420ee91d67919667043b715bb9ab",
+        "decodedSHA256": "416409d2c7aa7940041ea2cff8d7f6633712194736fc3a3c77c806d43c0a09ae"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 63,
+      "x": 768,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 110728
+        },
+        "transmission": {
+          "offset": 372872,
+          "bytes": 664368
+        },
+        "waterIndices": {
+          "offset": 1037240,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 1037240,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 1037240,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 1037240,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 1037240,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/99ec4b864a96e8404daa1719dbc1f48763790f29b837d84415b1c4a05fb1fa40.deflate",
+        "encodedBytes": 511695,
+        "decodedBytes": 1037240,
+        "encodedSHA256": "7eda09624e367965a8801183a49c929f4083f86503d79918b1d8d9c00113491e",
+        "decodedSHA256": "99ec4b864a96e8404daa1719dbc1f48763790f29b837d84415b1c4a05fb1fa40"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 64,
+      "x": 1024,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 21856
+        },
+        "transmission": {
+          "offset": 284000,
+          "bytes": 131136
+        },
+        "waterIndices": {
+          "offset": 415136,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 415136,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 415136,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 415136,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 415136,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d5ad75b40112c66af04b78530f1e18fad0ba1835a6690da1f4f254bccc7133b2.deflate",
+        "encodedBytes": 233269,
+        "decodedBytes": 415136,
+        "encodedSHA256": "367b9c51b2e4e0664f19fa7eaec88398ca00806014434dd181035761a5b2bcdf",
+        "decodedSHA256": "d5ad75b40112c66af04b78530f1e18fad0ba1835a6690da1f4f254bccc7133b2"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 65,
+      "x": 1280,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/54506dd3217a72fb0b645aa3cbfe7d71156db5d8852d05d0415e2d1f9311abc8.deflate",
+        "encodedBytes": 178292,
+        "decodedBytes": 262144,
+        "encodedSHA256": "7d8ef4c17381e3204f655d916176bb2d563f359cf088a538720e284d418bd784",
+        "decodedSHA256": "54506dd3217a72fb0b645aa3cbfe7d71156db5d8852d05d0415e2d1f9311abc8"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 66,
+      "x": 1536,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/d52991f3091297af7c7b32f60052564a07aea55bc8f34eefdd4c6abd2bba032c.deflate",
+        "encodedBytes": 194422,
+        "decodedBytes": 262144,
+        "encodedSHA256": "636102d19725dc5e47986527001252c1c85367dce5e8633566441e88f07cc195",
+        "decodedSHA256": "d52991f3091297af7c7b32f60052564a07aea55bc8f34eefdd4c6abd2bba032c"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 67,
+      "x": 1792,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/999598bae418a478db60b39d70fb3355d0c49e34c26b63b9f5d265432049e7e4.deflate",
+        "encodedBytes": 178177,
+        "decodedBytes": 262144,
+        "encodedSHA256": "8bda639e95a2b22d8b7b3607b7014de916d4dc546ce7261895fefde917683eeb",
+        "decodedSHA256": "999598bae418a478db60b39d70fb3355d0c49e34c26b63b9f5d265432049e7e4"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 68,
+      "x": 2048,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ecf26b82fa9fc6028780130c73941612abaece165025586fa7d6d8fe944824d4.deflate",
+        "encodedBytes": 195012,
+        "decodedBytes": 262144,
+        "encodedSHA256": "233429cfbd5b521d0bd1cee68b90214a9691e71dcc1348c7f992259899fdf636",
+        "decodedSHA256": "ecf26b82fa9fc6028780130c73941612abaece165025586fa7d6d8fe944824d4"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 69,
+      "x": 2304,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/40eae1361e35ce752e93f8eb74ee9892c13239a806ae4ba7073fd2d8e4c9d31a.deflate",
+        "encodedBytes": 196409,
+        "decodedBytes": 262144,
+        "encodedSHA256": "4df56181925ae76ad0b4d6125fb9a9458aa977a5f54113d40a124eb92b63cea1",
+        "decodedSHA256": "40eae1361e35ce752e93f8eb74ee9892c13239a806ae4ba7073fd2d8e4c9d31a"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 70,
+      "x": 2560,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/1bd6da8dd49deea8e4ebd9c4d6493580a60cbc91d880618ec5c74ef7f6be4353.deflate",
+        "encodedBytes": 180635,
+        "decodedBytes": 262144,
+        "encodedSHA256": "bc17cc535d4f4f9959fbbcc173620f027089348b712ddf17fb6321eef8f405de",
+        "decodedSHA256": "1bd6da8dd49deea8e4ebd9c4d6493580a60cbc91d880618ec5c74ef7f6be4353"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 71,
+      "x": 2816,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 756
+        },
+        "transmission": {
+          "offset": 262904,
+          "bytes": 4536
+        },
+        "waterIndices": {
+          "offset": 267440,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 267440,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 267440,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 267440,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 267440,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/38d0bf66a198dbc85d1f31016675e947ac0c0e214463ae94775a52cd205e6305.deflate",
+        "encodedBytes": 207718,
+        "decodedBytes": 267440,
+        "encodedSHA256": "688859be277cc9e1c364a978a00c9f0bba2812f880e1385168d9c55306a3687d",
+        "decodedSHA256": "38d0bf66a198dbc85d1f31016675e947ac0c0e214463ae94775a52cd205e6305"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 72,
+      "x": 3072,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 4044
+        },
+        "transmission": {
+          "offset": 266192,
+          "bytes": 24264
+        },
+        "waterIndices": {
+          "offset": 290456,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 290456,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 290456,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 290456,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 290456,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/a83e16e125052c8f899dd504fbaa04b5cf3c7f0aaeb76c88071311784013a696.deflate",
+        "encodedBytes": 211789,
+        "decodedBytes": 290456,
+        "encodedSHA256": "6cd348d6b30da90646eea91f11aeac405b4399affbbd8fb1e20b7bd7ca78adbd",
+        "decodedSHA256": "a83e16e125052c8f899dd504fbaa04b5cf3c7f0aaeb76c88071311784013a696"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 73,
+      "x": 3328,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ab87bf16ab93ed73a5c4e97320106391d02d8e7dbc42743a9553404663f9c663.deflate",
+        "encodedBytes": 208100,
+        "decodedBytes": 262144,
+        "encodedSHA256": "facf27f997781d8ed9d0a1fe4f2f70c0709c48807d43dc28e272fab89d392fd9",
+        "decodedSHA256": "ab87bf16ab93ed73a5c4e97320106391d02d8e7dbc42743a9553404663f9c663"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 74,
+      "x": 3584,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/8b66f374e512fde521a01f579ee3d421f6c2af30299d6358392fc6f134861e01.deflate",
+        "encodedBytes": 208341,
+        "decodedBytes": 262144,
+        "encodedSHA256": "d97882d1b89d863b75ff79251b2b7999aaf20bbc4999f426a48c2e146bd1d306",
+        "decodedSHA256": "8b66f374e512fde521a01f579ee3d421f6c2af30299d6358392fc6f134861e01"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 75,
+      "x": 3840,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/6b38c07bf5c07091cd821fa88ab30fb23d4b5f0fe21c0c36af883f494d1a7bf0.deflate",
+        "encodedBytes": 199162,
+        "decodedBytes": 262144,
+        "encodedSHA256": "82661af7bf2429dcdabd4b0a28620fdd3e8a574f4d066d059719489fe6ce04b2",
+        "decodedSHA256": "6b38c07bf5c07091cd821fa88ab30fb23d4b5f0fe21c0c36af883f494d1a7bf0"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 76,
+      "x": 4096,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/5528aa511dcfaf984629fe0bda635b370b2814a3cb994882ec4bd9ae1c92f64b.deflate",
+        "encodedBytes": 205589,
+        "decodedBytes": 262144,
+        "encodedSHA256": "7f14b15922725b97e0b9f156d603880284af7460fa1545099a6ba9bf76154b4c",
+        "decodedSHA256": "5528aa511dcfaf984629fe0bda635b370b2814a3cb994882ec4bd9ae1c92f64b"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 77,
+      "x": 4352,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/67b60ffaa0e34ef19d4234bf61611fc16378754d5116c66bc2ff6eb3f6db32f9.deflate",
+        "encodedBytes": 206992,
+        "decodedBytes": 262144,
+        "encodedSHA256": "a4c08be186567e18e3c14413dc138e483441b4c4b209631344222d70629aa91d",
+        "decodedSHA256": "67b60ffaa0e34ef19d4234bf61611fc16378754d5116c66bc2ff6eb3f6db32f9"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 78,
+      "x": 4608,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/251719e49bca24020be3e2a5ce45cd4ad8129f132ddc31904b560528664e72e5.deflate",
+        "encodedBytes": 202329,
+        "decodedBytes": 262144,
+        "encodedSHA256": "500573ffef1d371f664a49db75ddf0d4ef9e0f2788e3818228c3659a5b1c2c2a",
+        "decodedSHA256": "251719e49bca24020be3e2a5ce45cd4ad8129f132ddc31904b560528664e72e5"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 79,
+      "x": 4864,
+      "y": 768,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/a78670283756f5310d9bf360683f556844d40d7cc729d0f2462c9bd005177db7.deflate",
+        "encodedBytes": 209255,
+        "decodedBytes": 262144,
+        "encodedSHA256": "12b75a799c569f9969e1622e4aae2207522d6ee8f946c714ecac6b8cc9be2f75",
+        "decodedSHA256": "a78670283756f5310d9bf360683f556844d40d7cc729d0f2462c9bd005177db7"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 80,
+      "x": 0,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 9568
+        },
+        "transmission": {
+          "offset": 271712,
+          "bytes": 57408
+        },
+        "waterIndices": {
+          "offset": 329120,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 329120,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 329120,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 329120,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 329120,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/904d46cf81bea1286462de1593d42641d7644141e24e9f8303e64e68519681ba.deflate",
+        "encodedBytes": 234407,
+        "decodedBytes": 329120,
+        "encodedSHA256": "c805ce51776a3a5718b2ca9e973631f5f29f7f76e25676d306cb49624c54b64a",
+        "decodedSHA256": "904d46cf81bea1286462de1593d42641d7644141e24e9f8303e64e68519681ba"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 81,
+      "x": 256,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 53016
+        },
+        "transmission": {
+          "offset": 315160,
+          "bytes": 318096
+        },
+        "waterIndices": {
+          "offset": 633256,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 633256,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 633256,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 633256,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 633256,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/348e7d34c8605ff56ea5abf35b8a185c2a05fa822e325dde195f9ebcd2f0c30c.deflate",
+        "encodedBytes": 378048,
+        "decodedBytes": 633256,
+        "encodedSHA256": "97987154277b7de98bea8b78ec5b1d0a143c997614d165116fde56233c89bce5",
+        "decodedSHA256": "348e7d34c8605ff56ea5abf35b8a185c2a05fa822e325dde195f9ebcd2f0c30c"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 82,
+      "x": 512,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 8092
+        },
+        "transmission": {
+          "offset": 270240,
+          "bytes": 48552
+        },
+        "waterIndices": {
+          "offset": 318792,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 318792,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 318792,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 318792,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 318792,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/3d15a61489a7b4b815d59c2acb922126431abd0285ec4019dd9023af08d1b926.deflate",
+        "encodedBytes": 236166,
+        "decodedBytes": 318792,
+        "encodedSHA256": "684da0af760107521e03265a0d0343dad74767c7d01a6921c00565bf85856b66",
+        "decodedSHA256": "3d15a61489a7b4b815d59c2acb922126431abd0285ec4019dd9023af08d1b926"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 83,
+      "x": 768,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 8316
+        },
+        "transmission": {
+          "offset": 270464,
+          "bytes": 49896
+        },
+        "waterIndices": {
+          "offset": 320360,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 320360,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 320360,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 320360,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 320360,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/7c1ce40a5414f53d18078ea0d2d3af4ffb34bc7ca536bebf29bd8737da8fce92.deflate",
+        "encodedBytes": 239381,
+        "decodedBytes": 320360,
+        "encodedSHA256": "eaedaf63414e6f010fe8baeb11629702e9d7409c7dcf3e0360a822d242dea57b",
+        "decodedSHA256": "7c1ce40a5414f53d18078ea0d2d3af4ffb34bc7ca536bebf29bd8737da8fce92"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 84,
+      "x": 1024,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/ef1693d524f5d3673fad322a63c1039f908cc4938e35a2db2e5f912676694f37.deflate",
+        "encodedBytes": 194205,
+        "decodedBytes": 262144,
+        "encodedSHA256": "a0488c5cbf10beb80bfe7287f7c40efe50de58f402383026d675a30740333f00",
+        "decodedSHA256": "ef1693d524f5d3673fad322a63c1039f908cc4938e35a2db2e5f912676694f37"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 85,
+      "x": 1280,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 17964
+        },
+        "transmission": {
+          "offset": 280112,
+          "bytes": 107784
+        },
+        "waterIndices": {
+          "offset": 387896,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 387896,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 387896,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 387896,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 387896,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/649b50a55521700baf8e57471701d0b340ac7345a95484d387ec0bb4a54850c0.deflate",
+        "encodedBytes": 228299,
+        "decodedBytes": 387896,
+        "encodedSHA256": "3122d7c196a7ff336d4afe76fad02de35b86f1dd2a7bc9400519094eb572fb96",
+        "decodedSHA256": "649b50a55521700baf8e57471701d0b340ac7345a95484d387ec0bb4a54850c0"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 86,
+      "x": 1536,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 2508
+        },
+        "transmission": {
+          "offset": 264656,
+          "bytes": 15048
+        },
+        "waterIndices": {
+          "offset": 279704,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 279704,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 279704,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 279704,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 279704,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/8b9e80ca155547e5ed9bbc4202c1ccf3060b66507457b056ad6b155f107e7f10.deflate",
+        "encodedBytes": 191082,
+        "decodedBytes": 279704,
+        "encodedSHA256": "0dd4ef80a61d5ac3b2a8d353590b6d7fab1abb4a5751f6e1c609031738173fc4",
+        "decodedSHA256": "8b9e80ca155547e5ed9bbc4202c1ccf3060b66507457b056ad6b155f107e7f10"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 87,
+      "x": 1792,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/49d8fc1da25bd943a8622a895147dbbebc4f3771a05bdbd3ce54752390d5e175.deflate",
+        "encodedBytes": 202949,
+        "decodedBytes": 262144,
+        "encodedSHA256": "1e31c49bc8101a64265215b5c6d851a452432990367a34d1e2d5c933735054d5",
+        "decodedSHA256": "49d8fc1da25bd943a8622a895147dbbebc4f3771a05bdbd3ce54752390d5e175"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 88,
+      "x": 2048,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 4060
+        },
+        "transmission": {
+          "offset": 266208,
+          "bytes": 24360
+        },
+        "waterIndices": {
+          "offset": 290568,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 290568,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 290568,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 290568,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 290568,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/7a73a6097d28df1442d23b78d23fd0b41e1ea86c89afe9bd25d0f88de923d7e8.deflate",
+        "encodedBytes": 205122,
+        "decodedBytes": 290568,
+        "encodedSHA256": "9f85780310303962391c5d3ac9c9b2b1ff60d6f656b6832415097b211fe1dfe6",
+        "decodedSHA256": "7a73a6097d28df1442d23b78d23fd0b41e1ea86c89afe9bd25d0f88de923d7e8"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 89,
+      "x": 2304,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 7408
+        },
+        "transmission": {
+          "offset": 269552,
+          "bytes": 44448
+        },
+        "waterIndices": {
+          "offset": 314000,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 314000,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 314000,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 314000,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 314000,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/5559b8bf6d5390efe550c76513e894984c1314e28eb380a6986b69bd4ac81bb7.deflate",
+        "encodedBytes": 193100,
+        "decodedBytes": 314000,
+        "encodedSHA256": "8b778f46b18d4f35688773d983f2fdaf430f0508656a8b2a59a5df5a7be383d9",
+        "decodedSHA256": "5559b8bf6d5390efe550c76513e894984c1314e28eb380a6986b69bd4ac81bb7"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 90,
+      "x": 2560,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 1028
+        },
+        "transmission": {
+          "offset": 263176,
+          "bytes": 6168
+        },
+        "waterIndices": {
+          "offset": 269344,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 269344,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 269344,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 269344,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 269344,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/835a81cd229bfd74af573043192b349e7438a0b3a1f524601cb595f0ef71b0ee.deflate",
+        "encodedBytes": 212978,
+        "decodedBytes": 269344,
+        "encodedSHA256": "4c21ea2674202ceb43dd548eb3ab169046c48190b567efcf98c267cdd985ef19",
+        "decodedSHA256": "835a81cd229bfd74af573043192b349e7438a0b3a1f524601cb595f0ef71b0ee"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 91,
+      "x": 2816,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 8280
+        },
+        "transmission": {
+          "offset": 270424,
+          "bytes": 49680
+        },
+        "waterIndices": {
+          "offset": 320104,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 320104,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 320104,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 320104,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 320104,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/535cb6a834ef817b0d8f1eda84703916af40597b02338b38765e6b2927612e66.deflate",
+        "encodedBytes": 223219,
+        "decodedBytes": 320104,
+        "encodedSHA256": "0399ab5deb9e453bf97c8b14cae49af18f42d2ff2f1a799250ab4ae383f8394a",
+        "decodedSHA256": "535cb6a834ef817b0d8f1eda84703916af40597b02338b38765e6b2927612e66"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 92,
+      "x": 3072,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 82860
+        },
+        "transmission": {
+          "offset": 345008,
+          "bytes": 497160
+        },
+        "waterIndices": {
+          "offset": 842168,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 842168,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 842168,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 842168,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 842168,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/8046c47a36616ae9fda8c14ef217ce30baad61b1de2946aac3b638d48cae1f2c.deflate",
+        "encodedBytes": 455669,
+        "decodedBytes": 842168,
+        "encodedSHA256": "885b7c0d6463f8e8c35964f09b92b34e51231f1c78c17945c1b2bc161f73105c",
+        "decodedSHA256": "8046c47a36616ae9fda8c14ef217ce30baad61b1de2946aac3b638d48cae1f2c"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 93,
+      "x": 3328,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 26380
+        },
+        "transmission": {
+          "offset": 288528,
+          "bytes": 158280
+        },
+        "waterIndices": {
+          "offset": 446808,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 446808,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 446808,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 446808,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 446808,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/7c57cee420b27e459e96a682bc22f189c8a970e279440eb2ecfcad5fdc75ece6.deflate",
+        "encodedBytes": 335866,
+        "decodedBytes": 446808,
+        "encodedSHA256": "6319b2b3c290a6f31ccc24c53493d4d3fc475ccbfcb819ee73d676c65bcc736d",
+        "decodedSHA256": "7c57cee420b27e459e96a682bc22f189c8a970e279440eb2ecfcad5fdc75ece6"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 94,
+      "x": 3584,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/673d7f56603e8906798d0b0aad9ed50d821ece8bd6d5d13524ca03a6b94893e2.deflate",
+        "encodedBytes": 215709,
+        "decodedBytes": 262144,
+        "encodedSHA256": "9129984229cb4c02eedf8fd56ff8298f0de4c83eed6985e896c2f9974b99ab38",
+        "decodedSHA256": "673d7f56603e8906798d0b0aad9ed50d821ece8bd6d5d13524ca03a6b94893e2"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 95,
+      "x": 3840,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/7f93610157ebee392e9bd346ee6942613ae4bd8e70686576f19f402981f6767d.deflate",
+        "encodedBytes": 200800,
+        "decodedBytes": 262144,
+        "encodedSHA256": "76a30315643ea789b46b8c003b8fef98b3b2f7798d11e606f36d7e46fca81c27",
+        "decodedSHA256": "7f93610157ebee392e9bd346ee6942613ae4bd8e70686576f19f402981f6767d"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 96,
+      "x": 4096,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/4a141a7bfd58fef691e379a4a4797fab986ec5c3e59f2a7f20fb2e317960db1e.deflate",
+        "encodedBytes": 209525,
+        "decodedBytes": 262144,
+        "encodedSHA256": "c191561c1f87bc744cb6458a4e8850119ef54c5c6b67d1e74257ab0043b4776e",
+        "decodedSHA256": "4a141a7bfd58fef691e379a4a4797fab986ec5c3e59f2a7f20fb2e317960db1e"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 97,
+      "x": 4352,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/63cb5424e7821684be4d0de340dc63f381040f74aa9a9d062fe8960ad90db0e9.deflate",
+        "encodedBytes": 206682,
+        "decodedBytes": 262144,
+        "encodedSHA256": "5d44528e05a983ede55b7abf192cad8c09e173eb0d3666f03cd756cb54605e1c",
+        "decodedSHA256": "63cb5424e7821684be4d0de340dc63f381040f74aa9a9d062fe8960ad90db0e9"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 98,
+      "x": 4608,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 23052
+        },
+        "transmission": {
+          "offset": 285200,
+          "bytes": 138312
+        },
+        "waterIndices": {
+          "offset": 423512,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 423512,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 423512,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 423512,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 423512,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/74cd76ef2741e49bf50e7307d2d5e1badfe2024d1aac49ef619ce08c75dd52c3.deflate",
+        "encodedBytes": 238272,
+        "decodedBytes": 423512,
+        "encodedSHA256": "695e42845fc272e27efdbf4a809428893460520b8926c0bb1bb6ac6f3269c2d4",
+        "decodedSHA256": "74cd76ef2741e49bf50e7307d2d5e1badfe2024d1aac49ef619ce08c75dd52c3"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 99,
+      "x": 4864,
+      "y": 1024,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 29808
+        },
+        "transmission": {
+          "offset": 291952,
+          "bytes": 178848
+        },
+        "waterIndices": {
+          "offset": 470800,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 470800,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 470800,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 470800,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 470800,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/34ff914fa2635b5a9a8c7323de719ca5c7fd7ebe57269e1c873a2ed7fd4fc916.deflate",
+        "encodedBytes": 271965,
+        "decodedBytes": 470800,
+        "encodedSHA256": "df3ccf95b9c7cca61ea10e81e7b6f3432fbd1094f3b22c583894425b5e97cd4b",
+        "decodedSHA256": "34ff914fa2635b5a9a8c7323de719ca5c7fd7ebe57269e1c873a2ed7fd4fc916"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 100,
+      "x": 0,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/260cbfdf32b95b0859d059b11cf4eafd6ca1f61a77d2c93e82789737ee77dd2e.deflate",
+        "encodedBytes": 209177,
+        "decodedBytes": 262144,
+        "encodedSHA256": "7844d46839fa167532df376e37195c117058c5d16b055428f94849bfb899d732",
+        "decodedSHA256": "260cbfdf32b95b0859d059b11cf4eafd6ca1f61a77d2c93e82789737ee77dd2e"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 101,
+      "x": 256,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/bd4c08f8913ab0a6c25d45fa5d878b52161a485691d56838694222dae200aaf2.deflate",
+        "encodedBytes": 211685,
+        "decodedBytes": 262144,
+        "encodedSHA256": "6edb17c7cccfad76d2d0ebc3654ca759e1295379a3367e722bd542b7ab799bb5",
+        "decodedSHA256": "bd4c08f8913ab0a6c25d45fa5d878b52161a485691d56838694222dae200aaf2"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 102,
+      "x": 512,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/78150023c5db45ce4434d793a6d9517fada249640750e94fa4a2ed0316cfeb6b.deflate",
+        "encodedBytes": 209684,
+        "decodedBytes": 262144,
+        "encodedSHA256": "7e496df79bc6a13aa9e4ed7b07a1a6de24e96dd534fde9b08e1538e8661cf04a",
+        "decodedSHA256": "78150023c5db45ce4434d793a6d9517fada249640750e94fa4a2ed0316cfeb6b"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 103,
+      "x": 768,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/b06efcfe507ed7872d98a1468c68bc5ded81823ef6a669009625b67cab2f92f6.deflate",
+        "encodedBytes": 211956,
+        "decodedBytes": 262144,
+        "encodedSHA256": "7d99109480668b8f0e396cbbdefac927c4b46ec5e388533eb74968f532a05ba5",
+        "decodedSHA256": "b06efcfe507ed7872d98a1468c68bc5ded81823ef6a669009625b67cab2f92f6"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 104,
+      "x": 1024,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/0868c6d98519eb345a522f96918a4b7ce839fa8baf817a7642be0ace6e538ba9.deflate",
+        "encodedBytes": 195109,
+        "decodedBytes": 262144,
+        "encodedSHA256": "cfc2e11cd6db26e87f38050937ae3c12a19edfb3ee0209c0cd0445dd723ff32d",
+        "decodedSHA256": "0868c6d98519eb345a522f96918a4b7ce839fa8baf817a7642be0ace6e538ba9"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 105,
+      "x": 1280,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 17388
+        },
+        "transmission": {
+          "offset": 279536,
+          "bytes": 104328
+        },
+        "waterIndices": {
+          "offset": 383864,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 383864,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 383864,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 383864,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 383864,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/830c6030ce265b74af4ae76648161b2a8365584457be8107197739825d6b97e4.deflate",
+        "encodedBytes": 246853,
+        "decodedBytes": 383864,
+        "encodedSHA256": "1dbb8de3313e110063f6e8e0865275df10e8a93d9ff3f417969af06e771a914c",
+        "decodedSHA256": "830c6030ce265b74af4ae76648161b2a8365584457be8107197739825d6b97e4"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 106,
+      "x": 1536,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 35136
+        },
+        "transmission": {
+          "offset": 297280,
+          "bytes": 210816
+        },
+        "waterIndices": {
+          "offset": 508096,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 508096,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 508096,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 508096,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 508096,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/a2f0d8c0983c53d6fc421ec662b095915d0156fd32fec8449ae671ac0d166a13.deflate",
+        "encodedBytes": 344977,
+        "decodedBytes": 508096,
+        "encodedSHA256": "56f6d532b175946781eb3bf501a9b823e27955f4f6401b0b2078803390f299df",
+        "decodedSHA256": "a2f0d8c0983c53d6fc421ec662b095915d0156fd32fec8449ae671ac0d166a13"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 107,
+      "x": 1792,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/4acd8093f5d6f840c6c5e97065835bb242608ed1b75e1d8b4741d46e103b4546.deflate",
+        "encodedBytes": 213537,
+        "decodedBytes": 262144,
+        "encodedSHA256": "2c99508511f08e2970400b093c5fe4815dc9ab8b679a7ea65cd923233b5ccf12",
+        "decodedSHA256": "4acd8093f5d6f840c6c5e97065835bb242608ed1b75e1d8b4741d46e103b4546"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 108,
+      "x": 2048,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 1216
+        },
+        "transmission": {
+          "offset": 263360,
+          "bytes": 7296
+        },
+        "waterIndices": {
+          "offset": 270656,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 270656,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 270656,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 270656,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 270656,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/9dfddd9248e90cb9e819a0dd128f5f75b9b7ddc94f9f7b18635b111d72101b31.deflate",
+        "encodedBytes": 207839,
+        "decodedBytes": 270656,
+        "encodedSHA256": "6f32bcc238996e33715fc485d2a3ecf1485d69463a8cd4efc29e97e31f048863",
+        "decodedSHA256": "9dfddd9248e90cb9e819a0dd128f5f75b9b7ddc94f9f7b18635b111d72101b31"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 109,
+      "x": 2304,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 65280
+        },
+        "transmission": {
+          "offset": 327424,
+          "bytes": 391680
+        },
+        "waterIndices": {
+          "offset": 719104,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 719104,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 719104,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 719104,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 719104,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/b8cb35a23c69862e438b1231de56a38bf21dea865a9ec15ca67eca8c0a5d540f.deflate",
+        "encodedBytes": 409305,
+        "decodedBytes": 719104,
+        "encodedSHA256": "cbb2bbc837603c05d5ae7b7ffeef6e625aadae2a80f4777d30a51491264070de",
+        "decodedSHA256": "b8cb35a23c69862e438b1231de56a38bf21dea865a9ec15ca67eca8c0a5d540f"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 110,
+      "x": 2560,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 4936
+        },
+        "transmission": {
+          "offset": 267080,
+          "bytes": 29616
+        },
+        "waterIndices": {
+          "offset": 296696,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 296696,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 296696,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 296696,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 296696,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/0bd383751bc258f949ea9144b0914c6903b94205aae6638f9540b8a68b84cb15.deflate",
+        "encodedBytes": 217022,
+        "decodedBytes": 296696,
+        "encodedSHA256": "95966e541d2d283f5a39e2879b13600299a3335ee6061795120c8c7c2422c51a",
+        "decodedSHA256": "0bd383751bc258f949ea9144b0914c6903b94205aae6638f9540b8a68b84cb15"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 111,
+      "x": 2816,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c376c31e1242c033efbb2192d942abfbb8099a9480e3cc46e82adc156713f7de.deflate",
+        "encodedBytes": 199519,
+        "decodedBytes": 262144,
+        "encodedSHA256": "1e025f6a66cabf44b636f18d6d8fc077662e688a535144de49360c8b765b15fa",
+        "decodedSHA256": "c376c31e1242c033efbb2192d942abfbb8099a9480e3cc46e82adc156713f7de"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 112,
+      "x": 3072,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/c41363913aa72334207ef598d93c3b43b258c38f70ef8e14fb720624fcf7042f.deflate",
+        "encodedBytes": 199505,
+        "decodedBytes": 262144,
+        "encodedSHA256": "8a702e8b112feb7e8579648c926ce1a224ec3fb1ff6b41b30620a5a8df2092a1",
+        "decodedSHA256": "c41363913aa72334207ef598d93c3b43b258c38f70ef8e14fb720624fcf7042f"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 113,
+      "x": 3328,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/59f30751bf2ce536048b01928fe16d5596b81b40388d50f459817a131d1015d5.deflate",
+        "encodedBytes": 216488,
+        "decodedBytes": 262144,
+        "encodedSHA256": "aa2e2d841af4fc07de9b55fd9ca1b5189794d6d15b6a1e33e4e77598bb74b33b",
+        "decodedSHA256": "59f30751bf2ce536048b01928fe16d5596b81b40388d50f459817a131d1015d5"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 114,
+      "x": 3584,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/e2544959764d3aaa8acc37354b2f84f7bd86d72c61c949ebc96324378b97f875.deflate",
+        "encodedBytes": 213593,
+        "decodedBytes": 262144,
+        "encodedSHA256": "13f854e6da266ad12f861759b840ee513d360c0ff506c11d34366e3d92c9864d",
+        "decodedSHA256": "e2544959764d3aaa8acc37354b2f84f7bd86d72c61c949ebc96324378b97f875"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 115,
+      "x": 3840,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/fd9e3f07c03ead49fa376774225a304a114be5dcd20454e66601472ac4d3835b.deflate",
+        "encodedBytes": 215353,
+        "decodedBytes": 262144,
+        "encodedSHA256": "33ac7c7c0e188ea4de645fc3912922e881da0bce915995b0138a3f7be87e085d",
+        "decodedSHA256": "fd9e3f07c03ead49fa376774225a304a114be5dcd20454e66601472ac4d3835b"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 116,
+      "x": 4096,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/e9dae3ad4ed04fae4f3dd0998cf4623227b6184ea73d1efcaba557e7d417c8f6.deflate",
+        "encodedBytes": 215563,
+        "decodedBytes": 262144,
+        "encodedSHA256": "c5464add098905f3a192b047df6b70f56b875b21212dc8cc690ce509d6b5ce7d",
+        "decodedSHA256": "e9dae3ad4ed04fae4f3dd0998cf4623227b6184ea73d1efcaba557e7d417c8f6"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 117,
+      "x": 4352,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/1db374b9c6e927588110d6eca211d046dbcd7bfc2fb3a6c39dd2d51518e27d7a.deflate",
+        "encodedBytes": 203966,
+        "decodedBytes": 262144,
+        "encodedSHA256": "076ed8484f89cd34daccc9c6dec6486717617a5f5dc43174f8f9b3db77280f93",
+        "decodedSHA256": "1db374b9c6e927588110d6eca211d046dbcd7bfc2fb3a6c39dd2d51518e27d7a"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 118,
+      "x": 4608,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 44300
+        },
+        "transmission": {
+          "offset": 306448,
+          "bytes": 265800
+        },
+        "waterIndices": {
+          "offset": 572248,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 572248,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 572248,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 572248,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 572248,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/8d0e70b498bdc1319b22d800740e1f24a6d531bc33d2507bc5262c687db305d5.deflate",
+        "encodedBytes": 383658,
+        "decodedBytes": 572248,
+        "encodedSHA256": "62771af90a53868d8683ea2a8f7972a6dd7763386ffe9e5eb6aa2d24860a67c2",
+        "decodedSHA256": "8d0e70b498bdc1319b22d800740e1f24a6d531bc33d2507bc5262c687db305d5"
+      },
+      "hasAnimation": false
+    },
+    {
+      "id": 119,
+      "x": 4864,
+      "y": 1280,
+      "w": 256,
+      "h": 256,
+      "layers": {
+        "water": {
+          "count": 0
+        },
+        "b2": {
+          "count": 0
+        },
+        "b4": {
+          "count": 0
+        },
+        "b1": {
+          "count": 0
+        },
+        "b3": {
+          "count": 0
+        }
+      },
+      "sections": {
+        "source": {
+          "offset": 0,
+          "bytes": 262144
+        },
+        "lightIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "transmission": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "waterIndices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b2Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b4Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b1Indices": {
+          "offset": 262144,
+          "bytes": 0
+        },
+        "b3Indices": {
+          "offset": 262144,
+          "bytes": 0
+        }
+      },
+      "static": {
+        "file": "packets_xor/4b4eb4b67756126bb718853f6458d24cf6e44b8121c62540d877dd8b5618fe72.deflate",
+        "encodedBytes": 213992,
+        "decodedBytes": 262144,
+        "encodedSHA256": "2308353916202c98249c280ef1684e0b6bead2b17055abafd2248ac298224e88",
+        "decodedSHA256": "4b4eb4b67756126bb718853f6458d24cf6e44b8121c62540d877dd8b5618fe72"
+      },
+      "hasAnimation": false
+    }
+  ],
+  "uniquePackets": 132,
+  "totalEncodedBytes": 55257109,
+  "fullStaticDecodedBytes": 41036804,
+  "limits": [
+    "Sign overlays retain original fractional alpha PNGs: host must composite with original Canvas source-over and actor groundY sorting before final lighting",
+    "Lighting skips original actorMask after exactly one ambient",
+    "No support/safe49/new forecourt authority granted",
+    "Not a new world clock; shared96x50ms original timeline preserved"
+  ],
+  "phaseSlices": {
+    "1": {
+      "offset": 0,
+      "bytes": 48780
+    },
+    "2": {
+      "offset": 48780,
+      "bytes": 132705
+    },
+    "3": {
+      "offset": 181485,
+      "bytes": 196608
+    },
+    "4": {
+      "offset": 378093,
+      "bytes": 94140
+    },
+    "5": {
+      "offset": 472233,
+      "bytes": 49512
+    },
+    "22": {
+      "offset": 521745,
+      "bytes": 36837
+    },
+    "23": {
+      "offset": 558582,
+      "bytes": 80031
+    },
+    "24": {
+      "offset": 638613,
+      "bytes": 46716
+    }
+  },
+  "phaseBundleScope": "bounded animated harbor owner only; no payload fetched for nonharbor view",
+  "r1TileSliceProofs": 768,
+  "phaseBlockSize": 8,
+  "phaseBlockEncoding": "TIME_INTERLEAVED_RGB_XOR_SOURCE",
+  "phaseBlocks": [
+    {
+      "file": "phase_blocks/ea84df9db11c29f90285832609ddd5fe9e5a6001c1939ff998766583aebe983d.deflate",
+      "encodedBytes": 2059633,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "b945a3386f04827877ceb103379deb5e7a93bc435ab16f9c3f9ded1587e4a823",
+      "decodedSHA256": "ea84df9db11c29f90285832609ddd5fe9e5a6001c1939ff998766583aebe983d"
+    },
+    {
+      "file": "phase_blocks/a2ae64495232e5e25d45edfe608442f61b139aab2422494835e5ad2f70639357.deflate",
+      "encodedBytes": 2290954,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "7b7eb764b77409b19cb939e8b04c3faf5d2749eb118841abf00343a8c9d64b00",
+      "decodedSHA256": "a2ae64495232e5e25d45edfe608442f61b139aab2422494835e5ad2f70639357"
+    },
+    {
+      "file": "phase_blocks/b812bcb1446271e85d23ceb90687541cc750e3a91182af0c854eeafae94f719e.deflate",
+      "encodedBytes": 2321554,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "2c55c8a1f30d52cea22c7102b5d778fe9a04fc27a8f12b70ea228e007d59cc0f",
+      "decodedSHA256": "b812bcb1446271e85d23ceb90687541cc750e3a91182af0c854eeafae94f719e"
+    },
+    {
+      "file": "phase_blocks/c89015af74e9c46d33aa4112f8e6e38d2914c557291f1cda3bf505ef06cb256e.deflate",
+      "encodedBytes": 2322227,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "9653019a31b3674e612b1ce876297a911c1278fc877ec1afb5acee2371958331",
+      "decodedSHA256": "c89015af74e9c46d33aa4112f8e6e38d2914c557291f1cda3bf505ef06cb256e"
+    },
+    {
+      "file": "phase_blocks/0aa9fa47289e30be9a2f48c920929cfbc3b090fa7c6b0dbb1069e0de9f5655c6.deflate",
+      "encodedBytes": 2428334,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "563b8d3ff97e2337b018fa7cc496e2c565c82b81e4eb9c38b41d89bd1a2c5459",
+      "decodedSHA256": "0aa9fa47289e30be9a2f48c920929cfbc3b090fa7c6b0dbb1069e0de9f5655c6"
+    },
+    {
+      "file": "phase_blocks/849e057e4819b338dc4257fa71380597aa1ff7918d45fe122e7d60c2bf9689b4.deflate",
+      "encodedBytes": 2260670,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "90c9a9bf75339c06a75f780b168ea5e5b76595bc428283ad157d39a8b1bfefaf",
+      "decodedSHA256": "849e057e4819b338dc4257fa71380597aa1ff7918d45fe122e7d60c2bf9689b4"
+    },
+    {
+      "file": "phase_blocks/3c8716e5e6e3e51de866060dc6a041f8f8ff13f265fabbef44680d80cfb93eb2.deflate",
+      "encodedBytes": 2229109,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "e84870f1fed0f9b1ca9b8ec7731eaad02263bf26a5a4dc38505cac90b0cdcb55",
+      "decodedSHA256": "3c8716e5e6e3e51de866060dc6a041f8f8ff13f265fabbef44680d80cfb93eb2"
+    },
+    {
+      "file": "phase_blocks/2fb2eb370d17b44eb822f09535689600edc8af41959ab4c1d1339eccb853229f.deflate",
+      "encodedBytes": 2405721,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "9392caf7f28ba109e510d09500eb61bd4322db5da0142c6c97157ac79bfecb70",
+      "decodedSHA256": "2fb2eb370d17b44eb822f09535689600edc8af41959ab4c1d1339eccb853229f"
+    },
+    {
+      "file": "phase_blocks/3955480e7c28dd859795c15fec658491e93a3bd5125b9298ff93750bdc21f9cc.deflate",
+      "encodedBytes": 2347908,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "ce2591ce88e3e5d6b6c519b3f13e4c70ce15b9b11fca88759c67e1a1686ed9c4",
+      "decodedSHA256": "3955480e7c28dd859795c15fec658491e93a3bd5125b9298ff93750bdc21f9cc"
+    },
+    {
+      "file": "phase_blocks/58b787e0f357a0d7c39857f70dfedcd30d62d96b716652f48083edfb82336ccd.deflate",
+      "encodedBytes": 2324589,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "6138d8efe216d82158e0d775ffa8833e09b98ac57868b3c626ca27c62db604d0",
+      "decodedSHA256": "58b787e0f357a0d7c39857f70dfedcd30d62d96b716652f48083edfb82336ccd"
+    },
+    {
+      "file": "phase_blocks/f88801fb47ed90c92fc4cd11cbf002e5d228d701414a0c4d582cdb4c06771892.deflate",
+      "encodedBytes": 2326584,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "67ca6f1975e1497455e27b9ebe18ac445ef6034c6cf6227abf255ba695561d48",
+      "decodedSHA256": "f88801fb47ed90c92fc4cd11cbf002e5d228d701414a0c4d582cdb4c06771892"
+    },
+    {
+      "file": "phase_blocks/a4cfdd3e377b2d96fb7ccb2713479f72b198c8bddf45907ac1d8c5c190bd74fd.deflate",
+      "encodedBytes": 2107369,
+      "decodedBytes": 5482632,
+      "encodedSHA256": "ae87bd168660d9a10638414d01fb229cd559235611c7ffdb13de8672cef8d808",
+      "decodedSHA256": "a4cfdd3e377b2d96fb7ccb2713479f72b198c8bddf45907ac1d8c5c190bd74fd"
+    }
+  ],
+  "phaseBytes": 685329
+}
