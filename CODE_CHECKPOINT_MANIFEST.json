@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "kind": "PARTIAL_DEVELOPMENT_CODE_AND_EXPLICIT_SMALL_OWN_RUNTIME_DATA_CHECKPOINT",
-  "checkpoint": "Stage63 + NEW_REBUILD_S4_HUB_PAIR_R1",
+  "checkpoint": "Stage63 + NEW_REBUILD_S4_CENTER_R1",
   "standalone": false,
   "final_game": false,
   "base_commit": "645923a3634e08878966ac72210f2189386011f8",
@@ -352,9 +352,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/center/center-service.mjs": {
-      "sha256": "65037b137e286b073a481e5a8f3b944b493966516439f2c365a573ed6665c1b4",
-      "bytes": 12746,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "bytes": 12873,
+      "sha256": "970bdafb3ea7051e80632ca32dee49453c8eba1f7bdb85505ae3b49afbc80ace",
+      "role": "active_S4_center_game_or_test_code"
     },
     "dist/development/center/center-visual-loader.mjs": {
       "sha256": "a0d32baf2052d60d2774cac5b3a03c55ec01d180b3f603dc09f34dc2953c548b",
@@ -1067,9 +1067,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/native-envelope.mjs": {
-      "bytes": 66392,
-      "sha256": "4ef7747ca3b534faedb80d6637ecb31438ddf678f656a8ac3166c047724f99a0",
-      "role": "active_S4_hub_code_or_adopted_original_runtime"
+      "bytes": 70931,
+      "sha256": "066b2451f330748ee34f9e60d04561b702f01bee807e7fd2e0cf636587461aa3",
+      "role": "active_S4_center_game_or_test_code"
     },
     "dist/development/jungle-native/main_ui_candidate/native-harin-authority.mjs": {
       "sha256": "09134f1f2df1fb760186cd986ffa82588393422cc09611b9091e2dee948c893d",
@@ -1097,9 +1097,9 @@
       "role": "active_NEW_REBUILD_S1_S2_NATIVE_V19_source_or_test"
     },
     "dist/development/jungle-native/main_ui_candidate/review-host.mjs": {
-      "bytes": 36066,
-      "sha256": "3f4b7ec54de4391853efac212f29379ca395be93870429a72b2050886bdcee4c",
-      "role": "active_S4_hub_code_or_adopted_original_runtime"
+      "bytes": 41690,
+      "sha256": "733d80ab4ebd70997b1b2d4433b352dbda96e246ef5b0883d54a5cba4a864688",
+      "role": "active_S4_center_game_or_test_code"
     },
     "dist/development/jungle-native/main_ui_candidate/s1-exit-choices.mjs": {
       "sha256": "b0b5cf59f09cf345e3756f7d7223d00489b7ab0847ea6e2cea8f65213242318b",
@@ -1122,9 +1122,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/development/jungle-native/main_ui_candidate/session-owner.mjs": {
-      "bytes": 107864,
-      "sha256": "b98c9b4787aa0987ffdd2ecdd5fa6f01e47e9c79450d8c5f51a2ed5b3f5177a7",
-      "role": "active_S4_hub_code_or_adopted_original_runtime"
+      "bytes": 119555,
+      "sha256": "930f19839b3cc9670dee8b8072d0d93aa85325e439698b621f1dff75c73ee302",
+      "role": "active_S4_center_game_or_test_code"
     },
     "dist/development/jungle-native/main_ui_candidate/stage-intermediate.mjs": {
       "sha256": "1b6eb3c0bd42e4018711f4cf948780ee848dbb278b02db41bf3df9cf2ad20950",
@@ -2222,9 +2222,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/world/selected-heal-authority.mjs": {
-      "sha256": "532058514a736da1ba61f2f6f57d016e2db1229c0b239eeca1f5594bd1e05cac",
-      "bytes": 12822,
-      "role": "managed_stage63_text_source_or_runtime_data"
+      "bytes": 13614,
+      "sha256": "32be20ae92a58e4e2eff79230a10964ebba712d63f586960b488fb3467633b26",
+      "role": "active_S4_center_game_or_test_code"
     },
     "dist/world/selected-purchase-authority.mjs": {
       "sha256": "a64f984a6935d9e6b8e133791ed24d2172ca2086f7b06f57f05dc3f2b14006f3",
@@ -2232,9 +2232,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "dist/world/service.mjs": {
-      "sha256": "08ed2a623ac55d16baa731b25c39a7a116643e7988298dbd0d07abab30fe5b96",
-      "bytes": 48587,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 49014,
+      "sha256": "cc2e47e7f0ec2c7a004819a2d05479dde7098f51992804502a1c5514ae4fea1f",
+      "role": "active_S4_center_game_or_test_code"
     },
     "dist/world/state.mjs": {
       "sha256": "6234228f4fcef88d66a10227c8171842d39047b182ea08c267b518d6d1ea84fc",
@@ -2382,9 +2382,9 @@
       "role": "managed_stage63_text_source_or_runtime_data"
     },
     "tests/w03-final-players.test.mjs": {
-      "sha256": "a85eff30b949572e3a14a3c0b1ba63f0125ae308a3af428dc281922d01b7a4da",
-      "bytes": 7689,
-      "role": "active_NEW_REBUILD_WARP_FAST_R1_safe_source_or_runtime_data"
+      "bytes": 8701,
+      "sha256": "bf10fc3001ad3e8b226b9c058de57d212756e52c2cb4a11fadd5a3813d683352",
+      "role": "active_S4_center_game_or_test_code"
     },
     "tests/yeji-single-owner.test.mjs": {
       "sha256": "6eefb965217155b15a25d9b246843561b9f0543b0ede60e2942833b9a022ef47",
@@ -4614,12 +4614,57 @@
       "bytes": 3639,
       "sha256": "04babb76159d544568e5f4f932da1b0df3be46ad80ed6d0712181ef223df3e3c",
       "role": "active_S4_hub_code_or_adopted_original_runtime"
+    },
+    "dist/development/s4-progression-native/center-common.mjs": {
+      "bytes": 6287,
+      "sha256": "7b6e297c0fa642ec72c5ec67407c648208948b6a3b52acec5ed99f4a023c5aa6",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "dist/development/s4-progression-native/center-provider.mjs": {
+      "bytes": 4114,
+      "sha256": "0740bd1aec85a44eda90674698b9e1619ac6cd25ba2dea362641a1d23a8eac69",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "dist/development/s4-progression-native/center-visible-view.mjs": {
+      "bytes": 2341,
+      "sha256": "22084f45eea6ed4332e0f21227faf155fbc05879a2547b21e3d2ae83c0ae0b01",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "dist/development/s4-progression-native/center-registration.mjs": {
+      "bytes": 990,
+      "sha256": "9e60af9ddeb081189a3d379b5bb0be453f988b5e28f63ac6f4ec8d80bf531fa6",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "dist/development/s4-progression-native/center-recovery.mjs": {
+      "bytes": 2661,
+      "sha256": "c5817fb3f5307d4c20a3dbe14c12d404e8b540e3bfe73589a5d3f08879d8bfca",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "dist/development/s4-progression-native/center-heal-binding.mjs": {
+      "bytes": 2805,
+      "sha256": "934ba0c5d9d4978ac6d9c008282605c9821b47c2ce549c996fe0aa90b8cdf25e",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "dist/development/s4-progression-native/center-animation.mjs": {
+      "bytes": 3781,
+      "sha256": "84e0434699dfd292372a1a712cb6c06ee1a4fee29690069d1e60c48069326310",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "dist/development/s4-progression-native/center-animation-overlay.mjs": {
+      "bytes": 8735,
+      "sha256": "1d2177e819d4a31769aed4fef3668d07f781fa96dee23b7e6e85a1af45b6c57c",
+      "role": "active_S4_center_game_or_test_code"
+    },
+    "tests/fixtures/approved-s2-r2-protected-tuple.json": {
+      "bytes": 1949,
+      "sha256": "e80e78e5f677246e85e63a3ffc82eaaa8fad7413dfaabdf22cfb5adb81558b95",
+      "role": "single_root_selected_safe_protected_tuple_exception"
     }
   },
-  "revision": "NEW_REBUILD_S4_HUB_PAIR_R1",
-  "previous_public_commit": "4724cc5b974bf5fcb3111663cd2674bb19df5936",
-  "revision_source_manifest_sha256": "f1598ef991badb22c23f4492071016d8be8908f1a4aea6a3489649ecde3a9fce",
-  "revision_scope": "S4 hub pair only; center/area/GYM4/House3 not connected; gzipR2/R3 and QA not installed; notdeployment/fullS4completion",
+  "revision": "NEW_REBUILD_S4_CENTER_R1",
+  "previous_public_commit": "2b111640e87fc05b9bcc7107e2add356d37d9f6a",
+  "revision_source_manifest_sha256": "1c676bf0bed99eda91f615ea20442d554809376338814945a837df3650f36e57",
+  "revision_scope": "center development activation only, notdeployment/fullS4completion; gzip/area/GYM4/House3/QA excluded Exact protected-tuple JSON single exception included; no raw fixture.",
   "immutable_stage63_manifest_sha256": "8ba9b9b2151bda446643fa86b9a025e8e2ff26bbb3620e82e76abcc17c09e0c9",
   "candidate_backups": {
     "NEW_REBUILD_PERFORMANCE": {
@@ -4815,12 +4860,12 @@
     }
   },
   "active_code_selection": {
-    "spaceSafeCodeFiles": 912,
-    "publicSafeCodeFiles": 794,
-    "reusedUnchangedPublicFiles": 747,
-    "changedOrAddedCodeFiles": 47,
+    "spaceSafeCodeFiles": 921,
+    "publicSafeCodeFiles": 803,
+    "reusedUnchangedPublicFiles": 787,
+    "changedOrAddedCodeFiles": 16,
     "newPrivateOrInternalMetadataNotSelected": 117,
-    "managedManifestSHA256": "f1598ef991badb22c23f4492071016d8be8908f1a4aea6a3489649ecde3a9fce",
+    "managedManifestSHA256": "1c676bf0bed99eda91f615ea20442d554809376338814945a837df3650f36e57",
     "sourceCodeExactBytes": true,
     "aggregate": {
       "total": 1654,
@@ -4829,13 +4874,14 @@
       "skip": 11
     },
     "actualWarpScope": {
-      "scope": "S4 hub pair only; center/area/GYM4/House3 not connected; gzipR2/R3 and QA not installed; notdeployment/fullS4completion",
+      "scope": "center development activation only, notdeployment/fullS4completion; gzip/area/GYM4/House3/QA excluded",
       "limits": [
-        "HTTPcache uncontrolled/device/fullcold/allpaths HOLD",
-        "initialfixture7138.8ms separate",
-        "historical2browsertimeouts causeunknownOPEN",
-        "original Nodeearned Lv100HP169PP0 checkpoint not normaldifficulty",
-        "first entry mean1.3606s still improvement opportunity"
+        "Actual S4 loss original stage policy HOLD",
+        "completed S4 positive recovery fixture untested",
+        "cold/mobile/device/full difficulty/allpaths unverified",
+        "average~1second transition target remains HOLD; final-pin onepair1.8742/1.3548seconds is not general mean",
+        "original5200ms healing intentionally separate from warp",
+        "historical failed UI candidates and old unknown-cause browser timeouts preserved"
       ]
     }
   },
@@ -4845,5 +4891,11 @@
     "format": "S1MASKR1 header64+safeindex uint32LE runs",
     "noArtworkOrPersonalData": true,
     "exactLogicalSourceRoundtrip": true
+  },
+  "protectedTupleSingleException": {
+    "path": "tests/fixtures/approved-s2-r2-protected-tuple.json",
+    "bytes": 1949,
+    "sha256": "e80e78e5f677246e85e63a3ffc82eaaa8fad7413dfaabdf22cfb5adb81558b95",
+    "scope": "Exact single protected tuple fixture: relative code paths/approval generations/SHA only; root reviewed and selected private+public exception. No raw save/private reference/personal data. No blanket fixture authorization."
   }
 }

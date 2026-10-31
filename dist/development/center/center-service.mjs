@@ -1,3 +1,4 @@
+import{isS4OwnedCenterHealBinding}from'../s4-progression-native/center-heal-binding.mjs';
 import {isCenterInteriorHealBinding} from '../center-interior/heal-binding.mjs';
 import{isS5HealBinding}from'../jungle-native/main_ui_candidate/s5-heal-binding.mjs';
 import {isJangmokHealBinding} from '../../world/jangmok-service-bindings.mjs';
@@ -18,7 +19,7 @@ const fail = code => { throw new Error(code); };
  * No save adapter, storage API, HP formula, economy rule or party-count selector here.
  * The field lease blocks other world operations during the visual sequence. */
 export function createCanonicalCenterHost(world,pointId,options={}) {return createHost(world,pointId,{nativePost:options.nativePost??false});}
-export function createSelectedCenterHost(world,binding) {if(!(isCenterInteriorHealBinding(binding)||isGohyeonHealBinding(binding)||isJangmokHealBinding(binding)||isS5HealBinding(binding))||!binding.canHeal())fail('SELECTED_HEAL_BINDING_REQUIRED');return createHost(world,binding.pointId,{selected:binding,selection:binding.capture(world)});}
+export function createSelectedCenterHost(world,binding) {if(!(isCenterInteriorHealBinding(binding)||isS4OwnedCenterHealBinding(binding)||isGohyeonHealBinding(binding)||isJangmokHealBinding(binding)||isS5HealBinding(binding))||!binding.canHeal())fail('SELECTED_HEAL_BINDING_REQUIRED');return createHost(world,binding.pointId,{selected:binding,selection:binding.capture(world)});}
 function createHost(world, pointId, {nativePost=false,selected=null,selection=null}={}) {
   let committedTransactionId=null;
   if(nativePost && (pointId!=='heal:POST'||typeof world?.interactNative!=='function'))fail('NATIVE_POST_HEAL_REQUIRED');

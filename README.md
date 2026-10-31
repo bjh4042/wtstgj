@@ -97,3 +97,10 @@ art/originals/maps에는 생성 기록과 선정 원본 해시를 대조한 장�
 
 ## 최신 활성 코드: S4_HUB_PAIR_R1
 S4 허브 왕복 범위만 설치 완료. 게임8경로와 기존 원본39개 관리채택 코드만 반영합니다. aggregate1643PASS/0FAIL/기존11SKIP. 센터/area/GYM4/House3/gzip 미설치. 전체S4·기기·콜드환경 완료 아님. 이 작업의 배포 명령 실행 없음; 외부 자동배포 연계는 조회 제한으로 미확인입니다.
+
+
+## 최신 활성 코드: S4_CENTER_R1
+센터 게임14경로와 기존 W03 검사코드1만 반영. 별도선택 fixture는 기존 제외정책에 따라 미포함. aggregate1643PASS/0FAIL/11SKIP. 실S4loss/cold/mobile/평균1초HOLD; 공원·녹지·GYM4·House3·gzip 미연결/미설치. 과거 실패후보 shelf와 활성 코드는 구분합니다. 전체게임 완료 아님. 배포명령0, 외부자동배포 연계미확인.
+
+### 최종 단일 fixture 예외
+앞선 초안의 미포함 문구는 철회: tests/fixtures/approved-s2-r2-protected-tuple.json은 상대 코드경로·승인세대·SHA만 가진 명시 선택 예외로 포함합니다. 다른 fixture/raw 제외 유지.
