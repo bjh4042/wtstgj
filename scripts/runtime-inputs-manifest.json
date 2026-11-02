@@ -3361,6 +3361,13 @@
       "kind": "pwa",
       "bytes": 11172,
       "sha256": "ed070336e10c955346ec76e61dd312654473269a6f23cd342f10ce2f5eb37d9a"
+    },
+    {
+      "source": "dist/art-inventory.json",
+      "destination": "art-inventory.json",
+      "kind": "runtime-data",
+      "bytes": 10731,
+      "sha256": "8ee0f9523dd92d8979b5e95ba3c417ea123bba3217228ac1f44d8dec10f067f5"
     }
   ],
   "snapshot": [
@@ -4577,7 +4584,8 @@
     "dist/pwa/offline.html",
     "dist/pwa/manifest.webmanifest",
     "dist/pwa/icon-192.png",
-    "dist/pwa/icon-512.png"
+    "dist/pwa/icon-512.png",
+    "dist/art-inventory.json"
   ],
   "policy": "Explicit approved payload10 selection over exact base645923. Media pins unchanged. Shell/data are selected-source byte pins, not art approval. No automatic re-pin."
 }
