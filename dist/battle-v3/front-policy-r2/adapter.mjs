@@ -6,7 +6,7 @@ export function resolveFrontOnlyArt(reference,side='front'){
  const known=reference?.namespace==='canonical'&&/^SPECIES_\d{3}$/.test(reference.speciesId)||reference?.namespace==='npc_preview_species'&&/^EDNA_0[1-6]$/.test(reference.speciesId);if(!known)return null;
  const art=approvedSpeciesArt(reference,'front');if(!art?.src||art.status==='user-deferred')return null;
  const [sx,sy,sw,sh]=art.source??[];if(![sx,sy,sw,sh,art.width,art.height].every(Number.isFinite)||sx<0||sy<0||sw<=0||sh<=0||sx+sw>art.width||sy+sh>art.height)return null;
- return Object.freeze({...art,source:Object.freeze([...art.source]),src:new URL('../../'+art.src,import.meta.url).href,requestedSide:side,selectedSide:'front',mirrored:false});
+ return Object.freeze({...art,source:Object.freeze([...art.source]),src:new URL(art.src,new URL(import.meta.env?.BASE_URL??'../../',import.meta.url)).href,requestedSide:side,selectedSide:'front',mirrored:false});
 }
 /** Same positional interface as drawBattleSpecies. Bind only in a NEW presentation successor. */
 export function createFrontOnlyBattleRenderer({loadArt=loadApprovedSpeciesArt,fallback=originalDrawBattleSpecies}={}){
