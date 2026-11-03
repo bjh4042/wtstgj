@@ -51,32 +51,74 @@
       "entry": "app/digest.mjs"
     },
     {
-      "bytes": 6747,
-      "sha256": "77f16f0d33d83a394b0bc9a34bfb3af9ce02174c593cb0e235020c1b8de0920d",
+      "bytes": 6767,
+      "sha256": "518bd01567b5868c69e2926daa45021c29dbfa281cd450f3d9161902c64b77d3",
       "destination": "app/dom-adapter.mjs",
       "kind": "source-bundle",
       "entry": "app/dom-adapter.mjs"
     },
     {
-      "bytes": 7431,
-      "sha256": "ed3e924612d60f0b942da33fa7867525b6d98e9d49e1c86803c6c82a80780b1a",
+      "bytes": 5786,
+      "sha256": "5582717489cbea1b8c701738ac0bcfa310bb755a53fb2d181151e842059d9d5c",
+      "destination": "app/durable-checkpoint-host.mjs",
+      "kind": "source-bundle",
+      "entry": "app/durable-checkpoint-host.mjs"
+    },
+    {
+      "bytes": 9850,
+      "sha256": "fac2bee7c82f3dc4cf50d7b4d9dbdcea0cd9335866019492d1a84b58cc2dbd3f",
       "destination": "app/entry.mjs",
       "kind": "source-bundle",
       "entry": "app/entry.mjs"
     },
     {
-      "bytes": 39571,
-      "sha256": "f6a2917b170a0019a7075e760d2b666aa38771e99e689d5961758518b99789e9",
+      "bytes": 47639,
+      "sha256": "b7bd98dd7a0791d502ef955b584a994b890108ce7de572de6a9e836e68c9a78f",
       "destination": "app/executor.mjs",
       "kind": "source-bundle",
       "entry": "app/executor.mjs"
     },
     {
-      "bytes": 6082,
-      "sha256": "cbb982075d6bd2fcc0e7785b6b7c657aaa1c0c2bb77fe35c1c91cb9370b1379f",
+      "bytes": 155,
+      "sha256": "724910d20d3f5e1786a8a9b17a7d723dec891b5214dda7c9047edf56307a66da",
+      "destination": "app/forward-stage.mjs",
+      "kind": "source-bundle",
+      "entry": "app/forward-stage.mjs"
+    },
+    {
+      "bytes": 6488,
+      "sha256": "ebf3edbb6dc63ffb6d49e0ec30d275cada6a44541a96bb4ef5f5d120a3617f06",
       "destination": "app/fresh-qa-profile.mjs",
       "kind": "source-bundle",
       "entry": "app/fresh-qa-profile.mjs"
+    },
+    {
+      "bytes": 1700,
+      "sha256": "1de76d38e5568b907f394983e3ccc09771b542b3ee93ba9b064d72f9cf7a3067",
+      "destination": "app/gym-check-effect.mjs",
+      "kind": "source-bundle",
+      "entry": "app/gym-check-effect.mjs"
+    },
+    {
+      "bytes": 960,
+      "sha256": "f9f87578a387ad57035f4cc23977bd6f881368e19b6c62da4c04fdd1704c012f",
+      "destination": "app/gym-check-regions.mjs",
+      "kind": "source-bundle",
+      "entry": "app/gym-check-regions.mjs"
+    },
+    {
+      "bytes": 6498,
+      "sha256": "1f29f6386ebdde6484baed15a42a8814a50077c65aef979bcfbcbc52dc35ae49",
+      "destination": "app/gym-check-resources.mjs",
+      "kind": "source-bundle",
+      "entry": "app/gym-check-resources.mjs"
+    },
+    {
+      "bytes": 6579,
+      "sha256": "bfe9d0d02f29989f4863d7c7059ce64aaecc022074466b3e3219dbc2430bf092",
+      "destination": "app/gym-controls.mjs",
+      "kind": "source-bundle",
+      "entry": "app/gym-controls.mjs"
     },
     {
       "bytes": 1389,
@@ -91,6 +133,20 @@
       "destination": "app/host.mjs",
       "kind": "source-bundle",
       "entry": "app/host.mjs"
+    },
+    {
+      "bytes": 6291,
+      "sha256": "a620fe3fe232450af7f5c0e4c16f6d20650046c805a4942473e3615b7755728f",
+      "destination": "app/indexeddb-driver.mjs",
+      "kind": "source-bundle",
+      "entry": "app/indexeddb-driver.mjs"
+    },
+    {
+      "bytes": 1872,
+      "sha256": "02712aa6f49f7710d9c652ad9c1431d0cd487a4e4c1fea544743de49c5c9a8f1",
+      "destination": "app/interaction-router.mjs",
+      "kind": "source-bundle",
+      "entry": "app/interaction-router.mjs"
     },
     {
       "bytes": 2191,
@@ -170,11 +226,18 @@
       "entry": "app/npc-solids.mjs"
     },
     {
-      "bytes": 5717,
-      "sha256": "559201be140acbf7a98c920a14e0da8149dd3459aaa698cd3b438a4406ff5b8f",
+      "bytes": 6362,
+      "sha256": "4a46decb66d70ac3b0bf820065030b27f223e8fae38f3aeeb5736f56caba0811",
       "destination": "app/npc-talk-controls.mjs",
       "kind": "source-bundle",
       "entry": "app/npc-talk-controls.mjs"
+    },
+    {
+      "bytes": 1652,
+      "sha256": "87b72ff57aeb744cbc7d3885e4b097bbaec020b5fdc62289ca46705b789217de",
+      "destination": "app/persistence-profile.json",
+      "kind": "source-bundle",
+      "entry": "app/persistence-profile.json"
     },
     {
       "bytes": 1712,
@@ -184,8 +247,8 @@
       "entry": "app/player-visibility.mjs"
     },
     {
-      "bytes": 1091,
-      "sha256": "9af4328a0e722a835abae0cdb2b80ed4001c6ea3a900aaff81581d31b935bbc9",
+      "bytes": 1284,
+      "sha256": "b5653505d1c449445eb168e89dd6e551036bd915c482b7f5829b2c3330d0b074",
       "destination": "app/port-regions.mjs",
       "kind": "source-bundle",
       "entry": "app/port-regions.mjs"
@@ -205,15 +268,15 @@
       "entry": "app/purchase-effect.mjs"
     },
     {
-      "bytes": 1139,
-      "sha256": "88d096565ee83ebf679094d766f0c0c064bbd046d316b132dc2648910ff2424f",
+      "bytes": 1255,
+      "sha256": "51ae444834d4c173bfc8e87e9d198e7c3da0b927218cf3bb416e163f9d11fb00",
       "destination": "app/readonly-observer.mjs",
       "kind": "source-bundle",
       "entry": "app/readonly-observer.mjs"
     },
     {
       "bytes": 440,
-      "sha256": "e4a8c2c2d850a6b09df486aca59768daf6c27147c5735c2cdbda1ec126db3572",
+      "sha256": "8e26d76f9657f52548fc9e1581bf30a852e3856a737c40f1eddb3cf9a55e9b43",
       "destination": "app/resume-pins.json",
       "kind": "source-bundle",
       "entry": "app/resume-pins.json"
@@ -233,22 +296,22 @@
       "entry": "app/scene.mjs"
     },
     {
-      "bytes": 6394,
-      "sha256": "5f580b17a20249bcb48b05195f5d9cf2a9019d82c3b72d1edeb39717dcfc61be",
+      "bytes": 8924,
+      "sha256": "b44d7a421d32bafd8b7915da6b14b9bbe5a7b5973032f5ca75ae27a26b241431",
       "destination": "app/session.mjs",
       "kind": "source-bundle",
       "entry": "app/session.mjs"
     },
     {
       "bytes": 373,
-      "sha256": "7cf619c47f123631802711b048ebf90de0604f048e2a4cbdeeb3573b104a8f66",
+      "sha256": "6d2e6d6ab6998857b14a505a99b70a126d8841857a78643f0f8362925bfea308",
       "destination": "app/source-identity.json",
       "kind": "source-bundle",
       "entry": "app/source-identity.json"
     },
     {
-      "bytes": 3192,
-      "sha256": "c3acb67641c7b0279eacaed6812ab213e393d01a13a502d73b30e8e24aa532ad",
+      "bytes": 4304,
+      "sha256": "b7eda4eb12436eb038959f5aa428a3da1e8d836b8559858ba5a357e92b632a36",
       "destination": "app/stage-checkpoint-dom.mjs",
       "kind": "source-bundle",
       "entry": "app/stage-checkpoint-dom.mjs"
@@ -261,22 +324,22 @@
       "entry": "app/stage-checkpoint-host.mjs"
     },
     {
-      "bytes": 1585,
-      "sha256": "fe141c6ef1861db98f9c331033ba81706d9dd99bc0823a664baa58da5bc7ec6b",
+      "bytes": 1651,
+      "sha256": "36b031e88b7c2ce3cb3ea2fe02fc1b788ce227e862f6ee637298a13e4dad420d",
       "destination": "app/stage-effect.mjs",
       "kind": "source-bundle",
       "entry": "app/stage-effect.mjs"
     },
     {
-      "bytes": 5299,
-      "sha256": "7f069efc072d4cc770d195ef8905b286c708339f9b041aaa9ea7063135dc05bc",
+      "bytes": 5466,
+      "sha256": "2bd55dfe3ad5e0aab352fbcf116cfb8bf8f7eff1b6d7cee86b4202af3bddb51c",
       "destination": "app/stage-envelope.mjs",
       "kind": "source-bundle",
       "entry": "app/stage-envelope.mjs"
     },
     {
-      "bytes": 4439,
-      "sha256": "261bd8c428bbb813d6c586d9e78f0a673099e204f6d12573fdcd04ac69c7054c",
+      "bytes": 4867,
+      "sha256": "b04385b63696378f14c6c2fed0f47a114f194dd7b2e70d9aeb336b61a31ff31e",
       "destination": "app/stage-journal.mjs",
       "kind": "source-bundle",
       "entry": "app/stage-journal.mjs"
@@ -296,15 +359,15 @@
       "entry": "app/terminal-prepare.mjs"
     },
     {
-      "bytes": 19091,
-      "sha256": "d6f101d28e6d7c16ac8a92e0dc346654f32501cdea7a728562c42ffd53d13506",
+      "bytes": 24641,
+      "sha256": "c5edd834acedcdb9c43862b0fb40d74739cb2ba5759622a44d3d7d62a7a91582",
       "destination": "app/warp-contracts.mjs",
       "kind": "source-bundle",
       "entry": "app/warp-contracts.mjs"
     },
     {
-      "bytes": 2214,
-      "sha256": "a16563f130969e77a7abdb20e37a0ad19c3c2a4d4370f8a09de0451bd2878339",
+      "bytes": 2249,
+      "sha256": "cab88ccc4ad39b41d222903d562eec9c7c257cb2037a267ecfa5103891804ca8",
       "destination": "app/warp-effect.mjs",
       "kind": "source-bundle",
       "entry": "app/warp-effect.mjs"
@@ -331,8 +394,8 @@
       "entry": "app/warp-player-view.mjs"
     },
     {
-      "bytes": 5054,
-      "sha256": "2a43adba4946c925264f6d8de1b8107169c59407372c22f6aa8382ef759283bf",
+      "bytes": 5197,
+      "sha256": "8286dd1f00b87646434b16e453f1422b97f0ffae4c60e56faf29c0a120bbee30",
       "destination": "app/warp-renderer.mjs",
       "kind": "source-bundle",
       "entry": "app/warp-renderer.mjs"
@@ -534,11 +597,11 @@
       "source": "dist/battle-v3/save.mjs"
     },
     {
-      "bytes": 6954,
-      "sha256": "9ffa92f80e0501cfb2e28fb7696b483f0989b9b8d058549018bf2c5e7f4bcbdf",
+      "bytes": 7309,
+      "sha256": "1e7d54bb588cf5fbecc0ece110f72b55bfc58d330ad66977f8eb1f4f6674b4d4",
       "destination": "canonical/canonical-session.mjs",
-      "kind": "repository",
-      "source": "dist/canonical-session.mjs"
+      "kind": "source-bundle",
+      "entry": "canonical/canonical-session.mjs"
     },
     {
       "bytes": 2211,
@@ -968,6 +1031,13 @@
       "source": "dist/presentation/weather-layer.mjs"
     },
     {
+      "bytes": 1832,
+      "sha256": "14b1d8450d62ddc66a247b0500f78752650149fd39dcabaf6b34983a9398f249",
+      "destination": "canonical/qa-creation-identity.mjs",
+      "kind": "source-bundle",
+      "entry": "canonical/qa-creation-identity.mjs"
+    },
+    {
       "bytes": 12914,
       "sha256": "d9390b47bed895ce6c30a37d44dd49cd95755399f43534bf914d62dc7ff8e17d",
       "destination": "canonical/regions.mjs",
@@ -1052,11 +1122,11 @@
       "source": "dist/story/post-20260927.mjs"
     },
     {
-      "bytes": 34636,
-      "sha256": "911a4044f0469e15a5672068c49fdfbe7897740299e9331739eec16129f8b0f6",
+      "bytes": 34893,
+      "sha256": "33a60f8aa27b473688f76f8f8f7e1f374b42dfb85d38ca7131c5f9ea89cd1e0d",
       "destination": "canonical/story/progression-service.mjs",
-      "kind": "repository",
-      "source": "dist/story/progression-service.mjs"
+      "kind": "source-bundle",
+      "entry": "canonical/story/progression-service.mjs"
     },
     {
       "bytes": 7808,
@@ -1129,11 +1199,11 @@
       "source": "dist/world/reachability.mjs"
     },
     {
-      "bytes": 14688,
-      "sha256": "fadf58f7045ce440a0ccae5c3452440b27e1daf7a467190cceba9ac68868f3ee",
+      "bytes": 14968,
+      "sha256": "9a88705afefe1dd362c0475fcb3d9292619f454e772118e857ec6e797b72d845",
       "destination": "canonical/world/service.mjs",
-      "kind": "repository",
-      "source": "dist/world/service.mjs"
+      "kind": "source-bundle",
+      "entry": "canonical/world/service.mjs"
     },
     {
       "bytes": 4515,
@@ -1388,8 +1458,8 @@
       "source": "dist/data/staging-20260927/geoje_trainer_npc_master_v2_2.json"
     },
     {
-      "bytes": 3978,
-      "sha256": "b5bfc54e73932658ee5237b6cff2d9ced00d909740f21620c5a45bc4a32f17ac",
+      "bytes": 4582,
+      "sha256": "aa95cda70357b6bc4cf4ff1b5fb61a8d256acedc05c6f4f9a8000cf43f5fee74",
       "destination": "index.html",
       "kind": "source-bundle",
       "entry": "index.html"
@@ -1901,7 +1971,7 @@
   ],
   "bundle": {
     "source": "SOURCE_BUNDLE.json",
-    "bytes": 350009,
-    "sha256": "dfb7f28ffa8f47b377085d795317c8692476326973148c340bc0a7afdffa27ab"
+    "bytes": 465209,
+    "sha256": "5ed336736d005a9c65b1052563cc7343a70728937783907f68b3863d0fb4842a"
   }
 }
