@@ -22,7 +22,7 @@ export async function freshPageDurability({context,origin,ui,expectedBinding,pre
   const databaseBefore=await ui.databaseEvidence(first);
   const stored=await ui.binding(first);assertPersistentBinding(firstBinding,stored,expectedBinding);assert(Number.isSafeInteger(stored.generation)&&stored.generation>0);
   // Stop/dispose closes the owned connection but must not erase the checkpoint.
-  await ui.stop(first);await first.close();assert(first.isClosed());
+  await ui.stop(first);await ui.beforePageClose(first,'after-explicit-stop');await first.close();assert(first.isClosed());
   second=await context.newPage();assert.notEqual(second,first);await second.goto(origin);await ui.assertNotStarted(second);const databaseAfter=await ui.databaseEvidence(second);assert.deepEqual(databaseAfter,databaseBefore,'DEV database metadata must survive page closure');
   await ui.startExplicitPersistentProfile(second);const fresh=await ui.observe(second),secondBinding=await ui.binding(second);
   assertPersistentBinding(stored,secondBinding,expectedBinding);assert.equal(fresh.baselineMechanicsDigest,saved.baselineMechanicsDigest);
@@ -36,5 +36,5 @@ export async function freshPageDurability({context,origin,ui,expectedBinding,pre
   const continuation=await continueFromRestored(second,{saved,restored});
   await ui.stop(second);
   return{kind:'explicit-dev-indexeddb-fresh-page-round-trip',newPageInSameBrowserContext:true,oldPageClosed:true,databaseMetadataSurvived:true,automaticHydration:false,exactPose:true,exactMechanics:true,exactEffectJournal:true,baselineIndependentlyRecreated:true,generation:stored.generation,namespace:stored.namespace,identityProfile:stored.identityProfile,productionSaveClaim:false,physicalDiskGuarantee:false,canvas,continuation};
- }finally{if(!first.isClosed())await first.close();if(second&&!second.isClosed())await second.close()}
+ }finally{if(!first.isClosed()){await ui.beforePageClose(first,'cleanup');await first.close()}if(second&&!second.isClosed()){await ui.beforePageClose(second,'cleanup');await second.close()}}
 }
