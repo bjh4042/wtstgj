@@ -16,9 +16,16 @@ export async function ordinaryFlow(page){
  for(const point of route.points){await page.locator('[data-w="field"]').focus();await keys(page,point.route,260);s=await saved(page);assert.deepEqual(s.runtime.position,point.end);await page.locator('[data-w="choices"]').getByRole('button',{name:point.label,exact:true}).click();
   if(point.id.startsWith('event:')){await settle(page);s=await saved(page);assert(s.runtime.progress.completedEvents.includes(point.id.slice(6)));}else break;
  }
- await page.locator('[data-w="battle-panel"]').waitFor({state:'visible'});let actions=0;
+ // The original RIVAL_00 event awaits its visible dialogue before trainerBattle.
+ let preBattleDialogueClicks=0;
+ for(let n=0;n<75&&!await page.locator('[data-w="battle-panel"]').isVisible();n++){
+  const next=page.locator('[data-w="continue"]');
+  if(await next.isVisible()){assert(++preBattleDialogueClicks<=8,'Unexpected pre-battle dialogue budget');await next.click()}
+  await sleep(200);
+ }
+ assert(await page.locator('[data-w="battle-panel"]').isVisible(),'First rival battle did not open after visible dialogue');let actions=0;
  for(let n=0;n<400;n++){if(!await page.locator('[data-w="battle-panel"]').isVisible())break;const move=page.locator('[data-w="battle-actions"]').getByRole('button',{name:/^가벼운몸통 \(/});if(await move.count()&&await move.isEnabled()){await move.click();actions++;assert(actions<=40,'Bounded battle action budget exceeded')}else{const next=page.locator('[data-w="continue"]');if(await next.isVisible())await next.click()}await sleep(200)}
  assert(!await page.locator('[data-w="battle-panel"]').isVisible(),'First rival battle not terminal within budget');await settle(page);s=await saved(page);const outcome=s.runtime.battleHistory.at(-1);assert.equal(outcome.kind,'trainer');assert(['won','lost'].includes(outcome.outcome));assert(actions>0);assert.equal(s.runtime.party[0].speciesId,route.starterId);if(outcome.outcome==='won')assert(s.runtime.progress.completedEvents.includes('RIVAL_00'));else assert(!s.runtime.progress.defeatedTrainers.includes('RIVAL_00'));
  await page.locator('[data-w="menu"]').click();await page.locator('[data-menu-page="save"]').click();await page.locator('[data-ordinary-save]').click();const before=await saved(page);await page.locator('[data-ordinary-title]').click();await page.locator('#title-start').click();await page.locator('#continue-start').click();await page.locator('[data-slot="SLOT_1"]').click();await page.locator('#canonical-world.ordinary-world').waitFor();await settle(page);await page.locator('[data-w="menu"]').click();assert((await page.locator('.eco-menu-intro').innerText()).includes('SMOKE'));await page.locator('[data-menu-page="save"]').click();await page.locator('[data-ordinary-save]').click();const after=await saved(page);assert.deepEqual(after.runtime,before.runtime);assert.equal(await page.locator('#canonical-world').getAttribute('data-slot'),'SLOT_1');assert.equal(await page.locator('#canonical-world').getAttribute('data-map'),before.runtime.position.scene);
- return {prologueEvents:before.runtime.progress.completedEvents,starterId:before.runtime.party[0].speciesId,appearance:before.runtime.player.appearance,battle:outcome,actualDamagingClicks:actions,saveReloadExactRuntime:true,namespace:before.contentNamespace,fullStory:false,balanceClaim:false};
+ return {prologueEvents:before.runtime.progress.completedEvents,starterId:before.runtime.party[0].speciesId,appearance:before.runtime.player.appearance,battle:outcome,actualDamagingClicks:actions,preBattleDialogueClicks,saveReloadExactRuntime:true,namespace:before.contentNamespace,fullStory:false,balanceClaim:false};
 }
