@@ -1,0 +1,94 @@
+{
+  "source": "current published canonical-20260927 ordinary definition; routes verified by genuine offline movement",
+  "starterId": "SPECIES_001",
+  "damagingMoveName": "가벼운몸통",
+  "points": [
+    {
+      "id": "event:P00_HOME_START",
+      "label": "거제에서 태어나 자란 주인공의 일상에서 시작한다.",
+      "route": [
+        "up"
+      ],
+      "start": [
+        4,
+        12
+      ],
+      "end": {
+        "scene": "world:hub:PROLOGUE",
+        "x": 216,
+        "y": 552,
+        "facing": "up"
+      }
+    },
+    {
+      "id": "event:P01_ECO_CENTER",
+      "label": "거제 생태센터에서 윤 박사를 만나고 최근 야생 생태몬이 평소와 다르게 움직인다는 이야기를 듣는다.",
+      "route": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "start": [
+        4,
+        11
+      ],
+      "end": {
+        "scene": "world:hub:PROLOGUE",
+        "x": 456,
+        "y": 552,
+        "facing": "right"
+      }
+    },
+    {
+      "id": "event:P02_FIRST_PARTNER",
+      "label": "첫 생태친구를 선택한다.",
+      "route": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "start": [
+        9,
+        11
+      ],
+      "end": {
+        "scene": "world:hub:PROLOGUE",
+        "x": 696,
+        "y": 552,
+        "facing": "right"
+      }
+    },
+    {
+      "id": "trainer:RIVAL_00",
+      "label": "하린",
+      "route": [
+        "down",
+        "down",
+        "down",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "start": [
+        14,
+        11
+      ],
+      "end": {
+        "scene": "world:hub:PROLOGUE",
+        "x": 1128,
+        "y": 696,
+        "facing": "right"
+      }
+    }
+  ]
+}
