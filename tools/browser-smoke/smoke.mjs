@@ -13,7 +13,7 @@ async function ready(page,map){await page.waitForFunction(m=>document.querySelec
 try{
  server=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','127.0.0.1','--port','4173','--strictPort'],{stdio:['ignore','pipe','pipe']});server.on('error',e=>failures.push('server:'+e.code));for(const stream of [server.stdout,server.stderr])stream.on('data',b=>{serverTail=(serverTail+b).slice(-2000)});
  let available=false;for(let n=0;n<100;n++){if(server.exitCode!==null)throw Error('Vite exited');try{const r=await fetch(ORIGIN+'/wtstgj/');if(r.ok){available=true;break}}catch{}await sleep(100)}assert(available,'Local server unavailable');
- browser=await chromium.launch({channel:'chrome',headless:true,chromiumSandbox:true});
+ browser=await chromium.launch({channel:'chrome',headless:true,chromiumSandbox:true,args:['--enable-automation']});
  const session=await browser.newBrowserCDPSession();const command=await session.send('Browser.getBrowserCommandLine');assertSandboxCommand(command.arguments);await session.detach();
  const context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce',serviceWorkers:'block',acceptDownloads:false});
  const sandbox=await context.newPage();await sandbox.goto('chrome://sandbox');assert(sandboxEvidence(await sandbox.locator('body').innerText()),'Chrome sandbox proof unavailable');await sandbox.close();report.sandbox='namespace-or-suid AND seccomp-bpf active';report.browserVersion=browser.version();

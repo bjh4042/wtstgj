@@ -8,11 +8,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: geoje-native-browser-smoke-20261103-r1
+  group: geoje-native-browser-smoke-20261103-r2
   cancel-in-progress: false
 jobs:
   smoke:
-    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded sandboxed browser smoke 20261103-r1'
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded sandboxed browser smoke 20261103-r2'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
