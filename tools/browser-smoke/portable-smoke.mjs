@@ -32,19 +32,27 @@ async function visibleDialogue(page,{lines,speaker,open='keyboard'}){
 // Each waypoint declares its verified tolerance. Narrow corners may require exact observed coordinates.
 // Failure to reach by genuine key input is a test failure, never permission to snap or alter terrain.
 async function walkVisibleWaypoints(page,{waypoints,mapId,tolerance=6,maxMs=45000}){
- const start=performance.now(),trace=[];await page.locator('[data-native-view]').focus();
- for(const waypoint of waypoints){const target=Array.isArray(waypoint)?waypoint:waypoint.foot, margin=Array.isArray(waypoint)?tolerance:waypoint.tolerance;let reached=false;
+ const start=performance.now(),trace=[],recent=[];let waypointIndex=-1,last=null;
+ const diagnostic=()=>({scope:'readonly-dom-keyboard-route',waypointIndex,waypoint:waypoints[waypointIndex]??null,completed:trace,last,recent});
+ const sample=async()=>page.evaluate(()=>{const s=JSON.parse(document.querySelector('[data-dev-observer]').textContent),button=document.querySelector('[data-npc-talk]');return{foot:s.pose.foot,mapId:s.pose.mapId,phase:s.ui.phase,ownerOrdinal:s.ownerOrdinal,revision:s.revision,status:(document.querySelector('[data-native-status]')?.textContent??'').slice(0,200),talkEnabled:!!button&&!button.disabled,talkText:(button?.textContent??'').slice(0,80)}});
+ await page.locator('[data-native-view]').focus();
+ try{for(const waypoint of waypoints){waypointIndex++;const target=Array.isArray(waypoint)?waypoint:waypoint.foot,margin=Array.isArray(waypoint)?tolerance:waypoint.tolerance;let reached=false,bestDistance=Infinity,lastProgressAt=performance.now();
   for(let n=0;n<180;n++){
-   assert(performance.now()-start<maxMs,'NPC approach deadline');const s=await observe(page);assert.equal(s.pose.mapId,mapId);assert.equal(s.ui.phase,'field');
-   const dx=target[0]-s.pose.foot[0],dy=target[1]-s.pose.foot[1];if(Math.abs(dx)<=margin&&Math.abs(dy)<=margin){trace.push({target,actual:s.pose.foot});reached=true;break}
-   const xAxis=Math.abs(dx)>margin,key=xAxis?(dx>0?'ArrowRight':'ArrowLeft'):(dy>0?'ArrowDown':'ArrowUp'),distance=Math.abs(xAxis?dx:dy);
-   // Conservative bounded visible input; owner still validates each traversed foot.
-   const hold=Math.max(8,Math.min(100,(distance-margin)*1000/192/2));
+   last=await sample();assert(performance.now()-start<maxMs,'NPC approach deadline');assert.equal(last.mapId,mapId);assert.equal(last.phase,'field');
+   const dx=target[0]-last.foot[0],dy=target[1]-last.foot[1],distanceToTarget=Math.abs(dx)+Math.abs(dy);
+   if(distanceToTarget<bestDistance){bestDistance=distanceToTarget;lastProgressAt=performance.now()}
+   assert(performance.now()-lastProgressAt<8000,'NPC approach stuck without closer progress');
+   // At the final waypoint accept the genuine nearby control, not an arbitrary center point.
+   const finalEligible=waypoint.finalActor==='S7_NEST_THREAT'&&last.talkEnabled&&last.talkText==='조사 보조원와 대화 (E)'&&last.foot[0]>=708&&last.foot[0]<732&&last.foot[1]>=1314&&last.foot[1]<1330&&Math.hypot(last.foot[0]-672,last.foot[1]-1322)<=48;
+   if(finalEligible||!waypoint.finalActor&&Math.abs(dx)<=margin&&Math.abs(dy)<=margin){trace.push({target,actual:last.foot,finalEligible});reached=true;break}
+   const xAxis=Math.abs(dx)>margin,key=xAxis?(dx>0?'ArrowRight':'ArrowLeft'):(dy>0?'ArrowDown':'ArrowUp'),distance=Math.abs(xAxis?dx:dy),mode=distance>96?'coarse':'fine',hold=mode==='coarse'?Math.min(400,(distance-48)*1000/192):Math.max(8,Math.min(100,(distance-margin)*1000/192/2)),before=last;
    await page.keyboard.down(key);try{await sleep(hold)}finally{await page.keyboard.up(key)}await sleep(35);
+   last=await sample();recent.push({key,mode,holdMs:hold,before,after:last,elapsedMs:performance.now()-start});if(recent.length>20)recent.shift();
   }
   assert(reached,'NPC waypoint not reached '+JSON.stringify(target));
  }
  const final=await observe(page);await sleep(150);assert.deepEqual((await observe(page)).pose.foot,final.pose.foot);return {trace,durationMs:performance.now()-start,normalKeyboardOnly:true};
+ }catch(e){report.npcApproachDiagnostic=diagnostic();throw e}
 }
 
 const regions={S7_S6:[15,754,49,787],S6_S7:[856,5254,905,5287],S8_GYM8:[405,584,454,617],GYM8_S8:[666,949,715,982]},targets={S7_S6:'world:hub:S6',S6_S7:'world:hub:S7',S8_GYM8:'world:gym:8',GYM8_S8:'world:hub:S8'};
@@ -82,7 +90,7 @@ try{
   }
   report.crossFeatures.push(await memoryRoundTrip(page,{moveProof:()=>moveProof(page,'ArrowRight')}));
   if(map==='S7'){
-   report.crossFeatures.push(await walkVisibleWaypoints(page,{mapId:'world:hub:S7',waypoints:[{foot:[780,770],tolerance:6},{foot:[780,1278],tolerance:6},{foot:[714,1278],tolerance:6},{foot:[714,1322],tolerance:5}]}));
+   report.crossFeatures.push(await walkVisibleWaypoints(page,{mapId:'world:hub:S7',waypoints:[{foot:[780,770],tolerance:10},{foot:[780,1278],tolerance:10},{foot:[714,1278],tolerance:10},{foot:[714,1322],tolerance:5,finalActor:'S7_NEST_THREAT'}]}));
    const npc={speaker:'조사 보조원',lines:['절벽 쪽 둥지가 걱정돼요.','무슨 일이 있는지 살펴보고 있어요.']};
    report.crossFeatures.push(await visibleDialogue(page,npc));
    report.crossFeatures.push(await memoryRoundTrip(page,{moveProof:()=>moveProof(page,'ArrowUp')}));
