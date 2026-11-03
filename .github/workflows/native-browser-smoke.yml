@@ -1,0 +1,35 @@
+name: One bounded native browser smoke
+on:
+  push:
+    branches: [codex/geoje-feedback-20261102]
+    paths:
+      - .github/workflows/native-browser-smoke.yml
+      - tools/browser-smoke/**
+permissions:
+  contents: read
+concurrency:
+  group: geoje-native-browser-smoke-20261103-r1
+  cancel-in-progress: false
+jobs:
+  smoke:
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded sandboxed browser smoke 20261103-r1'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: 24.22.1
+          package-manager-cache: false
+      - name: Install locked registry dependencies without lifecycle scripts
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm ci --prefix tools/browser-smoke --ignore-scripts --no-audit --no-fund
+      - name: Verify prepared originals and run one sandboxed Chrome smoke
+        run: |
+          node --test tools/browser-smoke/guards.test.mjs
+          node scripts/prepare-assets.mjs
+          node tools/browser-smoke/smoke.mjs
