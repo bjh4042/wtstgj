@@ -1,0 +1,2 @@
+// Lossless byte transport of the unchanged original CLOSED raw mask.
+export const CLOSED_MASK_TRANSPORT=Object.freeze({"rawPath":"../s8_hub_r2/bank/CLOSED.raw.u8","gzipPath":"../s8_hub_r2/bank/CLOSED.raw.u8.gzip.bin","bytes":6635520,"sha256":"617a378432d8c7ac710c767d370635b3f23ee6c9cfdae20cdbcad3728dce002d","gzipBytes":35097,"gzipSHA256":"b23b6ede786b307fbd01f3009dd777130b0afe036217a73329d819843b2c8e3f"});

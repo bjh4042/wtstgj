@@ -1,0 +1,27 @@
+{
+  "format": "EXACT_ASSET_SOURCE_CHUNKS_V1",
+  "target": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/source/G7-Open-visible-stair-barrier-candidate.png",
+  "bytes": 21968609,
+  "sha256": "72751f4ffa8e719a3a500d59dda6ae777ebb33022120563e237ac354e61a55b9",
+  "chunkMaxBytes": 8388608,
+  "chunks": [
+    {
+      "file": "chunk-01.bin",
+      "offset": 0,
+      "bytes": 8388608,
+      "sha256": "81c041556d72c080028a02887af8e8f282686373d5ff28d8eb302caf1a864d35"
+    },
+    {
+      "file": "chunk-02.bin",
+      "offset": 8388608,
+      "bytes": 8388608,
+      "sha256": "3de2a762f0cf44e6144242c2def8cbce8f916f706c6be9cd2b1e833cca3188ce"
+    },
+    {
+      "file": "chunk-03.bin",
+      "offset": 16777216,
+      "bytes": 5191393,
+      "sha256": "08df6a8d4c24db191ab74286a8586b37766888e82d89a594e47850fca0393f4d"
+    }
+  ]
+}

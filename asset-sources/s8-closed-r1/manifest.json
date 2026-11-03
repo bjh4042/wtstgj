@@ -1,0 +1,21 @@
+{
+  "format": "EXACT_ASSET_SOURCE_CHUNKS_V1",
+  "target": "dist/native-ports/resources/map_simulation_20261102/s8_hub_r2/assets/CLOSED.png",
+  "bytes": 13270263,
+  "sha256": "f602c93bdee4c4bd7d08f87d9951b34515d9ffbb34769aea28a4331ffb8b5e06",
+  "chunkMaxBytes": 8388608,
+  "chunks": [
+    {
+      "file": "chunk-01.bin",
+      "offset": 0,
+      "bytes": 8388608,
+      "sha256": "028b29190017ffde79516b8257efbb5b70514143b1650e720037d2c6e7047799"
+    },
+    {
+      "file": "chunk-02.bin",
+      "offset": 8388608,
+      "bytes": 4881655,
+      "sha256": "5ab8ce62cb24dbd699ec2976b32d5c41803a2cd8df8af3acf0224043f6675a75"
+    }
+  ]
+}

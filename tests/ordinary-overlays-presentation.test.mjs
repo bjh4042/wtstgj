@@ -18,6 +18,8 @@ test('overlay source keeps original status identity, scoped menu lock exception 
  assert.match(overlay,/statusAnchor\.replaceWith\(statusNode\)/);assert.doesNotMatch(overlay,/cloneNode|innerHTML|aria-live|z-index|pointerEvents/);
  assert.match(entry,/el\('menu'\)\.disabled=\(!!world\?\.inputLocked&&!\(ordinary&&world\?\.story.pendingCommit\)\)\|\|!!battle/);
  assert.match(entry,/el\('retry'\)\.disabled=!world\?\.story.pendingCommit\|\|!!world\?\.story.busy/);
- assert.match(entry,/el\('retry'\)\.onclick=safe\(async\(\)=>\{const retry=world\.story\.retryCommit\(\);render\(\);await retry;world\.syncField\(\)\}\)/);
- assert.match(entry,/canMove:\(\)=>active\(\)&&!ordinaryMenu\?\.helpOpen/);
+ assert.match(entry,/el\('retry'\)\.onclick=safe\(async\(\)=>\{if\(nativeBusy\(\)\)return;const retry=world\.story\.retryCommit\(\);render\(\);await retry;world\.syncField\(\);nativePorts\?\.reconcile\(\)\}\)/);
+ assert.match(entry,/canMove:\(\)=>!nativeBusy\(\)&&active\(\)&&!ordinaryMenu\?\.helpOpen/);
 });
+
+test('actual retry handler keeps render-await-sync order and native pending blocks every side effect',async()=>{const entry=read('dist/world/entry.mjs'),marker="el('retry').onclick=safe(async()=>",start=entry.indexOf(marker),end=entry.indexOf(');\n',start);assert.ok(start>=0&&end>start);const make=new Function('world','nativeBusy','nativePorts','render','safe','return '+entry.slice(start+"el('retry').onclick=".length,end+1));const events=[];let resolve;const pending=new Promise(r=>resolve=r);const world={story:{retryCommit:()=>{events.push('retry');return pending}},syncField:()=>events.push('sync')},ports={reconcile:()=>events.push('reconcile')},render=()=>events.push('render');await make(world,()=>true,ports,render,fn=>fn)();assert.deepEqual(events,[]);const done=make(world,()=>false,ports,render,fn=>fn)();assert.deepEqual(events,['retry','render']);resolve();await done;assert.deepEqual(events,['retry','render','sync','reconcile']);});

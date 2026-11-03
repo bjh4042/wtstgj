@@ -6,7 +6,10 @@
     "dev": "vite",
     "test": "node --test tests/*.test.mjs",
     "build": "vite build && node scripts/copy-runtime-inputs.mjs --apply && node scripts/build-pwa.mjs",
-    "typecheck": "tsc --allowJs --checkJs --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --lib ES2022,DOM dist/vertical-slice.mjs dist/golden-field.mjs"
+    "typecheck": "tsc --allowJs --checkJs --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --lib ES2022,DOM dist/vertical-slice.mjs dist/golden-field.mjs",
+    "predev": "node scripts/prepare-assets.mjs",
+    "pretest": "node scripts/prepare-assets.mjs",
+    "prebuild": "node scripts/prepare-assets.mjs"
   },
   "devDependencies": {
     "typescript": "5.9.2",

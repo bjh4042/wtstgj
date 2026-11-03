@@ -1,0 +1,18 @@
+// NEW user-selected presentation mask. Immutable S7 art is sampled before actors, never edited.
+// Narrow target: eastern plaza palm only. No collision or game-authority API.
+export const S7_PALM=Object.freeze({id:'S7_EAST_PLAZA_PALM',bounds:Object.freeze([3100,742,3301,970]),depth:969,
+ crown:Object.freeze([[3169,750],[3181,742],[3186,754],[3194,746],[3196,758],[3206,748],[3206,762],[3218,754],[3214,768],[3231,762],[3223,777],[3245,778],[3237,789],[3260,791],[3253,802],[3276,805],[3264,816],[3290,820],[3277,830],[3300,840],[3280,850],[3291,864],[3274,862],[3283,880],[3262,872],[3264,892],[3245,881],[3240,904],[3223,888],[3213,906],[3199,887],[3181,899],[3180,881],[3162,892],[3157,875],[3137,884],[3142,869],[3120,869],[3130,850],[3107,854],[3118,838],[3100,834],[3121,820],[3106,813],[3124,804],[3114,795],[3130,792],[3118,781],[3138,780],[3128,770],[3147,773],[3143,761],[3158,768],[3156,753],[3171,763]].map(Object.freeze)),
+ trunk:Object.freeze([[3185,881],[3211,882],[3218,928],[3214,960],[3205,970],[3188,966],[3181,955],[3185,934],[3179,916]].map(Object.freeze))});
+function inside(x,y,poly){let b=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const a=poly[i],c=poly[j];if((a[1]>y)!==(c[1]>y)&&x<(c[0]-a[0])*(y-a[1])/(c[1]-a[1])+a[0])b=!b}return b}
+// Crown color guard excludes beige paving between fronds inside the traced silhouette.
+// Exact source RGB retained; only alpha coverage is newly selected. Not a generic vegetation classifier.
+export function isS7PalmForegroundPixel(x,y,r,g,b){return inside(x+.5,y+.5,S7_PALM.trunk)||(inside(x+.5,y+.5,S7_PALM.crown)&&g>=r-4&&g>=b+12&&Math.max(r,g,b)-Math.min(r,g,b)>=22&&g>=30)}
+export function createS7PalmOcclusion({createCanvas}={}){
+ const make=createCanvas??((w,h)=>typeof OffscreenCanvas==='function'?new OffscreenCanvas(w,h):Object.assign(document.createElement('canvas'),{width:w,height:h}));
+ let dead=false,cache=null,patch=null;const clear=()=>{cache=null;if(patch){patch.width=patch.height=0;patch=null}};
+ const valid=(ctx,map,c)=>!dead&&map==='S7'&&Array.isArray(c)&&c.length===4&&c.every(Number.isInteger)&&c[0]>=0&&c[1]>=0&&c[2]===ctx.canvas.width&&c[3]===ctx.canvas.height&&!ctx.isContextLost?.();
+ function captureBackground(ctx,{map,camera}){clear();if(!valid(ctx,map,camera))return false;const [l,t,r,b]=S7_PALM.bounds,x=Math.max(l,camera[0]),y=Math.max(t,camera[1]),right=Math.min(r,camera[0]+camera[2]),bottom=Math.min(b,camera[1]+camera[3]);if(x>=right||y>=bottom)return false;
+  try{const data=ctx.getImageData(x-camera[0],y-camera[1],right-x,bottom-y);for(let yy=0;yy<data.height;yy++)for(let xx=0;xx<data.width;xx++){const i=(yy*data.width+xx)*4;if(!isS7PalmForegroundPixel(x+xx,y+yy,data.data[i],data.data[i+1],data.data[i+2]))data.data[i+3]=0}patch=make(data.width,data.height);const g=patch.getContext('2d');if(!g)throw Error('PALM_CANVAS');g.putImageData(data,0,0);if(!valid(ctx,map,camera))throw Error('PALM_CAPTURE_LOST');cache={ctx,canvas:ctx.canvas,camera:[...camera],x,y};return true}catch(e){clear();throw e}}
+ function drawForeground(ctx,{map,camera,foot}){const old=cache;cache=null;if(!old||!valid(ctx,map,camera)||ctx!==old.ctx||ctx.canvas!==old.canvas||JSON.stringify(camera)!==JSON.stringify(old.camera)||!Array.isArray(foot)||foot.length!==2||!foot.every(Number.isFinite))return false;if(foot[1]>=S7_PALM.depth)return false;ctx.save();try{ctx.imageSmoothingEnabled=false;ctx.drawImage(patch,old.x-camera[0],old.y-camera[1]);if(ctx.isContextLost?.())throw Error('PALM_DRAW_LOST')}finally{ctx.restore()}return true}
+ return Object.freeze({captureBackground,drawForeground,reset:clear,dispose(){if(dead)return;dead=true;clear()}})
+}

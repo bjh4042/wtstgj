@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "selection": "explicit-r2-payload10-over-645923-no-ref-activation",
+  "selection": "isolated-default-off-native-two-port-host-r1",
   "rows": [
     {
       "source": "dist/assets/approved-atlases/manifest.json",
@@ -4458,8 +4458,8 @@
     },
     {
       "path": "dist/world/entry.mjs",
-      "bytes": 32340,
-      "sha256": "0e55943f07d920a6b5747fc6fcd6dd9ac847fae47983f024b31b523a5f481836"
+      "bytes": 33761,
+      "sha256": "74ae32a3b77da05dbc613dd334bd3498f83c7a308bb83417acc171c09bf78e1d"
     },
     {
       "path": "dist/world/gym-polish.mjs",

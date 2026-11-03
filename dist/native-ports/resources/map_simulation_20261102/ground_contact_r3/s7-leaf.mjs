@@ -1,0 +1,3 @@
+import{prepareS7Hub,isS7FeedbackSimulationProvider}from'./s7-provider.mjs';
+import{createSimulationMapAdapter}from'../ground_contact_r2/map-adapter.mjs';
+export async function loadS7FeedbackAdapter(signal){const p=await prepareS7Hub({state:'OPEN',signal});try{if(!isS7FeedbackSimulationProvider(p))throw Error('FEEDBACK_PROVIDER');return createSimulationMapAdapter({provider:p,sourceKind:'NEW_REBUILD_LEAF_PROVIDER',expected:{mapId:'world:hub:S7',state:'OPEN',width:4096,height:1792,imageSHA256:p.identity.imageSHA256,supportSHA256:p.identity.geometrySHA256,footWidth:30,footHeight:8,contactPolicy:'NEW_COMMON_FOOT_IDLE30_DEPTH8'}})}catch(e){p.dispose();throw e}}
