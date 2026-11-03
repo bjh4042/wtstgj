@@ -1,4 +1,4 @@
-name: One bounded portable R9 browser smoke
+name: One bounded portable R13 browser smoke
 on:
   push:
     branches: [codex/geoje-feedback-20261102]
@@ -6,14 +6,15 @@ on:
       - .github/workflows/portable-browser-smoke.yml
       - tools/portable-native/**
       - tools/browser-smoke/portable-smoke.mjs
+      - tools/browser-smoke/fresh-page-flow.mjs
 permissions:
   contents: read
 concurrency:
-  group: geoje-portable-r9-browser-smoke-20261103-r2
+  group: geoje-portable-r13-browser-smoke-20261103-r1
   cancel-in-progress: false
 jobs:
   smoke:
-    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded portable R9 smoke 20261103-r2'
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded portable R13 smoke 20261103-r1'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
