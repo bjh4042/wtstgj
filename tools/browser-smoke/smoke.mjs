@@ -1,3 +1,4 @@
+import {createExpectedWeatherConsole} from './expected-weather-console.mjs';
 import {ordinaryFlow} from './ordinary-flow.mjs';
 import {indexedDBFlow} from './indexeddb-flow.mjs';
 import assert from 'node:assert/strict';
@@ -8,7 +9,7 @@ import {chromium} from 'playwright-core';
 import {ORIGIN,classifyRequest,footFromStatus,assertSandboxCommand,sandboxEvidence} from './guards.mjs';
 assert(process.getuid?.()!==0,'Runner must not be root');
 let browser,server;const report={kind:'bounded-real-Chrome-smoke',ordinary:'not-run',walk:[],optionalExternalBlocked:0,unexpectedExternalBlocked:0,consoleErrors:0,pageErrors:0,requiredNetworkFailures:0};
-const failures=[];let serverTail='';
+const failures=[];const expectedWeather=createExpectedWeatherConsole();let serverTail='';
 const guard=setTimeout(()=>{console.error('SMOKE_TIMEOUT');process.exitCode=1;browser?.close().catch(()=>{});server?.kill('SIGTERM')},240000);
 async function canvasProof(page,selector){return page.locator(selector).evaluate(c=>{const g=c.getContext('2d'),d=g.getImageData(0,0,c.width,c.height).data,colors=new Set();let opaque=0;for(let i=0;i<d.length;i+=64){if(d[i+3])opaque++;colors.add([d[i],d[i+1],d[i+2]].join(','))}return{width:c.width,height:c.height,opaque,colors:colors.size}})}
 async function ready(page,map){await page.waitForFunction(m=>document.querySelector('#status')?.textContent.startsWith(m+' 이동 검수 · 발 위치 '),map,{timeout:45000});const t=await page.locator('#status').innerText();return footFromStatus(t,map)}
@@ -19,11 +20,11 @@ try{
  const session=await browser.newBrowserCDPSession();const command=await session.send('Browser.getBrowserCommandLine');assertSandboxCommand(command.arguments);await session.detach();
  const context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce',serviceWorkers:'block',acceptDownloads:false});
  const sandbox=await context.newPage();await sandbox.goto('chrome://sandbox');const sandboxText=await sandbox.locator('body').innerText();console.log(JSON.stringify({kind:'sandbox-diagnostic',browserVersion:browser.version(),body:sandboxText.slice(0,8000)}));assert(sandboxEvidence(sandboxText),'Chrome sandbox proof unavailable');await sandbox.close();report.sandbox='namespace-or-suid AND seccomp-bpf active';report.browserVersion=browser.version();
- await context.route('**/*',async route=>{const q=route.request(),kind=classifyRequest(q.url(),q.method());if(kind==='local'||kind==='inline')return route.continue();if(kind==='optional-weather-blocked')report.optionalExternalBlocked++;else{report.unexpectedExternalBlocked++;failures.push('Unexpected external request blocked')}return route.abort('blockedbyclient')});
+ await context.route('**/*',async route=>{const q=route.request(),kind=classifyRequest(q.url(),q.method());if(kind==='local'||kind==='inline')return route.continue();if(kind==='optional-weather-blocked'&&expectedWeather.intercept(q.frame().page(),{url:q.url(),method:q.method(),resourceType:q.resourceType()}))report.optionalExternalBlocked++;else{report.unexpectedExternalBlocked++;failures.push('Unexpected external request blocked')}return route.abort('blockedbyclient')});
  await context.routeWebSocket('**/*',socket=>{const u=new URL(socket.url());if(u.hostname==='127.0.0.1'&&u.port==='4173')socket.connectToServer();else{report.unexpectedExternalBlocked++;failures.push('External websocket blocked');socket.close()}});
  context.on('page',page=>{page.setDefaultTimeout(15000);
  page.on('pageerror',error=>{report.pageErrors++;failures.push('Uncaught page error: '+String(error.message).slice(0,500))});
- page.on('console',msg=>{if(msg.type()==='error'){report.consoleErrors++;failures.push('Browser console error: '+msg.text().slice(0,500)+' @ '+String(msg.location().url).slice(0,250)+':'+msg.location().lineNumber)}});
+ page.on('console',msg=>{if(msg.type()==='error'){if(expectedWeather.consume(page,{type:msg.type(),text:msg.text(),...msg.location()})){report.expectedWeatherConsole=expectedWeather.snapshot();return}report.consoleErrors++;failures.push('Browser console error: '+msg.text().slice(0,500)+' @ '+String(msg.location().url).slice(0,250)+':'+msg.location().lineNumber)}});
  page.on('response',r=>{if(new URL(r.url()).origin===ORIGIN&&r.status()>=400){report.requiredNetworkFailures++;failures.push('Local HTTP '+r.status()+' '+new URL(r.url()).pathname)}});
  page.on('requestfailed',r=>{if(classifyRequest(r.url(),r.method())==='local'){report.requiredNetworkFailures++;failures.push('Local request failed '+new URL(r.url()).pathname)}});
  });
@@ -41,6 +42,6 @@ try{
   for(const key of ['ArrowLeft','ArrowRight','ArrowDown','ArrowUp']){await page.keyboard.down(key);await sleep(160);await page.keyboard.up(key);await sleep(80);if(JSON.stringify(await ready(page,map))!==JSON.stringify(start)){moved=true;break}}assert(moved,map+' real keyboard input did not move');
   const released=await ready(page,map);await sleep(250);assert.deepEqual(await ready(page,map),released,'Movement continued after key release');await page.locator('#reset').click();await page.waitForFunction(({map,start})=>document.querySelector('#status')?.textContent.includes(map+' 이동 검수 · 발 위치 '+start.join(', ')),{map,start});assert.deepEqual(await ready(page,map),start);report.walk.push({map,selectionMs,metric:'map-selection preparation, NOT canonical warp',keyboardMoved:true,keyReleaseStopped:true,reset:true,canvas:pixels});
  }
- assert.equal(failures.length,0,failures.join('; '));report.result='PASS';console.log(JSON.stringify(report));
+ report.expectedWeatherConsole=expectedWeather.snapshot();assert.equal(report.expectedWeatherConsole.unmatchedInterceptions,0,'Expected blocked weather diagnostic missing');assert.equal(failures.length,0,failures.join('; '));report.result='PASS';console.log(JSON.stringify(report));
 }catch(e){report.result='FAIL';report.reason=String(e.message).slice(0,700);report.failures=failures;console.error(JSON.stringify(report));process.exitCode=1}
 finally{clearTimeout(guard);await browser?.close();if(server&&server.exitCode===null){server.kill('SIGTERM');await Promise.race([once(server,'exit'),sleep(3000)]);if(server.exitCode===null)server.kill('SIGKILL')}}
