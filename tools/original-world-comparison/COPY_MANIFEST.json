@@ -2,473 +2,81 @@
   "format": "PORTABLE_DEV_EXACT_COPY_V3",
   "files": [
     {
-      "destination": "native_world_selected_browser_r1/entry.mjs",
-      "bytes": 15046,
-      "sha256": "5954374f555ea5eed053e5821ad1b59a4e0cfbe584898fde3771d5e0c27fefb3",
+      "destination": "native_world_selected_t1_browser_r1/entry.mjs",
+      "bytes": 18562,
+      "sha256": "dadd8347d609975fe3728771ef0d3c168818e50daed4e01116d9649b04fc4a4b",
       "kind": "source-bundle",
-      "entry": "native_world_selected_browser_r1/entry.mjs"
+      "entry": "native_world_selected_t1_browser_r1/entry.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/approved-latest-runtime-adapter.mjs",
-      "bytes": 6553,
-      "sha256": "ce8b8c93337cb2103143b3ae965aa4e782ed2b498ec678250d3d71e1ea0b54f7",
-      "kind": "repository",
-      "source": "dist/compatibility/approved-latest-runtime-adapter.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/approved-party-move-exceptions.mjs",
-      "bytes": 426,
-      "sha256": "3c658339d73e8bea06432103b3d1060fdf5cacc188d4d67a17aff232c6e5c686",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/approved-party-move-exceptions.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/canonical-runtime-adapter.mjs",
-      "bytes": 2989,
-      "sha256": "aad8a9a7f2f898ed056c2f3a5e68ad3105080466e83bfd9ee4a28d87222bbf9a",
-      "kind": "repository",
-      "source": "dist/compatibility/canonical-runtime-adapter.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/species-weather-config.mjs",
-      "bytes": 406,
-      "sha256": "4edccbedbf7b0d27372a9c3118dfe27c0c21cd40ddd76ce377f63b05c9964975",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/species-weather-config.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/hidden-placement-v1.mjs",
-      "bytes": 7628,
-      "sha256": "ffc20b6e2a347eb1685c9f830bd85f06fc10ba677d3f792144420457f2be11cb",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/world/hidden-placement-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/codec.mjs",
-      "bytes": 2470,
-      "sha256": "1996059f6159bc3af353b10306f37a9e9db27f76cecd56e7bb699a5219f7fa8c",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/codec.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/consumables-v1.mjs",
-      "bytes": 2597,
-      "sha256": "79350d1e50d877bb840c2888153bcd86d34c6013addf2f236b6b4647b456857c",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/consumables-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/approved-v1.mjs",
-      "bytes": 3166,
-      "sha256": "12f34b1214fff17e215e5e95a158f123aecc6bd3d0b32c27b34a3d3657db1a7d",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/approved-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/candidate.mjs",
-      "bytes": 2666,
-      "sha256": "62874dc0d8b7c647a94eab130a17d1e7ade38d6a3da1b8be80167a01eca6c673",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/candidate.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/contract.mjs",
-      "bytes": 7995,
-      "sha256": "a6faaf6705bdcccce680a5b44e9c9497faa61ec7e632d54dba45db1b9015da0b",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/contract.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/trainer-prize-map.mjs",
-      "bytes": 1952,
-      "sha256": "56fff754dbcb839147bef5875d06fed9b8a5c0254b5ea3cc57b971f4fa3e6915",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/trainer-prize-map.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/canonical-adapter.mjs",
-      "bytes": 13501,
-      "sha256": "bbc4af253ff1139abb6b206fbaf10d2e6d7f89f36c61013fe2444b3eccd537b1",
-      "kind": "repository",
-      "source": "dist/compatibility/canonical-adapter.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/species-registry.mjs",
-      "bytes": 89513,
-      "sha256": "064a2fabfb235aee28c359cf6250dcd9d50cf767ffcc09c11fd14b4bede6248d",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/species-registry.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/species-identity.mjs",
-      "bytes": 1677,
-      "sha256": "429c08144c60c6a562d9c50255ae978bb9ef06bec6a28508d087ff2498935531",
-      "kind": "repository",
-      "source": "dist/compatibility/species-identity.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/status-enum.mjs",
-      "bytes": 1743,
-      "sha256": "3d0e64ea35e7a339732e2026fc8301d0af345dfbc6698111b4c7b041add9c00b",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/status-enum.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/npc-assets.mjs",
-      "bytes": 2321,
-      "sha256": "04d9c63c4f65384de4d9c6cb01c2bc8eb11673851db02db9dff55ef4472eeb7e",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/npc-assets.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/asset-manifest.mjs",
-      "bytes": 8520,
-      "sha256": "8cf6a0b26955ea3a0db6eb8132f43f709f333b5a39d1d66fa08b661b4004a2c4",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/asset-manifest.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/map-presentation.mjs",
-      "bytes": 2049,
-      "sha256": "9d8ee849c0af605e650b8761473f5812b38b53fe9b2563d1e3c5c0da3ed09287",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/map-presentation.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/lighting.mjs",
-      "bytes": 2752,
-      "sha256": "1b44e023297c6e950f2eed16285fd762f6359c4dc0c44d2f771c8850ba8f4375",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/lighting.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/time-provider.mjs",
-      "bytes": 1579,
-      "sha256": "0a443889e7b888079caa1143bb6fcd8988213fb398490868e805aa82281452a2",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/time-provider.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/tile-animation.mjs",
-      "bytes": 2722,
-      "sha256": "c0830c90bd3225ef455876ae6299dfc4455b1d71ea3af7312cce6914f10b07fc",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/tile-animation.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/tileset-contract.mjs",
-      "bytes": 3639,
-      "sha256": "04babb76159d544568e5f4f932da1b0df3be46ad80ed6d0712181ef223df3e3c",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/tileset-contract.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/weather-layer.mjs",
-      "bytes": 2560,
-      "sha256": "f3dde0860b4bbd987a2b6279b64907113d5645593e4d4b89eb73e71a8f5a2a9a",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/weather-layer.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/battle-vfx.mjs",
-      "bytes": 4453,
-      "sha256": "7ab5c1f8f73bd83eac732b902c82103da82e7a12f1b9861aa0096fcc99dc9f7f",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/battle-vfx.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/audio-hooks.mjs",
-      "bytes": 1748,
-      "sha256": "d367986d43969684a1a4f1992eb9b05221b6b15f75d87d5b38551be9640fd361",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/audio-hooks.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/battle-display.mjs",
-      "bytes": 2263,
-      "sha256": "360fb0a72bfd5f51585f8d70dfa7bfaecfeacfdc3f7d77dc2bd8a393a6a2b562",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/battle-display.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/canonical-species-assets.mjs",
-      "bytes": 2211,
-      "sha256": "da125c9697a437a0b2fdfcd9540fdfcf43d6cbaf7aa6804903f059f590683b7a",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/canonical-species-assets.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/approved-species.mjs",
-      "bytes": 3030,
-      "sha256": "901d5cced8f7ff6dc5b33191ab349c25379652b0f65f5dc7e6eadcd4461eb261",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/approved-species.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/approved-atlas-runtime.mjs",
-      "bytes": 1638,
-      "sha256": "3f1b0383887e49225fcd63b8fc6cd98b694f670eec8a0901c3f16a4b4bdec983",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-runtime.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/approved-atlas-data.mjs",
-      "bytes": 554206,
-      "sha256": "31f6cb0486352416b7de298b286354003850680e1724715acb034f65660d5f5d",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-data.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/atlas-retry-manager.mjs",
-      "bytes": 17724,
-      "sha256": "3a9b46d51c31ce216056d4e9be1f93f0630faf8f3c7869e6f02fe0c0fb19ae0f",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/atlas-retry-manager.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/approved-species-data.mjs",
-      "bytes": 167667,
-      "sha256": "90fe4176500591c99cbbaafc6117161b458523ea693b4d9344c54eb73f236353",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/approved-species-data.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/species-asset-contract.mjs",
-      "bytes": 2301,
-      "sha256": "c67abca806ce9308d93b2b6a5e7225a84b16426122247050384ff63baa32a7f3",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/species-asset-contract.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/species-data.mjs",
-      "bytes": 46534,
-      "sha256": "5622acdd5e721b71fb5cd0cc1d5ebebd63c8e784f961017f3d04fd6ff046c977",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/species-data.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/art/legacy-assets.mjs",
-      "bytes": 59695,
-      "sha256": "bf68f277931ab00865827de84f681ad95b34c6025e8a995e3ea2e08d952f2b95",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/art/legacy-assets.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/art/species-crops.mjs",
-      "bytes": 44175,
-      "sha256": "2170ef32babe6709225784c48b0c2e1c69dbc5d3738bf60d183d1b8c9e904283",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/art/species-crops.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/art/field-bindings.mjs",
-      "bytes": 10552,
-      "sha256": "694f1da74f61ae1cd64a370128b65d820fd7a8e9f82dc40636cd188cfffec74c",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/art/field-bindings.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/art/w03-human-field.mjs",
-      "bytes": 2067,
-      "sha256": "ddacffb2a238f18afd1d61e7d441b3bcedba8d8abb2de9919d2979c95fad3e76",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-human-field.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/art/w03-field-atlases.mjs",
-      "bytes": 9320,
-      "sha256": "9dd754bd8e7e9b7c4e1e11ba31abc8e556ab232d8434ee30cd70e1ad01db12de",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-field-atlases.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/art/w03-player-field.mjs",
-      "bytes": 1249,
-      "sha256": "dbaba5076383aec3edc99b17e3d039fac42ddb9a2f681b3a1356c4beb6d7f1d5",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-player-field.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/story-adapter.mjs",
-      "bytes": 9678,
-      "sha256": "3e6cc26f2f1090a10027977b13b05a8fa88194b0836101322244f17b84b1b9fb",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/story-adapter.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/encounter-adapter.mjs",
-      "bytes": 7697,
-      "sha256": "1e66db1f808f5e98f6a058634b2ebe7cc486db641884521774e10cf35cacc511",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/encounter-adapter.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/canonical-source-loader.mjs",
-      "bytes": 486,
-      "sha256": "fa8a5662a8d36f47d01a86303af013bff71c1d9638aaadb8222fd0bc6b00b530",
-      "kind": "repository",
-      "source": "dist/compatibility/canonical-source-loader.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/preview-opponent-adapter.mjs",
-      "bytes": 3235,
-      "sha256": "4fa60c2af9be2abc6c9eafb61d5bbdac1b7ea085aaab7acb6c8866b1fa9bd338",
-      "kind": "repository",
-      "source": "dist/compatibility/preview-opponent-adapter.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/opponent-namespace.mjs",
-      "bytes": 54,
-      "sha256": "4ab164c16b9057f4a5f017071a25f2a9988783f43895347db1da1e43f912fafc",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/opponent-namespace.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/canonical-source-format.mjs",
-      "bytes": 1693,
-      "sha256": "b7df4c6e264b744b2369b9b1cd8d84e6437e3e5686dbd89c97bf5e8efd7c62fa",
-      "kind": "repository",
-      "source": "dist/compatibility/canonical-source-format.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/aquatic-policy-a-v1.mjs",
-      "bytes": 37711,
-      "sha256": "50ac0818166ac71caf07e2f029652f45ccee372167fa7f3ff94fde78cd720ecb",
-      "kind": "repository",
-      "source": "dist/compatibility/aquatic-policy-a-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/aquatic-policy.mjs",
-      "bytes": 1412,
-      "sha256": "880176391cad97d42878df13c7fd497873da4fe1b962b857cce7f36fda460214",
-      "kind": "repository",
-      "source": "dist/compatibility/aquatic-policy.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/yeji-preview-type-stats-v1.mjs",
-      "bytes": 2879,
-      "sha256": "7eff7861eaddc8847816581e21cb37244e8db8ecb5851677209f23b8fce6b3f0",
-      "kind": "repository",
-      "source": "dist/compatibility/yeji-preview-type-stats-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/yeji-base-exp-v1.mjs",
-      "bytes": 1981,
-      "sha256": "6e34c9876807bd5986e25f2307edc07153230f25983556f28f5845ddf53d993f",
-      "kind": "repository",
-      "source": "dist/compatibility/yeji-base-exp-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/enhanced-elite-party-v1.mjs",
-      "bytes": 5721,
-      "sha256": "c7a7f55b86b7207652bcd8383622b209b703528e399391ba45fafc4dd650cecb",
-      "kind": "repository",
-      "source": "dist/compatibility/enhanced-elite-party-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/elite-party-correction-v1.mjs",
-      "bytes": 3893,
-      "sha256": "5f6e5450165046126b66221850a9ff024fbc98e5875850cd8c395233240dce61",
-      "kind": "repository",
-      "source": "dist/compatibility/elite-party-correction-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/enhanced-league.mjs",
-      "bytes": 5434,
-      "sha256": "e1505abc99ea7bb5f6866faf52035613a9e896ed128e4c0ebd8ad03d74b32b20",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/story/enhanced-league.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/definition.mjs",
-      "bytes": 16672,
-      "sha256": "d97de641836604ddb18175fa866e219dcc76c0ba2695a074001823cc7ac4bbb0",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/world/definition.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/gym-polish.mjs",
-      "bytes": 6257,
-      "sha256": "041eea21ab3a0f2cff4150cb3a34755163256551693bc3416916b9255a27bacb",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/world/gym-polish.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/approved-placement.mjs",
-      "bytes": 3195,
-      "sha256": "f70c47524522cacf7feff5caa75afaca1e1b8cdd4fe70b1888666a8bf252ed4e",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/world/approved-placement.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/staged-trainer-placement.mjs",
-      "bytes": 4515,
-      "sha256": "3210642a7cbcf046b8ff460aa6af007c52e16dc1807ba8755adc10c9fc8c3f7a",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/world/staged-trainer-placement.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/field-behavior.mjs",
-      "bytes": 4572,
-      "sha256": "dc63951a15488175d1d7123c36fefc59b03f3429379378d0688340fdec49ab88",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/field-behavior.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/golden-map-data.mjs",
-      "bytes": 4318,
-      "sha256": "e24fa8f8e46462ae4f430efeb7e237a9e9255ee9d3cf7f66158d604e74f33b72",
-      "kind": "repository",
-      "source": "tests/fixtures/published-main-8c4f847/dist/golden-map-data.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/state.mjs",
-      "bytes": 10527,
-      "sha256": "6755aa99451a921abbad6ba827c7184fed172dc05878fb46a5d9979e25609709",
+      "destination": "native_world_selected_t1_host_r1/host.mjs",
+      "bytes": 4173,
+      "sha256": "cfc792640128c9d7ee1c85a192cc777678017522ecc3fc70234879728a2dadc2",
       "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/source/world/state.mjs"
+      "entry": "native_world_selected_t1_host_r1/host.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/native-gym/policy.mjs",
-      "bytes": 4628,
-      "sha256": "8bdebe4db9c8a2a0384b37938a86659de5da5db81b1d17b8619f9650dceb7ad0",
+      "destination": "native_world_selected_t1_host_r1/source/world/service.mjs",
+      "bytes": 16467,
+      "sha256": "548dd5d42c7e636c12fc8bf90340ef4cadd5fed6ee92d08ad5d0af6b93672bb8",
       "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/source/world/native-gym/policy.mjs"
+      "entry": "native_world_selected_t1_host_r1/source/world/service.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/native-gym/geometry.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/world/native-gym/t1-guard.mjs",
+      "bytes": 3257,
+      "sha256": "4fc32c9aff64d6676254e6cc86bf4b6ed858b45dd2a9268ad3e9c6c657f7d339",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_host_r1/source/world/native-gym/t1-guard.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/recovery-assets.mjs",
+      "bytes": 3904,
+      "sha256": "5f7d912205dc14642bef3514b373fe9f75487f7841cd9c315acb840c60e4e193",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_host_r1/recovery-assets.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/native-gym/policy.mjs",
+      "bytes": 4883,
+      "sha256": "2f2ab37a2a790b76fca09fc399b2fdb4080c924293104ed684959a52d098b722",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_host_r1/source/world/native-gym/policy.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/native-gym/geometry.mjs",
       "bytes": 740,
       "sha256": "416ee573adeca3a00998103edfc05cfaee67e320bcc4234b518912c638175e1c",
       "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/source/world/native-gym/geometry.mjs"
+      "entry": "native_world_selected_t1_host_r1/source/world/native-gym/geometry.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/native-gym/raw.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/world/native-gym/raw.mjs",
       "bytes": 1852,
       "sha256": "89fe159f450aae8fc8b10cdd550e8010c3f7b7e8c479fe32e9cf5bc4f6a44e2b",
       "kind": "repository",
       "source": "tools/portable-native/build/native/map_simulation_20261102/gym8/payload/poison-gym8-native/geometry.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/native-gym/source-data.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/world/native-gym/source-data.mjs",
       "bytes": 4217,
       "sha256": "7d2c38e1f11914afbd9f80c8085e7ac6171804ab8e40e2765ccdc4b0c0dfd757",
       "kind": "repository",
       "source": "tools/portable-native/build/native/map_simulation_20261102/gym8/payload/poison-gym8-native/source-data.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/native-gym/projection.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/world/native-gym/projection.mjs",
       "bytes": 1389,
       "sha256": "a7939e688ff3abd3c1bf25cdf510889bce45c79c03a616a3e3f26820e00b43ea",
       "kind": "repository",
       "source": "tools/portable-native/build/app/gym-projection.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/native-gym/profile.mjs",
-      "bytes": 10211,
-      "sha256": "672798244524a769d0c369e0f23d390e83191140315a45240ba4ef70ba83fc6c",
+      "destination": "native_world_selected_t1_host_r1/source/world/native-gym/profile.mjs",
+      "bytes": 10618,
+      "sha256": "ca11364dd3cea16ba4232946aa38c9b454ca1cdf900a8eb87b0a9761bb7a42fd",
       "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/source/world/native-gym/profile.mjs"
+      "entry": "native_world_selected_t1_host_r1/source/world/native-gym/profile.mjs"
     },
     {
       "destination": "native_selected_geometry_r1/geometry.mjs",
@@ -497,391 +105,6 @@
       "sha256": "82941d00695bc19caea62dab6114120bae60d3b99169b7442697e0201a8af364",
       "kind": "repository",
       "source": "dist/native-ports/resources/map_simulation_20261102/ground_contact_r2/contact-policy.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/hidden-geoje-ledger.mjs",
-      "bytes": 5169,
-      "sha256": "2565cd52f5c415b57ea6942bd48f95c9941b37e94f8409f2e4241fef061967ca",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/world/hidden-geoje-ledger.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/gates.mjs",
-      "bytes": 2204,
-      "sha256": "9a4392e9b98fa427716fccae6d5fef122bb6b91ebbf171270b1a59edd6d6e962",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/story/gates.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/harin-post-rematch-v1.mjs",
-      "bytes": 2957,
-      "sha256": "2387456d2e313622a9ecfad5d2f7a795bf8ad48df37aa00d97ee0abd6ef1b9e6",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/harin-post-rematch-v1.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/canonical-20260927-adapter.mjs",
-      "bytes": 13207,
-      "sha256": "700094af735ab2d7236c140b3622902be87313f26b79060379a2e35f9afc8ea1",
-      "kind": "repository",
-      "source": "dist/compatibility/canonical-20260927-adapter.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/service.mjs",
-      "bytes": 16192,
-      "sha256": "c5f1e5d9f10398dd6c203fb236589a515560bc6b0aa51eae1c5e956bd55f539c",
-      "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/source/world/service.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/physical-actors.mjs",
-      "bytes": 1451,
-      "sha256": "d4a9e3bf267b18f065e4f59cb4c40a6d267b68714777114d707b4a7260385f50",
-      "kind": "repository",
-      "source": "dist/world/physical-actors.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/species-catalog-service.mjs",
-      "bytes": 4953,
-      "sha256": "a6eeebc292eda12373d1e40db663ebc8c74acc87254192b8a45a56be242c4657",
-      "kind": "repository",
-      "source": "dist/species-catalog-service.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/model.mjs",
-      "bytes": 22927,
-      "sha256": "134b3e0e839b148c22b2e73e1f9eebb82fb31158be85a99632ed0bf63839263f",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/model.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/regions.mjs",
-      "bytes": 12914,
-      "sha256": "d9390b47bed895ce6c30a37d44dd49cd95755399f43534bf914d62dc7ff8e17d",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/regions.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/starter-config.mjs",
-      "bytes": 699,
-      "sha256": "5fd44099a7c5768abd0c0d29a0d8156b3f39c374cbec84ce662d9e96f9dd880c",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/starter-config.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/content-namespaces.mjs",
-      "bytes": 573,
-      "sha256": "fe74668100d5d12c535dd16e588bcf976859e07c6682334eb73ad3ee4c8cc184",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/content-namespaces.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/species-asset-resolver.mjs",
-      "bytes": 1165,
-      "sha256": "38f9b7b8b48aac047b758c4a9fbe5c08002a92cdd9d8d069e39fca13d8da7791",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/species-asset-resolver.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/session.mjs",
-      "bytes": 621,
-      "sha256": "23f2090cd23128a5d26f482bf0900fdd0ce1ba03911f396b2c47cb96e22f647c",
-      "kind": "repository",
-      "source": "dist/economy/session.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/save.mjs",
-      "bytes": 7808,
-      "sha256": "28a16ad529a59139c901c47aeff3ee6128309823856eb63a30c2629bc775a4c4",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/story/save.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/canonical-session.mjs",
-      "bytes": 6954,
-      "sha256": "9ffa92f80e0501cfb2e28fb7696b483f0989b9b8d058549018bf2c5e7f4bcbdf",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/canonical-session.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/save.mjs",
-      "bytes": 4794,
-      "sha256": "201ae0c4ed250ade219cb9a23260d6922bd797df25f179ffe925971a666d09a3",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/save.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/state.mjs",
-      "bytes": 4039,
-      "sha256": "48f7f76d77ed1f3c1811e587ffcdd42b7a0aeeb4d7cda2fedc07646bc89a1131",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/state.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/post-20260927.mjs",
-      "bytes": 3329,
-      "sha256": "c744847a4a8ed52d5ca3648c2fec0fbf10f29d696766a933709c144df5382427",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/story/post-20260927.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/harin-rematch.mjs",
-      "bytes": 2806,
-      "sha256": "d3aefeee29e1daaf7258adc9187b24c5546103017a98cb44e262226918b3bc17",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/story/harin-rematch.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/progression-service.mjs",
-      "bytes": 36921,
-      "sha256": "3c7f90fb44e38d179fa24789874743dc346390783bc99d012778f3b5f54ce15e",
-      "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/source/story/progression-service.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/species-weather.mjs",
-      "bytes": 2479,
-      "sha256": "46c39d61fd3125c47c65067879f8422802b12bbdf9d9df941a1112408673ef8b",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/species-weather.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/environment-service.mjs",
-      "bytes": 6095,
-      "sha256": "608c38da59a61388827a38cddeaec932f9cd74063e1c88ad33612f119c8dad68",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/environment-service.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/frequency.mjs",
-      "bytes": 2194,
-      "sha256": "056bc3e05edc5fa47c0af1f54eed28178b20ed378ce7e8f7efb33a6ef095c1fb",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/frequency.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/actions.mjs",
-      "bytes": 6117,
-      "sha256": "198058e482deb13e0b1c8e82aa58b89479001b87eec3f16266139fa40fd2548d",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/actions.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/staged-prize-20260927.mjs",
-      "bytes": 1023,
-      "sha256": "440e6ee49b31579f1586401edc35643edddcf8657164281bd8f577991b2fe5d0",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/staged-prize-20260927.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/economy/tutorial.mjs",
-      "bytes": 1507,
-      "sha256": "f8f0f9e067245b9fa830b7aa2bc10bff800ec9a8aeb4dd5b4f66004d315487eb",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/economy/tutorial.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/engine.mjs",
-      "bytes": 21937,
-      "sha256": "79fcd199ffc19bca3bb9cf33a0ebacff169c4294e4d7fad16bfa01b5cc2a9905",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/engine.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/approved-trainer-ai.mjs",
-      "bytes": 831,
-      "sha256": "80a349831ff01885c50bd7fce2dd06da0827789a4b56ea6f2878f927dfa9f5be",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/approved-trainer-ai.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/rules.mjs",
-      "bytes": 7476,
-      "sha256": "5a68a67fa485a895c0623f5cc66f9d32c4601ac9f9420557cbf53f5da1dffabb",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/rules.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/battle-background.mjs",
-      "bytes": 625,
-      "sha256": "92ab4ff270bd74721f357eda9255f69d38a2135a296f7238206cf3216af9be16",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/presentation/battle-background.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/battle-render.mjs",
-      "bytes": 1508,
-      "sha256": "c925df7206a121f2bbbca13e852113f4ba669867cce946926b78f1efd6818c3a",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/presentation/battle-render.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/asset-runtime.mjs",
-      "bytes": 8510,
-      "sha256": "697b2ecdd3cab9f1ff5230c0111dedcc0e23c1339b942ffbbc2aa8c67824ba82",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/asset-runtime.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/permit.mjs",
-      "bytes": 2048,
-      "sha256": "91764a31305042f152f2ed88f2177b8d03d82d9203e13d72a5caba8322d1f6a0",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/permit.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/access.mjs",
-      "bytes": 5124,
-      "sha256": "fc76451b26fedb30ff9ba6fbb82ff3998dc3058135a13a010ffcd3966d21bb90",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/access.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/preview-opponents.mjs",
-      "bytes": 6022,
-      "sha256": "3b3525e5b4dc25a9bd4a896cd9d7ddaf74fbcda864160bb7ab90690efe8586ec",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/preview-opponents.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/ai-20260927.mjs",
-      "bytes": 3857,
-      "sha256": "97b45bff4357c4683666abd8e4bb1fdf59042cc199ea36258b6ef0d2410637f6",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/ai-20260927.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/battle-v3/enhanced-league.mjs",
-      "bytes": 1410,
-      "sha256": "1a62bc446f6d13041ea63188bf4f36e05a47f8bc6d176f3e098c3fbb006d14fd",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/enhanced-league.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/event-runner.mjs",
-      "bytes": 1575,
-      "sha256": "473552792dea711e25c3116112eefc280d9788a5fcde78af9950f54324082053",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/story/event-runner.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/acquisition.mjs",
-      "bytes": 3515,
-      "sha256": "b483aa1b407913e87d2c33704d01183553206f135d588d8d8fcc22d612a2657d",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/acquisition.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/story/field-bridge.mjs",
-      "bytes": 3413,
-      "sha256": "6b1f310f52a6397ec90935bf0bf398f5c7544eb2aed6be976f2630a9ede3ba8d",
-      "kind": "repository",
-      "source": "dist/story/field-bridge.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/field-engine-core.mjs",
-      "bytes": 14909,
-      "sha256": "2dc8f5f68e03cc7e7ddd395fe0efb31152410b23dbca0c7852a6b2c24d120f59",
-      "kind": "repository",
-      "source": "dist/field-engine-core.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/battle-transition.mjs",
-      "bytes": 2670,
-      "sha256": "6f7e0ac80f42b5a78f2b15a96c89c3cf7de56bbc51c391785366174086b9c80d",
-      "kind": "repository",
-      "source": "dist/presentation/battle-transition.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/encounter/field-hook.mjs",
-      "bytes": 328,
-      "sha256": "f0577615cf08f009dbe55d1b484c80710462b6b05250008396222708981d51dc",
-      "kind": "repository",
-      "source": "dist/encounter/field-hook.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/core-spatial.mjs",
-      "bytes": 274,
-      "sha256": "7897e0713989fd87b5c0dc640f4fd83d1e3a24fe8f727d32db67444f5591656a",
-      "kind": "repository",
-      "source": "dist/world/core-spatial.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/field-animation.mjs",
-      "bytes": 2952,
-      "sha256": "7b631ac0be3d2abb7e9c753c1d7167930c5eb0d7590da847ac8b60231a24fe0c",
-      "kind": "repository",
-      "source": "dist/field-animation.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/field-grass-data.mjs",
-      "bytes": 1112,
-      "sha256": "0c71f613df876b2e862bdb4df12d92fe285d7ca1e323452d3cd97e063cc254a6",
-      "kind": "repository",
-      "source": "dist/field-grass-data.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/presentation/field-events.mjs",
-      "bytes": 1193,
-      "sha256": "00b7981e0b741f489d3e27ec5681a452eb02d509c61fd8f29a971a1b4509845b",
-      "kind": "repository",
-      "source": "dist/presentation/field-events.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/world/save-store.mjs",
-      "bytes": 1610,
-      "sha256": "24e14eafaf7ecc0ff30a183e89e734a9928153ca21c969f6779e33b2aa348c27",
-      "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/source/world/save-store.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/save-slots.mjs",
-      "bytes": 13387,
-      "sha256": "4c72a352c7fbe23d1721e270411b02cc4f71269352910b2ad742faf0dcc11f72",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-retry-v3/dist/compatibility/save-slots.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/migration-eligibility.mjs",
-      "bytes": 1627,
-      "sha256": "464d4558421ad56677a8693e98a819b60ecd898c4f5f1cbda30b9f93da2b8577",
-      "kind": "repository",
-      "source": "dist/compatibility/migration-eligibility.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/save-migration.mjs",
-      "bytes": 7264,
-      "sha256": "db8e5055cfd3f9b34ee77e60f9afb7aa26d8aa3f4ce02dc08f826d596f17a44d",
-      "kind": "repository",
-      "source": "dist/compatibility/save-migration.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/source/compatibility/gameplay-release.mjs",
-      "bytes": 2154,
-      "sha256": "ca31010bc09bb4da64c9c08160f44bfa1d4ee00bf0021a7d9724a527aba4f4e3",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-retry-v3/dist/compatibility/gameplay-release.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/initialize-fixture.mjs",
-      "bytes": 649,
-      "sha256": "25bf453a53c05b4ac5514e53ad63bd9144be005d81c9e4520626d569994e6cb1",
-      "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/initialize-fixture.mjs"
-    },
-    {
-      "destination": "native_world_selected_spatial_r1/exchange.mjs",
-      "bytes": 5388,
-      "sha256": "7938390983fd7cb44d33ce1f22de2955298db05b36bb1aac2610f87b50bf413d",
-      "kind": "source-bundle",
-      "entry": "native_world_selected_spatial_r1/exchange.mjs"
-    },
-    {
-      "destination": "native_world_selected_presentation_r1/bridge.mjs",
-      "bytes": 10337,
-      "sha256": "496a03177bc1cc3d99288283da95c629da54d3e3e4a27e67c29723a65dabcfcb",
-      "kind": "source-bundle",
-      "entry": "native_world_selected_presentation_r1/bridge.mjs"
     },
     {
       "destination": "portable_native_game_r13/site/native/map_simulation_20261102/ground_contact_r3/s7-leaf.mjs",
@@ -961,6 +184,713 @@
       "source": "dist/native-ports/resources/map_simulation_20261102/ground_s8_r1/mask-transport-pin.mjs"
     },
     {
+      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player.mjs",
+      "bytes": 3176,
+      "sha256": "d9410cad35fe767f893a726a8d2937e9b50882610b8c679b5f4c98f5f0126bd6",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player.mjs"
+    },
+    {
+      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player-data.mjs",
+      "bytes": 8861,
+      "sha256": "6871fdba534a769c588422f7ea870e41a1e03148bfca66a5537b3e5fcb730a33",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player-data.mjs"
+    },
+    {
+      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player-frame.mjs",
+      "bytes": 419,
+      "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player-frame.mjs"
+    },
+    {
+      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/view-data.mjs",
+      "bytes": 1760,
+      "sha256": "3b90f01779c18d790ab59b04dc470fff64c8fec645cdf74be0d60157fb3f72f5",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/view-data.mjs"
+    },
+    {
+      "destination": "portable_native_game_r13/site/app/npc-renderer.mjs",
+      "bytes": 5560,
+      "sha256": "48ba097b4a85af20574d8a1d40382aeb0985a3bd23d0c47a9bbf3e9a9ead5714",
+      "kind": "repository",
+      "source": "tools/portable-native/build/app/npc-renderer.mjs"
+    },
+    {
+      "destination": "portable_native_game_r13/site/app/bindings.mjs",
+      "bytes": 9812,
+      "sha256": "eeaffbd6b7ba1147fcc7f3e463316115267afec183f01f1e1e7f6d67152fa076",
+      "kind": "repository",
+      "source": "tools/portable-native/build/app/bindings.mjs"
+    },
+    {
+      "destination": "portable_native_game_r13/site/canonical/approved-atlas-data.mjs",
+      "bytes": 554206,
+      "sha256": "31f6cb0486352416b7de298b286354003850680e1724715acb034f65660d5f5d",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-data.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/state.mjs",
+      "bytes": 10527,
+      "sha256": "6755aa99451a921abbad6ba827c7184fed172dc05878fb46a5d9979e25609709",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_host_r1/source/world/state.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/gym-polish.mjs",
+      "bytes": 6257,
+      "sha256": "041eea21ab3a0f2cff4150cb3a34755163256551693bc3416916b9255a27bacb",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/world/gym-polish.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/tileset-contract.mjs",
+      "bytes": 3639,
+      "sha256": "04babb76159d544568e5f4f932da1b0df3be46ad80ed6d0712181ef223df3e3c",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/tileset-contract.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/hidden-placement-v1.mjs",
+      "bytes": 7628,
+      "sha256": "ffc20b6e2a347eb1685c9f830bd85f06fc10ba677d3f792144420457f2be11cb",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/world/hidden-placement-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/codec.mjs",
+      "bytes": 2470,
+      "sha256": "1996059f6159bc3af353b10306f37a9e9db27f76cecd56e7bb699a5219f7fa8c",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/codec.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/hidden-geoje-ledger.mjs",
+      "bytes": 5169,
+      "sha256": "2565cd52f5c415b57ea6942bd48f95c9941b37e94f8409f2e4241fef061967ca",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/world/hidden-geoje-ledger.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/gates.mjs",
+      "bytes": 2204,
+      "sha256": "9a4392e9b98fa427716fccae6d5fef122bb6b91ebbf171270b1a59edd6d6e962",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/story/gates.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/definition.mjs",
+      "bytes": 16672,
+      "sha256": "d97de641836604ddb18175fa866e219dcc76c0ba2695a074001823cc7ac4bbb0",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/world/definition.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/approved-placement.mjs",
+      "bytes": 3195,
+      "sha256": "f70c47524522cacf7feff5caa75afaca1e1b8cdd4fe70b1888666a8bf252ed4e",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/world/approved-placement.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/staged-trainer-placement.mjs",
+      "bytes": 4515,
+      "sha256": "3210642a7cbcf046b8ff460aa6af007c52e16dc1807ba8755adc10c9fc8c3f7a",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/world/staged-trainer-placement.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/field-behavior.mjs",
+      "bytes": 4572,
+      "sha256": "dc63951a15488175d1d7123c36fefc59b03f3429379378d0688340fdec49ab88",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/field-behavior.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/golden-map-data.mjs",
+      "bytes": 4318,
+      "sha256": "e24fa8f8e46462ae4f430efeb7e237a9e9255ee9d3cf7f66158d604e74f33b72",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/golden-map-data.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/map-presentation.mjs",
+      "bytes": 2049,
+      "sha256": "9d8ee849c0af605e650b8761473f5812b38b53fe9b2563d1e3c5c0da3ed09287",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/map-presentation.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/lighting.mjs",
+      "bytes": 2752,
+      "sha256": "1b44e023297c6e950f2eed16285fd762f6359c4dc0c44d2f771c8850ba8f4375",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/lighting.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/time-provider.mjs",
+      "bytes": 1579,
+      "sha256": "0a443889e7b888079caa1143bb6fcd8988213fb398490868e805aa82281452a2",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/time-provider.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/npc-assets.mjs",
+      "bytes": 2321,
+      "sha256": "04d9c63c4f65384de4d9c6cb01c2bc8eb11673851db02db9dff55ef4472eeb7e",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/npc-assets.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/asset-manifest.mjs",
+      "bytes": 8520,
+      "sha256": "8cf6a0b26955ea3a0db6eb8132f43f709f333b5a39d1d66fa08b661b4004a2c4",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/asset-manifest.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/tile-animation.mjs",
+      "bytes": 2722,
+      "sha256": "c0830c90bd3225ef455876ae6299dfc4455b1d71ea3af7312cce6914f10b07fc",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/tile-animation.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/weather-layer.mjs",
+      "bytes": 2560,
+      "sha256": "f3dde0860b4bbd987a2b6279b64907113d5645593e4d4b89eb73e71a8f5a2a9a",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/weather-layer.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/battle-vfx.mjs",
+      "bytes": 4453,
+      "sha256": "7ab5c1f8f73bd83eac732b902c82103da82e7a12f1b9861aa0096fcc99dc9f7f",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/battle-vfx.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/audio-hooks.mjs",
+      "bytes": 1748,
+      "sha256": "d367986d43969684a1a4f1992eb9b05221b6b15f75d87d5b38551be9640fd361",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/audio-hooks.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/battle-display.mjs",
+      "bytes": 2263,
+      "sha256": "360fb0a72bfd5f51585f8d70dfa7bfaecfeacfdc3f7d77dc2bd8a393a6a2b562",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/battle-display.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/species-registry.mjs",
+      "bytes": 89513,
+      "sha256": "064a2fabfb235aee28c359cf6250dcd9d50cf767ffcc09c11fd14b4bede6248d",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/species-registry.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/canonical-species-assets.mjs",
+      "bytes": 2211,
+      "sha256": "da125c9697a437a0b2fdfcd9540fdfcf43d6cbaf7aa6804903f059f590683b7a",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/canonical-species-assets.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/approved-species.mjs",
+      "bytes": 3030,
+      "sha256": "901d5cced8f7ff6dc5b33191ab349c25379652b0f65f5dc7e6eadcd4461eb261",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/approved-species.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/approved-atlas-runtime.mjs",
+      "bytes": 1638,
+      "sha256": "3f1b0383887e49225fcd63b8fc6cd98b694f670eec8a0901c3f16a4b4bdec983",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-runtime.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/approved-atlas-data.mjs",
+      "bytes": 554206,
+      "sha256": "31f6cb0486352416b7de298b286354003850680e1724715acb034f65660d5f5d",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-data.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/atlas-retry-manager.mjs",
+      "bytes": 17724,
+      "sha256": "3a9b46d51c31ce216056d4e9be1f93f0630faf8f3c7869e6f02fe0c0fb19ae0f",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/atlas-retry-manager.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/approved-species-data.mjs",
+      "bytes": 167667,
+      "sha256": "90fe4176500591c99cbbaafc6117161b458523ea693b4d9344c54eb73f236353",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/approved-species-data.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/species-asset-contract.mjs",
+      "bytes": 2301,
+      "sha256": "c67abca806ce9308d93b2b6a5e7225a84b16426122247050384ff63baa32a7f3",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/species-asset-contract.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/species-data.mjs",
+      "bytes": 46534,
+      "sha256": "5622acdd5e721b71fb5cd0cc1d5ebebd63c8e784f961017f3d04fd6ff046c977",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/species-data.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/art/legacy-assets.mjs",
+      "bytes": 59695,
+      "sha256": "bf68f277931ab00865827de84f681ad95b34c6025e8a995e3ea2e08d952f2b95",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/legacy-assets.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/art/species-crops.mjs",
+      "bytes": 44175,
+      "sha256": "2170ef32babe6709225784c48b0c2e1c69dbc5d3738bf60d183d1b8c9e904283",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/species-crops.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/art/field-bindings.mjs",
+      "bytes": 10552,
+      "sha256": "694f1da74f61ae1cd64a370128b65d820fd7a8e9f82dc40636cd188cfffec74c",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/field-bindings.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/art/w03-human-field.mjs",
+      "bytes": 2067,
+      "sha256": "ddacffb2a238f18afd1d61e7d441b3bcedba8d8abb2de9919d2979c95fad3e76",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-human-field.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/art/w03-field-atlases.mjs",
+      "bytes": 9320,
+      "sha256": "9dd754bd8e7e9b7c4e1e11ba31abc8e556ab232d8434ee30cd70e1ad01db12de",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-field-atlases.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/art/w03-player-field.mjs",
+      "bytes": 1249,
+      "sha256": "dbaba5076383aec3edc99b17e3d039fac42ddb9a2f681b3a1356c4beb6d7f1d5",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-player-field.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/physical-actors.mjs",
+      "bytes": 1451,
+      "sha256": "d4a9e3bf267b18f065e4f59cb4c40a6d267b68714777114d707b4a7260385f50",
+      "kind": "repository",
+      "source": "dist/world/physical-actors.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/species-catalog-service.mjs",
+      "bytes": 4953,
+      "sha256": "a6eeebc292eda12373d1e40db663ebc8c74acc87254192b8a45a56be242c4657",
+      "kind": "repository",
+      "source": "dist/species-catalog-service.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/model.mjs",
+      "bytes": 22927,
+      "sha256": "134b3e0e839b148c22b2e73e1f9eebb82fb31158be85a99632ed0bf63839263f",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/model.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/regions.mjs",
+      "bytes": 12914,
+      "sha256": "d9390b47bed895ce6c30a37d44dd49cd95755399f43534bf914d62dc7ff8e17d",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/regions.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/starter-config.mjs",
+      "bytes": 699,
+      "sha256": "5fd44099a7c5768abd0c0d29a0d8156b3f39c374cbec84ce662d9e96f9dd880c",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/starter-config.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/species-identity.mjs",
+      "bytes": 1677,
+      "sha256": "429c08144c60c6a562d9c50255ae978bb9ef06bec6a28508d087ff2498935531",
+      "kind": "repository",
+      "source": "dist/compatibility/species-identity.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/content-namespaces.mjs",
+      "bytes": 573,
+      "sha256": "fe74668100d5d12c535dd16e588bcf976859e07c6682334eb73ad3ee4c8cc184",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/content-namespaces.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/species-asset-resolver.mjs",
+      "bytes": 1165,
+      "sha256": "38f9b7b8b48aac047b758c4a9fbe5c08002a92cdd9d8d069e39fca13d8da7791",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/species-asset-resolver.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/session.mjs",
+      "bytes": 621,
+      "sha256": "23f2090cd23128a5d26f482bf0900fdd0ce1ba03911f396b2c47cb96e22f647c",
+      "kind": "repository",
+      "source": "dist/economy/session.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/save.mjs",
+      "bytes": 7808,
+      "sha256": "28a16ad529a59139c901c47aeff3ee6128309823856eb63a30c2629bc775a4c4",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/story/save.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/contract.mjs",
+      "bytes": 7995,
+      "sha256": "a6faaf6705bdcccce680a5b44e9c9497faa61ec7e632d54dba45db1b9015da0b",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/contract.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/consumables-v1.mjs",
+      "bytes": 2597,
+      "sha256": "79350d1e50d877bb840c2888153bcd86d34c6013addf2f236b6b4647b456857c",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/consumables-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/canonical-session.mjs",
+      "bytes": 6954,
+      "sha256": "9ffa92f80e0501cfb2e28fb7696b483f0989b9b8d058549018bf2c5e7f4bcbdf",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/canonical-session.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/save.mjs",
+      "bytes": 4794,
+      "sha256": "201ae0c4ed250ade219cb9a23260d6922bd797df25f179ffe925971a666d09a3",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/save.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/status-enum.mjs",
+      "bytes": 1743,
+      "sha256": "3d0e64ea35e7a339732e2026fc8301d0af345dfbc6698111b4c7b041add9c00b",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/status-enum.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/state.mjs",
+      "bytes": 4039,
+      "sha256": "48f7f76d77ed1f3c1811e587ffcdd42b7a0aeeb4d7cda2fedc07646bc89a1131",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/state.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/encounter-adapter.mjs",
+      "bytes": 7697,
+      "sha256": "1e66db1f808f5e98f6a058634b2ebe7cc486db641884521774e10cf35cacc511",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/encounter-adapter.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/post-20260927.mjs",
+      "bytes": 3329,
+      "sha256": "c744847a4a8ed52d5ca3648c2fec0fbf10f29d696766a933709c144df5382427",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/story/post-20260927.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/story-adapter.mjs",
+      "bytes": 9678,
+      "sha256": "3e6cc26f2f1090a10027977b13b05a8fa88194b0836101322244f17b84b1b9fb",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/story-adapter.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/enhanced-league.mjs",
+      "bytes": 5434,
+      "sha256": "e1505abc99ea7bb5f6866faf52035613a9e896ed128e4c0ebd8ad03d74b32b20",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/story/enhanced-league.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/harin-rematch.mjs",
+      "bytes": 2806,
+      "sha256": "d3aefeee29e1daaf7258adc9187b24c5546103017a98cb44e262226918b3bc17",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/story/harin-rematch.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/harin-post-rematch-v1.mjs",
+      "bytes": 2957,
+      "sha256": "2387456d2e313622a9ecfad5d2f7a795bf8ad48df37aa00d97ee0abd6ef1b9e6",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/harin-post-rematch-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/approved-v1.mjs",
+      "bytes": 3166,
+      "sha256": "12f34b1214fff17e215e5e95a158f123aecc6bd3d0b32c27b34a3d3657db1a7d",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/approved-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/candidate.mjs",
+      "bytes": 2666,
+      "sha256": "62874dc0d8b7c647a94eab130a17d1e7ade38d6a3da1b8be80167a01eca6c673",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/candidate.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/trainer-prize-map.mjs",
+      "bytes": 1952,
+      "sha256": "56fff754dbcb839147bef5875d06fed9b8a5c0254b5ea3cc57b971f4fa3e6915",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/trainer-prize-map.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/progression-service.mjs",
+      "bytes": 37218,
+      "sha256": "f8d436209ea26685678e209057e2a7257a69821403752ddc7f1ca743ed1530b1",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_host_r1/source/story/progression-service.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/species-weather.mjs",
+      "bytes": 2479,
+      "sha256": "46c39d61fd3125c47c65067879f8422802b12bbdf9d9df941a1112408673ef8b",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/species-weather.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/environment-service.mjs",
+      "bytes": 6095,
+      "sha256": "608c38da59a61388827a38cddeaec932f9cd74063e1c88ad33612f119c8dad68",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/environment-service.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/frequency.mjs",
+      "bytes": 2194,
+      "sha256": "056bc3e05edc5fa47c0af1f54eed28178b20ed378ce7e8f7efb33a6ef095c1fb",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/frequency.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/species-weather-config.mjs",
+      "bytes": 406,
+      "sha256": "4edccbedbf7b0d27372a9c3118dfe27c0c21cd40ddd76ce377f63b05c9964975",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/species-weather-config.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/actions.mjs",
+      "bytes": 6117,
+      "sha256": "198058e482deb13e0b1c8e82aa58b89479001b87eec3f16266139fa40fd2548d",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/actions.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/staged-prize-20260927.mjs",
+      "bytes": 1023,
+      "sha256": "440e6ee49b31579f1586401edc35643edddcf8657164281bd8f577991b2fe5d0",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/staged-prize-20260927.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/economy/tutorial.mjs",
+      "bytes": 1507,
+      "sha256": "f8f0f9e067245b9fa830b7aa2bc10bff800ec9a8aeb4dd5b4f66004d315487eb",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/economy/tutorial.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/engine.mjs",
+      "bytes": 21937,
+      "sha256": "79fcd199ffc19bca3bb9cf33a0ebacff169c4294e4d7fad16bfa01b5cc2a9905",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/engine.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/approved-party-move-exceptions.mjs",
+      "bytes": 426,
+      "sha256": "3c658339d73e8bea06432103b3d1060fdf5cacc188d4d67a17aff232c6e5c686",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/approved-party-move-exceptions.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/approved-trainer-ai.mjs",
+      "bytes": 831,
+      "sha256": "80a349831ff01885c50bd7fce2dd06da0827789a4b56ea6f2878f927dfa9f5be",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/approved-trainer-ai.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/rules.mjs",
+      "bytes": 7476,
+      "sha256": "5a68a67fa485a895c0623f5cc66f9d32c4601ac9f9420557cbf53f5da1dffabb",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/rules.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/battle-background.mjs",
+      "bytes": 625,
+      "sha256": "92ab4ff270bd74721f357eda9255f69d38a2135a296f7238206cf3216af9be16",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/presentation/battle-background.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/battle-render.mjs",
+      "bytes": 1508,
+      "sha256": "c925df7206a121f2bbbca13e852113f4ba669867cce946926b78f1efd6818c3a",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/presentation/battle-render.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/asset-runtime.mjs",
+      "bytes": 8510,
+      "sha256": "697b2ecdd3cab9f1ff5230c0111dedcc0e23c1339b942ffbbc2aa8c67824ba82",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/asset-runtime.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/permit.mjs",
+      "bytes": 2048,
+      "sha256": "91764a31305042f152f2ed88f2177b8d03d82d9203e13d72a5caba8322d1f6a0",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/permit.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/access.mjs",
+      "bytes": 5124,
+      "sha256": "fc76451b26fedb30ff9ba6fbb82ff3998dc3058135a13a010ffcd3966d21bb90",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/access.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/preview-opponents.mjs",
+      "bytes": 6022,
+      "sha256": "3b3525e5b4dc25a9bd4a896cd9d7ddaf74fbcda864160bb7ab90690efe8586ec",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/preview-opponents.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/opponent-namespace.mjs",
+      "bytes": 54,
+      "sha256": "4ab164c16b9057f4a5f017071a25f2a9988783f43895347db1da1e43f912fafc",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/compatibility/opponent-namespace.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/ai-20260927.mjs",
+      "bytes": 3857,
+      "sha256": "97b45bff4357c4683666abd8e4bb1fdf59042cc199ea36258b6ef0d2410637f6",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/ai-20260927.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/battle-v3/enhanced-league.mjs",
+      "bytes": 1410,
+      "sha256": "1a62bc446f6d13041ea63188bf4f36e05a47f8bc6d176f3e098c3fbb006d14fd",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/enhanced-league.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/event-runner.mjs",
+      "bytes": 1575,
+      "sha256": "473552792dea711e25c3116112eefc280d9788a5fcde78af9950f54324082053",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/story/event-runner.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/acquisition.mjs",
+      "bytes": 3515,
+      "sha256": "b483aa1b407913e87d2c33704d01183553206f135d588d8d8fcc22d612a2657d",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/encounter/acquisition.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/story/field-bridge.mjs",
+      "bytes": 3413,
+      "sha256": "6b1f310f52a6397ec90935bf0bf398f5c7544eb2aed6be976f2630a9ede3ba8d",
+      "kind": "repository",
+      "source": "dist/story/field-bridge.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/field-engine-core.mjs",
+      "bytes": 14909,
+      "sha256": "2dc8f5f68e03cc7e7ddd395fe0efb31152410b23dbca0c7852a6b2c24d120f59",
+      "kind": "repository",
+      "source": "dist/field-engine-core.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/battle-transition.mjs",
+      "bytes": 2670,
+      "sha256": "6f7e0ac80f42b5a78f2b15a96c89c3cf7de56bbc51c391785366174086b9c80d",
+      "kind": "repository",
+      "source": "dist/presentation/battle-transition.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/encounter/field-hook.mjs",
+      "bytes": 328,
+      "sha256": "f0577615cf08f009dbe55d1b484c80710462b6b05250008396222708981d51dc",
+      "kind": "repository",
+      "source": "dist/encounter/field-hook.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/core-spatial.mjs",
+      "bytes": 274,
+      "sha256": "7897e0713989fd87b5c0dc640f4fd83d1e3a24fe8f727d32db67444f5591656a",
+      "kind": "repository",
+      "source": "dist/world/core-spatial.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/field-animation.mjs",
+      "bytes": 2952,
+      "sha256": "7b631ac0be3d2abb7e9c753c1d7167930c5eb0d7590da847ac8b60231a24fe0c",
+      "kind": "repository",
+      "source": "dist/field-animation.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/field-grass-data.mjs",
+      "bytes": 1112,
+      "sha256": "0c71f613df876b2e862bdb4df12d92fe285d7ca1e323452d3cd97e063cc254a6",
+      "kind": "repository",
+      "source": "dist/field-grass-data.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/presentation/field-events.mjs",
+      "bytes": 1193,
+      "sha256": "00b7981e0b741f489d3e27ec5681a452eb02d509c61fd8f29a971a1b4509845b",
+      "kind": "repository",
+      "source": "dist/presentation/field-events.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/bridge.mjs",
+      "bytes": 10235,
+      "sha256": "667811fb7182b23ce95f8d1ec3645f5dd46b54821fba5d6d386ec3a6924ff413",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_host_r1/bridge.mjs"
+    },
+    {
       "destination": "portable_native_game_r13/site/native/map_simulation_20261102/ground_gym8_r1/leaf-adapter.mjs",
       "bytes": 1773,
       "sha256": "7220fb0129b4f16a2177cd642bdc98a7dcca3640d9e8cdb89c0171bb4f086d42",
@@ -1010,34 +940,6 @@
       "source": "tools/portable-native/build/native/map_simulation_20261102/ground_gym8_r1/raster.mjs"
     },
     {
-      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player.mjs",
-      "bytes": 3176,
-      "sha256": "d9410cad35fe767f893a726a8d2937e9b50882610b8c679b5f4c98f5f0126bd6",
-      "kind": "repository",
-      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player.mjs"
-    },
-    {
-      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player-data.mjs",
-      "bytes": 8861,
-      "sha256": "6871fdba534a769c588422f7ea870e41a1e03148bfca66a5537b3e5fcb730a33",
-      "kind": "repository",
-      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player-data.mjs"
-    },
-    {
-      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player-frame.mjs",
-      "bytes": 419,
-      "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
-      "kind": "repository",
-      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player-frame.mjs"
-    },
-    {
-      "destination": "portable_native_game_r13/site/native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/view-data.mjs",
-      "bytes": 1760,
-      "sha256": "3b90f01779c18d790ab59b04dc470fff64c8fec645cdf74be0d60157fb3f72f5",
-      "kind": "repository",
-      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/view-data.mjs"
-    },
-    {
       "destination": "portable_native_game_r13/site/native/map_simulation_20261102/user_feedback_r1/gym-actors.mjs",
       "bytes": 2329,
       "sha256": "ed03fdb097c1f8d8d4acba72676c8db244142b56be1e5b10fe44332c7ae30ed5",
@@ -1050,27 +952,6 @@
       "sha256": "6903f2597b61ac2fd2fa6f81734746cff1fece3efeee6b5fd13861faa6921b99",
       "kind": "repository",
       "source": "tools/portable-native/build/native/map_simulation_20261102/gym8/connection/actor-data.mjs"
-    },
-    {
-      "destination": "portable_native_game_r13/site/app/npc-renderer.mjs",
-      "bytes": 5560,
-      "sha256": "48ba097b4a85af20574d8a1d40382aeb0985a3bd23d0c47a9bbf3e9a9ead5714",
-      "kind": "repository",
-      "source": "tools/portable-native/build/app/npc-renderer.mjs"
-    },
-    {
-      "destination": "portable_native_game_r13/site/app/bindings.mjs",
-      "bytes": 9812,
-      "sha256": "eeaffbd6b7ba1147fcc7f3e463316115267afec183f01f1e1e7f6d67152fa076",
-      "kind": "repository",
-      "source": "tools/portable-native/build/app/bindings.mjs"
-    },
-    {
-      "destination": "portable_native_game_r13/site/canonical/approved-atlas-data.mjs",
-      "bytes": 554206,
-      "sha256": "31f6cb0486352416b7de298b286354003850680e1724715acb034f65660d5f5d",
-      "kind": "repository",
-      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-data.mjs"
     },
     {
       "destination": "portable_native_game_r13/site/native/map_simulation_20261102/user_feedback_r1/viewport.mjs",
@@ -1101,119 +982,511 @@
       "entry": "native_world_direct_surface_r1/surface.mjs"
     },
     {
-      "destination": "native_world_selected_grid_r1/grid-bridge.mjs",
-      "bytes": 7337,
-      "sha256": "1264695300837242d001ec0e7e1a9761bb9b483a0324f8ec89f9a8c289ecf4d4",
+      "destination": "native_t1_paused_ui_r2/panel.mjs",
+      "bytes": 6763,
+      "sha256": "d8644022a82d0cf8a2bd32ff95a13559760b75e571e7ffc69dce40c989b1be37",
       "kind": "source-bundle",
-      "entry": "native_world_selected_grid_r1/grid-bridge.mjs"
+      "entry": "native_t1_paused_ui_r2/panel.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/render.mjs",
+      "destination": "restore_r40_0002/public_consumer/dist/battle-v3/rules.mjs",
+      "bytes": 7476,
+      "sha256": "5a68a67fa485a895c0623f5cc66f9d32c4601ac9f9420557cbf53f5da1dffabb",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/battle-v3/rules.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/compatibility/codec.mjs",
+      "bytes": 2470,
+      "sha256": "1996059f6159bc3af353b10306f37a9e9db27f76cecd56e7bb699a5219f7fa8c",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/codec.mjs"
+    },
+    {
+      "destination": "native_t1_battle_panel_r1/front-scene.mjs",
+      "bytes": 4247,
+      "sha256": "e8bdf058c80e91bf817f7fe48b0f9fc258436d6d6f398af7c53adb1c1598d48c",
+      "kind": "source-bundle",
+      "entry": "native_t1_battle_panel_r1/front-scene.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/approved-species.mjs",
+      "bytes": 3030,
+      "sha256": "901d5cced8f7ff6dc5b33191ab349c25379652b0f65f5dc7e6eadcd4461eb261",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/approved-species.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/approved-atlas-runtime.mjs",
+      "bytes": 1638,
+      "sha256": "3f1b0383887e49225fcd63b8fc6cd98b694f670eec8a0901c3f16a4b4bdec983",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-runtime.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/approved-atlas-data.mjs",
+      "bytes": 554206,
+      "sha256": "31f6cb0486352416b7de298b286354003850680e1724715acb034f65660d5f5d",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/approved-atlas-data.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/atlas-retry-manager.mjs",
+      "bytes": 17724,
+      "sha256": "3a9b46d51c31ce216056d4e9be1f93f0630faf8f3c7869e6f02fe0c0fb19ae0f",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/atlas-retry-manager.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/approved-species-data.mjs",
+      "bytes": 167667,
+      "sha256": "90fe4176500591c99cbbaafc6117161b458523ea693b4d9344c54eb73f236353",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/approved-species-data.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/approved-battle-backgrounds.mjs",
+      "bytes": 1837,
+      "sha256": "1b0f791f32b3911fda5ad4f7a2dfe794405de79fbb8336c039d8880ab8f9f912",
+      "kind": "repository",
+      "source": "dist/art/approved-battle-backgrounds.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/integrated-battle-layout.mjs",
+      "bytes": 3282,
+      "sha256": "12ad6cc805d9b10fdf45c0e0b7d9663f1d86ddbf2a5a9f10305430b50faac5c6",
+      "kind": "repository",
+      "source": "dist/art/integrated-battle-layout.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/approved-battle-background-bindings.mjs",
+      "bytes": 3487,
+      "sha256": "84241763322be776649a822571f2a5f9e8a7ddb69a469da94901689d19dfb81b",
+      "kind": "repository",
+      "source": "dist/art/approved-battle-background-bindings.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/asset-runtime.mjs",
+      "bytes": 8510,
+      "sha256": "697b2ecdd3cab9f1ff5230c0111dedcc0e23c1339b942ffbbc2aa8c67824ba82",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/asset-runtime.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/species-asset-contract.mjs",
+      "bytes": 2301,
+      "sha256": "c67abca806ce9308d93b2b6a5e7225a84b16426122247050384ff63baa32a7f3",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/species-asset-contract.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/species-data.mjs",
+      "bytes": 46534,
+      "sha256": "5622acdd5e721b71fb5cd0cc1d5ebebd63c8e784f961017f3d04fd6ff046c977",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/species-data.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/asset-manifest.mjs",
+      "bytes": 8520,
+      "sha256": "8cf6a0b26955ea3a0db6eb8132f43f709f333b5a39d1d66fa08b661b4004a2c4",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/asset-manifest.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/map-presentation.mjs",
+      "bytes": 2049,
+      "sha256": "9d8ee849c0af605e650b8761473f5812b38b53fe9b2563d1e3c5c0da3ed09287",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/map-presentation.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/lighting.mjs",
+      "bytes": 2752,
+      "sha256": "1b44e023297c6e950f2eed16285fd762f6359c4dc0c44d2f771c8850ba8f4375",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/lighting.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/time-provider.mjs",
+      "bytes": 1579,
+      "sha256": "0a443889e7b888079caa1143bb6fcd8988213fb398490868e805aa82281452a2",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/time-provider.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/tile-animation.mjs",
+      "bytes": 2722,
+      "sha256": "c0830c90bd3225ef455876ae6299dfc4455b1d71ea3af7312cce6914f10b07fc",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/tile-animation.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/tileset-contract.mjs",
+      "bytes": 3639,
+      "sha256": "04babb76159d544568e5f4f932da1b0df3be46ad80ed6d0712181ef223df3e3c",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/tileset-contract.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/weather-layer.mjs",
+      "bytes": 2560,
+      "sha256": "f3dde0860b4bbd987a2b6279b64907113d5645593e4d4b89eb73e71a8f5a2a9a",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/weather-layer.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/battle-vfx.mjs",
+      "bytes": 4453,
+      "sha256": "7ab5c1f8f73bd83eac732b902c82103da82e7a12f1b9861aa0096fcc99dc9f7f",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/battle-vfx.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/audio-hooks.mjs",
+      "bytes": 1748,
+      "sha256": "d367986d43969684a1a4f1992eb9b05221b6b15f75d87d5b38551be9640fd361",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/audio-hooks.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/battle-display.mjs",
+      "bytes": 2263,
+      "sha256": "360fb0a72bfd5f51585f8d70dfa7bfaecfeacfdc3f7d77dc2bd8a393a6a2b562",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/presentation/battle-display.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/compatibility/species-registry.mjs",
+      "bytes": 89513,
+      "sha256": "064a2fabfb235aee28c359cf6250dcd9d50cf767ffcc09c11fd14b4bede6248d",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/compatibility/species-registry.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/canonical-species-assets.mjs",
+      "bytes": 2211,
+      "sha256": "da125c9697a437a0b2fdfcd9540fdfcf43d6cbaf7aa6804903f059f590683b7a",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/canonical-species-assets.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/legacy-assets.mjs",
+      "bytes": 59695,
+      "sha256": "bf68f277931ab00865827de84f681ad95b34c6025e8a995e3ea2e08d952f2b95",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/legacy-assets.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/species-crops.mjs",
+      "bytes": 44175,
+      "sha256": "2170ef32babe6709225784c48b0c2e1c69dbc5d3738bf60d183d1b8c9e904283",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/species-crops.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/field-bindings.mjs",
+      "bytes": 10552,
+      "sha256": "694f1da74f61ae1cd64a370128b65d820fd7a8e9f82dc40636cd188cfffec74c",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/field-bindings.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/w03-human-field.mjs",
+      "bytes": 2067,
+      "sha256": "ddacffb2a238f18afd1d61e7d441b3bcedba8d8abb2de9919d2979c95fad3e76",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-human-field.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/w03-field-atlases.mjs",
+      "bytes": 9320,
+      "sha256": "9dd754bd8e7e9b7c4e1e11ba31abc8e556ab232d8434ee30cd70e1ad01db12de",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-field-atlases.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/art/w03-player-field.mjs",
+      "bytes": 1249,
+      "sha256": "dbaba5076383aec3edc99b17e3d039fac42ddb9a2f681b3a1356c4beb6d7f1d5",
+      "kind": "repository",
+      "source": "tests/fixtures/published-main-8c4f847/dist/art/w03-player-field.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/battle-v3/entrance.mjs",
+      "bytes": 997,
+      "sha256": "01cbd4ca0532880cf551366fbf2545dd590233f9cf46e85aaf04a04bca97edc4",
+      "kind": "repository",
+      "source": "dist/battle-v3/entrance.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/battle-v3/front-policy-r2/adapter.mjs",
+      "bytes": 2494,
+      "sha256": "9c9681a81255fd201e7291f0ce8fba586b74c1146a818a3b9f20a3c5e2ca57f3",
+      "kind": "repository",
+      "source": "dist/battle-v3/front-policy-r2/adapter.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/presentation/battle-render.mjs",
+      "bytes": 1508,
+      "sha256": "c925df7206a121f2bbbca13e852113f4ba669867cce946926b78f1efd6818c3a",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/presentation/battle-render.mjs"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/species-asset-resolver.mjs",
+      "bytes": 1165,
+      "sha256": "38f9b7b8b48aac047b758c4a9fbe5c08002a92cdd9d8d069e39fca13d8da7791",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-notice-v1/dist/species-asset-resolver.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/approved-latest-runtime-adapter.mjs",
+      "bytes": 6553,
+      "sha256": "ce8b8c93337cb2103143b3ae965aa4e782ed2b498ec678250d3d71e1ea0b54f7",
+      "kind": "repository",
+      "source": "dist/compatibility/approved-latest-runtime-adapter.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/canonical-runtime-adapter.mjs",
+      "bytes": 2989,
+      "sha256": "aad8a9a7f2f898ed056c2f3a5e68ad3105080466e83bfd9ee4a28d87222bbf9a",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-runtime-adapter.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/canonical-adapter.mjs",
+      "bytes": 13501,
+      "sha256": "bbc4af253ff1139abb6b206fbaf10d2e6d7f89f36c61013fe2444b3eccd537b1",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-adapter.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/canonical-source-loader.mjs",
+      "bytes": 486,
+      "sha256": "fa8a5662a8d36f47d01a86303af013bff71c1d9638aaadb8222fd0bc6b00b530",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-source-loader.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/preview-opponent-adapter.mjs",
+      "bytes": 3235,
+      "sha256": "4fa60c2af9be2abc6c9eafb61d5bbdac1b7ea085aaab7acb6c8866b1fa9bd338",
+      "kind": "repository",
+      "source": "dist/compatibility/preview-opponent-adapter.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/canonical-source-format.mjs",
+      "bytes": 1693,
+      "sha256": "b7df4c6e264b744b2369b9b1cd8d84e6437e3e5686dbd89c97bf5e8efd7c62fa",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-source-format.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/aquatic-policy-a-v1.mjs",
+      "bytes": 37711,
+      "sha256": "50ac0818166ac71caf07e2f029652f45ccee372167fa7f3ff94fde78cd720ecb",
+      "kind": "repository",
+      "source": "dist/compatibility/aquatic-policy-a-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/aquatic-policy.mjs",
+      "bytes": 1412,
+      "sha256": "880176391cad97d42878df13c7fd497873da4fe1b962b857cce7f36fda460214",
+      "kind": "repository",
+      "source": "dist/compatibility/aquatic-policy.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/yeji-preview-type-stats-v1.mjs",
+      "bytes": 2879,
+      "sha256": "7eff7861eaddc8847816581e21cb37244e8db8ecb5851677209f23b8fce6b3f0",
+      "kind": "repository",
+      "source": "dist/compatibility/yeji-preview-type-stats-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/yeji-base-exp-v1.mjs",
+      "bytes": 1981,
+      "sha256": "6e34c9876807bd5986e25f2307edc07153230f25983556f28f5845ddf53d993f",
+      "kind": "repository",
+      "source": "dist/compatibility/yeji-base-exp-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/enhanced-elite-party-v1.mjs",
+      "bytes": 5721,
+      "sha256": "c7a7f55b86b7207652bcd8383622b209b703528e399391ba45fafc4dd650cecb",
+      "kind": "repository",
+      "source": "dist/compatibility/enhanced-elite-party-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/elite-party-correction-v1.mjs",
+      "bytes": 3893,
+      "sha256": "5f6e5450165046126b66221850a9ff024fbc98e5875850cd8c395233240dce61",
+      "kind": "repository",
+      "source": "dist/compatibility/elite-party-correction-v1.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/canonical-20260927-adapter.mjs",
+      "bytes": 13207,
+      "sha256": "700094af735ab2d7236c140b3622902be87313f26b79060379a2e35f9afc8ea1",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-20260927-adapter.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/save-store.mjs",
+      "bytes": 1610,
+      "sha256": "24e14eafaf7ecc0ff30a183e89e734a9928153ca21c969f6779e33b2aa348c27",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_host_r1/source/world/save-store.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/save-slots.mjs",
+      "bytes": 13387,
+      "sha256": "4c72a352c7fbe23d1721e270411b02cc4f71269352910b2ad742faf0dcc11f72",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-retry-v3/dist/compatibility/save-slots.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/migration-eligibility.mjs",
+      "bytes": 1627,
+      "sha256": "464d4558421ad56677a8693e98a819b60ecd898c4f5f1cbda30b9f93da2b8577",
+      "kind": "repository",
+      "source": "dist/compatibility/migration-eligibility.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/save-migration.mjs",
+      "bytes": 7264,
+      "sha256": "db8e5055cfd3f9b34ee77e60f9afb7aa26d8aa3f4ce02dc08f826d596f17a44d",
+      "kind": "repository",
+      "source": "dist/compatibility/save-migration.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/compatibility/gameplay-release.mjs",
+      "bytes": 2154,
+      "sha256": "ca31010bc09bb4da64c9c08160f44bfa1d4ee00bf0021a7d9724a527aba4f4e3",
+      "kind": "repository",
+      "source": "tests/fixtures/frozen-retry-v3/dist/compatibility/gameplay-release.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_browser_r1/exchange.mjs",
+      "bytes": 5592,
+      "sha256": "63a3eb87fb5a992a4de977feea2f0fd77a22962c53cecf5c1456eccc9d5dc384",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_browser_r1/exchange.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_browser_r1/grid-bridge.mjs",
+      "bytes": 7368,
+      "sha256": "515548b9dc552e0c4fe348630ee083996a588ff97048e6b0e252ed35c401d6bc",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_browser_r1/grid-bridge.mjs"
+    },
+    {
+      "destination": "native_world_selected_t1_host_r1/source/world/render.mjs",
       "bytes": 5866,
       "sha256": "158cc3e3d21fc5ac3fa55d65accad78eb494ed38d5c108cbbb451af726b25bd3",
       "kind": "repository",
       "source": "dist/world/render.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-surf.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-surf.mjs",
       "bytes": 4686,
       "sha256": "910cb03262b1cb2bd58701c6fa60513e6d599a0a7653d9a150a038a9d532b047",
       "kind": "repository",
       "source": "dist/art/approved-surf.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-surf-bindings.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-surf-bindings.mjs",
       "bytes": 3073,
       "sha256": "f4e94095ac470b842ff7cdd2027f2be4e7bbc4c6887c10dd80eb04dd2ad9a444",
       "kind": "repository",
       "source": "dist/art/approved-surf-bindings.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-player-field.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-player-field.mjs",
       "bytes": 2397,
       "sha256": "5dd8c169ea90f8f898edf596e03a8955ec6ae7ee1f2555f2a928d11c8ff87529",
       "kind": "repository",
       "source": "dist/art/approved-player-field.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-player-bindings.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-player-bindings.mjs",
       "bytes": 16457,
       "sha256": "c998eb6bd56d54d66672ac59dbc4fa50dcd42220b8bf5f5030f3452b112162c2",
       "kind": "repository",
       "source": "dist/art/approved-player-bindings.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-surf-wake.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-surf-wake.mjs",
       "bytes": 1532,
       "sha256": "381228247525949bf676b966069dadb76765dfd19b30cab8f21c9179967460bd",
       "kind": "repository",
       "source": "dist/art/approved-surf-wake.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-event-markers.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-event-markers.mjs",
       "bytes": 909,
       "sha256": "0ac8e9fcfb7680a2a2ca481ffde8858bfd0505b498397b248ff1d5cf6600cf40",
       "kind": "repository",
       "source": "dist/art/approved-event-markers.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/prologue-prop-bindings.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/world/prologue-prop-bindings.mjs",
       "bytes": 2269,
       "sha256": "dbcff062db6fea1b4cf842e9b318238f7a5b31efb6cd8399fc6c5ab68f5a104c",
       "kind": "repository",
       "source": "dist/world/prologue-public-bindings.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/prologue-public-decoration.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/world/prologue-public-decoration.mjs",
       "bytes": 8466,
       "sha256": "435e2fe709d5f5e672e16b837c44e654b52bce40c59baad8a6fd2ed05c76474c",
       "kind": "repository",
       "source": "dist/world/prologue-public-decoration.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/approved-field-terrain.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/approved-field-terrain.mjs",
       "bytes": 10042,
       "sha256": "4e67e4e3c54fdbc2facd772b44c71fc29ed74bbb6965b73304c90eca977c423e",
       "kind": "repository",
       "source": "dist/approved-field-terrain.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/approved-terrain-sources.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/approved-terrain-sources.mjs",
       "bytes": 4275,
       "sha256": "1d609b451e966ab7cc412ca49de263aa932ecb4f88c9ed958e9d5504181b6f5e",
       "kind": "repository",
       "source": "dist/approved-terrain-sources.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-field-proof.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-field-proof.mjs",
       "bytes": 2388,
       "sha256": "3871772e85d1c4ba07a18c80b888bf5e7b4c27da34f36c5da226110eb2d028b4",
       "kind": "repository",
       "source": "dist/art/approved-field-proof.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-field-proof-bindings.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-field-proof-bindings.mjs",
       "bytes": 2277,
       "sha256": "56cd38cea6b5628bc82c302bc7ebb56c674e29b127d2b30496b11a3735bbf43e",
       "kind": "repository",
       "source": "dist/art/approved-field-proof-bindings.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/world/prologue-public-bindings.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/world/prologue-public-bindings.mjs",
       "bytes": 2269,
       "sha256": "dbcff062db6fea1b4cf842e9b318238f7a5b31efb6cd8399fc6c5ab68f5a104c",
       "kind": "repository",
       "source": "dist/world/prologue-public-bindings.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-npc-field.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-npc-field.mjs",
       "bytes": 2298,
       "sha256": "c1ae1a712d21a5cce528d26177d32ea6bdd5d1e6299c3f16517620383163e2ad",
       "kind": "repository",
       "source": "dist/art/approved-npc-field.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/art/approved-npc-bindings.mjs",
+      "destination": "native_world_selected_t1_host_r1/source/art/approved-npc-bindings.mjs",
       "bytes": 313915,
       "sha256": "b36a50fef9b5bbad513496333e1e45de4f1010e269a6db68985cb8cf2699b030",
       "kind": "repository",
@@ -1234,854 +1507,854 @@
       "entry": "native_world_cadence_probe_r1/cadence.mjs"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_species_151_v3_final.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_species_151_v3_final.json",
       "bytes": 145989,
       "sha256": "77715d80a2acf27bd4a8361cecc6762bb1da03e3328e5d12505912b15836e0c8",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_species_151_v3_final.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_stage_master_v2_3.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_stage_master_v2_3.json",
       "bytes": 53626,
       "sha256": "56ba5f61799412045ca2a589296cfcfdf5bee6e393d282b2e31a99f593b0ca67",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_stage_master_v2_3.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json",
       "bytes": 144226,
       "sha256": "97f74202a8ed746fb98b4f51fd8d141875b9367168a3c8e3723745657e70465e",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_story_flags_master_v2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_story_flags_master_v2.json",
       "bytes": 53335,
       "sha256": "094296f78b96c64150a2f19fc79ac0c77061a8e2a7041422809cfeb8a1aff449",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_story_flags_master_v2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_fishing_master_v1_1.csv",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_fishing_master_v1_1.csv",
       "bytes": 10147,
       "sha256": "8d222764dddfcd8ddd620154965115d8ae16dbdd8fae24ed4a8cbfb342eb1904",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_fishing_master_v1_1.csv"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_character_npc_master_v2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_character_npc_master_v2.json",
       "bytes": 9665,
       "sha256": "13162821a55583e46befb73bc36b08c726ee69cc6c2bd7bba39f92d2a67dcdcf",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_character_npc_master_v2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_acquisition_master_v2.csv",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_acquisition_master_v2.csv",
       "bytes": 13629,
       "sha256": "6402849dff09adc8052a5a7f2ab04fea8fe61be175034b4cd0a4e9552a2b9f15",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_acquisition_master_v2.csv"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_save_schema_v2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_save_schema_v2.json",
       "bytes": 23274,
       "sha256": "8cfe3c0291674b8fff971dd4d77412eee9e0317c40166e62bd6f6f89ee1ba70f",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_save_schema_v2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_save_migration_alias_v1_to_v2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_save_migration_alias_v1_to_v2.json",
       "bytes": 11845,
       "sha256": "b994b878e36d47f2c2728d8a3e5020c3c907e72a1638c76eb2737924be42fa67",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_save_migration_alias_v1_to_v2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_canonical_handoff_index_v1.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_canonical_handoff_index_v1.json",
       "bytes": 2984,
       "sha256": "9fae4f4b67640c83e4019022ea7e602f3d1a6ccde5db1bc5e373f4b9f406776e",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_canonical_handoff_index_v1.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_final_source_manifest_v1.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_final_source_manifest_v1.json",
       "bytes": 33825,
       "sha256": "915e0ac814afb9bfa4142bd0d0884a9005c1ce9afe4e790154c39267b43248dc",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_final_source_manifest_v1.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_cross_validation_report_v2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_cross_validation_report_v2.json",
       "bytes": 9608,
       "sha256": "000e3172b0e307b44929cae5131acc7bc6aae4d25d0c8a1517676082ea9bb34f",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_cross_validation_report_v2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_online_battle_master_v1.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_online_battle_master_v1.json",
       "bytes": 13578,
       "sha256": "15576e95979c1e58e94a67a238016f9554a91342dbe647e2aa5723ff22eed242",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_online_battle_master_v1.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_encounter_master_v2_3.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_encounter_master_v2_3.json",
       "bytes": 270912,
       "sha256": "eb1fc73300e52e6005f7c107fb39ff56466aa4ab1e731881513b71b7b4b7768c",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_encounter_master_v2_3.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_online_battle_firebase_rules_contract_v1.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_online_battle_firebase_rules_contract_v1.json",
       "bytes": 22979,
       "sha256": "6b20bda26c745579d35507d5790945294a1ae428f3aa5fe5da8b3df1d27b3835",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_online_battle_firebase_rules_contract_v1.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/database.rules.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/database.rules.json",
       "bytes": 17394,
       "sha256": "8cff90f662ad2c5add5eaeac93e26550a9efa01da8019eb9abf0e248f37058cb",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/database.rules.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/STAGING_SHA256_INDEX.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/STAGING_SHA256_INDEX.json",
       "bytes": 2610,
       "sha256": "d307160e190f2307e401e5a8487407c5640b4932cf3069a20955fd8235065feb",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/STAGING_SHA256_INDEX.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
       "bytes": 611995,
       "sha256": "0bf068f2ec0e4752e60439f2a7cac5924aff66fcf65e2d23d96e93b96b2f70a8",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_battle_collection_master_v3_2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_battle_collection_master_v3_2.json",
       "bytes": 618189,
       "sha256": "637b9fa3cb78abd8ff9d2e2eb24ad0fd201cdd73d715d646ae69ca52b8ecf8e8",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_battle_collection_master_v3_2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_trainer_npc_master_v2_2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_trainer_npc_master_v2_2.json",
       "bytes": 271009,
       "sha256": "2d6a42890f22c0a320411c3e7d58044f708949976b0c2d3630ee7e86b0004b06",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_trainer_npc_master_v2_2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_character_npc_master_v2_1.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_character_npc_master_v2_1.json",
       "bytes": 11152,
       "sha256": "513d484001aef21fd99f1a96a377c00c980288c083bf35d0d541408e2d223fb4",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_character_npc_master_v2_1.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_stage_master_v2_4.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_stage_master_v2_4.json",
       "bytes": 51802,
       "sha256": "35edc2a2298a114b89d71863732df96424fb83165c8035ba7753ef5b9cf6cf66",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_stage_master_v2_4.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_story_flags_master_v3.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_story_flags_master_v3.json",
       "bytes": 52883,
       "sha256": "24b48c14d16b24cec968a031c3e85fdcb4aed72a97ae5894a78ee87438ed2001",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_story_flags_master_v3.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_encounter_master_v2_4.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_encounter_master_v2_4.json",
       "bytes": 242705,
       "sha256": "28c0b915c013b35729c4dd5cfeec0d65cc3d4f576c479183ed9140fd93b2591e",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_encounter_master_v2_4.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_save_schema_v3.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_save_schema_v3.json",
       "bytes": 25586,
       "sha256": "ba305e1fa75b630d1e19429495734f644f3bce9b066cdb888ca91d1224b6f70f",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_save_schema_v3.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_species_151_v3_final.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_species_151_v3_final.json",
       "bytes": 145989,
       "sha256": "77715d80a2acf27bd4a8361cecc6762bb1da03e3328e5d12505912b15836e0c8",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_species_151_v3_final.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_fishing_master_v1_1.csv",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_fishing_master_v1_1.csv",
       "bytes": 10147,
       "sha256": "8d222764dddfcd8ddd620154965115d8ae16dbdd8fae24ed4a8cbfb342eb1904",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_fishing_master_v1_1.csv"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_acquisition_master_v2.csv",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_acquisition_master_v2.csv",
       "bytes": 13629,
       "sha256": "6402849dff09adc8052a5a7f2ab04fea8fe61be175034b4cd0a4e9552a2b9f15",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_acquisition_master_v2.csv"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/data/staging-20260927/geoje_save_migration_alias_v1_to_v2.json",
+      "destination": "native_world_selected_t1_host_r1/source/data/staging-20260927/geoje_save_migration_alias_v1_to_v2.json",
       "bytes": 11845,
       "sha256": "b994b878e36d47f2c2728d8a3e5020c3c907e72a1638c76eb2737924be42fa67",
       "kind": "repository",
       "source": "docs/terminal-playable-qa-v1/data/staging-20260927/geoje_save_migration_alias_v1_to_v2.json"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_GRASS_SHORT.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_GRASS_SHORT.png",
       "bytes": 48129,
       "sha256": "399ac67cb94dcc818c1e6d9de03339fcb9c35aa036627df356199fb94cd47e7a",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_GRASS_SHORT.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_PATH_EARTH.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_PATH_EARTH.png",
       "bytes": 82286,
       "sha256": "b349e224264ce621b0274d111f9f85721873a91ecf320bbd5f662d91531369d8",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_PATH_EARTH.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_SEA.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_SEA.png",
       "bytes": 48286,
       "sha256": "bafff1f385b4c0559ba6171812e264331c704a551713774ba67eb389d41e7e8d",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_SEA.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_SHALLOW.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_SHALLOW.png",
       "bytes": 47194,
       "sha256": "4e477604e07f1dbe090a68d18d6e0c2e994c9135c2067a37170146fd7119ff94",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_SHALLOW.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_MONGDOL_DRY.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_MONGDOL_DRY.png",
       "bytes": 107411,
       "sha256": "ea6c228e93241d961466e31b03ca880f703d7fbd2a2ee2ece5e133026ff32378",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_MONGDOL_DRY.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/X_GRASS_FRINGE.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/X_GRASS_FRINGE.png",
       "bytes": 87549,
       "sha256": "400bfb17608298142c342c5adb21a6f18b79e6fae3210bc2d356dea65284fc7a",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/X_GRASS_FRINGE.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/O_TALL_GRASS_A.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/O_TALL_GRASS_A.png",
       "bytes": 34472,
       "sha256": "854e7da621b3659138f29671032e2ba58c9a1aafae0b8abae3799ba2812033cf",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/O_TALL_GRASS_A.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/O_WILDFLOWER.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/O_WILDFLOWER.png",
       "bytes": 43258,
       "sha256": "a006efd50b8b33bc7bc5610d4c77846510b89fd7c9a635ed7279104e66d8b2b8",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/O_WILDFLOWER.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_SEA_1.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_SEA_1.png",
       "bytes": 48324,
       "sha256": "422f0764b32fe418ab234e6fa1311b588070b3e24722fb9004bc40695b5794cb",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_SEA_1.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_SEA_2.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_SEA_2.png",
       "bytes": 48299,
       "sha256": "581ed9a6716b04850f367ddd998cd66fae3d497a6b72426e382615f6a4acc23b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_SEA_2.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_SHALLOW_1.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_SHALLOW_1.png",
       "bytes": 47221,
       "sha256": "652b8e3b1e759d72fe153aa7e9bbec9900b1711b5778d1fd5b7332645631141e",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_SHALLOW_1.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_SHALLOW_2.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_SHALLOW_2.png",
       "bytes": 47231,
       "sha256": "d381fee98d131175940797f523bc16097fc870b18d3cb862aecb86af47d289f6",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_SHALLOW_2.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_0.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_0.png",
       "bytes": 83835,
       "sha256": "314643f990f64c2e4d17443547562b3eb1eab7c1164a435cf2f26d37a9f834ed",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_0.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_1.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_1.png",
       "bytes": 78754,
       "sha256": "8f03e0228fa0fcf0e985537bc9dd39bc532ccbeeaaf5b7d5fb5c30a8863d3998",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_1.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_4.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_4.png",
       "bytes": 78877,
       "sha256": "9f7f69a64dbd41726f6bf639407426e4022e9bd1007bc9e231f8ecf6610ed4ad",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_4.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_5.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_5.png",
       "bytes": 72970,
       "sha256": "1368d21bac819677634f30d58359e6459d61a518e3ade9396dc7a7fea8392d73",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_5.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_7.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_7.png",
       "bytes": 72221,
       "sha256": "fc369786603763c0a37960966f1fdbcc75f2d0b331fe7f66157237bc9c1d8a22",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_7.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_16.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_16.png",
       "bytes": 78804,
       "sha256": "5619c7dca4b2a727e02b9b46cc107338cf31c05538271012394a1b5b672aa5a6",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_16.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_17.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_17.png",
       "bytes": 73497,
       "sha256": "53b922cc30f7bab97001a107ab74456e7b0bf39d00a1f0447bb04c3603e6e0cd",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_17.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_20.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_20.png",
       "bytes": 73006,
       "sha256": "ef95220cd07ff016b7d4483807e47ff1b8a4388892c61288f25e17eccb3ed8e7",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_20.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_21.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_21.png",
       "bytes": 67219,
       "sha256": "d3b64c9d113d56bdb9b52bdfce311f2cc412df0abbb487cc6b23bae3fc4e4c2b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_21.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_23.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_23.png",
       "bytes": 66521,
       "sha256": "79a41f56aaa94a2a722bf1034f1ea389531caf3f32b8255c5f551c101e31e6c6",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_23.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_28.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_28.png",
       "bytes": 72341,
       "sha256": "58fd7d3049205cf6a8508e508218fb6cbfa30c9f1fbfaf73561a4b0fe5464e7b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_28.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_29.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_29.png",
       "bytes": 66565,
       "sha256": "fdb07a5c5479c7b39e4bf2d5928a2b5b4f4233c502c9a62c6c7f9abe2d68bb0b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_29.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_31.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_31.png",
       "bytes": 65871,
       "sha256": "8d7793f316ed81fe16ac15950577b2f6bfacf7dab2b366feba21a0a0c4ce5638",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_31.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_64.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_64.png",
       "bytes": 78395,
       "sha256": "f0c98f7d3043e414c0d5cf3aab79d2b8aaeff4859ac29834cc7be458820affaa",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_64.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_65.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_65.png",
       "bytes": 72443,
       "sha256": "2b1ae1bc91fea1fe6d10fa30166216e6a480a3361827db4b4ec4d4ef9c37c295",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_65.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_68.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_68.png",
       "bytes": 72371,
       "sha256": "048e77fa0a4eee5ad339c0060348f6051351bfabe02b18328dea576b6b5fd382",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_68.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_69.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_69.png",
       "bytes": 64593,
       "sha256": "936c4a2b1652f12f6fe26044680af152910472f8a001064e7dbe8d0b5a70dd0b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_69.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_71.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_71.png",
       "bytes": 63922,
       "sha256": "d5adeea36d4c712a068efbdccaddaedee2574ff29e68b71d3155afbf555b218b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_71.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_80.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_80.png",
       "bytes": 72833,
       "sha256": "2292894f0908a814fa516835c5d432ae5a4c35b162ff5d3570f7c46ef865cfb6",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_80.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_81.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_81.png",
       "bytes": 67004,
       "sha256": "1d75f355d9961091bb9fa12d777f27f01252a8cd4445a9390c71e1d07f77a5cc",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_81.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_84.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_84.png",
       "bytes": 66265,
       "sha256": "d4966db9ad68d3868fae82ad3654e743212aa2b0703b67313af5506ab7c96b61",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_84.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_85.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_85.png",
       "bytes": 59339,
       "sha256": "baa91379a77dbeaa76d0b8cd4e48dd42406682a8bcde4ba3cac059d11f222648",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_85.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_87.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_87.png",
       "bytes": 58455,
       "sha256": "f9bc7fd7b73025ff357b45c4b9363cd20bb822998cf3cfb9fc6e365832cc4c64",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_87.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_92.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_92.png",
       "bytes": 65485,
       "sha256": "67bc77eb9e89a9982104fa9874469eb3871f9e53f18e2058022deb9dab7a1eb8",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_92.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_93.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_93.png",
       "bytes": 58670,
       "sha256": "7a3031076b317d711a124165062b52707ef5426fedb888c00187f06a98f87b86",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_93.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_95.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_95.png",
       "bytes": 57767,
       "sha256": "6807c5bf2f07de1ff06202ac6038ba67e57c18a159717dcab967ebcb31675fa3",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_95.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_112.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_112.png",
       "bytes": 71982,
       "sha256": "c45b8dadd34c925f0880b6289aa64578943f0b5e02747549121d6e59f5011c59",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_112.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_113.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_113.png",
       "bytes": 66146,
       "sha256": "14729bc21bb827d4035e438fc21ac2ef60793a72d41b367cda35ccf60071bf39",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_113.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_116.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_116.png",
       "bytes": 65247,
       "sha256": "883c5dfe1824b66732894296d432348a5ae474f848b501ea4fcbde7c04a876ad",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_116.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_117.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_117.png",
       "bytes": 58465,
       "sha256": "320b70656b6f3626817edadeb8c1708bdacdd3d5becc61d6de5564e248a9e027",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_117.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_119.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_119.png",
       "bytes": 57570,
       "sha256": "e5599cd8c955397e2077e51228d12b8bdb5adb3d4f090ff1425813455cdda3c5",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_119.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_124.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_124.png",
       "bytes": 64323,
       "sha256": "505d54c9a3aa3e3feb9047a88088962147cf190796817f9104bf45f0a591bfce",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_124.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_125.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_125.png",
       "bytes": 57601,
       "sha256": "a096feb18572d91c6575346b41f32da7a67ef5cf708a2ebf682fb34aaa6017ed",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_125.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_127.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_127.png",
       "bytes": 56708,
       "sha256": "f812731952272e58a713e5bafe229fd8e4d2008ee0e773f345086378fd5a402a",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_127.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_193.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_193.png",
       "bytes": 71706,
       "sha256": "275640cd6e4b1df388d2ecff7534292f176010129ba5e219a0680afac3adaf63",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_193.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_197.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_197.png",
       "bytes": 63914,
       "sha256": "b82b9f50c433fbdf66a2e67d4edb7b299eddd0d17ea3aa84210bd55d8bf477e7",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_197.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_199.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_199.png",
       "bytes": 63309,
       "sha256": "6406302971e7c7d3eec0a3307b1bdf160228b10ea9d38cf75f145189a5b208af",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_199.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_209.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_209.png",
       "bytes": 66317,
       "sha256": "452f8a07a0cba587afa67564e304199941fc5bd217ccf9bdb0e434d0edf57d3a",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_209.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_213.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_213.png",
       "bytes": 58450,
       "sha256": "0412b8c6327d16a93b1281d38c051b84a573571abd33a1fc4b48ed568049739e",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_213.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_215.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_215.png",
       "bytes": 57541,
       "sha256": "69333ffe62eb4e47d4d22f6d56f359a1c52f211068e105986f8dbdcd56a76f0e",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_215.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_221.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_221.png",
       "bytes": 57758,
       "sha256": "a4b71ce90718b0e7579e2ec02758dacff35bea2ef5dadbb494a51360ca172353",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_221.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_223.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_223.png",
       "bytes": 56806,
       "sha256": "742cdd2c294a8b8fad7bea7ebe9f6d1399d5b254fae6704cdbe2d0691819c15e",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_223.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_241.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_241.png",
       "bytes": 65450,
       "sha256": "dc666e7bb0dd294f334515eb59df31771aceaf8b659fa2d3860964bd58181dfd",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_241.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_245.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_245.png",
       "bytes": 57558,
       "sha256": "d5cedc7eca87e27a05dfee8f7a0ff7050458ce2e769ef587ef5a44c37fd7312b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_245.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_247.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_247.png",
       "bytes": 56568,
       "sha256": "e6007d53ba554507c7eaa27bea6bbcbbe5524399ee3032a286b046e8e5eeeb6c",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_247.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_253.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_253.png",
       "bytes": 56693,
       "sha256": "2993ff57f242d8cd9938d5eb710b0b9abc358a55897275cc986079ee5d6ca816",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_253.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/TR_GRASS_PATH_255.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/TR_GRASS_PATH_255.png",
       "bytes": 55661,
       "sha256": "1ae196c7af0170cd4ebd6e6da1ad763e15bb1e0b061f464a9f9b1b1844f4d7b4",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/TR_GRASS_PATH_255.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/G_DECK_WOOD.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/G_DECK_WOOD.png",
       "bytes": 85973,
       "sha256": "802332e7dbfd958ac223557a595e7e7d634b111cc3ff63a758cedd6bbf288857",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/G_DECK_WOOD.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/FX_FOAM_BASE.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/FX_FOAM_BASE.png",
       "bytes": 9417,
       "sha256": "a021067ceac5d2b0e19fb315af984c3d6ef0c47175d0aa3e1f380f4404fcbb56",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/FX_FOAM_BASE.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-terrain/O_SIGN_WOOD.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-terrain/O_SIGN_WOOD.png",
       "bytes": 44120,
       "sha256": "0ad89d54a8a00c81c655cc4d66d0593477d77cc628e8afe79fea143143f5880e",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-terrain/O_SIGN_WOOD.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_BENCH.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_BENCH.png",
       "bytes": 22176,
       "sha256": "7238fd1c6b0139424fd79b87759c046e94b107867c0a253c47c2bbea1727a26b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_BENCH.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_LAMP_STREET.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_LAMP_STREET.png",
       "bytes": 17106,
       "sha256": "a1df1d008fa410d133dab24b2b12c1689773bb0f57573562625d9a1a8c04ef98",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_LAMP_STREET.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_SIGN_WOOD.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_SIGN_WOOD.png",
       "bytes": 13748,
       "sha256": "0fc6082740f78bab105105965423ee3a6f474e5cf140446c4a75dcbbac1c94c0",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_SIGN_WOOD.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_FENCE_WOOD.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_FENCE_WOOD.png",
       "bytes": 14210,
       "sha256": "b53d22c4e24ca7d9d8bc6d5474787302b7b1d5f12a19713513b6acae0d59c298",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_FENCE_WOOD.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_PLANTER.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_PLANTER.png",
       "bytes": 26904,
       "sha256": "c379162d566d33e5f313e32be70cf9c0e1da88170e366cf2545240daf6494136",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_PLANTER.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_SHRUB_ROUND.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_SHRUB_ROUND.png",
       "bytes": 10921,
       "sha256": "e9d9046df6f0c2dd8addd139ebaf6da70cf6e7569b93744533f5632e0b869a4c",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_SHRUB_ROUND.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_WOODLAND_SHRUB.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_WOODLAND_SHRUB.png",
       "bytes": 15571,
       "sha256": "2fb326bc6f5d483d878d214dc364a103a59c2566b01212d78c9749c63e58305d",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_WOODLAND_SHRUB.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/G_PAVER_LIGHT.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/G_PAVER_LIGHT.png",
       "bytes": 99003,
       "sha256": "8e78bd9b291d064dc13355209e70da47bd3cb94e1e498b5f163acea1db3d3876",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/G_PAVER_LIGHT.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_CAMELLIA_BLOOM_base.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_CAMELLIA_BLOOM_base.png",
       "bytes": 11506,
       "sha256": "57a32aa5b4dd7b4ffd6b93a1102b8e6211a3e3aab634a7c81fa83e39f50e7773",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_CAMELLIA_BLOOM_base.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_CAMELLIA_BLOOM_foreground.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_CAMELLIA_BLOOM_foreground.png",
       "bytes": 75445,
       "sha256": "db8501162a75133d3cbb05b7d5e65d769494add990b4833e281089996e9c14a7",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_CAMELLIA_BLOOM_foreground.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_EVERGREEN_BROAD_base.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_EVERGREEN_BROAD_base.png",
       "bytes": 23403,
       "sha256": "e616bd5c34520a14e858f37fbd258cc30dcb5eee15d238f9916027066286c0c4",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_EVERGREEN_BROAD_base.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/O_EVERGREEN_BROAD_foreground.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/O_EVERGREEN_BROAD_foreground.png",
       "bytes": 145063,
       "sha256": "60ceefedb6f7ac4f17e8ef29cf0c1f71aa6985df0a8613d4bfb4b30b0372d783",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/O_EVERGREEN_BROAD_foreground.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-prologue/G_FOREST_MOSS.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-prologue/G_FOREST_MOSS.png",
       "bytes": 93445,
       "sha256": "7c9c976194d722ebf98788dec4643e1d1bf84f4f662e8c72482545269ca88747",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-prologue/G_FOREST_MOSS.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-field-proof/center_base.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-field-proof/center_base.png",
       "bytes": 405424,
       "sha256": "00e4c6446f0ff335419a3c78ea3117074e4267c05f66246dbff48c9331d249db",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-intro/center.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-field-proof/center_foreground.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-field-proof/center_foreground.png",
       "bytes": 421925,
       "sha256": "afc6cb59e4d74680d7f0ed808ba6f1f207567f69fd1fd374088ba28b3f106f6e",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-intro/centerTop.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-field-proof/door_closed.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-field-proof/door_closed.png",
       "bytes": 138789,
       "sha256": "39e26cf3666bd7be0456ee69425f90e233a60cb4e4e0df8a6953577cbe2f5d0b",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-field-proof/door_closed.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-field-proof/door_open.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-field-proof/door_open.png",
       "bytes": 140032,
       "sha256": "b2184a491d269d8260fcbb84d10fd6e5f07f8bbc5993d8aca5496632bca25629",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-intro/door.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-field-proof/pine_base.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-field-proof/pine_base.png",
       "bytes": 31067,
       "sha256": "f8209d385116d8760e5b6fb65979776bcfc35f7a42359bfefb50b04b9c761ae6",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-intro/tree.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-field-proof/pine_foreground.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-field-proof/pine_foreground.png",
       "bytes": 235338,
       "sha256": "3216157e918d783d6ddac77036acb06277b29489880319ce5936ca62bc64d9ab",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-intro/treeTop.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-field-proof/table.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-field-proof/table.png",
       "bytes": 97343,
       "sha256": "442c7be1839d006e75ea7ad52fd3437d4f5632b46dec28330f5c23f6b09db5de",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-intro/desk.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_male_front_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_male_front_surf_rider-2x.webp",
       "bytes": 23974,
       "sha256": "fa36b4dee82d5ac6ac6bde92db7e9d45b851ad6599ee990395803145bd45d692",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_male_front_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_male_right_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_male_right_surf_rider-2x.webp",
       "bytes": 20100,
       "sha256": "c671b4b680aedd7475181dee2de5eb88350743580fe30e241eb7b812f0067773",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_male_right_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_male_left_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_male_left_surf_rider-2x.webp",
       "bytes": 19994,
       "sha256": "5ea320fdb146096ccf5c5b00135155b765732b98b0cb750157fc4edf07fbafd9",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_male_left_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_male_back_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_male_back_surf_rider-2x.webp",
       "bytes": 18886,
       "sha256": "0f772dc72c64578245b07a273458ba0f1dd642aa115265ee82577201bda7600e",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_male_back_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_female_front_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_female_front_surf_rider-2x.webp",
       "bytes": 25352,
       "sha256": "467e0dc161bedb03a71e9324da8e4fc0ecc12d17901a40fb2e86f00003f09856",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_female_front_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_female_right_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_female_right_surf_rider-2x.webp",
       "bytes": 22344,
       "sha256": "b0d4a2667c6de4eb22e9ab71d25b30d5fff6cd57230ac688c35b354fedd977e7",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_female_right_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_female_left_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_female_left_surf_rider-2x.webp",
       "bytes": 23806,
       "sha256": "ac750e9ef3acaf79defb1a0c538355ab50abafce9aa456a3fa773ef123f648f8",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_female_left_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/action_player_female_back_surf_rider-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/action_player_female_back_surf_rider-2x.webp",
       "bytes": 21040,
       "sha256": "c8c8d3663064922d32ec09bffd2ccc3563a7c421d97af05fb5c5b7fd3bbbc6e5",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/action_player_female_back_surf_rider-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-surf/board-2x.webp",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-surf/board-2x.webp",
       "bytes": 19060,
       "sha256": "8fa6e07e98a62e2ed76af01576aae35deb828c4a2a1f19d8462de67482e4bfc2",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-surf/board-2x.webp"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-atlases/player/PLAYER_FEMALE.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-atlases/player/PLAYER_FEMALE.png",
       "bytes": 497916,
       "sha256": "f61e7c3c087568e05f9f85336f322b287709a45669704c481e00f3f29f5d05f7",
       "kind": "repository",
       "source": "docs/ordinary-integration-v1/assets/approved-atlases/player/PLAYER_FEMALE.png"
     },
     {
-      "destination": "native_world_selected_spatial_r1/source/assets/approved-atlases/player/PLAYER_MALE.png",
+      "destination": "native_world_selected_t1_host_r1/source/assets/approved-atlases/player/PLAYER_MALE.png",
       "bytes": 439272,
       "sha256": "e8402fba91d3d90ac4da0382baeb033148465e310f9782aff48c1a58caa35af7",
       "kind": "repository",
@@ -2327,23 +2600,93 @@
       "source": "docs/ordinary-integration-v1/assets/approved-atlases/npc/LOCAL_RESIDENT_M_BASE.png"
     },
     {
-      "destination": "native_world_selected_browser_r1/index.html",
-      "bytes": 2364,
-      "sha256": "9b309c61cb0ed29bf00d33006f66f3d14e8f6a79c65dca71eab30409fafc66f4",
-      "kind": "source-bundle",
-      "entry": "native_world_selected_browser_r1/index.html"
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_003.png",
+      "bytes": 451359,
+      "sha256": "dfcdad9b7248e721e981998f65936ace26f5340976a1889adba4f946d181e56c",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-atlases/species/SPECIES_003.png"
     },
     {
-      "destination": "native_world_selected_browser_r1/fixture.json",
-      "bytes": 95683,
-      "sha256": "755d3d94ce928c398d8549d7d7499ba8cdc36b7731ce2c357987113a9a7b6593",
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_006.png",
+      "bytes": 514101,
+      "sha256": "bde9625fc657e45eaa50f42946c03712e4e208be8aa9fec284136b29c3b18c2a",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-atlases/species/SPECIES_006.png"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_009.png",
+      "bytes": 473892,
+      "sha256": "8b3f8a06fbfa600c4829f83685c2d4005dde42d2d6f2fb39fb46731f78d3d69d",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-atlases/species/SPECIES_009.png"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_096.png",
+      "bytes": 327529,
+      "sha256": "f12d93d7327b01a833f585982bb3808e7aa014a722a4a59ebe4a1c98c2262b7a",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-atlases/species/SPECIES_096.png"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_097.png",
+      "bytes": 357699,
+      "sha256": "765f89461d396853ebfeec103721f0496c1684b5f6c3c2930714dc839e3b976d",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-atlases/species/SPECIES_097.png"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_139.png",
+      "bytes": 347405,
+      "sha256": "11aa2bca4f3b7806965d4d684f6be4556ccd98bc893a398538ad2510422ba7ae",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-atlases/species/SPECIES_139.png"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_010.png",
+      "bytes": 461757,
+      "sha256": "142c0732f8df08fc067d69be86b434039489e276cec20eff63cf8ee0795f703b",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-atlases/species/SPECIES_010.png"
+    },
+    {
+      "destination": "restore_r40_0002/public_consumer/dist/assets/approved-battle-backgrounds/GYM.png",
+      "bytes": 1497230,
+      "sha256": "0fbdc2f555cce368ccd00501012b94b756cc48d6105cbe687f595fbc374e3b58",
+      "kind": "repository",
+      "source": "docs/ordinary-integration-v1/assets/approved-battle-backgrounds/GYM.png"
+    },
+    {
+      "destination": "native_world_selected_t1_browser_r1/index.html",
+      "bytes": 2598,
+      "sha256": "8a2dd73e25f541a7786cf387aea21551e646d74052e621d86c3acf93769a077e",
       "kind": "source-bundle",
-      "entry": "native_world_selected_browser_r1/fixture.json"
+      "entry": "native_world_selected_t1_browser_r1/index.html"
+    },
+    {
+      "destination": "native_world_selected_t1_browser_r1/win-fixture.json",
+      "bytes": 95940,
+      "sha256": "6f97b6f942603205088710e44605bea1316751fa885620556958b0286b38ddd8",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_browser_r1/win-fixture.json"
+    },
+    {
+      "destination": "native_world_selected_t1_browser_r1/loss-fixture.json",
+      "bytes": 98872,
+      "sha256": "06a7c95750fb544d70b78c2c50fbe58531a86c4cd16b62b999eb3a8207d230f1",
+      "kind": "source-bundle",
+      "entry": "native_world_selected_t1_browser_r1/loss-fixture.json"
+    },
+    {
+      "destination": "native_t1_battle_panel_r1/panel.css",
+      "bytes": 766,
+      "sha256": "8dabcf5ea4a9b77e76eecce564d36bed8cde75753e492af87556d009370b9163",
+      "kind": "source-bundle",
+      "entry": "native_t1_battle_panel_r1/panel.css"
     }
   ],
   "bundle": {
     "source": "SOURCE_BUNDLE.json",
-    "bytes": 271169,
-    "sha256": "9a3078da07a49e54b8c66dfc867083815f217df5977c353698a629e8948289c0"
+    "bytes": 409695,
+    "sha256": "0cc851196def14d0405dd74ca23db6b2f24ee7cdd34c9e83f1618491beadaca7"
   }
 }
