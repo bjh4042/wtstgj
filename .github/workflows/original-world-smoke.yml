@@ -1,4 +1,4 @@
-name: One bounded original World cadence core check
+name: One bounded original World selected ports check
 on:
   push:
     branches: [codex/geoje-feedback-20261102]
@@ -10,11 +10,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: geoje-original-world-cadence-20261103-r4
+  group: geoje-original-world-selected-20261103-r1
   cancel-in-progress: false
 jobs:
   smoke:
-    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World cadence 20261103-r4'
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World selected 20261103-r1'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
