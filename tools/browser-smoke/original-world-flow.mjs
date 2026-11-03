@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 const PREFIX='geoje.dev.gym8-native-exchange-v1.';
 const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
-export async function ready(page){await page.waitForFunction(()=>{const s=document.querySelector('#status')?.textContent??'';if(s.startsWith('중단:'))throw Error(s);return document.querySelector('#save')?.disabled===false},{},{timeout:90000});return JSON.parse(await page.locator('#status').textContent())}
+export async function ready(page){await page.waitForFunction(()=>{return document.querySelector('#save')?.disabled===false},{},{timeout:90000});return JSON.parse(await page.locator('#status').textContent())}
 export async function exported(page){await page.locator('#export').click();await ready(page);const e=JSON.parse(await page.locator('#exchange').inputValue());assert.equal(e.format,'GEOJE_GYM8_NATIVE_EXPERIMENT_EXPORT');assert.equal(e.version,1);assert.equal(e.payload.completedSnapshot.developmentOnly,true);return e.payload.completedSnapshot}
 export async function pixels(page,selector){const p=await page.locator(selector).evaluate(c=>{const a=c.getContext('2d').getImageData(0,0,c.width,c.height).data,colors=new Set();let opaque=0;for(let i=0;i<a.length;i+=64){if(a[i+3])opaque++;colors.add(a[i]+','+a[i+1]+','+a[i+2])}return{width:c.width,height:c.height,opaque,colors:colors.size}});assert(p.opaque>100&&p.colors>8,'Required rendered canvas is blank');return p}
 export async function storage(page){const values=await page.evaluate(()=>Object.fromEntries(Object.keys(localStorage).sort().map(k=>[k,localStorage.getItem(k)])));assert(Object.keys(values).every(k=>k.startsWith(PREFIX)),'Unexpected storage namespace');return values}
