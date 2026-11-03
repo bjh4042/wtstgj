@@ -1,0 +1,1816 @@
+{
+  "format": "PORTABLE_DEV_EXACT_COPY_V3",
+  "files": [
+    {
+      "bytes": 4337,
+      "sha256": "ed5786f417b0d7a9b2c9aa19b2b9744d5a34c59484671d40968ee5e063c8c524",
+      "destination": "app/actor-pool.mjs",
+      "kind": "source-bundle",
+      "entry": "app/actor-pool.mjs"
+    },
+    {
+      "bytes": 7659,
+      "sha256": "34f9a5593a3971e64bdec68963559b1b9dfb23db0fea21314f0103d990ef1900",
+      "destination": "app/admission.mjs",
+      "kind": "source-bundle",
+      "entry": "app/admission.mjs"
+    },
+    {
+      "bytes": 9812,
+      "sha256": "eeaffbd6b7ba1147fcc7f3e463316115267afec183f01f1e1e7f6d67152fa076",
+      "destination": "app/bindings.mjs",
+      "kind": "source-bundle",
+      "entry": "app/bindings.mjs"
+    },
+    {
+      "bytes": 3412,
+      "sha256": "446dc50cbbd47637835b8f3c37c1ba9ee832e99acc88b089a94baa48d19a0b1c",
+      "destination": "app/checkpoint-dom.mjs",
+      "kind": "source-bundle",
+      "entry": "app/checkpoint-dom.mjs"
+    },
+    {
+      "bytes": 3023,
+      "sha256": "0924bc46d4f50402e3516f4493f7ea0bc264ecf6f2dc938b8c9c92e57cee5fb6",
+      "destination": "app/codec.mjs",
+      "kind": "source-bundle",
+      "entry": "app/codec.mjs"
+    },
+    {
+      "bytes": 6926,
+      "sha256": "fa9f3389772a7bce3162e4d313d3267bffdf0b1f1df7479518e2927a64bc072b",
+      "destination": "app/controller-pose-authority.mjs",
+      "kind": "source-bundle",
+      "entry": "app/controller-pose-authority.mjs"
+    },
+    {
+      "bytes": 1340,
+      "sha256": "f7d2a7fa9369408664293cf96a2dd85cea3f003f5a4395bee949d0658d1d7209",
+      "destination": "app/digest.mjs",
+      "kind": "source-bundle",
+      "entry": "app/digest.mjs"
+    },
+    {
+      "bytes": 6705,
+      "sha256": "0870d1f2032b2f5625f88a21bc6033dc3a7edf226f9aba418d290381a17cf673",
+      "destination": "app/dom-adapter.mjs",
+      "kind": "source-bundle",
+      "entry": "app/dom-adapter.mjs"
+    },
+    {
+      "bytes": 6197,
+      "sha256": "563725d5a1b234c2032a6f8e96855280f8e110ce778694a4645333f29737e7f3",
+      "destination": "app/entry.mjs",
+      "kind": "source-bundle",
+      "entry": "app/entry.mjs"
+    },
+    {
+      "bytes": 24005,
+      "sha256": "6047484dfe3a4ded46b69509a7b1021e9f9b2c442bd7f6e5ff86541fd0482417",
+      "destination": "app/executor.mjs",
+      "kind": "source-bundle",
+      "entry": "app/executor.mjs"
+    },
+    {
+      "bytes": 6082,
+      "sha256": "cbb982075d6bd2fcc0e7785b6b7c657aaa1c0c2bb77fe35c1c91cb9370b1379f",
+      "destination": "app/fresh-qa-profile.mjs",
+      "kind": "source-bundle",
+      "entry": "app/fresh-qa-profile.mjs"
+    },
+    {
+      "bytes": 1389,
+      "sha256": "a7939e688ff3abd3c1bf25cdf510889bce45c79c03a616a3e3f26820e00b43ea",
+      "destination": "app/gym-projection.mjs",
+      "kind": "source-bundle",
+      "entry": "app/gym-projection.mjs"
+    },
+    {
+      "bytes": 4869,
+      "sha256": "44214f2fe28e6cab927b02441df8ce635faa8b89060c95997c4e335065a553a9",
+      "destination": "app/host.mjs",
+      "kind": "source-bundle",
+      "entry": "app/host.mjs"
+    },
+    {
+      "bytes": 1732,
+      "sha256": "80fc307a910999f886c166df5875ddec3c8dafacce336bc512bb28e14361a12c",
+      "destination": "app/map-driver.mjs",
+      "kind": "source-bundle",
+      "entry": "app/map-driver.mjs"
+    },
+    {
+      "bytes": 2873,
+      "sha256": "4abdc02c260b7daddb45b5eebc29d7dfde7179bab3c733c315ab2e5b29dc556d",
+      "destination": "app/mechanics.mjs",
+      "kind": "source-bundle",
+      "entry": "app/mechanics.mjs"
+    },
+    {
+      "bytes": 1134,
+      "sha256": "b835c907b08d5d1cc4a9a44596eae1176c8600b8b7cb8493bdf0d00d8313ffdc",
+      "destination": "app/motion.mjs",
+      "kind": "repository",
+      "source": "dist/native-walk/motion.mjs"
+    },
+    {
+      "bytes": 66958,
+      "sha256": "6848bccbd4bb13e0215958322d27809bf65421b3a244384c7f21c64552848131",
+      "destination": "app/native-anchors.json",
+      "kind": "source-bundle",
+      "entry": "app/native-anchors.json"
+    },
+    {
+      "bytes": 5560,
+      "sha256": "48ba097b4a85af20574d8a1d40382aeb0985a3bd23d0c47a9bbf3e9a9ead5714",
+      "destination": "app/npc-renderer.mjs",
+      "kind": "source-bundle",
+      "entry": "app/npc-renderer.mjs"
+    },
+    {
+      "bytes": 563,
+      "sha256": "6eac625f35d634c1c66f5506efa8c12f9e4cd98946482762c90059d84f8b0d0c",
+      "destination": "app/npc-solids.mjs",
+      "kind": "source-bundle",
+      "entry": "app/npc-solids.mjs"
+    },
+    {
+      "bytes": 1712,
+      "sha256": "635e3576edf62fb8d6132cd158452b60582a01bbfc3e5a6c21b7ae4cb9ba8f2f",
+      "destination": "app/player-visibility.mjs",
+      "kind": "source-bundle",
+      "entry": "app/player-visibility.mjs"
+    },
+    {
+      "bytes": 1091,
+      "sha256": "9af4328a0e722a835abae0cdb2b80ed4001c6ea3a900aaff81581d31b935bbc9",
+      "destination": "app/port-regions.mjs",
+      "kind": "source-bundle",
+      "entry": "app/port-regions.mjs"
+    },
+    {
+      "bytes": 1866,
+      "sha256": "293305d76466e312fbdf25a57c112b6d083946ec0df8373bcfd1fbb4c8faa48a",
+      "destination": "app/proximity.mjs",
+      "kind": "source-bundle",
+      "entry": "app/proximity.mjs"
+    },
+    {
+      "bytes": 1012,
+      "sha256": "7c31f901d23d438c20743609d489ae7d44393166875ce210cf4474f9e63120c4",
+      "destination": "app/purchase-effect.mjs",
+      "kind": "source-bundle",
+      "entry": "app/purchase-effect.mjs"
+    },
+    {
+      "bytes": 1139,
+      "sha256": "88d096565ee83ebf679094d766f0c0c064bbd046d316b132dc2648910ff2424f",
+      "destination": "app/readonly-observer.mjs",
+      "kind": "source-bundle",
+      "entry": "app/readonly-observer.mjs"
+    },
+    {
+      "kind": "source-bundle",
+      "entry": "app/rule-fingerprint.mjs",
+      "destination": "app/rule-fingerprint.mjs",
+      "bytes": 577,
+      "sha256": "55c346be9b6fe74f8a56b9c21f2fe79ae072e75cb4c472aebbb5dba6f43644b0"
+    },
+    {
+      "bytes": 6630,
+      "sha256": "20ba4c28d82a1cd5bc6fa42cfa10f4116779d4eeaa12be66f403d3c131039bc8",
+      "destination": "app/scene.mjs",
+      "kind": "source-bundle",
+      "entry": "app/scene.mjs"
+    },
+    {
+      "bytes": 4822,
+      "sha256": "6497c2b865a7843bb2b0217ee876397c7b4cbcbdfd349db4b28ba2dc9b508ba8",
+      "destination": "app/session.mjs",
+      "kind": "source-bundle",
+      "entry": "app/session.mjs"
+    },
+    {
+      "bytes": 373,
+      "sha256": "a9e8f804074407cac2731998002e58b54414eed9fb4ede85aa03d962e811491c",
+      "destination": "app/source-identity.json",
+      "kind": "source-bundle",
+      "entry": "app/source-identity.json"
+    },
+    {
+      "bytes": 5629,
+      "sha256": "015f30c08d6fd2d617fc8fd90e5f56fb3836fae1556f21c3091631d4b59699a3",
+      "destination": "app/storage.mjs",
+      "kind": "source-bundle",
+      "entry": "app/storage.mjs"
+    },
+    {
+      "bytes": 19091,
+      "sha256": "d6f101d28e6d7c16ac8a92e0dc346654f32501cdea7a728562c42ffd53d13506",
+      "destination": "app/warp-contracts.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-contracts.mjs"
+    },
+    {
+      "bytes": 2214,
+      "sha256": "a16563f130969e77a7abdb20e37a0ad19c3c2a4d4370f8a09de0451bd2878339",
+      "destination": "app/warp-effect.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-effect.mjs"
+    },
+    {
+      "bytes": 1436,
+      "sha256": "a17c4ef37ed752287cbd9c3c188a07a9ca4994659c51978d742e9d2094ce7b45",
+      "destination": "app/warp-perform.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-perform.mjs"
+    },
+    {
+      "bytes": 1980,
+      "sha256": "51a2a40f022fa1db939094f905f827d0184cc10fee99a34eed7894d59be1edc0",
+      "destination": "app/warp-plan.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-plan.mjs"
+    },
+    {
+      "bytes": 1262,
+      "sha256": "e9e1e20bb9f0144622ddc08cc990daaf0f89c8f16206dea7e1cb99694d3e9f2a",
+      "destination": "app/warp-player-view.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-player-view.mjs"
+    },
+    {
+      "bytes": 4910,
+      "sha256": "3ae68448c912e44a43288074afa789a944e11d1cc13649b8ab83a69bc3997583",
+      "destination": "app/warp-renderer.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-renderer.mjs"
+    },
+    {
+      "bytes": 4560,
+      "sha256": "a471322832df6df9daf58ad89587530b7f5980cbc3e4126ef7fa0275b5ee7bd5",
+      "destination": "app/warp-resources.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-resources.mjs"
+    },
+    {
+      "bytes": 6307,
+      "sha256": "b1265328148e177cc793a0da44ae7d1ca88197fa2327426989852e716eabc757",
+      "destination": "app/warp-timing.mjs",
+      "kind": "source-bundle",
+      "entry": "app/warp-timing.mjs"
+    },
+    {
+      "bytes": 554206,
+      "sha256": "31f6cb0486352416b7de298b286354003850680e1724715acb034f65660d5f5d",
+      "destination": "canonical/approved-atlas-data.mjs",
+      "kind": "repository",
+      "source": "dist/approved-atlas-data.mjs"
+    },
+    {
+      "bytes": 1638,
+      "sha256": "3f1b0383887e49225fcd63b8fc6cd98b694f670eec8a0901c3f16a4b4bdec983",
+      "destination": "canonical/approved-atlas-runtime.mjs",
+      "kind": "repository",
+      "source": "dist/approved-atlas-runtime.mjs"
+    },
+    {
+      "bytes": 167667,
+      "sha256": "90fe4176500591c99cbbaafc6117161b458523ea693b4d9344c54eb73f236353",
+      "destination": "canonical/approved-species-data.mjs",
+      "kind": "repository",
+      "source": "dist/approved-species-data.mjs"
+    },
+    {
+      "bytes": 3030,
+      "sha256": "901d5cced8f7ff6dc5b33191ab349c25379652b0f65f5dc7e6eadcd4461eb261",
+      "destination": "canonical/approved-species.mjs",
+      "kind": "repository",
+      "source": "dist/approved-species.mjs"
+    },
+    {
+      "bytes": 10552,
+      "sha256": "694f1da74f61ae1cd64a370128b65d820fd7a8e9f82dc40636cd188cfffec74c",
+      "destination": "canonical/art/field-bindings.mjs",
+      "kind": "repository",
+      "source": "dist/art/field-bindings.mjs"
+    },
+    {
+      "bytes": 59695,
+      "sha256": "bf68f277931ab00865827de84f681ad95b34c6025e8a995e3ea2e08d952f2b95",
+      "destination": "canonical/art/legacy-assets.mjs",
+      "kind": "repository",
+      "source": "dist/art/legacy-assets.mjs"
+    },
+    {
+      "bytes": 44175,
+      "sha256": "2170ef32babe6709225784c48b0c2e1c69dbc5d3738bf60d183d1b8c9e904283",
+      "destination": "canonical/art/species-crops.mjs",
+      "kind": "repository",
+      "source": "dist/art/species-crops.mjs"
+    },
+    {
+      "bytes": 9320,
+      "sha256": "9dd754bd8e7e9b7c4e1e11ba31abc8e556ab232d8434ee30cd70e1ad01db12de",
+      "destination": "canonical/art/w03-field-atlases.mjs",
+      "kind": "repository",
+      "source": "dist/art/w03-field-atlases.mjs"
+    },
+    {
+      "bytes": 2067,
+      "sha256": "ddacffb2a238f18afd1d61e7d441b3bcedba8d8abb2de9919d2979c95fad3e76",
+      "destination": "canonical/art/w03-human-field.mjs",
+      "kind": "repository",
+      "source": "dist/art/w03-human-field.mjs"
+    },
+    {
+      "bytes": 1249,
+      "sha256": "dbaba5076383aec3edc99b17e3d039fac42ddb9a2f681b3a1356c4beb6d7f1d5",
+      "destination": "canonical/art/w03-player-field.mjs",
+      "kind": "repository",
+      "source": "dist/art/w03-player-field.mjs"
+    },
+    {
+      "bytes": 8520,
+      "sha256": "8cf6a0b26955ea3a0db6eb8132f43f709f333b5a39d1d66fa08b661b4004a2c4",
+      "destination": "canonical/asset-manifest.mjs",
+      "kind": "repository",
+      "source": "dist/asset-manifest.mjs"
+    },
+    {
+      "bytes": 8510,
+      "sha256": "697b2ecdd3cab9f1ff5230c0111dedcc0e23c1339b942ffbbc2aa8c67824ba82",
+      "destination": "canonical/asset-runtime.mjs",
+      "kind": "repository",
+      "source": "dist/asset-runtime.mjs"
+    },
+    {
+      "bytes": 435752,
+      "sha256": "f28e518dc9bfe7bfad6db23ecbfba06120ae1ece15849861ee2b838416871425",
+      "destination": "canonical/assets/approved-atlases/npc/ECO_EDUCATION_STAFF_M_BASE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/ECO_EDUCATION_STAFF_M_BASE.png"
+    },
+    {
+      "bytes": 430686,
+      "sha256": "e95a649525a32d9ed966ba88b594037b6f048266d2bd8b7ac201c0270a29abb1",
+      "destination": "canonical/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_F_BASE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_F_BASE.png"
+    },
+    {
+      "bytes": 475253,
+      "sha256": "eb8e1e17debaa1ffbdbde69bd86360c86cd971ff053a99e5954bdedf2f0adb02",
+      "destination": "canonical/assets/approved-atlases/npc/HARIN.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/HARIN.png"
+    },
+    {
+      "bytes": 438339,
+      "sha256": "5b578426bffc12f433c4053189ce4983d283d780c7e3b7e176aa83aee995956e",
+      "destination": "canonical/assets/approved-atlases/npc/LOCAL_RESIDENT_M_BASE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/LOCAL_RESIDENT_M_BASE.png"
+    },
+    {
+      "bytes": 432020,
+      "sha256": "6e5fb876eab064870c9ab9dd01b87acb6f951eca87aa23a885cc937b772de6d6",
+      "destination": "canonical/assets/approved-atlases/npc/SAFETY_RESCUE_M_BASE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/SAFETY_RESCUE_M_BASE.png"
+    },
+    {
+      "bytes": 17724,
+      "sha256": "3a9b46d51c31ce216056d4e9be1f93f0630faf8f3c7869e6f02fe0c0fb19ae0f",
+      "destination": "canonical/atlas-retry-manager.mjs",
+      "kind": "repository",
+      "source": "dist/atlas-retry-manager.mjs"
+    },
+    {
+      "bytes": 3857,
+      "sha256": "97b45bff4357c4683666abd8e4bb1fdf59042cc199ea36258b6ef0d2410637f6",
+      "destination": "canonical/battle-v3/ai-20260927.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/ai-20260927.mjs"
+    },
+    {
+      "bytes": 426,
+      "sha256": "3c658339d73e8bea06432103b3d1060fdf5cacc188d4d67a17aff232c6e5c686",
+      "destination": "canonical/battle-v3/approved-party-move-exceptions.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/approved-party-move-exceptions.mjs"
+    },
+    {
+      "bytes": 831,
+      "sha256": "80a349831ff01885c50bd7fce2dd06da0827789a4b56ea6f2878f927dfa9f5be",
+      "destination": "canonical/battle-v3/approved-trainer-ai.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/approved-trainer-ai.mjs"
+    },
+    {
+      "bytes": 21937,
+      "sha256": "79fcd199ffc19bca3bb9cf33a0ebacff169c4294e4d7fad16bfa01b5cc2a9905",
+      "destination": "canonical/battle-v3/engine.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/engine.mjs"
+    },
+    {
+      "bytes": 1410,
+      "sha256": "1a62bc446f6d13041ea63188bf4f36e05a47f8bc6d176f3e098c3fbb006d14fd",
+      "destination": "canonical/battle-v3/enhanced-league.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/enhanced-league.mjs"
+    },
+    {
+      "bytes": 6022,
+      "sha256": "3b3525e5b4dc25a9bd4a896cd9d7ddaf74fbcda864160bb7ab90690efe8586ec",
+      "destination": "canonical/battle-v3/preview-opponents.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/preview-opponents.mjs"
+    },
+    {
+      "bytes": 7476,
+      "sha256": "5a68a67fa485a895c0623f5cc66f9d32c4601ac9f9420557cbf53f5da1dffabb",
+      "destination": "canonical/battle-v3/rules.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/rules.mjs"
+    },
+    {
+      "bytes": 4794,
+      "sha256": "201ae0c4ed250ade219cb9a23260d6922bd797df25f179ffe925971a666d09a3",
+      "destination": "canonical/battle-v3/save.mjs",
+      "kind": "repository",
+      "source": "dist/battle-v3/save.mjs"
+    },
+    {
+      "bytes": 6954,
+      "sha256": "9ffa92f80e0501cfb2e28fb7696b483f0989b9b8d058549018bf2c5e7f4bcbdf",
+      "destination": "canonical/canonical-session.mjs",
+      "kind": "repository",
+      "source": "dist/canonical-session.mjs"
+    },
+    {
+      "bytes": 2211,
+      "sha256": "da125c9697a437a0b2fdfcd9540fdfcf43d6cbaf7aa6804903f059f590683b7a",
+      "destination": "canonical/canonical-species-assets.mjs",
+      "kind": "repository",
+      "source": "dist/canonical-species-assets.mjs"
+    },
+    {
+      "bytes": 6553,
+      "sha256": "ce8b8c93337cb2103143b3ae965aa4e782ed2b498ec678250d3d71e1ea0b54f7",
+      "destination": "canonical/compatibility/approved-latest-runtime-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/approved-latest-runtime-adapter.mjs"
+    },
+    {
+      "bytes": 37711,
+      "sha256": "50ac0818166ac71caf07e2f029652f45ccee372167fa7f3ff94fde78cd720ecb",
+      "destination": "canonical/compatibility/aquatic-policy-a-v1.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/aquatic-policy-a-v1.mjs"
+    },
+    {
+      "bytes": 1412,
+      "sha256": "880176391cad97d42878df13c7fd497873da4fe1b962b857cce7f36fda460214",
+      "destination": "canonical/compatibility/aquatic-policy.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/aquatic-policy.mjs"
+    },
+    {
+      "bytes": 13207,
+      "sha256": "700094af735ab2d7236c140b3622902be87313f26b79060379a2e35f9afc8ea1",
+      "destination": "canonical/compatibility/canonical-20260927-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-20260927-adapter.mjs"
+    },
+    {
+      "bytes": 13501,
+      "sha256": "bbc4af253ff1139abb6b206fbaf10d2e6d7f89f36c61013fe2444b3eccd537b1",
+      "destination": "canonical/compatibility/canonical-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-adapter.mjs"
+    },
+    {
+      "bytes": 2989,
+      "sha256": "aad8a9a7f2f898ed056c2f3a5e68ad3105080466e83bfd9ee4a28d87222bbf9a",
+      "destination": "canonical/compatibility/canonical-runtime-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-runtime-adapter.mjs"
+    },
+    {
+      "bytes": 1693,
+      "sha256": "b7df4c6e264b744b2369b9b1cd8d84e6437e3e5686dbd89c97bf5e8efd7c62fa",
+      "destination": "canonical/compatibility/canonical-source-format.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-source-format.mjs"
+    },
+    {
+      "bytes": 486,
+      "sha256": "fa8a5662a8d36f47d01a86303af013bff71c1d9638aaadb8222fd0bc6b00b530",
+      "destination": "canonical/compatibility/canonical-source-loader.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/canonical-source-loader.mjs"
+    },
+    {
+      "bytes": 2470,
+      "sha256": "1996059f6159bc3af353b10306f37a9e9db27f76cecd56e7bb699a5219f7fa8c",
+      "destination": "canonical/compatibility/codec.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/codec.mjs"
+    },
+    {
+      "bytes": 573,
+      "sha256": "fe74668100d5d12c535dd16e588bcf976859e07c6682334eb73ad3ee4c8cc184",
+      "destination": "canonical/compatibility/content-namespaces.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/content-namespaces.mjs"
+    },
+    {
+      "bytes": 3893,
+      "sha256": "5f6e5450165046126b66221850a9ff024fbc98e5875850cd8c395233240dce61",
+      "destination": "canonical/compatibility/elite-party-correction-v1.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/elite-party-correction-v1.mjs"
+    },
+    {
+      "bytes": 7697,
+      "sha256": "1e66db1f808f5e98f6a058634b2ebe7cc486db641884521774e10cf35cacc511",
+      "destination": "canonical/compatibility/encounter-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/encounter-adapter.mjs"
+    },
+    {
+      "bytes": 5721,
+      "sha256": "c7a7f55b86b7207652bcd8383622b209b703528e399391ba45fafc4dd650cecb",
+      "destination": "canonical/compatibility/enhanced-elite-party-v1.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/enhanced-elite-party-v1.mjs"
+    },
+    {
+      "bytes": 2154,
+      "sha256": "ca31010bc09bb4da64c9c08160f44bfa1d4ee00bf0021a7d9724a527aba4f4e3",
+      "destination": "canonical/compatibility/gameplay-release.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/gameplay-release.mjs"
+    },
+    {
+      "bytes": 2957,
+      "sha256": "2387456d2e313622a9ecfad5d2f7a795bf8ad48df37aa00d97ee0abd6ef1b9e6",
+      "destination": "canonical/compatibility/harin-post-rematch-v1.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/harin-post-rematch-v1.mjs"
+    },
+    {
+      "bytes": 2321,
+      "sha256": "04d9c63c4f65384de4d9c6cb01c2bc8eb11673851db02db9dff55ef4472eeb7e",
+      "destination": "canonical/compatibility/npc-assets.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/npc-assets.mjs"
+    },
+    {
+      "bytes": 54,
+      "sha256": "4ab164c16b9057f4a5f017071a25f2a9988783f43895347db1da1e43f912fafc",
+      "destination": "canonical/compatibility/opponent-namespace.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/opponent-namespace.mjs"
+    },
+    {
+      "bytes": 3235,
+      "sha256": "4fa60c2af9be2abc6c9eafb61d5bbdac1b7ea085aaab7acb6c8866b1fa9bd338",
+      "destination": "canonical/compatibility/preview-opponent-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/preview-opponent-adapter.mjs"
+    },
+    {
+      "bytes": 1677,
+      "sha256": "429c08144c60c6a562d9c50255ae978bb9ef06bec6a28508d087ff2498935531",
+      "destination": "canonical/compatibility/species-identity.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/species-identity.mjs"
+    },
+    {
+      "bytes": 89513,
+      "sha256": "064a2fabfb235aee28c359cf6250dcd9d50cf767ffcc09c11fd14b4bede6248d",
+      "destination": "canonical/compatibility/species-registry.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/species-registry.mjs"
+    },
+    {
+      "bytes": 1743,
+      "sha256": "3d0e64ea35e7a339732e2026fc8301d0af345dfbc6698111b4c7b041add9c00b",
+      "destination": "canonical/compatibility/status-enum.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/status-enum.mjs"
+    },
+    {
+      "bytes": 9678,
+      "sha256": "3e6cc26f2f1090a10027977b13b05a8fa88194b0836101322244f17b84b1b9fb",
+      "destination": "canonical/compatibility/story-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/story-adapter.mjs"
+    },
+    {
+      "bytes": 1981,
+      "sha256": "6e34c9876807bd5986e25f2307edc07153230f25983556f28f5845ddf53d993f",
+      "destination": "canonical/compatibility/yeji-base-exp-v1.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/yeji-base-exp-v1.mjs"
+    },
+    {
+      "bytes": 2879,
+      "sha256": "7eff7861eaddc8847816581e21cb37244e8db8ecb5851677209f23b8fce6b3f0",
+      "destination": "canonical/compatibility/yeji-preview-type-stats-v1.mjs",
+      "kind": "repository",
+      "source": "dist/compatibility/yeji-preview-type-stats-v1.mjs"
+    },
+    {
+      "bytes": 6117,
+      "sha256": "198058e482deb13e0b1c8e82aa58b89479001b87eec3f16266139fa40fd2548d",
+      "destination": "canonical/economy/actions.mjs",
+      "kind": "repository",
+      "source": "dist/economy/actions.mjs"
+    },
+    {
+      "bytes": 3166,
+      "sha256": "12f34b1214fff17e215e5e95a158f123aecc6bd3d0b32c27b34a3d3657db1a7d",
+      "destination": "canonical/economy/approved-v1.mjs",
+      "kind": "repository",
+      "source": "dist/economy/approved-v1.mjs"
+    },
+    {
+      "bytes": 2666,
+      "sha256": "62874dc0d8b7c647a94eab130a17d1e7ade38d6a3da1b8be80167a01eca6c673",
+      "destination": "canonical/economy/candidate.mjs",
+      "kind": "repository",
+      "source": "dist/economy/candidate.mjs"
+    },
+    {
+      "bytes": 2597,
+      "sha256": "79350d1e50d877bb840c2888153bcd86d34c6013addf2f236b6b4647b456857c",
+      "destination": "canonical/economy/consumables-v1.mjs",
+      "kind": "repository",
+      "source": "dist/economy/consumables-v1.mjs"
+    },
+    {
+      "bytes": 7995,
+      "sha256": "a6faaf6705bdcccce680a5b44e9c9497faa61ec7e632d54dba45db1b9015da0b",
+      "destination": "canonical/economy/contract.mjs",
+      "kind": "repository",
+      "source": "dist/economy/contract.mjs"
+    },
+    {
+      "bytes": 621,
+      "sha256": "23f2090cd23128a5d26f482bf0900fdd0ce1ba03911f396b2c47cb96e22f647c",
+      "destination": "canonical/economy/session.mjs",
+      "kind": "repository",
+      "source": "dist/economy/session.mjs"
+    },
+    {
+      "bytes": 1023,
+      "sha256": "440e6ee49b31579f1586401edc35643edddcf8657164281bd8f577991b2fe5d0",
+      "destination": "canonical/economy/staged-prize-20260927.mjs",
+      "kind": "repository",
+      "source": "dist/economy/staged-prize-20260927.mjs"
+    },
+    {
+      "bytes": 1952,
+      "sha256": "56fff754dbcb839147bef5875d06fed9b8a5c0254b5ea3cc57b971f4fa3e6915",
+      "destination": "canonical/economy/trainer-prize-map.mjs",
+      "kind": "repository",
+      "source": "dist/economy/trainer-prize-map.mjs"
+    },
+    {
+      "bytes": 1507,
+      "sha256": "f8f0f9e067245b9fa830b7aa2bc10bff800ec9a8aeb4dd5b4f66004d315487eb",
+      "destination": "canonical/economy/tutorial.mjs",
+      "kind": "repository",
+      "source": "dist/economy/tutorial.mjs"
+    },
+    {
+      "bytes": 5124,
+      "sha256": "fc76451b26fedb30ff9ba6fbb82ff3998dc3058135a13a010ffcd3966d21bb90",
+      "destination": "canonical/encounter/access.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/access.mjs"
+    },
+    {
+      "bytes": 3515,
+      "sha256": "b483aa1b407913e87d2c33704d01183553206f135d588d8d8fcc22d612a2657d",
+      "destination": "canonical/encounter/acquisition.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/acquisition.mjs"
+    },
+    {
+      "bytes": 328,
+      "sha256": "f0577615cf08f009dbe55d1b484c80710462b6b05250008396222708981d51dc",
+      "destination": "canonical/encounter/field-hook.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/field-hook.mjs"
+    },
+    {
+      "bytes": 2194,
+      "sha256": "056bc3e05edc5fa47c0af1f54eed28178b20ed378ce7e8f7efb33a6ef095c1fb",
+      "destination": "canonical/encounter/frequency.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/frequency.mjs"
+    },
+    {
+      "bytes": 2048,
+      "sha256": "91764a31305042f152f2ed88f2177b8d03d82d9203e13d72a5caba8322d1f6a0",
+      "destination": "canonical/encounter/permit.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/permit.mjs"
+    },
+    {
+      "bytes": 406,
+      "sha256": "4edccbedbf7b0d27372a9c3118dfe27c0c21cd40ddd76ce377f63b05c9964975",
+      "destination": "canonical/encounter/species-weather-config.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/species-weather-config.mjs"
+    },
+    {
+      "bytes": 2479,
+      "sha256": "46c39d61fd3125c47c65067879f8422802b12bbdf9d9df941a1112408673ef8b",
+      "destination": "canonical/encounter/species-weather.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/species-weather.mjs"
+    },
+    {
+      "bytes": 4039,
+      "sha256": "48f7f76d77ed1f3c1811e587ffcdd42b7a0aeeb4d7cda2fedc07646bc89a1131",
+      "destination": "canonical/encounter/state.mjs",
+      "kind": "repository",
+      "source": "dist/encounter/state.mjs"
+    },
+    {
+      "bytes": 6095,
+      "sha256": "608c38da59a61388827a38cddeaec932f9cd74063e1c88ad33612f119c8dad68",
+      "destination": "canonical/environment-service.mjs",
+      "kind": "repository",
+      "source": "dist/environment-service.mjs"
+    },
+    {
+      "bytes": 2952,
+      "sha256": "7b631ac0be3d2abb7e9c753c1d7167930c5eb0d7590da847ac8b60231a24fe0c",
+      "destination": "canonical/field-animation.mjs",
+      "kind": "repository",
+      "source": "dist/field-animation.mjs"
+    },
+    {
+      "bytes": 4572,
+      "sha256": "dc63951a15488175d1d7123c36fefc59b03f3429379378d0688340fdec49ab88",
+      "destination": "canonical/field-behavior.mjs",
+      "kind": "repository",
+      "source": "dist/field-behavior.mjs"
+    },
+    {
+      "bytes": 14909,
+      "sha256": "2dc8f5f68e03cc7e7ddd395fe0efb31152410b23dbca0c7852a6b2c24d120f59",
+      "destination": "canonical/field-engine-core.mjs",
+      "kind": "repository",
+      "source": "dist/field-engine-core.mjs"
+    },
+    {
+      "bytes": 1112,
+      "sha256": "0c71f613df876b2e862bdb4df12d92fe285d7ca1e323452d3cd97e063cc254a6",
+      "destination": "canonical/field-grass-data.mjs",
+      "kind": "repository",
+      "source": "dist/field-grass-data.mjs"
+    },
+    {
+      "bytes": 4318,
+      "sha256": "e24fa8f8e46462ae4f430efeb7e237a9e9255ee9d3cf7f66158d604e74f33b72",
+      "destination": "canonical/golden-map-data.mjs",
+      "kind": "repository",
+      "source": "dist/golden-map-data.mjs"
+    },
+    {
+      "bytes": 22927,
+      "sha256": "134b3e0e839b148c22b2e73e1f9eebb82fb31158be85a99632ed0bf63839263f",
+      "destination": "canonical/model.mjs",
+      "kind": "repository",
+      "source": "dist/model.mjs"
+    },
+    {
+      "bytes": 1748,
+      "sha256": "d367986d43969684a1a4f1992eb9b05221b6b15f75d87d5b38551be9640fd361",
+      "destination": "canonical/presentation/audio-hooks.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/audio-hooks.mjs"
+    },
+    {
+      "bytes": 625,
+      "sha256": "92ab4ff270bd74721f357eda9255f69d38a2135a296f7238206cf3216af9be16",
+      "destination": "canonical/presentation/battle-background.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/battle-background.mjs"
+    },
+    {
+      "bytes": 2263,
+      "sha256": "360fb0a72bfd5f51585f8d70dfa7bfaecfeacfdc3f7d77dc2bd8a393a6a2b562",
+      "destination": "canonical/presentation/battle-display.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/battle-display.mjs"
+    },
+    {
+      "bytes": 1508,
+      "sha256": "c925df7206a121f2bbbca13e852113f4ba669867cce946926b78f1efd6818c3a",
+      "destination": "canonical/presentation/battle-render.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/battle-render.mjs"
+    },
+    {
+      "bytes": 2670,
+      "sha256": "6f7e0ac80f42b5a78f2b15a96c89c3cf7de56bbc51c391785366174086b9c80d",
+      "destination": "canonical/presentation/battle-transition.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/battle-transition.mjs"
+    },
+    {
+      "bytes": 4453,
+      "sha256": "7ab5c1f8f73bd83eac732b902c82103da82e7a12f1b9861aa0096fcc99dc9f7f",
+      "destination": "canonical/presentation/battle-vfx.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/battle-vfx.mjs"
+    },
+    {
+      "bytes": 1193,
+      "sha256": "00b7981e0b741f489d3e27ec5681a452eb02d509c61fd8f29a971a1b4509845b",
+      "destination": "canonical/presentation/field-events.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/field-events.mjs"
+    },
+    {
+      "bytes": 2752,
+      "sha256": "1b44e023297c6e950f2eed16285fd762f6359c4dc0c44d2f771c8850ba8f4375",
+      "destination": "canonical/presentation/lighting.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/lighting.mjs"
+    },
+    {
+      "bytes": 2049,
+      "sha256": "9d8ee849c0af605e650b8761473f5812b38b53fe9b2563d1e3c5c0da3ed09287",
+      "destination": "canonical/presentation/map-presentation.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/map-presentation.mjs"
+    },
+    {
+      "bytes": 2722,
+      "sha256": "c0830c90bd3225ef455876ae6299dfc4455b1d71ea3af7312cce6914f10b07fc",
+      "destination": "canonical/presentation/tile-animation.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/tile-animation.mjs"
+    },
+    {
+      "bytes": 1579,
+      "sha256": "0a443889e7b888079caa1143bb6fcd8988213fb398490868e805aa82281452a2",
+      "destination": "canonical/presentation/time-provider.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/time-provider.mjs"
+    },
+    {
+      "bytes": 2560,
+      "sha256": "f3dde0860b4bbd987a2b6279b64907113d5645593e4d4b89eb73e71a8f5a2a9a",
+      "destination": "canonical/presentation/weather-layer.mjs",
+      "kind": "repository",
+      "source": "dist/presentation/weather-layer.mjs"
+    },
+    {
+      "bytes": 12914,
+      "sha256": "d9390b47bed895ce6c30a37d44dd49cd95755399f43534bf914d62dc7ff8e17d",
+      "destination": "canonical/regions.mjs",
+      "kind": "repository",
+      "source": "dist/regions.mjs"
+    },
+    {
+      "bytes": 2301,
+      "sha256": "c67abca806ce9308d93b2b6a5e7225a84b16426122247050384ff63baa32a7f3",
+      "destination": "canonical/species-asset-contract.mjs",
+      "kind": "repository",
+      "source": "dist/species-asset-contract.mjs"
+    },
+    {
+      "bytes": 1165,
+      "sha256": "38f9b7b8b48aac047b758c4a9fbe5c08002a92cdd9d8d069e39fca13d8da7791",
+      "destination": "canonical/species-asset-resolver.mjs",
+      "kind": "repository",
+      "source": "dist/species-asset-resolver.mjs"
+    },
+    {
+      "bytes": 4953,
+      "sha256": "a6eeebc292eda12373d1e40db663ebc8c74acc87254192b8a45a56be242c4657",
+      "destination": "canonical/species-catalog-service.mjs",
+      "kind": "repository",
+      "source": "dist/species-catalog-service.mjs"
+    },
+    {
+      "bytes": 46534,
+      "sha256": "5622acdd5e721b71fb5cd0cc1d5ebebd63c8e784f961017f3d04fd6ff046c977",
+      "destination": "canonical/species-data.mjs",
+      "kind": "repository",
+      "source": "dist/species-data.mjs"
+    },
+    {
+      "bytes": 699,
+      "sha256": "5fd44099a7c5768abd0c0d29a0d8156b3f39c374cbec84ce662d9e96f9dd880c",
+      "destination": "canonical/starter-config.mjs",
+      "kind": "repository",
+      "source": "dist/starter-config.mjs"
+    },
+    {
+      "bytes": 5434,
+      "sha256": "e1505abc99ea7bb5f6866faf52035613a9e896ed128e4c0ebd8ad03d74b32b20",
+      "destination": "canonical/story/enhanced-league.mjs",
+      "kind": "repository",
+      "source": "dist/story/enhanced-league.mjs"
+    },
+    {
+      "bytes": 1575,
+      "sha256": "473552792dea711e25c3116112eefc280d9788a5fcde78af9950f54324082053",
+      "destination": "canonical/story/event-runner.mjs",
+      "kind": "repository",
+      "source": "dist/story/event-runner.mjs"
+    },
+    {
+      "bytes": 3413,
+      "sha256": "6b1f310f52a6397ec90935bf0bf398f5c7544eb2aed6be976f2630a9ede3ba8d",
+      "destination": "canonical/story/field-bridge.mjs",
+      "kind": "repository",
+      "source": "dist/story/field-bridge.mjs"
+    },
+    {
+      "bytes": 2204,
+      "sha256": "9a4392e9b98fa427716fccae6d5fef122bb6b91ebbf171270b1a59edd6d6e962",
+      "destination": "canonical/story/gates.mjs",
+      "kind": "repository",
+      "source": "dist/story/gates.mjs"
+    },
+    {
+      "bytes": 2806,
+      "sha256": "d3aefeee29e1daaf7258adc9187b24c5546103017a98cb44e262226918b3bc17",
+      "destination": "canonical/story/harin-rematch.mjs",
+      "kind": "repository",
+      "source": "dist/story/harin-rematch.mjs"
+    },
+    {
+      "bytes": 3329,
+      "sha256": "c744847a4a8ed52d5ca3648c2fec0fbf10f29d696766a933709c144df5382427",
+      "destination": "canonical/story/post-20260927.mjs",
+      "kind": "repository",
+      "source": "dist/story/post-20260927.mjs"
+    },
+    {
+      "bytes": 34636,
+      "sha256": "911a4044f0469e15a5672068c49fdfbe7897740299e9331739eec16129f8b0f6",
+      "destination": "canonical/story/progression-service.mjs",
+      "kind": "repository",
+      "source": "dist/story/progression-service.mjs"
+    },
+    {
+      "bytes": 7808,
+      "sha256": "28a16ad529a59139c901c47aeff3ee6128309823856eb63a30c2629bc775a4c4",
+      "destination": "canonical/story/save.mjs",
+      "kind": "repository",
+      "source": "dist/story/save.mjs"
+    },
+    {
+      "bytes": 3639,
+      "sha256": "04babb76159d544568e5f4f932da1b0df3be46ad80ed6d0712181ef223df3e3c",
+      "destination": "canonical/tileset-contract.mjs",
+      "kind": "repository",
+      "source": "dist/tileset-contract.mjs"
+    },
+    {
+      "bytes": 3195,
+      "sha256": "f70c47524522cacf7feff5caa75afaca1e1b8cdd4fe70b1888666a8bf252ed4e",
+      "destination": "canonical/world/approved-placement.mjs",
+      "kind": "repository",
+      "source": "dist/world/approved-placement.mjs"
+    },
+    {
+      "bytes": 274,
+      "sha256": "7897e0713989fd87b5c0dc640f4fd83d1e3a24fe8f727d32db67444f5591656a",
+      "destination": "canonical/world/core-spatial.mjs",
+      "kind": "repository",
+      "source": "dist/world/core-spatial.mjs"
+    },
+    {
+      "bytes": 16672,
+      "sha256": "d97de641836604ddb18175fa866e219dcc76c0ba2695a074001823cc7ac4bbb0",
+      "destination": "canonical/world/definition.mjs",
+      "kind": "repository",
+      "source": "dist/world/definition.mjs"
+    },
+    {
+      "bytes": 6257,
+      "sha256": "041eea21ab3a0f2cff4150cb3a34755163256551693bc3416916b9255a27bacb",
+      "destination": "canonical/world/gym-polish.mjs",
+      "kind": "repository",
+      "source": "dist/world/gym-polish.mjs"
+    },
+    {
+      "bytes": 5169,
+      "sha256": "2565cd52f5c415b57ea6942bd48f95c9941b37e94f8409f2e4241fef061967ca",
+      "destination": "canonical/world/hidden-geoje-ledger.mjs",
+      "kind": "repository",
+      "source": "dist/world/hidden-geoje-ledger.mjs"
+    },
+    {
+      "bytes": 7628,
+      "sha256": "ffc20b6e2a347eb1685c9f830bd85f06fc10ba677d3f792144420457f2be11cb",
+      "destination": "canonical/world/hidden-placement-v1.mjs",
+      "kind": "repository",
+      "source": "dist/world/hidden-placement-v1.mjs"
+    },
+    {
+      "bytes": 1451,
+      "sha256": "d4a9e3bf267b18f065e4f59cb4c40a6d267b68714777114d707b4a7260385f50",
+      "destination": "canonical/world/physical-actors.mjs",
+      "kind": "repository",
+      "source": "dist/world/physical-actors.mjs"
+    },
+    {
+      "bytes": 4841,
+      "sha256": "1ed71d9cc058591a41ce77b509dc5673d7c3464becc076c5db2be19658867619",
+      "destination": "canonical/world/reachability.mjs",
+      "kind": "repository",
+      "source": "dist/world/reachability.mjs"
+    },
+    {
+      "bytes": 14688,
+      "sha256": "fadf58f7045ce440a0ccae5c3452440b27e1daf7a467190cceba9ac68868f3ee",
+      "destination": "canonical/world/service.mjs",
+      "kind": "repository",
+      "source": "dist/world/service.mjs"
+    },
+    {
+      "bytes": 4515,
+      "sha256": "3210642a7cbcf046b8ff460aa6af007c52e16dc1807ba8755adc10c9fc8c3f7a",
+      "destination": "canonical/world/staged-trainer-placement.mjs",
+      "kind": "repository",
+      "source": "dist/world/staged-trainer-placement.mjs"
+    },
+    {
+      "bytes": 9796,
+      "sha256": "406e55a264b644bcd5d4e7772fda36301b93f4491f241ee4be31ff1f71385611",
+      "destination": "canonical/world/state.mjs",
+      "kind": "repository",
+      "source": "dist/world/state.mjs"
+    },
+    {
+      "bytes": 4534,
+      "sha256": "ded66c1ce5f95cebc5e8602df2aceaf8368249d62aaac37f84dd986806b41aa7",
+      "destination": "data/canonical-handoff-v1/PACKAGE_SHA256_INDEX.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/PACKAGE_SHA256_INDEX.json"
+    },
+    {
+      "bytes": 17394,
+      "sha256": "8cff90f662ad2c5add5eaeac93e26550a9efa01da8019eb9abf0e248f37058cb",
+      "destination": "data/canonical-handoff-v1/database.rules.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/database.rules.json"
+    },
+    {
+      "bytes": 13629,
+      "sha256": "6402849dff09adc8052a5a7f2ab04fea8fe61be175034b4cd0a4e9552a2b9f15",
+      "destination": "data/canonical-handoff-v1/geoje_acquisition_master_v2.csv",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_acquisition_master_v2.csv"
+    },
+    {
+      "bytes": 611995,
+      "sha256": "0bf068f2ec0e4752e60439f2a7cac5924aff66fcf65e2d23d96e93b96b2f70a8",
+      "destination": "data/canonical-handoff-v1/geoje_battle_collection_master_v3.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_battle_collection_master_v3.json"
+    },
+    {
+      "bytes": 2984,
+      "sha256": "9fae4f4b67640c83e4019022ea7e602f3d1a6ccde5db1bc5e373f4b9f406776e",
+      "destination": "data/canonical-handoff-v1/geoje_canonical_handoff_index_v1.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_canonical_handoff_index_v1.json"
+    },
+    {
+      "bytes": 9665,
+      "sha256": "13162821a55583e46befb73bc36b08c726ee69cc6c2bd7bba39f92d2a67dcdcf",
+      "destination": "data/canonical-handoff-v1/geoje_character_npc_master_v2.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_character_npc_master_v2.json"
+    },
+    {
+      "bytes": 9608,
+      "sha256": "000e3172b0e307b44929cae5131acc7bc6aae4d25d0c8a1517676082ea9bb34f",
+      "destination": "data/canonical-handoff-v1/geoje_cross_validation_report_v2.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_cross_validation_report_v2.json"
+    },
+    {
+      "bytes": 270912,
+      "sha256": "eb1fc73300e52e6005f7c107fb39ff56466aa4ab1e731881513b71b7b4b7768c",
+      "destination": "data/canonical-handoff-v1/geoje_encounter_master_v2_3.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_encounter_master_v2_3.json"
+    },
+    {
+      "bytes": 33825,
+      "sha256": "915e0ac814afb9bfa4142bd0d0884a9005c1ce9afe4e790154c39267b43248dc",
+      "destination": "data/canonical-handoff-v1/geoje_final_source_manifest_v1.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_final_source_manifest_v1.json"
+    },
+    {
+      "bytes": 10147,
+      "sha256": "8d222764dddfcd8ddd620154965115d8ae16dbdd8fae24ed4a8cbfb342eb1904",
+      "destination": "data/canonical-handoff-v1/geoje_fishing_master_v1_1.csv",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_fishing_master_v1_1.csv"
+    },
+    {
+      "bytes": 22979,
+      "sha256": "6b20bda26c745579d35507d5790945294a1ae428f3aa5fe5da8b3df1d27b3835",
+      "destination": "data/canonical-handoff-v1/geoje_online_battle_firebase_rules_contract_v1.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_online_battle_firebase_rules_contract_v1.json"
+    },
+    {
+      "bytes": 13578,
+      "sha256": "15576e95979c1e58e94a67a238016f9554a91342dbe647e2aa5723ff22eed242",
+      "destination": "data/canonical-handoff-v1/geoje_online_battle_master_v1.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_online_battle_master_v1.json"
+    },
+    {
+      "bytes": 11845,
+      "sha256": "b994b878e36d47f2c2728d8a3e5020c3c907e72a1638c76eb2737924be42fa67",
+      "destination": "data/canonical-handoff-v1/geoje_save_migration_alias_v1_to_v2.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_save_migration_alias_v1_to_v2.json"
+    },
+    {
+      "bytes": 23274,
+      "sha256": "8cfe3c0291674b8fff971dd4d77412eee9e0317c40166e62bd6f6f89ee1ba70f",
+      "destination": "data/canonical-handoff-v1/geoje_save_schema_v2.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_save_schema_v2.json"
+    },
+    {
+      "bytes": 145989,
+      "sha256": "77715d80a2acf27bd4a8361cecc6762bb1da03e3328e5d12505912b15836e0c8",
+      "destination": "data/canonical-handoff-v1/geoje_species_151_v3_final.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_species_151_v3_final.json"
+    },
+    {
+      "bytes": 53626,
+      "sha256": "56ba5f61799412045ca2a589296cfcfdf5bee6e393d282b2e31a99f593b0ca67",
+      "destination": "data/canonical-handoff-v1/geoje_stage_master_v2_3.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_stage_master_v2_3.json"
+    },
+    {
+      "bytes": 53335,
+      "sha256": "094296f78b96c64150a2f19fc79ac0c77061a8e2a7041422809cfeb8a1aff449",
+      "destination": "data/canonical-handoff-v1/geoje_story_flags_master_v2.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_story_flags_master_v2.json"
+    },
+    {
+      "bytes": 144226,
+      "sha256": "97f74202a8ed746fb98b4f51fd8d141875b9367168a3c8e3723745657e70465e",
+      "destination": "data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_trainer_npc_master_v2.json"
+    },
+    {
+      "bytes": 545,
+      "sha256": "916026f8e425cd1749498ba1ec684539b25a70a8663ec5f35c9fe354d77eb63b",
+      "destination": "data/staging-20260927/SOURCE_PROVENANCE.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/SOURCE_PROVENANCE.json"
+    },
+    {
+      "bytes": 2610,
+      "sha256": "d307160e190f2307e401e5a8487407c5640b4932cf3069a20955fd8235065feb",
+      "destination": "data/staging-20260927/STAGING_SHA256_INDEX.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/STAGING_SHA256_INDEX.json"
+    },
+    {
+      "bytes": 17399,
+      "sha256": "4ab1f53ea7af93505ac3e8461fad0797d40064458f426b559a95aaff7011f2f4",
+      "destination": "data/staging-20260927/database.rules.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/database.rules.json"
+    },
+    {
+      "bytes": 13629,
+      "sha256": "6402849dff09adc8052a5a7f2ab04fea8fe61be175034b4cd0a4e9552a2b9f15",
+      "destination": "data/staging-20260927/geoje_acquisition_master_v2.csv",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_acquisition_master_v2.csv"
+    },
+    {
+      "bytes": 618189,
+      "sha256": "637b9fa3cb78abd8ff9d2e2eb24ad0fd201cdd73d715d646ae69ca52b8ecf8e8",
+      "destination": "data/staging-20260927/geoje_battle_collection_master_v3_2.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_battle_collection_master_v3_2.json"
+    },
+    {
+      "bytes": 11152,
+      "sha256": "513d484001aef21fd99f1a96a377c00c980288c083bf35d0d541408e2d223fb4",
+      "destination": "data/staging-20260927/geoje_character_npc_master_v2_1.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_character_npc_master_v2_1.json"
+    },
+    {
+      "bytes": 242705,
+      "sha256": "28c0b915c013b35729c4dd5cfeec0d65cc3d4f576c479183ed9140fd93b2591e",
+      "destination": "data/staging-20260927/geoje_encounter_master_v2_4.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_encounter_master_v2_4.json"
+    },
+    {
+      "bytes": 10147,
+      "sha256": "8d222764dddfcd8ddd620154965115d8ae16dbdd8fae24ed4a8cbfb342eb1904",
+      "destination": "data/staging-20260927/geoje_fishing_master_v1_1.csv",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_fishing_master_v1_1.csv"
+    },
+    {
+      "bytes": 22958,
+      "sha256": "ec6966fd18b2bd286c43bf08d22549ea5143616065c2d7cb23b8f94ed1d7da3d",
+      "destination": "data/staging-20260927/geoje_online_battle_firebase_rules_contract_v1_2.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_online_battle_firebase_rules_contract_v1_2.json"
+    },
+    {
+      "bytes": 13586,
+      "sha256": "b0913f07ab8fcc880d712a1d8aeab23a3615c2970597c030686d2dc5c015839d",
+      "destination": "data/staging-20260927/geoje_online_battle_master_v1_2.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_online_battle_master_v1_2.json"
+    },
+    {
+      "bytes": 11845,
+      "sha256": "b994b878e36d47f2c2728d8a3e5020c3c907e72a1638c76eb2737924be42fa67",
+      "destination": "data/staging-20260927/geoje_save_migration_alias_v1_to_v2.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_save_migration_alias_v1_to_v2.json"
+    },
+    {
+      "bytes": 25586,
+      "sha256": "ba305e1fa75b630d1e19429495734f644f3bce9b066cdb888ca91d1224b6f70f",
+      "destination": "data/staging-20260927/geoje_save_schema_v3.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_save_schema_v3.json"
+    },
+    {
+      "bytes": 145989,
+      "sha256": "77715d80a2acf27bd4a8361cecc6762bb1da03e3328e5d12505912b15836e0c8",
+      "destination": "data/staging-20260927/geoje_species_151_v3_final.json",
+      "kind": "repository",
+      "source": "dist/data/canonical-handoff-v1/geoje_species_151_v3_final.json"
+    },
+    {
+      "bytes": 51802,
+      "sha256": "35edc2a2298a114b89d71863732df96424fb83165c8035ba7753ef5b9cf6cf66",
+      "destination": "data/staging-20260927/geoje_stage_master_v2_4.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_stage_master_v2_4.json"
+    },
+    {
+      "bytes": 52883,
+      "sha256": "24b48c14d16b24cec968a031c3e85fdcb4aed72a97ae5894a78ee87438ed2001",
+      "destination": "data/staging-20260927/geoje_story_flags_master_v3.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_story_flags_master_v3.json"
+    },
+    {
+      "bytes": 271009,
+      "sha256": "2d6a42890f22c0a320411c3e7d58044f708949976b0c2d3630ee7e86b0004b06",
+      "destination": "data/staging-20260927/geoje_trainer_npc_master_v2_2.json",
+      "kind": "repository",
+      "source": "dist/data/staging-20260927/geoje_trainer_npc_master_v2_2.json"
+    },
+    {
+      "bytes": 3254,
+      "sha256": "5b3405513eeb75b2f6be90d151413a03a7ba1c9133ed50d61bbaea9863f35aee",
+      "destination": "index.html",
+      "kind": "source-bundle",
+      "entry": "index.html"
+    },
+    {
+      "bytes": 2001,
+      "sha256": "15f79f7d1d19acd2e136e3d7082134be31b10bd5fd0373ba834db38a487466ad",
+      "destination": "native/map_simulation_20261102/bridge_r1/native-providers.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/bridge_r1/native-providers.mjs"
+    },
+    {
+      "bytes": 828,
+      "sha256": "82941d00695bc19caea62dab6114120bae60d3b99169b7442697e0201a8af364",
+      "destination": "native/map_simulation_20261102/ground_contact_r2/contact-policy.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_contact_r2/contact-policy.mjs"
+    },
+    {
+      "bytes": 3354,
+      "sha256": "68b2e062bc23b92bfbeb638d5e88ba52d8efc184af6d1bfdea72008a77460d47",
+      "destination": "native/map_simulation_20261102/ground_contact_r2/map-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_contact_r2/map-adapter.mjs"
+    },
+    {
+      "bytes": 983,
+      "sha256": "49eb0eeef6f5a529fe69f5379dbe839766397bfc407bf0447af5547c95d2e319",
+      "destination": "native/map_simulation_20261102/ground_contact_r3/geometry.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_contact_r3/geometry.mjs"
+    },
+    {
+      "bytes": 664,
+      "sha256": "e86a5e11119e0df9a609961c85af60c200034adf7a8e5710754f572985b9c46d",
+      "destination": "native/map_simulation_20261102/ground_contact_r3/s7-leaf.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_contact_r3/s7-leaf.mjs"
+    },
+    {
+      "bytes": 6067,
+      "sha256": "25d0cc97db7fe78b37819369ec6c4c16fd3fe10a907b1849026c5123199cf72d",
+      "destination": "native/map_simulation_20261102/ground_contact_r3/s7-provider.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_contact_r3/s7-provider.mjs"
+    },
+    {
+      "bytes": 816,
+      "sha256": "a038e62b62fb6a232569094617b064684a87800d817f3ed2874f6788ebc21a8c",
+      "destination": "native/map_simulation_20261102/ground_gym8_r1/geometry.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/ground_gym8_r1/geometry.mjs"
+    },
+    {
+      "bytes": 1773,
+      "sha256": "7220fb0129b4f16a2177cd642bdc98a7dcca3640d9e8cdb89c0171bb4f086d42",
+      "destination": "native/map_simulation_20261102/ground_gym8_r1/leaf-adapter.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/ground_gym8_r1/leaf-adapter.mjs"
+    },
+    {
+      "bytes": 3900,
+      "sha256": "c3042884f88121e3f222bd0f05432d3e2900b278f3978d500b4c33097b33cc43",
+      "destination": "native/map_simulation_20261102/ground_gym8_r1/provider.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/ground_gym8_r1/provider.mjs"
+    },
+    {
+      "bytes": 1023,
+      "sha256": "73708bf69d49b5d4935c24877ca8f8902b42108c86f926e0e8447795dff5718f",
+      "destination": "native/map_simulation_20261102/ground_gym8_r1/raster.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/ground_gym8_r1/raster.mjs"
+    },
+    {
+      "bytes": 966,
+      "sha256": "0f72439af0c580321a99a030bd815391dc3d6a6c2b74c371a611049d2eccfbac",
+      "destination": "native/map_simulation_20261102/ground_s6_r1/leaf.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/ground_s6_r1/leaf.mjs"
+    },
+    {
+      "bytes": 4970,
+      "sha256": "c9ec8af862d27803aaa8686a75e3174705e6bc883da71a24d363424638dfea96",
+      "destination": "native/map_simulation_20261102/ground_s6_r1/provider.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/ground_s6_r1/provider.mjs"
+    },
+    {
+      "bytes": 411,
+      "sha256": "dd9c5d74232109a7cbf220d06d3cf7a028df2c98d1c0e6b65926c9c40689c55d",
+      "destination": "native/map_simulation_20261102/ground_s8_r1/mask-transport-pin.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_s8_r1/mask-transport-pin.mjs"
+    },
+    {
+      "bytes": 2347,
+      "sha256": "fa8245a028f1e4089a3e18d55ffd05581612197d7403cbeaa9bfac4e8f90cf4a",
+      "destination": "native/map_simulation_20261102/ground_s8_r1/mask-transport.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_s8_r1/mask-transport.mjs"
+    },
+    {
+      "bytes": 4406,
+      "sha256": "fc42f84f6b38c7a01f8debf6834cc6094752955e4dd6d364d78c5fda288dba5b",
+      "destination": "native/map_simulation_20261102/ground_s8_r1/provider.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_s8_r1/provider.mjs"
+    },
+    {
+      "bytes": 792,
+      "sha256": "c5a540159b73f214aa80e848de980326ae3a180cc281b65564130b13418546e0",
+      "destination": "native/map_simulation_20261102/ground_s8_r1/s8-resource.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/ground_s8_r1/s8-resource.mjs"
+    },
+    {
+      "bytes": 3504,
+      "sha256": "6903f2597b61ac2fd2fa6f81734746cff1fece3efeee6b5fd13861faa6921b99",
+      "destination": "native/map_simulation_20261102/gym8/connection/actor-data.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/gym8/connection/actor-data.mjs"
+    },
+    {
+      "bytes": 489418,
+      "sha256": "6cc36f5416208b1e47764d6672dbed407d66f082c3a22ae72a71911d6f61d7f5",
+      "destination": "native/map_simulation_20261102/gym8/connection/assets/DIVER_M_BASE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/DIVER_M_BASE.png"
+    },
+    {
+      "bytes": 519398,
+      "sha256": "fff5faf915e53709c8f54352c16cd9d021aaf632b74e3b62db27a98b4c4e2b44",
+      "destination": "native/map_simulation_20261102/gym8/connection/assets/DOCTOR_CHAE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/DOCTOR_CHAE.png"
+    },
+    {
+      "bytes": 430686,
+      "sha256": "e95a649525a32d9ed966ba88b594037b6f048266d2bd8b7ac201c0270a29abb1",
+      "destination": "native/map_simulation_20261102/gym8/connection/assets/FIELD_RESEARCH_ASSISTANT_F_BASE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_F_BASE.png"
+    },
+    {
+      "bytes": 446342,
+      "sha256": "ce5553dc41f79070cad8e7255fac57d0c6773522f10f2fca752bf1776b066d4a",
+      "destination": "native/map_simulation_20261102/gym8/connection/assets/FIELD_RESEARCH_ASSISTANT_M_BASE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_M_BASE.png"
+    },
+    {
+      "bytes": 1990325,
+      "sha256": "e05a29b91396611c1f76b9d22fff9563f08d13c35d4dc9b1b749e12636e8b7bf",
+      "destination": "native/map_simulation_20261102/gym8/inputs/poison-gym-diverse-cleanrooms-v1/art/PoisonGym_Diverse_0GatesOpen_Native.png",
+      "kind": "new-base64",
+      "chunks": [
+        {
+          "source": "asset-text/e05a29b91396611c/chunk-01.b64",
+          "offset": 0,
+          "bytes": 1990325,
+          "sha256": "e05a29b91396611c1f76b9d22fff9563f08d13c35d4dc9b1b749e12636e8b7bf",
+          "encodedBytes": 2653768,
+          "encodedSHA256": "76d8119dda6b23d243ccf93a67661b18c6e09ad9323c003ef2cf404f0e86485a"
+        }
+      ]
+    },
+    {
+      "bytes": 1990346,
+      "sha256": "cbfc4e3bf5f3b6678ae682bc87b93167f349f3abf6bdc5fc61e3594d7b891bb8",
+      "destination": "native/map_simulation_20261102/gym8/inputs/poison-gym-diverse-cleanrooms-v1/art/PoisonGym_Diverse_1GatesOpen_Native.png",
+      "kind": "new-base64",
+      "chunks": [
+        {
+          "source": "asset-text/cbfc4e3bf5f3b667/chunk-01.b64",
+          "offset": 0,
+          "bytes": 1990346,
+          "sha256": "cbfc4e3bf5f3b6678ae682bc87b93167f349f3abf6bdc5fc61e3594d7b891bb8",
+          "encodedBytes": 2653796,
+          "encodedSHA256": "46f5e900f9d4308b77212c4519f32f850faedd4701950a742ca196490fb4fd02"
+        }
+      ]
+    },
+    {
+      "bytes": 1991448,
+      "sha256": "308e75bf6445af2afea10f7b68e97dc1d414b6711f7dd55a3b0b71267df88340",
+      "destination": "native/map_simulation_20261102/gym8/inputs/poison-gym-diverse-cleanrooms-v1/art/PoisonGym_Diverse_3GatesOpen_Native.png",
+      "kind": "new-base64",
+      "chunks": [
+        {
+          "source": "asset-text/308e75bf6445af2a/chunk-01.b64",
+          "offset": 0,
+          "bytes": 1991448,
+          "sha256": "308e75bf6445af2afea10f7b68e97dc1d414b6711f7dd55a3b0b71267df88340",
+          "encodedBytes": 2655264,
+          "encodedSHA256": "200a99ec27ebbdfebf98809ae2bfbbe80d077b3bc793c9f7a63f748ab7e96ee0"
+        }
+      ]
+    },
+    {
+      "bytes": 1852,
+      "sha256": "89fe159f450aae8fc8b10cdd550e8010c3f7b7e8c479fe32e9cf5bc4f6a44e2b",
+      "destination": "native/map_simulation_20261102/gym8/payload/poison-gym8-native/geometry.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/gym8/payload/poison-gym8-native/geometry.mjs"
+    },
+    {
+      "bytes": 732,
+      "sha256": "520a59b2cf0f3a59bddccf09c0c9f905393a6cced57876bd8a60e3878794bd10",
+      "destination": "native/map_simulation_20261102/gym8/payload/poison-gym8-native/pins.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/gym8/payload/poison-gym8-native/pins.mjs"
+    },
+    {
+      "bytes": 4217,
+      "sha256": "7d2c38e1f11914afbd9f80c8085e7ac6171804ab8e40e2765ccdc4b0c0dfd757",
+      "destination": "native/map_simulation_20261102/gym8/payload/poison-gym8-native/source-data.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/gym8/payload/poison-gym8-native/source-data.mjs"
+    },
+    {
+      "bytes": 3122,
+      "sha256": "5a78f2a7357c9ea42742dbb09d199d59e9cf71a41d8a10818c6aad478ce71974",
+      "destination": "native/map_simulation_20261102/map-adapter.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/map-adapter.mjs"
+    },
+    {
+      "bytes": 13270263,
+      "sha256": "f602c93bdee4c4bd7d08f87d9951b34515d9ffbb34769aea28a4331ffb8b5e06",
+      "destination": "native/map_simulation_20261102/s8_hub_r2/assets/CLOSED.png",
+      "kind": "reconstructed-repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/s8_hub_r2/assets/CLOSED.png"
+    },
+    {
+      "bytes": 6635520,
+      "sha256": "617a378432d8c7ac710c767d370635b3f23ee6c9cfdae20cdbcad3728dce002d",
+      "destination": "native/map_simulation_20261102/s8_hub_r2/bank/CLOSED.raw.u8",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/s8_hub_r2/bank/CLOSED.raw.u8"
+    },
+    {
+      "bytes": 35097,
+      "sha256": "b23b6ede786b307fbd01f3009dd777130b0afe036217a73329d819843b2c8e3f",
+      "destination": "native/map_simulation_20261102/s8_hub_r2/bank/CLOSED.raw.u8.gzip.bin",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/s8_hub_r2/bank/CLOSED.raw.u8.gzip.bin"
+    },
+    {
+      "bytes": 2304,
+      "sha256": "6a97f81cc16a84ef41b2508dcd7dc4bc9fd11d57012dfa444ce189f9496a49e0",
+      "destination": "native/map_simulation_20261102/user_feedback_r1/geometry/geometry.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/user_feedback_r1/geometry/geometry.mjs"
+    },
+    {
+      "bytes": 2329,
+      "sha256": "ed03fdb097c1f8d8d4acba72676c8db244142b56be1e5b10fe44332c7ae30ed5",
+      "destination": "native/map_simulation_20261102/user_feedback_r1/gym-actors.mjs",
+      "kind": "source-bundle",
+      "entry": "native/map_simulation_20261102/user_feedback_r1/gym-actors.mjs"
+    },
+    {
+      "bytes": 7739,
+      "sha256": "c17100df078d5b29a5ea20573153275a76a206850f4bc1c4a7dbb0669579eb82",
+      "destination": "native/map_simulation_20261102/user_feedback_r1/occlusion/s7-palm.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/user_feedback_r1/occlusion/s7-palm.mjs"
+    },
+    {
+      "bytes": 3055,
+      "sha256": "4865667d8c60ae7c53b6557a603cb9b58ce561f8be5be68a46469fb7e99dfafc",
+      "destination": "native/map_simulation_20261102/user_feedback_r1/viewport.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/map_simulation_20261102/user_feedback_r1/viewport.mjs"
+    },
+    {
+      "bytes": 497916,
+      "sha256": "f61e7c3c087568e05f9f85336f322b287709a45669704c481e00f3f29f5d05f7",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/assets/approved-atlases/player/PLAYER_FEMALE.png",
+      "kind": "repository",
+      "source": "dist/assets/approved-atlases/player/PLAYER_FEMALE.png"
+    },
+    {
+      "bytes": 419,
+      "sha256": "7b254b3c2bd7d13a749d515b038ac6eacc594c037bfb123646006e442f25ab15",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player-frame.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player-frame.mjs"
+    },
+    {
+      "bytes": 10058,
+      "sha256": "c07147b493fe28a1bdd6a0aa5d38aec23c750a5bf0e57b5206a4ccba328ce4c7",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor0.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor0.png"
+    },
+    {
+      "bytes": 9376,
+      "sha256": "d499c2a2c88fb3827137027bf2acd9f31d1cf46c0f8410195ec44ef9b0f04804",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor1.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor1.png"
+    },
+    {
+      "bytes": 8134,
+      "sha256": "066bc3241e8d408d5dc4a0b58a38c53e5d8f0d024288731c4d15ddcac685c44c",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor10.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor10.png"
+    },
+    {
+      "bytes": 8293,
+      "sha256": "ef5a1f12a5b8461edfef9946e89f0b11c300109eb5f5efdf8e2fcae9b933b91c",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor11.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor11.png"
+    },
+    {
+      "bytes": 9226,
+      "sha256": "917c2b1e0725f38880e0aef0394733582dd362bb67c629bd7510b69d8c13b143",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor2.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor2.png"
+    },
+    {
+      "bytes": 7987,
+      "sha256": "2bfc47897505b5cac7b662eacc0ebbc268fa56ddbe0943aa746a1e0bd7992163",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor3.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor3.png"
+    },
+    {
+      "bytes": 8732,
+      "sha256": "d5c402bab7484c5d85a9c0031f1fb5ef2425d81f595a60cbfc31cb8bab59a5c1",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor4.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor4.png"
+    },
+    {
+      "bytes": 8530,
+      "sha256": "0dc792dde0eaba036bd77e8f8083c023ccc3076d42acd2397c6250451d31bd27",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor5.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor5.png"
+    },
+    {
+      "bytes": 8137,
+      "sha256": "0648514dc29123e86f478175c6b4d68eeefddb477345886937167a67161504c7",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor6.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor6.png"
+    },
+    {
+      "bytes": 8891,
+      "sha256": "57ce0a9e6344dff2609fe13d7d614c9e1a043d8349db60a9ba5ba806aba5bf12",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor7.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor7.png"
+    },
+    {
+      "bytes": 8759,
+      "sha256": "7f35af79d2d64af5c05ee08bac386fa7f7c6a66a97283851d1f927b30ed71cda",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor8.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor8.png"
+    },
+    {
+      "bytes": 8500,
+      "sha256": "d1fb1b8d406b2f5eaf8755ad95683590a0b00d883dcce39cf88afae360a296f4",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor9.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/gohyeon-pair/player_frames/actors/actor9.png"
+    },
+    {
+      "bytes": 8861,
+      "sha256": "6871fdba534a769c588422f7ea870e41a1e03148bfca66a5537b3e5fcb730a33",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player-data.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player-data.mjs"
+    },
+    {
+      "bytes": 3176,
+      "sha256": "d9410cad35fe767f893a726a8d2937e9b50882610b8c679b5f4c98f5f0126bd6",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/player.mjs"
+    },
+    {
+      "bytes": 1760,
+      "sha256": "3b90f01779c18d790ab59b04dc470fff64c8fec645cdf74be0d60157fb3f72f5",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/view-data.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/hakdong-forest-native/view-data.mjs"
+    },
+    {
+      "bytes": 1027,
+      "sha256": "968f202430e65909d78eee20ce35726c44f89d13adf20ea522300e2739a5859f",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-hub-native/lifecycle.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/lifecycle.mjs"
+    },
+    {
+      "bytes": 994,
+      "sha256": "13ec34448b5e4545f00cdb66d44d69aaa6c984dc098127cd57b7db128957f8d1",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-hub-native/pins.mjs",
+      "kind": "source-bundle",
+      "entry": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-hub-native/pins.mjs"
+    },
+    {
+      "bytes": 20912524,
+      "sha256": "002c8d0640e6e984fbe49ef18e76a721feb3f951255b4cbde2d86eea0dfd0ed0",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-hub-native/source/OPEN/Hakdong_HD006_OPEN_COMMONFIX_MINSTATE_R1.png",
+      "kind": "new-base64",
+      "chunks": [
+        {
+          "source": "asset-text/002c8d0640e6e984/chunk-01.b64",
+          "offset": 0,
+          "bytes": 4194304,
+          "sha256": "9965b47dc45346663a022ed349a39be7f83b5fd7e145e736635e3a92b5c85ed9",
+          "encodedBytes": 5592408,
+          "encodedSHA256": "4ae4cf64074e42ff6f1cf780ec388b6ca22cb891df61dd43a742462a62339c4b"
+        },
+        {
+          "source": "asset-text/002c8d0640e6e984/chunk-02.b64",
+          "offset": 4194304,
+          "bytes": 4194304,
+          "sha256": "8802be8f352a4fc3648406f553c628fd196e6b9382a0164e14b82e12df4fd765",
+          "encodedBytes": 5592408,
+          "encodedSHA256": "4a208fead23b96689a02b7c9e3aae41ad1370f5bcfe03865d1dd5615d15412eb"
+        },
+        {
+          "source": "asset-text/002c8d0640e6e984/chunk-03.b64",
+          "offset": 8388608,
+          "bytes": 4194304,
+          "sha256": "9928c5f4842c2bb616e92cf7686fc4f6d405331e31f7f414b2a62c7a146e38f0",
+          "encodedBytes": 5592408,
+          "encodedSHA256": "db2c59285277ae387def6ed49d41105fa8e41188f90cbefcf381485cb690b5e2"
+        },
+        {
+          "source": "asset-text/002c8d0640e6e984/chunk-04.b64",
+          "offset": 12582912,
+          "bytes": 4194304,
+          "sha256": "b21e617f9822fef19b292ec1d4b26917485e4758b021de5af6375e1eee96add0",
+          "encodedBytes": 5592408,
+          "encodedSHA256": "79b0ded494a980a7500ceb2125012ff588d7914c7b59cf40732937ac54e488a6"
+        },
+        {
+          "source": "asset-text/002c8d0640e6e984/chunk-05.b64",
+          "offset": 16777216,
+          "bytes": 4135308,
+          "sha256": "3f5d28ca353c354be73f91b3cc9476819c7421d7df4166366daa3cf08fc05718",
+          "encodedBytes": 5513744,
+          "encodedSHA256": "f153d59da54e1f50ea4946d06f66eb42bc300f5cffbdfc565a9df3e025a3e359"
+        }
+      ]
+    },
+    {
+      "bytes": 22621,
+      "sha256": "eda7425f259f138aad0502438c477b41dc196809b5f7125a49abbc10d828a864",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-hub-native/source/OPEN/walk-surface-open-manual.png",
+      "kind": "new-base64",
+      "chunks": [
+        {
+          "source": "asset-text/eda7425f259f138a/chunk-01.b64",
+          "offset": 0,
+          "bytes": 22621,
+          "sha256": "eda7425f259f138aad0502438c477b41dc196809b5f7125a49abbc10d828a864",
+          "encodedBytes": 30164,
+          "encodedSHA256": "1a841c6e64e76cebc82cdbe807defca76e63cf6d99624d1326a782d0d02f46c4"
+        }
+      ]
+    },
+    {
+      "bytes": 4371,
+      "sha256": "899388e091a92e2ca2d7ebe0ebfb511ec47fc73231bc19b5cc80ab4f047451c9",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-hub-native/source/building-door-foreground-v2.json",
+      "kind": "source-bundle",
+      "entry": "native/recovery_runtime_20261102/s5_resume/dist/development/hakdong-hub-native/source/building-door-foreground-v2.json"
+    },
+    {
+      "bytes": 1027,
+      "sha256": "968f202430e65909d78eee20ce35726c44f89d13adf20ea522300e2739a5859f",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/lifecycle.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/lifecycle.mjs"
+    },
+    {
+      "bytes": 486,
+      "sha256": "e64d975c5fd5137212b5ce20aed997aa4f4a13052d91778a1dbd9a82548bca3c",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/pins.mjs",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/pins.mjs"
+    },
+    {
+      "bytes": 21968609,
+      "sha256": "72751f4ffa8e719a3a500d59dda6ae777ebb33022120563e237ac354e61a55b9",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/source/G7-Open-visible-stair-barrier-candidate.png",
+      "kind": "reconstructed-repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/source/G7-Open-visible-stair-barrier-candidate.png"
+    },
+    {
+      "bytes": 10813,
+      "sha256": "96875d6aa6468b973dad1f830cca814302146fe4c78c2ab767cbef42a9e8395f",
+      "destination": "native/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/source/walk-surface-authored.png",
+      "kind": "repository",
+      "source": "dist/native-ports/resources/recovery_runtime_20261102/s5_resume/dist/development/nambu-hub-native/source/walk-surface-authored.png"
+    }
+  ],
+  "bundle": {
+    "source": "SOURCE_BUNDLE.json",
+    "bytes": 278870,
+    "sha256": "3b43e7df6a4948cce27a3b98e96dc373cd69e1eab036f17e329dedbb99d4fa5d"
+  }
+}
