@@ -22,8 +22,8 @@ try{
  await context.route('**/*',async route=>{const q=route.request(),kind=classifyRequest(q.url(),q.method());if(kind==='local'||kind==='inline')return route.continue();if(kind==='optional-weather-blocked')report.optionalExternalBlocked++;else{report.unexpectedExternalBlocked++;failures.push('Unexpected external request blocked')}return route.abort('blockedbyclient')});
  await context.routeWebSocket('**/*',socket=>{const u=new URL(socket.url());if(u.hostname==='127.0.0.1'&&u.port==='4173')socket.connectToServer();else{report.unexpectedExternalBlocked++;failures.push('External websocket blocked');socket.close()}});
  context.on('page',page=>{page.setDefaultTimeout(15000);
- page.on('pageerror',()=>{report.pageErrors++;failures.push('Uncaught page error')});
- page.on('console',msg=>{if(msg.type()==='error'){report.consoleErrors++;failures.push('Browser console error')}});
+ page.on('pageerror',error=>{report.pageErrors++;failures.push('Uncaught page error: '+String(error.message).slice(0,500))});
+ page.on('console',msg=>{if(msg.type()==='error'){report.consoleErrors++;failures.push('Browser console error: '+msg.text().slice(0,500)+' @ '+String(msg.location().url).slice(0,250)+':'+msg.location().lineNumber)}});
  page.on('response',r=>{if(new URL(r.url()).origin===ORIGIN&&r.status()>=400){report.requiredNetworkFailures++;failures.push('Local HTTP '+r.status()+' '+new URL(r.url()).pathname)}});
  page.on('requestfailed',r=>{if(classifyRequest(r.url(),r.method())==='local'){report.requiredNetworkFailures++;failures.push('Local request failed '+new URL(r.url()).pathname)}});
  });
