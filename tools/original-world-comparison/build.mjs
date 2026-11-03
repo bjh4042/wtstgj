@@ -1,4 +1,4 @@
-import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath}from'node:url';import{createHash}from'node:crypto';import{constants}from'node:fs';
+import{gunzipSync,inflateRawSync}from'node:zlib';import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath}from'node:url';import{createHash}from'node:crypto';import{constants}from'node:fs';
 const here=fileURLToPath(new URL('.',import.meta.url)),repo=path.resolve(process.argv[2]??path.join(here,'../..')),output=path.resolve(process.argv[3]??path.join(here,'build'));
 async function realDirectory(dir){const resolved=path.resolve(dir);if(await fs.realpath(resolved)!==resolved||(await fs.lstat(resolved)).isSymbolicLink()||!(await fs.stat(resolved)).isDirectory())throw Error('Directory symlink or invalid root');return resolved}
 const roots={source:await realDirectory(here),repository:await realDirectory(repo)};await realDirectory(path.dirname(output));
@@ -26,6 +26,16 @@ const verified=[],seen=new Set();for(const f of manifest.files){
  let b;
  if(f.kind==='source-bundle'){
   segments(f.entry);if(!sources.has(f.entry)||usedSources.has(f.entry))throw Error('Missing or reused bundle entry');usedSources.add(f.entry);b=sources.get(f.entry);
+ }else if(f.kind==='gzip-base64'){
+  const c=f.compressed;
+  if(!c||Object.keys(c).sort().join(',')!=='bytes,encodedBytes,encodedSHA256,sha256,source'||!Number.isSafeInteger(c.bytes)||c.bytes<1||c.bytes>1024*1024||c.encodedBytes!==4*Math.ceil(c.bytes/3)||f.bytes<1||f.bytes>16*1024*1024||typeof c.sha256!=='string'||!/^[a-f0-9]{64}$/.test(c.sha256))throw Error('Compressed metadata');
+  const encoded=await readPinned(roots.source,c.source,c.encodedBytes,c.encodedSHA256),ascii=encoded.toString('ascii'),compressed=Buffer.from(ascii,'base64');
+  if(!Buffer.from(ascii,'ascii').equals(encoded)||compressed.toString('base64')!==ascii||compressed.length!==c.bytes||hash(compressed)!==c.sha256)throw Error('Compressed canonical base64 or hash');
+  if(compressed.length<18||!compressed.subarray(0,10).equals(Buffer.from([31,139,8,0,0,0,0,0,2,3])))throw Error('Single canonical gzip header');
+  const probe=inflateRawSync(compressed.subarray(10),{maxOutputLength:f.bytes,info:true});
+  if(probe.engine.bytesWritten+18!==compressed.length)throw Error('Gzip trailing bytes or multiple members');
+  b=gunzipSync(compressed,{maxOutputLength:f.bytes});
+  if(!b.equals(probe.buffer))throw Error('Gzip decode mismatch');
  }else if(f.kind==='new-base64'){
   if(!Array.isArray(f.chunks)||f.chunks.length<1||f.chunks.length>16)throw Error('Chunk count');
   const parts=[];let offset=0;
