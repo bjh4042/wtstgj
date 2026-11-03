@@ -1,4 +1,4 @@
-name: One bounded original World selected S8 events check
+name: One bounded original World selected S7 surf check
 on:
   push:
     branches: [codex/geoje-feedback-20261102]
@@ -10,11 +10,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: geoje-original-world-selected-s8-events-20261103-r1
+  group: geoje-original-world-selected-s7-surf-20261103-r1
   cancel-in-progress: false
 jobs:
   smoke:
-    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World selected S8 events 20261103-r1'
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World selected S7 surf 20261103-r1'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
