@@ -1,3 +1,5 @@
+import {ordinaryFlow} from './ordinary-flow.mjs';
+import {indexedDBFlow} from './indexeddb-flow.mjs';
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
 import {once} from 'node:events';
@@ -19,17 +21,21 @@ try{
  const sandbox=await context.newPage();await sandbox.goto('chrome://sandbox');const sandboxText=await sandbox.locator('body').innerText();console.log(JSON.stringify({kind:'sandbox-diagnostic',browserVersion:browser.version(),body:sandboxText.slice(0,8000)}));assert(sandboxEvidence(sandboxText),'Chrome sandbox proof unavailable');await sandbox.close();report.sandbox='namespace-or-suid AND seccomp-bpf active';report.browserVersion=browser.version();
  await context.route('**/*',async route=>{const q=route.request(),kind=classifyRequest(q.url(),q.method());if(kind==='local'||kind==='inline')return route.continue();if(kind==='optional-weather-blocked')report.optionalExternalBlocked++;else{report.unexpectedExternalBlocked++;failures.push('Unexpected external request blocked')}return route.abort('blockedbyclient')});
  await context.routeWebSocket('**/*',socket=>{const u=new URL(socket.url());if(u.hostname==='127.0.0.1'&&u.port==='4173')socket.connectToServer();else{report.unexpectedExternalBlocked++;failures.push('External websocket blocked');socket.close()}});
- const page=await context.newPage();page.setDefaultTimeout(15000);
+ context.on('page',page=>{page.setDefaultTimeout(15000);
  page.on('pageerror',()=>{report.pageErrors++;failures.push('Uncaught page error')});
  page.on('console',msg=>{if(msg.type()==='error'){report.consoleErrors++;failures.push('Browser console error')}});
  page.on('response',r=>{if(new URL(r.url()).origin===ORIGIN&&r.status()>=400){report.requiredNetworkFailures++;failures.push('Local HTTP '+r.status()+' '+new URL(r.url()).pathname)}});
  page.on('requestfailed',r=>{if(classifyRequest(r.url(),r.method())==='local'){report.requiredNetworkFailures++;failures.push('Local request failed '+new URL(r.url()).pathname)}});
+ });
+ const page=await context.newPage();
  await page.goto(ORIGIN+'/wtstgj/',{waitUntil:'load'});
  await page.locator('#title-start').click();await page.locator('#new-start').click();await page.locator('[data-slot="SLOT_1"]').click();await page.locator('#help-close').click();
  for(let i=0;i<20&&!await page.locator('#avatar-next').isVisible();i++){await page.locator('.opening-frame').click();await sleep(80)}
  await page.locator('[data-gender="girl"]').click();await page.locator('#avatar-next').click();await page.locator('#name-input').fill('SMOKE');await page.locator('#name-submit').click();
  for(let i=0;i<4&&!await page.locator('#opening-world').isVisible();i++){await page.locator('.opening-frame').click();await sleep(80)}
  await page.locator('#opening-world').waitFor({state:'visible'});const intro=await canvasProof(page,'#opening-world');assert(intro.opaque>100&&intro.colors>20,'Ordinary opening canvas blank');assert.equal(await page.locator('#name-error').count(),0);report.ordinary={phase:'real menu/empty slot/girl/name/opening room render',canvas:intro,fullStory:false,canonicalPartnerCreation:false};
+ report.ordinaryExtended=await ordinaryFlow(page);
+ report.indexedDBPrimitive=await indexedDBFlow(context);
  await page.goto(ORIGIN+'/wtstgj/native-walk.html',{waitUntil:'load'});
  for(const map of ['S7','S8']){const started=performance.now();if(map==='S8')await page.locator('#map').selectOption('S8');const start=await ready(page,map);const selectionMs=performance.now()-started;const pixels=await canvasProof(page,'#view');assert(pixels.opaque>100&&pixels.colors>20,'Walk canvas blank');await page.locator('#view').focus();let moved=false;
   for(const key of ['ArrowLeft','ArrowRight','ArrowDown','ArrowUp']){await page.keyboard.down(key);await sleep(160);await page.keyboard.up(key);await sleep(80);if(JSON.stringify(await ready(page,map))!==JSON.stringify(start)){moved=true;break}}assert(moved,map+' real keyboard input did not move');
