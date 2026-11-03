@@ -10,11 +10,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: geoje-original-world-cadence-20261103-r1
+  group: geoje-original-world-cadence-20261103-r2
   cancel-in-progress: false
 jobs:
   smoke:
-    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World cadence 20261103-r1'
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World cadence 20261103-r2'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
@@ -35,4 +35,7 @@ jobs:
           node scripts/prepare-assets.mjs
           node tools/portable-native/build.mjs
           node tools/original-world-comparison/build.mjs
-          node tools/browser-smoke/original-world-smoke.mjs
+          command -v Xvfb
+          command -v xvfb-run
+          command -v xauth
+          xvfb-run --auto-servernum --server-args="-screen 0 1440x1000x24 -nolisten tcp" node tools/browser-smoke/original-world-smoke.mjs
