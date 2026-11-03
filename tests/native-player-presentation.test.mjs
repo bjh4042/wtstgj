@@ -39,3 +39,20 @@ test('fixed-pair cache rejects a same-map request before preparation',async()=>{
  await assert.rejects(cache.acquire({source:'world:hub:S7',target:'world:hub:S7'}),/FIXED_PAIR/);
  assert.equal(cache.diagnostics.preparations,0);cache.dispose();
 });
+
+test('girl viewport edges preserve integral renderer feet and physical position',()=>{
+ for(const facing of ['down','left','up','right'])for(const camera of [[0,0,1280,720],[2816,1072,1280,720],[-160,-90,1280,720]])for(const x of [0,1,15,24,30,640,1250,1265,1279])for(const y of [0,1,79,80,360,719]){
+  const foot=[x+camera[0],y+camera[1]],v=describeSelectedPlayer({appearance:'girl',foot,camera,facing});
+  assert(v.visibleInside);assert(v.visualOffset.every(Number.isInteger));
+  assert([foot[0]-camera[0]+v.visualOffset[0],foot[1]-camera[1]+v.visualOffset[1]].every(Number.isInteger));
+  assert.deepEqual(v.physicalFoot,foot);assert.equal(v.bounds[3]-v.bounds[1],80);
+  for(let axis=0;axis<2;axis++){const d=v.visualOffset[axis],raw=v.unclampedBounds;if(d>0)assert(raw[axis]+d>=0&&raw[axis]+d<1);if(d<0)assert(raw[axis+2]+d<=[1280,720][axis]&&raw[axis+2]+d>[1280,720][axis]-1)}
+ }
+});
+test('girl rejects fractional camera coordinates before calling the integral renderer',()=>{
+ for(const camera of [[0.5,0,1280,720],[0,-0.25,1280,720]])assert.throws(()=>describeSelectedPlayer({appearance:'girl',foot:[15,716],camera,facing:'down'}),/NATIVE_PLAYER_VISIBILITY/);
+});
+test('known safe native left-edge pose has an integer visual offset',()=>{
+ const v=describeSelectedPlayer({appearance:'girl',foot:[15,716],camera:[0,356,1280,720],facing:'down'});
+ assert.deepEqual(v.visualOffset,[12,0]);assert.deepEqual(v.physicalFoot,[15,716]);assert(v.visibleInside);
+});
