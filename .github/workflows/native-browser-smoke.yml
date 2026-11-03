@@ -8,11 +8,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: geoje-native-browser-smoke-20261103-r6
+  group: geoje-native-browser-smoke-20261103-r7
   cancel-in-progress: false
 jobs:
   smoke:
-    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded sandboxed browser smoke 20261103-r6'
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded sandboxed browser smoke 20261103-r7'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
@@ -30,6 +30,6 @@ jobs:
           npm ci --prefix tools/browser-smoke --ignore-scripts --no-audit --no-fund
       - name: Verify prepared originals and run one sandboxed Chrome smoke
         run: |
-          node --test tools/browser-smoke/guards.test.mjs
+          node --test tools/browser-smoke/guards.test.mjs tools/browser-smoke/expected-weather-console.test.mjs
           node scripts/prepare-assets.mjs
           node tools/browser-smoke/smoke.mjs
