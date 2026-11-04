@@ -1,0 +1,41 @@
+name: One bounded S7 R4 lamp and S9 ship check
+on:
+  push:
+    branches: [codex/geoje-feedback-20261102]
+    paths:
+      - .github/workflows/s7-r4-ship-smoke.yml
+      - tools/s7-r4-ship/**
+permissions:
+  contents: read
+concurrency:
+  group: geoje-s7-r4-ship-20261104-r1
+  cancel-in-progress: false
+jobs:
+  smoke:
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded S7 R4 lamp and S9 ship 20261104-r1'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: 24.22.1
+          package-manager-cache: false
+      - name: Install locked official registry dependency without lifecycle scripts
+        run: npm ci --prefix tools/browser-smoke --ignore-scripts --no-audit --no-fund
+      - name: Reconstruct exact fresh runtime and run one sandboxed Chrome gate
+        env:
+          BROWSER_HEADLESS: "0"
+        run: |
+          node --test tools/browser-smoke/guards.test.mjs
+          node scripts/prepare-assets.mjs
+          node tools/portable-native/build.mjs
+          test ! -e tools/s7-r4-ship/build
+          node tools/s7-r4-ship/build.mjs
+          command -v Xvfb
+          command -v xvfb-run
+          command -v xauth
+          NODE_PATH="$PWD/tools/browser-smoke/node_modules" xvfb-run --auto-servernum --server-args="-screen 0 1440x1000x24 -nolisten tcp" node tools/s7-r4-ship/chrome-check.mjs
