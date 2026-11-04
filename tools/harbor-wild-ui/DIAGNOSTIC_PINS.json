@@ -1,0 +1,83 @@
+{
+  "origin": "http://127.0.0.1:5193",
+  "files": [
+    {
+      "path": "/source_recovery_r57/logical_workspace/native_selected_geometry_r1/assets/S7_OPEN.raw.u8.gzip.bin",
+      "bytes": 17404,
+      "sha256": "894820ea9addaba8a40f582172141d50576c16cc61c5a494fd64047f667db0f2",
+      "kind": "geometry"
+    },
+    {
+      "path": "/source_recovery_r57/logical_workspace/portable_native_game_r13/site/native/map_simulation_20261102/s8_hub_r2/bank/CLOSED.raw.u8.gzip.bin",
+      "bytes": 35097,
+      "sha256": "b23b6ede786b307fbd01f3009dd777130b0afe036217a73329d819843b2c8e3f",
+      "kind": "geometry"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_003.png",
+      "bytes": 451359,
+      "sha256": "dfcdad9b7248e721e981998f65936ace26f5340976a1889adba4f946d181e56c",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_006.png",
+      "bytes": 514101,
+      "sha256": "bde9625fc657e45eaa50f42946c03712e4e208be8aa9fec284136b29c3b18c2a",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_009.png",
+      "bytes": 473892,
+      "sha256": "8b3f8a06fbfa600c4829f83685c2d4005dde42d2d6f2fb39fb46731f78d3d69d",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_018.png",
+      "bytes": 341476,
+      "sha256": "57ae40200a6817add062ab184ed855bdd0364f53bd754e06e048afbeb110de1f",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_046.png",
+      "bytes": 300742,
+      "sha256": "b505bb893cf544d3391e2d5c129d03ed1a7d15ed54e1fe0427f58c0391caa93b",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_062.png",
+      "bytes": 375345,
+      "sha256": "a97ba4be3badc3bb30ea805853061b5efa001939735bd0285b454d8e34836893",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_070.png",
+      "bytes": 376896,
+      "sha256": "08142f212cad105cba039a1822b8d753a0011c092fd7f33f32d8f83d71c0b310",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-atlases/species/SPECIES_111.png",
+      "bytes": 524877,
+      "sha256": "96848dbf43dac25451016f0005ee26c003e72999f339d6ea31e03becab3d21ea",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-battle-backgrounds/COAST.png",
+      "bytes": 1787045,
+      "sha256": "ffa2329ec3ca58ff94c8e7074844229c3c21ca6d1b879551a91670231b722a08",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-battle-trainers/PLAYER_FEMALE.webp",
+      "bytes": 45808,
+      "sha256": "0d510e3ecb5b19e97cdd59ab02ef47ad59e19894aef473d13623ee91bee1a1d8",
+      "kind": "battle-art"
+    },
+    {
+      "path": "/source_recovery_r57/public_checkout/dist/assets/approved-battle-trainers/PLAYER_MALE.webp",
+      "bytes": 42934,
+      "sha256": "cb56e968758d8def13e8e3345909f20dbc2bed10df9ef87390eafaaf9ffbe625",
+      "kind": "battle-art"
+    }
+  ]
+}
