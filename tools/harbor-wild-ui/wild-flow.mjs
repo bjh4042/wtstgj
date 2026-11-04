@@ -17,6 +17,34 @@ async function stylesReady(page,diagnostics,report,label){
  assert.deepEqual(sheets.map(x=>x.path).sort(),[...stylesheetPaths].sort());assert(sheets.every(x=>x.loaded&&x.rules>0),'Stylesheets must be parsed, not merely requested');
  report.milestones.push({kind:'exact-candidate-stylesheets-ready',label,sheets});
 }
+// Read-only document overflow evidence, including the visible QA adapter text.
+// Does not alter styles, text, scroll position, input, storage, or game state.
+export function readDocumentSurface(configuredWidth){
+ const box=e=>{if(!e)return null;const r=e.getBoundingClientRect(),c=getComputedStyle(e);return{tag:e.tagName,id:e.id,className:typeof e.className==='string'?e.className:'',x:r.x,y:r.y,width:r.width,height:r.height,clientWidth:e.clientWidth,scrollWidth:e.scrollWidth,display:c.display,whiteSpace:c.whiteSpace,overflowWrap:c.overflowWrap,wordBreak:c.wordBreak,overflowX:c.overflowX,font:c.font}};
+ const root=document.documentElement,body=document.body,v=visualViewport,held=document.querySelector('#qa-held-status'),all=[...document.querySelectorAll('body *')],examined=all.slice(0,5000),overflow=[];
+ for(const e of examined){const b=box(e);if(b.width>0&&b.height>0&&(b.x<-.5||b.x+b.width>configuredWidth+.5||b.clientWidth>0&&b.scrollWidth>b.clientWidth+1))overflow.push(b)}
+ const textRects=[];if(held){const range=document.createRange();range.selectNodeContents(held);for(const r of range.getClientRects())textRects.push({x:r.x,y:r.y,width:r.width,height:r.height});range.detach()}
+ return{configuredWidth,innerWidth,innerHeight,scrollX,scrollY,document:{clientWidth:root.clientWidth,clientHeight:root.clientHeight,scrollWidth:root.scrollWidth,scrollHeight:root.scrollHeight},body:box(body),visualViewport:v?{width:v.width,height:v.height,offsetLeft:v.offsetLeft,offsetTop:v.offsetTop,scale:v.scale}:null,heldStatus:{element:box(held),text:held?.textContent??null,textRects:textRects.slice(0,40),textRectCount:textRects.length},overflowElements:overflow.slice(0,40),overflowElementCount:overflow.length,examinedElementCount:examined.length,totalElementCount:all.length,scanTruncated:all.length>examined.length};
+}
+export function validateDocumentViewport(s,configured){
+ assert(configured&&configured.width>0&&configured.height>0,'Configured document viewport must be retained');
+ assert.equal(s.scanTruncated,false,'Overflow document scan must be complete');
+ assert(Math.abs(s.innerWidth-configured.width)<=1,'Pre-battle layout viewport expanded beyond configured viewport');
+ assert(Math.abs(s.innerHeight-configured.height)<=1,'Pre-battle layout viewport height mismatch');
+ assert(s.document.clientWidth<=configured.width+1&&s.document.scrollWidth<=configured.width+1,'Pre-battle document horizontal overflow');
+ assert(s.body.scrollWidth<=configured.width+1,'Pre-battle body horizontal overflow');
+ const v=s.visualViewport;assert(v&&Math.abs(v.scale-1)<.001&&v.width<=configured.width+1&&Math.abs(v.offsetLeft)<.5,'Pre-battle visual viewport mismatch');
+ const h=s.heldStatus.element;assert(h&&h.width>0&&h.height>0&&s.heldStatus.text?.length>0,'QA held status must remain visible and populated');
+ assert(h.x>=-.5&&h.x+h.width<=configured.width+.5&&h.scrollWidth<=h.clientWidth+1,'QA held status horizontal overflow');
+ for(const r of s.heldStatus.textRects)assert(r.x>=-.5&&r.x+r.width<=configured.width+.5,'QA held status text outside viewport');
+ return true;
+}
+async function observeDocument(page,report,label,validate=true){
+ const configuredViewport=page.viewportSize(),surface=await page.evaluate(readDocumentSurface,configuredViewport.width);
+ report.milestones.push({kind:'document-overflow-observation',label,configuredViewport,surface});
+ if(validate)validateDocumentViewport(surface,configuredViewport);
+ return surface;
+}
 // Passive viewport and hit-test evidence. This function never dispatches input or changes game state.
 function readCommandSurface(b){
  const panel=b?.closest('.wild-battle-panel')??document.querySelector('.wild-battle-panel'),overlay=document.querySelector('#battle');
@@ -114,12 +142,12 @@ function completion(q,initial,scenario){
 export async function wildFlow({context,newPage,report,diagnostics,outputRoot,scenario='capture-success',narrow=false,reducedMotion=false}){
  assert(Object.hasOwn(expectedRNG,scenario));
  const label=scenario+(narrow?'-narrow':'-wide');let page=await newPage(),assetEvidence=null,surface=null;const retained=[];
- diagnostics.mark(page,label+'-source-fixture');await page.goto(base+'?scenario='+scenario);await stylesReady(page,diagnostics,report,label+'-initial');assert.deepEqual(await storage(page),{});
+ diagnostics.mark(page,label+'-source-fixture');await page.goto(base+'?scenario='+scenario);await stylesReady(page,diagnostics,report,label+'-initial');await observeDocument(page,report,label+'-initial');assert.deepEqual(await storage(page),{});
  await page.locator('#start').click();await ready(page);const initial=await exported(page);
  assert.deepEqual(initial.position,{scene:'world:area:S8_JISEPO_HARBOR',x:264,y:504,facing:'right'});
  assert.equal(initial.world.spatialMode.profileRevision,'2c0b77a670e5e9db6050c726344e4bc3a7f55762badaa5970717a7adb6a46c5f');
  assert.equal((await qa(page)).rngCalls,0);assert.equal((await qa(page)).commits.length,0);
- await page.locator('#field').focus();await page.keyboard.down('ArrowUp');
+ await observeDocument(page,report,label+'-before-battle');await page.locator('#field').focus();await page.keyboard.down('ArrowUp');
  try{
   await page.waitForFunction(()=>JSON.parse(document.querySelector('#qa-held-status').textContent).accepted===1);
   if(scenario==='no-trigger'){
@@ -128,7 +156,7 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
    await page.waitForFunction(()=>[...document.querySelectorAll('.wild-command')].some(b=>!b.disabled));
    const entered=await qa(page);assert.equal(entered.battleStarts,1);assert.equal(entered.rngCalls,3);assert.equal(entered.commits.length,2);assert.equal(entered.current.battle.phase,'turn');assert.equal(await page.locator('#save').isDisabled(),true);
    await diagnostics.flush();assetEvidence=diagnostics.evidence(page);assert.equal(assetEvidence.verifiedArtwork.length,10,'Exact original party/table/background/portrait closure');
-   surface=await assertBattleLayout(page,label);const viewportSurface=await page.locator('.wild-command').first().evaluate(readCommandSurface);report.milestones.push({kind:'battle-configured-viewport-observation',label,configuredViewport:page.viewportSize(),surface:viewportSurface});validateViewportSurface(viewportSurface,page.viewportSize());await page.screenshot({path:outputRoot+'/'+label+'-battle.png',fullPage:true});await focusContained(page);
+   await observeDocument(page,report,label+'-battle',false);surface=await assertBattleLayout(page,label);const viewportSurface=await page.locator('.wild-command').first().evaluate(readCommandSurface);report.milestones.push({kind:'battle-configured-viewport-observation',label,configuredViewport:page.viewportSize(),surface:viewportSurface});validateViewportSurface(viewportSurface,page.viewportSize());await page.screenshot({path:outputRoot+'/'+label+'-battle.png',fullPage:true});await focusContained(page);
    await page.keyboard.press('ArrowLeft');assert.equal((await qa(page)).commits.length,2);assert.equal((await qa(page)).rngCalls,3);
    // Retain the enabled real capture button, then invalidate its epoch solely through visible pause/resume controls.
    const stale=await page.locator('.wild-command').filter({hasText:'생태볼'}).first().elementHandle();assert(stale);retained.push(stale);
@@ -181,7 +209,7 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
   completion(await qa(page),initial,scenario);assert.deepEqual(await exported(page),complete);
   const saved=await storage(page);for(const button of retained)await button.dispose();retained.length=0;
   await diagnostics.flush();diagnostics.closing(page,label+'-cold-close');await page.close();
-  page=await newPage();diagnostics.mark(page,label+'-cold');await page.goto(base+'?scenario='+scenario);await stylesReady(page,diagnostics,report,label+'-cold');assert.deepEqual(await storage(page),saved);
+  page=await newPage();diagnostics.mark(page,label+'-cold');await page.goto(base+'?scenario='+scenario);await stylesReady(page,diagnostics,report,label+'-cold');await observeDocument(page,report,label+'-cold');assert.deepEqual(await storage(page),saved);
   await page.locator('#cold').click();await ready(page);assert.deepEqual(await exported(page),complete);assert.deepEqual(await storage(page),saved);
   const cold=await qa(page);assert.equal(cold.rngCalls,0);assert.equal(cold.battleStarts,0);assert.equal(cold.commits.length,0);assert.equal(cold.owners,2);assert.deepEqual(cold.errors,[]);assert.equal(cold.lastResult,null);
   report.milestones.push({kind:'whole-save-new-owner-cold-document',label,fullStateDigest:stateHash(complete),rawStorageDigest:hash(saved),exactPreColdRNG:expectedRNG[scenario],zeroColdRNG:true,zeroColdWrites:true,storageUnchanged:true,canonicalExportBytes:text.length,deviceDurability:false});
