@@ -10,6 +10,43 @@ async function canvasPixels(page,selector){return page.locator(selector).evaluat
 async function assertBattleLayout(page,label){const layout=await page.locator('.wild-battle-panel').evaluate(panel=>{const b=panel.getBoundingClientRect(),canvas=panel.querySelector('canvas').getBoundingClientRect();return{width:innerWidth,panel:{left:b.left,right:b.right,top:b.top,bottom:b.bottom},canvas:{width:canvas.width,height:canvas.height},cards:[...panel.querySelectorAll('.eco-battle-card')].map(e=>{const r=e.getBoundingClientRect();return{left:r.left,right:r.right,top:r.top,bottom:r.bottom,scrollWidth:e.scrollWidth,clientWidth:e.clientWidth}}),buttons:[...panel.querySelectorAll('.wild-command')].map(e=>{const r=e.getBoundingClientRect();return{left:r.left,right:r.right,width:r.width,height:r.height,text:e.textContent}})}});assert(layout.panel.left>=0&&layout.panel.right<=layout.width+.5,label+' panel horizontal viewport');assert(layout.canvas.width>=240&&layout.canvas.height>=220);for(const b of layout.buttons){assert(b.left>=layout.panel.left&&b.right<=layout.panel.right+.5,label+' command bounds');assert(b.height>=43,label+' touch height')}for(const c of layout.cards){assert(c.left>=layout.panel.left&&c.right<=layout.panel.right+.5,label+' HUD bounds');assert(c.scrollWidth<=c.clientWidth+1,label+' HUD no horizontal overflow')}const pixels=await canvasPixels(page,'.wild-canvas');assert(pixels.opaque>pixels.width*pixels.height*.98);assert(pixels.colors>20);return{layout,pixels};}
 async function focusContained(page){await page.locator('.wild-command:enabled').first().focus();for(let i=0;i<18;i++){await page.keyboard.press('Tab');assert(await page.evaluate(()=>!!document.activeElement?.closest('.wild-battle-panel')),'Modal Tab containment')}await page.keyboard.press('Shift+Tab');assert(await page.evaluate(()=>!!document.activeElement?.closest('.wild-battle-panel')));}
 async function originalCapturePause(page,label,outputRoot){await page.waitForFunction(()=>document.querySelector('.wild-canvas')?.getAttribute('aria-label')?.includes('포획을 시도'));await page.getByRole('button',{name:'잠시 멈춤',exact:true}).click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#qa-readout').textContent).current.paused);const before=await qa(page),pixels=await page.locator('.wild-canvas').evaluate(c=>c.toDataURL());await page.screenshot({path:outputRoot+'/'+label+'-capture-attempt.png',fullPage:true});await page.waitForTimeout(350);assert.equal(await page.locator('.wild-canvas').evaluate(c=>c.toDataURL()),pixels,'Paused original cue must not advance');assert.equal((await qa(page)).rngCalls,before.rngCalls);assert.equal((await qa(page)).commits.length,before.commits.length);assert.equal(await page.locator('.wild-command:enabled').count(),0);await page.locator('.wild-battle-panel').getByRole('button',{name:'계속하기',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.wild-canvas')?.getAttribute('aria-label')?.includes('포획에 성공'));await page.getByRole('button',{name:'잠시 멈춤',exact:true}).click();await page.screenshot({path:outputRoot+'/'+label+'-capture-success.png',fullPage:true});await page.locator('.wild-battle-panel').getByRole('button',{name:'계속하기',exact:true}).click();}
+const stylesheetPaths=['/capture_wild_ui_r1/panel.css','/source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/polished-field-ui.css','/source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/integrated-rpg-ui.css'];
+async function stylesReady(page,diagnostics,report,label){
+ await diagnostics.flush();const evidence=diagnostics.evidence(page);assert.deepEqual([...evidence.verifiedStylesheets].sort(),[...stylesheetPaths].sort(),'All original stylesheets need exact successful response bodies before interaction');
+ const sheets=await page.evaluate(()=>[...document.querySelectorAll('link[rel="stylesheet"]')].map(link=>({path:new URL(link.href).pathname,loaded:!!link.sheet,rules:link.sheet?.cssRules.length??0})));
+ assert.deepEqual(sheets.map(x=>x.path).sort(),[...stylesheetPaths].sort());assert(sheets.every(x=>x.loaded&&x.rules>0),'Stylesheets must be parsed, not merely requested');
+ report.milestones.push({kind:'exact-original-stylesheets-ready',label,sheets});
+}
+export function validateCommandLayoutSamples(samples){
+ assert.equal(samples.length,12);const first=samples[0];
+ for(const sample of samples){
+  assert.equal(sample.hudPosition,'absolute','Original integrated CSS must position HUD outside stage flow');
+  assert(sample.stage.height>=220&&sample.stage.height<=720,'Stage needs original definite bounded height');
+  assert.equal(sample.enabled,true);assert.equal(sample.connected,true);
+  assert(Math.abs(sample.canvas.height-sample.stage.height)<.5,'Canvas CSS height must equal stage height independently of intrinsic bitmap size');
+  assert(Math.abs(sample.intrinsicHeight-Math.round(sample.stage.height*2))<=1,'Production renderer bitmap matches stable logical stage');
+  for(const kind of ['stage','canvas','command'])for(const field of ['x','y','width','height'])assert(Math.abs(sample[kind][field]-first[kind][field])<=.5,'Unstable '+kind+' '+field);
+ }
+ return{frames:samples.length,first,last:samples.at(-1),maxAllowedDelta:.5};
+}
+async function commandLayout(page,locator,report,label){
+ const button=await locator.elementHandle();assert(button);
+ try{const samples=await button.evaluate(async b=>{
+  const panel=b.closest('.wild-battle-panel'),stage=panel.querySelector('.eco-rpg-stage'),canvas=panel.querySelector('canvas'),hud=panel.querySelector('.eco-battle-hud'),samples=[];
+  const box=e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}};
+  for(let i=0;i<12;i++){await new Promise(requestAnimationFrame);samples.push({stage:box(stage),canvas:box(canvas),command:box(b),intrinsicHeight:canvas.height,hudPosition:getComputedStyle(hud).position,stageCSSHeight:getComputedStyle(stage).height,enabled:!b.disabled,connected:b.isConnected})}
+  return samples;
+ });const record={kind:'original-command-layout-observation',label,samples,verified:false};report.milestones.push(record);const verified=validateCommandLayoutSamples(samples);Object.assign(record,{verified:true,...verified})}finally{await button.dispose()}
+}
+async function normalCommand(page,locator,report,label,touch=false){
+ await commandLayout(page,locator,report,label);
+ const observation={label,method:touch?'tap':'click',before:effects(await qa(page)),returned:false};(report.commandAttempts??=[]).push(observation);
+ const observer=await page.evaluateHandle(()=>{const events=[];let overflow=false;const capture=e=>{const b=e.target.closest?.('.wild-command');if(!b)return;if(events.length>=24){overflow=true;return}events.push({type:e.type,isTrusted:e.isTrusted,action:JSON.parse(b.dataset.action),x:e.clientX,y:e.clientY})};for(const type of ['pointerdown','pointerup','click'])document.addEventListener(type,capture,{capture:true,passive:true});return{read:()=>({events,overflow}),dispose:()=>{for(const type of ['pointerdown','pointerup','click'])document.removeEventListener(type,capture,true)}}});
+ try{if(touch)await locator.tap();else await locator.click();observation.returned=true}
+ catch(error){observation.failure=error.message;throw error}
+ finally{observation.pointerEvents=await observer.evaluate(o=>o.read()).catch(error=>({readError:error.message}));observation.after=await qa(page).then(effects).catch(error=>({readError:error.message}));observation.storageDigest=await storage(page).then(hash).catch(error=>({readError:error.message}));await observer.evaluate(o=>o.dispose()).catch(()=>{});await observer.dispose()}
+ assert.equal(observation.pointerEvents.overflow,false);assert.deepEqual(observation.pointerEvents.events.map(e=>e.type),['pointerdown','pointerup','click']);assert(observation.pointerEvents.events.every(e=>e.isTrusted),'Ordinary browser input must dispatch trusted events');
+}
 const expectedRNG={'capture-success':4,'capture-failure':5,flee:3,'no-trigger':1};
 const effects=q=>({rngCalls:q.rngCalls,commits:q.commits,battleStarts:q.battleStarts,pendingWrite:q.pendingWrite,lastResult:q.lastResult,errors:q.errors,battle:q.current?.battle});
 async function staleClick(page,button,label,report){
@@ -43,7 +80,7 @@ function completion(q,initial,scenario){
 export async function wildFlow({context,newPage,report,diagnostics,outputRoot,scenario='capture-success',narrow=false,reducedMotion=false}){
  assert(Object.hasOwn(expectedRNG,scenario));
  const label=scenario+(narrow?'-narrow':'-wide');let page=await newPage(),assetEvidence=null,surface=null;const retained=[];
- diagnostics.mark(page,label+'-source-fixture');await page.goto(base+'?scenario='+scenario);assert.deepEqual(await storage(page),{});
+ diagnostics.mark(page,label+'-source-fixture');await page.goto(base+'?scenario='+scenario);await stylesReady(page,diagnostics,report,label+'-initial');assert.deepEqual(await storage(page),{});
  await page.locator('#start').click();await ready(page);const initial=await exported(page);
  assert.deepEqual(initial.position,{scene:'world:area:S8_JISEPO_HARBOR',x:264,y:504,facing:'right'});
  assert.equal(initial.world.spatialMode.profileRevision,'2c0b77a670e5e9db6050c726344e4bc3a7f55762badaa5970717a7adb6a46c5f');
@@ -69,7 +106,7 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
    assert.equal((await qa(page)).rngCalls,3);assert.equal((await qa(page)).commits.length,2);
    if(scenario==='capture-success'||scenario==='capture-failure'){
     const ball=page.locator('.wild-command').filter({hasText:'생태볼'}).first();const used=await ball.elementHandle();assert(used);retained.push(used);
-    if(narrow)await ball.tap();else await ball.click();
+    await normalCommand(page,ball,report,label+'-capture',narrow);
     await page.waitForFunction(()=>JSON.parse(document.querySelector('#qa-readout').textContent).current.battle.captureEvents.length===1);
     const captured=await qa(page);assert.equal(captured.current.battle.ball,initial.inventory.ecology_ball-1);assert.equal(captured.current.battle.captureEvents[0].success,scenario==='capture-success');assert.equal(await page.locator('.wild-command:enabled').count(),0);
     if(scenario==='capture-success'){
@@ -83,10 +120,10 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
      const afterEnemy=await qa(page);assert.equal(afterEnemy.rngCalls,5);assert(afterEnemy.current.battle.eventTypes.slice(afterEnemy.current.battle.eventTypes.indexOf('capture')+1).some(t=>['move','damage','miss'].includes(t)),'Original enemy response after failed capture');
      await staleClick(page,used,label+'-after-failed-capture-and-enemy-response',report);
      await page.screenshot({path:outputRoot+'/'+label+'-failed-capture.png',fullPage:true});
-     const flee=page.getByRole('button',{name:'도망가기',exact:true});const usedFlee=await flee.elementHandle();assert(usedFlee);retained.push(usedFlee);await flee.click();
+     const flee=page.getByRole('button',{name:'도망가기',exact:true});const usedFlee=await flee.elementHandle();assert(usedFlee);retained.push(usedFlee);await normalCommand(page,flee,report,label+'-flee-after-failure');
     }
    }else{
-    const flee=page.getByRole('button',{name:'도망가기',exact:true});const used=await flee.elementHandle();assert(used);retained.push(used);await flee.click();
+    const flee=page.getByRole('button',{name:'도망가기',exact:true});const used=await flee.elementHandle();assert(used);retained.push(used);await normalCommand(page,flee,report,label+'-flee');
    }
   }
   // Every scenario, including no-trigger, reaches this common completed-state and persistence path.
@@ -110,10 +147,11 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
   completion(await qa(page),initial,scenario);assert.deepEqual(await exported(page),complete);
   const saved=await storage(page);for(const button of retained)await button.dispose();retained.length=0;
   await diagnostics.flush();diagnostics.closing(page,label+'-cold-close');await page.close();
-  page=await newPage();diagnostics.mark(page,label+'-cold');await page.goto(base+'?scenario='+scenario);assert.deepEqual(await storage(page),saved);
+  page=await newPage();diagnostics.mark(page,label+'-cold');await page.goto(base+'?scenario='+scenario);await stylesReady(page,diagnostics,report,label+'-cold');assert.deepEqual(await storage(page),saved);
   await page.locator('#cold').click();await ready(page);assert.deepEqual(await exported(page),complete);assert.deepEqual(await storage(page),saved);
   const cold=await qa(page);assert.equal(cold.rngCalls,0);assert.equal(cold.battleStarts,0);assert.equal(cold.commits.length,0);assert.equal(cold.owners,2);assert.deepEqual(cold.errors,[]);assert.equal(cold.lastResult,null);
   report.milestones.push({kind:'whole-save-new-owner-cold-document',label,fullStateDigest:stateHash(complete),rawStorageDigest:hash(saved),exactPreColdRNG:expectedRNG[scenario],zeroColdRNG:true,zeroColdWrites:true,storageUnchanged:true,canonicalExportBytes:text.length,deviceDurability:false});
+ }catch(error){report.lastFailureObservation={label,qa:await qa(page).catch(e=>({readError:e.message})),held:await held(page).catch(e=>({readError:e.message})),storageDigest:await storage(page).then(hash).catch(e=>({readError:e.message}))};throw error
  }finally{
   for(const button of retained)await button.dispose().catch(()=>{});
   await page.keyboard.up('ArrowUp').catch(()=>{});if(!page.isClosed()){await diagnostics.flush();diagnostics.closing(page,label+'-final-close');await page.close()}

@@ -304,6 +304,13 @@
       "source": "dist/art/integrated-battle-layout.mjs"
     },
     {
+      "destination": "source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/integrated-rpg-ui.css",
+      "bytes": 6382,
+      "sha256": "aca7c32ef61879ca433d0707f7e2c72304cf9be789c75fea436af206a95a8c98",
+      "kind": "repository",
+      "source": "dist/art/integrated-rpg-ui.css"
+    },
+    {
       "destination": "source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/legacy-assets.mjs",
       "bytes": 59695,
       "sha256": "bf68f277931ab00865827de84f681ad95b34c6025e8a995e3ea2e08d952f2b95",
@@ -316,6 +323,13 @@
       "sha256": "36b4ccd8c758d7c5c9277edbac61e93e9c98e2cd26b55a82b7ba7c4c43e18a73",
       "kind": "repository",
       "source": "dist/art/polished-battle-chrome.mjs"
+    },
+    {
+      "destination": "source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/polished-field-ui.css",
+      "bytes": 10181,
+      "sha256": "21894b6b22c3e8e02ff86dc0dd20f6b530e3fc286bd196dc4105fd05b70401f7",
+      "kind": "repository",
+      "source": "dist/art/polished-field-ui.css"
     },
     {
       "destination": "source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/species-crops.mjs",

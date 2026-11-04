@@ -78,6 +78,24 @@
       "bytes": 42934,
       "sha256": "cb56e968758d8def13e8e3345909f20dbc2bed10df9ef87390eafaaf9ffbe625",
       "kind": "battle-art"
+    },
+    {
+      "path": "/capture_wild_ui_r1/panel.css",
+      "bytes": 2043,
+      "sha256": "55f410533ca5a9a657806ca390d0bbd5acecbe0bb58180a6349079a4f66ecdab",
+      "kind": "stylesheet"
+    },
+    {
+      "path": "/source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/integrated-rpg-ui.css",
+      "bytes": 6382,
+      "sha256": "aca7c32ef61879ca433d0707f7e2c72304cf9be789c75fea436af206a95a8c98",
+      "kind": "stylesheet"
+    },
+    {
+      "path": "/source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/polished-field-ui.css",
+      "bytes": 10181,
+      "sha256": "21894b6b22c3e8e02ff86dc0dd20f6b530e3fc286bd196dc4105fd05b70401f7",
+      "kind": "stylesheet"
     }
   ]
 }
