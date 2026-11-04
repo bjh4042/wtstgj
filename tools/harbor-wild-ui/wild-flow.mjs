@@ -12,39 +12,73 @@ async function focusContained(page){await page.locator('.wild-command:enabled').
 async function originalCapturePause(page,label,outputRoot){await page.waitForFunction(()=>document.querySelector('.wild-canvas')?.getAttribute('aria-label')?.includes('포획을 시도'));await page.getByRole('button',{name:'잠시 멈춤',exact:true}).click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#qa-readout').textContent).current.paused);const before=await qa(page),pixels=await page.locator('.wild-canvas').evaluate(c=>c.toDataURL());await page.screenshot({path:outputRoot+'/'+label+'-capture-attempt.png',fullPage:true});await page.waitForTimeout(350);assert.equal(await page.locator('.wild-canvas').evaluate(c=>c.toDataURL()),pixels,'Paused original cue must not advance');assert.equal((await qa(page)).rngCalls,before.rngCalls);assert.equal((await qa(page)).commits.length,before.commits.length);assert.equal(await page.locator('.wild-command:enabled').count(),0);await page.locator('.wild-battle-panel').getByRole('button',{name:'계속하기',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.wild-canvas')?.getAttribute('aria-label')?.includes('포획에 성공'));await page.getByRole('button',{name:'잠시 멈춤',exact:true}).click();await page.screenshot({path:outputRoot+'/'+label+'-capture-success.png',fullPage:true});await page.locator('.wild-battle-panel').getByRole('button',{name:'계속하기',exact:true}).click();}
 const stylesheetPaths=['/capture_wild_ui_r1/panel.css','/source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/polished-field-ui.css','/source_recovery_r57/logical_workspace/native_world_selected_harbor_capture_r2/source/art/integrated-rpg-ui.css'];
 async function stylesReady(page,diagnostics,report,label){
- await diagnostics.flush();const evidence=diagnostics.evidence(page);assert.deepEqual([...evidence.verifiedStylesheets].sort(),[...stylesheetPaths].sort(),'All original stylesheets need exact successful response bodies before interaction');
+ await diagnostics.flush();const evidence=diagnostics.evidence(page);assert.deepEqual([...evidence.verifiedStylesheets].sort(),[...stylesheetPaths].sort(),'All candidate stylesheets need exact successful response bodies before interaction');
  const sheets=await page.evaluate(()=>[...document.querySelectorAll('link[rel="stylesheet"]')].map(link=>({path:new URL(link.href).pathname,loaded:!!link.sheet,rules:link.sheet?.cssRules.length??0})));
  assert.deepEqual(sheets.map(x=>x.path).sort(),[...stylesheetPaths].sort());assert(sheets.every(x=>x.loaded&&x.rules>0),'Stylesheets must be parsed, not merely requested');
- report.milestones.push({kind:'exact-original-stylesheets-ready',label,sheets});
+ report.milestones.push({kind:'exact-candidate-stylesheets-ready',label,sheets});
 }
-export function validateCommandLayoutSamples(samples){
+// Passive viewport and hit-test evidence. This function never dispatches input or changes game state.
+function readCommandSurface(b){
+ const panel=b?.closest('.wild-battle-panel')??document.querySelector('.wild-battle-panel'),overlay=document.querySelector('#battle');
+ const box=e=>{if(!e)return null;const r=e.getBoundingClientRect(),c=getComputedStyle(e);return{x:r.x,y:r.y,width:r.width,height:r.height,clientWidth:e.clientWidth,clientHeight:e.clientHeight,scrollWidth:e.scrollWidth,scrollHeight:e.scrollHeight,scrollLeft:e.scrollLeft,scrollTop:e.scrollTop,position:c.position,overflowX:c.overflowX,overflowY:c.overflowY,minWidth:c.minWidth,boxSizing:c.boxSizing,gridTemplateColumns:c.gridTemplateColumns,gridTemplateRows:c.gridTemplateRows,pointerEvents:c.pointerEvents}};
+ const v=visualViewport,root=document.documentElement,body=document.body,r=b?.getBoundingClientRect(),cx=r?r.left+r.width/2:null,cy=r?r.top+r.height/2:null,hit=r?document.elementFromPoint(cx,cy):null;
+ return{innerWidth,innerHeight,scrollX,scrollY,devicePixelRatio,document:{clientWidth:root.clientWidth,clientHeight:root.clientHeight,scrollWidth:root.scrollWidth,scrollHeight:root.scrollHeight},body:box(body),visualViewport:v?{width:v.width,height:v.height,offsetLeft:v.offsetLeft,offsetTop:v.offsetTop,pageLeft:v.pageLeft,pageTop:v.pageTop,scale:v.scale}:null,overlay:box(overlay),panel:box(panel),stage:box(panel?.querySelector('.eco-rpg-stage')),command:box(b),point:r?{x:cx,y:cy}:null,hitIsTarget:!!b&&!!hit&&(hit===b||b.contains(hit)),hitStack:r?document.elementsFromPoint(cx,cy).slice(0,12).map(e=>({tag:e.tagName,id:e.id,className:typeof e.className==='string'?e.className:'',disabled:!!e.disabled,rect:box(e)})):[]};
+}
+export function validateViewportSurface(surface,configured,{hit=false}={}){
+ assert(configured&&configured.width>0&&configured.height>0,'Configured viewport must be retained');
+ assert(Math.abs(surface.innerWidth-configured.width)<=1,'Layout viewport expanded beyond configured viewport');
+ assert(Math.abs(surface.innerHeight-configured.height)<=1,'Layout viewport height mismatch');
+ assert(surface.document.clientWidth<=configured.width+1,'Document client width exceeds configured viewport');
+ assert(surface.document.scrollWidth<=configured.width+1,'Document horizontal overflow');
+ assert(surface.body.scrollWidth<=configured.width+1,'Body horizontal overflow');
+ const vv=surface.visualViewport;assert(vv&&Math.abs(vv.scale-1)<.001,'Unexpected visual viewport scale');
+ assert(vv.width<=configured.width+1&&Math.abs(vv.offsetLeft)<.5,'Visual viewport width or horizontal offset mismatch');
+ for(const key of ['overlay','panel','stage']){const r=surface[key];assert(r&&r.width>0&&r.x>=-.5&&r.x+r.width<=configured.width+.5,key+' outside configured horizontal viewport')}
+ const overlay=surface.overlay,panel=surface.panel;
+ assert(overlay.y>=-.5&&overlay.y+overlay.height<=configured.height+.5,'Overlay outside configured vertical viewport');
+ assert(panel.y>=-.5&&panel.y+panel.height<=configured.height+.5,'Panel outside configured vertical viewport');
+ assert(panel.scrollWidth<=panel.clientWidth+1,'Panel horizontal overflow');
+ if(hit){const r=surface.command,p=surface.point;assert(r&&r.width>=44&&r.height>=43,'Command touch target too small');assert(p.x>=vv.offsetLeft&&p.x<vv.offsetLeft+vv.width&&p.y>=vv.offsetTop&&p.y<vv.offsetTop+vv.height,'Command center outside visual viewport after ordinary scroll');assert(surface.hitIsTarget,'Command center is intercepted after ordinary scroll');}
+ return true;
+}
+export function validateCommandLayoutSamples(samples,configured){
  assert.equal(samples.length,12);const first=samples[0];
  for(const sample of samples){
+  validateViewportSurface(sample.surface,configured,{hit:true});
   assert.equal(sample.hudPosition,'absolute','Original integrated CSS must position HUD outside stage flow');
   assert(sample.stage.height>=220&&sample.stage.height<=720,'Stage needs original definite bounded height');
   assert.equal(sample.enabled,true);assert.equal(sample.connected,true);
   assert(Math.abs(sample.canvas.height-sample.stage.height)<.5,'Canvas CSS height must equal stage height independently of intrinsic bitmap size');
-  assert(Math.abs(sample.intrinsicHeight-Math.round(sample.stage.height*2))<=1,'Production renderer bitmap matches stable logical stage');
+  assert(Math.abs(sample.canvas.width-sample.stage.width)<.5,'Canvas CSS width must equal bounded stage width');
+  assert(Math.abs(sample.intrinsicHeight-Math.round(sample.stage.height*2))<=1,'Production renderer bitmap height matches stable logical stage');
+  assert(Math.abs(sample.intrinsicWidth-Math.round(sample.stage.width*2))<=1,'Production renderer bitmap width matches bounded logical stage');
   for(const kind of ['stage','canvas','command'])for(const field of ['x','y','width','height'])assert(Math.abs(sample[kind][field]-first[kind][field])<=.5,'Unstable '+kind+' '+field);
  }
- return{frames:samples.length,first,last:samples.at(-1),maxAllowedDelta:.5};
+ return{frames:samples.length,configuredViewport:configured,first,last:samples.at(-1),maxAllowedDelta:.5,viewportContained:true,unobstructedCommandCenter:true};
 }
 async function commandLayout(page,locator,report,label){
- const button=await locator.elementHandle();assert(button);
- try{const samples=await button.evaluate(async b=>{
-  const panel=b.closest('.wild-battle-panel'),stage=panel.querySelector('.eco-rpg-stage'),canvas=panel.querySelector('canvas'),hud=panel.querySelector('.eco-battle-hud'),samples=[];
-  const box=e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}};
-  for(let i=0;i<12;i++){await new Promise(requestAnimationFrame);samples.push({stage:box(stage),canvas:box(canvas),command:box(b),intrinsicHeight:canvas.height,hudPosition:getComputedStyle(hud).position,stageCSSHeight:getComputedStyle(stage).height,enabled:!b.disabled,connected:b.isConnected})}
-  return samples;
- });const record={kind:'original-command-layout-observation',label,samples,verified:false};report.milestones.push(record);const verified=validateCommandLayoutSamples(samples);Object.assign(record,{verified:true,...verified})}finally{await button.dispose()}
+ const configured=page.viewportSize(),button=await locator.elementHandle();assert(button);
+ const record={kind:'original-command-layout-observation',label,configuredViewport:configured,verified:false};report.milestones.push(record);
+ try{
+  record.beforeScroll=await button.evaluate(readCommandSurface);validateViewportSurface(record.beforeScroll,configured);
+  // Same ordinary scrolling performed by Playwright input, never forced hit testing or synthetic input.
+  await locator.scrollIntoViewIfNeeded();
+  const samples=[];
+  for(let i=0;i<12;i++){
+   await page.evaluate(()=>new Promise(requestAnimationFrame));
+   const sample=await button.evaluate(b=>{const panel=b.closest('.wild-battle-panel'),stage=panel.querySelector('.eco-rpg-stage'),canvas=panel.querySelector('canvas'),hud=panel.querySelector('.eco-battle-hud'),box=e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}};return{stage:box(stage),canvas:box(canvas),command:box(b),intrinsicWidth:canvas.width,intrinsicHeight:canvas.height,hudPosition:getComputedStyle(hud).position,stageCSSHeight:getComputedStyle(stage).height,enabled:!b.disabled,connected:b.isConnected}});
+   sample.surface=await button.evaluate(readCommandSurface);samples.push(sample);record.samples=samples;
+  }
+  const verified=validateCommandLayoutSamples(samples,configured);Object.assign(record,{verified:true,...verified});
+ }finally{await button.dispose()}
 }
 async function normalCommand(page,locator,report,label,touch=false){
- await commandLayout(page,locator,report,label);
- const observation={label,method:touch?'tap':'click',before:effects(await qa(page)),returned:false};(report.commandAttempts??=[]).push(observation);
+ const target=await locator.elementHandle();assert(target);
+ const observation={label,method:touch?'tap':'click',configuredViewport:page.viewportSize(),before:effects(await qa(page)),storageDigestBefore:await storage(page).then(hash),returned:false};(report.commandAttempts??=[]).push(observation);
  const observer=await page.evaluateHandle(()=>{const events=[];let overflow=false;const capture=e=>{const b=e.target.closest?.('.wild-command');if(!b)return;if(events.length>=24){overflow=true;return}events.push({type:e.type,isTrusted:e.isTrusted,action:JSON.parse(b.dataset.action),x:e.clientX,y:e.clientY})};for(const type of ['pointerdown','pointerup','click'])document.addEventListener(type,capture,{capture:true,passive:true});return{read:()=>({events,overflow}),dispose:()=>{for(const type of ['pointerdown','pointerup','click'])document.removeEventListener(type,capture,true)}}});
- try{if(touch)await locator.tap();else await locator.click();observation.returned=true}
+ try{await commandLayout(page,locator,report,label);if(touch)await locator.tap();else await locator.click();observation.returned=true}
  catch(error){observation.failure=error.message;throw error}
- finally{observation.pointerEvents=await observer.evaluate(o=>o.read()).catch(error=>({readError:error.message}));observation.after=await qa(page).then(effects).catch(error=>({readError:error.message}));observation.storageDigest=await storage(page).then(hash).catch(error=>({readError:error.message}));await observer.evaluate(o=>o.dispose()).catch(()=>{});await observer.dispose()}
+ finally{observation.pointerEvents=await observer.evaluate(o=>o.read()).catch(error=>({readError:error.message}));observation.after=await qa(page).then(effects).catch(error=>({readError:error.message}));observation.storageDigest=await storage(page).then(hash).catch(error=>({readError:error.message}));observation.afterSurface=await target.evaluate(readCommandSurface).catch(error=>({readError:error.message}));await observer.evaluate(o=>o.dispose()).catch(()=>{});await observer.dispose();await target.dispose()}
  assert.equal(observation.pointerEvents.overflow,false);assert.deepEqual(observation.pointerEvents.events.map(e=>e.type),['pointerdown','pointerup','click']);assert(observation.pointerEvents.events.every(e=>e.isTrusted),'Ordinary browser input must dispatch trusted events');
 }
 const expectedRNG={'capture-success':4,'capture-failure':5,flee:3,'no-trigger':1};
@@ -94,7 +128,7 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
    await page.waitForFunction(()=>[...document.querySelectorAll('.wild-command')].some(b=>!b.disabled));
    const entered=await qa(page);assert.equal(entered.battleStarts,1);assert.equal(entered.rngCalls,3);assert.equal(entered.commits.length,2);assert.equal(entered.current.battle.phase,'turn');assert.equal(await page.locator('#save').isDisabled(),true);
    await diagnostics.flush();assetEvidence=diagnostics.evidence(page);assert.equal(assetEvidence.verifiedArtwork.length,10,'Exact original party/table/background/portrait closure');
-   surface=await assertBattleLayout(page,label);await page.screenshot({path:outputRoot+'/'+label+'-battle.png',fullPage:true});await focusContained(page);
+   surface=await assertBattleLayout(page,label);const viewportSurface=await page.locator('.wild-command').first().evaluate(readCommandSurface);report.milestones.push({kind:'battle-configured-viewport-observation',label,configuredViewport:page.viewportSize(),surface:viewportSurface});validateViewportSurface(viewportSurface,page.viewportSize());await page.screenshot({path:outputRoot+'/'+label+'-battle.png',fullPage:true});await focusContained(page);
    await page.keyboard.press('ArrowLeft');assert.equal((await qa(page)).commits.length,2);assert.equal((await qa(page)).rngCalls,3);
    // Retain the enabled real capture button, then invalidate its epoch solely through visible pause/resume controls.
    const stale=await page.locator('.wild-command').filter({hasText:'생태볼'}).first().elementHandle();assert(stale);retained.push(stale);
@@ -151,7 +185,7 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
   await page.locator('#cold').click();await ready(page);assert.deepEqual(await exported(page),complete);assert.deepEqual(await storage(page),saved);
   const cold=await qa(page);assert.equal(cold.rngCalls,0);assert.equal(cold.battleStarts,0);assert.equal(cold.commits.length,0);assert.equal(cold.owners,2);assert.deepEqual(cold.errors,[]);assert.equal(cold.lastResult,null);
   report.milestones.push({kind:'whole-save-new-owner-cold-document',label,fullStateDigest:stateHash(complete),rawStorageDigest:hash(saved),exactPreColdRNG:expectedRNG[scenario],zeroColdRNG:true,zeroColdWrites:true,storageUnchanged:true,canonicalExportBytes:text.length,deviceDurability:false});
- }catch(error){report.lastFailureObservation={label,qa:await qa(page).catch(e=>({readError:e.message})),held:await held(page).catch(e=>({readError:e.message})),storageDigest:await storage(page).then(hash).catch(e=>({readError:e.message}))};throw error
+ }catch(error){report.lastFailureObservation={label,qa:await qa(page).catch(e=>({readError:e.message})),held:await held(page).catch(e=>({readError:e.message})),surface:await page.evaluate(readCommandSurface).catch(e=>({readError:e.message})),configuredViewport:page.viewportSize(),storageDigest:await storage(page).then(hash).catch(e=>({readError:e.message}))};throw error
  }finally{
   for(const button of retained)await button.dispose().catch(()=>{});
   await page.keyboard.up('ArrowUp').catch(()=>{});if(!page.isClosed()){await diagnostics.flush();diagnostics.closing(page,label+'-final-close');await page.close()}

@@ -45,8 +45,8 @@
     },
     {
       "destination": "capture_wild_ui_r1/panel.css",
-      "bytes": 2043,
-      "sha256": "55f410533ca5a9a657806ca390d0bbd5acecbe0bb58180a6349079a4f66ecdab",
+      "bytes": 2283,
+      "sha256": "d2b3039c4417bd6a18014a934eed60bdec23420c17249c56a88f3a326781accd",
       "kind": "source-bundle",
       "entry": "capture_wild_ui_r1/panel.css"
     },
@@ -2763,7 +2763,7 @@
   ],
   "bundle": {
     "source": "SOURCE_BUNDLE.json",
-    "bytes": 413387,
-    "sha256": "f9eecbff8b66acd6ba223f724f2029c3b0be09c7746280f6c1cb8727daff0f15"
+    "bytes": 413631,
+    "sha256": "47e8184db78d83ae3484eac9e2d734fc10382d5e903dcc0ba6ef7d3baba7b1cc"
   }
 }
