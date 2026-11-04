@@ -1,0 +1,41 @@
+name: One bounded private original World menu host check
+on:
+  push:
+    branches: [codex/geoje-feedback-20261102]
+    paths:
+      - .github/workflows/menu-host-smoke.yml
+      - tools/menu-host-comparison/**
+      - tools/browser-smoke/menu-host-smoke.mjs
+      - tools/browser-smoke/menu-host-flow.mjs
+      - tools/browser-smoke/menu-host-diagnostics.mjs
+permissions:
+  contents: read
+concurrency:
+  group: geoje-private-menu-host-20261104-r1
+  cancel-in-progress: false
+jobs:
+  smoke:
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded private original World menu host 20261104-r1'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: 24.22.1
+          package-manager-cache: false
+      - name: Install locked official registry dependency without lifecycle scripts
+        run: npm ci --prefix tools/browser-smoke --ignore-scripts --no-audit --no-fund
+      - name: Verify exact originals and run one sandboxed Chrome gate
+        run: |
+          node --test tools/browser-smoke/guards.test.mjs
+          node scripts/prepare-assets.mjs
+          node tools/portable-native/build.mjs
+          node tools/menu-host-comparison/build.mjs
+          command -v Xvfb
+          command -v xvfb-run
+          command -v xauth
+          xvfb-run --auto-servernum --server-args="-screen 0 1440x1000x24 -nolisten tcp" node tools/browser-smoke/menu-host-smoke.mjs
