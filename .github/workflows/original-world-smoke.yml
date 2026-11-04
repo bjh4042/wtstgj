@@ -1,4 +1,4 @@
-name: One bounded original World selected S8 union completion check
+name: One bounded original World selected S9 transit ports check
 on:
   push:
     branches: [codex/geoje-feedback-20261102]
@@ -10,11 +10,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: geoje-original-world-selected-s8-union-20261103-r1
+  group: geoje-original-world-selected-s9-ports-20261103-r1
   cancel-in-progress: false
 jobs:
   smoke:
-    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World selected S8 union completion 20261103-r1'
+    if: github.repository == 'bjh4042/wtstgj' && github.event.head_commit.message == 'Run bounded original World selected S9 transit ports 20261103-r1'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
