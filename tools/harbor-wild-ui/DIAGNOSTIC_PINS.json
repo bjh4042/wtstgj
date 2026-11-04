@@ -96,6 +96,12 @@
       "bytes": 10181,
       "sha256": "21894b6b22c3e8e02ff86dc0dd20f6b530e3fc286bd196dc4105fd05b70401f7",
       "kind": "stylesheet"
+    },
+    {
+      "path": "/qa/art-inventory.json",
+      "bytes": 10731,
+      "sha256": "8ee0f9523dd92d8979b5e95ba3c417ea123bba3217228ac1f44d8dec10f067f5",
+      "kind": "asset-inventory"
     }
   ]
 }

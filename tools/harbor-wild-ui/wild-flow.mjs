@@ -208,7 +208,13 @@ export async function wildFlow({context,newPage,report,diagnostics,outputRoot,sc
   for(const [i,button] of retained.entries())await staleClick(page,button,label+'-after-original-owner-disposal-'+i,report);
   completion(await qa(page),initial,scenario);assert.deepEqual(await exported(page),complete);
   const saved=await storage(page);for(const button of retained)await button.dispose();retained.length=0;
-  await diagnostics.flush();diagnostics.closing(page,label+'-cold-close');await page.close();
+  await diagnostics.flush();
+  if(scenario==='capture-failure'){
+   const inventory=report.runtimeAssetDiagnostics.requests.filter(x=>x.phase===label+'-source-fixture'&&x.path==='/qa/art-inventory.json');
+   assert.equal(inventory.length,1,'Original failed-capture VFX must read exact inventory once');assert.equal(inventory[0].body?.verified,true,'Original inventory needs exact successful response body');
+   report.milestones.push({kind:'original-vfx-inventory-response',label,path:inventory[0].path,bytes:inventory[0].body.bytes,sha256:inventory[0].body.sha256,verified:true,generatedArtwork:false});
+  }
+  diagnostics.closing(page,label+'-cold-close');await page.close();
   page=await newPage();diagnostics.mark(page,label+'-cold');await page.goto(base+'?scenario='+scenario);await stylesReady(page,diagnostics,report,label+'-cold');await observeDocument(page,report,label+'-cold');assert.deepEqual(await storage(page),saved);
   await page.locator('#cold').click();await ready(page);assert.deepEqual(await exported(page),complete);assert.deepEqual(await storage(page),saved);
   const cold=await qa(page);assert.equal(cold.rngCalls,0);assert.equal(cold.battleStarts,0);assert.equal(cold.commits.length,0);assert.equal(cold.owners,2);assert.deepEqual(cold.errors,[]);assert.equal(cold.lastResult,null);

@@ -65,6 +65,13 @@
       "entry": "capture_wild_ui_r1/presentation.mjs"
     },
     {
+      "destination": "qa/art-inventory.json",
+      "bytes": 10731,
+      "sha256": "8ee0f9523dd92d8979b5e95ba3c417ea123bba3217228ac1f44d8dec10f067f5",
+      "kind": "repository",
+      "source": "dist/art-inventory.json"
+    },
+    {
       "destination": "qa/index.html",
       "bytes": 2607,
       "sha256": "d1b3890211f7ad9e4380f9144f42d07563478705b26ba1e5bb9487ce2e7656d9",
