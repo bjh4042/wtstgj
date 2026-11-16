@@ -1,0 +1,23 @@
+{
+  "source_set": "TITLE_ENDING4 selected final v1",
+  "files": [
+    {
+      "file": "desktop.png",
+      "sha256": "ea62ba4489c95d7487a55b3125d1bb13ef471153d9c03f5afbac9a3624cb736a",
+      "transform": "none; original selected bytes",
+      "display": "contain, preserve aspect ratio"
+    },
+    {
+      "file": "mobile.png",
+      "sha256": "d50c8adf53140ca47f400f37c5609f09bb2314c7fb6c91cb78e680997911c5e1",
+      "transform": "none; original selected bytes",
+      "display": "contain, preserve aspect ratio"
+    },
+    {
+      "file": "logo.svg",
+      "sha256": "8ea687ba102762d041291be5e6a072ff363b91d9b1c2f2fb29b226d631fe86a6",
+      "transform": "none; original selected bytes",
+      "display": "contain, preserve aspect ratio"
+    }
+  ]
+}

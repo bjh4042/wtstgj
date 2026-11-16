@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "provenance": "Original procedural synthesis for Geoje Monsters; no external samples, music, ROM, or private reference material.",
+  "generator": "tools/generate-gameplay-sfx-r3.py",
+  "assets": [
+    {
+      "role": "BATTLE_16_FLEE_SUCCESS",
+      "file": "BATTLE_16_FLEE_SUCCESS.wav",
+      "seconds": 0.34,
+      "sampleRate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 32684,
+      "sha256": "d2178f63a5dcd4434881cd448397d99196b5a9d9a51346b67920802e5739d68f",
+      "peak": 0.345886,
+      "rms": 0.074998
+    },
+    {
+      "role": "BATTLE_17_DEFEAT",
+      "file": "BATTLE_17_DEFEAT.wav",
+      "seconds": 0.64,
+      "sampleRate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 61484,
+      "sha256": "9cee0d65a7195faea0458e5f5fc210c45ec850edcbb779eb6da4b7314db189d6",
+      "peak": 0.388428,
+      "rms": 0.089928
+    }
+  ]
+}

@@ -1,0 +1,5767 @@
+{
+  "meta": {
+    "version": "v3_20260914",
+    "title": "거제몬스터즈 151종 도감 마스터 v3",
+    "status": "design_master_v3_names_locked",
+    "total_species": 151,
+    "total_chains": 75,
+    "type_system": "17-type classic; fairy excluded",
+    "numbering_policy": "스타터 001-009 고정, 이후 최초 획득 가능 스테이지 중심. 145-151 특별/전설 슬롯 고정.",
+    "motif_policy": "실제 생물 모티프와 자연지형 모티프, 오리지널 상징종을 분리 표기. 게임 타입/진화는 실제 생물학과 별도.",
+    "starter_policy": "001-009 야생 출현 0%; 선택 1계통, 미선택 2계통은 POST 생태센터 연구 퀘스트.",
+    "name_policy": "정확한 중복 금지; '콩'은 애뿔콩·상콩이만 유지; '령'은 특별/상징/보호/전설적 존재에 제한.",
+    "name_review_note": "2026-09-14 명명 검토 완료. proposal_v3 38종과 working_accepted 반딧불이 3종을 확정.",
+    "source_notes": [
+      "geoje_species_151_v2 계열 구조",
+      "geoje_battle_collection_master_v1_1 기존 이름/모티프/타입 참고",
+      "대화에서 합의한 v3 번호/진화/타입/특수획득 정책"
+    ],
+    "validation": {
+      "species_count_ok": true,
+      "dex_contiguous_001_151": true,
+      "exact_name_duplicates": 0,
+      "chain_count_ok": true,
+      "chain_lengths": {
+        "3_stage": 19,
+        "2_stage": 38,
+        "single": 18
+      },
+      "type_counts": {
+        "bug": 17,
+        "dark": 11,
+        "dragon": 5,
+        "electric": 10,
+        "fighting": 8,
+        "fire": 8,
+        "flying": 28,
+        "ghost": 4,
+        "grass": 32,
+        "ground": 22,
+        "ice": 4,
+        "normal": 16,
+        "poison": 5,
+        "psychic": 11,
+        "rock": 26,
+        "steel": 6,
+        "water": 30
+      },
+      "name_status_counts": {
+        "locked": 151
+      },
+      "all_names_locked": true,
+      "bean_syllable_names": [
+        "애뿔콩",
+        "상콩이"
+      ],
+      "ryeong_syllable_names": [
+        "풍란령",
+        "해랑령",
+        "숲결령",
+        "온섬령"
+      ]
+    },
+    "naming_review": {
+      "reviewed_species": 41,
+      "proposal_species_finalized": 38,
+      "working_names_finalized": 3,
+      "notable_refinements": {
+        "034": "바위해송 → 해암송",
+        "081-083": "참싹이-굴참잎-굴참목 → 도토미-참싹이-굴참목",
+        "097": "유혈목이 → 혈목이",
+        "114": "푸른후박 → 늘푸박",
+        "122": "해금기암 → 해금귀암",
+        "144": "철껍굴 → 철굴갑"
+      }
+    }
+  },
+  "species": [
+    {
+      "no": 1,
+      "dex_no": "001",
+      "name": "점삵이",
+      "name_status": "locked",
+      "motif": "삵",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 1,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "점삵이",
+        "솔삵이",
+        "솔삵왕"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "starter_choice",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 미선택 계통은 POST 생태센터 연구 퀘스트로 획득."
+      ]
+    },
+    {
+      "no": 2,
+      "dex_no": "002",
+      "name": "솔삵이",
+      "name_status": "locked",
+      "motif": "삵",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 1,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "점삵이",
+        "솔삵이",
+        "솔삵왕"
+      ],
+      "types": [
+        "grass",
+        "dark"
+      ],
+      "type_names_ko": [
+        "풀",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 미선택 계통은 POST 생태센터 연구 퀘스트로 획득."
+      ]
+    },
+    {
+      "no": 3,
+      "dex_no": "003",
+      "name": "솔삵왕",
+      "name_status": "locked",
+      "motif": "삵",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 1,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "점삵이",
+        "솔삵이",
+        "솔삵왕"
+      ],
+      "types": [
+        "grass",
+        "dark"
+      ],
+      "type_names_ko": [
+        "풀",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 미선택 계통은 POST 생태센터 연구 퀘스트로 획득."
+      ]
+    },
+    {
+      "no": 4,
+      "dex_no": "004",
+      "name": "붉배리",
+      "name_status": "locked",
+      "motif": "붉은배새매",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 2,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "붉배리",
+        "불새매",
+        "불깃매"
+      ],
+      "types": [
+        "fire"
+      ],
+      "type_names_ko": [
+        "불꽃"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "starter_choice",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 불꽃 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 5,
+      "dex_no": "005",
+      "name": "불새매",
+      "name_status": "locked",
+      "motif": "붉은배새매",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 2,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "붉배리",
+        "불새매",
+        "불깃매"
+      ],
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "type_names_ko": [
+        "불꽃",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 불꽃 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 6,
+      "dex_no": "006",
+      "name": "불깃매",
+      "name_status": "locked",
+      "motif": "붉은배새매",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 2,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "붉배리",
+        "불새매",
+        "불깃매"
+      ],
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "type_names_ko": [
+        "불꽃",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 불꽃 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 7,
+      "dex_no": "007",
+      "name": "도롱이",
+      "name_status": "locked",
+      "motif": "거제도롱뇽",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 3,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "도롱이",
+        "물도롱",
+        "섬도룡"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "starter_choice",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "거제 특화",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 미선택 계통은 POST 생태센터 연구 퀘스트로 획득."
+      ]
+    },
+    {
+      "no": 8,
+      "dex_no": "008",
+      "name": "물도롱",
+      "name_status": "locked",
+      "motif": "거제도롱뇽",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 3,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "도롱이",
+        "물도롱",
+        "섬도룡"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "거제 특화",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 미선택 계통은 POST 생태센터 연구 퀘스트로 획득."
+      ]
+    },
+    {
+      "no": 9,
+      "dex_no": "009",
+      "name": "섬도룡",
+      "name_status": "locked",
+      "motif": "거제도롱뇽",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 3,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "도롱이",
+        "물도롱",
+        "섬도룡"
+      ],
+      "types": [
+        "water",
+        "ground"
+      ],
+      "type_names_ko": [
+        "물",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포",
+        "거제 생태센터"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "거제 특화",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "야생 출현 0%. 미선택 계통은 POST 생태센터 연구 퀘스트로 획득."
+      ]
+    },
+    {
+      "no": 10,
+      "dex_no": "010",
+      "name": "꽃쪼미",
+      "name_status": "locked",
+      "motif": "동박새",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 4,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "꽃쪼미",
+        "동백박새"
+      ],
+      "types": [
+        "flying"
+      ],
+      "type_names_ko": [
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 11,
+      "dex_no": "011",
+      "name": "동백박새",
+      "name_status": "locked",
+      "motif": "동박새",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 4,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "꽃쪼미",
+        "동백박새"
+      ],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "type_names_ko": [
+        "노말",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 12,
+      "dex_no": "012",
+      "name": "범애벌",
+      "name_status": "locked",
+      "motif": "호랑나비",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 5,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "범애벌",
+        "줄나비",
+        "범날개"
+      ],
+      "types": [
+        "bug"
+      ],
+      "type_names_ko": [
+        "벌레"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 13,
+      "dex_no": "013",
+      "name": "줄나비",
+      "name_status": "locked",
+      "motif": "호랑나비",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 5,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "범애벌",
+        "줄나비",
+        "범날개"
+      ],
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 14,
+      "dex_no": "014",
+      "name": "범날개",
+      "name_status": "locked",
+      "motif": "호랑나비",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 5,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "범애벌",
+        "줄나비",
+        "범날개"
+      ],
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 15,
+      "dex_no": "015",
+      "name": "밤너굴",
+      "name_status": "locked",
+      "motif": "너구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 6,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "밤너굴",
+        "숲너굴",
+        "너굴대장"
+      ],
+      "types": [
+        "normal"
+      ],
+      "type_names_ko": [
+        "노말"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 16,
+      "dex_no": "016",
+      "name": "숲너굴",
+      "name_status": "locked",
+      "motif": "너구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 6,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "밤너굴",
+        "숲너굴",
+        "너굴대장"
+      ],
+      "types": [
+        "normal",
+        "dark"
+      ],
+      "type_names_ko": [
+        "노말",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 17,
+      "dex_no": "017",
+      "name": "너굴대장",
+      "name_status": "locked",
+      "motif": "너구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 6,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "밤너굴",
+        "숲너굴",
+        "너굴대장"
+      ],
+      "types": [
+        "normal",
+        "dark"
+      ],
+      "type_names_ko": [
+        "노말",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 18,
+      "dex_no": "018",
+      "name": "갈매쪼",
+      "name_status": "locked",
+      "motif": "갈매기",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 7,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "갈매쪼",
+        "해풍갈매"
+      ],
+      "types": [
+        "flying"
+      ],
+      "type_names_ko": [
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 19,
+      "dex_no": "019",
+      "name": "해풍갈매",
+      "name_status": "locked",
+      "motif": "갈매기",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 7,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "갈매쪼",
+        "해풍갈매"
+      ],
+      "types": [
+        "water",
+        "flying"
+      ],
+      "type_names_ko": [
+        "물",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 20,
+      "dex_no": "020",
+      "name": "동백씨",
+      "name_status": "locked",
+      "motif": "동백나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 8,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "동백씨",
+        "동백싹",
+        "홍동백"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 21,
+      "dex_no": "021",
+      "name": "동백싹",
+      "name_status": "locked",
+      "motif": "동백나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "2단계",
+      "chain_id": 8,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "동백씨",
+        "동백싹",
+        "홍동백"
+      ],
+      "types": [
+        "grass",
+        "fire"
+      ],
+      "type_names_ko": [
+        "풀",
+        "불꽃"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 22,
+      "dex_no": "022",
+      "name": "홍동백",
+      "name_status": "locked",
+      "motif": "동백나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 8,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "동백씨",
+        "동백싹",
+        "홍동백"
+      ],
+      "types": [
+        "grass",
+        "fire"
+      ],
+      "type_names_ko": [
+        "풀",
+        "불꽃"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "PROLOGUE",
+      "first_region": [
+        "장승포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 23,
+      "dex_no": "023",
+      "name": "도토람",
+      "name_status": "locked",
+      "motif": "다람쥐",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 9,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "도토람",
+        "솔람이",
+        "숲대람"
+      ],
+      "types": [
+        "normal"
+      ],
+      "type_names_ko": [
+        "노말"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 24,
+      "dex_no": "024",
+      "name": "솔람이",
+      "name_status": "locked",
+      "motif": "다람쥐",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 9,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "도토람",
+        "솔람이",
+        "숲대람"
+      ],
+      "types": [
+        "normal"
+      ],
+      "type_names_ko": [
+        "노말"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 25,
+      "dex_no": "025",
+      "name": "숲대람",
+      "name_status": "locked",
+      "motif": "다람쥐",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 9,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "도토람",
+        "솔람이",
+        "숲대람"
+      ],
+      "types": [
+        "normal",
+        "ground"
+      ],
+      "type_names_ko": [
+        "노말",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 26,
+      "dex_no": "026",
+      "name": "뿔꼬미",
+      "name_status": "locked",
+      "motif": "장수풍뎅이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 10,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "뿔꼬미",
+        "화각충",
+        "장수화각"
+      ],
+      "types": [
+        "fire"
+      ],
+      "type_names_ko": [
+        "불꽃"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": [
+        "불꽃 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 27,
+      "dex_no": "027",
+      "name": "화각충",
+      "name_status": "locked",
+      "motif": "장수풍뎅이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 10,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "뿔꼬미",
+        "화각충",
+        "장수화각"
+      ],
+      "types": [
+        "fire",
+        "bug"
+      ],
+      "type_names_ko": [
+        "불꽃",
+        "벌레"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": [
+        "불꽃 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 28,
+      "dex_no": "028",
+      "name": "장수화각",
+      "name_status": "locked",
+      "motif": "장수풍뎅이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 10,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "뿔꼬미",
+        "화각충",
+        "장수화각"
+      ],
+      "types": [
+        "fire",
+        "bug"
+      ],
+      "type_names_ko": [
+        "불꽃",
+        "벌레"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": [
+        "불꽃 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 29,
+      "dex_no": "029",
+      "name": "흙맴이",
+      "name_status": "locked",
+      "motif": "매미",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 11,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "흙맴이",
+        "맴울이",
+        "전광맴"
+      ],
+      "types": [
+        "bug"
+      ],
+      "type_names_ko": [
+        "벌레"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "npc_trade",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "NPC 생태교환 전용. 전기 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 30,
+      "dex_no": "030",
+      "name": "맴울이",
+      "name_status": "locked",
+      "motif": "매미",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 11,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "흙맴이",
+        "맴울이",
+        "전광맴"
+      ],
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "NPC 생태교환 전용. 전기 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 31,
+      "dex_no": "031",
+      "name": "전광맴",
+      "name_status": "locked",
+      "motif": "매미",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 11,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "흙맴이",
+        "맴울이",
+        "전광맴"
+      ],
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "NPC 생태교환 전용. 전기 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 32,
+      "dex_no": "032",
+      "name": "솔씨미",
+      "name_status": "locked",
+      "motif": "해송",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 12,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "솔씨미",
+        "해솔이",
+        "해암송"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 33,
+      "dex_no": "033",
+      "name": "해솔이",
+      "name_status": "locked",
+      "motif": "해송",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "2단계",
+      "chain_id": 12,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "솔씨미",
+        "해솔이",
+        "해암송"
+      ],
+      "types": [
+        "grass",
+        "rock"
+      ],
+      "type_names_ko": [
+        "풀",
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 34,
+      "dex_no": "034",
+      "name": "해암송",
+      "name_status": "locked",
+      "motif": "해송",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 12,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "솔씨미",
+        "해솔이",
+        "해암송"
+      ],
+      "types": [
+        "grass",
+        "rock"
+      ],
+      "type_names_ko": [
+        "풀",
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S1",
+      "first_region": [
+        "아주",
+        "옥포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 35,
+      "dex_no": "035",
+      "name": "빛애벌",
+      "name_status": "locked",
+      "motif": "반딧불이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 13,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "빛애벌",
+        "빛반디",
+        "별반디"
+      ],
+      "types": [
+        "bug"
+      ],
+      "type_names_ko": [
+        "벌레"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "landmark_observation",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "랜드마크/저녁 조사형 조우. 실제 발광은 생물발광이며 전기 타입은 게임 설정."
+      ]
+    },
+    {
+      "no": 36,
+      "dex_no": "036",
+      "name": "빛반디",
+      "name_status": "locked",
+      "motif": "반딧불이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 13,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "빛애벌",
+        "빛반디",
+        "별반디"
+      ],
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "랜드마크/저녁 조사형 조우. 실제 발광은 생물발광이며 전기 타입은 게임 설정."
+      ]
+    },
+    {
+      "no": 37,
+      "dex_no": "037",
+      "name": "별반디",
+      "name_status": "locked",
+      "motif": "반딧불이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 13,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "빛애벌",
+        "빛반디",
+        "별반디"
+      ],
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "랜드마크/저녁 조사형 조우. 실제 발광은 생물발광이며 전기 타입은 게임 설정."
+      ]
+    },
+    {
+      "no": 38,
+      "dex_no": "038",
+      "name": "물잠둥",
+      "name_status": "locked",
+      "motif": "잠자리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 14,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "물잠둥",
+        "청잠이",
+        "왕잠풍"
+      ],
+      "types": [
+        "bug"
+      ],
+      "type_names_ko": [
+        "벌레"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 39,
+      "dex_no": "039",
+      "name": "청잠이",
+      "name_status": "locked",
+      "motif": "잠자리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 14,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "물잠둥",
+        "청잠이",
+        "왕잠풍"
+      ],
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 40,
+      "dex_no": "040",
+      "name": "왕잠풍",
+      "name_status": "locked",
+      "motif": "잠자리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 14,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "물잠둥",
+        "청잠이",
+        "왕잠풍"
+      ],
+      "types": [
+        "bug",
+        "electric"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 41,
+      "dex_no": "041",
+      "name": "물챙이",
+      "name_status": "locked",
+      "motif": "개구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 15,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "물챙이",
+        "청개굴",
+        "숲개구리"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 42,
+      "dex_no": "042",
+      "name": "청개굴",
+      "name_status": "locked",
+      "motif": "개구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 15,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "물챙이",
+        "청개굴",
+        "숲개구리"
+      ],
+      "types": [
+        "water",
+        "grass"
+      ],
+      "type_names_ko": [
+        "물",
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 43,
+      "dex_no": "043",
+      "name": "숲개구리",
+      "name_status": "locked",
+      "motif": "개구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 15,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "물챙이",
+        "청개굴",
+        "숲개구리"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 44,
+      "dex_no": "044",
+      "name": "남생이",
+      "name_status": "locked",
+      "motif": "남생이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 16,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "남생이",
+        "남생갑"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 45,
+      "dex_no": "045",
+      "name": "남생갑",
+      "name_status": "locked",
+      "motif": "남생이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 16,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "남생이",
+        "남생갑"
+      ],
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "type_names_ko": [
+        "바위",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 46,
+      "dex_no": "046",
+      "name": "갯망이",
+      "name_status": "locked",
+      "motif": "망둥어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 17,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "갯망이",
+        "펄망둥",
+        "파도망둥"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 47,
+      "dex_no": "047",
+      "name": "펄망둥",
+      "name_status": "locked",
+      "motif": "망둥어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 17,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "갯망이",
+        "펄망둥",
+        "파도망둥"
+      ],
+      "types": [
+        "water",
+        "ground"
+      ],
+      "type_names_ko": [
+        "물",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 48,
+      "dex_no": "048",
+      "name": "파도망둥",
+      "name_status": "locked",
+      "motif": "망둥어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 17,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "갯망이",
+        "펄망둥",
+        "파도망둥"
+      ],
+      "types": [
+        "water",
+        "ground"
+      ],
+      "type_names_ko": [
+        "물",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 49,
+      "dex_no": "049",
+      "name": "갈고미",
+      "name_status": "locked",
+      "motif": "기수갈고둥",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 18,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "갈고미",
+        "갈고둥이"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "shore_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 50,
+      "dex_no": "050",
+      "name": "갈고둥이",
+      "name_status": "locked",
+      "motif": "기수갈고둥",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 18,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "갈고미",
+        "갈고둥이"
+      ],
+      "types": [
+        "rock",
+        "water"
+      ],
+      "type_names_ko": [
+        "바위",
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 51,
+      "dex_no": "051",
+      "name": "갯집게",
+      "name_status": "locked",
+      "motif": "갯게",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 19,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "갯집게",
+        "갯바위게"
+      ],
+      "types": [
+        "ground"
+      ],
+      "type_names_ko": [
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "shore_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 52,
+      "dex_no": "052",
+      "name": "갯바위게",
+      "name_status": "locked",
+      "motif": "갯게",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 19,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "갯집게",
+        "갯바위게"
+      ],
+      "types": [
+        "ground",
+        "fighting"
+      ],
+      "type_names_ko": [
+        "땅",
+        "격투"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 53,
+      "dex_no": "053",
+      "name": "흰목돌이",
+      "name_status": "locked",
+      "motif": "흰목물떼새",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 20,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "흰목돌이"
+      ],
+      "types": [
+        "ground",
+        "flying"
+      ],
+      "type_names_ko": [
+        "땅",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "하청"
+      ],
+      "primary_acquisition": "rare_wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 54,
+      "dex_no": "054",
+      "name": "동사미",
+      "name_status": "locked",
+      "motif": "남방동사리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 21,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "동사미",
+        "남방수호"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초"
+      ],
+      "primary_acquisition": "protected_research_bond",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 55,
+      "dex_no": "055",
+      "name": "남방수호",
+      "name_status": "locked",
+      "motif": "남방동사리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 21,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "동사미",
+        "남방수호"
+      ],
+      "types": [
+        "water",
+        "ground"
+      ],
+      "type_names_ko": [
+        "물",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 56,
+      "dex_no": "056",
+      "name": "재두리",
+      "name_status": "locked",
+      "motif": "재두루미",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 22,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "재두리",
+        "은빛두루"
+      ],
+      "types": [
+        "flying"
+      ],
+      "type_names_ko": [
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "장목"
+      ],
+      "primary_acquisition": "story_migration_encounter",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 57,
+      "dex_no": "057",
+      "name": "은빛두루",
+      "name_status": "locked",
+      "motif": "재두루미",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 22,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "재두리",
+        "은빛두루"
+      ],
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "type_names_ko": [
+        "에스퍼",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "장목"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 58,
+      "dex_no": "058",
+      "name": "눈고니",
+      "name_status": "locked",
+      "motif": "큰고니",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 23,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "눈고니",
+        "백설고니"
+      ],
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "type_names_ko": [
+        "얼음",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "장목"
+      ],
+      "primary_acquisition": "story_migration_encounter",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 59,
+      "dex_no": "059",
+      "name": "백설고니",
+      "name_status": "locked",
+      "motif": "큰고니",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 23,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "눈고니",
+        "백설고니"
+      ],
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "type_names_ko": [
+        "얼음",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "연초",
+        "장목"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 60,
+      "dex_no": "060",
+      "name": "귀개잎",
+      "name_status": "locked",
+      "motif": "자주땅귀개",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 24,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "귀개잎",
+        "자주귀개"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "protected_research_bond",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 61,
+      "dex_no": "061",
+      "name": "자주귀개",
+      "name_status": "locked",
+      "motif": "자주땅귀개",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 24,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "귀개잎",
+        "자주귀개"
+      ],
+      "types": [
+        "grass",
+        "dark"
+      ],
+      "type_names_ko": [
+        "풀",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 62,
+      "dex_no": "062",
+      "name": "집게미",
+      "name_status": "locked",
+      "motif": "꽃게",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 25,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "집게미",
+        "꽃게장군"
+      ],
+      "types": [
+        "fighting"
+      ],
+      "type_names_ko": [
+        "격투"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "shore_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 63,
+      "dex_no": "063",
+      "name": "꽃게장군",
+      "name_status": "locked",
+      "motif": "꽃게",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 25,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "집게미",
+        "꽃게장군"
+      ],
+      "types": [
+        "fighting",
+        "rock"
+      ],
+      "type_names_ko": [
+        "격투",
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 64,
+      "dex_no": "064",
+      "name": "은치리",
+      "name_status": "locked",
+      "motif": "멸치",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 26,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "은치리",
+        "은빛떼"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청",
+        "장목"
+      ],
+      "primary_acquisition": "fishing_basic",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 65,
+      "dex_no": "065",
+      "name": "은빛떼",
+      "name_status": "locked",
+      "motif": "멸치",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 26,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "은치리",
+        "은빛떼"
+      ],
+      "types": [
+        "water",
+        "normal"
+      ],
+      "type_names_ko": [
+        "물",
+        "노말"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S2",
+      "first_region": [
+        "하청",
+        "장목"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 66,
+      "dex_no": "066",
+      "name": "아비쪼",
+      "name_status": "locked",
+      "motif": "아비",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 27,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "아비쪼",
+        "잠수아비"
+      ],
+      "types": [
+        "water",
+        "flying"
+      ],
+      "type_names_ko": [
+        "물",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 67,
+      "dex_no": "067",
+      "name": "잠수아비",
+      "name_status": "locked",
+      "motif": "아비",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 27,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "아비쪼",
+        "잠수아비"
+      ],
+      "types": [
+        "water",
+        "flying"
+      ],
+      "type_names_ko": [
+        "물",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 68,
+      "dex_no": "068",
+      "name": "대구미",
+      "name_status": "locked",
+      "motif": "대구",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 28,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "대구미",
+        "설대구"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "fishing_basic",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 69,
+      "dex_no": "069",
+      "name": "설대구",
+      "name_status": "locked",
+      "motif": "대구",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 28,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "대구미",
+        "설대구"
+      ],
+      "types": [
+        "water",
+        "ice"
+      ],
+      "type_names_ko": [
+        "물",
+        "얼음"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 70,
+      "dex_no": "070",
+      "name": "잠수깃",
+      "name_status": "locked",
+      "motif": "가마우지",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 29,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "잠수깃",
+        "해풍가마"
+      ],
+      "types": [
+        "water",
+        "dark"
+      ],
+      "type_names_ko": [
+        "물",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 71,
+      "dex_no": "071",
+      "name": "해풍가마",
+      "name_status": "locked",
+      "motif": "가마우지",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 29,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "잠수깃",
+        "해풍가마"
+      ],
+      "types": [
+        "water",
+        "dark"
+      ],
+      "type_names_ko": [
+        "물",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 72,
+      "dex_no": "072",
+      "name": "황부리",
+      "name_status": "locked",
+      "motif": "참수리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 30,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "황부리",
+        "해금수리"
+      ],
+      "types": [
+        "flying",
+        "electric"
+      ],
+      "type_names_ko": [
+        "비행",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 73,
+      "dex_no": "073",
+      "name": "해금수리",
+      "name_status": "locked",
+      "motif": "참수리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 30,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "황부리",
+        "해금수리"
+      ],
+      "types": [
+        "flying",
+        "electric"
+      ],
+      "type_names_ko": [
+        "비행",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 74,
+      "dex_no": "074",
+      "name": "창공매",
+      "name_status": "locked",
+      "motif": "매",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 31,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "창공매"
+      ],
+      "types": [
+        "flying",
+        "fighting"
+      ],
+      "type_names_ko": [
+        "비행",
+        "격투"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 75,
+      "dex_no": "075",
+      "name": "해류수리",
+      "name_status": "locked",
+      "motif": "물수리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 32,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "해류수리"
+      ],
+      "types": [
+        "flying",
+        "water"
+      ],
+      "type_names_ko": [
+        "비행",
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 76,
+      "dex_no": "076",
+      "name": "호리매",
+      "name_status": "locked",
+      "motif": "새호리기",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 33,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "호리매"
+      ],
+      "types": [
+        "flying",
+        "electric"
+      ],
+      "type_names_ko": [
+        "비행",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 77,
+      "dex_no": "077",
+      "name": "솔개람",
+      "name_status": "locked",
+      "motif": "솔개",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 34,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "솔개람"
+      ],
+      "types": [
+        "flying",
+        "psychic"
+      ],
+      "type_names_ko": [
+        "비행",
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S3",
+      "first_region": [
+        "장목"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 78,
+      "dex_no": "078",
+      "name": "고라미",
+      "name_status": "locked",
+      "motif": "고라니",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 35,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "고라미",
+        "갈대라니",
+        "들고라니"
+      ],
+      "types": [
+        "normal"
+      ],
+      "type_names_ko": [
+        "노말"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 79,
+      "dex_no": "079",
+      "name": "갈대라니",
+      "name_status": "locked",
+      "motif": "고라니",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 35,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "고라미",
+        "갈대라니",
+        "들고라니"
+      ],
+      "types": [
+        "normal",
+        "ground"
+      ],
+      "type_names_ko": [
+        "노말",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 80,
+      "dex_no": "080",
+      "name": "들고라니",
+      "name_status": "locked",
+      "motif": "고라니",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 35,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "고라미",
+        "갈대라니",
+        "들고라니"
+      ],
+      "types": [
+        "normal",
+        "ground"
+      ],
+      "type_names_ko": [
+        "노말",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 81,
+      "dex_no": "081",
+      "name": "도토미",
+      "name_status": "locked",
+      "motif": "굴참나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 36,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "도토미",
+        "참싹이",
+        "굴참목"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 82,
+      "dex_no": "082",
+      "name": "참싹이",
+      "name_status": "locked",
+      "motif": "굴참나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "2단계",
+      "chain_id": 36,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "도토미",
+        "참싹이",
+        "굴참목"
+      ],
+      "types": [
+        "grass",
+        "ground"
+      ],
+      "type_names_ko": [
+        "풀",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 83,
+      "dex_no": "083",
+      "name": "굴참목",
+      "name_status": "locked",
+      "motif": "굴참나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 36,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "도토미",
+        "참싹이",
+        "굴참목"
+      ],
+      "types": [
+        "grass",
+        "ground"
+      ],
+      "type_names_ko": [
+        "풀",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 84,
+      "dex_no": "084",
+      "name": "물꼬리",
+      "name_status": "locked",
+      "motif": "수달",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 37,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "물꼬리",
+        "파도수달"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "protected_research_bond",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 85,
+      "dex_no": "085",
+      "name": "파도수달",
+      "name_status": "locked",
+      "motif": "수달",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 37,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "물꼬리",
+        "파도수달"
+      ],
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "type_names_ko": [
+        "물",
+        "격투"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 86,
+      "dex_no": "086",
+      "name": "밤눈이",
+      "name_status": "locked",
+      "motif": "수리부엉이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 38,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "밤눈이",
+        "밤수리"
+      ],
+      "types": [
+        "ghost"
+      ],
+      "type_names_ko": [
+        "고스트"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "scripted_evening_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 87,
+      "dex_no": "087",
+      "name": "밤수리",
+      "name_status": "locked",
+      "motif": "수리부엉이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 38,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "밤눈이",
+        "밤수리"
+      ],
+      "types": [
+        "ghost",
+        "psychic"
+      ],
+      "type_names_ko": [
+        "고스트",
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S4",
+      "first_region": [
+        "고현"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 88,
+      "dex_no": "088",
+      "name": "멧코",
+      "name_status": "locked",
+      "motif": "멧돼지",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 39,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "멧코",
+        "멧돌이",
+        "바위멧돼"
+      ],
+      "types": [
+        "ground"
+      ],
+      "type_names_ko": [
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "거제면",
+        "둔덕"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 89,
+      "dex_no": "089",
+      "name": "멧돌이",
+      "name_status": "locked",
+      "motif": "멧돼지",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "2단계",
+      "chain_id": 39,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "멧코",
+        "멧돌이",
+        "바위멧돼"
+      ],
+      "types": [
+        "ground",
+        "fighting"
+      ],
+      "type_names_ko": [
+        "땅",
+        "격투"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "거제면",
+        "둔덕"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 90,
+      "dex_no": "090",
+      "name": "바위멧돼",
+      "name_status": "locked",
+      "motif": "멧돼지",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 39,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "멧코",
+        "멧돌이",
+        "바위멧돼"
+      ],
+      "types": [
+        "ground",
+        "fighting"
+      ],
+      "type_names_ko": [
+        "땅",
+        "격투"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "거제면",
+        "둔덕"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 91,
+      "dex_no": "091",
+      "name": "죽순이",
+      "name_status": "locked",
+      "motif": "맹종죽",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 40,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "죽순이",
+        "맹죽대",
+        "강죽대"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "거제면",
+        "둔덕"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 92,
+      "dex_no": "092",
+      "name": "맹죽대",
+      "name_status": "locked",
+      "motif": "맹종죽",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "2단계",
+      "chain_id": 40,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "죽순이",
+        "맹죽대",
+        "강죽대"
+      ],
+      "types": [
+        "grass",
+        "steel"
+      ],
+      "type_names_ko": [
+        "풀",
+        "강철"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "거제면",
+        "둔덕"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 93,
+      "dex_no": "093",
+      "name": "강죽대",
+      "name_status": "locked",
+      "motif": "맹종죽",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 40,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "죽순이",
+        "맹죽대",
+        "강죽대"
+      ],
+      "types": [
+        "grass",
+        "steel"
+      ],
+      "type_names_ko": [
+        "풀",
+        "강철"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "거제면",
+        "둔덕"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 94,
+      "dex_no": "094",
+      "name": "애뿔콩",
+      "name_status": "locked",
+      "motif": "애기뿔소똥구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 41,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "애뿔콩",
+        "애기뿔충"
+      ],
+      "types": [
+        "bug"
+      ],
+      "type_names_ko": [
+        "벌레"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "둔덕"
+      ],
+      "primary_acquisition": "protected_research_bond",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 95,
+      "dex_no": "095",
+      "name": "애기뿔충",
+      "name_status": "locked",
+      "motif": "애기뿔소똥구리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 41,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "애뿔콩",
+        "애기뿔충"
+      ],
+      "types": [
+        "bug",
+        "ground"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "둔덕"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 96,
+      "dex_no": "096",
+      "name": "붉목이",
+      "name_status": "locked",
+      "motif": "유혈목이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 42,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "붉목이",
+        "혈목이"
+      ],
+      "types": [
+        "poison"
+      ],
+      "type_names_ko": [
+        "독"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "둔덕"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 97,
+      "dex_no": "097",
+      "name": "혈목이",
+      "name_status": "locked",
+      "motif": "유혈목이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 42,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "붉목이",
+        "혈목이"
+      ],
+      "types": [
+        "poison",
+        "ground"
+      ],
+      "type_names_ko": [
+        "독",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "둔덕"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 98,
+      "dex_no": "098",
+      "name": "꼬리비상",
+      "name_status": "locked",
+      "motif": "긴꼬리딱새",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 43,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "꼬리비상"
+      ],
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "type_names_ko": [
+        "노말",
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "둔덕"
+      ],
+      "primary_acquisition": "rare_wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 99,
+      "dex_no": "099",
+      "name": "벌사냥매",
+      "name_status": "locked",
+      "motif": "벌매",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 44,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "벌사냥매"
+      ],
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "type_names_ko": [
+        "벌레",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "둔덕"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 100,
+      "dex_no": "100",
+      "name": "등푸리",
+      "name_status": "locked",
+      "motif": "고등어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 45,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "등푸리",
+        "청등어"
+      ],
+      "types": [
+        "water"
+      ],
+      "type_names_ko": [
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "장목",
+        "학동"
+      ],
+      "primary_acquisition": "fishing_good",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 101,
+      "dex_no": "101",
+      "name": "청등어",
+      "name_status": "locked",
+      "motif": "고등어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 45,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "등푸리",
+        "청등어"
+      ],
+      "types": [
+        "water",
+        "electric"
+      ],
+      "type_names_ko": [
+        "물",
+        "전기"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "장목",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 102,
+      "dex_no": "102",
+      "name": "볼꼬미",
+      "name_status": "locked",
+      "motif": "볼락",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 46,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "볼꼬미",
+        "암초볼"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "하청",
+        "장목",
+        "학동"
+      ],
+      "primary_acquisition": "fishing_good",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 103,
+      "dex_no": "103",
+      "name": "암초볼",
+      "name_status": "locked",
+      "motif": "볼락",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 46,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "볼꼬미",
+        "암초볼"
+      ],
+      "types": [
+        "rock",
+        "water"
+      ],
+      "type_names_ko": [
+        "바위",
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S5",
+      "first_region": [
+        "하청",
+        "장목",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 104,
+      "dex_no": "104",
+      "name": "몽돌이",
+      "name_status": "locked",
+      "motif": "학동 흑진주 몽돌",
+      "motif_kind": "natural_landform",
+      "taxon_group": "landform",
+      "evolution_stage": "1단계",
+      "chain_id": 47,
+      "chain_length": 3,
+      "chain_position": 1,
+      "chain_names": [
+        "몽돌이",
+        "파도몽",
+        "흑진주몽"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동",
+        "학동몽돌해변"
+      ],
+      "primary_acquisition": "landmark_observation",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "실제 생물이 아니라 거제 자연지형 모티프."
+      ]
+    },
+    {
+      "no": 105,
+      "dex_no": "105",
+      "name": "파도몽",
+      "name_status": "locked",
+      "motif": "학동 흑진주 몽돌",
+      "motif_kind": "natural_landform",
+      "taxon_group": "landform",
+      "evolution_stage": "2단계",
+      "chain_id": 47,
+      "chain_length": 3,
+      "chain_position": 2,
+      "chain_names": [
+        "몽돌이",
+        "파도몽",
+        "흑진주몽"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동",
+        "학동몽돌해변"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "실제 생물이 아니라 거제 자연지형 모티프."
+      ]
+    },
+    {
+      "no": 106,
+      "dex_no": "106",
+      "name": "흑진주몽",
+      "name_status": "locked",
+      "motif": "학동 흑진주 몽돌",
+      "motif_kind": "natural_landform",
+      "taxon_group": "landform",
+      "evolution_stage": "최종",
+      "chain_id": 47,
+      "chain_length": 3,
+      "chain_position": 3,
+      "chain_names": [
+        "몽돌이",
+        "파도몽",
+        "흑진주몽"
+      ],
+      "types": [
+        "rock",
+        "steel"
+      ],
+      "type_names_ko": [
+        "바위",
+        "강철"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동",
+        "학동몽돌해변"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "실제 생물이 아니라 거제 자연지형 모티프."
+      ]
+    },
+    {
+      "no": 107,
+      "dex_no": "107",
+      "name": "팔빛새",
+      "name_status": "locked",
+      "motif": "팔색조",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 48,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "팔빛새",
+        "팔색날개"
+      ],
+      "types": [
+        "flying"
+      ],
+      "type_names_ko": [
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "protected_research_bond",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 108,
+      "dex_no": "108",
+      "name": "팔색날개",
+      "name_status": "locked",
+      "motif": "팔색조",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 48,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "팔빛새",
+        "팔색날개"
+      ],
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "type_names_ko": [
+        "에스퍼",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 109,
+      "dex_no": "109",
+      "name": "외줄이",
+      "name_status": "locked",
+      "motif": "거제외줄달팽이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 49,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "외줄이",
+        "외줄몽"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "story_rescue_research",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 110,
+      "dex_no": "110",
+      "name": "외줄몽",
+      "name_status": "locked",
+      "motif": "거제외줄달팽이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 49,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "외줄이",
+        "외줄몽"
+      ],
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "type_names_ko": [
+        "바위",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 111,
+      "dex_no": "111",
+      "name": "돌붙이",
+      "name_status": "locked",
+      "motif": "전복",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 50,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "돌붙이",
+        "전복갑"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "rocky_shore_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 112,
+      "dex_no": "112",
+      "name": "전복갑",
+      "name_status": "locked",
+      "motif": "전복",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 50,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "돌붙이",
+        "전복갑"
+      ],
+      "types": [
+        "rock",
+        "steel"
+      ],
+      "type_names_ko": [
+        "바위",
+        "강철"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 113,
+      "dex_no": "113",
+      "name": "후박이",
+      "name_status": "locked",
+      "motif": "후박나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 51,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "후박이",
+        "늘푸박"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "npc_trade",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 114,
+      "dex_no": "114",
+      "name": "늘푸박",
+      "name_status": "locked",
+      "motif": "후박나무",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 51,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "후박이",
+        "늘푸박"
+      ],
+      "types": [
+        "grass",
+        "normal"
+      ],
+      "type_names_ko": [
+        "풀",
+        "노말"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 115,
+      "dex_no": "115",
+      "name": "미역돌",
+      "name_status": "locked",
+      "motif": "돌미역",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "algae",
+      "evolution_stage": "1단계",
+      "chain_id": 52,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "미역돌",
+        "바위미역"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "rocky_shore_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 116,
+      "dex_no": "116",
+      "name": "바위미역",
+      "name_status": "locked",
+      "motif": "돌미역",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "algae",
+      "evolution_stage": "최종",
+      "chain_id": 52,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "미역돌",
+        "바위미역"
+      ],
+      "types": [
+        "grass",
+        "rock"
+      ],
+      "type_names_ko": [
+        "풀",
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 117,
+      "dex_no": "117",
+      "name": "문꾸리",
+      "name_status": "locked",
+      "motif": "문어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 53,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "문꾸리",
+        "팔문대왕"
+      ],
+      "types": [
+        "psychic"
+      ],
+      "type_names_ko": [
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "fishing_good",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 118,
+      "dex_no": "118",
+      "name": "팔문대왕",
+      "name_status": "locked",
+      "motif": "문어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 53,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "문꾸리",
+        "팔문대왕"
+      ],
+      "types": [
+        "psychic",
+        "dark"
+      ],
+      "type_names_ko": [
+        "에스퍼",
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S6",
+      "first_region": [
+        "동부",
+        "학동"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 119,
+      "dex_no": "119",
+      "name": "오색돌",
+      "name_status": "locked",
+      "motif": "신선대 오색바위",
+      "motif_kind": "natural_landform",
+      "taxon_group": "landform",
+      "evolution_stage": "1단계",
+      "chain_id": 54,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "오색돌",
+        "오색암"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "신선대"
+      ],
+      "primary_acquisition": "landmark_observation",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "실제 생물이 아니라 거제 자연지형 모티프."
+      ]
+    },
+    {
+      "no": 120,
+      "dex_no": "120",
+      "name": "오색암",
+      "name_status": "locked",
+      "motif": "신선대 오색바위",
+      "motif_kind": "natural_landform",
+      "taxon_group": "landform",
+      "evolution_stage": "최종",
+      "chain_id": 54,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "오색돌",
+        "오색암"
+      ],
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "type_names_ko": [
+        "바위",
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "신선대"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "실제 생물이 아니라 거제 자연지형 모티프."
+      ]
+    },
+    {
+      "no": 121,
+      "dex_no": "121",
+      "name": "기암이",
+      "name_status": "locked",
+      "motif": "해금강 기암",
+      "motif_kind": "natural_landform",
+      "taxon_group": "landform",
+      "evolution_stage": "1단계",
+      "chain_id": 55,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "기암이",
+        "해금귀암"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "landmark_observation",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "실제 생물이 아니라 해식지형·기암 모티프. 고스트 타입은 게임 설정."
+      ]
+    },
+    {
+      "no": 122,
+      "dex_no": "122",
+      "name": "해금귀암",
+      "name_status": "locked",
+      "motif": "해금강 기암",
+      "motif_kind": "natural_landform",
+      "taxon_group": "landform",
+      "evolution_stage": "최종",
+      "chain_id": 55,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "기암이",
+        "해금귀암"
+      ],
+      "types": [
+        "rock",
+        "ghost"
+      ],
+      "type_names_ko": [
+        "바위",
+        "고스트"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "실제 생물이 아니라 해식지형·기암 모티프. 고스트 타입은 게임 설정."
+      ]
+    },
+    {
+      "no": 123,
+      "dex_no": "123",
+      "name": "기린싹",
+      "name_status": "locked",
+      "motif": "기린초",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 56,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "기린싹",
+        "돌기린초"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 124,
+      "dex_no": "124",
+      "name": "돌기린초",
+      "name_status": "locked",
+      "motif": "기린초",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 56,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "기린싹",
+        "돌기린초"
+      ],
+      "types": [
+        "grass",
+        "rock"
+      ],
+      "type_names_ko": [
+        "풀",
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 125,
+      "dex_no": "125",
+      "name": "장지미",
+      "name_status": "locked",
+      "motif": "아무르장지뱀",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 57,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "장지미",
+        "용장지"
+      ],
+      "types": [
+        "ground"
+      ],
+      "type_names_ko": [
+        "땅"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "wild_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "드래곤 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 126,
+      "dex_no": "126",
+      "name": "용장지",
+      "name_status": "locked",
+      "motif": "아무르장지뱀",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 57,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "장지미",
+        "용장지"
+      ],
+      "types": [
+        "ground",
+        "dragon"
+      ],
+      "type_names_ko": [
+        "땅",
+        "드래곤"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": [
+        "드래곤 타입은 게임 판타지 설정."
+      ]
+    },
+    {
+      "no": 127,
+      "dex_no": "127",
+      "name": "석란이",
+      "name_status": "locked",
+      "motif": "석곡",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 58,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "석란이",
+        "석곡화"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부"
+      ],
+      "primary_acquisition": "protected_research_bond",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 128,
+      "dex_no": "128",
+      "name": "석곡화",
+      "name_status": "locked",
+      "motif": "석곡",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 58,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "석란이",
+        "석곡화"
+      ],
+      "types": [
+        "grass",
+        "rock"
+      ],
+      "type_names_ko": [
+        "풀",
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 129,
+      "dex_no": "129",
+      "name": "송이초",
+      "name_status": "locked",
+      "motif": "애기송이풀",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "1단계",
+      "chain_id": 59,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "송이초",
+        "송이풀빛"
+      ],
+      "types": [
+        "grass"
+      ],
+      "type_names_ko": [
+        "풀"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부"
+      ],
+      "primary_acquisition": "protected_research_bond",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 130,
+      "dex_no": "130",
+      "name": "송이풀빛",
+      "name_status": "locked",
+      "motif": "애기송이풀",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "최종",
+      "chain_id": 59,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "송이초",
+        "송이풀빛"
+      ],
+      "types": [
+        "grass",
+        "psychic"
+      ],
+      "type_names_ko": [
+        "풀",
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 131,
+      "dex_no": "131",
+      "name": "백미수리",
+      "name_status": "locked",
+      "motif": "흰꼬리수리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 60,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "백미수리"
+      ],
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "type_names_ko": [
+        "얼음",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 132,
+      "dex_no": "132",
+      "name": "청새매",
+      "name_status": "locked",
+      "motif": "새매",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 61,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "청새매"
+      ],
+      "types": [
+        "fighting"
+      ],
+      "type_names_ko": [
+        "격투"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 133,
+      "dex_no": "133",
+      "name": "청산매",
+      "name_status": "locked",
+      "motif": "참매",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 62,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "청산매"
+      ],
+      "types": [
+        "steel",
+        "flying"
+      ],
+      "type_names_ko": [
+        "강철",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 134,
+      "dex_no": "134",
+      "name": "흑독수",
+      "name_status": "locked",
+      "motif": "독수리",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "단일",
+      "chain_id": 63,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "흑독수"
+      ],
+      "types": [
+        "dark"
+      ],
+      "type_names_ko": [
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부",
+        "해금강"
+      ],
+      "primary_acquisition": "rare_sky_encounter",
+      "random_encounter_allowed": true,
+      "legacy_reference": {
+        "legacy_category": "멸종위기종 우선",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 135,
+      "dex_no": "135",
+      "name": "꼴쭈기",
+      "name_status": "locked",
+      "motif": "오징어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 64,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "꼴쭈기",
+        "화살징"
+      ],
+      "types": [
+        "dark"
+      ],
+      "type_names_ko": [
+        "악"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "지세포",
+        "구조라"
+      ],
+      "primary_acquisition": "fishing_super",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 136,
+      "dex_no": "136",
+      "name": "화살징",
+      "name_status": "locked",
+      "motif": "오징어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 64,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "꼴쭈기",
+        "화살징"
+      ],
+      "types": [
+        "dark",
+        "water"
+      ],
+      "type_names_ko": [
+        "악",
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "지세포",
+        "구조라"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 137,
+      "dex_no": "137",
+      "name": "물말이",
+      "name_status": "locked",
+      "motif": "해마",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 65,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "물말이",
+        "용해마"
+      ],
+      "types": [
+        "dragon"
+      ],
+      "type_names_ko": [
+        "드래곤"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "구조라"
+      ],
+      "primary_acquisition": "marine_observation",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 138,
+      "dex_no": "138",
+      "name": "용해마",
+      "name_status": "locked",
+      "motif": "해마",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 65,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "물말이",
+        "용해마"
+      ],
+      "types": [
+        "dragon",
+        "water"
+      ],
+      "type_names_ko": [
+        "드래곤",
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "구조라"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 139,
+      "dex_no": "139",
+      "name": "복방울",
+      "name_status": "locked",
+      "motif": "복어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 66,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "복방울",
+        "가시복"
+      ],
+      "types": [
+        "poison"
+      ],
+      "type_names_ko": [
+        "독"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "지세포"
+      ],
+      "primary_acquisition": "fishing_super",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 140,
+      "dex_no": "140",
+      "name": "가시복",
+      "name_status": "locked",
+      "motif": "복어",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 66,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "복방울",
+        "가시복"
+      ],
+      "types": [
+        "poison",
+        "water"
+      ],
+      "type_names_ko": [
+        "독",
+        "물"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "지세포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "일반",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 141,
+      "dex_no": "141",
+      "name": "상콩이",
+      "name_status": "locked",
+      "motif": "상괭이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 67,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "상콩이",
+        "미소괭"
+      ],
+      "types": [
+        "normal"
+      ],
+      "type_names_ko": [
+        "노말"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "구조라 외해"
+      ],
+      "primary_acquisition": "marine_research_encounter",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "거제 해양 특화",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 142,
+      "dex_no": "142",
+      "name": "미소괭",
+      "name_status": "locked",
+      "motif": "상괭이",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 67,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "상콩이",
+        "미소괭"
+      ],
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "type_names_ko": [
+        "노말",
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "구조라 외해"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "거제 해양 특화",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 143,
+      "dex_no": "143",
+      "name": "굴몽",
+      "name_status": "locked",
+      "motif": "굴",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "1단계",
+      "chain_id": 68,
+      "chain_length": 2,
+      "chain_position": 1,
+      "chain_names": [
+        "굴몽",
+        "철굴갑"
+      ],
+      "types": [
+        "rock"
+      ],
+      "type_names_ko": [
+        "바위"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "지세포"
+      ],
+      "primary_acquisition": "npc_trade",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 144,
+      "dex_no": "144",
+      "name": "철굴갑",
+      "name_status": "locked",
+      "motif": "굴",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "animal",
+      "evolution_stage": "최종",
+      "chain_id": 68,
+      "chain_length": 2,
+      "chain_position": 2,
+      "chain_names": [
+        "굴몽",
+        "철굴갑"
+      ],
+      "types": [
+        "rock",
+        "steel"
+      ],
+      "type_names_ko": [
+        "바위",
+        "강철"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운",
+        "지세포"
+      ],
+      "primary_acquisition": "evolution",
+      "random_encounter_allowed": false,
+      "legacy_reference": null,
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 145,
+      "dex_no": "145",
+      "name": "풍란령",
+      "name_status": "locked",
+      "motif": "풍란",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "단일",
+      "chain_id": 69,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "풍란령"
+      ],
+      "types": [
+        "grass",
+        "flying"
+      ],
+      "type_names_ko": [
+        "풀",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부"
+      ],
+      "primary_acquisition": "special_protection_event",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "특별 보호종",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 146,
+      "dex_no": "146",
+      "name": "진총산호",
+      "name_status": "locked",
+      "motif": "둔한진총산호",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "coral",
+      "evolution_stage": "단일",
+      "chain_id": 70,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "진총산호"
+      ],
+      "types": [
+        "rock",
+        "poison"
+      ],
+      "type_names_ko": [
+        "바위",
+        "독"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S8",
+      "first_region": [
+        "일운"
+      ],
+      "primary_acquisition": "special_protection_event",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "특별 보호종",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": [
+        "기존 물/독에서 바위/독으로 재조정."
+      ]
+    },
+    {
+      "no": 147,
+      "dex_no": "147",
+      "name": "대흥화",
+      "name_status": "locked",
+      "motif": "대흥란",
+      "motif_kind": "actual_living_organism",
+      "taxon_group": "plant",
+      "evolution_stage": "단일",
+      "chain_id": 71,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "대흥화"
+      ],
+      "types": [
+        "grass",
+        "ghost"
+      ],
+      "type_names_ko": [
+        "풀",
+        "고스트"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "S7",
+      "first_region": [
+        "남부"
+      ],
+      "primary_acquisition": "special_protection_event",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "특별 보호종",
+        "legacy_protected_priority_30": true
+      },
+      "real_world_verification_required": true,
+      "notes": []
+    },
+    {
+      "no": 148,
+      "dex_no": "148",
+      "name": "해랑령",
+      "name_status": "locked",
+      "motif": "거제 바다 상징 오리지널",
+      "motif_kind": "original_fantasy",
+      "taxon_group": "original_symbolic",
+      "evolution_stage": "단일",
+      "chain_id": 72,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "해랑령"
+      ],
+      "types": [
+        "water",
+        "dragon"
+      ],
+      "type_names_ko": [
+        "물",
+        "드래곤"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "POST",
+      "first_region": [
+        "해금강 외해"
+      ],
+      "primary_acquisition": "postgame_sanctuary",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "전설",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 149,
+      "dex_no": "149",
+      "name": "숲결령",
+      "name_status": "locked",
+      "motif": "거제 산림 상징 오리지널",
+      "motif_kind": "original_fantasy",
+      "taxon_group": "original_symbolic",
+      "evolution_stage": "단일",
+      "chain_id": 73,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "숲결령"
+      ],
+      "types": [
+        "grass",
+        "psychic"
+      ],
+      "type_names_ko": [
+        "풀",
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "POST",
+      "first_region": [
+        "거제 산림권"
+      ],
+      "primary_acquisition": "postgame_sanctuary",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "전설",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 150,
+      "dex_no": "150",
+      "name": "섬바람룡",
+      "name_status": "locked",
+      "motif": "거제 섬·해풍 상징 오리지널",
+      "motif_kind": "original_fantasy",
+      "taxon_group": "original_symbolic",
+      "evolution_stage": "단일",
+      "chain_id": 74,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "섬바람룡"
+      ],
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "type_names_ko": [
+        "드래곤",
+        "비행"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "POST",
+      "first_region": [
+        "남부 절벽권"
+      ],
+      "primary_acquisition": "postgame_sanctuary",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "전설",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    },
+    {
+      "no": 151,
+      "dex_no": "151",
+      "name": "온섬령",
+      "name_status": "locked",
+      "motif": "거제 전체 생태계 상징",
+      "motif_kind": "original_fantasy",
+      "taxon_group": "original_symbolic",
+      "evolution_stage": "단일",
+      "chain_id": 75,
+      "chain_length": 1,
+      "chain_position": 1,
+      "chain_names": [
+        "온섬령"
+      ],
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "type_names_ko": [
+        "노말",
+        "에스퍼"
+      ],
+      "type_status": "recommended_v3_pending_playtest",
+      "first_obtainable_stage": "POST",
+      "first_region": [
+        "비밀지역"
+      ],
+      "primary_acquisition": "postgame_secret",
+      "random_encounter_allowed": false,
+      "legacy_reference": {
+        "legacy_category": "비밀종",
+        "legacy_protected_priority_30": false
+      },
+      "real_world_verification_required": false,
+      "notes": []
+    }
+  ]
+}

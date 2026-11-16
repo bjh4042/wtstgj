@@ -1,0 +1,174 @@
+{
+  "made": "r77 (2026-11-14)",
+  "from": "ECOMON_ART_20261113 review 01/04/05 (passed in the final review)",
+  "files": {
+    "menu-dex.png": {
+      "sha256": "e6754cbad6b733d00cf36c475139f4ae3b4324147d76063f9b86de3d71f84538",
+      "bytes": 25714
+    },
+    "menu-medal.png": {
+      "sha256": "1edfd6e258a172c9bfebab4036010e74b9b55644e4a74e260c3fc2f31edc4cf0",
+      "bytes": 21300
+    },
+    "menu-bag.png": {
+      "sha256": "c4157fbf0a0b8b9b195776a27029fc89f1d92490504d024ae443e044d1c6d4ae",
+      "bytes": 26790
+    },
+    "menu-map.png": {
+      "sha256": "566b0530c6e3c4ef9a59d03b3b2dd1221ada61ddc01ee3191ebaea066d603ff9",
+      "bytes": 23765
+    },
+    "menu-journal.png": {
+      "sha256": "f778baac00922a371c22a747974bf6ca4f0ccb00b4ba8d62d6dd85129231af35",
+      "bytes": 25620
+    },
+    "menu-explorer.png": {
+      "sha256": "c3939f91d56fc9d02e9e91643a774e48523f03eeae7ac45feb9d5288d32d65fe",
+      "bytes": 20747
+    },
+    "menu-save.png": {
+      "sha256": "4c696881e4ca74795734ded0a0ea1fa60ae854f88376b4978c9723a06f7e52e3",
+      "bytes": 21692
+    },
+    "menu-settings.png": {
+      "sha256": "60a225194f8b4cfc399967cf80f888106c6417611180bd9b1e209b1e69cbbba2",
+      "bytes": 23066
+    },
+    "bag-items.png": {
+      "sha256": "dfd4b41a36328190cc2afbcc408c2d7a3a488cb29daa821408a32aca26bb140a",
+      "bytes": 98176
+    },
+    "bag-balls.png": {
+      "sha256": "d0349c30869e9958931d6a3bbbd11d848df0072ab2581ffcdbbdae88fa49c5f3",
+      "bytes": 94941
+    },
+    "bag-key.png": {
+      "sha256": "dbf540ce0084af4f313c6cc974a376d039dc9682e2b1396507f49e9cfa3e1430",
+      "bytes": 99225
+    },
+    "bag-tms.png": {
+      "sha256": "6ec98e2688bf44b75ea2bb5c832a075ef17e46e9c056e1ee12f71bf61f13c96c",
+      "bytes": 103055
+    },
+    "type-grass.png": {
+      "sha256": "8d25b79687cf44a021fd4295ad42a01dff6ca7d7792057a5bba9b151b6c37f3f",
+      "bytes": 10099
+    },
+    "type-fire.png": {
+      "sha256": "6fa9f9e3d292b19cb147a27dc0dea44d4aee081cbc48fdc198038849a437362b",
+      "bytes": 10377
+    },
+    "type-water.png": {
+      "sha256": "5217a87c33c2cb94b8ff13a9275692a1447d94032a950328b9623866b409a32a",
+      "bytes": 10199
+    },
+    "type-bug.png": {
+      "sha256": "a14ecbe146ce83e29190bf0e012b01125d497062d05265d5d05df9b9b5dd7d99",
+      "bytes": 10500
+    },
+    "type-flying.png": {
+      "sha256": "8528502e1bd60a1588958632ddfc01ea1a358dc8461f824ab1dedd0d159ca0b7",
+      "bytes": 10423
+    },
+    "type-normal.png": {
+      "sha256": "86ee304932532785a24d036c4e0c21512f3245f1aa9471a70e6fa477c7881c34",
+      "bytes": 10740
+    },
+    "type-electric.png": {
+      "sha256": "1ca94444d85d41d1cc24c7f703cb5226397c8cada5142ede7b0333151205d6bc",
+      "bytes": 10998
+    },
+    "type-ground.png": {
+      "sha256": "27749beab90a9950652382dadc104fba55be3425926e82b8a195758aaa77e90f",
+      "bytes": 11061
+    },
+    "type-rock.png": {
+      "sha256": "65ac31396cfb1d1e185309150d57b343953f10565f1cd2b695c9f286251d7e63",
+      "bytes": 11054
+    },
+    "type-poison.png": {
+      "sha256": "adff6b526b1e64b343b6095dcfc92243351843c513ed49c6f18399a900fdb669",
+      "bytes": 10492
+    },
+    "type-psychic.png": {
+      "sha256": "3b00aa8b5b5a96545b3b39b04eb252b901e2c9275c1de86f61c6d3bb33cd0801",
+      "bytes": 11725
+    },
+    "type-ice.png": {
+      "sha256": "65619e4ccb2fa675239ebb7660b19f9018751e1c84252ec1324e123aec3665c6",
+      "bytes": 11421
+    },
+    "type-dragon.png": {
+      "sha256": "26f24bfb2e3adcb4d0a1c3d4c90b97be4e56b6312b24e3e4d337ba4a436153c9",
+      "bytes": 9929
+    },
+    "type-fighting.png": {
+      "sha256": "24fa554fbfc21b14c10bee18e7dd6518e89899fb259de0d38e7c36790755b4f8",
+      "bytes": 11017
+    },
+    "type-ghost.png": {
+      "sha256": "90566220ce17b407c356a67f12a2a2456aaeb034cddf085aa10f7e8380739e27",
+      "bytes": 11223
+    },
+    "type-steel.png": {
+      "sha256": "4ea5ab5a2c48e51a03f9d5f02f4c9fe939444b2d01832695298f11a526585925",
+      "bytes": 10897
+    },
+    "type-dark.png": {
+      "sha256": "6248be299c5924929dc6a485bb2b91dea74ef73852cc428a83e90b30ba7fedc9",
+      "bytes": 10534
+    },
+    "fish-float.png": {
+      "sha256": "c9ecabe66cddfcfeef888afd236cf05488e5cfd40e65c5d10fe51b93cefd7bee",
+      "bytes": 23675
+    },
+    "fish-ripple.png": {
+      "sha256": "293943213c01bc0bdc258f95918a1bb94849852e8df842e4662c5cea1111591c",
+      "bytes": 35070
+    },
+    "fish-splash.png": {
+      "sha256": "a961cfb66bc677db67776b1d939f07f2d52dccea6202d48c93b6640885d86d90",
+      "bytes": 40091
+    },
+    "fish-ring.png": {
+      "sha256": "0245ca33c3c5699aba3bf548fa2c975bf38d6e239b0601bfa25b58e2f436a106",
+      "bytes": 35128
+    },
+    "kiosk.png": {
+      "sha256": "d5a806c487a0bae6073d943fe9c5e0e9772df0fdd5e5d389fe2d0e002aa4e46d",
+      "bytes": 50180
+    },
+    "ecogear.png": {
+      "sha256": "ad71ee391648593df6c56ab2d3532b0f044befc9df914f7b9d918356908b7c9d",
+      "bytes": 66339
+    },
+    "ball-ecology-1.png": {
+      "sha256": "4fa68059eff494be120d9f1311351b2234d67f2b7ad4e406167591f4d18c779c",
+      "bytes": 17524
+    },
+    "ball-ecology-2.png": {
+      "sha256": "147b2d43afb94a80fabf330109b9e323ce916776805090c53c15ffd0eb4685d5",
+      "bytes": 16887
+    },
+    "ball-ecology-3.png": {
+      "sha256": "d8f0b95cf14e167baec29f93ce28a71b590adea15f0eb051f0f7cc16f591c4bd",
+      "bytes": 17825
+    },
+    "ball-ecology-4.png": {
+      "sha256": "24807a6c7ce1fcf1a45c1c71574c566666464196b1645b022e515016e5610263",
+      "bytes": 17374
+    },
+    "ball-ecology-5.png": {
+      "sha256": "7a8d42de62674788e5979737e8829fcbea790d99f4d9741d32497c89cb66dddf",
+      "bytes": 16019
+    },
+    "ball-ecology-6.png": {
+      "sha256": "70c0900ae0072ae23ba1cd3e5986239157d1878b3167065683f0bfbc17638a28",
+      "bytes": 19729
+    },
+    "record-card.webp": {
+      "sha256": "e7162aa6a06d474ae0cc85bbe2db4532c06dc4a59912d824bb66c0452e1527d6",
+      "bytes": 39660
+    }
+  }
+}

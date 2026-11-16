@@ -1,0 +1,15 @@
+{
+  "id": "/wtstgj/",
+  "name": "생태몬스터:거제도",
+  "short_name": "생태몬스터",
+  "lang": "ko",
+  "start_url": "/wtstgj/",
+  "scope": "/wtstgj/",
+  "display": "standalone",
+  "background_color": "#102b46",
+  "theme_color": "#102b46",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+  ]
+}

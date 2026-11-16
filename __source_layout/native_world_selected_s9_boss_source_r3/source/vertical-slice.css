@@ -1,0 +1,60 @@
+@font-face{font-family:Galmuri11Bold;src:url('assets/rc3/fonts/galmuri11_bold.woff2') format('woff2');font-display:swap}
+body.slice-active .world-frame{aspect-ratio:16/9;width:min(calc(100vw - 16px),calc((var(--visible-height,100dvh) - 56px)*16/9))}
+body.slice-active #world{aspect-ratio:16/9;width:100%;height:auto}
+@media(min-width:761px) and (pointer:fine){
+ body.slice-active{overflow:hidden}
+ body.slice-active .app-shell{width:100vw;height:var(--visible-height,100dvh);min-height:0;padding:0;gap:0}
+ body.slice-active .world-frame{width:min(100vw,calc(var(--visible-height,100dvh)*16/9));height:auto;border:0;outline:0;box-shadow:none}
+ body.slice-active .play-key-guide,body.slice-active .desktop-menu{display:none!important}
+}
+.slice-version{display:block;font-size:.55em;line-height:1.2;opacity:.7}
+.slice-species-icon{display:block;width:32px;height:32px;object-fit:contain;image-rendering:pixelated;flex:0 0 32px}
+.slice-dialogue{font-family:Galmuri11Bold,monospace;font-size:36px;line-height:44px;overflow-wrap:anywhere}
+body.slice-active .battle-window{aspect-ratio:16/9;width:min(100vw,calc(var(--visible-height,100dvh)*16/9));grid-template-rows:74.8148% 25.1852%;font-family:Galmuri11Bold,monospace}
+body.slice-active .battle-mon.enemy{left:70%;right:auto;top:33.66%;bottom:auto;width:13.333%!important;height:31.683%!important}
+body.slice-active .battle-mon.ally{left:23.333%;right:auto;top:68.07%;bottom:auto;width:13.333%!important;height:31.683%!important}
+body.slice-active .battle-mon .slice-battle-species{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+body.slice-active .battle-field{background-image:none!important;background:#e6d5a0}
+body.slice-active .slice-battle-ground{position:absolute;inset:0;z-index:0;background:linear-gradient(to bottom,#bae1bb 0 15.842%,#a0ce91 15.842% 25.743%,#92bd70 25.743% 35.644%,#78b883 35.644% 45.545%,#e6d5a0 45.545% 100%)}
+body.slice-active .slice-battle-ground i{position:absolute;display:block}
+body.slice-active .slice-battle-ground .enemy-ground{left:65%;top:57.426%;width:23.333%;height:2.971%;background:#92bd70}
+body.slice-active .slice-battle-ground .enemy-ground:before{content:'';position:absolute;left:-1.667cqw;top:1.25cqw;width:26.667cqw;height:1.25cqw;background:#639956}
+body.slice-active .slice-battle-ground .enemy-ground:after{content:'';position:absolute;left:-3.333cqw;top:2.5cqw;width:30cqw;height:1.25cqw;background:#406f50}
+body.slice-active .slice-battle-ground .ally-ground{left:18.333%;top:88.861%;width:26.667%;height:2.971%;background:#92bd70}
+body.slice-active .slice-battle-ground .ally-ground:before{content:'';position:absolute;left:-1.667cqw;top:1.25cqw;width:30cqw;height:1.25cqw;background:#639956}
+body.slice-active .slice-battle-ground .ally-ground:after{content:'';position:absolute;left:-3.333cqw;top:2.5cqw;width:33.333cqw;height:2.079cqw;background:#406f50}
+body.slice-active .combat-card{border:.83333cqw solid transparent;border-image:linear-gradient(135deg,#eaf2e6,#a3c3b1) 8 fill stretch;padding:.83333cqw 1.25cqw;box-shadow:none;background:#fff9e5;color:#263c3b}
+body.slice-active .combat-card.enemy{left:3.333%;top:6.93%;width:31.667%;height:18.812%}
+body.slice-active .combat-card.ally{left:auto;right:3.333%;bottom:4.455%;width:33.333%;height:21.782%}
+body.slice-active .combat-title{font-size:2.5cqw;line-height:1}
+body.slice-active .combat-hp{font-size:2.5cqw}
+body.slice-active .combat-card.ally .combat-meter{position:absolute;left:1.667cqw;top:3.75cqw;width:29.167cqw;height:2.5cqw;margin:0}
+body.slice-active .combat-card.ally .combat-meter .bar{position:absolute;left:6.25cqw;top:.8333cqw;width:22.917cqw;height:1.0417cqw;margin:0}
+body.slice-active .combat-card.ally .combat-hp{position:absolute;right:1.667cqw;top:5.833cqw;bottom:auto;line-height:1}
+body.slice-active .combat-card.ally .exp-meter{position:absolute;left:1.667cqw;top:6.25cqw;bottom:auto;width:16.667cqw;height:2.5cqw;margin:0}
+body.slice-active .combat-card.ally .exp-meter .exp-bar{position:absolute;left:6.25cqw;top:1.667cqw;width:10.417cqw;height:.625cqw;margin:0}
+body.slice-active .battle-bottom{grid-template-columns:55.833% 39.167%;gap:1.667%;padding:0 1.667% 1.667%;background:#263c3b}
+body.slice-active .battle-log,body.slice-active .battle-actions{border:.83333cqw solid transparent;border-image:linear-gradient(135deg,#eaf2e6,#a3c3b1) 8 fill stretch;background:#fff9e5;color:#263c3b}
+body.slice-active .battle-log{font-size:3.75cqw;line-height:1.22;padding:1.1cqw 1.4cqw}
+body.slice-active .battle-actions button{font-family:Galmuri11Bold,monospace;font-size:3.75cqw;line-height:1.12}
+body.slice-active .battle-actions.is-main button{padding-left:4.167cqw}
+body.slice-active .battle-actions button:is(:focus,:hover)::before{content:'';left:1.667cqw;width:1.667cqw;height:1.875cqw;background:linear-gradient(135deg,#eaf2e6,#a3c3b1) center/contain no-repeat;image-rendering:pixelated}
+body.slice-active .battle-bottom:has(.battle-actions.is-submenu){grid-template-columns:608fr 304fr;grid-template-areas:'moves info'}
+body.slice-active .battle-bottom:has(.battle-actions.is-submenu) .battle-actions{grid-area:moves}
+body.slice-active .battle-bottom:has(.battle-actions.is-submenu) .battle-log{grid-area:info}
+body.slice-active .battle-actions.is-submenu{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));align-content:stretch;padding:0}
+body.slice-active .battle-actions.is-submenu button{min-height:0;padding:0 0 0 4.167cqw;font-size:3.75cqw;line-height:1;overflow:hidden}
+body.slice-active .battle-actions.is-submenu button.long-move{font-size:2.5cqw;line-height:2.5cqw;white-space:normal}
+body.slice-active .battle-log.move-info{display:flex;align-items:center;padding:1.667cqw 2.5cqw;font-size:2.5cqw;line-height:4.375cqw;overflow:hidden}
+@media(pointer:coarse){body.slice-active .world-frame{width:min(calc(100vw - 12px),calc((var(--visible-height,100dvh) - 145px)*16/9))}}
+body.qa-touch .touch-controls{display:flex!important}
+body.qa-touch .desktop-menu{display:none!important}
+body.qa-touch .world-frame{width:min(calc(100vw - 12px),calc((var(--visible-height,100dvh) - 145px)*16/9))}
+body.slice-active dialog.field-menu .game-menu,body.slice-active dialog.field-menu #field-menu-description{border:.83333cqw solid transparent;border-image:linear-gradient(135deg,#eaf2e6,#a3c3b1) 8 fill stretch;box-shadow:none}
+body.slice-active dialog.field-menu .game-menu,body.slice-active dialog.field-menu #field-menu-description{font-family:Galmuri11Bold,monospace}
+body.slice-active dialog.field-menu .game-menu button{font-family:inherit;font-size:3.75cqw}
+body.slice-active dialog.field-menu #field-menu-description{font-size:2.5cqw;line-height:3.667cqw}
+body.slice-active dialog.field-menu .dialog-controls{display:block!important;position:absolute;right:.8333cqw;bottom:.8333cqw;z-index:8;padding:0;background:transparent;border:0}
+body.slice-active dialog.field-menu .dialog-controls button{display:none}
+body.slice-active dialog.field-menu .dialog-controls #dialog-b{display:block;min-width:8.125cqw;min-height:4.583cqw;padding:.5cqw;background:#f1edcf;color:#263c3b;border:.4167cqw solid #263c3b;font-family:Galmuri11Bold,monospace;font-size:2.5cqw}
+body.slice-active.modal-open .touch-controls{visibility:hidden}

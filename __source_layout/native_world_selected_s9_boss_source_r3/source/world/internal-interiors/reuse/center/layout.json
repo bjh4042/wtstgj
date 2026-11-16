@@ -1,0 +1,819 @@
+{
+  "status": "R4_ROOT_STATIC_APPROVED_INTEGRATION_QA_PENDING",
+  "native": [
+    768,
+    576
+  ],
+  "sourceSHA": "40bdabf7481dcb9737dd7bd16244a739637e5292bf1ab52945310f13ea67c3ca",
+  "doctorFoot": [
+    410,
+    200
+  ],
+  "slots": [
+    [
+      287,
+      178
+    ],
+    [
+      312,
+      178
+    ],
+    [
+      337,
+      178
+    ],
+    [
+      287,
+      190
+    ],
+    [
+      312,
+      190
+    ],
+    [
+      337,
+      190
+    ]
+  ],
+  "effectBounds": [
+    270,
+    165,
+    80,
+    39
+  ],
+  "ballDiameter": 12,
+  "glowRadius": 11,
+  "foreground": "foreground.png",
+  "foregroundSHA": "176e872ab69fd1787e9c865c91133b98f4ca1f9f51a11abeee7f0fee3c4fce87",
+  "foregroundPolygon": [
+    [
+      247,
+      190
+    ],
+    [
+      459,
+      190
+    ],
+    [
+      459,
+      171
+    ],
+    [
+      477,
+      171
+    ],
+    [
+      477,
+      116
+    ],
+    [
+      496,
+      116
+    ],
+    [
+      497,
+      238
+    ],
+    [
+      492,
+      246
+    ],
+    [
+      249,
+      246
+    ],
+    [
+      247,
+      238
+    ]
+  ],
+  "foregroundScope": "doctor behind counter only, exact room RGB under alpha; not arbitrary rectangle",
+  "floor": "player_floor.u8",
+  "floorSHA": "bfc4c618f4728cdb2492a13ecc9dedd758da13798c0aee0f37e52b8c88c1fef5",
+  "footprint": [
+    49,
+    37
+  ],
+  "solids": {
+    "northwest_planter": [
+      64,
+      155,
+      193,
+      218
+    ],
+    "west_seats": [
+      64,
+      226,
+      111,
+      409
+    ],
+    "east_pc": [
+      630,
+      175,
+      704,
+      271
+    ],
+    "counter_U_staff_reserved": [
+      244,
+      155,
+      498,
+      247
+    ],
+    "central_low_plinth": [
+      346,
+      343,
+      421,
+      378
+    ],
+    "right_waiting_chairs": [
+      654,
+      277,
+      704,
+      395
+    ],
+    "booklet_rack": [
+      139,
+      476,
+      209,
+      491
+    ],
+    "west_lower_plant": [
+      78,
+      460,
+      120,
+      496
+    ],
+    "east_lower_plant": [
+      649,
+      460,
+      694,
+      496
+    ]
+  },
+  "points": {
+    "customer": [
+      410,
+      280
+    ],
+    "healing_device_front": [
+      312,
+      280
+    ],
+    "entry": [
+      384,
+      524
+    ],
+    "pc": [
+      600,
+      306
+    ],
+    "west_seat_side": [
+      136,
+      270
+    ],
+    "west_seat_lower": [
+      136,
+      395
+    ],
+    "east_waiting": [
+      615,
+      350
+    ],
+    "centre_west": [
+      290,
+      350
+    ],
+    "centre_east": [
+      520,
+      350
+    ],
+    "booklet_front": [
+      174,
+      512
+    ],
+    "sculpture_behind": [
+      384,
+      324
+    ],
+    "sculpture_front": [
+      384,
+      400
+    ],
+    "rack_behind": [
+      174,
+      454
+    ]
+  },
+  "staffGroundModel": {
+    "staffEnvelope": [
+      386,
+      182,
+      434,
+      218
+    ],
+    "staffSupportRect": [
+      361,
+      155,
+      448,
+      220
+    ],
+    "kind": "NPC_ONLY_GROUND_BEHIND_VISIBLE_U_COUNTER",
+    "playerBlockedByVisibleSideArms": true,
+    "oldPlayerStaffRoute": "SUPERSEDED_BY_USER_CLOSED_U_COUNTER_REQUEST"
+  },
+  "requiredRoute": null,
+  "tests": {
+    "playerComponentCount": 1,
+    "publicSafePixels": 122527,
+    "publicPoints": 13,
+    "publicRoute1pxSamples": 2066,
+    "doctorNPCSupport": true,
+    "doctorPlayerSupport": false,
+    "allPublicPointsConnected": true
+  },
+  "lamps": [
+    [
+      82,
+      97
+    ],
+    [
+      282,
+      97
+    ],
+    [
+      489,
+      97
+    ],
+    [
+      686,
+      97
+    ]
+  ],
+  "mainCallbackInstalled": false,
+  "slotsAreEmpty": true,
+  "referencePhotoExcluded": true,
+  "counterMeasuredVisualBounds": [
+    247,
+    116,
+    498,
+    247
+  ],
+  "proposalNotInherited": {
+    "counterRightProposal": 504,
+    "doctorProposal": [
+      420,
+      200
+    ],
+    "actualDoctor": [
+      410,
+      200
+    ]
+  },
+  "slotContacts": [
+    {
+      "id": 1,
+      "centre": [
+        287,
+        178
+      ],
+      "ballBottomAnchor": [
+        287,
+        178
+      ],
+      "emptySocketCheckBounds": [
+        277,
+        172,
+        20,
+        12
+      ],
+      "surfaceLightBounds": [
+        276,
+        172,
+        22,
+        12
+      ]
+    },
+    {
+      "id": 2,
+      "centre": [
+        312,
+        178
+      ],
+      "ballBottomAnchor": [
+        312,
+        178
+      ],
+      "emptySocketCheckBounds": [
+        302,
+        172,
+        20,
+        12
+      ],
+      "surfaceLightBounds": [
+        301,
+        172,
+        22,
+        12
+      ]
+    },
+    {
+      "id": 3,
+      "centre": [
+        337,
+        178
+      ],
+      "ballBottomAnchor": [
+        337,
+        178
+      ],
+      "emptySocketCheckBounds": [
+        327,
+        172,
+        20,
+        12
+      ],
+      "surfaceLightBounds": [
+        326,
+        172,
+        22,
+        12
+      ]
+    },
+    {
+      "id": 4,
+      "centre": [
+        287,
+        190
+      ],
+      "ballBottomAnchor": [
+        287,
+        190
+      ],
+      "emptySocketCheckBounds": [
+        277,
+        184,
+        20,
+        12
+      ],
+      "surfaceLightBounds": [
+        276,
+        184,
+        22,
+        12
+      ]
+    },
+    {
+      "id": 5,
+      "centre": [
+        312,
+        190
+      ],
+      "ballBottomAnchor": [
+        312,
+        190
+      ],
+      "emptySocketCheckBounds": [
+        302,
+        184,
+        20,
+        12
+      ],
+      "surfaceLightBounds": [
+        301,
+        184,
+        22,
+        12
+      ]
+    },
+    {
+      "id": 6,
+      "centre": [
+        337,
+        190
+      ],
+      "ballBottomAnchor": [
+        337,
+        190
+      ],
+      "emptySocketCheckBounds": [
+        327,
+        184,
+        20,
+        12
+      ],
+      "surfaceLightBounds": [
+        326,
+        184,
+        22,
+        12
+      ]
+    }
+  ],
+  "removedObjects": "only two small machine-side potted plants",
+  "retainedObjects": "west large planter, right PC plant, chairs, windows, wall lamps, entry",
+  "doctorArtChanged": false,
+  "ballArtChanged": false,
+  "sourceArtProof": {
+    "base": "../center_healing_layout_r2/room.png",
+    "densityGenerated": "DENSITY_GENERATED_ORIGINAL.png",
+    "counterGenerated": "COUNTER_GENERATED_ORIGINAL.png",
+    "localComposition": "compose.py",
+    "localReceipt": "LOCAL_EDIT_RECEIPT.json",
+    "noNewDoctorOrBallArt": true
+  },
+  "playerFloor": "player_floor.u8",
+  "doctorSupport": "doctor_support.u8",
+  "doctorSupportSHA": "c10f504256edfe14d8fcdaa34731d5912bcbf2a0e60a1e4af49dbbcc313fa85e",
+  "requiredPublicRoutes": [
+    [
+      [
+        384,
+        524
+      ],
+      [
+        384,
+        490
+      ],
+      [
+        520,
+        490
+      ],
+      [
+        520,
+        280
+      ],
+      [
+        410,
+        280
+      ]
+    ],
+    [
+      [
+        384,
+        524
+      ],
+      [
+        384,
+        490
+      ],
+      [
+        290,
+        490
+      ],
+      [
+        290,
+        280
+      ],
+      [
+        312,
+        280
+      ]
+    ],
+    [
+      [
+        384,
+        524
+      ],
+      [
+        384,
+        490
+      ],
+      [
+        520,
+        490
+      ],
+      [
+        520,
+        306
+      ],
+      [
+        600,
+        306
+      ]
+    ],
+    [
+      [
+        384,
+        524
+      ],
+      [
+        384,
+        490
+      ],
+      [
+        520,
+        490
+      ],
+      [
+        520,
+        350
+      ],
+      [
+        615,
+        350
+      ]
+    ],
+    [
+      [
+        384,
+        524
+      ],
+      [
+        384,
+        490
+      ],
+      [
+        290,
+        490
+      ],
+      [
+        290,
+        395
+      ],
+      [
+        136,
+        395
+      ]
+    ]
+  ],
+  "servicePoint": [
+    410,
+    280
+  ],
+  "staffPlayerAccessAllowed": false,
+  "depthObjects": [
+    {
+      "id": "low_leaf_sculpture",
+      "baseY": 378,
+      "poly": [
+        [
+          355,
+          304
+        ],
+        [
+          368,
+          308
+        ],
+        [
+          382,
+          321
+        ],
+        [
+          394,
+          314
+        ],
+        [
+          411,
+          311
+        ],
+        [
+          406,
+          331
+        ],
+        [
+          398,
+          343
+        ],
+        [
+          413,
+          347
+        ],
+        [
+          420,
+          353
+        ],
+        [
+          420,
+          365
+        ],
+        [
+          414,
+          372
+        ],
+        [
+          401,
+          377
+        ],
+        [
+          369,
+          378
+        ],
+        [
+          353,
+          373
+        ],
+        [
+          346,
+          366
+        ],
+        [
+          346,
+          352
+        ],
+        [
+          350,
+          347
+        ],
+        [
+          367,
+          341
+        ],
+        [
+          360,
+          323
+        ]
+      ],
+      "file": "low_leaf_sculpture_foreground.png"
+    },
+    {
+      "id": "booklet_rack",
+      "baseY": 491,
+      "poly": [
+        [
+          139,
+          429
+        ],
+        [
+          209,
+          429
+        ],
+        [
+          210,
+          491
+        ],
+        [
+          203,
+          491
+        ],
+        [
+          203,
+          487
+        ],
+        [
+          145,
+          487
+        ],
+        [
+          145,
+          491
+        ],
+        [
+          139,
+          491
+        ]
+      ],
+      "file": "booklet_rack_foreground.png"
+    }
+  ],
+  "bookletGroundModel": {
+    "topBack": 429,
+    "topFront": 440,
+    "bodyBase": 490,
+    "bodyHeight": 50,
+    "derivedRearGround": 479,
+    "conservativeGroundBack": 476,
+    "note": "furniture projection is not floor; existing object unchanged; behind approach tested with actual sprite and foreground"
+  },
+  "historicalParentRootStaticReview": "2026-10-28 08:21 UTC actual native doctor410200/counter/pot removal/PC boundary confirmed",
+  "rootStaticReview": "2026-10-28 09:01 UTC Root viewed DOCTOR_BEHIND_PROOF: density, visible U-counter, original6slots/doctor410200 preserved; public/NPC split and foreground QA pending",
+  "doctorCoordinateAuthority": "unchanged measured410200; NPC-only support now separated from public floor",
+  "historicalParentSourceArtProof": "same doctor COMMON256/5:12 scale",
+  "ballAsset": {
+    "path": "assets/ecology_ball_yuzu_original.png",
+    "assetKey": "ecology_ball_yuzu_original",
+    "displayName": "생태볼 아이템 아트",
+    "runtimeItemId": null,
+    "sha256": "561dfb3ca14656601029172a3c7c02ac4e2cab2fd24faadd5d24866d205c986c",
+    "sourceRect": [
+      205,
+      139,
+      899,
+      914
+    ],
+    "registration": "NEW_ROOT_APPROVED_DISPLAY_REGISTRATION_ALPHA_ABOVE_8_NOT_HISTORICAL_CROP",
+    "maxHeight": 12,
+    "uniformScale": 0.01312910284463895,
+    "renderSize": [
+      11.803063457330415,
+      12
+    ],
+    "sourceBytesModified": false,
+    "runtimeAlphaBBoxFit": false
+  },
+  "ballPlacement": {
+    "anchor": "bottom-center at slot support surface",
+    "height": 12,
+    "shadowWidth": 8,
+    "shadowHeight": 2.4,
+    "shadowOffsetY": 0.5
+  },
+  "ballAnchors": [
+    [
+      287,
+      178
+    ],
+    [
+      312,
+      178
+    ],
+    [
+      337,
+      178
+    ],
+    [
+      287,
+      190
+    ],
+    [
+      312,
+      190
+    ],
+    [
+      337,
+      190
+    ]
+  ],
+  "slotLightBounds": [
+    [
+      276,
+      172,
+      22,
+      12
+    ],
+    [
+      301,
+      172,
+      22,
+      12
+    ],
+    [
+      326,
+      172,
+      22,
+      12
+    ],
+    [
+      276,
+      184,
+      22,
+      12
+    ],
+    [
+      301,
+      184,
+      22,
+      12
+    ],
+    [
+      326,
+      184,
+      22,
+      12
+    ]
+  ],
+  "slotSparkleBounds": [
+    [
+      275,
+      160,
+      24,
+      21
+    ],
+    [
+      300,
+      160,
+      24,
+      21
+    ],
+    [
+      325,
+      160,
+      24,
+      21
+    ],
+    [
+      275,
+      172,
+      24,
+      21
+    ],
+    [
+      300,
+      172,
+      24,
+      21
+    ],
+    [
+      325,
+      172,
+      24,
+      21
+    ]
+  ],
+  "animationBounds": [
+    270,
+    145,
+    80,
+    59
+  ],
+  "integrationScope": "R4 fixed recovery preview; public player/NPC masks separate; not installed"
+}

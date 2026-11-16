@@ -1,0 +1,84 @@
+# 글꼴 및 음원 고지
+
+게임 저작권: © WATERMELON
+
+게임의 저작권 표기는 아래 제3자 글꼴의 저작권과 라이선스를 변경하지 않습니다.
+
+## Galmuri
+
+Copyright © 2019–2024 Minseo Lee (<quiple@quiple.dev>).
+SIL Open Font License 1.1. 전문: [Galmuri-OFL.txt](Galmuri-OFL.txt).
+
+## 나눔스퀘어라운드
+
+네이버가 제공한 나눔스퀘어라운드 글꼴이 포함되어 있습니다.
+Copyright (c) 2010, NAVER Corporation. SIL Open Font License 1.1.
+전문 및 Reserved Font Names: [Nanum-OFL.txt](Nanum-OFL.txt).
+
+네이버 나눔글꼴의 지적 재산권은 네이버와 네이버 문화재단에 있습니다.
+공식 안내: https://hangeul.naver.com/font
+공식 라이선스: https://help.naver.com/service/30016/contents/18088?osType=PC&lang=ko
+
+## 음원: 현재 0.5 후보의 실제 연결
+
+이 목록은 beta05_watermelon_credit_candidate_r1의 소스가 선택하는 파일과 용도를 기록합니다. 파일에 대한 저작권, 독점권, 상업 이용 가능 범위를 별도로 보증하는 문서가 아닙니다. 아래 매핑에 후속 콘텐츠용 슬롯이 있다고 해서 0.5에서 해당 결말이나 지역이 열려 있다는 뜻은 아닙니다.
+
+### 현재 R2 오프닝의 승인 BGM
+
+게임 파일: assets/music/opening-blue-island-42s.wav
+Drive 파일명: 생태몬스터_거제도_푸른섬으로의모험_오프닝42초_SunoV6.wav
+확인한 WAV Drive 파일 ID: 1km3IeKVRlhsGll81OZsHyRIJqsDaCSxU
+WAV 원본: https://drive.google.com/file/d/1km3IeKVRlhsGll81OZsHyRIJqsDaCSxU/view
+함께 전달된 MP3 Drive 파일 ID: 1WARTKXUUXsXJmz_sflg9wNJr4UW7_neg
+MP3: https://drive.google.com/file/d/1WARTKXUUXsXJmz_sflg9wNJr4UW7_neg/view
+
+WAV 42.08초, 48kHz 스테레오, 8,093,178바이트.
+SHA-256: 0507b3802d6e4a4088bffbf6a9d423d1df45327320ff723ab153455ca748cd43
+
+위 Drive WAV를 직접 다운로드해 게임 파일 및 R5/R6 제작 폴더 WAV와 같은 바이트임을 확인했습니다. MP3는 같은 전달 메시지의 링크와 Drive 메타데이터를 확인했으며 WAV와의 음향 동일성까지 별도 분석한 것은 아닙니다.
+2026-11-10에 해당 링크가 전달된 뒤 사용자는 “굿 오프닝 음악 좋아”라고 응답했습니다. 이 음악에 대한 피드백을 R6 영상 채택 승인으로 해석하지 않습니다.
+
+연결: ui/beta05-opening-player.mjs → ui/beta05-opening-music.mjs의 intro 오버라이드.
+재생: 사용자가 음악 재생 버튼을 눌렀을 때 한 번 재생. R2 화면은 28.4초이며 음악이 남으면 마지막 타이틀을 실제 곡 종료까지 유지합니다. 사용자가 건너뛰기/메뉴 이동을 누르면 즉시 정지합니다. R6 영상은 게임에 연결되어 있지 않습니다.
+
+### 기존 공통 영상 및 0.5 클로징 슬롯
+
+- film-audio의 기본 intro: assets/music/user-ost/ost-19.mp3. 기존 표기명 OST19 「섬이 부르는 아침」. 이 기본 슬롯은 보존되어 있지만 현재 R2 오프닝은 위 WAV로 덮어 지정하므로 OST19를 재생하지 않습니다.
+- film-audio의 main/post: assets/music/user-ost/ost-20.mp3. 기존 표기명 OST20 「우리가 지킨 섬」.
+- 0.5 네 배지 클로징의 음악 버튼: 위 main 슬롯, 즉 ost-20.mp3를 사용합니다. 본편/후속 결말이 0.5에 구현·개방되었다는 표기가 아닙니다.
+- 이 두 기존 파일의 Drive ID는 이번 대조에서 확정하지 않았습니다. 게임 소스의 로컬 파일명만 기재합니다.
+
+### 필드 BGM 소스 매핑
+
+모든 파일은 assets/music/user-ost/ 아래이며 loop=true입니다. 실내는 기존 규칙에 따라 소속 마을/지역 테마를 이어받습니다.
+- 장승포 테마(jangseungpo): ost-02.mp3
+- 마을(town): ost-03.mp3
+- 도시(city): ost-04.mp3
+- 초지(grass): ost-05.mp3
+- 숲(forest): ost-06.mp3
+- 해안(coast): ost-07.mp3
+- 산(mountain): ost-08.mp3
+- 신비 지역(mystery): ost-09.mp3
+- 블랙넷/선박 지역(blacknet): ost-12.mp3
+
+이는 presentation/field-bgm-routing.mjs의 슬롯 선언입니다. 향후 지역용 슬롯도 포함합니다. 실제 재생은 현재 지도, 소리 설정, 재생 권한과 게임 상태에 따릅니다.
+
+### 전투 BGM 소스 매핑
+
+모든 지정 파일은 assets/music/user-ost/ 아래이며 loop=true입니다.
+- 야생(wild): ost-13.mp3
+- 일반 트레이너(trainer): ost-14.mp3
+- 라이벌(rival): ost-15.mp3
+- 체육관 관장(gym-leader): ost-16.mp3
+- 사천왕(elite): ost-17.mp3
+- 명시적으로 확인된 전설 조우(legendary): ost-18.mp3
+- champion 및 post-yeji: 이 라우팅 표에는 지정 파일이 없습니다. 임의의 곡을 배정하지 않습니다.
+
+이는 presentation/battle-bgm-routing.mjs의 기본 슬롯 선언이며, 별도로 지정된 전투 BGM 오버라이드가 있으면 기존 코드가 이를 우선합니다. 실제 곡이 모든 전투에서 재생된다는 검수 결과가 아닙니다.
+
+### 이용조건과 검증 범위
+
+Suno 이용조건: https://suno.com/terms
+AI 생성물의 저작권 보호 여부를 보증하지 않습니다.
+
+이 문서는 확인된 파일·소스 연결·사용자 피드백을 기록합니다. 결제 요금제, 제작 당시 계정 상태, 제3자 입력 여부 및 법률상 이용권 범위는 이번 대조로 새로 확인하지 않았으며 단정하지 않습니다. 위 게임 표기는 제3자 글꼴 및 기타 자산의 별도 권리를 대체하지 않습니다.

@@ -1,0 +1,136 @@
+/* Original Geoje field palette. Readable text, not copied cartridge UI art. */
+.eco-dex-detail,.eco-dex-list,.eco-dex-tools{min-width:0}.eco-dex-detail{color:#edf5fa;font:16px/1.55 system-ui,sans-serif;overflow-wrap:anywhere}.eco-dex-detail section{border-top:1px solid #64878e;padding:12px 0}.eco-dex-detail h3{font-size:26px;margin:2px 0}.eco-dex-detail h4{font-size:17px;margin:0 0 6px}.eco-dex-hero{display:grid;grid-template-columns:minmax(100px,160px) minmax(0,1fr);gap:16px;align-items:center}.eco-dex-art{width:100%;height:160px;overflow:hidden;background:#eaf0e1;border-radius:12px;padding:8px;box-sizing:border-box}.eco-dex-kicker,.eco-dex-note{color:#c0d5d9;font-size:14px;line-height:1.55}.eco-dex-types{display:flex;flex-wrap:wrap;gap:6px}.eco-dex-types span{display:inline-block;border:1px solid #8fbaa8;border-radius:20px;padding:2px 12px;background:#244f4c;color:#f3f6df}.eco-dex-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0}.eco-dex-stats>div{padding:10px 8px;background:#163847;border:1px solid #719896;border-radius:6px;min-width:0}.eco-dex-stats dt{font-size:14px;color:#cee0dc}.eco-dex-stats dd{font-size:23px;font-weight:750;color:#ffe1a0;margin:0;font-variant-numeric:tabular-nums}.eco-dex-motif-name{font-size:20px;font-weight:650}.eco-dex-provenance summary{font-size:14px}.eco-dex-provenance p{font-size:13px;color:#c4d9d9}.eco-dex-count{padding:8px 0;color:#ffe1a0}.eco-dex-tools{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;margin:0 0 12px}.eco-dex-tools label{display:flex;flex-direction:column;gap:4px;font-size:14px}.eco-dex-tools input,.eco-dex-tools select{box-sizing:border-box;width:100%;min-width:0;font:16px/1.4 system-ui;padding:10px;border:1px solid #8aacaa;border-radius:6px;background:#f2f5e8;color:#173b43}.eco-dex-list{list-style:none;padding:0;margin:0;display:grid;gap:7px}.eco-dex-list button{display:grid!important;grid-template-columns:36px minmax(0,1fr) auto;gap:10px;align-items:center;width:100%;box-sizing:border-box;margin:0!important;padding:10px!important;text-align:left}.eco-dex-list button:disabled{opacity:.7!important;background:#314651!important;color:#ccdcdb!important}.eco-dex-number{font-size:14px;font-variant-numeric:tabular-nums}.eco-dex-list strong{font-size:17px}.eco-dex-list small{display:block;font-size:13px}.eco-dex-state{font-size:12px}.eco-dex-empty{padding:20px}.eco-menu-dialog{position:fixed;z-index:25;inset:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));margin:auto;box-sizing:border-box;width:min(650px,calc(100% - 24px));max-height:850px;overflow-y:auto;overscroll-behavior:contain;border:3px solid #d4be7a;border-radius:12px;box-shadow:0 18px 80px #0009;background:#1b3c50!important;padding:16px!important;scrollbar-gutter:stable}.eco-menu-top{display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:-16px;background:#1b3c50;z-index:1;border-bottom:1px solid #719896;margin-bottom:8px}.eco-menu-top h2{color:#edf5fa;font-size:21px;margin:6px 0}.eco-menu-top button{flex-shrink:0}.eco-menu-nav{display:grid;gap:8px}.eco-menu-nav button{text-align:left;display:flex;align-items:center;justify-content:space-between;margin:0!important;padding:14px!important;font-weight:650;min-height:52px!important}.eco-menu-nav small{font-size:12px;font-weight:400}.eco-menu-intro{font-size:14px;color:#c3dbd6}.eco-menu-dialog button:focus-visible,.eco-menu-dialog input:focus-visible,.eco-menu-dialog select:focus-visible,.eco-menu-dialog summary:focus-visible{outline:3px solid #ffe1a0;outline-offset:2px}.eco-menu-dialog[data-large-text=true]{font-size:18px}.eco-menu-dialog[data-large-text=true] .eco-dex-detail{font-size:18px}.eco-menu-bag{list-style:none;padding:0}.eco-menu-bag li{padding:8px;border-bottom:1px solid #5e7d85}.eco-menu-bag strong{float:right}.eco-legacy-dex{padding:14px;background:#1b3c50;border-radius:10px;color:#edf5fa}
+@media(max-width:480px){.eco-menu-dialog{inset:6px;width:calc(100% - 12px);padding:12px!important;border-radius:9px;max-height:none}.eco-menu-top{top:-12px}.eco-menu-top h2{font-size:19px}.eco-dex-hero{grid-template-columns:112px minmax(0,1fr);gap:12px}.eco-dex-art{height:124px}.eco-dex-detail h3{font-size:23px}.eco-dex-stats{gap:6px}.eco-dex-stats>div{padding:8px 6px}.eco-dex-stats dt{font-size:13px}.eco-dex-stats dd{font-size:22px}.eco-dex-tools{gap:8px}.eco-dex-list button{gap:7px;grid-template-columns:30px minmax(0,1fr) auto}.eco-menu-nav small{max-width:55%;text-align:right}}
+@media(max-height:460px) and (min-width:600px){.eco-dex-hero{grid-template-columns:90px minmax(0,1fr)}.eco-dex-art{height:90px}.eco-dex-stats{grid-template-columns:repeat(6,minmax(0,1fr))}.eco-menu-dialog{max-height:none;inset:6px}}
+
+/* Dedicated ordinary menu only: the retained shared shell otherwise treats
+ * this modal as its 35dvh auxiliary sidebar. Do not restyle that sidebar/host.
+ * Shell-owned visualViewport measurements track browser chrome and keyboard.
+ * Explicit top/left + size avoid mixing a visual viewport with layout-inset
+ * bottom/right calculations. No transform, extra measurement owner or HUD edit. */
+#canonical-world.ordinary-world.shared-game-shell.shared-game-shell.shared-game-shell .world-layout.shared-shell-auxiliary>aside.eco-menu-dialog{
+ --eco-menu-edge:12px;
+ --eco-menu-available-width:max(0px,calc(var(--shell-view-width,100vw) - max(var(--eco-menu-edge),env(safe-area-inset-left)) - max(var(--eco-menu-edge),env(safe-area-inset-right))));
+ --eco-menu-available-height:max(0px,calc(var(--shell-view-height,100dvh) - max(var(--eco-menu-edge),env(safe-area-inset-top)) - max(var(--eco-menu-edge),env(safe-area-inset-bottom))));
+ position:fixed;inset:auto;box-sizing:border-box;margin:0;min-width:0;min-height:0;
+ top:calc(var(--shell-view-top,0px) + max(var(--eco-menu-edge),env(safe-area-inset-top)) + max(0px,(var(--eco-menu-available-height) - 850px)/2));
+ left:calc(var(--shell-view-left,0px) + max(var(--eco-menu-edge),env(safe-area-inset-left)) + max(0px,(var(--eco-menu-available-width) - 650px)/2));
+ width:min(650px,var(--eco-menu-available-width));max-width:var(--eco-menu-available-width);
+ height:min(850px,var(--eco-menu-available-height));max-height:var(--eco-menu-available-height);
+ overflow:auto;overscroll-behavior:contain;scroll-padding-block:16px;
+}
+@media(max-width:480px),(max-height:460px){
+ #canonical-world.ordinary-world.shared-game-shell.shared-game-shell.shared-game-shell .world-layout.shared-shell-auxiliary>aside.eco-menu-dialog{--eco-menu-edge:6px}
+}
+
+/* Preserve the real status output inside the active menu, below its sticky
+ * heading. This applies only while that node is relocated into the menu;
+ * outside-menu measured header placement, pointer behavior and retry stay separate. */
+#canonical-world.ordinary-world.shared-game-shell.shared-game-shell.shared-game-shell aside.eco-menu-dialog>[data-w=status].shared-shell-status{
+ position:static;inset:auto;width:auto;max-width:100%;max-height:none;margin:0 0 8px;flex:none;
+}
+
+/* Outside the ordinary menu, reserve a real row after the unchanged 44px
+ * nearby controls. The pinned shell observes/measures this header already;
+ * no fixed offset, second viewport owner, scene overlay or pointer disabling.
+ * Long feedback wraps and scrolls within a quarter of the shell visual height. */
+#canonical-world.ordinary-world.shared-game-shell.shared-game-shell.shared-game-shell .shared-shell-header.qa-safe-nearby-header>[data-w=status].shared-shell-status{
+ position:static;inset:auto;box-sizing:border-box;flex:0 0 100%;width:100%;max-width:100%;
+ max-height:max(44px,calc(var(--shell-view-height,100dvh) * .25));margin:0;z-index:auto;
+}
+#canonical-world.ordinary-world.shared-game-shell.shared-game-shell.shared-game-shell .shared-shell-header.qa-safe-nearby-header>[data-w=status].shared-shell-status:empty{display:none}
+
+/* Entry-only ordinary menu: beat the polished sidebar's relative position.
+ * The shared shell retains its existing viewport geometry and position owner. */
+#canonical-world.ordinary-world:not(.shared-game-shell) .world-layout>aside.eco-menu-dialog{position:fixed}
+/* Only plain party/storage text inherits this light ink. Existing button and
+ * select foregrounds remain local to their own unchanged control rules. */
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog>[data-w=party]{color:#edf5fa}
+
+/* Ordinary menu body ink only. Controls, headings, status and Help retain
+ * their own foreground/background owners. The guide selector excludes the
+ * separate hidden environment inspector and the shell Help surface. */
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog>.eco-menu-content,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog>[data-w=state],
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog>section[data-w=party]+details,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog>section[aria-label="저장 메뉴"]{color:#edf5fa}
+
+/* Large text is an ordinary-menu-only view preference. Explicit sizes beat
+ * retained fixed-size controls; normal mode, Help and the field stay unchanged.
+ * Wrap/reflow rather than clipping text or shrinking tap targets. */
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]{line-height:1.6;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-top button,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content button,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content input,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content select,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content textarea,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[data-w=party] button,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[data-w=party] select,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[aria-label="저장 메뉴"] button,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[data-w=party]+details>summary,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>[data-w=state],
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>[data-w=status],
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-menu-intro,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-menu-nav small,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-tools label,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-kicker,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-note,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-stats dt,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-provenance summary,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-provenance p,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-number,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-list small,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-state{font-size:18px;line-height:1.6;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-top h2,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[data-w=party] h2{font-size:24px;line-height:1.4;min-width:0;overflow-wrap:anywhere;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-detail h3{font-size:28px;line-height:1.4;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-detail h4,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-list strong{font-size:20px;line-height:1.5;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-stats dd{font-size:26px;line-height:1.4;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-top{flex-wrap:wrap;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-menu-nav button{flex-direction:column;align-items:stretch;gap:4px;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-menu-nav small{max-width:none;text-align:left;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-top button,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content button,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content input[type=search],
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content input[type=text],
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content select,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[data-w=party] button,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[data-w=party] select,
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>section[aria-label="저장 메뉴"] button{box-sizing:border-box;max-width:calc(100% - 8px);height:auto;}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-list button{grid-template-columns:max-content minmax(0,1fr);}
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-list .eco-dex-state{grid-column:2;}
+@media(max-width:600px){
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-tools{grid-template-columns:minmax(0,1fr);}
+}
+@media(max-width:600px){
+#canonical-world.ordinary-world .world-layout>aside.eco-menu-dialog[data-large-text=true]>.eco-menu-content .eco-dex-stats{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+
+/* Ecology source links belong to the dark ordinary dex, not the pale title page.
+ * Keep visited links legible too; underlines and focus outline are independent of hue. */
+#canonical-world .eco-menu-dialog .eco-dex-ecology-sources a[href],
+#canonical-world .eco-menu-dialog .eco-dex-ecology-sources a[href]:visited{
+ color:#d2efff;text-decoration-line:underline;text-decoration-thickness:2px;
+ text-underline-offset:.2em;line-height:1.7;overflow-wrap:anywhere;
+}
+#canonical-world .eco-menu-dialog .eco-dex-ecology-sources a[href]:hover{color:#fff4bd}
+#canonical-world .eco-menu-dialog .eco-dex-ecology-sources a[href]:focus-visible{
+ outline:3px solid #ffe1a0;outline-offset:3px;border-radius:2px;
+}
+@media(forced-colors:active){
+ #canonical-world .eco-menu-dialog .eco-dex-ecology-sources a[href],
+ #canonical-world .eco-menu-dialog .eco-dex-ecology-sources a[href]:visited{color:LinkText}
+ #canonical-world .eco-menu-dialog .eco-dex-ecology-sources a[href]:focus-visible{outline-color:Highlight}
+}
+
+/* Public local records are plain text: inherit large-text/reflow and add no focus stops. */
+.eco-dex-local-facts{margin:10px 0}.eco-dex-local-facts>div{margin:8px 0}
+.eco-dex-local-facts dt{font-weight:650}.eco-dex-local-facts dd{margin:0}
+.eco-dex-local-records h5{font:inherit;font-weight:650;margin:12px 0 6px}
+.eco-dex-local-sources{padding-inline-start:1.4em}.eco-dex-local-sources li{margin:6px 0}
+
+/* General habitat and local observations remain separate, noninteractive text. */
+.eco-dex-habitat h5,.eco-dex-habitat-geoje h5{font:inherit;font-weight:650;margin:12px 0 6px}
+.eco-dex-habitat-sources,.eco-dex-habitat-geoje-sources,.eco-dex-habitat-limits{padding-inline-start:1.4em}
+.eco-dex-habitat-sources li,.eco-dex-habitat-geoje-sources li,.eco-dex-habitat-limits li{margin:6px 0}

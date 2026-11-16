@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "provenance": "Original procedural synthesis for Geoje Monsters; no external samples, music, ROM, or private reference material.",
+  "generator": "tools/generate-gameplay-sfx-r2.py",
+  "assets": [
+    {
+      "role": "UIFIELD_14_STEP_GRASS",
+      "file": "UIFIELD_14_STEP_GRASS.wav",
+      "seconds": 0.16,
+      "sampleRate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 15404,
+      "sha256": "1b0ff35df6dba16897f9e7ab21f44bddd5f515ee021cb45043843eae043a8e76",
+      "peak": 0.398102,
+      "rms": 0.084995
+    },
+    {
+      "role": "UIFIELD_20_RECOVERY",
+      "file": "UIFIELD_20_RECOVERY.wav",
+      "seconds": 0.88,
+      "sampleRate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 84524,
+      "sha256": "a799d8033190ac611a999f807198f3c835a4ffd22be26be422f6b338cea3713c",
+      "peak": 0.451263,
+      "rms": 0.099956
+    },
+    {
+      "role": "BATTLE_13_STATUS_CURED",
+      "file": "BATTLE_13_STATUS_CURED.wav",
+      "seconds": 0.46,
+      "sampleRate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 44204,
+      "sha256": "cf8c1c65815b08b8da5e41a94bbebc114bc6d69fefe724c63d55337be05e52e9",
+      "peak": 0.393921,
+      "rms": 0.099895
+    },
+    {
+      "role": "BATTLE_14_MOVE_LEARNED",
+      "file": "BATTLE_14_MOVE_LEARNED.wav",
+      "seconds": 0.58,
+      "sampleRate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 55724,
+      "sha256": "d5a047d19663572bbbb8038bfd648f3fea64b8a7c4eb6e2cf4238b131069e011",
+      "peak": 0.478088,
+      "rms": 0.099914
+    },
+    {
+      "role": "BATTLE_15_RESIDUAL_DAMAGE",
+      "file": "BATTLE_15_RESIDUAL_DAMAGE.wav",
+      "seconds": 0.17,
+      "sampleRate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 16364,
+      "sha256": "a52c9e3137c55f7eb3d3706bc72245ce221e9081d2250b871fc07ec22d685445",
+      "peak": 0.334015,
+      "rms": 0.084776
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "made": "r76 (2026-11-13)",
+  "from": "ECOMON_ART_20261113 review 05 (passed in the final review)",
+  "files": {
+    "fx-critical.png": {
+      "sha256": "8bb6fdbfd89faa3b397b3092881fe8eb88ad1527cd4d09f99f11b2f499d69915",
+      "bytes": 139779
+    },
+    "fx-super.png": {
+      "sha256": "1c119d24f41ed59b1e5f34876237b3ff04509a5428175e94b3267a3d9d1993ef",
+      "bytes": 71634
+    },
+    "fx-weak.png": {
+      "sha256": "7c0f7429a05b3cac9ed89e2eb900317e14e95eeb251d7ba16208fe0f4562d043",
+      "bytes": 124578
+    },
+    "fx-miss.png": {
+      "sha256": "a800fbca2fe0e7b29023c40a3839faec91831be47ce3eeda8a3a106b3120f44b",
+      "bytes": 48989
+    },
+    "fx-stat-up.png": {
+      "sha256": "cbcd75dd477a1ea5b0078fdc01c72ba711c982816c0842c6c4ff61f8c568d0d4",
+      "bytes": 166204
+    },
+    "fx-stat-down.png": {
+      "sha256": "b3c17104d2e329da8eaa9055c52ad3983a9a72954c0ac4eb922b2a75d4167960",
+      "bytes": 184059
+    },
+    "fx-send-out.png": {
+      "sha256": "c0481cd389bd2319cabeb8125842ffc4ec0d698e809ce83784b8852f8b691782",
+      "bytes": 130212
+    },
+    "fx-level-up.png": {
+      "sha256": "c14872dde631a6ca05dd2007738f05120b173339e5f7654efd5dc0dd5831f974",
+      "bytes": 90740
+    },
+    "status-poison.png": {
+      "sha256": "0b817d0441b285241adb64eaf7b6f77a0a310dab37a3bc54a889b76c3389e7b8",
+      "bytes": 7267
+    },
+    "status-bad_poison.png": {
+      "sha256": "97fc2d1a1230e5b7040ef8e1218404a15f21095e14160504d4675dd6f397d732",
+      "bytes": 7490
+    },
+    "status-burn.png": {
+      "sha256": "8bff788ba7d66a39190740fa258cb2d62d83cad17408a3eefa96c0c6e5a8af4e",
+      "bytes": 6324
+    },
+    "status-paralysis.png": {
+      "sha256": "bce11146b4013f1f0cda40dc12322cd882f30dd86c66b4f9bea3e94d14d4f77a",
+      "bytes": 6858
+    },
+    "status-freeze.png": {
+      "sha256": "f67c0e383d080ab2a4c0dbf6abd1ef2b08f5d4870b3c25f9f0e02aa3ed27a02e",
+      "bytes": 8496
+    },
+    "status-sleep.png": {
+      "sha256": "7e72611a9959a82097d2d8255635ab6043e535c7654bd83795f13e0c51969615",
+      "bytes": 7263
+    },
+    "evolution-bg.webp": {
+      "sha256": "738a46c962df28129dd8a34b2b039b77deb7a937753604b5218dfd3986bb6a77",
+      "bytes": 242516
+    },
+    "evolution-glow.png": {
+      "sha256": "c9c61a7a6c72d0b2cf96c622d8ae2121586a080c44cbc68cc30ea4ade9b19a5c",
+      "bytes": 141948
+    }
+  }
+}

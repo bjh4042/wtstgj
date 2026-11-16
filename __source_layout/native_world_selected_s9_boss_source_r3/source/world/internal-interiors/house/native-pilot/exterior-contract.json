@@ -1,0 +1,1141 @@
+{
+  "hub": {
+    "revision": "GOHYEON_SELECTED_V3_STRICT_NATIVE_R1",
+    "mapId": "world:hub:S4",
+    "art": [
+      {
+        "state": "OPEN",
+        "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_OPEN_Candidate4294x2400.png",
+        "sha256": "038580aac4dba41ce4c0712a76bb8977766b5e11b2a0b8507070104ec4b6eafd",
+        "libraryId": "libfile_87e982009b14819185c1ab3623117c01",
+        "version": 3,
+        "receipt": "selected-save-20261026-1143/RECEIPT.json"
+      },
+      {
+        "state": "CLOSED",
+        "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_CLOSED_Candidate4294x2400.png",
+        "sha256": "3db97399291159f05c050578691023efa43204699f603fe7017498157669e8f4",
+        "libraryId": "libfile_ffe28d9bfb8881918b185a978e08a1a8",
+        "version": 3,
+        "receipt": "selected-save-20261026-1143/RECEIPT.json"
+      }
+    ],
+    "anchors": [
+      {
+        "sourcePoint": {
+          "id": "heal:S4",
+          "kind": "heal",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 5,
+          "y": 12,
+          "label": "생태센터 · 회복 / 조사 보고",
+          "placementStatus": "APPROVED_GAMEPLAY_PLACEMENT_V1",
+          "hubId": "CENTER:S4"
+        },
+        "buildingId": "eco_center",
+        "objectAnchor": [
+          1624,
+          1970
+        ],
+        "interactionFoot": [
+          1624,
+          2018
+        ],
+        "distance48": 48,
+        "facing": "BACK",
+        "arrivalLanding": [
+          1624,
+          2070
+        ],
+        "geometryAuthority": "NEW_AUTHORED explicitpoint mapping with reused manualcorridor floor; not recovered transform",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": true,
+            "westConnected": true
+          }
+        },
+        "proof": "/workspace/scratch/a27924f4f6e0/gohyeon_native_hub_adapter_candidate/eco_center-actualBACK-native960.png",
+        "interiorTargetNative": null,
+        "productionEnabled": false,
+        "presentationStatus": "ART_ANCHOR_CANDIDATE_NOT_INSTALLED"
+      },
+      {
+        "sourcePoint": {
+          "id": "shop:S4",
+          "kind": "shop",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 9,
+          "y": 12,
+          "label": "생태 상점",
+          "placementStatus": "APPROVED_GAMEPLAY_PLACEMENT_V1",
+          "hubId": "SHOP:S4"
+        },
+        "buildingId": "mart",
+        "objectAnchor": [
+          2379,
+          1970
+        ],
+        "interactionFoot": [
+          2379,
+          2018
+        ],
+        "distance48": 48,
+        "facing": "BACK",
+        "arrivalLanding": [
+          2379,
+          2070
+        ],
+        "geometryAuthority": "NEW_AUTHORED explicitpoint mapping with reused manualcorridor floor; not recovered transform",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": true,
+            "westConnected": true
+          }
+        },
+        "proof": "/workspace/scratch/a27924f4f6e0/gohyeon_native_hub_adapter_candidate/mart-actualBACK-native960.png",
+        "interiorTargetNative": null,
+        "productionEnabled": false,
+        "presentationStatus": "ART_ANCHOR_CANDIDATE_NOT_INSTALLED"
+      },
+      {
+        "sourcePoint": {
+          "id": "gym-entry:4",
+          "kind": "warp",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 34,
+          "y": 3,
+          "label": "4관 · 진성",
+          "placementStatus": "DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY",
+          "targetMapId": "world:gym:4",
+          "target": [
+            3,
+            18
+          ],
+          "gate": null,
+          "exit": false,
+          "reverseId": "gym-entry:4:return"
+        },
+        "buildingId": "gym_4",
+        "objectAnchor": [
+          378,
+          1855
+        ],
+        "interactionFoot": [
+          378,
+          1903
+        ],
+        "distance48": 48,
+        "facing": "BACK",
+        "arrivalLanding": [
+          378,
+          1955
+        ],
+        "geometryAuthority": "NEW_AUTHORED explicitpoint mapping with reused manualcorridor floor; not recovered transform",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": true,
+            "westConnected": false
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": true,
+            "westConnected": false
+          }
+        },
+        "proof": "/workspace/scratch/a27924f4f6e0/gohyeon_native_hub_adapter_candidate/gym_4-actualBACK-native960.png",
+        "interiorTargetNative": null,
+        "productionEnabled": false,
+        "presentationStatus": "ART_ANCHOR_CANDIDATE_NOT_INSTALLED"
+      },
+      {
+        "sourcePoint": {
+          "id": "route:S4:S5",
+          "kind": "warp",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 1,
+          "y": 12,
+          "label": "거제면 · 둔덕",
+          "placementStatus": "DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY",
+          "targetMapId": "world:hub:S5",
+          "target": [
+            37,
+            12
+          ],
+          "gate": null,
+          "exit": true,
+          "reverseId": "route:S4:S5:return"
+        },
+        "buildingId": "east_progression_gate",
+        "interactionFoot": [
+          4182,
+          1200
+        ],
+        "objectAnchor": [
+          4230,
+          1200
+        ],
+        "distance48": 48,
+        "facing": "RIGHT",
+        "arrivalLanding": [
+          4170,
+          1200
+        ],
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          }
+        },
+        "targetNativeLanding": null,
+        "sourceExitCompleteStagePreserved": true,
+        "productionEnabled": false,
+        "presentationStatus": "ART_ANCHOR_CANDIDATE_NOT_INSTALLED"
+      },
+      {
+        "sourcePoint": {
+          "id": "landmark:S4",
+          "kind": "landmark",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 31,
+          "y": 18,
+          "label": "고현 안내",
+          "placementStatus": "DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY",
+          "assetId": "building.ecocenter"
+        },
+        "objectAnchor": [
+          1969,
+          938
+        ],
+        "interactionFoot": [
+          1969,
+          986
+        ],
+        "facing": "BACK",
+        "distance48": 48,
+        "placementMeaning": "terminal forecourt below existing 고현버스터미널 sign; NEW read hotspot, not door activation",
+        "presentationRequirement": "Exact source landmark has no message; informative text/UI binding absent, no invented dialogue",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": true,
+            "westConnected": true
+          }
+        },
+        "viewport": [
+          1489,
+          646,
+          2449,
+          1186
+        ],
+        "proof": "gohyeon_native_unbound5_candidate/landmark_S4-native960.png",
+        "targetNativeLanding": null,
+        "productionEnabled": false,
+        "presentationStatus": "SOURCE_MESSAGE_MISSING"
+      },
+      {
+        "sourcePoint": {
+          "id": "route:S3:S4:return",
+          "kind": "warp",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 38,
+          "y": 12,
+          "label": "아주 · 옥포",
+          "placementStatus": "DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY",
+          "targetMapId": "world:hub:S3",
+          "target": [
+            2,
+            12
+          ],
+          "gate": null,
+          "reverseId": "route:S3:S4"
+        },
+        "objectAnchor": [
+          48,
+          1200
+        ],
+        "interactionFoot": [
+          96,
+          1200
+        ],
+        "facing": "LEFT",
+        "distance48": 48,
+        "placementMeaning": "existing west main-street previous-port approach",
+        "presentationRequirement": "Destination direction label absent in art; proposed UI label reuses source label",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": true,
+            "westConnected": true
+          }
+        },
+        "viewport": [
+          0,
+          860,
+          960,
+          1400
+        ],
+        "proof": "gohyeon_native_unbound5_candidate/route_S3_S4_return-native960.png",
+        "targetNativeLanding": null,
+        "productionEnabled": false,
+        "presentationStatus": "ART_ANCHOR_CANDIDATE_NOT_INSTALLED"
+      },
+      {
+        "sourcePoint": {
+          "id": "area-entry:S4_GOHYEON_GREENBELT",
+          "kind": "warp",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 4,
+          "y": 3,
+          "label": "고현 생활권 녹지",
+          "placementStatus": "DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY",
+          "targetMapId": "world:area:S4_GOHYEON_GREENBELT",
+          "target": [
+            3,
+            12
+          ],
+          "gate": null,
+          "exit": false,
+          "reverseId": "area-entry:S4_GOHYEON_GREENBELT:return"
+        },
+        "objectAnchor": [
+          2744,
+          286
+        ],
+        "interactionFoot": [
+          2792,
+          286
+        ],
+        "facing": "LEFT",
+        "distance48": 48,
+        "placementMeaning": "north spine intersection beside planted streets; explicit off-scene route access, not opening permanent boundary",
+        "presentationRequirement": "Source destination label needed as proposed interaction prompt; no new boundary opening",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": true,
+            "westConnected": true
+          }
+        },
+        "viewport": [
+          2360,
+          0,
+          3320,
+          540
+        ],
+        "proof": "gohyeon_native_unbound5_candidate/area-entry_S4_GOHYEON_GREENBELT-native960.png",
+        "targetNativeLanding": null,
+        "productionEnabled": false,
+        "presentationStatus": "ROOT_SELECTED_VISIBLE_SIGN_EXACT_LABEL_REQUIRED",
+        "supersededNativeProposal": {
+          "objectAnchor": [
+            2840,
+            244
+          ],
+          "interactionFoot": [
+            2840,
+            292
+          ],
+          "facing": "BACK"
+        }
+      },
+      {
+        "sourcePoint": {
+          "id": "area-entry:S4_POW_CAMP_PARK_EDGE",
+          "kind": "warp",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 9,
+          "y": 3,
+          "label": "포로수용소유적공원 외곽 녹지",
+          "placementStatus": "DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY",
+          "targetMapId": "world:area:S4_POW_CAMP_PARK_EDGE",
+          "target": [
+            3,
+            12
+          ],
+          "gate": null,
+          "exit": false,
+          "reverseId": "area-entry:S4_POW_CAMP_PARK_EDGE:return"
+        },
+        "objectAnchor": [
+          500,
+          2080
+        ],
+        "interactionFoot": [
+          500,
+          2128
+        ],
+        "facing": "BACK",
+        "distance48": 48,
+        "placementMeaning": "civic plaza at existing leaf pavement motif near archive; guided park-edge off-scene entry",
+        "presentationRequirement": "Destination marker/prompt required; motif alone does not prove park entrance",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": true,
+            "westConnected": false
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": true,
+            "westConnected": false
+          }
+        },
+        "viewport": [
+          20,
+          1788,
+          980,
+          2328
+        ],
+        "proof": "gohyeon_native_unbound5_candidate/area-entry_S4_POW_CAMP_PARK_EDGE-native960.png",
+        "targetNativeLanding": null,
+        "productionEnabled": false,
+        "presentationStatus": "ROOT_SELECTED_VISIBLE_SIGN_EXACT_LABEL_REQUIRED",
+        "supersededNativeProposal": {
+          "objectAnchor": [
+            500,
+            2080
+          ],
+          "interactionFoot": [
+            500,
+            2128
+          ],
+          "facing": "BACK"
+        }
+      },
+      {
+        "sourcePoint": {
+          "id": "event:S4_VILLAIN_NETWORK",
+          "kind": "event",
+          "mapId": "world:hub:S4",
+          "stageId": "S4",
+          "areaId": null,
+          "x": 5,
+          "y": 11,
+          "label": "악역이 거제 전역에서 조직적으로 희귀 생태몬을 모으고 있다는 사실을 처음 확실히 인식한다.",
+          "placementStatus": "DEV_PLACEMENT_NOT_FINAL_GEOGRAPHY",
+          "eventId": "S4_VILLAIN_NETWORK",
+          "npcId": null
+        },
+        "objectAnchor": [
+          978,
+          1840
+        ],
+        "interactionFoot": [
+          978,
+          1888
+        ],
+        "facing": "BACK",
+        "distance48": 48,
+        "placementMeaning": "existing civic archive frontage read station; event semantics reassigned NEW_AUTHORED, not a new NPC",
+        "presentationRequirement": "No named NPC/speaker in source; existing source event-marker fallback or explicit read prompt requires presentation approval",
+        "tests": {
+          "OPEN49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "OPEN81": {
+            "safe": false,
+            "westConnected": false
+          },
+          "CLOSED49": {
+            "safe": true,
+            "westConnected": true
+          },
+          "CLOSED81": {
+            "safe": false,
+            "westConnected": false
+          }
+        },
+        "viewport": [
+          498,
+          1548,
+          1458,
+          2088
+        ],
+        "proof": "gohyeon_native_unbound5_candidate/event_S4_VILLAIN_NETWORK-native960.png",
+        "targetNativeLanding": null,
+        "productionEnabled": false,
+        "presentationStatus": "ART_ANCHOR_CANDIDATE_NOT_INSTALLED"
+      }
+    ],
+    "manualSafeCorridors": [
+      {
+        "id": "main street",
+        "rectLTRB": [
+          0,
+          1134,
+          4294,
+          1282
+        ]
+      },
+      {
+        "id": "core north street",
+        "rectLTRB": [
+          1190,
+          146,
+          4205,
+          244
+        ]
+      },
+      {
+        "id": "core spine",
+        "rectLTRB": [
+          2765,
+          180,
+          2915,
+          2215
+        ]
+      },
+      {
+        "id": "core south street",
+        "rectLTRB": [
+          1190,
+          2150,
+          3465,
+          2232
+        ]
+      },
+      {
+        "id": "terminal apron",
+        "rectLTRB": [
+          1900,
+          920,
+          2040,
+          1210
+        ]
+      },
+      {
+        "id": "center approach",
+        "rectLTRB": [
+          1576,
+          1969,
+          1672,
+          2200
+        ]
+      },
+      {
+        "id": "mart approach",
+        "rectLTRB": [
+          2331,
+          1969,
+          2427,
+          2200
+        ]
+      },
+      {
+        "id": "home1 approach",
+        "rectLTRB": [
+          3108,
+          736,
+          3181,
+          1220
+        ]
+      },
+      {
+        "id": "home2 approach",
+        "rectLTRB": [
+          3148,
+          1891,
+          3218,
+          2200
+        ]
+      },
+      {
+        "id": "market crossing",
+        "rectLTRB": [
+          553,
+          774,
+          633,
+          1185
+        ]
+      },
+      {
+        "id": "market frontage",
+        "rectLTRB": [
+          285,
+          767,
+          805,
+          824
+        ]
+      },
+      {
+        "id": "restaurant apron",
+        "rectLTRB": [
+          286,
+          696,
+          386,
+          810
+        ]
+      },
+      {
+        "id": "home3 apron",
+        "rectLTRB": [
+          717,
+          670,
+          797,
+          810
+        ]
+      },
+      {
+        "id": "gym spine",
+        "rectLTRB": [
+          702,
+          1200,
+          754,
+          1970
+        ]
+      },
+      {
+        "id": "civic frontage",
+        "rectLTRB": [
+          315,
+          1908,
+          1030,
+          1956
+        ]
+      },
+      {
+        "id": "gym approach",
+        "rectLTRB": [
+          318,
+          1854,
+          438,
+          2190
+        ]
+      },
+      {
+        "id": "archive apron",
+        "rectLTRB": [
+          938,
+          1838,
+          1018,
+          1956
+        ]
+      },
+      {
+        "id": "civic event plaza",
+        "rectLTRB": [
+          130,
+          1952,
+          765,
+          2270
+        ]
+      },
+      {
+        "id": "lower turn-in",
+        "rectLTRB": [
+          965,
+          2152,
+          1250,
+          2210
+        ]
+      }
+    ],
+    "knownVisualHold": {
+      "GT001_southeastPlanter": [
+        3964,
+        2265,
+        4134,
+        2400
+      ],
+      "supportAvailableBelowPx": 5,
+      "status": "unresolved grounding visual defect; no new traversal authored",
+      "northPermanentClosures": "preserved both states, OPEN means eastgate only",
+      "terminalNative48Gap": "nearest original safefoot55px from artdoor; unbound not forcefixed"
+    },
+    "eventBody": [
+      960,
+      1822,
+      996,
+      1858
+    ],
+    "sourceGridToNative": null,
+    "sourceCanonicalStateIndependent": true,
+    "runtimeInstalled": false,
+    "parents": [
+      {
+        "path": "gohyeon_native_hub_adapter_candidate/CONTRACT.json",
+        "sha256": "2812894365a396ece32309ab38644c6a320ef479f76def5179a13ea4a360322d"
+      },
+      {
+        "path": "gohyeon_native_unbound5_candidate/CONTRACT.json",
+        "sha256": "8eae3342b00a162a798343d46894b7b47675ea590270656a04e617d110e35339"
+      }
+    ]
+  },
+  "signs": [
+    {
+      "contract": {
+        "revision": "GOHYEON_PARK_VISIBLE_TRAVEL_SIGN_R1_20261026_1015",
+        "selection": "ROOT_NATIVE_SELECTED",
+        "pointId": "area-entry:S4_POW_CAMP_PARK_EDGE",
+        "mapId": "world:hub:S4",
+        "targetMapId": "world:area:S4_POW_CAMP_PARK_EDGE",
+        "sourceLabel": "포로수용소유적공원 외곽 녹지",
+        "interactionLabel": "포로수용소유적공원 외곽 녹지 · 이동",
+        "arrowMeaning": "symbolic MOVE action only, NOT geographic east park authority",
+        "art": {
+          "file": "park_travel_sign_NATIVE_RGBA96x94.png",
+          "sha256": "de11435f785bbe95577e242d42b58afa838a46dd82ad21f778f550ce5df403b9",
+          "size": [
+            96,
+            94
+          ],
+          "worldOrigin": [
+            452,
+            1988
+          ],
+          "localPivot": [
+            48,
+            92
+          ],
+          "worldPivot": [
+            500,
+            2080
+          ]
+        },
+        "solidCandidate": [
+          480,
+          2071,
+          520,
+          2089
+        ],
+        "readFoot": [
+          500,
+          2128
+        ],
+        "facing": "BACK",
+        "hubReturnLanding": [
+          500,
+          2224
+        ],
+        "baseStates": [
+          {
+            "state": "OPEN",
+            "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_OPEN_Candidate4294x2400.png",
+            "sha256": "038580aac4dba41ce4c0712a76bb8977766b5e11b2a0b8507070104ec4b6eafd",
+            "libraryId": "libfile_87e982009b14819185c1ab3623117c01",
+            "version": 3,
+            "receipt": "selected-save-20261026-1143/RECEIPT.json"
+          },
+          {
+            "state": "CLOSED",
+            "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_CLOSED_Candidate4294x2400.png",
+            "sha256": "3db97399291159f05c050578691023efa43204699f603fe7017498157669e8f4",
+            "libraryId": "libfile_ffe28d9bfb8881918b185a978e08a1a8",
+            "version": 3,
+            "receipt": "selected-save-20261026-1143/RECEIPT.json"
+          }
+        ],
+        "depth": "base->worldobjects/actor footYsorted; signfoot2080 beforeplayer2128, actual949alphaoverlap ispost/basehiddenbyactor",
+        "sourcePolicy": "existingexplicitinteract(id) dispatchesexistingwarp; noauto touch, noextra confirmation gate, no newID. Host sourceauthority stillrequired",
+        "sourcePointRevision": "new presentationrevision only; canonicalid unchanged",
+        "installation": "NOT_INSTALLED; integrator owns source/paired landing hookup",
+        "keep": [
+          "permanentnorthclosedplanters",
+          "GT001unresolved",
+          "sourcegates/targets/reverseIDs",
+          "native49read/return",
+          "81westconnection historicalHOLD"
+        ],
+        "sourceBaseReplacement": null,
+        "bakeIntoFull": false,
+        "runtime": "NOT_RUN"
+      },
+      "file": "gohyeon_visible_area_entry_gate/park_travel_sign_candidate/frozen_selected_r1/park_travel_sign_NATIVE_RGBA96x94.png",
+      "pair": {
+        "areaId": "S4_POW_CAMP_PARK_EDGE",
+        "mapId": "world:area:S4_POW_CAMP_PARK_EDGE",
+        "sourceEntryId": "area-entry:S4_POW_CAMP_PARK_EDGE",
+        "sourceReturnId": "area-entry:S4_POW_CAMP_PARK_EDGE:return",
+        "art": "pow_camp_park_edge_audit/source/art/heritage-edge-day-v2.1.png",
+        "artSHA256": "4855f4b7b79d4bd401e022a7e43f13f591dddea5c3f7388ca40833f0baef6e38",
+        "arrivalLanding": [
+          532,
+          879
+        ],
+        "returnReadFoot": [
+          532,
+          927
+        ],
+        "returnObjectAnchor": [
+          532,
+          975
+        ],
+        "interactionDistance48": 48,
+        "hubArrivalLanding": [
+          500,
+          2224
+        ],
+        "tests": {
+          "49": {
+            "landingSafe": true,
+            "readSafe": true,
+            "landingReadConnected": true
+          },
+          "81": {
+            "landingSafe": true,
+            "readSafe": true,
+            "landingReadConnected": true
+          }
+        },
+        "nativeTransform": "NEW_AUTHORED explicit paired anchors, no ratio",
+        "productionEnabled": false,
+        "hubPresentation": "PRESENTATION_NOT_AUTHORED",
+        "viewport": [
+          52,
+          484,
+          1012,
+          1024
+        ]
+      },
+      "frozenArtSourceManifestSHA": "1bc75f7c73aad8fe961a4fed7b93e66e5a20bb76874d668565161e626bcfcd4f",
+      "baseMigration": {
+        "oldPinnedBaseStates": [
+          {
+            "path": "gohyeon_hub_binding_audit/downloads/Gohyeon_Expanded_Town_Open_4294x2400.png",
+            "libraryId": "libfile_87e982009b14819185c1ab3623117c01",
+            "version": "0",
+            "sha256": "2d46ef836710073ba13784b3493632c059560ed9cc0898f1f1327ce1fb946d84",
+            "localSHA256Checked": true
+          },
+          {
+            "path": "gohyeon_hub_binding_audit/downloads/Gohyeon_Expanded_Town_Closed_4294x2400.png",
+            "libraryId": "libfile_ffe28d9bfb8881918b185a978e08a1a8",
+            "version": "0",
+            "sha256": "134b3467e1853d25403d88a2bfc6c7e3a04a0926c77616fc94afbf38f55f467a",
+            "localSHA256Checked": true
+          }
+        ],
+        "latestReceipt": "selected-save-20261026-1143/RECEIPT.json",
+        "newSourceParentOnly": true,
+        "originalSignRGBAChanged": false
+      },
+      "consumerBindingSHA": "6de3445fe8e727a507adbf90df25ac601477ce4dc30bf61cfb31d97b8b706fdb"
+    },
+    {
+      "contract": {
+        "revision": "GOHYEON_GREENBELT_VISIBLE_TRAVEL_SIGN_R1_20261026_1024",
+        "selection": "ROOT_ACTUAL_NATIVE_SELECTED",
+        "pointId": "area-entry:S4_GOHYEON_GREENBELT",
+        "mapId": "world:hub:S4",
+        "targetMapId": "world:area:S4_GOHYEON_GREENBELT",
+        "sourceLabel": "고현 생활권 녹지",
+        "interactionLabel": "고현 생활권 녹지 · 이동",
+        "arrowMeaning": "symbolicMOVE notgeographicdirection",
+        "art": {
+          "file": "greenbelt_travel_sign_NATIVE_RGBA96x94.png",
+          "sha256": "44741dcc634246b0cd786ee84ec4d6e2b59cfddf0a5da9ce61f6e043eeeaac47",
+          "size": [
+            96,
+            94
+          ],
+          "worldOrigin": [
+            2696,
+            194
+          ],
+          "localPivot": [
+            48,
+            92
+          ],
+          "worldPivot": [
+            2744,
+            286
+          ]
+        },
+        "oldNativeProposal": {
+          "anchor": [
+            2840,
+            244
+          ],
+          "read": [
+            2840,
+            292
+          ],
+          "facing": "BACK",
+          "meaning": "roadcenter invisible notfinal"
+        },
+        "objectAnchor": [
+          2744,
+          286
+        ],
+        "readFoot": [
+          2792,
+          286
+        ],
+        "facing": "LEFT",
+        "solidCandidate": [
+          2724,
+          277,
+          2764,
+          295
+        ],
+        "hubReturnLandingUnchanged": [
+          2840,
+          388
+        ],
+        "baseStates": [
+          {
+            "state": "OPEN",
+            "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_OPEN_Candidate4294x2400.png",
+            "sha256": "038580aac4dba41ce4c0712a76bb8977766b5e11b2a0b8507070104ec4b6eafd",
+            "libraryId": "libfile_87e982009b14819185c1ab3623117c01",
+            "version": 3,
+            "receipt": "selected-save-20261026-1143/RECEIPT.json"
+          },
+          {
+            "state": "CLOSED",
+            "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_CLOSED_Candidate4294x2400.png",
+            "sha256": "3db97399291159f05c050578691023efa43204699f603fe7017498157669e8f4",
+            "libraryId": "libfile_ffe28d9bfb8881918b185a978e08a1a8",
+            "version": 3,
+            "receipt": "selected-save-20261026-1143/RECEIPT.json"
+          }
+        ],
+        "depth": "footYsort; actorafterstaticobjects on equalfootY286 tie; projectedcrosswalkocclusionnormal, footsolidonsidewalk",
+        "sourcePolicy": "sameexistingexplicitinteract(id) sourcewarp, noautotouch ornewconfirm/gate/target/ID",
+        "nativeRevisionPolicy": "newanchor/read/facing replaces oldpresentationproposal only; oldhubreturnstays",
+        "runtime": "NOT_RUN",
+        "sourceBaseReplacement": null,
+        "bakeIntoFull": false,
+        "limits": [
+          "81readHOLD",
+          "nativehost/sourcepairedintegrationseparate"
+        ],
+        "checks": {
+          "alphaVsLampConservativeBBox": 0,
+          "alphaVsExistingPlantBBox": 0,
+          "alphaVsCrosswalkProjectedRectangles": 1111,
+          "groundSolidVsCrosswalk": 0,
+          "foot49VsSolid": 0,
+          "actorSignAlphaOverlap": 24,
+          "existing49Path": {
+            "read49": true,
+            "read81": false,
+            "return49": true,
+            "everyPathFoot49": true,
+            "interaction48": 48
+          },
+          "stateComposite": {
+            "OPEN": {
+              "sourceSHA256": "2d46ef836710073ba13784b3493632c059560ed9cc0898f1f1327ce1fb946d84",
+              "compositeChangedPixels": 4243,
+              "outsideAlphaChanged": 0,
+              "baseFileChanged": false
+            },
+            "CLOSED": {
+              "sourceSHA256": "134b3467e1853d25403d88a2bfc6c7e3a04a0926c77616fc94afbf38f55f467a",
+              "compositeChangedPixels": 4243,
+              "outsideAlphaChanged": 0,
+              "baseFileChanged": false
+            }
+          }
+        }
+      },
+      "file": "gohyeon_visible_area_entry_gate/greenbelt_sign_candidate/frozen_selected_r1/greenbelt_travel_sign_NATIVE_RGBA96x94.png",
+      "pair": {
+        "areaId": "S4_GOHYEON_GREENBELT",
+        "mapId": "world:area:S4_GOHYEON_GREENBELT",
+        "sourceEntryId": "area-entry:S4_GOHYEON_GREENBELT",
+        "sourceReturnId": "area-entry:S4_GOHYEON_GREENBELT:return",
+        "art": "map_whole_visual_audit/recovered/gohyeon-four-lamps-streetside-v5.1.png",
+        "artSHA256": "1d2542e68a36b9aed9fe9a0ddfed917f401abac580d89fb8fcbbd4a470c9dc77",
+        "arrivalLanding": [
+          120,
+          610
+        ],
+        "returnReadFoot": [
+          108,
+          610
+        ],
+        "returnObjectAnchor": [
+          60,
+          610
+        ],
+        "interactionDistance48": 48,
+        "hubArrivalLanding": [
+          2840,
+          388
+        ],
+        "tests": {
+          "49": {
+            "landingSafe": true,
+            "readSafe": true,
+            "landingReadConnected": true
+          },
+          "81": {
+            "landingSafe": true,
+            "readSafe": true,
+            "landingReadConnected": true
+          }
+        },
+        "nativeTransform": "NEW_AUTHORED explicit paired anchors, no ratio",
+        "productionEnabled": false,
+        "hubPresentation": "PRESENTATION_NOT_AUTHORED",
+        "viewport": [
+          0,
+          310,
+          960,
+          850
+        ]
+      },
+      "frozenArtSourceManifestSHA": "43605d11ba9173ef5cc21d23944882ad50dd0f9869c8c945a33944c20140e992",
+      "baseMigration": {
+        "oldPinnedBaseStates": [
+          {
+            "path": "gohyeon_hub_binding_audit/downloads/Gohyeon_Expanded_Town_Open_4294x2400.png",
+            "libraryId": "libfile_87e982009b14819185c1ab3623117c01",
+            "version": "0",
+            "sha256": "2d46ef836710073ba13784b3493632c059560ed9cc0898f1f1327ce1fb946d84"
+          },
+          {
+            "path": "gohyeon_hub_binding_audit/downloads/Gohyeon_Expanded_Town_Closed_4294x2400.png",
+            "libraryId": "libfile_ffe28d9bfb8881918b185a978e08a1a8",
+            "version": "0",
+            "sha256": "134b3467e1853d25403d88a2bfc6c7e3a04a0926c77616fc94afbf38f55f467a"
+          }
+        ],
+        "latestReceipt": "selected-save-20261026-1143/RECEIPT.json",
+        "newSourceParentOnly": true,
+        "originalSignRGBAChanged": false
+      },
+      "consumerBindingSHA": "e28f47e206e55cf8e08e1524bb4eba95c433ee4bbc7dc7994243b6e2c454eb8a"
+    }
+  ],
+  "sourceCanonicalTransforms": null,
+  "productionInstalled": false,
+  "migration": {
+    "authority": "NEW_AUTHORED_CONSUMER_MIGRATION_OF_ROOT_SELECTED_FULL_V3",
+    "historicalConsumer": "gohyeon_two_visible_signs_host_candidate/CONTRACT.json",
+    "historicalConsumerSHA256": "3b8473fed13883bcc6957312f95d9b538d4c6e61c3c7abf29f7a778ca6538298",
+    "oldArt": [
+      {
+        "path": "gohyeon_hub_binding_audit/downloads/Gohyeon_Expanded_Town_Open_4294x2400.png",
+        "libraryId": "libfile_87e982009b14819185c1ab3623117c01",
+        "version": "0",
+        "sha256": "2d46ef836710073ba13784b3493632c059560ed9cc0898f1f1327ce1fb946d84"
+      },
+      {
+        "path": "gohyeon_hub_binding_audit/downloads/Gohyeon_Expanded_Town_Closed_4294x2400.png",
+        "libraryId": "libfile_ffe28d9bfb8881918b185a978e08a1a8",
+        "version": "0",
+        "sha256": "134b3467e1853d25403d88a2bfc6c7e3a04a0926c77616fc94afbf38f55f467a"
+      }
+    ],
+    "latestArt": [
+      {
+        "state": "OPEN",
+        "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_OPEN_Candidate4294x2400.png",
+        "sha256": "038580aac4dba41ce4c0712a76bb8977766b5e11b2a0b8507070104ec4b6eafd",
+        "libraryId": "libfile_87e982009b14819185c1ab3623117c01",
+        "version": 3,
+        "receipt": "selected-save-20261026-1143/RECEIPT.json"
+      },
+      {
+        "state": "CLOSED",
+        "path": "gohyeon_south_boundary_grounding_audit/remaining_two_candidates/Gohyeon_GT001_AllIdentifiedSouthRepairs_CLOSED_Candidate4294x2400.png",
+        "sha256": "3db97399291159f05c050578691023efa43204699f603fe7017498157669e8f4",
+        "libraryId": "libfile_ffe28d9bfb8881918b185a978e08a1a8",
+        "version": 3,
+        "receipt": "selected-save-20261026-1143/RECEIPT.json"
+      }
+    ],
+    "sourceRelease": "approved-latest104/story127",
+    "sourcePointDiff": [],
+    "geometryAndSignCoordinatesUnchanged": true,
+    "sourcePointIdsUnchanged": true,
+    "readBodiesFloorDelta": "0 overlap per independent pixel QA; no floor expansion",
+    "independentQA": "map_finish_coordination/gohyeon_latest_pin_review_1353/QA.json",
+    "productionInstalled": false
+  }
+}

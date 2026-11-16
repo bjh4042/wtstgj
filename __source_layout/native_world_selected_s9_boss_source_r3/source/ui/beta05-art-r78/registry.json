@@ -1,0 +1,24 @@
+{
+  "made": "r78 (2026-11-14)",
+  "from": "ECOMON_ART_20261113 review 01 field props (passed in the final review)",
+  "files": {
+    "field-sign.png": {
+      "sha256": "f56363ee093ee5e9c3aede208f6fd63c13b0df5b24799ccd80584e4ae5528e82",
+      "bytes": 42188,
+      "size": [
+        143,
+        160
+      ],
+      "piece": 0
+    },
+    "field-pickup.png": {
+      "sha256": "fb94f6dfdbb5723f61cff7842c46d0872a00bee71e9b2fdca7461a639531637c",
+      "bytes": 29531,
+      "size": [
+        116,
+        128
+      ],
+      "piece": 4
+    }
+  }
+}

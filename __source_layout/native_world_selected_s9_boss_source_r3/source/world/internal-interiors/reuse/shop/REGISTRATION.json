@@ -1,0 +1,346 @@
+{
+  "source": "shop_local_r2/LOCAL_COMPOSITE_CANDIDATE.png",
+  "native": [
+    960,
+    720
+  ],
+  "base": [
+    [
+      80,
+      186
+    ],
+    [
+      880,
+      186
+    ],
+    [
+      880,
+      660
+    ],
+    [
+      80,
+      660
+    ]
+  ],
+  "solids": [
+    [
+      "west_wall_shelves",
+      [
+        80,
+        186,
+        135,
+        627
+      ]
+    ],
+    [
+      "west_rear_planter",
+      [
+        80,
+        186,
+        215,
+        230
+      ]
+    ],
+    [
+      "east_shelves",
+      [
+        824,
+        186,
+        880,
+        627
+      ]
+    ],
+    [
+      "fridge_and_right_back_shelf",
+      [
+        690,
+        186,
+        875,
+        306
+      ]
+    ],
+    [
+      "rear_cabinets",
+      [
+        340,
+        70,
+        609,
+        186
+      ]
+    ],
+    [
+      "rear_left_plant",
+      [
+        302,
+        167,
+        340,
+        213
+      ]
+    ],
+    [
+      "rear_right_plant",
+      [
+        610,
+        167,
+        648,
+        213
+      ]
+    ],
+    [
+      "counter",
+      [
+        274,
+        263,
+        648,
+        305
+      ]
+    ],
+    [
+      "left_island",
+      [
+        274,
+        435,
+        410,
+        475
+      ]
+    ],
+    [
+      "right_island",
+      [
+        550,
+        435,
+        685,
+        475
+      ]
+    ]
+  ],
+  "points": {
+    "entry": [
+      480,
+      625
+    ],
+    "centre": [
+      480,
+      530
+    ],
+    "counter_front": [
+      480,
+      340
+    ],
+    "staff_side": [
+      240,
+      240
+    ],
+    "staff": [
+      480,
+      240
+    ],
+    "west_browse": [
+      185,
+      390
+    ],
+    "east_browse": [
+      760,
+      390
+    ],
+    "left_island_front": [
+      340,
+      505
+    ],
+    "right_island_front": [
+      610,
+      505
+    ],
+    "left_island_back": [
+      340,
+      405
+    ],
+    "right_island_back": [
+      610,
+      405
+    ],
+    "southwest": [
+      220,
+      585
+    ]
+  },
+  "lamps": [
+    [
+      91,
+      119
+    ],
+    [
+      323,
+      120
+    ],
+    [
+      635,
+      120
+    ],
+    [
+      859,
+      119
+    ]
+  ],
+  "occluders": [
+    {
+      "id": "counter",
+      "rect": [
+        274,
+        227,
+        648,
+        305
+      ],
+      "groundY": 305
+    },
+    {
+      "id": "left_island",
+      "rect": [
+        274,
+        374,
+        410,
+        475
+      ],
+      "groundY": 475
+    },
+    {
+      "id": "right_island",
+      "rect": [
+        550,
+        374,
+        685,
+        475
+      ],
+      "groundY": 475
+    }
+  ],
+  "staffModel": {
+    "foot": [
+      480,
+      240
+    ],
+    "envelope": [
+      456,
+      222,
+      504,
+      258
+    ],
+    "rearTopY": 227,
+    "topFrontY": 266,
+    "groundY": 305,
+    "bodyHeight": 39,
+    "rearGroundYDerived": 266,
+    "conservativeSolidBeginsY": 263,
+    "explanation": "rear top227 plus front body39 yields projected rear ground266; conservative solid263. Foot envelope bottom258 leaves5px. Rear cabinets end186; side connection via240240. No tabletop support."
+  },
+  "sourceSHA": "685d241a36de42163861512108290a80e8b0bbe0750e7358c1e8be6c1e8649b9",
+  "status": "ROOT_SELECTED_STATIC_NEW_GEOMETRY_CANDIDATE",
+  "footprint": [
+    49,
+    37
+  ],
+  "mainInstalled": false,
+  "actors": "diagnostic only",
+  "numeric": {
+    "safePixels": 194972,
+    "components": 1,
+    "points": {
+      "entry": {
+        "foot": [
+          480,
+          625
+        ],
+        "support": true,
+        "component": 1
+      },
+      "centre": {
+        "foot": [
+          480,
+          530
+        ],
+        "support": true,
+        "component": 1
+      },
+      "counter_front": {
+        "foot": [
+          480,
+          340
+        ],
+        "support": true,
+        "component": 1
+      },
+      "staff_side": {
+        "foot": [
+          240,
+          240
+        ],
+        "support": true,
+        "component": 1
+      },
+      "staff": {
+        "foot": [
+          480,
+          240
+        ],
+        "support": true,
+        "component": 1
+      },
+      "west_browse": {
+        "foot": [
+          185,
+          390
+        ],
+        "support": true,
+        "component": 1
+      },
+      "east_browse": {
+        "foot": [
+          760,
+          390
+        ],
+        "support": true,
+        "component": 1
+      },
+      "left_island_front": {
+        "foot": [
+          340,
+          505
+        ],
+        "support": true,
+        "component": 1
+      },
+      "right_island_front": {
+        "foot": [
+          610,
+          505
+        ],
+        "support": true,
+        "component": 1
+      },
+      "left_island_back": {
+        "foot": [
+          340,
+          405
+        ],
+        "support": true,
+        "component": 1
+      },
+      "right_island_back": {
+        "foot": [
+          610,
+          405
+        ],
+        "support": true,
+        "component": 1
+      },
+      "southwest": {
+        "foot": [
+          220,
+          585
+        ],
+        "support": true,
+        "component": 1
+      }
+    }
+  }
+}

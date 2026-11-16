@@ -1,0 +1,36 @@
+/* Root-selected integrated RPG direction. Import LAST, after polished-field-ui.
+ * Scene/background may crop; characters, HUD text and actions may NOT crop. */
+#canonical-world .world-modal.eco-rpg-battle{display:block;padding:5px;max-width:1320px;border:3px solid #75A8BB;border-bottom:5px solid #123D57;border-radius:22px;background:#FFF;box-shadow:0 0 0 2px #F9FEFF,0 15px 50px #123D5766;overflow:auto;scrollbar-gutter:auto}
+.eco-rpg-stage{position:relative;isolation:isolate;width:100%;height:clamp(240px,56dvh,720px);min-height:220px;border-radius:15px 15px 0 0;background:#DCEBF0}
+#canonical-world .eco-rpg-battle .eco-rpg-stage>canvas{display:block;width:100%;height:100%;max-height:none;max-width:none;aspect-ratio:auto;object-fit:fill;border:0;border-radius:15px 15px 0 0;box-shadow:none}
+.eco-rpg-stage>.eco-battle-hud{position:absolute;inset:0;display:block;margin:0;pointer-events:none}
+.eco-rpg-stage .eco-battle-card{position:absolute;box-sizing:border-box;width:clamp(138px,44%,320px);max-height:min(104px,34%);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;pointer-events:auto;padding:9px 12px;border:1px solid #397F99;border-bottom:3px solid #16445D;border-radius:14px;background:linear-gradient(120deg,#FFFFF5,#F7FCF9);box-shadow:inset 0 2px 0 #D7BC70,0 2px 0 #FFFFFF99;word-break:keep-all;overflow-wrap:break-word}
+.eco-rpg-stage .eco-battle-card:nth-child(1){right:8px;bottom:8px;left:auto;top:auto}
+.eco-rpg-stage .eco-battle-card:nth-child(2){left:8px;top:8px;right:auto;bottom:auto}
+.eco-rpg-stage .eco-battle-side{display:none}
+.eco-rpg-stage .eco-battle-card strong{font-size:clamp(16px,1.4vw,21px);line-height:1.35}
+.eco-rpg-stage .eco-battle-details,.eco-rpg-status{font-size:16px;line-height:1.35;white-space:normal;overflow-wrap:anywhere}
+.eco-rpg-status{display:block;color:#A52F46;margin-top:3px}
+.eco-rpg-stage .eco-battle-card:focus-visible{outline:3px solid #684A8F;outline-offset:-3px}
+.eco-rpg-stage .eco-hp-meter{height:7px;margin-top:5px}
+.eco-rpg-command-band{position:relative;isolation:isolate;border-top:5px solid #163F5B;background:linear-gradient(135deg,#FFF,#EAF5F7);border-radius:0 0 14px 14px;padding:12px;display:grid;grid-template-columns:minmax(180px,.85fr) minmax(0,2fr);gap:12px;align-items:start;min-width:0}
+.eco-rpg-command-band::before{content:'';position:absolute;pointer-events:none;top:1px;left:12px;right:12px;height:2px;background:#D7BC70}
+.eco-rpg-command-band::after{content:'';position:absolute;pointer-events:none;z-index:-1;left:12px;bottom:12px;width:76px;height:76px;background:var(--eco-leaf) center/contain no-repeat;opacity:.1}
+.eco-rpg-battle-log{margin:0;padding:8px 4px;min-width:0;max-height:144px;overflow:auto;overscroll-behavior:contain;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;color:#15394B;font-size:18px;line-height:1.5}
+.eco-rpg-battle-log:focus-visible{outline:3px solid #684A8F;outline-offset:1px}
+#canonical-world .eco-rpg-battle [data-w=battle-actions]{margin:0;padding:4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;min-width:0;max-height:40dvh;overflow:auto;overscroll-behavior:contain}
+#canonical-world .eco-rpg-battle [data-w=battle-actions] button{min-height:50px;border-radius:9px;border-bottom:3px solid #16445D;padding:9px 12px 9px 17px;font-size:16px;line-height:1.35;text-align:left;white-space:normal;overflow-wrap:break-word;word-break:keep-all;box-shadow:inset 3px 0 0 #C1D9DC}
+#canonical-world .eco-rpg-battle [data-w=battle-actions] button:focus-visible{background:linear-gradient(120deg,#123D57,#176B8E);color:#FFF;outline:3px solid #684A8F;outline-offset:1px;box-shadow:inset 3px 0 0 #D7BC70}
+#canonical-world .eco-rpg-battle [data-w=battle-actions] button:disabled{background:#E4EBEA;color:#5D6E75;border-color:#9EAFB5;box-shadow:none}
+#canonical-world .eco-rpg-command-band:has(>.eco-rpg-battle-log[hidden]){grid-template-columns:minmax(0,1fr)}
+/* Dialogue is content-sized. Advance glyph keeps a full 44px hit/focus target. */
+#canonical-world [data-w=dialogue]{padding:16px 18px;border-radius:18px;border:2px solid #67A4BE;border-bottom:4px solid #16445D;background:linear-gradient(130deg,#FFF,#F4FBFC);box-shadow:inset 0 3px 0 #D7BC70}
+#canonical-world [data-w=dialogue-text]{margin:0;max-height:40dvh;overflow:auto;white-space:pre-wrap;font-size:18px;line-height:1.5;word-break:keep-all;overflow-wrap:break-word}
+#canonical-world .eco-dialogue-speaker{display:block;margin:0 0 6px;color:#176B8E;font-size:18px;font-weight:700}
+#canonical-world button.eco-dialogue-advance{display:block;position:relative;min-width:44px;min-height:44px;width:44px;height:44px;margin:8px 0 0 auto;padding:0;background:transparent;border:1px solid transparent;border-radius:10px;box-shadow:none}
+#canonical-world button.eco-dialogue-advance::after{content:'';position:absolute;top:17px;left:14px;border-top:10px solid #176B8E;border-left:8px solid transparent;border-right:8px solid transparent}
+#canonical-world button.eco-dialogue-advance:hover{background:#EAF5F7;border-color:#B8D7DF}
+@media(max-width:600px){.eco-rpg-stage{height:clamp(292px,52dvh,460px)}.eco-rpg-command-band{grid-template-columns:minmax(0,1fr);gap:4px;padding:10px}.eco-rpg-battle-log{font-size:18px;max-height:96px;padding:4px}.eco-rpg-stage .eco-battle-card{padding:8px 10px}.eco-rpg-stage .eco-battle-card strong{font-size:16px}#canonical-world .eco-rpg-battle [data-w=battle-actions]{max-height:34dvh}}
+@media(max-width:340px){.eco-rpg-stage{height:292px}.eco-rpg-command-band{padding:8px}#canonical-world .eco-rpg-battle [data-w=battle-actions] button{padding-left:12px}.eco-rpg-stage .eco-battle-details{letter-spacing:-.025em}}
+@media(orientation:landscape) and (max-height:450px){#canonical-world .world-modal.eco-rpg-battle{display:block}.eco-rpg-stage{height:clamp(220px,64dvh,280px)}.eco-rpg-command-band{grid-template-columns:minmax(0,1fr);gap:4px;padding:8px}.eco-rpg-battle-log{max-height:76px;font-size:16px;padding:2px 4px}#canonical-world .eco-rpg-battle [data-w=battle-actions]{grid-template-columns:repeat(3,minmax(0,1fr));max-height:40dvh}.eco-rpg-stage .eco-battle-card strong{font-size:16px}}
+@media(forced-colors:active){.eco-rpg-stage .eco-battle-card{background:Canvas;color:CanvasText;border-color:CanvasText}.eco-rpg-command-band{border-color:CanvasText}.eco-rpg-stage .eco-battle-card:focus-visible{outline-color:Highlight}}

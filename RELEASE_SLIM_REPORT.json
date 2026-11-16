@@ -1,0 +1,1618 @@
+{
+ "from": "build-portable-integrated-r278",
+ "files": 1838,
+ "inMB": 1373.1,
+ "outMB": 686.8,
+ "dropped": [
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
+   "mb": 33,
+   "servedAs": null,
+   "reason": "not referenced anywhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/opening.wav",
+   "mb": 22,
+   "servedAs": null,
+   "reason": "not referenced anywhere in the build"
+  },
+  {
+   "file": "opening/geoje-opening-original.mp4",
+   "mb": 46.9,
+   "servedAs": null,
+   "reason": "not referenced anywhere in the build"
+  },
+  {
+   "file": "assets/music/user-ost/ost-01.mp3",
+   "mb": 3.5,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-01.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-02.mp3",
+   "mb": 4.5,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-02.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-03.mp3",
+   "mb": 3,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-03.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-04.mp3",
+   "mb": 1.6,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-04.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-05.mp3",
+   "mb": 4.2,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-05.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-06.mp3",
+   "mb": 4.1,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-06.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-07.mp3",
+   "mb": 4.6,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-07.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-08.mp3",
+   "mb": 3.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-08.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-09.mp3",
+   "mb": 1.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-09.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-10.mp3",
+   "mb": 3.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-10.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-11.mp3",
+   "mb": 4.3,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-11.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-12.mp3",
+   "mb": 3.7,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-12.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-13.mp3",
+   "mb": 3.8,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-13.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-14.mp3",
+   "mb": 2.8,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-14.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-15.mp3",
+   "mb": 3.2,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-15.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-16.mp3",
+   "mb": 3.2,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-16.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-17.mp3",
+   "mb": 3.4,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-17.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-18.mp3",
+   "mb": 4.5,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-18.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-19.mp3",
+   "mb": 2.7,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-19.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-20.mp3",
+   "mb": 3.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-20.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/approved-atlases/npc/BOMI_R89.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/npc/DOCTOR_YOON_R89.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/npc/USANG_R89.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_004_R103.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_031_R106.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_031_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_037_R106.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_037_R108.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_039_R106.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_052_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_053_R106.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_057_R108.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_062_R106.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_062_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_062_R108C.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_108_R106.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_118_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_131_R106.png",
+   "mb": 0.6,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/species/SPECIES_132_R103.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/BOMI_R89.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/DOCTOR_YOON_R89.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/USANG_R89.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_004_R103.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_031_R106.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_031_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_037_R106.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_037_R108.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_039_R106.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_052_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_053_R106.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_057_R108.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_062_R106.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_062_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_062_R108C.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_108_R106.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_118_R108.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_131_R106.png",
+   "mb": 0.6,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/species/SPECIES_132_R103.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_003.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_006.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_009.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_010.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_011.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_017.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_025.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_034.png",
+   "mb": 0.7,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_040.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_063.png",
+   "mb": 0.6,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_080.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_090.png",
+   "mb": 0.6,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_097.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_118.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_136.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_140.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-atlases/species/SPECIES_144.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_s9_boss_resource_host_r3/original-art/assets/approved-battle-backgrounds/INDOOR.png",
+   "mb": 1.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_s9_boss_resource_host_r3 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_selected_geometry_r1/assets/S7_OPEN.raw.u8",
+   "mb": 7,
+   "servedAs": null,
+   "reason": "old __source_layout/native_selected_geometry_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_selected_geometry_r1/assets/S7_OPEN.raw.u8.gzip.bin",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_selected_geometry_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/ANGLER_M_BASE.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/BOMI.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/DIVER_F_BASE.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/DIVER_F_VAR01.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_F_BASE.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/FIELD_RESEARCH_ASSISTANT_M_BASE.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/FISHER_F_BASE.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/FISHER_M_BASE.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/FISHER_M_VAR01.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/HWIGYEONG.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/JUNSEOK.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/LOCAL_WALKER_F_VAR01.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/NATURE_PHOTOGRAPHER_F_VAR01.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/SAFETY_RESCUE_M_BASE.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/npc/USANG.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/player/PLAYER_FEMALE.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-atlases/player/PLAYER_MALE.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-field-proof/center_base.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-field-proof/center_foreground.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-field-proof/door_closed.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-field-proof/door_open.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-field-proof/pine_base.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-field-proof/pine_foreground.png",
+   "mb": 0.2,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-field-proof/table.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/G_FOREST_MOSS.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/G_PAVER_LIGHT.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_BENCH.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_CAMELLIA_BLOOM_base.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_CAMELLIA_BLOOM_foreground.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_EVERGREEN_BROAD_base.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_EVERGREEN_BROAD_foreground.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_FENCE_WOOD.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_LAMP_STREET.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_PLANTER.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_SHRUB_ROUND.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_SIGN_WOOD.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-prologue/O_WOODLAND_SHRUB.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_female_back_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_female_front_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_female_left_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_female_right_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_male_back_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_male_front_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_male_left_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/action_player_male_right_surf_rider-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-surf/board-2x.webp",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/FX_FOAM_BASE.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_DECK_WOOD.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_GRASS_SHORT.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_MONGDOL_DRY.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_PATH_EARTH.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_SEA.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_SEA_1.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_SEA_2.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_SHALLOW.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_SHALLOW_1.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/G_SHALLOW_2.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/O_SIGN_WOOD.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/O_TALL_GRASS_A.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/O_WILDFLOWER.png",
+   "mb": 0,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_0.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_1.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_112.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_113.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_116.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_117.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_119.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_124.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_125.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_127.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_16.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_17.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_193.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_197.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_199.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_20.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_209.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_21.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_213.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_215.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_221.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_223.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_23.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_241.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_245.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_247.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_253.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_255.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_28.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_29.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_31.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_4.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_5.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_64.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_65.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_68.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_69.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_7.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_71.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_80.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_81.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_84.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_85.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_87.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_92.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_93.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/TR_GRASS_PATH_95.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_ship_ui_r1/original-assets/assets/approved-terrain/X_GRASS_FRINGE.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "old __source_layout/native_world_selected_s9_ship_ui_r1 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_003.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_006.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_009.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_010.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_011.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_013.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_014.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_017.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_018.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_019.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_046.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_063.png",
+   "mb": 0.6,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_065.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_067.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_069.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_070.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_096.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_097.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_103.png",
+   "mb": 0.6,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_108.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_126.png",
+   "mb": 0.6,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_136.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_139.png",
+   "mb": 0.3,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_140.png",
+   "mb": 0.5,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-atlases/species/SPECIES_142.png",
+   "mb": 0.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-battle-backgrounds/COAST.png",
+   "mb": 1.7,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "__source_layout/restore_r40_0002/public_consumer/dist/assets/approved-battle-backgrounds/GYM.png",
+   "mb": 1.4,
+   "servedAs": null,
+   "reason": "old __source_layout/restore_r40_0002 — no page names it"
+  },
+  {
+   "file": "s1-field-native/stream.png",
+   "mb": 38.1,
+   "servedAs": "s1-field-native/stream.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/wetland.png",
+   "mb": 11.1,
+   "servedAs": "s1-field-native/wetland.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/finalhub.png",
+   "mb": 3.5,
+   "servedAs": "s1-field-native/finalhub.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s9hub.png",
+   "mb": 7.4,
+   "servedAs": "s1-field-native/s9hub.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s5hub.png",
+   "mb": 15.5,
+   "servedAs": "s1-field-native/s5hub.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s6hub.png",
+   "mb": 19.9,
+   "servedAs": "s1-field-native/s6hub.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s7hub.png",
+   "mb": 21,
+   "servedAs": "s1-field-native/s7hub.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s8hub.png",
+   "mb": 12.7,
+   "servedAs": "s1-field-native/s8hub.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s9route.png",
+   "mb": 6.8,
+   "servedAs": "s1-field-native/s9route.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s9park.png",
+   "mb": 6.2,
+   "servedAs": "s1-field-native/s9park.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/posthub.png",
+   "mb": 5.8,
+   "servedAs": "s1-field-native/posthub.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/postisland.png",
+   "mb": 7.7,
+   "servedAs": "s1-field-native/postisland.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s5farm.png",
+   "mb": 7.1,
+   "servedAs": "s1-field-native/s5farm.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s5stream.png",
+   "mb": 7.8,
+   "servedAs": "s1-field-native/s5stream.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s5dome.png",
+   "mb": 7.1,
+   "servedAs": "s1-field-native/s5dome.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s6forest.png",
+   "mb": 7.8,
+   "servedAs": "s1-field-native/s6forest.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s7cliff.png",
+   "mb": 7,
+   "servedAs": "s1-field-native/s7cliff.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s7valley.png",
+   "mb": 7.2,
+   "servedAs": "s1-field-native/s7valley.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s7coast.png",
+   "mb": 7.4,
+   "servedAs": "s1-field-native/s7coast.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s8gujora.png",
+   "mb": 8,
+   "servedAs": "s1-field-native/s8gujora.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s8coral.png",
+   "mb": 6.7,
+   "servedAs": "s1-field-native/s8coral.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s5gym.png",
+   "mb": 4,
+   "servedAs": "s1-field-native/s5gym.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s6gym.png",
+   "mb": 5.6,
+   "servedAs": "s1-field-native/s6gym.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s7gym.png",
+   "mb": 4.5,
+   "servedAs": "s1-field-native/s7gym.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s8gym.png",
+   "mb": 3.7,
+   "servedAs": "s1-field-native/s8gym.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/postblue.png",
+   "mb": 6.5,
+   "servedAs": "s1-field-native/postblue.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/postforest.png",
+   "mb": 7.6,
+   "servedAs": "s1-field-native/postforest.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/postaltar.png",
+   "mb": 6.7,
+   "servedAs": "s1-field-native/postaltar.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/postgarden.png",
+   "mb": 6.3,
+   "servedAs": "s1-field-native/postgarden.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s9ship.png",
+   "mb": 15.9,
+   "servedAs": "s1-field-native/s9ship.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s1brackish.png",
+   "mb": 7.4,
+   "servedAs": "s1-field-native/s1brackish.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s2coast.png",
+   "mb": 7,
+   "servedAs": "s1-field-native/s2coast.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s3aju.png",
+   "mb": 7,
+   "servedAs": "s1-field-native/s3aju.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s3okpo.png",
+   "mb": 7.4,
+   "servedAs": "s1-field-native/s3okpo.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s4greenbelt.png",
+   "mb": 6.7,
+   "servedAs": "s1-field-native/s4greenbelt.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s4powpark.png",
+   "mb": 7.2,
+   "servedAs": "s1-field-native/s4powpark.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s6mongdol.png",
+   "mb": 7,
+   "servedAs": "s1-field-native/s6mongdol.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s1-field-native/s8jisepo.png",
+   "mb": 6.1,
+   "servedAs": "s1-field-native/s8jisepo.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "native-restoration/s1-open.png",
+   "mb": 38.1,
+   "servedAs": "native-restoration/s1-open.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s2-native/town.png",
+   "mb": 17.7,
+   "servedAs": "s2-native/town.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s2-native/hill.png",
+   "mb": 11.6,
+   "servedAs": "s2-native/hill.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s3-native/town.png",
+   "mb": 8,
+   "servedAs": "s3-native/town.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "s4-native/town.png",
+   "mb": 12.3,
+   "servedAs": "s4-native/town.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "native-restoration/prologue.png",
+   "mb": 7.4,
+   "servedAs": "native-restoration/prologue.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "jeongui-grass/open.png",
+   "mb": 3,
+   "servedAs": "jeongui-grass/open.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "jeongui-grass/closed.png",
+   "mb": 3,
+   "servedAs": "jeongui-grass/closed.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "kangmin-native/open.png",
+   "mb": 2.6,
+   "servedAs": "kangmin-native/open.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "kangmin-native/closed.png",
+   "mb": 2.6,
+   "servedAs": "kangmin-native/closed.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "jinseong-party/open.png",
+   "mb": 2.4,
+   "servedAs": "jinseong-party/open.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "jinseong-party/closed.png",
+   "mb": 2.4,
+   "servedAs": "jinseong-party/closed.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "youngjin-bug-electric/open.png",
+   "mb": 2.2,
+   "servedAs": "youngjin-bug-electric/open.webp",
+   "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "youngjin-bug-electric/closed.png",
+   "mb": 2.4,
+   "servedAs": "youngjin-bug-electric/closed.webp",
+   "reason": "webp copy present, sha matches"
+  }
+ ],
+ "kept": [],
+ "over25MB": []
+}
