@@ -2,7 +2,7 @@
   "status": "COMPILE_AND_PUBLIC_RESOURCE_BYTE_VERIFICATION_PASS",
   "compiledModules": 665,
   "publicResourceFiles": 2097,
-  "output": "build-portable-integrated-r278",
+  "output": "build-portable-integrated-r279",
   "entry": "beta05-gameplay-patrol-candidate.html",
   "basePath": "/wtstgj/",
   "symlinks": false,
