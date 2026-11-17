@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r279",
- "files": 1838,
- "inMB": 1373.1,
- "outMB": 686.8,
+ "from": "build-portable-integrated-r343",
+ "files": 1879,
+ "inMB": 1356.7,
+ "outMB": 669.9,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -143,6 +143,18 @@
    "reason": "identical module-side copy is the one the game loads"
   },
   {
+   "file": "assets/approved-atlases/npc/BLACKNET_GRUNT_F_BASE.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "assets/approved-atlases/npc/BLACKNET_GRUNT_M_BASE.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
    "file": "assets/approved-atlases/npc/BOMI_R89.png",
    "mb": 0.4,
    "servedAs": null,
@@ -253,6 +265,18 @@
   {
    "file": "assets/approved-atlases/species/SPECIES_132_R103.png",
    "mb": 0.4,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/BLACKNET_GRUNT_F_BASE.png",
+   "mb": 0.1,
+   "servedAs": null,
+   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/BLACKNET_GRUNT_M_BASE.png",
+   "mb": 0.1,
    "servedAs": null,
    "reason": "replaced sprite sheet — its name appears nowhere in the build"
   },

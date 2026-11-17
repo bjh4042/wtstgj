@@ -1,0 +1,17 @@
+# 효과음 고지 (ElevenLabs)
+
+게임 저작권: © WATERMELON
+
+아래 효과음 7개는 ElevenLabs 효과음 생성 기능(https://elevenlabs.io)으로 만들었습니다(2026-11-18).
+무료 요금제로 만들었으며, 이 게임은 무료·광고 없이 배포합니다. 무료 요금제 조건에 따라 ElevenLabs를 표기합니다.
+
+- presentation/eleven-sfx/dex.mp3 — 도감에 새로 등록될 때
+- presentation/eleven-sfx/surf.mp3 — 파도타기를 시작할 때
+- presentation/eleven-sfx/door.mp3 — 리그 방 문이 뒤에서 닫힐 때
+- presentation/eleven-sfx/fanfare.mp3 — 명예의 전당
+- presentation/eleven-sfx/release.mp3 — 구한 생태몬들을 돌려보낼 때
+- presentation/eleven-sfx/toss.mp3 — 가방에서 버릴 때
+- presentation/eleven-sfx/lowhp.mp3 — 체력이 적을 때 경고음(반복)
+
+ElevenLabs 이용약관: https://elevenlabs.io/terms-of-use
+AI 생성물의 저작권 보호 여부를 보증하지 않습니다. 결제 요금제 조건은 만든 시점의 계정 기준이며, 상업적 이용으로 바꿀 경우 유료 요금제로 다시 확인해야 합니다.
