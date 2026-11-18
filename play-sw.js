@@ -1,10 +1,15 @@
 // r52: offline play for 생태몬스터: 거제도 (registered by pwa/beta05-offline.mjs, scope = the game page only).
-// Keeps a copy of each game file the first time the game loads it; later loads use the copy, so places already
-// visited open without the internet. The page itself is always asked from the network first (so updates arrive),
-// falling back to the copy, then to pwa/offline.html. Nothing here reads or writes the game save.
+// Keeps a copy of each game file the first time the game loads it, so places already visited open without the internet.
+// The page itself is always asked from the network first (so updates arrive), falling back to the copy, then to
+// pwa/offline.html. Nothing here reads or writes the game save.
 // The cache name follows ?v= (the game version): a new version starts a fresh cache and removes the old ones.
+// r108sw (user: 새 게임·이어하기가 로딩 0.5초 뒤 타이틀로 돌아옴): the ?v= value did not change between builds, so files whose names
+// stay the same across builds (atlas pictures, room art, data) were served from an old copy forever. The cache has a new name (the
+// old copies are removed on activate), and only hashed build files (name-XXXXXXXX.ext, never changed in place) are copy-first;
+// everything else is asked from the network first and the copy is only the offline fallback.
 const VERSION = new URL(self.location.href).searchParams.get('v') || '0';
-const CACHE = 'geoje-play-' + VERSION;
+const CACHE = 'geoje-play-2-' + VERSION;
+const HASHED = /-[A-Za-z0-9_-]{8}\.[a-z0-9]+$/i;
 const BASE = '/wtstgj/';
 const OFFLINE = BASE + 'pwa/offline.html';
 self.addEventListener('install', event => {
@@ -26,6 +31,14 @@ self.addEventListener('fetch', event => {
     event.respondWith((async () => {
       try { const res = await fetch(req); if (res.ok) { const copy = res.clone(); event.waitUntil(keep(new Request(url.origin + url.pathname), copy)); } return res; }
       catch { const c = await caches.open(CACHE); return (await c.match(url.origin + url.pathname)) || (await c.match(OFFLINE)) || Response.error(); }
+    })());
+    return;
+  }
+  if (!HASHED.test(url.pathname)) {
+    // r108sw: same-name files: the network copy wins; the stored copy is only for playing offline
+    event.respondWith((async () => {
+      try { const res = await fetch(req, {cache: 'no-cache'}); if (res.ok) event.waitUntil(keep(req, res.clone())); return res; }
+      catch { const c = await caches.open(CACHE); return (await c.match(req)) || Response.error(); }
     })());
     return;
   }
