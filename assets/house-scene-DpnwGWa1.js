@@ -1,0 +1,1 @@
+import{n as e,t}from"./house-scene-Cw--bv8k.js";export{t as HouseScene,e as renderHouse};

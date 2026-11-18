@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r343",
- "files": 1879,
- "inMB": 1356.7,
- "outMB": 669.9,
+ "from": "build-portable-integrated-r373",
+ "files": 1888,
+ "inMB": 1359.5,
+ "outMB": 672.8,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",

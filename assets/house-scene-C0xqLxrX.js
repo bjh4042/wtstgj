@@ -1,0 +1,1 @@
+import{n as e,t}from"./house-scene-Dt2c0EY0.js";export{t as HouseScene,e as renderHouse};
