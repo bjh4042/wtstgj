@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r381",
- "files": 1888,
- "inMB": 1359.6,
- "outMB": 672.8,
+ "from": "build-portable-integrated-r610",
+ "files": 1920,
+ "inMB": 1363.2,
+ "outMB": 622.8,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -23,124 +23,10 @@
    "reason": "not referenced anywhere in the build"
   },
   {
-   "file": "assets/music/user-ost/ost-01.mp3",
-   "mb": 3.5,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-01.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-02.mp3",
-   "mb": 4.5,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-02.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-03.mp3",
-   "mb": 3,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-03.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-04.mp3",
-   "mb": 1.6,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-04.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-05.mp3",
-   "mb": 4.2,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-05.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-06.mp3",
-   "mb": 4.1,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-06.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-07.mp3",
-   "mb": 4.6,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-07.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-08.mp3",
-   "mb": 3.9,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-08.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-09.mp3",
-   "mb": 1.9,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-09.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-10.mp3",
-   "mb": 3.9,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-10.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-11.mp3",
-   "mb": 4.3,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-11.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-12.mp3",
-   "mb": 3.7,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-12.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-13.mp3",
-   "mb": 3.8,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-13.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-14.mp3",
-   "mb": 2.8,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-14.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-15.mp3",
-   "mb": 3.2,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-15.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-16.mp3",
-   "mb": 3.2,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-16.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-17.mp3",
-   "mb": 3.4,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-17.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-18.mp3",
-   "mb": 4.5,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-18.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-19.mp3",
-   "mb": 2.7,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-19.mp3",
-   "reason": "identical module-side copy is the one the game loads"
-  },
-  {
-   "file": "assets/music/user-ost/ost-20.mp3",
-   "mb": 3.9,
-   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-20.mp3",
-   "reason": "identical module-side copy is the one the game loads"
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/house/native-pilot/exterior.png",
+   "mb": 17.6,
+   "servedAs": null,
+   "reason": "not referenced anywhere in the build"
   },
   {
    "file": "assets/approved-atlases/npc/BLACKNET_GRUNT_F_BASE.png",
@@ -1635,8 +1521,2350 @@
    "mb": 2.4,
    "servedAs": "youngjin-bug-electric/closed.webp",
    "reason": "webp copy present, sha matches"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/COAST-nQBSqZnU.png",
+   "mb": 1.7,
+   "servedAs": "assets/COAST-nQBSqZnU.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/boy-CLl2gHZr.png",
+   "mb": 1,
+   "servedAs": "assets/boy-CLl2gHZr.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/boy_dialogue-BhYHPZnd.png",
+   "mb": 0.3,
+   "servedAs": "assets/boy_dialogue-BhYHPZnd.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/canonicalHarin-Cbv0X_my.png",
+   "mb": 1.5,
+   "servedAs": "assets/canonicalHarin-Cbv0X_my.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/girl-ChpwaIgz.png",
+   "mb": 1.2,
+   "servedAs": "assets/girl-ChpwaIgz.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/girl_dialogue-Bl50Ae1r.png",
+   "mb": 0.3,
+   "servedAs": "assets/girl_dialogue-Bl50Ae1r.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/researcher-B7fIuw0W.png",
+   "mb": 1.8,
+   "servedAs": "assets/researcher-B7fIuw0W.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/desktop-BRxAAhB4.png",
+   "mb": 2,
+   "servedAs": "assets/desktop-BRxAAhB4.png",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/galmuri11_bold-B-aT_Kli.woff2",
+   "mb": 0.2,
+   "servedAs": "assets/galmuri11_bold-B-aT_Kli.woff2",
+   "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
   }
  ],
- "kept": [],
- "over25MB": []
+ "kept": [
+  {
+   "file": "assets/music/user-ost/ost-01.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-02.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-03.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-04.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-05.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-06.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-07.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-08.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-09.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-10.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-11.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-12.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-13.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-14.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-15.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-16.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-17.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-18.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-19.mp3",
+   "reason": "something loads music from the root — kept"
+  },
+  {
+   "file": "assets/music/user-ost/ost-20.mp3",
+   "reason": "something loads music from the root — kept"
+  }
+ ],
+ "over25MB": [],
+ "webp": {
+  "note": "PNG re-encoded as WebP under the same name (r400); the build folder keeps the original bytes",
+  "lossy": 31,
+  "lossless": 299,
+  "fromMB": 95.2,
+  "toMB": 39.8,
+  "files": [
+   {
+    "file": "assets/approved-battle-backgrounds/CAVE.png",
+    "mode": "lossy",
+    "from": 1428254,
+    "to": 88452
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/CLIFF.png",
+    "mode": "lossy",
+    "from": 1894080,
+    "to": 205262
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/COAST.png",
+    "mode": "lossy",
+    "from": 1787045,
+    "to": 133766
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/FOREST.png",
+    "mode": "lossy",
+    "from": 1671455,
+    "to": 152078
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/GRASSLAND.png",
+    "mode": "lossy",
+    "from": 1719763,
+    "to": 153950
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/GYM.png",
+    "mode": "lossy",
+    "from": 1497230,
+    "to": 103418
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/INDOOR.png",
+    "mode": "lossy",
+    "from": 1433829,
+    "to": 90722
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/LEAGUE.png",
+    "mode": "lossy",
+    "from": 1723373,
+    "to": 166352
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/ROCKY_SHORE.png",
+    "mode": "lossy",
+    "from": 1725894,
+    "to": 166692
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/RURAL.png",
+    "mode": "lossy",
+    "from": 1818923,
+    "to": 188316
+   },
+   {
+    "file": "assets/approved-battle-backgrounds/URBAN.png",
+    "mode": "lossy",
+    "from": 1843636,
+    "to": 189222
+   },
+   {
+    "file": "assets/approved-field-proof/door_closed.png",
+    "mode": "lossless",
+    "from": 138789,
+    "to": 118366
+   },
+   {
+    "file": "assets/approved-field-proof/door_open.png",
+    "mode": "lossless",
+    "from": 140032,
+    "to": 119450
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_BACK_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 45425,
+    "to": 37030
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_BACK_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 50759,
+    "to": 41580
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_BACK_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 46181,
+    "to": 37902
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_FRONT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 52700,
+    "to": 43924
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_FRONT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 53125,
+    "to": 43652
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_FRONT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 46829,
+    "to": 38560
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_LEFT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 46861,
+    "to": 37968
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_LEFT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 53118,
+    "to": 43614
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_LEFT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 46019,
+    "to": 37712
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_RIGHT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 47614,
+    "to": 38872
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_RIGHT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 52227,
+    "to": 42496
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_FEMALE_RIGHT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 45465,
+    "to": 36768
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_BACK_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 43441,
+    "to": 35348
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_BACK_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 43371,
+    "to": 35646
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_BACK_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 39167,
+    "to": 32134
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_FRONT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 44010,
+    "to": 36234
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_FRONT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 47080,
+    "to": 38592
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_FRONT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 38871,
+    "to": 32258
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_LEFT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 44771,
+    "to": 36406
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_LEFT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 47991,
+    "to": 38960
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_LEFT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 41305,
+    "to": 33766
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_RIGHT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 43515,
+    "to": 35406
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_RIGHT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 46036,
+    "to": 37238
+   },
+   {
+    "file": "assets/approved-fishing/PLAYER_MALE_RIGHT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 40849,
+    "to": 33056
+   },
+   {
+    "file": "assets/approved-intro/bed.png",
+    "mode": "lossless",
+    "from": 250253,
+    "to": 229916
+   },
+   {
+    "file": "assets/approved-intro/boy.png",
+    "mode": "lossless",
+    "from": 999786,
+    "to": 791808
+   },
+   {
+    "file": "assets/approved-intro/boy_dialogue.png",
+    "mode": "lossless",
+    "from": 285405,
+    "to": 234414
+   },
+   {
+    "file": "assets/approved-intro/canonicalHarin.png",
+    "mode": "lossless",
+    "from": 1579688,
+    "to": 685550
+   },
+   {
+    "file": "assets/approved-intro/canonicalHarin_dialogue.png",
+    "mode": "lossless",
+    "from": 257449,
+    "to": 223542
+   },
+   {
+    "file": "assets/approved-intro/door.png",
+    "mode": "lossless",
+    "from": 140032,
+    "to": 119450
+   },
+   {
+    "file": "assets/approved-intro/floor.png",
+    "mode": "lossless",
+    "from": 55331,
+    "to": 44480
+   },
+   {
+    "file": "assets/approved-intro/girl.png",
+    "mode": "lossless",
+    "from": 1234531,
+    "to": 802352
+   },
+   {
+    "file": "assets/approved-intro/girl_dialogue.png",
+    "mode": "lossless",
+    "from": 282252,
+    "to": 235894
+   },
+   {
+    "file": "assets/approved-intro/path.png",
+    "mode": "lossless",
+    "from": 82286,
+    "to": 64992
+   },
+   {
+    "file": "assets/approved-intro/researcher.png",
+    "mode": "lossless",
+    "from": 1905228,
+    "to": 966764
+   },
+   {
+    "file": "assets/approved-intro/researcher_dialogue.png",
+    "mode": "lossless",
+    "from": 315618,
+    "to": 255374
+   },
+   {
+    "file": "assets/approved-intro/roof.png",
+    "mode": "lossless",
+    "from": 237812,
+    "to": 223344
+   },
+   {
+    "file": "assets/approved-intro/wall.png",
+    "mode": "lossless",
+    "from": 283321,
+    "to": 259902
+   },
+   {
+    "file": "assets/approved-intro/window.png",
+    "mode": "lossless",
+    "from": 54733,
+    "to": 48730
+   },
+   {
+    "file": "assets/approved-intro/wood.png",
+    "mode": "lossless",
+    "from": 85973,
+    "to": 64456
+   },
+   {
+    "file": "assets/approved-prologue/G_FOREST_MOSS.png",
+    "mode": "lossless",
+    "from": 93445,
+    "to": 81096
+   },
+   {
+    "file": "assets/approved-prologue/G_PAVER_LIGHT.png",
+    "mode": "lossless",
+    "from": 99003,
+    "to": 76800
+   },
+   {
+    "file": "assets/approved-terrain/G_DECK_WOOD.png",
+    "mode": "lossless",
+    "from": 85973,
+    "to": 64456
+   },
+   {
+    "file": "assets/approved-terrain/G_MONGDOL_DRY.png",
+    "mode": "lossless",
+    "from": 107411,
+    "to": 72518
+   },
+   {
+    "file": "assets/approved-terrain/G_PATH_EARTH.png",
+    "mode": "lossless",
+    "from": 82286,
+    "to": 64992
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_0.png",
+    "mode": "lossless",
+    "from": 83835,
+    "to": 66038
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_1.png",
+    "mode": "lossless",
+    "from": 78754,
+    "to": 62404
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_112.png",
+    "mode": "lossless",
+    "from": 71982,
+    "to": 57744
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_113.png",
+    "mode": "lossless",
+    "from": 66146,
+    "to": 53396
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_116.png",
+    "mode": "lossless",
+    "from": 65247,
+    "to": 53656
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_117.png",
+    "mode": "lossless",
+    "from": 58465,
+    "to": 48726
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_119.png",
+    "mode": "lossless",
+    "from": 57570,
+    "to": 48124
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_124.png",
+    "mode": "lossless",
+    "from": 64323,
+    "to": 52992
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_125.png",
+    "mode": "lossless",
+    "from": 57601,
+    "to": 48062
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_127.png",
+    "mode": "lossless",
+    "from": 56708,
+    "to": 47460
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_16.png",
+    "mode": "lossless",
+    "from": 78804,
+    "to": 62378
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_17.png",
+    "mode": "lossless",
+    "from": 73497,
+    "to": 58700
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_193.png",
+    "mode": "lossless",
+    "from": 71706,
+    "to": 57688
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_197.png",
+    "mode": "lossless",
+    "from": 63914,
+    "to": 53576
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_199.png",
+    "mode": "lossless",
+    "from": 63309,
+    "to": 52900
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_20.png",
+    "mode": "lossless",
+    "from": 73006,
+    "to": 58532
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_209.png",
+    "mode": "lossless",
+    "from": 66317,
+    "to": 53574
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_21.png",
+    "mode": "lossless",
+    "from": 67219,
+    "to": 54148
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_213.png",
+    "mode": "lossless",
+    "from": 58450,
+    "to": 48874
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_215.png",
+    "mode": "lossless",
+    "from": 57541,
+    "to": 48198
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_221.png",
+    "mode": "lossless",
+    "from": 57758,
+    "to": 48276
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_223.png",
+    "mode": "lossless",
+    "from": 56806,
+    "to": 47600
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_23.png",
+    "mode": "lossless",
+    "from": 66521,
+    "to": 53500
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_241.png",
+    "mode": "lossless",
+    "from": 65450,
+    "to": 52744
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_245.png",
+    "mode": "lossless",
+    "from": 57558,
+    "to": 48112
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_247.png",
+    "mode": "lossless",
+    "from": 56568,
+    "to": 47436
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_253.png",
+    "mode": "lossless",
+    "from": 56693,
+    "to": 47448
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_255.png",
+    "mode": "lossless",
+    "from": 55661,
+    "to": 46770
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_28.png",
+    "mode": "lossless",
+    "from": 72341,
+    "to": 57902
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_29.png",
+    "mode": "lossless",
+    "from": 66565,
+    "to": 53572
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_31.png",
+    "mode": "lossless",
+    "from": 65871,
+    "to": 52882
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_4.png",
+    "mode": "lossless",
+    "from": 78877,
+    "to": 62896
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_5.png",
+    "mode": "lossless",
+    "from": 72970,
+    "to": 58654
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_64.png",
+    "mode": "lossless",
+    "from": 78395,
+    "to": 62574
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_65.png",
+    "mode": "lossless",
+    "from": 72443,
+    "to": 58324
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_68.png",
+    "mode": "lossless",
+    "from": 72371,
+    "to": 59152
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_69.png",
+    "mode": "lossless",
+    "from": 64593,
+    "to": 54194
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_7.png",
+    "mode": "lossless",
+    "from": 72221,
+    "to": 57956
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_71.png",
+    "mode": "lossless",
+    "from": 63922,
+    "to": 53590
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_80.png",
+    "mode": "lossless",
+    "from": 72833,
+    "to": 58556
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_81.png",
+    "mode": "lossless",
+    "from": 67004,
+    "to": 54142
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_84.png",
+    "mode": "lossless",
+    "from": 66265,
+    "to": 54420
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_85.png",
+    "mode": "lossless",
+    "from": 59339,
+    "to": 49488
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_87.png",
+    "mode": "lossless",
+    "from": 58455,
+    "to": 48846
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_92.png",
+    "mode": "lossless",
+    "from": 65485,
+    "to": 53824
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_93.png",
+    "mode": "lossless",
+    "from": 58670,
+    "to": 48892
+   },
+   {
+    "file": "assets/approved-terrain/TR_GRASS_PATH_95.png",
+    "mode": "lossless",
+    "from": 57767,
+    "to": 48278
+   },
+   {
+    "file": "assets/approved-terrain/X_GRASS_FRINGE.png",
+    "mode": "lossless",
+    "from": 87549,
+    "to": 79840
+   },
+   {
+    "file": "assets/approved-title/desktop.png",
+    "mode": "lossy",
+    "from": 2130822,
+    "to": 162776
+   },
+   {
+    "file": "assets/approved-title/mobile.png",
+    "mode": "lossy",
+    "from": 370322,
+    "to": 32608
+   },
+   {
+    "file": "assets/boy-CLl2gHZr.png",
+    "mode": "lossless",
+    "from": 999786,
+    "to": 791808
+   },
+   {
+    "file": "assets/boy_dialogue-BhYHPZnd.png",
+    "mode": "lossless",
+    "from": 285405,
+    "to": 234414
+   },
+   {
+    "file": "assets/canonicalHarin-Cbv0X_my.png",
+    "mode": "lossless",
+    "from": 1579688,
+    "to": 685550
+   },
+   {
+    "file": "assets/COAST-nQBSqZnU.png",
+    "mode": "lossy",
+    "from": 1787045,
+    "to": 133766
+   },
+   {
+    "file": "assets/desktop-BRxAAhB4.png",
+    "mode": "lossy",
+    "from": 2130822,
+    "to": 162776
+   },
+   {
+    "file": "assets/girl-ChpwaIgz.png",
+    "mode": "lossless",
+    "from": 1234531,
+    "to": 802352
+   },
+   {
+    "file": "assets/girl_dialogue-Bl50Ae1r.png",
+    "mode": "lossless",
+    "from": 282252,
+    "to": 235894
+   },
+   {
+    "file": "assets/researcher-B7fIuw0W.png",
+    "mode": "lossless",
+    "from": 1905228,
+    "to": 966764
+   },
+   {
+    "file": "assets/story-props/capture-ship.png",
+    "mode": "lossless",
+    "from": 267390,
+    "to": 241880
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/CAVE.png",
+    "mode": "lossy",
+    "from": 1428254,
+    "to": 88452
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/CLIFF.png",
+    "mode": "lossy",
+    "from": 1894080,
+    "to": 205262
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/COAST.png",
+    "mode": "lossy",
+    "from": 1787045,
+    "to": 133766
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/FOREST.png",
+    "mode": "lossy",
+    "from": 1671455,
+    "to": 152078
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/GRASSLAND.png",
+    "mode": "lossy",
+    "from": 1719763,
+    "to": 153950
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/GYM.png",
+    "mode": "lossy",
+    "from": 1497230,
+    "to": 103418
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/INDOOR.png",
+    "mode": "lossy",
+    "from": 1433829,
+    "to": 90722
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/LEAGUE.png",
+    "mode": "lossy",
+    "from": 1723373,
+    "to": 166352
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/ROCKY_SHORE.png",
+    "mode": "lossy",
+    "from": 1725894,
+    "to": 166692
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/RURAL.png",
+    "mode": "lossy",
+    "from": 1818923,
+    "to": 188316
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-battle-backgrounds/URBAN.png",
+    "mode": "lossy",
+    "from": 1843636,
+    "to": 189222
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-field-proof/door_closed.png",
+    "mode": "lossless",
+    "from": 138789,
+    "to": 118366
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-field-proof/door_open.png",
+    "mode": "lossless",
+    "from": 140032,
+    "to": 119450
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_BACK_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 45425,
+    "to": 37030
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_BACK_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 50759,
+    "to": 41580
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_BACK_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 46181,
+    "to": 37902
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_FRONT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 52700,
+    "to": 43924
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_FRONT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 53125,
+    "to": 43652
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_FRONT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 46829,
+    "to": 38560
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_LEFT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 46861,
+    "to": 37968
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_LEFT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 53118,
+    "to": 43614
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_LEFT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 46019,
+    "to": 37712
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_RIGHT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 47614,
+    "to": 38872
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_RIGHT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 52227,
+    "to": 42496
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_FEMALE_RIGHT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 45465,
+    "to": 36768
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_BACK_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 43441,
+    "to": 35348
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_BACK_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 43371,
+    "to": 35646
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_BACK_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 39167,
+    "to": 32134
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_FRONT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 44010,
+    "to": 36234
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_FRONT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 47080,
+    "to": 38592
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_FRONT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 38871,
+    "to": 32258
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_LEFT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 44771,
+    "to": 36406
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_LEFT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 47991,
+    "to": 38960
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_LEFT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 41305,
+    "to": 33766
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_RIGHT_FISH_CAST.png",
+    "mode": "lossless",
+    "from": 43515,
+    "to": 35406
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_RIGHT_FISH_HOOK.png",
+    "mode": "lossless",
+    "from": 46036,
+    "to": 37238
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-fishing/PLAYER_MALE_RIGHT_FISH_WAIT.png",
+    "mode": "lossless",
+    "from": 40849,
+    "to": 33056
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/bed.png",
+    "mode": "lossless",
+    "from": 250253,
+    "to": 229916
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/boy.png",
+    "mode": "lossless",
+    "from": 999786,
+    "to": 791808
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/boy_dialogue.png",
+    "mode": "lossless",
+    "from": 285405,
+    "to": 234414
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/canonicalHarin.png",
+    "mode": "lossless",
+    "from": 1579688,
+    "to": 685550
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/canonicalHarin_dialogue.png",
+    "mode": "lossless",
+    "from": 257449,
+    "to": 223542
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/door.png",
+    "mode": "lossless",
+    "from": 140032,
+    "to": 119450
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/floor.png",
+    "mode": "lossless",
+    "from": 55331,
+    "to": 44480
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/girl.png",
+    "mode": "lossless",
+    "from": 1234531,
+    "to": 802352
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/girl_dialogue.png",
+    "mode": "lossless",
+    "from": 282252,
+    "to": 235894
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/path.png",
+    "mode": "lossless",
+    "from": 82286,
+    "to": 64992
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/researcher.png",
+    "mode": "lossless",
+    "from": 1905228,
+    "to": 966764
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/researcher_dialogue.png",
+    "mode": "lossless",
+    "from": 315618,
+    "to": 255374
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/roof.png",
+    "mode": "lossless",
+    "from": 237812,
+    "to": 223344
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/wall.png",
+    "mode": "lossless",
+    "from": 283321,
+    "to": 259902
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/window.png",
+    "mode": "lossless",
+    "from": 54733,
+    "to": 48730
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-intro/wood.png",
+    "mode": "lossless",
+    "from": 85973,
+    "to": 64456
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-prologue/G_FOREST_MOSS.png",
+    "mode": "lossless",
+    "from": 93445,
+    "to": 81096
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-prologue/G_PAVER_LIGHT.png",
+    "mode": "lossless",
+    "from": 99003,
+    "to": 76800
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/G_DECK_WOOD.png",
+    "mode": "lossless",
+    "from": 85973,
+    "to": 64456
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/G_MONGDOL_DRY.png",
+    "mode": "lossless",
+    "from": 107411,
+    "to": 72518
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/G_PATH_EARTH.png",
+    "mode": "lossless",
+    "from": 82286,
+    "to": 64992
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_0.png",
+    "mode": "lossless",
+    "from": 83835,
+    "to": 66038
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_1.png",
+    "mode": "lossless",
+    "from": 78754,
+    "to": 62404
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_112.png",
+    "mode": "lossless",
+    "from": 71982,
+    "to": 57744
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_113.png",
+    "mode": "lossless",
+    "from": 66146,
+    "to": 53396
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_116.png",
+    "mode": "lossless",
+    "from": 65247,
+    "to": 53656
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_117.png",
+    "mode": "lossless",
+    "from": 58465,
+    "to": 48726
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_119.png",
+    "mode": "lossless",
+    "from": 57570,
+    "to": 48124
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_124.png",
+    "mode": "lossless",
+    "from": 64323,
+    "to": 52992
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_125.png",
+    "mode": "lossless",
+    "from": 57601,
+    "to": 48062
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_127.png",
+    "mode": "lossless",
+    "from": 56708,
+    "to": 47460
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_16.png",
+    "mode": "lossless",
+    "from": 78804,
+    "to": 62378
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_17.png",
+    "mode": "lossless",
+    "from": 73497,
+    "to": 58700
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_193.png",
+    "mode": "lossless",
+    "from": 71706,
+    "to": 57688
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_197.png",
+    "mode": "lossless",
+    "from": 63914,
+    "to": 53576
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_199.png",
+    "mode": "lossless",
+    "from": 63309,
+    "to": 52900
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_20.png",
+    "mode": "lossless",
+    "from": 73006,
+    "to": 58532
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_209.png",
+    "mode": "lossless",
+    "from": 66317,
+    "to": 53574
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_21.png",
+    "mode": "lossless",
+    "from": 67219,
+    "to": 54148
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_213.png",
+    "mode": "lossless",
+    "from": 58450,
+    "to": 48874
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_215.png",
+    "mode": "lossless",
+    "from": 57541,
+    "to": 48198
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_221.png",
+    "mode": "lossless",
+    "from": 57758,
+    "to": 48276
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_223.png",
+    "mode": "lossless",
+    "from": 56806,
+    "to": 47600
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_23.png",
+    "mode": "lossless",
+    "from": 66521,
+    "to": 53500
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_241.png",
+    "mode": "lossless",
+    "from": 65450,
+    "to": 52744
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_245.png",
+    "mode": "lossless",
+    "from": 57558,
+    "to": 48112
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_247.png",
+    "mode": "lossless",
+    "from": 56568,
+    "to": 47436
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_253.png",
+    "mode": "lossless",
+    "from": 56693,
+    "to": 47448
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_255.png",
+    "mode": "lossless",
+    "from": 55661,
+    "to": 46770
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_28.png",
+    "mode": "lossless",
+    "from": 72341,
+    "to": 57902
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_29.png",
+    "mode": "lossless",
+    "from": 66565,
+    "to": 53572
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_31.png",
+    "mode": "lossless",
+    "from": 65871,
+    "to": 52882
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_4.png",
+    "mode": "lossless",
+    "from": 78877,
+    "to": 62896
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_5.png",
+    "mode": "lossless",
+    "from": 72970,
+    "to": 58654
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_64.png",
+    "mode": "lossless",
+    "from": 78395,
+    "to": 62574
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_65.png",
+    "mode": "lossless",
+    "from": 72443,
+    "to": 58324
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_68.png",
+    "mode": "lossless",
+    "from": 72371,
+    "to": 59152
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_69.png",
+    "mode": "lossless",
+    "from": 64593,
+    "to": 54194
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_7.png",
+    "mode": "lossless",
+    "from": 72221,
+    "to": 57956
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_71.png",
+    "mode": "lossless",
+    "from": 63922,
+    "to": 53590
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_80.png",
+    "mode": "lossless",
+    "from": 72833,
+    "to": 58556
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_81.png",
+    "mode": "lossless",
+    "from": 67004,
+    "to": 54142
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_84.png",
+    "mode": "lossless",
+    "from": 66265,
+    "to": 54420
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_85.png",
+    "mode": "lossless",
+    "from": 59339,
+    "to": 49488
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_87.png",
+    "mode": "lossless",
+    "from": 58455,
+    "to": 48846
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_92.png",
+    "mode": "lossless",
+    "from": 65485,
+    "to": 53824
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_93.png",
+    "mode": "lossless",
+    "from": 58670,
+    "to": 48892
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/TR_GRASS_PATH_95.png",
+    "mode": "lossless",
+    "from": 57767,
+    "to": 48278
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-terrain/X_GRASS_FRINGE.png",
+    "mode": "lossless",
+    "from": 87549,
+    "to": 79840
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-title/desktop.png",
+    "mode": "lossy",
+    "from": 2130822,
+    "to": 162776
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-title/mobile.png",
+    "mode": "lossy",
+    "from": 370322,
+    "to": 32608
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/story-props/capture-ship.png",
+    "mode": "lossless",
+    "from": 267390,
+    "to": 241880
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/btn-close-active.png",
+    "mode": "lossless",
+    "from": 101903,
+    "to": 91068
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/btn-close.png",
+    "mode": "lossless",
+    "from": 102029,
+    "to": 86852
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/header-band.png",
+    "mode": "lossless",
+    "from": 322651,
+    "to": 287758
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/hp-frame.png",
+    "mode": "lossless",
+    "from": 102236,
+    "to": 90382
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/msg-band.png",
+    "mode": "lossless",
+    "from": 300712,
+    "to": 266294
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/party-bg-full.png",
+    "mode": "lossless",
+    "from": 784667,
+    "to": 694558
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/party-bg.png",
+    "mode": "lossless",
+    "from": 558855,
+    "to": 519950
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/slot-lead.png",
+    "mode": "lossless",
+    "from": 254432,
+    "to": 226908
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/slot-row-active.png",
+    "mode": "lossless",
+    "from": 338336,
+    "to": 311916
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/slot-row-empty.png",
+    "mode": "lossless",
+    "from": 280634,
+    "to": 244164
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/slot-row-fainted.png",
+    "mode": "lossless",
+    "from": 297595,
+    "to": 262054
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/slot-row.png",
+    "mode": "lossless",
+    "from": 313066,
+    "to": 279020
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/btn-disabled.png",
+    "mode": "lossless",
+    "from": 50100,
+    "to": 39198
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/btn-focus.png",
+    "mode": "lossless",
+    "from": 40985,
+    "to": 34970
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/btn-main-focus.png",
+    "mode": "lossless",
+    "from": 72659,
+    "to": 61056
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/btn-main-pressed.png",
+    "mode": "lossless",
+    "from": 76859,
+    "to": 62022
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/btn-main.png",
+    "mode": "lossless",
+    "from": 74452,
+    "to": 60364
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/btn-pressed.png",
+    "mode": "lossless",
+    "from": 46498,
+    "to": 37134
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/btn.png",
+    "mode": "lossless",
+    "from": 42479,
+    "to": 34186
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/input-focus.png",
+    "mode": "lossless",
+    "from": 30365,
+    "to": 26342
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/input.png",
+    "mode": "lossless",
+    "from": 32113,
+    "to": 26214
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/menu-paper.png",
+    "mode": "lossless",
+    "from": 773262,
+    "to": 583140
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/notice.png",
+    "mode": "lossless",
+    "from": 106245,
+    "to": 87452
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/select-focus.png",
+    "mode": "lossless",
+    "from": 32367,
+    "to": 27696
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/select.png",
+    "mode": "lossless",
+    "from": 33457,
+    "to": 27160
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/switch-off.png",
+    "mode": "lossless",
+    "from": 28543,
+    "to": 23822
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/switch-on.png",
+    "mode": "lossless",
+    "from": 29081,
+    "to": 24878
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/track-fill.png",
+    "mode": "lossless",
+    "from": 53843,
+    "to": 45800
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108kit/track.png",
+    "mode": "lossless",
+    "from": 56507,
+    "to": 48038
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/badge-slot-empty.png",
+    "mode": "lossless",
+    "from": 73298,
+    "to": 65118
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/badge-slot.png",
+    "mode": "lossless",
+    "from": 76908,
+    "to": 66824
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/check-done.png",
+    "mode": "lossless",
+    "from": 33247,
+    "to": 29300
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/contact-row.png",
+    "mode": "lossless",
+    "from": 307841,
+    "to": 284124
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/gear-screen.png",
+    "mode": "lossless",
+    "from": 869758,
+    "to": 767614
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/journal-page.png",
+    "mode": "lossless",
+    "from": 1162284,
+    "to": 1069914
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/label-tag.png",
+    "mode": "lossless",
+    "from": 103074,
+    "to": 91900
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/page-bg.png",
+    "mode": "lossless",
+    "from": 453940,
+    "to": 390260
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/page-header.png",
+    "mode": "lossless",
+    "from": 248391,
+    "to": 222332
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/panel-large.png",
+    "mode": "lossless",
+    "from": 409311,
+    "to": 361240
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/panel-row.png",
+    "mode": "lossless",
+    "from": 174820,
+    "to": 164490
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/progress-bar.png",
+    "mode": "lossless",
+    "from": 125785,
+    "to": 113656
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/reward-row-done.png",
+    "mode": "lossless",
+    "from": 333351,
+    "to": 286734
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/reward-row.png",
+    "mode": "lossless",
+    "from": 311928,
+    "to": 294544
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108ui/trainer-card.png",
+    "mode": "lossless",
+    "from": 1376604,
+    "to": 1282000
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/bag-balls.png",
+    "mode": "lossless",
+    "from": 94941,
+    "to": 79910
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/bag-items.png",
+    "mode": "lossless",
+    "from": 98176,
+    "to": 81540
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/bag-key.png",
+    "mode": "lossless",
+    "from": 99225,
+    "to": 83142
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/bag-tms.png",
+    "mode": "lossless",
+    "from": 103055,
+    "to": 86024
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/ecogear.png",
+    "mode": "lossless",
+    "from": 66339,
+    "to": 59682
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/kiosk.png",
+    "mode": "lossless",
+    "from": 50180,
+    "to": 42672
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/menu-bag.png",
+    "mode": "lossless",
+    "from": 26790,
+    "to": 22958
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/menu-dex.png",
+    "mode": "lossless",
+    "from": 25714,
+    "to": 21848
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/menu-journal.png",
+    "mode": "lossless",
+    "from": 25620,
+    "to": 22720
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/menu-map.png",
+    "mode": "lossless",
+    "from": 23765,
+    "to": 21662
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/menu-medal.png",
+    "mode": "lossless",
+    "from": 21300,
+    "to": 18708
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/menu-save.png",
+    "mode": "lossless",
+    "from": 21692,
+    "to": 19478
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r77/menu-settings.png",
+    "mode": "lossless",
+    "from": 23066,
+    "to": 20186
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r78/field-pickup.png",
+    "mode": "lossless",
+    "from": 29531,
+    "to": 26822
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r78/field-sign.png",
+    "mode": "lossless",
+    "from": 42188,
+    "to": 36764
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/desc.png",
+    "mode": "lossless",
+    "from": 246784,
+    "to": 221630
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/dex-frame.png",
+    "mode": "lossless",
+    "from": 25818,
+    "to": 23388
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/dex-panel.png",
+    "mode": "lossless",
+    "from": 530300,
+    "to": 480690
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/dex-plate.png",
+    "mode": "lossless",
+    "from": 88408,
+    "to": 75546
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/dex-ribbon.png",
+    "mode": "lossless",
+    "from": 109459,
+    "to": 99156
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/dex-row-unseen.png",
+    "mode": "lossless",
+    "from": 128074,
+    "to": 112626
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/dex-stage.png",
+    "mode": "lossless",
+    "from": 152568,
+    "to": 142294
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/panel.png",
+    "mode": "lossless",
+    "from": 612170,
+    "to": 549182
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/tab.png",
+    "mode": "lossless",
+    "from": 33245,
+    "to": 30858
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r97/wood-label.png",
+    "mode": "lossless",
+    "from": 73219,
+    "to": 62456
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-badges-r108/BADGE_02.png",
+    "mode": "lossless",
+    "from": 71809,
+    "to": 67668
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-badges-r108/BADGE_06.png",
+    "mode": "lossless",
+    "from": 85671,
+    "to": 78232
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-badges-r108/BADGE_07.png",
+    "mode": "lossless",
+    "from": 75712,
+    "to": 69968
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_antidote.png",
+    "mode": "lossless",
+    "from": 57881,
+    "to": 52836
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_eco_dex.png",
+    "mode": "lossless",
+    "from": 53978,
+    "to": 49528
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_full_heal.png",
+    "mode": "lossless",
+    "from": 71868,
+    "to": 64656
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_full_restore.png",
+    "mode": "lossless",
+    "from": 70144,
+    "to": 66010
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_good_rod.png",
+    "mode": "lossless",
+    "from": 24842,
+    "to": 22468
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_hyper_potion.png",
+    "mode": "lossless",
+    "from": 56633,
+    "to": 51532
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ice_heal.png",
+    "mode": "lossless",
+    "from": 61882,
+    "to": 55476
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_max_ether.png",
+    "mode": "lossless",
+    "from": 60363,
+    "to": 56256
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_memory_fragment.png",
+    "mode": "lossless",
+    "from": 65297,
+    "to": 59666
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_okpo_seabreeze_ribbon.png",
+    "mode": "lossless",
+    "from": 53075,
+    "to": 49914
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_onseom_compass.png",
+    "mode": "lossless",
+    "from": 62584,
+    "to": 57208
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_paralyze_heal.png",
+    "mode": "lossless",
+    "from": 61897,
+    "to": 53676
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_peace_lantern.png",
+    "mode": "lossless",
+    "from": 50956,
+    "to": 45944
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_plant_scan_module.png",
+    "mode": "lossless",
+    "from": 37583,
+    "to": 34524
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_potion.png",
+    "mode": "lossless",
+    "from": 50154,
+    "to": 45224
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_super_potion.png",
+    "mode": "lossless",
+    "from": 61025,
+    "to": 55690
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_TM_CASE.png",
+    "mode": "lossless",
+    "from": 81719,
+    "to": 70524
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_wind_emblem.png",
+    "mode": "lossless",
+    "from": 51259,
+    "to": 47022
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-lamps/prologue-lamps.png",
+    "mode": "lossless",
+    "from": 24979,
+    "to": 21440
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-night/prologue-mul.png",
+    "mode": "lossless",
+    "from": 123863,
+    "to": 108812
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-night/s2town-mul.png",
+    "mode": "lossless",
+    "from": 238070,
+    "to": 208226
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-rooms/terminal.png",
+    "mode": "lossy",
+    "from": 1605934,
+    "to": 119564
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-vfx/BUG_SWARM.png",
+    "mode": "lossless",
+    "from": 123900,
+    "to": 115600
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-vfx/ICE_FROST.png",
+    "mode": "lossless",
+    "from": 76216,
+    "to": 71514
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/center/assets/booklet_rack_foreground.png",
+    "mode": "lossless",
+    "from": 554582,
+    "to": 58452
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/center/assets/doctor.png",
+    "mode": "lossless",
+    "from": 41628,
+    "to": 38874
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/center/assets/doctor_m.png",
+    "mode": "lossless",
+    "from": 35087,
+    "to": 32678
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/center/assets/foreground.png",
+    "mode": "lossless",
+    "from": 554581,
+    "to": 69242
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/center/assets/low_leaf_sculpture_foreground.png",
+    "mode": "lossless",
+    "from": 554605,
+    "to": 62012
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/center/assets/room.png",
+    "mode": "lossy",
+    "from": 554575,
+    "to": 52602
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/shop/cashier.png",
+    "mode": "lossless",
+    "from": 40803,
+    "to": 38242
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/world/internal-interiors/reuse/shop/room.png",
+    "mode": "lossy",
+    "from": 834970,
+    "to": 109890
+   }
+  ]
+ },
+ "music": {
+  "note": "background MP3s re-encoded (LAME VBR q5) under the same name (r108aud)",
+  "count": 42,
+  "fromMB": 148.1,
+  "toMB": 106.6,
+  "files": [
+   {
+    "file": "assets/music/user-ost/ost-01.mp3",
+    "from": 3692140,
+    "to": 2736716
+   },
+   {
+    "file": "assets/music/user-ost/ost-02.mp3",
+    "from": 4715492,
+    "to": 3486524
+   },
+   {
+    "file": "assets/music/user-ost/ost-03.mp3",
+    "from": 3146739,
+    "to": 2364764
+   },
+   {
+    "file": "assets/music/user-ost/ost-04.mp3",
+    "from": 1658636,
+    "to": 1198316
+   },
+   {
+    "file": "assets/music/user-ost/ost-05.mp3",
+    "from": 4393767,
+    "to": 3303140
+   },
+   {
+    "file": "assets/music/user-ost/ost-06.mp3",
+    "from": 4273332,
+    "to": 3055868
+   },
+   {
+    "file": "assets/music/user-ost/ost-07.mp3",
+    "from": 4830766,
+    "to": 3621188
+   },
+   {
+    "file": "assets/music/user-ost/ost-08.mp3",
+    "from": 4129060,
+    "to": 2993900
+   },
+   {
+    "file": "assets/music/user-ost/ost-09.mp3",
+    "from": 1957794,
+    "to": 1254332
+   },
+   {
+    "file": "assets/music/user-ost/ost-10.mp3",
+    "from": 4085818,
+    "to": 3052988
+   },
+   {
+    "file": "assets/music/user-ost/ost-11.mp3",
+    "from": 4473050,
+    "to": 3315212
+   },
+   {
+    "file": "assets/music/user-ost/ost-12.mp3",
+    "from": 3837809,
+    "to": 2760500
+   },
+   {
+    "file": "assets/music/user-ost/ost-13.mp3",
+    "from": 3991707,
+    "to": 2899556
+   },
+   {
+    "file": "assets/music/user-ost/ost-14.mp3",
+    "from": 2979988,
+    "to": 2133668
+   },
+   {
+    "file": "assets/music/user-ost/ost-15.mp3",
+    "from": 3375357,
+    "to": 2426492
+   },
+   {
+    "file": "assets/music/user-ost/ost-16.mp3",
+    "from": 3374680,
+    "to": 2417180
+   },
+   {
+    "file": "assets/music/user-ost/ost-17.mp3",
+    "from": 3530899,
+    "to": 2648276
+   },
+   {
+    "file": "assets/music/user-ost/ost-18.mp3",
+    "from": 4703568,
+    "to": 3278828
+   },
+   {
+    "file": "assets/music/user-ost/ost-19.mp3",
+    "from": 2816133,
+    "to": 2049644
+   },
+   {
+    "file": "assets/music/user-ost/ost-20.mp3",
+    "from": 4066863,
+    "to": 2607044
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits-theme.mp3",
+    "from": 4320431,
+    "to": 2600132
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/opening-theme.mp3",
+    "from": 2877551,
+    "to": 2017388
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-01.mp3",
+    "from": 3692140,
+    "to": 2736716
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-02.mp3",
+    "from": 4715492,
+    "to": 3486524
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-03.mp3",
+    "from": 3146739,
+    "to": 2364764
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-04.mp3",
+    "from": 1658636,
+    "to": 1198316
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-05.mp3",
+    "from": 4393767,
+    "to": 3303140
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-06.mp3",
+    "from": 4273332,
+    "to": 3055868
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-07.mp3",
+    "from": 4830766,
+    "to": 3621188
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-08.mp3",
+    "from": 4129060,
+    "to": 2993900
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-09.mp3",
+    "from": 1957794,
+    "to": 1254332
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-10.mp3",
+    "from": 4085818,
+    "to": 3052988
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-11.mp3",
+    "from": 4473050,
+    "to": 3315212
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-12.mp3",
+    "from": 3837809,
+    "to": 2760500
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-13.mp3",
+    "from": 3991707,
+    "to": 2899556
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-14.mp3",
+    "from": 2979988,
+    "to": 2133668
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-15.mp3",
+    "from": 3375357,
+    "to": 2426492
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-16.mp3",
+    "from": 3374680,
+    "to": 2417180
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-17.mp3",
+    "from": 3530899,
+    "to": 2648276
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-18.mp3",
+    "from": 4703568,
+    "to": 3278828
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-19.mp3",
+    "from": 2816133,
+    "to": 2049644
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-20.mp3",
+    "from": 4066863,
+    "to": 2607044
+   }
+  ]
+ }
 }

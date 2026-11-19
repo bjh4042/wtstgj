@@ -1,0 +1,10 @@
+file	size	source	sha256
+radio-body.png	1536x1024	user-supplied UI art (2026-11-19) RADIO_BODY.png 1536x1024, unchanged	21bf965d94b1e15840e4f7efe14d1d1272e2b5372f452e739632bcda7018913c
+radio-button.png	576x192	user-supplied UI art (2026-11-19) RADIO_BUTTON.png 768x256, resized 0.75x (aspect kept)	b8df4b7ff94d824b0ae38965ee0eebf9aeee37ce02246ec545112aa9ddb24f7f
+dowsing-signal.png	192x192	user-supplied UI art (2026-11-19) DOWSING_SIGNAL.png 512x512, resized 0.375x (aspect kept)	df346d0dbe042264ace3176f9508edae0116850d073a04d2e0045f6ef18ba564
+dowsing-found.png	192x192	user-supplied UI art (2026-11-19) DOWSING_FOUND.png 512x512, resized 0.375x (aspect kept)	aebf2dbaae47f5a351c615a2fa7e6439ee8d764b1a1d73828bcb41ecf755d416
+hidden-sparkle.png	256x256	user-supplied UI art (2026-11-19) HIDDEN_SPARKLE.png 512x512, resized 0.5x (aspect kept)	966c3a632ce3f561b83d73febe3db333ac6a39a8ca53c9cd4d600984b66a3aa3
+dex-method-walk.png	64x64	user-supplied UI art (2026-11-19) DEX_METHOD_WALK.png 256x256, resized 0.25x (aspect kept)	34e18c65e714a4ce31d43b27947778991e826b6076bd133b8f95bdb5ad71be60
+dex-method-fish.png	64x64	user-supplied UI art (2026-11-19) DEX_METHOD_FISH.png 256x256, resized 0.25x (aspect kept)	07ba6cdbd577c4f266b8aece76cc907ee3a1a8040585c5a1b5f0c05216ac643a
+dex-method-surf.png	64x64	user-supplied UI art (2026-11-19) DEX_METHOD_SURF.png 256x256, resized 0.25x (aspect kept)	b9aa87653afbfc68f1a08492d0a5dabfab9fb99549092024e32bf4d55708d936
+kiosk-frame.png	1536x1024	user-supplied UI art (2026-11-19) KIOSK_FRAME.png 1536x1024, unchanged	2d2b2f015cab431eb873ea0d5bfd4d441256c31f52281d66460bfbde8653ba82
