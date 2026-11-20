@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r680",
- "files": 1920,
- "inMB": 1363.3,
- "outMB": 622.8,
+ "from": "build-portable-integrated-r760",
+ "files": 1974,
+ "inMB": 1390.7,
+ "outMB": 599.7,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -29,16 +29,124 @@
    "reason": "not referenced anywhere in the build"
   },
   {
-   "file": "assets/approved-atlases/npc/BLACKNET_GRUNT_F_BASE.png",
-   "mb": 0.1,
-   "servedAs": null,
-   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+   "file": "assets/music/user-ost/ost-01.mp3",
+   "mb": 3.5,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-01.mp3",
+   "reason": "identical module-side copy is the one the game loads"
   },
   {
-   "file": "assets/approved-atlases/npc/BLACKNET_GRUNT_M_BASE.png",
-   "mb": 0.1,
-   "servedAs": null,
-   "reason": "replaced sprite sheet — its name appears nowhere in the build"
+   "file": "assets/music/user-ost/ost-02.mp3",
+   "mb": 4.5,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-02.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-03.mp3",
+   "mb": 3,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-03.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-04.mp3",
+   "mb": 1.6,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-04.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-05.mp3",
+   "mb": 4.2,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-05.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-06.mp3",
+   "mb": 4.1,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-06.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-07.mp3",
+   "mb": 4.6,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-07.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-08.mp3",
+   "mb": 3.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-08.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-09.mp3",
+   "mb": 1.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-09.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-10.mp3",
+   "mb": 3.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-10.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-11.mp3",
+   "mb": 4.3,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-11.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-12.mp3",
+   "mb": 3.7,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-12.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-13.mp3",
+   "mb": 3.8,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-13.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-14.mp3",
+   "mb": 2.8,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-14.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-15.mp3",
+   "mb": 3.2,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-15.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-16.mp3",
+   "mb": 3.2,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-16.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-17.mp3",
+   "mb": 3.4,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-17.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-18.mp3",
+   "mb": 4.5,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-18.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-19.mp3",
+   "mb": 2.7,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-19.mp3",
+   "reason": "identical module-side copy is the one the game loads"
+  },
+  {
+   "file": "assets/music/user-ost/ost-20.mp3",
+   "mb": 3.9,
+   "servedAs": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/user-ost/ost-20.mp3",
+   "reason": "identical module-side copy is the one the game loads"
   },
   {
    "file": "assets/approved-atlases/npc/BOMI_R89.png",
@@ -151,18 +259,6 @@
   {
    "file": "assets/approved-atlases/species/SPECIES_132_R103.png",
    "mb": 0.4,
-   "servedAs": null,
-   "reason": "replaced sprite sheet — its name appears nowhere in the build"
-  },
-  {
-   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/BLACKNET_GRUNT_F_BASE.png",
-   "mb": 0.1,
-   "servedAs": null,
-   "reason": "replaced sprite sheet — its name appears nowhere in the build"
-  },
-  {
-   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/BLACKNET_GRUNT_M_BASE.png",
-   "mb": 0.1,
    "servedAs": null,
    "reason": "replaced sprite sheet — its name appears nowhere in the build"
   },
@@ -1577,88 +1673,7 @@
    "reason": "byte-identical copy; every reference is an absolute address of the kept copy"
   }
  ],
- "kept": [
-  {
-   "file": "assets/music/user-ost/ost-01.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-02.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-03.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-04.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-05.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-06.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-07.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-08.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-09.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-10.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-11.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-12.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-13.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-14.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-15.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-16.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-17.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-18.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-19.mp3",
-   "reason": "something loads music from the root — kept"
-  },
-  {
-   "file": "assets/music/user-ost/ost-20.mp3",
-   "reason": "something loads music from the root — kept"
-  }
- ],
+ "kept": [],
  "over25MB": [],
  "webp": {
   "note": "PNG re-encoded as WebP under the same name (r400); the build folder keeps the original bytes",
@@ -3651,110 +3666,10 @@
  },
  "music": {
   "note": "background MP3s re-encoded (LAME VBR q5) under the same name (r108aud)",
-  "count": 42,
-  "fromMB": 148.1,
-  "toMB": 106.6,
+  "count": 22,
+  "fromMB": 77.5,
+  "toMB": 55.5,
   "files": [
-   {
-    "file": "assets/music/user-ost/ost-01.mp3",
-    "from": 3692140,
-    "to": 2736716
-   },
-   {
-    "file": "assets/music/user-ost/ost-02.mp3",
-    "from": 4715492,
-    "to": 3486524
-   },
-   {
-    "file": "assets/music/user-ost/ost-03.mp3",
-    "from": 3146739,
-    "to": 2364764
-   },
-   {
-    "file": "assets/music/user-ost/ost-04.mp3",
-    "from": 1658636,
-    "to": 1198316
-   },
-   {
-    "file": "assets/music/user-ost/ost-05.mp3",
-    "from": 4393767,
-    "to": 3303140
-   },
-   {
-    "file": "assets/music/user-ost/ost-06.mp3",
-    "from": 4273332,
-    "to": 3055868
-   },
-   {
-    "file": "assets/music/user-ost/ost-07.mp3",
-    "from": 4830766,
-    "to": 3621188
-   },
-   {
-    "file": "assets/music/user-ost/ost-08.mp3",
-    "from": 4129060,
-    "to": 2993900
-   },
-   {
-    "file": "assets/music/user-ost/ost-09.mp3",
-    "from": 1957794,
-    "to": 1254332
-   },
-   {
-    "file": "assets/music/user-ost/ost-10.mp3",
-    "from": 4085818,
-    "to": 3052988
-   },
-   {
-    "file": "assets/music/user-ost/ost-11.mp3",
-    "from": 4473050,
-    "to": 3315212
-   },
-   {
-    "file": "assets/music/user-ost/ost-12.mp3",
-    "from": 3837809,
-    "to": 2760500
-   },
-   {
-    "file": "assets/music/user-ost/ost-13.mp3",
-    "from": 3991707,
-    "to": 2899556
-   },
-   {
-    "file": "assets/music/user-ost/ost-14.mp3",
-    "from": 2979988,
-    "to": 2133668
-   },
-   {
-    "file": "assets/music/user-ost/ost-15.mp3",
-    "from": 3375357,
-    "to": 2426492
-   },
-   {
-    "file": "assets/music/user-ost/ost-16.mp3",
-    "from": 3374680,
-    "to": 2417180
-   },
-   {
-    "file": "assets/music/user-ost/ost-17.mp3",
-    "from": 3530899,
-    "to": 2648276
-   },
-   {
-    "file": "assets/music/user-ost/ost-18.mp3",
-    "from": 4703568,
-    "to": 3278828
-   },
-   {
-    "file": "assets/music/user-ost/ost-19.mp3",
-    "from": 2816133,
-    "to": 2049644
-   },
-   {
-    "file": "assets/music/user-ost/ost-20.mp3",
-    "from": 4066863,
-    "to": 2607044
-   },
    {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits-theme.mp3",
     "from": 4320431,
