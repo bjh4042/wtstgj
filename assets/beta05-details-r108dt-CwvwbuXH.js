@@ -1,1 +1,0 @@
-import{o as e}from"./beta05-details-r108dt-DQ9Gvfci.js";export{e as askQuantity};
