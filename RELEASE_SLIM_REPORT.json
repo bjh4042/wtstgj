@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r909",
- "files": 1544,
- "inMB": 1479.8,
- "outMB": 533.1,
+ "from": "build-portable-integrated-r910",
+ "files": 1564,
+ "inMB": 1495.5,
+ "outMB": 540.9,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -2434,6 +2434,13 @@
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_BUG_HOST_M_BASE.png",
+   "mb": 0.5,
+   "bytes": 505853,
+   "servedAs": "assets/approved-atlases/npc/NPC12_BUG_HOST_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_DIVER_F_VAR01.png",
    "mb": 0.4,
    "bytes": 431885,
@@ -2511,6 +2518,20 @@
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HAENYEO_F_BASE.png",
+   "mb": 0.5,
+   "bytes": 485759,
+   "servedAs": "assets/approved-atlases/npc/NPC12_HAENYEO_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HARBOR_WORKER_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 447971,
+   "servedAs": "assets/approved-atlases/npc/NPC12_HARBOR_WORKER_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HWIGYEONG.png",
    "mb": 0.4,
    "bytes": 372951,
@@ -2553,10 +2574,24 @@
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_LEAGUE_STAFF_F_BASE.png",
+   "mb": 0.4,
+   "bytes": 402253,
+   "servedAs": "assets/approved-atlases/npc/NPC12_LEAGUE_STAFF_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_LOCAL_RESIDENT_F_BASE.png",
    "mb": 0.4,
    "bytes": 425865,
    "servedAs": "assets/approved-atlases/npc/NPC12_LOCAL_RESIDENT_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_MOVE_TUTOR_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 437727,
+   "servedAs": "assets/approved-atlases/npc/NPC12_MOVE_TUTOR_M_BASE.png",
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
@@ -2578,6 +2613,13 @@
    "mb": 0.4,
    "bytes": 419278,
    "servedAs": "assets/approved-atlases/npc/NPC12_NATURE_HOBBYIST_M_VAR01.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_PLAYER_MOTHER.png",
+   "mb": 0.4,
+   "bytes": 458287,
+   "servedAs": "assets/approved-atlases/npc/NPC12_PLAYER_MOTHER.png",
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
@@ -2609,6 +2651,13 @@
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_STORAGE_KEEPER_F_BASE.png",
+   "mb": 0.4,
+   "bytes": 377044,
+   "servedAs": "assets/approved-atlases/npc/NPC12_STORAGE_KEEPER_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_STORY_RECORDER_F_BASE.png",
    "mb": 0.4,
    "bytes": 428196,
@@ -2616,10 +2665,87 @@
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_CHILD_F_BASE.png",
+   "mb": 0.5,
+   "bytes": 487949,
+   "servedAs": "assets/approved-atlases/npc/NPC12_TOWN_CHILD_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_CHILD_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 443199,
+   "servedAs": "assets/approved-atlases/npc/NPC12_TOWN_CHILD_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_ELDER_F_BASE.png",
+   "mb": 0.5,
+   "bytes": 535980,
+   "servedAs": "assets/approved-atlases/npc/NPC12_TOWN_ELDER_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_ELDER_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 453874,
+   "servedAs": "assets/approved-atlases/npc/NPC12_TOWN_ELDER_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_USANG.png",
    "mb": 0.5,
    "bytes": 478217,
    "servedAs": "assets/approved-atlases/npc/NPC12_USANG.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_FRI_PHOTOGRAPHER_F_BASE.png",
+   "mb": 0.4,
+   "bytes": 402092,
+   "servedAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_FRI_PHOTOGRAPHER_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_MON_ANGLER_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 470716,
+   "servedAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_MON_ANGLER_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_SAT_CAPTAIN_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 470978,
+   "servedAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_SAT_CAPTAIN_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_SUN_GRANDMOTHER_F_BASE.png",
+   "mb": 0.4,
+   "bytes": 470158,
+   "servedAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_SUN_GRANDMOTHER_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_THU_HIKER_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 459453,
+   "servedAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_THU_HIKER_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_TUE_FLORIST_F_BASE.png",
+   "mb": 0.4,
+   "bytes": 470849,
+   "servedAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_TUE_FLORIST_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_WED_MAIL_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 415606,
+   "servedAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_WED_MAIL_M_BASE.png",
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
@@ -7088,8 +7214,8 @@
  },
  "moduleTwins": {
   "note": "module-side copies whose root twin is shipped and that no resolver can request (r885); size = build bytes",
-  "count": 496,
-  "mb": 165.3,
+  "count": 514,
+  "mb": 173.2,
   "notUnderstood": [],
   "files": [
    {
@@ -7418,6 +7544,11 @@
     "bytes": 349816
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_BUG_HOST_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_BUG_HOST_M_BASE.png",
+    "bytes": 505853
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_DIVER_F_VAR01.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_DIVER_F_VAR01.png",
     "bytes": 431885
@@ -7473,6 +7604,16 @@
     "bytes": 480224
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HAENYEO_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_HAENYEO_F_BASE.png",
+    "bytes": 485759
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HARBOR_WORKER_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_HARBOR_WORKER_M_BASE.png",
+    "bytes": 447971
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HWIGYEONG.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_HWIGYEONG.png",
     "bytes": 372951
@@ -7503,9 +7644,19 @@
     "bytes": 445936
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_LEAGUE_STAFF_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_LEAGUE_STAFF_F_BASE.png",
+    "bytes": 402253
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_LOCAL_RESIDENT_F_BASE.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_LOCAL_RESIDENT_F_BASE.png",
     "bytes": 425865
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_MOVE_TUTOR_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_MOVE_TUTOR_M_BASE.png",
+    "bytes": 437727
    },
    {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_MYEONGJU.png",
@@ -7521,6 +7672,11 @@
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_NATURE_HOBBYIST_M_VAR01.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_NATURE_HOBBYIST_M_VAR01.png",
     "bytes": 419278
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_PLAYER_MOTHER.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_PLAYER_MOTHER.png",
+    "bytes": 458287
    },
    {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_SAFETY_RESCUE_F_BASE.png",
@@ -7543,14 +7699,74 @@
     "bytes": 511048
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_STORAGE_KEEPER_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_STORAGE_KEEPER_F_BASE.png",
+    "bytes": 377044
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_STORY_RECORDER_F_BASE.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_STORY_RECORDER_F_BASE.png",
     "bytes": 428196
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_CHILD_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_TOWN_CHILD_F_BASE.png",
+    "bytes": 487949
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_CHILD_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_TOWN_CHILD_M_BASE.png",
+    "bytes": 443199
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_ELDER_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_TOWN_ELDER_F_BASE.png",
+    "bytes": 535980
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_TOWN_ELDER_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_TOWN_ELDER_M_BASE.png",
+    "bytes": 453874
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_USANG.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_USANG.png",
     "bytes": 478217
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_FRI_PHOTOGRAPHER_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_FRI_PHOTOGRAPHER_F_BASE.png",
+    "bytes": 402092
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_MON_ANGLER_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_MON_ANGLER_M_BASE.png",
+    "bytes": 470716
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_SAT_CAPTAIN_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_SAT_CAPTAIN_M_BASE.png",
+    "bytes": 470978
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_SUN_GRANDMOTHER_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_SUN_GRANDMOTHER_F_BASE.png",
+    "bytes": 470158
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_THU_HIKER_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_THU_HIKER_M_BASE.png",
+    "bytes": 459453
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_TUE_FLORIST_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_TUE_FLORIST_F_BASE.png",
+    "bytes": 470849
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_WEEKDAY_WED_MAIL_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_WEEKDAY_WED_MAIL_M_BASE.png",
+    "bytes": 415606
    },
    {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_YEJI.png",
