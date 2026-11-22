@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r904",
- "files": 1490,
- "inMB": 1398.7,
- "outMB": 454.4,
+ "from": "build-portable-integrated-r908",
+ "files": 1544,
+ "inMB": 1478.8,
+ "outMB": 532.1,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -2504,6 +2504,13 @@
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HAEGEUM_GUIDE_F_BASE.png",
+   "mb": 0.5,
+   "bytes": 480224,
+   "servedAs": "assets/approved-atlases/npc/NPC12_HAEGEUM_GUIDE_F_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HWIGYEONG.png",
    "mb": 0.4,
    "bytes": 372951,
@@ -2588,10 +2595,24 @@
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_SANBANG_MONK_M_BASE.png",
+   "mb": 0.4,
+   "bytes": 402964,
+   "servedAs": "assets/approved-atlases/npc/NPC12_SANBANG_MONK_M_BASE.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_SIYOON.png",
    "mb": 0.5,
    "bytes": 511048,
    "servedAs": "assets/approved-atlases/npc/NPC12_SIYOON.png",
+   "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
+  },
+  {
+   "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_STORY_RECORDER_F_BASE.png",
+   "mb": 0.4,
+   "bytes": 428196,
+   "servedAs": "assets/approved-atlases/npc/NPC12_STORY_RECORDER_F_BASE.png",
    "reason": "module-side twin of a shipped root copy; no module-side resolver, page or stylesheet can request it (r885)"
   },
   {
@@ -5435,9 +5456,9 @@
  "webp": {
   "note": "PNG re-encoded as WebP under the same name (r400); the build folder keeps the original bytes",
   "lossy": 23,
-  "lossless": 212,
-  "fromMB": 81.5,
-  "toMB": 37.3,
+  "lossless": 228,
+  "fromMB": 97.4,
+  "toMB": 52,
   "files": [
    {
     "file": "assets/approved-battle-backgrounds/CAVE.png",
@@ -6214,6 +6235,48 @@
     "to": 241880
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L01_PUZZLE_DONE.png",
+    "mode": "lossless",
+    "from": 627250,
+    "to": 560920
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L01_PUZZLE_PIECES.png",
+    "mode": "lossless",
+    "from": 807346,
+    "to": 754680
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L02_CLUE_VOYAGE.png",
+    "mode": "lossless",
+    "from": 2083095,
+    "to": 1923876
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L03_CLUE_BROTHERS.png",
+    "mode": "lossless",
+    "from": 2583354,
+    "to": 2353948
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L06_SCENE_TOGETHER.png",
+    "mode": "lossless",
+    "from": 2599506,
+    "to": 2461056
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L07_CLUE_RESCUE.png",
+    "mode": "lossless",
+    "from": 2369270,
+    "to": 2212698
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L07_CLUE_THANKS.png",
+    "mode": "lossless",
+    "from": 2437789,
+    "to": 2302946
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L08_CARD.png",
     "mode": "lossless",
     "from": 2058160,
@@ -6224,6 +6287,12 @@
     "mode": "lossless",
     "from": 2353098,
     "to": 2234062
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L10_CLUE_CROWS.png",
+    "mode": "lossless",
+    "from": 2631301,
+    "to": 2411898
    },
    {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/btn-close-active.png",
@@ -6670,6 +6739,54 @@
     "to": 49528
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_coast_stampbook.png",
+    "mode": "lossless",
+    "from": 65828,
+    "to": 57314
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_island_photos.png",
+    "mode": "lossless",
+    "from": 56383,
+    "to": 50234
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_mago_model.png",
+    "mode": "lossless",
+    "from": 54064,
+    "to": 47984
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_mulberry_bundle.png",
+    "mode": "lossless",
+    "from": 67523,
+    "to": 60930
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_oral_tape.png",
+    "mode": "lossless",
+    "from": 52971,
+    "to": 48528
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_sanbang_book.png",
+    "mode": "lossless",
+    "from": 77380,
+    "to": 62744
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_stepping_tiles.png",
+    "mode": "lossless",
+    "from": 48355,
+    "to": 44046
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_ecx_tangled_line.png",
+    "mode": "lossless",
+    "from": 79269,
+    "to": 67070
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-items/ITEM_full_heal.png",
     "mode": "lossless",
     "from": 71868,
@@ -6971,8 +7088,8 @@
  },
  "moduleTwins": {
   "note": "module-side copies whose root twin is shipped and that no resolver can request (r885); size = build bytes",
-  "count": 493,
-  "mb": 164.1,
+  "count": 496,
+  "mb": 165.3,
   "notUnderstood": [],
   "files": [
    {
@@ -7351,6 +7468,11 @@
     "bytes": 388541
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HAEGEUM_GUIDE_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_HAEGEUM_GUIDE_F_BASE.png",
+    "bytes": 480224
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_HWIGYEONG.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_HWIGYEONG.png",
     "bytes": 372951
@@ -7411,9 +7533,19 @@
     "bytes": 390169
    },
    {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_SANBANG_MONK_M_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_SANBANG_MONK_M_BASE.png",
+    "bytes": 402964
+   },
+   {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_SIYOON.png",
     "keptAs": "assets/approved-atlases/npc/NPC12_SIYOON.png",
     "bytes": 511048
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_STORY_RECORDER_F_BASE.png",
+    "keptAs": "assets/approved-atlases/npc/NPC12_STORY_RECORDER_F_BASE.png",
+    "bytes": 428196
    },
    {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/approved-atlases/npc/NPC12_USANG.png",

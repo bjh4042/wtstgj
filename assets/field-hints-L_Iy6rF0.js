@@ -1,0 +1,1 @@
+var e=!1;function t(t){e=t===!0}var n=()=>e,r=()=>e,i=t=>e&&(t===`warp`||t===`landmark`||String(t??``).includes(`entry`)),a=()=>e,o=()=>e?.04:.018,s=t=>e?14:26,c=t=>!e&&!i(t);export{a,s as c,i,c as n,o,r,t as s,n as t};
