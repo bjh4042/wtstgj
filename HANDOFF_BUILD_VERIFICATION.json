@@ -1,12 +1,18 @@
 {
   "status": "COMPILE_AND_PUBLIC_RESOURCE_BYTE_VERIFICATION_PASS",
-  "compiledModules": 731,
-  "publicResourceFiles": 2239,
-  "output": "build-portable-integrated-r760",
+  "version": "1.0.1",
+  "buildId": "r871",
+  "builtAt": "2026-11-22T08:55:21.605+09:00",
+  "compiledModules": 742,
+  "publicResourceFiles": 2250,
+  "output": "build-portable-integrated-r871",
   "entry": "beta05-gameplay-patrol-candidate.html",
   "basePath": "/wtstgj/",
   "symlinks": false,
-  "browserTested": false,
-  "productReady": false,
-  "sourceModified": false
+  "sourceModified": false,
+  "tests": {
+    "run": false,
+    "note": "no GEOJE_TEST_TAP given; check with: node tools/release-check.mjs <build> --tests"
+  },
+  "browserChecks": "not part of the build: headless and real-device checks are recorded in docs-0.5/PROGRESS_0.5.md"
 }

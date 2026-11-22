@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r760",
- "files": 1974,
- "inMB": 1390.7,
- "outMB": 599.7,
+ "from": "build-portable-integrated-r871",
+ "files": 1985,
+ "inMB": 1398,
+ "outMB": 606.6,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -1678,9 +1678,9 @@
  "webp": {
   "note": "PNG re-encoded as WebP under the same name (r400); the build folder keeps the original bytes",
   "lossy": 31,
-  "lossless": 299,
-  "fromMB": 95.2,
-  "toMB": 39.8,
+  "lossless": 301,
+  "fromMB": 99.4,
+  "toMB": 43.6,
   "files": [
    {
     "file": "assets/approved-battle-backgrounds/CAVE.png",
@@ -3037,6 +3037,18 @@
     "mode": "lossless",
     "from": 267390,
     "to": 241880
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L08_CARD.png",
+    "mode": "lossless",
+    "from": 2058160,
+    "to": 1823114
+   },
+   {
+    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-legend/L08_CLUE_ROCK.png",
+    "mode": "lossless",
+    "from": 2353098,
+    "to": 2234062
    },
    {
     "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/ui/beta05-art-r108/btn-close-active.png",
