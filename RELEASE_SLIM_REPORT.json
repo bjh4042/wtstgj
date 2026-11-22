@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r871",
+ "from": "build-portable-integrated-r883",
  "files": 1985,
- "inMB": 1398,
- "outMB": 606.6,
+ "inMB": 1398.1,
+ "outMB": 606.5,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -1308,13 +1308,13 @@
   },
   {
    "file": "s1-field-native/stream.png",
-   "mb": 38.1,
+   "mb": 38.2,
    "servedAs": "s1-field-native/stream.webp",
    "reason": "webp copy present, sha matches"
   },
   {
    "file": "s1-field-native/wetland.png",
-   "mb": 11.1,
+   "mb": 12.6,
    "servedAs": "s1-field-native/wetland.webp",
    "reason": "webp copy present, sha matches"
   },
@@ -1338,19 +1338,19 @@
   },
   {
    "file": "s1-field-native/s6hub.png",
-   "mb": 19.9,
+   "mb": 20.2,
    "servedAs": "s1-field-native/s6hub.webp",
    "reason": "webp copy present, sha matches"
   },
   {
    "file": "s1-field-native/s7hub.png",
-   "mb": 21,
+   "mb": 16.4,
    "servedAs": "s1-field-native/s7hub.webp",
    "reason": "webp copy present, sha matches"
   },
   {
    "file": "s1-field-native/s8hub.png",
-   "mb": 12.7,
+   "mb": 14.4,
    "servedAs": "s1-field-native/s8hub.webp",
    "reason": "webp copy present, sha matches"
   },
@@ -1368,7 +1368,7 @@
   },
   {
    "file": "s1-field-native/posthub.png",
-   "mb": 5.8,
+   "mb": 6.5,
    "servedAs": "s1-field-native/posthub.webp",
    "reason": "webp copy present, sha matches"
   },
@@ -1536,13 +1536,13 @@
   },
   {
    "file": "native-restoration/s1-open.png",
-   "mb": 38.1,
+   "mb": 38.2,
    "servedAs": "native-restoration/s1-open.webp",
    "reason": "webp copy present, sha matches"
   },
   {
    "file": "s2-native/town.png",
-   "mb": 17.7,
+   "mb": 17.6,
    "servedAs": "s2-native/town.webp",
    "reason": "webp copy present, sha matches"
   },
