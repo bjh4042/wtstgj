@@ -1,8 +1,8 @@
 {
- "from": "build-portable-integrated-r916",
- "files": 1564,
- "inMB": 1495.5,
- "outMB": 540.9,
+ "from": "build-portable-integrated-r933",
+ "files": 1639,
+ "inMB": 1523.6,
+ "outMB": 569,
  "dropped": [
   {
    "file": "__source_layout/native_world_selected_s9_boss_source_r3/source/assets/music/credits.wav",
@@ -1554,7 +1554,7 @@
   {
    "file": "s1-field-native/s5hub.png",
    "mb": 15.5,
-   "bytes": 16221838,
+   "bytes": 16218516,
    "servedAs": "s1-field-native/s5hub.webp",
    "reason": "webp copy present, sha matches"
   },
@@ -1813,7 +1813,7 @@
   {
    "file": "s3-native/town.png",
    "mb": 8,
-   "bytes": 8406561,
+   "bytes": 8394614,
    "servedAs": "s3-native/town.webp",
    "reason": "webp copy present, sha matches"
   },
