@@ -1,0 +1,1 @@
+import{E as e,o as t}from"./beta05-details-r108dt-Cpr2Qv2T.js";export{t as askQuantity,e as speciesCanvas};
